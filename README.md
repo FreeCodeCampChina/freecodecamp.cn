@@ -67,7 +67,7 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
  
  参与方式有两种：
  
- 1、folk此项目，找到课程章节，翻译好后pullrequest；
+ 1、fork此项目，找到课程章节，翻译好后pullrequest；
  
  2、根据我发出来的课程章节，翻译好后邮件给我(huluoyang@gmail.com)。
 
