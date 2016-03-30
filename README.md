@@ -25,7 +25,7 @@ treehouse与codecademy同期创立，codecademy侧重在线学习，treehoue侧�
 
 freecodecamp与codecademy/treehouse最显著的区别是它本身就是个开源项目。
 
-# 学编程的都知道编程语言之间的区别很大程度上体现在语言本身是否能完成自举(自己实现自己)。
+学编程的都知道编程语言之间的区别很大程度上体现在语言本身是否能完成自举(自己实现自己)。
 
 正是基于freecodecamp本身开源，实现一个freecodecamp中文社区成为可能。
 
