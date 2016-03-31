@@ -1,63 +1,63 @@
 extends layout
 block content
     .text-center
-        h1.landing-heading Learn to code and help nonprofits.
+        h1.landing-heading learn by doing
         .spacer
         .row
             .big-break
             .big-break
             .big-break
             .col-xs-12.col-sm-12.col-md-3
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landingIcons_connect.svg', alt='Get great references and connections to start your software engineer career')
-                p.large-p Join a community of 200,000+ developers.
+                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_connect.svg', alt='Get great references and connections to start your software engineer career')
+                p 你从来不是一个人在战斗
             .col-xs-12.col-sm-12.col-md-3
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landingIcons_learn.svg', alt='Learn to code and learn full stack JavaScript')
-                p.large-p Work on coding challenges together.
+                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_learn.svg', alt='Learn to code and learn full stack JavaScript')
+                p 无尽的任务等你来挑战
             .col-xs-12.col-sm-12.col-md-3
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landingIcons_portfolio.svg', alt='Build a portfolio of apps for nonprofits')
-                p.large-p Build a portfolio of apps that solve real problems.
+                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_portfolio.svg', alt='Build a portfolio of apps for nonprofits')
+                p 前端后端数据库通通拿下
             .col-xs-12.col-sm-12.col-md-3
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landingIcons_nonprofits.svg', alt='Empower nonprofits with code')
-                p.large-p Empower nonprofits with code.
+                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_nonprofits.svg', alt='Empower nonprofits with code')
+                p 社区积极反馈助你度过难关。
         .big-break
         .big-break
         .big-break
         .big-break
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") Start coding (it's free)
+                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 开始代码之旅 (免费的)
                 .button-spacer
-                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") My nonprofit needs coding help
+                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") 需要编码帮助的非盈利组织
         .spacer
-        h2 As featured in:
-        img.img-center.img-responsive(src='https://s3.amazonaws.com/freecodecamp/as-seen-on.png')
+        h2 应用于:
+        img.img-center.img-responsive(src='/images/as-seen-on.png')
         .spacer
         hr
         .spacer
-        h2 Launch your career as a software engineer:
+        h2 启动你的软件工程师职业生涯:
         .spacer
         .row
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/nsvNixW.jpg", alt="Meta's testimonial image")
-                p.testimonial-copy Through Free Code Camp, I built a robust and highly functional web app for a nonprofit. This led me to getting a fantastic job.
+                p.testimonial-copy 通过freecodecamp，我为一个非盈利组织开发了一个稳定而且功能强悍的web应用程序，这让我获得了一份不可思议的工作。
                 h3 - Meta Hirschl
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/QPpjPac.jpg", alt="Brian's testimonial image")
-                p.testimonial-copy Free Code Camp's a great way for disabled veterans like me to retrain. I'm receiving engineering job offers, and I haven't even finished yet.
+                p.testimonial-copy freecodecamp非常适合像我这样的退伍伤残老兵接受再培训，我甚至还没完成学业就获得了一份工程师offer。
                 h3 - Brian Grant
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/wjlDigg.jpg", alt="Maxim Orlov's testimonial image")
-                p.testimonial-copy I started Free Code Camp with zero knowledge of web development. 6 months later, I landed my first job as a back end engineer.
+                p.testimonial-copy 我通过freecodecamp开始编码的时候，对web开发一无所知。六个月后，我获得了我的第一份后端工程师工作。
                 h3 - Maxim Orlov
         .spacer
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href='/stories') Hear from more of our campers
+                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href='/stories') 听听更多我们学员的心声
         .spacer
         .spacer
         hr
         .spacer
-        h2 Skills you'll learn:
+        h2 你将会学习的技能:
         .spacer
         .row
             .text-center.negative-35
@@ -81,29 +81,29 @@ block content
                     h2.black-text Node.js
                 .col-xs-12.col-sm-12.col-md-3
                     .landing-skill-icon.custom-landing-skill-icon
-                        img(src='https://s3.amazonaws.com/freecodecamp/react.svg')
+                        img(src='/images/react.svg')
                     h2.black-text React.js
                 .col-xs-12.col-sm-12.col-md-3
                     .landing-skill-icon.custom-landing-skill-icon
-                        img(src='https://s3.amazonaws.com/freecodecamp/d3-logo.svg')
+                        img(src='/images/d3-logo.svg')
                     h2.black-text D3.js
         .spacer
         hr
         .spacer
         .col-xs-offset-0.col-sm-offset-1.text-left.large-p
-            h2 Here's why you should join our open source community right now:
+            h2 为什么你应该立刻加入我们的开源编程社区？
             .spacer
             ul.large-li
-                li.ion-code &thinsp; You'll get help in real time from our community chat rooms.
-                li.ion-code &thinsp; You'll meet up with other coders in your city.
-                li.ion-code &thinsp; You'll learn to code at your own pace, in your browser or on your phone.
-                li.ion-code &thinsp; You'll work through our focused, interactive courses and tutorials.
-                li.ion-code &thinsp; You'll learn state-of-the-art full stack JavaScript technologies.
-                li.ion-code &thinsp; You'll build projects that help nonprofits carry out their missions more effectively.
-                li.ion-code &thinsp; You'll assemble a portfolio of real apps used by real people.
+                li.ion-code &thinsp; 通过我们的社区聊天室实时获得帮助；
+                li.ion-code &thinsp; 会遇到和你同一个城市的开发者；
+                li.ion-code &thinsp; 在浏览器甚至是你的手机上学习如何编程；
+                li.ion-code &thinsp; 通过我们集中注意力的互动课程和指南学会编程；
+                li.ion-code &thinsp; 学习最先进的JavaScript全栈技术；
+                li.ion-code &thinsp; 开发项目帮助非盈利组织更便捷地完成它们的使命；
+                li.ion-code &thinsp; 开发大量真实有用的应用程序。
         .big-break
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") Start coding (it's free)
+                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 开始编码(免费的！)
         script.
             challengeName = 'Home'

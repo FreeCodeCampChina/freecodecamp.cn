@@ -8,19 +8,19 @@ block content
         if (!user.isGithubCool)
           a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
               i.fa.fa-github
-              | Link my GitHub to unlock my portfolio
+              | 链接GitHub开启作品集
         .col-xs-12
             a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/settings')
-                | Update your settings
+                | 更新设置
         .spacer
-    h1.text-center #{username}'s code portfolio
+    h1.text-center #{username}的编码作品集
     hr
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.text-center
             if picture
                 img.img-center.img-responsive.public-profile-img(src=picture)
             else
-                img.img-center.img-responsive.public-profile-img(src='https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png')
+                img.img-center.img-responsive.public-profile-img(src='/images/camper-image-placeholder.png')
             h1.text-center.negative-5.profile-social-icons
                 if (twitter)
                     a.fa.fa-twitter-square.text-primary(title="@#{username}'s Twitter Profile", href='https://twitter.com/' + twitter, target='_blank')
@@ -45,13 +45,13 @@ block content
             .row
                 .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
                     if isFrontEndCert
-                        a.btn.btn-primary.btn-block(href='/' + username + '/front-end-certification') View My Front End Development Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/front-end-certification') 查看我的前端开发认证
                     if isDataVisCert
                         .button-spacer
-                        a.btn.btn-primary.btn-block(href='/' + username + '/data-visualization-certification') View My Data Visualization Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/data-visualization-certification') 查看我的数据可视化认证
                     if isBackEndCert
                         .button-spacer
-                        a.btn.btn-primary.btn-block(href='/' + username + '/back-end-certification') View My Back End Development Certification
+                        a.btn.btn-primary.btn-block(href='/' + username + '/back-end-certification') 查看我的后端开发认证
 
     .spacer
     .col-md-12
@@ -97,8 +97,8 @@ block content
         .row
             .hidden-xs.col-sm-12.text-center
                 .row.text-primary
-                    h4.col-sm-6.text-right Longest Streak: #{longestStreak} #{longestStreak === 1 ? ' day' : ' days'}
-                    h4.col-sm-6.text-left Current Streak: #{currentStreak} #{currentStreak === 1 ? ' day' : ' days'}
+                    h4.col-sm-6.text-right 最高频率: #{longestStreak} #{longestStreak === 1 ? ' day' : ' days'}
+                    h4.col-sm-6.text-left  当前频率: #{currentStreak} #{currentStreak === 1 ? ' day' : ' days'}
 
 
           if (user && user.username == username || !isLocked)
@@ -126,10 +126,10 @@ block content
                       table.table.table-striped
                           thead
                               tr
-                                  th.col-xs-5 Algorithms
-                                  th.col-xs-2.hidden-xs Completed
-                                  th.col-xs-2.hidden-xs Last Updated
-                                  th.col-xs-2.hidden-xs Solution
+                                  th.col-xs-5 算法
+                                  th.col-xs-2.hidden-xs 完成
+                                  th.col-xs-2.hidden-xs 最后更新
+                                  th.col-xs-2.hidden-xs 解决方案
                           for challenge in algorithms
                               tr
                                   td.col-xs-5.hidden-xs= removeOldTerms(challenge.name)
@@ -150,10 +150,10 @@ block content
                       table.table.table-striped
                           thead
                               tr
-                                  th.col-xs-5 Challenges
-                                  th.col-xs-2.hidden-xs Completed
-                                  th.col-xs-2.hidden-xs Last Updated
-                                  th.col-xs-2.hidden-xs Solution
+                                  th.col-xs-5 挑战
+                                  th.col-xs-2.hidden-xs 完成
+                                  th.col-xs-2.hidden-xs 最后更新
+                                  th.col-xs-2.hidden-xs 解决方案
                           for challenge in challenges
                               tr
                                   td.col-xs-5.hidden-xs= removeOldTerms(challenge.name)

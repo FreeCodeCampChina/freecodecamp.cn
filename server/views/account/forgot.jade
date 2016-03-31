@@ -2,13 +2,12 @@ extends ../layout
 block content
     .col-sm-6.col-sm-offset-3
       form(method='POST', action="/forgot")
-        h2.text-center Forgot Password Reset
+        h2.text-center 密码重置
         input(type='hidden', name='_csrf', value=_csrf)
         .form-group
-          p.large-p Enter your email address. We'll send you password reset instructions.
-          input.form-control.input-lg(type='email', name='email', id='email', placeholder='Email', autofocus=true required)
+          p.large-p 我们会把密码重置链接发送到你的邮箱里
+          input.form-control.input-lg(type='email', name='email', id='email', placeholder='邮箱', autofocus=true required)
         .form-group
           button.btn.btn-primary.btn-lg.btn-block(type='submit')
             i.fa.fa-key
-            | Reset Password
-
+            | 重置密码

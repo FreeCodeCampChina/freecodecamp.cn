@@ -13,17 +13,17 @@ block content
                     .spacer
                     .challenge-button-block
                         if step[3]
-                            a.btn.btn-block.btn-primary.challenge-step-btn-action.btn-lg(id='#{index}' href='#{step[3]}' target='_blank') Open link in new tab (this unlocks the next step)
+                            a.btn.btn-block.btn-primary.challenge-step-btn-action.btn-lg(id='#{index}' href='#{step[3]}' target='_blank') 在新的标签页打开这个链接(这样可以解锁下一个章节)
                             .button-spacer
                         if index === 0
                             .col-sm-4.hidden-xs &nbsp;
                         else
-                            .btn.btn-primary.btn-primary-ghost.col-sm-4.col-xs-12.challenge-step-btn-prev.btn-lg(id='#{index - 1}') Go to my previous step
+                            .btn.btn-primary.btn-primary-ghost.col-sm-4.col-xs-12.challenge-step-btn-prev.btn-lg(id='#{index - 1}') 后退
                         .challenge-step-counter.large-p.col-sm-4.col-xs-12.text-center (#{index + 1} / #{description.length})
                         if index + 1 === description.length
-                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-finish.btn-lg(id='last' class=step[3] && !isCompleted ? 'disabled' : '') Finish challenge
+                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-finish.btn-lg(id='last' class=step[3] && !isCompleted ? 'disabled' : '') 完成挑战
                         else
-                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-next.btn-lg(id='#{index}' class=step[3] && !isCompleted ? 'disabled' : '') Go to my next step
+                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-next.btn-lg(id='#{index}' class=step[3] && !isCompleted ? 'disabled' : '') 前进
                     .clearfix
     .spacer
     #challenge-step-modal.modal(tabindex='-1')
@@ -39,9 +39,9 @@ block content
                       .spacer
                       .row
                       if (user)
-                          #challenge-step-btn-submit.animated.fadeIn.btn.btn-lg.btn-primary.btn-block Submit and go to my next challenge
+                          #challenge-step-btn-submit.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 提交代码完成挑战
                       else
-                          a.btn.btn-lg.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) Go to my next challenge
+                          a.btn.btn-lg.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) 前进
     script.
       var common = window.common || { init: [] };
 

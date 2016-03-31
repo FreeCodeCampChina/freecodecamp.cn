@@ -1,55 +1,48 @@
 extends ../layout
 block content
-        h1.text-center Settings for your Account
+        h1.text-center 账户设置
         hr
-        h2.text-center Actions
         .row
           .col-xs-12
               if (!user.isGithubCool)
                   a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
                       i.fa.fa-github
-                      | Link my GitHub to unlock my portfolio
+                      | 链接我的github账户以解锁作品集
               else
                   a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
                       i.fa.fa-github
-                      | Update my portfolio from GitHub
+                      | 更新GitHub中的作品集
                   if (!user.twitter)
                       a.btn.btn-lg.btn-block.btn-twitter.btn-link-social(href='/link/twitter')
                           i.fa.fa-twitter
-                          | Add my Twitter to my portfolio
+                          | 添加Twitter到我的作品
                   if (!user.facebook)
                       a.btn.btn-lg.btn-block.btn-facebook.btn-link-social(href='/link/facebook')
                           i.fa.fa-facebook
-                          | Add my Facebook to my portfolio
+                          | 添加Facebook到我的作品
                   if (!user.linkedin)
                       a.btn.btn-lg.btn-block.btn-linkedin.btn-link-social(href='/link/linkedin')
                           i.fa.fa-linkedin
-                          | Add my LinkedIn to my portfolio
+                          | 添加LinkedIn到我的作品
                   if (!user.google)
                       a.btn.btn-lg.btn-block.btn-google-plus.btn-link-social(href='/link/google')
                           i.fa.fa-google-plus
-                          | Add my Google+ to my portfolio
+                          | 添加Google+到我的作品
           .col-xs-12
               a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/logout')
-                  | Sign me out of Free Code Camp
+                  | 退出账户
           .col-xs-12
-              a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='mailto:team@freecodecamp.com')
-                  | Email us at team@freecodecamp.com
+              a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='mailto:huluoyang@gmail.com')
+                  | 联系我们：huluoyang@gmail.com
         .spacer
-        h2.text-center Account Settings
-        .row
-          .col-xs-12
-            a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/commit')
-                | Edit my pledge
-        .spacer
-        h2.text-center Privacy Settings  
+        h2.text-center 隐私设置
         .row
           .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
             .row
               .col-xs-9
-                p.large-p Make all of my solutions private 
+                p.large-p 天空不留下鸟的痕迹，但我已飞过。
                   br
-                  | (this disables your certificates)
+                  | (开启隐私模式是拿不到证书的哦！)
               if (user.isLocked)
                 .col-xs-3
                   a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-lockdown-mode') On
@@ -58,14 +51,14 @@ block content
                   a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-lockdown-mode') Off
 
         .spacer
-        h2.text-center Email settings
+        h2.text-center 邮箱设置
         .row
           .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
             .row
               .col-xs-9
-                p.large-p Send me announcement emails
+                p.large-p 订阅公告
                   br
-                  | (we'll send you these every Thursday)
+                  | (发布公告)
               if (user.sendMonthlyEmail)
                 .col-xs-3
                   a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-announcement-email-mode') On
@@ -75,9 +68,9 @@ block content
 
             .row
               .col-xs-9
-                p.large-p Send me notification emails
+                p.large-p 订阅通知
                   br
-                  | (these will pertain to your account)
+                  | (发布通知)
               if (user.sendNotificationEmail)
                 .col-xs-3
                   a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-notification-email-mode') On
@@ -87,9 +80,9 @@ block content
 
             .row
               .col-xs-9
-                p.large-p Send me Quincy's weekly email
+                p.large-p 订阅周刊
                   br
-                  | (with new articles every Tuesday)
+                  | (发布周刊)
               if (user.sendQuincyEmail)
                 .col-xs-3
                   a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-quincy-email-mode') On
@@ -98,11 +91,11 @@ block content
                   a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-quincy-email-mode') Off
 
         .spacer
-        h2.text-center Danger Zone
+        h2.text-center 危险操作
         .row
           .col-xs-12
               a.btn.btn-lg.btn-block.btn-danger.btn-link-social.confirm-deletion
-                  | Delete my Free Code Camp account
+                  | 删除我的账户
               script.
                   $('.confirm-deletion').on("click", function () {
                       $('#modal-dialog').modal('show');

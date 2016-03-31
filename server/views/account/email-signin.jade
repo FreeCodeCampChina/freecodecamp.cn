@@ -2,17 +2,17 @@ extends ../layout
 block content
     .row
         .col-xs-12
-            h2.text-center Sign in with an email address here:
+            h2.text-center 账户登录:
             .col-sm-6.col-sm-offset-3
                 form(method='POST', action='/api/users/login')
                     input(type='hidden', name='_csrf', value=_csrf)
                     .form-group
-                        input.input-lg.form-control(type='email', name='email', id='email', placeholder='Email', autofocus=true)
+                        input.input-lg.form-control(type='email', name='email', id='email', placeholder='邮箱', autofocus=true)
                     .form-group
-                        input.input-lg.form-control(type='password', name='password', id='password', placeholder='Password')
+                        input.input-lg.form-control(type='password', name='password', id='password', placeholder='密码')
                     button.btn.btn-primary.btn-lg.btn-block(type='submit')
                         span.ion-android-hand
-                        | Login
+                        | 登录
                     .button-spacer
                     .button-spacer
-                a.btn.btn-info.btn-lg.btn-block(href='/forgot') Forgot your password?
+                a.btn.btn-info.btn-lg.btn-block(href='/forgot') 忘记密码?
