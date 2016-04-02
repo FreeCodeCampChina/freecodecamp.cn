@@ -1,4 +1,4 @@
-为了让更多对freecodecamp中文社区感兴趣的人参与进来，现正式启动翻译计划。
+翻译计划：为了让更多对freecodecamp中文社区感兴趣的人参与进来。
 
 翻译目的：降低学习门槛，采用中英文同步学习，过程更流畅。
 
@@ -20,10 +20,12 @@
 
 ## 课程翻译：
 打开https://github.com/huluoyang/freecodecamp.cn/tree/dev/seed/challenges
+
 更改对应的.json文件即可。
 
 ## 提交方式：
 1、fork此项目，本地更改后pullrequest。
+
 2、直接翻译，翻译好后邮箱给我(huluoyang@gmail.com)。
 
 wish you best!
