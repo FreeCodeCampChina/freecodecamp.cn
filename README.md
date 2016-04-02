@@ -1,5 +1,5 @@
 ## freecodecamp.cn
-欢迎来到freecodecamp中文社区(http://freecodecamp.jsos.org:3000)
+欢迎来到freecodecamp中文社区(http://freecodecamp.jios.org:3000)
 
 后期会部署到freecodecamp.cn。
 
