@@ -1,5 +1,7 @@
 ## freecodecamp.cn
-欢迎来到freecodecamp中文社区(http://freecodecamp.jsos.org:3000)，后期会部署到freecodecamp.cn。
+欢迎来到freecodecamp中文社区(http://freecodecamp.jsos.org:3000)
+
+后期会部署到freecodecamp.cn。
 
 ## freecodecamp是什么？
 freecodecamp是一个自由的开源编程社区，它致力于抹平教育差距，
