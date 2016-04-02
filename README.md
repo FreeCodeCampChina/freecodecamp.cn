@@ -71,7 +71,7 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
  2、根据我发出来的课程章节，翻译好后邮件给我(huluoyang@gmail.com)。
 
- 翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/tranlate.md
+ 翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/translate.md
 
  无论哪种方式，只要您参与进来，在项目文档中都会署上您的大名，借此表示对您的感谢。
 
