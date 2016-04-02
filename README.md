@@ -1,5 +1,5 @@
 ## freecodecamp.cn
-欢迎来到freecodecamp中文社区
+欢迎来到freecodecamp中文社区(http://freecodecamp.jsos.org:3000)，后期会部署到freecodecamp.cn。
 
 ## freecodecamp是什么？
 freecodecamp是一个自由的开源编程社区，它致力于抹平教育差距，
@@ -7,7 +7,9 @@ freecodecamp是一个自由的开源编程社区，它致力于抹平教育差�
 让普通人也能享受到高等学校或培训机构才可能享受到的优质教育。
 
 ## freecodecamp与codecademy/treehouse有什么区别？
-codecademy早于freecodecamp创立，是一个非常优质的web编程社区，感兴趣的可以观看我的学习记录：https://www.codecademy.com/finalfantansy
+codecademy早于freecodecamp创立，是一个非常优质的web编程社区。
+
+感兴趣的可以观看我的学习记录：https://www.codecademy.com/finalfantansy
 
 感谢(fuck)伟大的防火墙，造成很多资源在国内无法访问，即使你已通过国内VPN翻墙，速度依然缓慢。
 
@@ -52,25 +54,25 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
 我只希望由于freecodecamp中文社区和国内优质社区的存在，让这些受伤害的年轻人能少一点。
 
-# freecodecamp.cn进度安排
- 0、原样上线
- 
- 1、资源汉化
- 
- 2、课程汉化
- 
- 3、课程定制
- 
- 目前第0步在近期就会完成，我会第一时间更新进度的。
- 
- 课程汉化需要花费大量精力，为了避免重复翻译，我会划分出已翻译、翻译中、未翻译。
- 
+## freecodecamp中文社区进度安排
+ 0、原样上线  （已完成）
+
+ 1、解决某些资源国内无法访问问题 （部分完成）
+
+ 2、网站汉化  （进行中）
+
+ 2、课程汉化  （刚启动）
+
+ 3、课程定制  （未进行）
+
  参与方式有两种：
- 
+
  1、fork此项目，找到课程章节，翻译好后pullrequest；
- 
+
  2、根据我发出来的课程章节，翻译好后邮件给我(huluoyang@gmail.com)。
 
+ 翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/tranlate.md
+
  无论哪种方式，只要您参与进来，在项目文档中都会署上您的大名，借此表示对您的感谢。
- 
+
  最后感谢优才网CEO伍星和走之网的邹治，以及freecodecamp开源项目的贡献者，是你们让这一切成为了可能！
