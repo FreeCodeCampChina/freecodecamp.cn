@@ -99,49 +99,49 @@
         [
           "//i.imgur.com/n6GeSEm.gif",
           "A gif showing you to click the link below to go to GitHub. Fill in the necessary fields and click submit. Then check your email inbox for an email from GitHub so you can verify your account.",
-          "点击下面的在新标签栏打开按钮可以打开GitHub网站，通过填写下面的表格可以创建一个GitHub账户。确保你的邮箱是真实的，然后点击检查你的邮箱。打开你的邮箱后，找到最新的邮件，点击验证邮箱地址即可。 <br><div class=\"small\">提示：如果你已经有GitHub账户，你可以把新打开的页面关闭掉，然后点击前进。我们移除了跳过按钮，因为很多人仅仅是重复点击，而没有做这些重要的步骤。</div>",
+          "点击下方的按钮可以打开GitHub网站，通过填写表格可以创建一个GitHub账户。确保你的邮箱是真实的，然后点击检查你的邮箱。打开你的邮箱后，找到最新的邮件，点击验证邮箱地址即可。 <br><div class=\"small\">提示：如果你已经有GitHub账户，你可以把新打开的页面关闭掉，然后点击前进。我们移除了跳过按钮，因为很多人仅仅是重复点击，而没有做这些重要的步骤。</div>",
           "https://github.com/join"
         ],
         [
           "//i.imgur.com/hFqAEr8.gif",
           "A gif showing you how to click the profile image in the upper right hand corner of GitHub. Upload a photo of yourself or you will continue to use the automatically generated pixel art. Then fill in the remaining form fields and click submit.",
-          "Click the pixel art in the upper right hand corner of GitHub, then choose settings. Upload a picture of yourself. A picture of your face works best. This is how your fellow campers will see you in our chat rooms, so look your best. You can add your city and your name if you want.",
+          "点击GitHub右上角的像素艺术头像，然后选择设置。上传一张你自己的图片，最好是你的最帅的图片，以便其他营员在聊天室一眼就认出你来，为了让更多人了解你，你还可以添加你所在的城市和你的姓名。",
           "https://github.com/settings/profile"
         ],
         [
           "//i.imgur.com/pYk0wOk.gif",
           "A gif showing how you can star a GitHub repo.",
-          "Open Free Code Camp's open-source repository. This is where our volunteer team collaborates on building Free Code Camp. You can \"star\" our repository. \"Starring\" is the GitHub equivalent of \"liking\" something.",
-          "https://github.com/freecodecamp/freecodecamp"
+          "打开FreeCodeCamp的开源仓库，这里是我们的志愿者一起协作搭建FreeCodeCamp的地方。你可以\"star\"我们的仓库，\"star\"在GitHub的意思就是收藏。",
+          "https://github.com/huluoyang/freecodecamp.cn"
         ],
         [
           "//i.imgur.com/OmRmLB4.gif",
           "A gif showing you how to click the link below to go to our chat room and click the \"sign in with GitHub\" button. Then you can click into the text input field and type a message to your fellow campers.",
-          "Now that you have a GitHub account, you can join our main chat room by logging in with GitHub. Introduce yourself by saying \"Hello world!\" Tell your fellow campers how you found Free Code Camp. Also tell us why you want to learn to code.",
+          "现在你已经有GitHub账户了，你可以加入通过登录GitHub来加入我们的聊天室。通过\"Hello World\"的方式向大家介绍你自己，你是如何发现FreeCodeCamp的，你为什么想要去学编程。",
           "https://gitter.im/FreeCodeCamp/FreeCodeCamp"
         ],
         [
           "//i.imgur.com/Ecs5XAd.gif",
           "A gif showing you how you can click the settings button in the upper right hand corner and modify your notification settings.",
-          "Our chat rooms are extremely active. You should change your settings so you're only notified if someone mentions you.",
+          "我们的聊天室非常活跃，你可以更改你的设置，这样只会在有人@你时才会提醒你。",
           ""
         ],
         [
           "//i.imgur.com/T0bGJPe.gif",
           "A gif showing how you can click on a user profile image to initiate a private message with that user.",
-          "Please note that all of our chat rooms are visible to the public. If you need to share sensitive information, such as an email address or phone number, do it in a private message.",
+          "请记住所有的聊天室都是公开的，所以请你不要分享一些敏感信息，例如邮箱地址、手机号、QQ号，如果你想分享自己的个人信息给他人，请开小窗。",
           ""
         ],
         [
           "//i.imgur.com/vDTMJSh.gif",
           "A gif showing that you can tab back and forth between challenges and our chat rooms.",
-          "Keep our chat room open while you work through our challenges. That way, you can ask for help if you get stuck. You can also socialize with other campers when you feel like taking a break.",
+          "在你通过我们的挑战的过程中，请保持聊天室常开。这样当你迷惑了可以及时询问获得帮助，还可以在休息时和其他营员聊聊天。",
           ""
         ],
         [
           "//i.imgur.com/WvQvNGN.gif",
           "A gif showing how you can click the link below to download a native chat room app for your computer.",
-          "You can also download the chat room app to your computer or phone.",
+          "你还可以在电脑或者手机下载这个聊天室APP",
           "https://gitter.im/apps"
         ]
       ],
@@ -157,7 +157,7 @@
         [
           "//i.imgur.com/tP2ccTE.gif",
           "A gif showing how you can click your profile image in your upper right hand corner to your code portfolio and connect GitHub.",
-          "Check out your code portfolio. Click your picture in your upper right hand corner. To activate your code portfolio, you'll need to link your GitHub account with Free Code Camp. Your code portfolio shows your progress and how many Brownie Points you have. You can get Brownie Points by completing challenges and by helping other campers in our chat rooms. If you get Brownie Points on several days in a row, you'll get a streak.",
+          "点击右上角的头像，切换到代码记录区。你可以通过链接GitHub账户来同步你的代码提交。你的代码记录显示了你的学习进度和获得了多少奖励积分。当你完成了挑战或者在聊天室帮助同学解答问题时，你会获得奖励积分。如果你连续一周都获得了积分，你会获得一条彩带。",
           ""
         ]
       ],
@@ -173,13 +173,13 @@
         [
           "//i.imgur.com/XugIMb4.jpg",
           "A picture of some of our campers meeting in a local cafe.",
-          "Our Campsites are Facebook groups that help you meet other campers in your city. You can use these groups to plan and attend casual \"coffee-and-code\" events, where you meet other campers at a café and code together.",
+          "我们的营地是Facebook群组，它可以帮助你遇到和你同一个城市的营员。你可以用这些群组去计划或者参加“咖啡代码”活动，在那里你会遇到更多的营员，他们经常一边喝开发，一边写代码。",
           ""
         ],
         [
           "//i.imgur.com/fTFMjwf.gif",
           "A gif showing how you can click the link below, find your city on the list of Campsites, then click on the Facebook link for your city and join your city's Facebook group.",
-          "Find your city on this list and click it. This will take you to your city's Campsite's Facebook group. Click the \"Join group\" button to apply to join your city's Facebook group. Someone from the campsite should approve you shortly. If your city isn't on this list, scroll to the bottom of the wiki article for instructions for how you can create your city's Campsite.",
+          "在这个列表找到你的城市，然后点击它，这样就这些跳转到你所在城市的Facebook群组，点击\"Join group\"按钮申请加入，很快就有人批准你通过。如果你的城市不在这个列表，滑到页面的最下面，按照Wiki的提示来创建自己城市的营地。",
           "https://github.com/FreeCodeCamp/freecodecamp/wiki/List-of-Free-Code-Camp-city-based-Campsites"
         ]
       ],
@@ -195,43 +195,43 @@
         [
           "//i.imgur.com/lzKvwU2.jpg",
           "The text \"Coding is hard.\"",
-          "Coding is hard. You will get stuck. Even experienced coders get stuck. The key is knowing how to get unstuck.",
+          "编程是个困难的事情，你总会遇到困惑。即使是有经验的高手也会困惑，关键点是他们懂得如何去除困惑。",
           ""
         ],
         [
           "//i.imgur.com/sfsidp6.jpg",
           "The text \"It takes time to get good at coding.\"",
-          "It takes time to get good at coding. You wouldn't expect to beat a chess master after playing for 3 months. Don't expect to build the next Facebook after coding for 3 months.",
+          "要想成为编程高手需要花费大量的时间，你不可能仅仅学习三个月就打败象棋大师，更不要期望学习编程三个月就可以构建下一个Facebook。",
           ""
         ],
         [
           "//i.imgur.com/EoTfOyC.jpg",
           "An image of some of our campers coding together in Montreal.",
-          "Keep practicing coding every day and hanging out with other people who code, and you will become a job-ready coder.",
+          "每天坚持练习编码，和其他写代码的人一起交流，你将会成为一个准程序猿。",
           ""
         ],
         [
           "//i.imgur.com/EWWZBag.jpg",
           "An image with the text \"1. Read the error 2. Search Google 3. Ask for help.",
-          "Any time you get stuck or don't know what to do next: Read-Search-Ask.",
+          "当你遇到困惑不知道该怎么办，永远记住:Read-Search-Ask。",
           ""
         ],
         [
           "//i.imgur.com/99BfAcK.jpg",
           "An image showing jQuery documentation",
-          "First, read the documentation or error message. A key skill that good coders have is the ability to interpret and then follow instructions.",
+          "首先，查阅文档或错误信息，优秀程序猿的一个关键技能就是能够理解并模仿。",
           ""
         ],
         [
           "//i.imgur.com/GxvrsFb.gif",
           "A gif showing you how to do an advanced Google search. First, we enter the query \"jquery doesn't run when my page loads\". Then we click search tools button and change the \"Any time\" select box to \"within the last year\". Then we click on a result and read through the article and find our answer.",
-          "If that didn't help, search Google. Good Google queries take a lot of practice. When you search Google, you usually want to include the language or framework you're using. You also want to limit the results to a recent period.",
+          "如果那不起作用，试试谷歌搜索。当你用谷歌搜索时，记得输入你正在用的语言或框架，你还可以限制返回结果的日期。",
           ""
         ],
         [
           "//i.imgur.com/LZYU7p2.gif",
           "A gif showing us following the link below to go to the help chat room and ask \"jquery doesn't run when my page loads\".",
-          "If that didn't help, ask your friends. If you have trouble, you can ask your fellow campers in our help chat room.",
+          "如果还不起作用，可以问问你的朋友。如果你身边没有朋友，你可以在我们的聊天室问我们的营员。",
           "https://gitter.im/FreeCodeCamp/Help"
         ],
         [

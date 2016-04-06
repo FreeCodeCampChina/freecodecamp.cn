@@ -8,10 +8,11 @@ var instances = process.env.INSTANCES || 1;
 var serverName = process.env.SERVER_NAME || 'server';
 var maxMemory = process.env.MAX_MEMORY || '390M';
 var transportOptions = {
-  service: 'Gmail',
+  type: 'smtp',
+  service: 'Mandrill',
   auth: {
-    user: 'huluoyang@gmail.com',
-    pass: 'nopainnogain'
+    user: process.env.MANDRILL_USER || false,
+    pass: process.env.MANDRILL_PASSWORD
   }
 };
 
