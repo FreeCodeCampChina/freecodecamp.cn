@@ -1,7 +1,7 @@
 extends layout
 block content
     .text-center
-        h1.landing-heading learn by doing
+        h1.landing-heading Learning-by-doing
         .spacer
         .row
             .big-break
@@ -9,46 +9,75 @@ block content
             .big-break
             .col-xs-12.col-sm-12.col-md-3
                 img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_connect.svg', alt='Get great references and connections to start your software engineer career')
-                p 你从来不是一个人在战斗
+                .button-spacer
+                span 自学编程是一场充满艰难的旅行
+                br
+                span 因此一路上我们会给你加油打气
             .col-xs-12.col-sm-12.col-md-3
                 img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_learn.svg', alt='Learn to code and learn full stack JavaScript')
-                p 无尽的任务等你来挑战
-            .col-xs-12.col-sm-12.col-md-3
-                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_portfolio.svg', alt='Build a portfolio of apps for nonprofits')
-                p 前端后端数据库通通拿下
+                .button-spacer
+                span 无尽的任务等你来挑战
+                br
+                span 像打魔兽一样学习编程
             .col-xs-12.col-sm-12.col-md-3
                 img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_nonprofits.svg', alt='Empower nonprofits with code')
-                p 社区积极反馈助你度过难关。
+                .button-spacer
+                span 遇到问题先搜索再求助
+                br
+                span 社区积极助你度过难关
+            .col-xs-12.col-sm-12.col-md-3
+                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_portfolio.svg', alt='Build a portfolio of apps for nonprofits')
+                .button-spacer
+                span 一步步构建自己的作品集
+                br
+                span 让你面试时有充分的信心
         .big-break
         .big-break
         .big-break
         .big-break
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 开始代码之旅 (免费的)
+                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 准备好了，GO!
                 .button-spacer
-                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") 需要编码帮助的非盈利组织
-        .spacer
-        h2 应用于:
-        img.img-center.img-responsive(src='/images/as-seen-on.png')
-        .spacer
+                <!-- a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") 需要编码帮助的非盈利组织 -->
         hr
         .spacer
-        h2 启动你的软件工程师职业生涯:
+        h2 开启新的职业生涯
         .spacer
         .row
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/nsvNixW.jpg", alt="Meta's testimonial image")
-                p.testimonial-copy 通过freecodecamp，我为一个非盈利组织开发了一个稳定而且功能强悍的web应用程序，这让我获得了一份不可思议的工作。
-                h3 - Meta Hirschl
+                .button-spacer
+                span 我是一个家庭妇女
+                br
+                span 通过FreeCodeCamp
+                br
+                span 我设计了很多简洁优雅的界面
+                br
+                span 这让我获得了一份网页设计师的工作
+                h4 -- Meta Hirschl
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/QPpjPac.jpg", alt="Brian's testimonial image")
-                p.testimonial-copy freecodecamp非常适合像我这样的退伍伤残老兵接受再培训，我甚至还没完成学业就获得了一份工程师offer。
-                h3 - Brian Grant
+                .button-spacer
+                span 我是一个退伍伤残老兵
+                br
+                span 通过FreeCodeCamp
+                br
+                span 我制作了很多复杂交互的UI
+                br
+                span 这让我获得了一份Web前端工程师的工作
+                h4 --Brian Grant
             .col-xs-12.col-sm-12.col-md-4
                 img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/wjlDigg.jpg", alt="Maxim Orlov's testimonial image")
-                p.testimonial-copy 我通过freecodecamp开始编码的时候，对web开发一无所知。六个月后，我获得了我的第一份后端工程师工作。
-                h3 - Maxim Orlov
+                .button-spacer
+                span 我是一个大叔
+                br
+                span 通过FreeCodeCamp
+                br
+                span 我开发了很多功能复杂而且稳定的API
+                br
+                span 这让我获得了一份Web后端工程师工作
+                h4 -- Maxim Orlov
         .spacer
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
@@ -72,7 +101,7 @@ block content
                     h2.black-text JavaScript
                 .col-xs-12.col-sm-12.col-md-3
                     .landing-skill-icon.fa.fa-database.font-awesome-padding
-                    h2.black-text Databases
+                    h2.black-text Database
                 .col-xs-12.col-sm-12.col-md-3
                     .landing-skill-icon.ion-social-github
                     h2.black-text Git & GitHub
@@ -91,19 +120,20 @@ block content
         hr
         .spacer
         .col-xs-offset-0.col-sm-offset-1.text-left.large-p
-            h2 为什么你应该立刻加入我们的开源编程社区？
+            h2 编程学习指南
             .spacer
-            ul.large-li
-                li.ion-code &thinsp; 通过我们的社区聊天室实时获得帮助；
-                li.ion-code &thinsp; 会遇到和你同一个城市的开发者；
-                li.ion-code &thinsp; 在浏览器甚至是你的手机上学习如何编程；
-                li.ion-code &thinsp; 通过我们集中注意力的互动课程和指南学会编程；
-                li.ion-code &thinsp; 学习最先进的JavaScript全栈技术；
-                li.ion-code &thinsp; 开发项目帮助非盈利组织更便捷地完成它们的使命；
-                li.ion-code &thinsp; 开发大量真实有用的应用程序。
+            ol.large-li
+                li 计算机博大精深，发展方向众多，随便拎一个就够你学一辈子的了；
+                li 编程语言众多，选择一门最容易入门的语言即可，JS就很适合；
+                li 学习方式有很多，看书、看视频、做练习、写代码、做项目等，最好是综合起来；
+                li learning by doing 实践是学习编程的重中之重；
+                li 在掌握最小知识点后，就应该立刻开始实践，在实践中发现更多知识点；
+                li 遇到困难先搜索，再通过社区聊天室求助，兴许遇见志同道合的好基友；
+                li 注册一个GitHub账户，它会成为你的作品最好的展示地方；
+                li 找一个安静的环境，把手机静音，集中注意力开始我们的互动课程吧。
         .big-break
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 开始编码(免费的！)
+                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 准备好了，GO!
         script.
             challengeName = 'Home'

@@ -8,11 +8,10 @@ var instances = process.env.INSTANCES || 1;
 var serverName = process.env.SERVER_NAME || 'server';
 var maxMemory = process.env.MAX_MEMORY || '390M';
 var transportOptions = {
-  type: 'smtp',
-  service: 'Mandrill',
+  service: 'Gmail',
   auth: {
-    user: process.env.MANDRILL_USER || false,
-    pass: process.env.MANDRILL_PASSWORD
+    user: 'huluoyang@gmail.com',
+    pass: 'nopainnogain'
   }
 };
 
@@ -72,7 +71,9 @@ if (transportOptions.auth.user && mailReceiver) {
 
       transporter.sendMail({
         to: mailReceiver,
-        from: 'team@freecodecamp.com',
+        // from: 'team@freecodecamp.com',
+        // subject: 'Server exception',
+        from: 'huluoyang@gmail.com',
         subject: 'Server exception',
         text: compiled({ name: name, text: text, stack: stack })
       });

@@ -7,9 +7,9 @@ block content
                 form(method='POST', action='/api/users/login')
                     input(type='hidden', name='_csrf', value=_csrf)
                     .form-group
-                        input.input-lg.form-control(type='email', name='email', id='email', placeholder='邮箱', autofocus=true)
+                        input.input-lg.form-control(type='email', name='email', id='email', placeholder='邮箱', autofocus=true, autocomplete=false)
                     .form-group
-                        input.input-lg.form-control(type='password', name='password', id='password', placeholder='密码')
+                        input.input-lg.form-control(type='password', name='password', id='password', placeholder='密码', autocomplete=false)
                     button.btn.btn-primary.btn-lg.btn-block(type='submit')
                         span.ion-android-hand
                         | 登录

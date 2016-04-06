@@ -11,73 +11,73 @@
         [
           "//i.imgur.com/6ibIavQ.jpg",
           "A picture of Free Code Camp's 4 benefits: Get connected, Learn JavaScript, Build your Portfolio, Help nonprofits",
-          "Welcome to Free Code Camp. We're an open source community of busy people who learn to code and help nonprofits.",
+          "欢迎来到Free Code Camp，我们是帮助你学习编程的开源社区。",
           ""
         ],
         [
           "//i.imgur.com/Elb3dfj.jpg",
           "A screenshot of some of our campers coding together in Toronto.",
-          "<bold>Learning to code is hard.</bold> To succeed, you'll need lots of practice and support. That's why we've created a rigorous curriculum and supportive community.",
+          "学习编码是很难的。要想取得成功，就需要大量的实践和支持。这就是为什么我们创建了一个严格的课程和支持团体。",
           ""
         ],
         [
           "//i.imgur.com/D7Y5luw.jpg",
           "A graph of the rate of job growth against growth in computer science degree graduates. There are 1.4 million jobs and only 400 thousand people to fill them.",
-          "There are thousands of coding jobs currently going unfilled, and the demand for coders grows every year.",
+          "每年都有成千上万的编码工作空缺着，对程序员的需求每年持续增长。",
           ""
         ],
         [
           "//i.imgur.com/WD3STY6.jpg",
           "Photos of three campers who've gotten jobs after learning to code at Free Code Camp.",
-          "Free Code Camp is a proven path to your first coding job. In fact, no one has actually completed our entire program, because campers get jobs before they're able to.",
+          "Free Code Camp是开启你的程序员生涯的有效途径。事实上，没有人完成了整个课程，因为营员在毕业前一般都能找到工作。",
           ""
         ],
         [
           "//i.imgur.com/vLNso6h.jpg",
           "An illustration showing that you will learn HTML5, CSS3, JavaScript, Databases, Git, Node.js, React and D3.",
-          "We have hundreds of optional coding challenges that will teach you fundamental web development technologies like HTML5, Node.js and databases.",
+          "我们会通过几百个编码挑战来让你逐渐掌握这些Web开发技术。",
           ""
         ],
         [
           "//i.imgur.com/UVB9hxp.jpg",
           "An image of a camper at a cafe building projects on Free Code Camp.",
-          "We believe humans learn best by doing. So you'll spend most of your time actually building projects. We'll give you a list of specifications (agile user stories), and you'll figure out how to build apps that fulfill those specifications.",
+          "我们相信人类学习的最好方式就是实践，你会花费大量的时间来做项目。",
           ""
         ],
         [
           "//i.imgur.com/pbW7K5S.jpg",
           "An image of showing our front end, back end, and data visualization certifications (400 hours each), our nonprofit projects (800 hours), and interview prep (80 hours) for a total of 2,080 hours of coding experience.",
-          "Our curriculum is divided into 4 certifications. These certifications are standardized, and instantly verifiable by your freelance clients and future employers. Like everything else at Free Code Camp, these certifications are free. We recommend doing them in order, but you are free to jump around. The first three certifications take 400 hours each, and the final certification takes 800 hours, and involves building real-life projects for nonprofits.",
+          "全部通过我们的课程挑战可以获得四个证书，这些证书非常受到企业雇主的认可。前三个证书每个大约花费400个小时，最后一个证书将花费800个小时，我们推荐你按照顺序完成他们，但是你也可以自己跳跃。",
           ""
         ],
         [
           "//i.imgur.com/k8btNUB.jpg",
           "A screenshot of our Front End Development Certificate",
-          "To earn our verified Front End Development Certification, you'll build 10 projects using HTML, CSS, jQuery, and JavaScript.",
+          "如果你用HTML+CSS+jQuery+JavaScript完成了10个项目，你就可以获得我们的前端开发证书。",
           ""
         ],
         [
           "//i.imgur.com/Et3iD74.jpg",
           "A screenshot of our Data Visualization Certificate",
-          "To earn our Data Visualization Certification, you'll build 10 projects using React, Sass and D3.js.",
+          "如果你用React+Sass+D3.js完成了10个项目，你就可以获得我们的数据可视化证书。",
           ""
         ],
         [
           "//i.imgur.com/8v3t84p.jpg",
           "A screenshot of our Back End Development Certificate",
-          "To earn our Back End Development Certification, you'll build 10 projects using Node.js, Express, and MongoDB. You'll use Git and Heroku to deploy them to the cloud.",
+          "如果你用Node.js,+Express+MongoDB完成了10个项目，你就可以获得我们的后端开发证书，你还可以通过Git和Heroku把项目部署到云上，让所有人都可以访问。",
           ""
         ],
         [
           "//i.imgur.com/yXyxbDd.jpg",
           "A screen shot of our nonprofit project directory.",
-          "After you complete all three of these certificates, you'll team up with another camper and use agile software development methodologies to build two real-life projects for nonprofits. You'll also add functionality to two legacy code nonprofit projects. By the time you finish, you'll have a portfolio of real apps that people use every day.",
+          "当你完成了获得了前面三个证书后，你就可以和你的营员一起组队运用敏捷软件开发技术构建两个真实项目，同时你被要求给两个陈旧的项目添加功能。当你完成这些后，你就拥有了一个作品集，里面包含人们每天都在使用作品。",
           ""
         ],
         [
           "//i.imgur.com/PDGQ9ZM.jpg",
           "An image of campers building projects together in a cafe in Seoul.",
-          "If you complete all 2,080 hours worth of challenges and projects, you'll earn our Full Stack Development Certification. We'll offer you free coding interview practice. We even offer a job board where employers specifically hire campers who've earned Free Code Camp certifications.",
+          "如果你完成了2080个小时的挑战和项目，你会获得我们的全栈开发证书。我们给你提供了免费的代码面试练习和工作机会信息，满足你面试和找工作的需求。",
           ""
         ]
       ],
@@ -93,13 +93,13 @@
         [
           "//i.imgur.com/EAR7Lvh.jpg",
           "A screenshot of our one of our Gitter chat rooms.",
-          "Before we start coding, let's join Free Code Camp's chat rooms. You can come here any time of day to hang out, ask questions, or find another camper to pair program with. First you'll need a GitHub account.",
+          "在我们开始编码前，让我们先加入FreeCodeCamp聊天室，你可以在这里闲逛、提问或者寻找营友一起结对编程，当然首先你得有一个GitHub账户。",
           ""
         ],
         [
           "//i.imgur.com/n6GeSEm.gif",
           "A gif showing you to click the link below to go to GitHub. Fill in the necessary fields and click submit. Then check your email inbox for an email from GitHub so you can verify your account.",
-          "Click the \"Open link in new tab\" button below to open up GitHub. Create a GitHub account by filling in the form. Be sure to use your real email address - GitHub will keep this private. Then check your email inbox for an email from GitHub. Open it and click the \"verify email address\" button inside it. <br><div class=\"small\">Note: If you already have a GitHub account, you can skip this step by clicking \"Open link in new tab\", closing the new tab that opens, then clicking \"go to my next step\". We removed our \"skip step\" button because many people would just click it repeatedly without doing these important steps.</div>",
+          "点击下面的在新标签栏打开按钮可以打开GitHub网站，通过填写下面的表格可以创建一个GitHub账户。确保你的邮箱是真实的，然后点击检查你的邮箱。打开你的邮箱后，找到最新的邮件，点击验证邮箱地址即可。 <br><div class=\"small\">提示：如果你已经有GitHub账户，你可以把新打开的页面关闭掉，然后点击前进。我们移除了跳过按钮，因为很多人仅仅是重复点击，而没有做这些重要的步骤。</div>",
           "https://github.com/join"
         ],
         [

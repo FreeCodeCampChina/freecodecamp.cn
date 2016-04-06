@@ -80,7 +80,7 @@ module.exports = function(User) {
   User.afterRemote('confirm', function(ctx) {
     ctx.req.flash('success', {
       msg: [
-        'You\'re email has been confirmed!'
+        '您的邮箱已经确认！'
       ]
     });
     ctx.res.redirect('/email-signin');
@@ -99,8 +99,7 @@ module.exports = function(User) {
 
         req.flash('error', {
           msg: dedent`
-      The ${req.body.email} email address is already associated with an account.
-      Try signing in with it here instead.
+            这个邮箱地址：${req.body.email}已经与某个用户关联，请尝试直接登录。
           `
         });
 
@@ -109,7 +108,7 @@ module.exports = function(User) {
       .catch(err => {
         console.error(err);
         req.flash('error', {
-          msg: 'Oops, something went wrong, please try again later'
+          msg: '嗯，服务器有点小问题，请稍后再试。'
         });
         return res.redirect('/email-signup');
       });
@@ -124,7 +123,7 @@ module.exports = function(User) {
       url = `http://${host}:${port}/reset-password?access_token=${token}`;
     } else {
       url =
-        `http://freecodecamp.com/reset-password?access_token=${token}`;
+        `http://freecodecamp.cn/reset-password?access_token=${token}`;
     }
 
     // the email of the requested user
@@ -134,20 +133,19 @@ module.exports = function(User) {
     // requires AccessToken.belongsTo(User)
     var mailOptions = {
       to: info.email,
-      from: 'Team@freecodecamp.com',
-      subject: 'Password Reset Request',
+      from: 'huluoyang@gmail.com',
+      subject: '密码重置请求',
       text: `
-        Hello,\n\n
-        This email is confirming that you requested to
-        reset your password for your Free Code Camp account.
-        This is your email: ${ info.email }.
-        Go to ${ url } to reset your password.
+        您好,\n\n
+        这封邮件是用来确认是否是您本人请求重置FreeCodeCamp账户密码的。
+        这是您的邮箱：${ info.email }。
+        打开${ url }即可重置您的密码。
         \n
         Happy Coding!
         \n
       `
     };
-
+    console.log("1" + User.app.models.Email.send);
     User.app.models.Email.send(mailOptions, function(err) {
       if (err) { console.error(err); }
       debug('email reset sent');
@@ -191,7 +189,7 @@ module.exports = function(User) {
         return res.redirect(redirectTo);
       }
 
-      req.flash('success', { msg: 'Success! You are logged in.' });
+      req.flash('success', { msg: '您已经成功登录!' });
       return res.redirect('/');
     });
   });
@@ -201,7 +199,7 @@ module.exports = function(User) {
     var req = ctx.req;
 
     req.flash('errors', {
-      msg: 'Invalid username or password.'
+      msg: '无效的用户名或密码'
     });
     return res.redirect('/email-signin');
   });
@@ -238,7 +236,7 @@ module.exports = function(User) {
   User.remoteMethod(
     'doesExist',
     {
-      description: 'checks whether a user exists using email or username',
+      description: '检查邮箱或者用户名是否已经与某个用户关联',
       accepts: [
         {
           arg: 'username',
@@ -286,7 +284,7 @@ module.exports = function(User) {
   User.remoteMethod(
     'about',
     {
-      description: 'get public info about user',
+      description: '获取用户公开信息',
       accepts: [
         {
           arg: 'username',
@@ -385,7 +383,7 @@ module.exports = function(User) {
   User.remoteMethod(
     'giveBrowniePoints',
     {
-      description: 'Give this user brownie points',
+      description: '给与这个用户积分奖励',
       accepts: [
         {
           arg: 'receiver',

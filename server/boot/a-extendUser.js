@@ -15,6 +15,7 @@ module.exports = function(app) {
   var UserIdentity = app.models.UserIdentity;
   var UserCredential = app.models.UserCredential;
   var Email = app.models.Email;
+  console.log(Email.send);
   User.observe('before delete', function(ctx, next) {
     debug('removing user', ctx.where);
     var id = ctx.where && ctx.where.id ? ctx.where.id : null;
@@ -63,33 +64,33 @@ module.exports = function(app) {
     const redirect = req.session && req.session.returnTo ?
       req.session.returnTo :
       '/';
-
+      console.log(redirect);
+    console.log(user.email);
     var mailOptions = {
       type: 'email',
       to: user.email,
-      from: 'Team@freecodecamp.com',
-      subject: 'Welcome to Free Code Camp!',
+      from: 'huluoyang@gmail.com',
+      subject: '欢迎来到FreeCodeCamp!',
       redirect: '/',
       text: [
-        'Greetings from San Francisco!\n\n',
-        'Thank you for joining our community.\n',
-        'Feel free to email us at this address if you have ',
-        'any questions about Free Code Camp.\n',
-        'And if you have a moment, check out our blog: ',
+        '来自加利福利亚州的问候!\n\n',
+        '谢谢您加入我们的社区。\n',
+        '在你使用FreeCodeCamp的过程中有任何问题，都可以给我们发邮件。\n',
+        '如果你有空，可以看看我们的博客： ',
         'medium.freecodecamp.com.\n\n',
-        'Good luck with the challenges!\n\n',
+        '祝您挑战愉快!\n\n',
         '- the Free Code Camp Team'
       ].join('')
     };
 
     debug('sending welcome email');
     return Email.send(mailOptions, function(err) {
-      if (err) { return next(err); }
+      if (err) { console.log(err); return next(err); }
       return req.logIn(user, function(err) {
-        if (err) { return next(err); }
+        if (err) { console.log(err); return next(err); }
 
         req.flash('success', {
-          msg: [ "Welcome to Free Code Camp! We've created your account." ]
+          msg: [ "欢迎来到Free Code Camp!我们已经为您创建好了账户。" ]
         });
         return res.redirect(redirect);
       });
