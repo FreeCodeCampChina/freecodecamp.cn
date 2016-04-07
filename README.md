@@ -27,7 +27,7 @@ codecademy在英国很受欢迎，因为是本土语言，加上没有资源限�
 
 codecademy的课程练习和实践已经收费，20美元每月，不支持支付宝。
 
-太高的学习门槛（翻墙+英文+国外支付）造就codecademy在欧美风靡，但在国内无人问津的局面。
+太高的学习门槛（翻墙+英文+国外支付）造就codecademy在欧美风靡，但在国内曲高和寡的局面。
 
 treehouse与codecademy同期创立，codecademy侧重在线学习，treehoue侧重视频学习，两者各有优劣。
 
