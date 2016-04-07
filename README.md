@@ -1,7 +1,5 @@
 ## freecodecamp.cn
-欢迎来到freecodecamp中文社区(http://freecodecamp.jios.org:3000)
-
-后期会部署到freecodecamp.cn。
+欢迎来到freecodecamp中文社区(http://freecodecamp.cn)
 
 ## freecodecamp是什么？
 freecodecamp是一个自由的开源编程社区，它致力于抹平教育差距，
@@ -13,9 +11,21 @@ codecademy早于freecodecamp创立，是一个非常优质的web编程社区。
 
 感兴趣的可以观看我的学习记录：https://www.codecademy.com/finalfantansy
 
+我至今还记得2012年时，codecademy一度在国内无法访问，翻墙也不行。
+
+自己用谷歌AppEngine+GoAgent+SwithProxy+有道字典，跨越几万公里访问codecademy的经历。
+
+这种学习方式成本太高、进度也缓慢，相比之下还真不如选择国内社区。
+
+codecademy在国内也是一时火爆，用户量居全球前十，官方也曾经考虑推出中文，最后不了了之。
+
+codecademy在英国很受欢迎，因为是本土语言，加上没有资源限制。
+
+在国内基本成为在线教育研究者和精英人群的对象，而很难成为普通人的选择。
+
 感谢(fuck)伟大的防火墙，造成很多资源在国内无法访问，即使你已通过国内VPN翻墙，速度依然缓慢。
 
-codecademy的课程练习和实践已经收费，20美元每月，且不支持支付宝。
+codecademy的课程练习和实践已经收费，20美元每月，不支持支付宝。
 
 太高的学习门槛（翻墙+英文+国外支付）造就codecademy在欧美风靡，但在国内无人问津的局面。
 
@@ -24,6 +34,10 @@ treehouse与codecademy同期创立，codecademy侧重在线学习，treehoue侧�
 因为treehouse很早就立足课程收费模式，且收费不便宜，所以社区学习人数相对codecademy要少得多。
 
 与codecademy相同的原因，treehouse在国内也是无人问津。
+
+codecademy与treehouse都是创业公司，创业公司的精力是很有限的，做什么，不做什么，创始人要想清楚。
+
+他们迄今没有正式进入中国，因为成本太高，不仅仅是汉化问题。
 
 freecodecamp与codecademy/treehouse最显著的区别是它本身就是个开源项目。
 
@@ -57,13 +71,13 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 我只希望由于freecodecamp中文社区和国内优质社区的存在，让这些受伤害的年轻人能少一点。
 
 ## freecodecamp中文社区进度安排
- 0、原样上线  （已完成）
+ 0、部署上线  （已完成）
 
  1、解决某些资源国内无法访问问题 （部分完成）
 
- 2、网站汉化  （进行中）
+ 2、网站汉化  （部分完成）
 
- 2、课程汉化  （刚启动）
+ 2、课程汉化  （进行中）
 
  3、课程定制  （未进行）
 
