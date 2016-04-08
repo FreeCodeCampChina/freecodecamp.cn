@@ -69,7 +69,7 @@ module.exports = function(app) {
     var mailOptions = {
       type: 'email',
       to: user.email,
-      from: 'huluoyang@gmail.com',
+      from: 'huluoyang@freecodecamp.cn',
       subject: '欢迎来到FreeCodeCamp!',
       redirect: '/',
       text: [

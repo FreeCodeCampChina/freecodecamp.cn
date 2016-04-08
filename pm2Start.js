@@ -74,7 +74,7 @@ if (transportOptions.auth.user && mailReceiver) {
         to: mailReceiver,
         // from: 'team@freecodecamp.com',
         // subject: 'Server exception',
-        from: 'huluoyang@gmail.com',
+        from: 'huluoyang@freecodecamp.cn',
         subject: 'Server exception',
         text: compiled({ name: name, text: text, stack: stack })
       });

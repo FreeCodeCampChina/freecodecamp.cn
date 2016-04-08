@@ -21,6 +21,7 @@ npm-debug.log
 node_modules
 .idea
 *.iml
+.git
 .DS_Store
 Thumbs.db
 bower_components
