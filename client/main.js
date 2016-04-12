@@ -76,7 +76,7 @@ main = (function(main, global) {
     );
 
     main.chat.mainChat = new main.chat.GitterChat({
-      room: 'freecodecamp/freecodecamp',
+      room: 'freecodecamp/chinese',
       activationElement: false,
       targetElement: $('#chat-embed-main')
     });

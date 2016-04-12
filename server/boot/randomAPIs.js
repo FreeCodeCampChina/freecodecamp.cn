@@ -52,7 +52,7 @@ module.exports = function(app) {
   app.use(router);
 
   function sitemap(req, res, next) {
-    var appUrl = 'http://www.freecodecamp.com';
+    var appUrl = 'http://www.freecodecamp.cn';
     var now = moment(new Date()).format('YYYY-MM-DD');
 
     // TODO(berks): refactor async to rx
@@ -164,7 +164,7 @@ module.exports = function(app) {
   }
 
   function chat(req, res) {
-    res.redirect('https://gitter.im/FreeCodeCamp/FreeCodeCamp');
+    res.redirect('https://gitter.im/FreeCodeCamp/chinese');
   }
 
   function showLabs(req, res) {
