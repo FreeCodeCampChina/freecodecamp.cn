@@ -13,10 +13,6 @@ codecademy早于freecodecamp创立，是一个非常优质的web编程社区。
 
 我至今还记得2012年时，codecademy一度在国内无法访问，翻墙也不行。
 
-自己用谷歌AppEngine+GoAgent+SwithProxy+有道字典，跨越几万公里访问codecademy的经历。
-
-这种学习方式成本太高、进度也缓慢，相比之下还真不如选择国内社区。
-
 codecademy在国内也是一时火爆，用户量居全球前十，官方也曾经考虑推出中文，最后不了了之。
 
 codecademy在英国很受欢迎，因为是本土语言，加上没有资源限制。
@@ -75,17 +71,7 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
  1、解决某些资源国内无法访问问题 （部分完成）
 
- 2、网站汉化  （部分完成）
-
- 2、课程汉化  （进行中）
-
- 3、课程定制  （未进行）
-
- 参与方式有两种：
-
- 1、fork此项目，找到课程章节，翻译好后pullrequest；
-
- 2、根据我发出来的课程章节，翻译好后邮件给我(huluoyang@gmail.com)。
+ 2、课程翻译  （进行中）
 
  翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/blob/dev/translate.md
 
