@@ -27,7 +27,7 @@ RUN apt-get install -y mongodb-org
 
 RUN mkdir -p /data/db
 
-RUN service mongod start
+RUN mongod --fork --logpath /var/log/mongodb.log
 
 RUN npm run only-once
 
