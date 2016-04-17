@@ -5,11 +5,9 @@ WORKDIR /app
 
 COPY . /app/
 
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN npm install
 
-RUN cnpm install
-
-RUN cnpm install bower -g
+RUN npm install bower -g
 
 RUN bower install --allow-root
 
