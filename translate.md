@@ -13,7 +13,13 @@
 ## 翻译课程：
 打开https://github.com/huluoyang/freecodecamp.cn/tree/dev/seed/challenges
 
-更改对应的.json文件即可。
+更改课程对应的.json文件中的discription即可，title请不要翻译，
+
+因为title会附加在url后面，如果是中文会有问题。
+
+详情请查看我之前的翻译记录。
+
+多谢参与 ^-^
 
 ## 提交方式：
 1、fork此项目，创建分支，本地更改后pullrequest。
