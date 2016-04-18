@@ -263,11 +263,8 @@
         "为什么叫<code>lorem ipsum text</code>呢?",
         "是因为它是古罗马西塞罗谚语的前两个单词。",
         "从公元16世纪开始<code>lorem ipsum text</code>就被当做占位符了，这种传统延续到了互联网时代。",
-        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，哈哈。",
-        "Web developers traditionally use <code>lorem ipsum text</code> as placeholder text. It's called lorem ipsum text because those are the first two words of a famous passage by Cicero of Ancient Rome.",
-        "Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.",
-        "Well, 5 centuries is long enough. Since we're building a CatPhotoApp, let's use something called <code>kitty ipsum text</code>.",
-        "Replace the text inside your <code>p</code> element with the first few words of this kitty ipsum text: <code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
+        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，哈哈。因为我们要创建CatPhotoApp，所以让我们使用被称作<code>kitty ipsum text</code>的东东来填充页面内容。",
+        "把<code>p</code>元素中的文本替换为这段kitty ipsum text的前几个单词：<code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
@@ -277,7 +274,7 @@
         "<p>Hello Paragraph</p>"
       ],
       "tests": [
-        "assert.isTrue((/Kitty(\\s)+ipsum/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should contain the first few words of the provided <code>kitty ipsum text</code>.');"
+        "assert.isTrue((/Kitty(\\s)+ipsum/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含指定的<code>kitty ipsum text</code>的前几个单词。');"
       ],
       "type": "waypoint",
       "titleEs": "Llena espacios con texto de relleno",
@@ -303,11 +300,11 @@
         "Unser Smartphone hat nicht sehr viel vertikalen Raum.",
         "Lass uns die unwichtigen Elemente entfernen, damit wir unsere CatPhotoApp bauen können."
       ],
-      "title": "Delete HTML Elements",
+      "title": "删除HTML元素",
       "description": [
-        "Our phone doesn't have much vertical space.",
-        "Let's remove the unnecessary elements so we can start building our CatPhotoApp.",
-        "Delete your <code>h1</code> element so we can simplify our view."
+        "我们的手机没有多少纵向空间。",
+        "让我们来删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
+        "删除你的<code>h1</code>元素以简化视图。"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
@@ -317,9 +314,9 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert(($(\"h1\").length == 0), 'message: Delete your <code>h1</code> element.');",
-        "assert(($(\"h2\").length > 0), 'message: Leave your <code>h2</code> element on the page.');",
-        "assert(($(\"p\").length > 0), 'message: Leave your <code>p</code> element on the page.');"
+        "assert(($(\"h1\").length == 0), 'message: 删除你的<code>h1</code>元素。');",
+        "assert(($(\"h2\").length > 0), 'message: 在页面上保留你的<code>h2</code>元素。');",
+        "assert(($(\"p\").length > 0), 'message: 在页面上保留你的<code>p</code>元素。');"
       ],
       "type": "waypoint",
       "titleEs": "Borra elementos HTML",
@@ -347,14 +344,14 @@
         "Wir können das bewerkstelligen, indem wir den \"style\" des <code>h2</code> Elements ändern.",
         "So könntest du die Textfarbe des <code>h2</code> Elements in Blau ändern: <code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>"
       ],
-      "title": "Change the Color of Text",
+      "title": "改变文本的颜色",
       "description": [
-        "Now let's change the color of some of our text.",
-        "We can do this by changing the <code>style</code> of your <code>h2</code> element.",
-        "The style that is responsible for the color of an element's text is the \"color\" style.",
-        "Here's how you would set your <code>h2</code> element's text color to blue:",
+        "现在让我们来改变某些文本的颜色。",
+        "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
+        "负责颜色（color）的样式（style）是color样式。",
+        "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法："
         "<code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "Change your <code>h2</code> element's style so that its text color is red."
+        "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
       ],
       "challengeSeed": [
         "<h2>CatPhotoApp</h2>",
@@ -362,7 +359,7 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');"
+        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该是红色的。');"
       ],
       "type": "waypoint",
       "titleEs": "Cambia el color del texto",
