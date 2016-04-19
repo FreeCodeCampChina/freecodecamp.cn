@@ -643,10 +643,10 @@
       ],
       "title": "Set the Font Family of an Element",
       "description": [
-        "You can set an element's font by using the <code>font-family</code> property.",
-        "For example, if you wanted to set your <code>h2</code> element's font to <code>Sans-serif</code>, you would use the following CSS:",
+        "你可以用<code>font-family</code>属性来设置元素的字体。",
+        "例如，如果你想把你的<code>h2</code>元素的字体设置为<code>Sans-serif</code>，你可以使用下面的CSS：",
         "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: Sans-serif;<br>}</blockquote>",
-        "Make all of your <code>p</code> elements use the <code>Monospace</code> font."
+        "让你所有的<code>p</code>元素都使用<code>Monospace</code>字体。"
       ],
       "challengeSeed": [
         "<style>",
@@ -665,7 +665,7 @@
         "<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: Your <code>p</code> elements should use the font <code>Monospace</code>.');"
+        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: 你的<code>p</code>元素应该使用字体<code>Monospace</code>。');"
       ],
       "type": "waypoint",
       "titleEs": "Establecer la familia del tipo de letra de un elemento",
