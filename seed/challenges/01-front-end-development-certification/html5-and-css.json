@@ -468,15 +468,15 @@
       ],
       "title": "Use a CSS Class to Style an Element",
       "description": [
-        "Classes are reusable styles that can be added to HTML elements.",
-        "Here's an example CSS class declaration:",
+        "类是可以附加到HTML元素的可重复使用的样式。",
+        "下面是一个CSS类声明的例子：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "You can see that we've created a CSS class called <code>blue-text</code> within the <code>&#60;style&#62;</code> tag.",
-        "You can apply a class to an HTML element like this:",
+        "上面的语句在<code>&#60;style&#62;</code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
+        "你可以以如下的方式将类应用到HTML元素：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "Note that in your CSS <code>style</code> element, classes should start with a period. In your HTML elements' class declarations, classes shouldn't start with a period.",
-        "Inside your <code>style</code> element, change the <code>h2</code> selector to <code>.red-text</code> and update the color's value from <code>blue</code> to <code>red</code>.",
-        "Give your <code>h2</code> element the <code>class</code> attribute with a value of <code>'red-text'</code>."
+        "注意，在你的CSS <code>style</code>元素中，类应该以英文的句号（.）引导，而在你的HTML元素的类声明中，类不能以英文句号引导。",
+        "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
+        "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -490,10 +490,10 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: Your <code>h2</code> element should have the class <code>red-text</code>.');",
-        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: Your stylesheet should declare a <code>red-text</code> class and have its color set to red.');",
-        "assert($(\"h2\").attr(\"style\") === undefined, 'message: Do not use inline style declarations like <code>style=\"color&#58; red\"</code> in your <code>h2</code> element.');"
+        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
+        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code>类，并设置其color为red。');",
+        "assert($(\"h2\").attr(\"style\") === undefined, 'message: 不要在你的<code>h2</code>元素中使用形如<code>style=\"color&#58; red\"</code>的内联（inline）样式声明。');"
       ],
       "type": "waypoint",
       "titleEs": "Utiliza una clase CSS para darle estilo a un elemento",
