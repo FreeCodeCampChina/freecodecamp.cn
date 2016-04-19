@@ -300,7 +300,7 @@
         "Unser Smartphone hat nicht sehr viel vertikalen Raum.",
         "Lass uns die unwichtigen Elemente entfernen, damit wir unsere CatPhotoApp bauen können."
       ],
-      "title": "删除HTML元素",
+      "title": "Delete HTML Elements",
       "description": [
         "我们的手机没有多少纵向空间。",
         "让我们来删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
@@ -344,7 +344,7 @@
         "Wir können das bewerkstelligen, indem wir den \"style\" des <code>h2</code> Elements ändern.",
         "So könntest du die Textfarbe des <code>h2</code> Elements in Blau ändern: <code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>"
       ],
-      "title": "改变文本的颜色",
+      "title": "Change the Color of Text",
       "description": [
         "现在让我们来改变某些文本的颜色。",
         "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
@@ -398,7 +398,7 @@
         "Innerhalb des Style Elements kannst du einen CSS Selektor oder \"selector\" für alle <code>h2</code> Elemente erstellen. Wenn du zum Beispiel alle <code>h2</code> Elemente Rot färben willst, schreibst du: <code>&#60;style&#62;h2 {color: red;}&#60;/style&#62;</code>",
         "Beachte, dass du öffnende und schließende geschwungene Klammern (<code>{</code> und <code>}</code>) um jeden Style setzen solltest. Außerdem sollten deine Styles innerhalb dieser Klammern stehen. Zum Schluss benötigst du am Ende jedes Styles ein Semikolon."
       ],
-      "title": "使用CSS选择器设置元素样式",
+      "title": "Use CSS Selectors to Style Elements",
       "description": [
         "有几百个可以用于改变你的页面外观的CSS<code>属性</code>。",
         "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就赋予独立的<code>h2</code>元素<code>inline style</code>.",
