@@ -263,11 +263,8 @@
         "为什么叫<code>lorem ipsum text</code>呢?",
         "是因为它是古罗马西塞罗谚语的前两个单词。",
         "从公元16世纪开始<code>lorem ipsum text</code>就被当做占位符了，这种传统延续到了互联网时代。",
-        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，哈哈。",
-        "Web developers traditionally use <code>lorem ipsum text</code> as placeholder text. It's called lorem ipsum text because those are the first two words of a famous passage by Cicero of Ancient Rome.",
-        "Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.",
-        "Well, 5 centuries is long enough. Since we're building a CatPhotoApp, let's use something called <code>kitty ipsum text</code>.",
-        "Replace the text inside your <code>p</code> element with the first few words of this kitty ipsum text: <code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
+        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，哈哈。因为我们要创建CatPhotoApp，所以让我们使用被称作<code>kitty ipsum text</code>的东东来填充页面内容。",
+        "把<code>p</code>元素中的文本替换为这段kitty ipsum text的前几个单词：<code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
@@ -277,7 +274,7 @@
         "<p>Hello Paragraph</p>"
       ],
       "tests": [
-        "assert.isTrue((/Kitty(\\s)+ipsum/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should contain the first few words of the provided <code>kitty ipsum text</code>.');"
+        "assert.isTrue((/Kitty(\\s)+ipsum/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含指定的<code>kitty ipsum text</code>的前几个单词。');"
       ],
       "type": "waypoint",
       "titleEs": "Llena espacios con texto de relleno",
@@ -305,9 +302,9 @@
       ],
       "title": "Delete HTML Elements",
       "description": [
-        "Our phone doesn't have much vertical space.",
-        "Let's remove the unnecessary elements so we can start building our CatPhotoApp.",
-        "Delete your <code>h1</code> element so we can simplify our view."
+        "我们的手机没有多少纵向空间。",
+        "让我们来删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
+        "删除你的<code>h1</code>元素以简化视图。"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
@@ -317,9 +314,9 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert(($(\"h1\").length == 0), 'message: Delete your <code>h1</code> element.');",
-        "assert(($(\"h2\").length > 0), 'message: Leave your <code>h2</code> element on the page.');",
-        "assert(($(\"p\").length > 0), 'message: Leave your <code>p</code> element on the page.');"
+        "assert(($(\"h1\").length == 0), 'message: 删除你的<code>h1</code>元素。');",
+        "assert(($(\"h2\").length > 0), 'message: 在页面上保留你的<code>h2</code>元素。');",
+        "assert(($(\"p\").length > 0), 'message: 在页面上保留你的<code>p</code>元素。');"
       ],
       "type": "waypoint",
       "titleEs": "Borra elementos HTML",
@@ -349,12 +346,12 @@
       ],
       "title": "Change the Color of Text",
       "description": [
-        "Now let's change the color of some of our text.",
-        "We can do this by changing the <code>style</code> of your <code>h2</code> element.",
-        "The style that is responsible for the color of an element's text is the \"color\" style.",
-        "Here's how you would set your <code>h2</code> element's text color to blue:",
+        "现在让我们来改变某些文本的颜色。",
+        "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
+        "负责颜色（color）的样式（style）是color样式。",
+        "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法："
         "<code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "Change your <code>h2</code> element's style so that its text color is red."
+        "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
       ],
       "challengeSeed": [
         "<h2>CatPhotoApp</h2>",
@@ -362,7 +359,7 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');"
+        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该是红色的。');"
       ],
       "type": "waypoint",
       "titleEs": "Cambia el color del texto",
@@ -403,15 +400,15 @@
       ],
       "title": "Use CSS Selectors to Style Elements",
       "description": [
-        "With CSS, there are hundreds of CSS <code>properties</code> that you can use to change the way an element looks on your page.",
-        "When you entered <code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>, you were giving that individual <code>h2</code> element an <code>inline style</code>.",
-        "That's one way to add style to an element, but a better way is by using <code>CSS</code>, which stands for <code>Cascading Style Sheets</code>.",
-        "At the top of your code, create a <code>style</code> element like this:",
+        "有几百个可以用于改变你的页面外观的CSS<code>属性</code>。",
+        "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就赋予独立的<code>h2</code>元素<code>inline style</code>.",
+        "这是为元素添加样式的一种途径，但是更好的途径是使用意为<code>层叠样式表（Cascading Style Sheets）</code>的<code>CSS</code>。",
+        "在你代码的最顶端，创建一个如下的<code>style</code>元素：",
         "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
-        "Inside that style element, you can create a <code>CSS selector</code> for all <code>h2</code> elements. For example, if you wanted all <code>h2</code> elements to be red, your style element would look like this:",
+        "在这个style元素内, 你可以为所有的<code>h2</code>元素创建一个<code>CSS选择器</code>。比如，如果你想要将所有的<code>h2</code>元素设置为红色, 你的样式元素应该看起来这样：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h2 {color: red;}<br>&#60;/style&#62;</blockquote>",
-        "Note that it's important to have both opening and closing curly braces (<code>{</code> and <code>}</code>) around each element's style. You also need to make sure your element's style is between the opening and closing style tags. Finally, be sure to add the semicolon to the end of each of your element's styles.",
-        "Delete your <code>h2</code> element's style attribute and instead create a CSS <code>style</code> element. Add the necessary CSS to turn all <code>h2</code> elements blue."
+        "特别需要注意的是，必须将每一个元素的样式放在左花括号（<code>{</code>）和右花括号（<code>}</code>）之间，并且还需要确保你的元素的样式在style的开始和结束标记之间。最后需要注意的一点是，一定要在每一个元素样式的结尾加上分号。",
+        "删除你的<code>h2</code>元素的样式属性，然后创建一个CSS <code>style</code>元素。添加必要的CSS，使所有<code>h2</code>元素变为蓝色。"
       ],
       "challengeSeed": [
         "<h2 style=\"color: red\">CatPhotoApp</h2>",
@@ -419,11 +416,11 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert(!$(\"h2\").attr(\"style\"), 'message: Remove the style attribute from your <code>h2</code> element.');",
-        "assert($(\"style\") && $(\"style\").length > 1, 'message: Create a <code>style</code> element.');",
-        "assert($(\"h2\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: Your <code>h2</code> element should be blue.');",
-        "assert(code.match(/h2\\s*\\{\\s*color\\s*:.*;\\s*\\}/g), 'message: Ensure that your stylesheet <code>h2</code> declaration is valid with a semicolon and closing brace.');",
-        "assert(code.match(/<\\/style>/g) && code.match(/<\\/style>/g).length === (code.match(/<style((\\s)*((type|media|scoped|title|disabled)=\"[^\"]*\")?(\\s)*)*>/g) || []).length, 'message: Make sure all your <code>style</code> elements are valid and have a closing tag.');"
+        "assert(!$(\"h2\").attr(\"style\"), 'message: 从你的<code>h2</code>元素中删除样式属性。');",
+        "assert($(\"style\") && $(\"style\").length > 1, 'message: 创建一个<code>style</code>元素。');",
+        "assert($(\"h2\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: 你的<code>h2</code>元素应该是蓝色的。');",
+        "assert(code.match(/h2\\s*\\{\\s*color\\s*:.*;\\s*\\}/g), 'message: 确保你对<code>h2</code>的样式声明是正确的，并以分号和右花括号结尾。');",
+        "assert(code.match(/<\\/style>/g) && code.match(/<\\/style>/g).length === (code.match(/<style((\\s)*((type|media|scoped|title|disabled)=\"[^\"]*\")?(\\s)*)*>/g) || []).length, 'message: 确保所有的<code>style</code>元素是正确的，并且包含结束标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Usa selectores CSS para dar estilo a los elementos",
@@ -471,15 +468,15 @@
       ],
       "title": "Use a CSS Class to Style an Element",
       "description": [
-        "Classes are reusable styles that can be added to HTML elements.",
-        "Here's an example CSS class declaration:",
+        "类是可以附加到HTML元素的可重复使用的样式。",
+        "下面是一个CSS类声明的例子：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "You can see that we've created a CSS class called <code>blue-text</code> within the <code>&#60;style&#62;</code> tag.",
-        "You can apply a class to an HTML element like this:",
+        "上面的语句在<code>&#60;style&#62;</code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
+        "你可以以如下的方式将类应用到HTML元素：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "Note that in your CSS <code>style</code> element, classes should start with a period. In your HTML elements' class declarations, classes shouldn't start with a period.",
-        "Inside your <code>style</code> element, change the <code>h2</code> selector to <code>.red-text</code> and update the color's value from <code>blue</code> to <code>red</code>.",
-        "Give your <code>h2</code> element the <code>class</code> attribute with a value of <code>'red-text'</code>."
+        "注意，在你的CSS <code>style</code>元素中，类应该以英文的句号（.）引导，而在你的HTML元素的类声明中，类不能以英文句号引导。",
+        "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
+        "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -493,10 +490,10 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: Your <code>h2</code> element should have the class <code>red-text</code>.');",
-        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: Your stylesheet should declare a <code>red-text</code> class and have its color set to red.');",
-        "assert($(\"h2\").attr(\"style\") === undefined, 'message: Do not use inline style declarations like <code>style=\"color&#58; red\"</code> in your <code>h2</code> element.');"
+        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
+        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code>类，并设置其color为red。');",
+        "assert($(\"h2\").attr(\"style\") === undefined, 'message: 不要在你的<code>h2</code>元素中使用形如<code>style=\"color&#58; red\"</code>的内联（inline）样式声明。');"
       ],
       "type": "waypoint",
       "titleEs": "Utiliza una clase CSS para darle estilo a un elemento",
