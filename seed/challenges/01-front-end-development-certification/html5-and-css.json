@@ -531,12 +531,12 @@
       ],
       "title": "Style Multiple Elements with a CSS Class",
       "description": [
-        "Remember that you can attach classes to HTML elements by using <code>class=\"your-class-here\"</code> within the relevant element's opening tag.",
-        "Remember that CSS class selectors require a period at the beginning like this:",
+        "记住，你可以在HTML元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将类附加到相关元素中。",
+        "记住，CSS类选择器要求以英文句号引导，如下：",
         "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
-        "But also remember that class declarations don't use a period, like this:",
+        "但是，同样需要记住的是类声明不使用英文句号引导，如下：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "Apply the <code>red-text</code> class to your <code>h2</code> and <code>p</code> elements."
+        "将<code>red-text</code>类应用到<code>h2</code>和<code>p</code>元素中。"
       ],
       "challengeSeed": [
         "<style>",
@@ -550,10 +550,10 @@
         "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>h2</code> element should be red.');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: Your <code>h2</code> element should have the class <code>red-text</code>.');",
-        "assert($(\"p\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: Your <code>p</code> element should be red.');",
-        "assert($(\"p\").hasClass(\"red-text\"), 'message: Your <code>p</code> element should have the class <code>red-text</code>.');"
+        "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
+        "assert($(\"p\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>p</code>元素应该为红色。');",
+        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code>类。');"
       ],
       "type": "waypoint",
       "titleEs": "Da estilo a múltiples elementos con una clase CSS",
@@ -587,12 +587,12 @@
       ],
       "title": "Change the Font Size of an Element",
       "description": [
-        "Font size is controlled by the <code>font-size</code> CSS property, like this:",
+        "字号是由CSS属性<code>font-size</code>来控制的, 如下：",
         "<blockquote>h1 {<br>&nbsp;&nbsp;font-size: 30px;<br>}</blockquote>",
-        "Create a second <code>p</code> element with the following kitty ipsum text: <code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
-        "Inside the same <code>&#60;style&#62;</code> tag that contains your <code>red-text</code> class, create an entry for <code>p</code> elements and set the <code>font-size</code> to 16 pixels (<code>16px</code>).",
-        "<strong>Note</strong><br>Due to browser implementation differences, you may need to be at 100% zoom to pass the tests on this challenge.",
-        "Also, please do not add a class attribute to your new <code>p</code> element."
+        "用如下的kitty ipsum文本来创建第二个<code>p</code>元素：<code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
+        "在包含<code>red-text</code>类的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
+        "<strong>注意</strong><br>因为浏览器实现上的不同，你可能需要将页面缩放调整为100%以通过本挑战的测试。",
+        "同时，将不要为新的<code>p</code>元素添加类属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -606,11 +606,11 @@
         "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
       ],
       "tests": [
-        "assert($(\"p\").length > 1, 'message: You need 2 <code>p</code> elements with Kitty Ipsum text.');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure each of your <code>p</code> elements has a closing tag.');",
-        "assert.isTrue((/Purr\\s+jump\\s+eat/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should contain the first few words of the provided additional <code>kitty ipsum text</code>.');",
-        "assert($(\"p:not([class])\").length === 1, 'message: Do not add a class attribute to the second <code>p</code> element, without removing it from the first one.');",
-        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: Give elements with the <code>p</code> tag a <code>font-size</code> of <code>16px</code>. Browser and Text zoom should be at 100%.');"
+        "assert($(\"p\").length > 1, 'message: 你需要2个带有Kitty Ipsum文本的<code>p</code>元素。');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都包含结束标记。');",
+        "assert.isTrue((/Purr\\s+jump\\s+eat/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含另外提供的<code>kitty ipsum文本</code>的前几个单词。');",
+        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加类属性，也不要将其从第一个中删除。');",
+        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。浏览器和文本缩放应该设置为100%。');"
       ],
       "type": "waypoint",
       "titleEs": "Cambia el tamaño de fuente de un elemento.",
@@ -643,10 +643,10 @@
       ],
       "title": "Set the Font Family of an Element",
       "description": [
-        "You can set an element's font by using the <code>font-family</code> property.",
-        "For example, if you wanted to set your <code>h2</code> element's font to <code>Sans-serif</code>, you would use the following CSS:",
+        "你可以用<code>font-family</code>属性来设置元素的字体。",
+        "例如，如果你想把你的<code>h2</code>元素的字体设置为<code>Sans-serif</code>，你可以使用下面的CSS：",
         "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: Sans-serif;<br>}</blockquote>",
-        "Make all of your <code>p</code> elements use the <code>Monospace</code> font."
+        "让你所有的<code>p</code>元素都使用<code>Monospace</code>字体。"
       ],
       "challengeSeed": [
         "<style>",
@@ -665,7 +665,7 @@
         "<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: Your <code>p</code> elements should use the font <code>Monospace</code>.');"
+        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: 你的<code>p</code>元素应该使用字体<code>Monospace</code>。');"
       ],
       "type": "waypoint",
       "titleEs": "Establecer la familia del tipo de letra de un elemento",
