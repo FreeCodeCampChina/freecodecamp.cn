@@ -760,11 +760,11 @@
       ],
       "title": "Specify How Fonts Should Degrade",
       "description": [
-        "There are several default fonts that are available in all browsers. These include <code>Monospace</code>, <code>Serif</code> and <code>Sans-Serif</code>",
-        "When one font isn't available, you can tell the browser to \"degrade\" to another font.",
-        "For example, if you wanted an element to use the <code>Helvetica</code> font, but also degrade to the <code>Sans-Serif</code> font when <code>Helvetica</code> wasn't available, you could use this CSS style:",
+        "有几种默认的字体是所有浏览器都可用的，包括<code>Monospace</code>、<code>Serif</code>和<code>Sans-Serif</code>。",
+        "当某种字体不可用时，你可以告诉浏览器“降级”到另一种字体。",
+        "例如，如果你想对某元素应用<code>Helvetica</code>字体，但你同时想在<code>Helvetica</code>不可用时降级使用<code>Sans-Serif</code>字体，你可以使用如下CSS样式：",
         "<blockquote>p {<br>&nbsp;&nbsp;font-family: Helvetica, Sans-Serif;<br>}</blockquote>",
-        "Now comment out your call to Google Fonts, so that the <code>Lobster</code> font isn't available. Notice how it degrades to the <code>Monospace</code> font."
+        "现在注释掉你对谷歌字体的引用，以使<code>Lobster</code>字体不可用。注意它是如何降级到<code>Monospace</code>字体的。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -789,10 +789,10 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"font-family\").match(/^\"?lobster/i), 'message: Your h2 element should use the font <code>Lobster</code>.');",
-        "assert($(\"h2\").css(\"font-family\").match(/lobster.*,.*monospace/i), 'message: Your h2 element should degrade to the font <code>Monospace</code> when <code>Lobster</code> is not available.');",
-        "assert(new RegExp(\"<!--\", \"gi\").test(code), 'message: Comment out your call to Google for the <code>Lobster</code> font by putting <code>&#60!--</code> in front of it.');",
-        "assert(new RegExp(\"-->\", \"gi\").test(code), 'message: Be sure to close your comment by adding <code>--&#62;</code>.');"
+        "assert($(\"h2\").css(\"font-family\").match(/^\"?lobster/i), 'message: 你的h2元素应该使用<code>Lobster</code>字体。');",
+        "assert($(\"h2\").css(\"font-family\").match(/lobster.*,.*monospace/i), 'message: 当<code>Lobster</code>字体不可用时你的h2元素应该降级到<code>Monospace</code>字体。');",
+        "assert(new RegExp(\"<!--\", \"gi\").test(code), 'message: 通过把<code>&#60!--</code>放在前面以把对谷歌<code>Lobster</code>字体的引用注释掉。');",
+        "assert(new RegExp(\"-->\", \"gi\").test(code), 'message: 别忘了通过添加<code>--&#62;</code>来结束你的注释。');"
       ],
       "type": "waypoint",
       "titleEs": "Especifica cómo deben degradarse los tipos de letra",
@@ -825,11 +825,11 @@
       ],
       "title": "Add Images to your Website",
       "description": [
-        "You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.",
-        "An example of this would be:",
+        "你可以通过使用<code>img</code>元素来为你的网站添加图片，并且使用<code>src</code>属性指向一个特定图片的URL。",
+        "举例如下：",
         "<code>&#60img src=\"https://www.your-image-source.com/your-image.jpg\"&#62</code>",
-        "Note that in most cases, <code>img</code> elements are self-closing.",
-        "Try it with this image:",
+        "注意，在大多数情况下，<code>img</code>元素是自关闭的。",
+        "用以下图片来测试：",
         "<code>https://bit.ly/fcc-relaxing-cat</code>"
       ],
       "challengeSeed": [
@@ -855,8 +855,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").length > 0, 'message: Your page should have an image element.');",
-        "assert(new RegExp(\"\\/\\/bit.ly\\/fcc-relaxing-cat\", \"gi\").test($(\"img\").attr(\"src\")), 'message: Your image should have a <code>src</code> attribute that points to the kitten image.');"
+        "assert($(\"img\").length > 0, 'message: 你的页面应该包含一个图片元素。');",
+        "assert(new RegExp(\"\\/\\/bit.ly\\/fcc-relaxing-cat\", \"gi\").test($(\"img\").attr(\"src\")), 'message: 你的图片应该包含一个指向猫咪图片的<code>src</code>属性。');"
       ],
       "type": "waypoint",
       "titleEs": "Añade imágenes a tu sitio web",
@@ -891,11 +891,11 @@
       ],
       "title": "Size your Images",
       "description": [
-        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
-        "For example, if we wanted to create a CSS class called <code>larger-image</code> that gave HTML elements a width of 500 pixels, we'd use:",
+        "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
+        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "Create a class called <code>smaller-image</code> and use it to resize the image so that it's only 100 pixels wide.",
-        "<strong>Note</strong><br>Due to browser implementation differences, you may need to be at 100% zoom to pass the tests on this challenge."
+        "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -922,8 +922,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: Your <code>img</code> element should have the class <code>smaller-image</code>.');",
-        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code>类。');",
+        "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽，浏览器缩放比例应该为100%。');"
       ],
       "type": "waypoint",
       "titleEs": "Da tamaño a tus imágenes",
