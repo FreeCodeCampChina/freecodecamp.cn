@@ -891,11 +891,11 @@
       ],
       "title": "Size your Images",
       "description": [
-        "CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.",
-        "For example, if we wanted to create a CSS class called <code>larger-image</code> that gave HTML elements a width of 500 pixels, we'd use:",
+        "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
+        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "Create a class called <code>smaller-image</code> and use it to resize the image so that it's only 100 pixels wide.",
-        "<strong>Note</strong><br>Due to browser implementation differences, you may need to be at 100% zoom to pass the tests on this challenge."
+        "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -922,8 +922,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: Your <code>img</code> element should have the class <code>smaller-image</code>.');",
-        "assert($(\"img\").width() === 100, 'message: Your image should be 100 pixels wide. Browser zoom should be at 100%.');"
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code>类。');",
+        "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽，浏览器缩放比例应该为100%。');"
       ],
       "type": "waypoint",
       "titleEs": "Da tamaño a tus imágenes",
