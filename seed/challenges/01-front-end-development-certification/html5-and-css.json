@@ -825,11 +825,11 @@
       ],
       "title": "Add Images to your Website",
       "description": [
-        "You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.",
-        "An example of this would be:",
+        "你可以通过使用<code>img</code>元素来为你的网站添加图片，并且使用<code>src</code>属性指向一个特定图片的URL。",
+        "举例如下：",
         "<code>&#60img src=\"https://www.your-image-source.com/your-image.jpg\"&#62</code>",
-        "Note that in most cases, <code>img</code> elements are self-closing.",
-        "Try it with this image:",
+        "注意，在大多数情况下，<code>img</code>元素是自关闭的。",
+        "用以下图片来测试：",
         "<code>https://bit.ly/fcc-relaxing-cat</code>"
       ],
       "challengeSeed": [
@@ -855,8 +855,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").length > 0, 'message: Your page should have an image element.');",
-        "assert(new RegExp(\"\\/\\/bit.ly\\/fcc-relaxing-cat\", \"gi\").test($(\"img\").attr(\"src\")), 'message: Your image should have a <code>src</code> attribute that points to the kitten image.');"
+        "assert($(\"img\").length > 0, 'message: 你的页面应该包含一个图片元素。');",
+        "assert(new RegExp(\"\\/\\/bit.ly\\/fcc-relaxing-cat\", \"gi\").test($(\"img\").attr(\"src\")), 'message: 你的图片应该包含一个指向猫咪图片的<code>src</code>属性。');"
       ],
       "type": "waypoint",
       "titleEs": "Añade imágenes a tu sitio web",
