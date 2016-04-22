@@ -697,12 +697,12 @@
       ],
       "title": "Import a Google Font",
       "description": [
-        "Now, let's import and apply a Google font (note that if Google is blocked in your country, you will need to skip this challenge).",
-        "First, you'll need to make a <code>call</code> to Google to grab the <code>Lobster</code> font and load it into your HTML.",
-        "Copy the following code snippet and paste it into the top of your code editor:",
+        "现在，让我们来导入并应用谷歌字体（注意，因为谷歌在中国被屏蔽，所以你需要跳过本轮挑战；如果你已翻墙或肉身已在墙外，那么请继续）。",
+        "首先，你需要<code>调用</code>谷歌以获取<code>Lobster</code>字体并将其载入你的HTML。",
+        "复制下面的代码片断并将其粘贴到你的代码编辑器的顶部：",
         "<code>&#60;link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
-        "Now you can set <code>Lobster</code> as a font-family value on your <code>h2</code> element.",
-        "Apply the <code>font-family</code> of <code>Lobster</code> to your <code>h2</code> element."
+        "现在你可以将<code>Lobster</code>作为 font-family 的值应用到你的<code>h2</code>元素上了。",
+        "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -722,9 +722,9 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert(new RegExp(\"googleapis\", \"gi\").test(code), 'message: Import the <code>Lobster</code> font.');",
-        "assert($(\"h2\").css(\"font-family\").match(/lobster/i), 'message: Your <code>h2</code> element should use the font <code>Lobster</code>.');",
-        "assert($(\"p\").css(\"font-family\").match(/monospace/i), 'message: Your <code>p</code> element should still use the font <code>Monospace</code>.');"
+        "assert(new RegExp(\"googleapis\", \"gi\").test(code), 'message: 导入<code>Lobster</code>字体。');",
+        "assert($(\"h2\").css(\"font-family\").match(/lobster/i), 'message: 你的<code>h2</code>元素应该使用字体<code>Lobster</code>。');",
+        "assert($(\"p\").css(\"font-family\").match(/monospace/i), 'message: 你的<code>p</code>元素应该继续使用字体<code>Monospace</code>。');"
       ],
       "type": "waypoint",
       "titleEs": "Importar un tipo de letra de Google",
