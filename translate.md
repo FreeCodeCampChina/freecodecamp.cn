@@ -56,11 +56,11 @@ wish you go go go!
 
     - [x] Make Images Mobile Responsive
 
-    翻译者：张三（github） 张三（wechart）
+        翻译者：张三（github） 张三（wechart）
         
     - [ ] Center Text with Bootstrap
     
-    翻译者：李四（github） lisi（wechart）
+        翻译者：李四（github） lisi（wechart）
         
 ### 进度记录：
 
@@ -70,23 +70,23 @@ wish you go go go!
     
         - [x] Learn how Free Code Camp Works `Complete`
         
-        翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechart）
         
         - [x] Create a GitHub Account and Join our Chat Rooms 
         
-        翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechart）
         
         - [x] Configure your Code Portfolio
         
-        翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechart）
         
         - [x] Join a Campsite in Your City
         
-        翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechart）
         
         - [x] Learn What to Do If You Get Stuck
         
-        翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechart）
         
 * Front End Development Certification
         
