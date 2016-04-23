@@ -68,7 +68,7 @@ wish you go go go!
 
     * Join to Free Code Camp
     
-        - [x] Learn how Free Code Camp Works `Complete`
+        - [x] Learn how Free Code Camp Works
         
             翻译者：张三（github） 张三（wechart）
         
