@@ -961,11 +961,11 @@
       ],
       "title": "Add Borders Around your Elements",
       "description": [
-        "CSS borders have properties like <code>style</code>, <code>color</code> and <code>width</code>",
-        "For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:",
+        "CSS 边框的属性有style(样式)、color(颜色)、width(宽度)、height(高度)等。",
+        "举个例子，如果我们想要让一个HTML元素的边框颜色为红色、边框宽度为5像素(pixel)，我们可以用下面这个class来定义:",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.thin-red-border {<br>&nbsp;&nbsp;&nbsp;&nbsp;border-color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-width: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "Create a class called <code>thick-green-border</code> that puts a 10-pixel-wide green border with a style of <code>solid</code> around an HTML element, and apply that class to your cat photo.",
-        "Remember that you can apply multiple classes to an element by separating each class with a space within its <code>class</code> attribute. For example:",
+        "创建一个叫thick-green-border的class，让它的边框宽度为10像素、边框样式为solid(固体)、边框颜色为绿色(green)，然后把这个class应用到你的猫咪照片上。",
+        "记住：你可以应用多个class到一个元素，只需要在多个class之间用空格分开即可。举个例子：",
         "<code>&lt;img class=\"class1 class2\"&gt;</code>"
       ],
       "challengeSeed": [
@@ -1031,9 +1031,9 @@
       ],
       "title": "Add Rounded Corners with a Border Radius",
       "description": [
-        "Your cat photo currently has sharp corners. We can round out those corners with a CSS property called <code>border-radius</code>.",
-        "You can specify a <code>border-radius</code> with pixels. Give your cat photo a <code>border-radius</code> of <code>10px</code>.",
-        "Note: this waypoint allows for multiple possible solutions. For example, you may add <code>border-radius</code> to either the <code>.thick-green-border</code> class or <code>.smaller-image</code> class."
+        "你的猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(圆形边框)的属性来让它的边框变成圆的。",
+        "你可以用像素来指定border-raidus的属性值，现在让你的猫咪图片的圆形边框为10px吧。",
+        "注意：这个小节允许多种解决方案。你可以添加border-radius到<code>.thick-green-border</code> class 也可以添加到<code>.smaller-image</code> class."
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1062,12 +1062,12 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"red-text\">CatPhotoApp</h2>",
+        "<h2 class=\"red-text\">我家的猫咪</h2>",
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
-        "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
+        "<p class=\"red-text\">我家两岁的小公猫哈哈是个收藏家，臭鱼烂虾，鸡头猪手，无所不爱。清晨我还在睡梦中，突然觉得胸口一沉，恍惚中意识到哈哈又跑到我身上来撒娇，心里不由得滚起温暖的热流，拉过哈哈一把从头摸过背，小家伙顺势想往被子里钻，我一边拒绝着一边往上拉被子，突然脚下一凉，烂泥一样挂在我的大脚趾上的是一块垃圾箱里的鱼头！我顿时睡意全无，换床单洗被罩，天光放亮才勉强收拾妥当。害得我带着熊猫眼跑去上班，一天都没有好心情。实在搞不懂它为什么爱把垃圾叼上床，是故意恶作剧？还是我给的猫粮不够吃？</p>",
+        "<p class=\"red-text\">有时候猫会把主人当成自己的孩子(听起来有点令人窝心)，这种行为是在给家里带来猎物。它把自己看成是家里的顶梁柱，有责任给不争气的主人找来食物——猫咪通过长时间对你的观察，沉痛地发现你不会打猎。经常出门的猫咪会把它逮到的老鼠、小鸟带回家里，不出门的就经常翻翻垃圾箱找点东西给你。这个时候，主人可不要责骂它，不然它会认为你对它带回来的食物不满意，下次去找更了不起的东西带回来，放在房间里最显眼的地方。但如果你看见它往家里运输死老鼠，最好也别谢它，别让它觉得你对这种猎物很满意，下次照单带回来。最好的办法是心里感念着猫咪所为你做的，并默默地收拾好一切。</p>"
       ],
       "tests": [
         "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: Your image element should have the class \"thick-green-border\".');",
