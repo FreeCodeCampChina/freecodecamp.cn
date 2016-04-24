@@ -1096,8 +1096,8 @@
       ],
       "title": "Make Circular Images with a Border Radius",
       "description": [
-        "In addition to pixels, you can also specify a <code>border-radius</code> using a percentage.",
-        "Give your cat photo a <code>border-radius</code> of <code>50%</code>."
+        "除了像素，你还可以使用百分比来指定一个<code>border-radius</code>。",
+        "给你的猫咪图片一个<code>50%</code>的<code>border-radius</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1135,8 +1135,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 48, 'message: Your image should have a border radius of <code>50&#37;</code>&#44; making it perfectly circular.');",
-        "assert(code.match(/50%/g), 'message: Be sure to use a percentage instead of a pixel value.');"
+        "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 48, 'message: 你的图片的边框半径应该是<code>50&#37;</code>，这样它就可以形成一个圆形边框。');",
+        "assert(code.match(/50%/g), 'message: 确定你使用的是百分比而不是像素值。');"
       ],
       "type": "waypoint",
       "titleEs": "Crea imágenes circulares usando Border Radius",
