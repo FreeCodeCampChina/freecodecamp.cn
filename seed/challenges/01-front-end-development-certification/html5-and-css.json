@@ -1166,12 +1166,12 @@
       ],
       "title": "Link to External Pages with Anchor Elements",
       "description": [
-        "<code>a</code> elements, also known as <code>anchor</code> elements, are used to link to content outside of the current page.",
-        "Here's a diagram of an <code>a</code> element. In this case, the <code>a</code> element is used in the middle of a paragraph element, which means the link will appear in the middle of a sentence.",
+        "<code>a</code>元素, 也叫<code>anchor（锚）</code>元素，被用来链接到当前页面的外部内容。",
+        "下面是一张<code>a</code>元素的图示。在此，<code>a</code>元素被用在了一个段落元素的中间，这意味着链接会出现在句子的中间。",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
         "Here's an example:",
         "<code>&#60;p&#62;Here's a &#60;a href=\"http://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
-        "Create an <code>a</code> element that links to <code>http://freecatphotoapp.com</code> and has \"cat photos\" as its <code>anchor text</code>."
+        "创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并且用\"cat photos\"作为其<code>anchor text（锚文本）</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1209,9 +1209,9 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert((/cat photos/gi).test($(\"a\").text()), 'message: Your <code>a</code> element should have the <code>anchor text</code> of \"cat photos\".');",
-        "assert(/http:\\/\\/freecatphotoapp\\.com/gi.test($(\"a\").attr(\"href\")), 'message: You need an <code>a</code> element that links to <code>http&#58;//freecatphotoapp.com</code>');",
-        "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: Make sure your <code>a</code> element has a closing tag.');"
+        "assert((/cat photos/gi).test($(\"a\").text()), 'message: 你的<code>a</code>元素应该使用\"cat photos\"作为其<code>anchor text（锚文本）</code>。');",
+        "assert(/http:\\/\\/freecatphotoapp\\.com/gi.test($(\"a\").attr(\"href\")), 'message: 你需要有一个链接到<code>http&#58;//freecatphotoapp.com</code>的<code>a</code>元素。');",
+        "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: 确保你的<code>a</code>元素有一个关闭标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Enlaza páginas externas con elementos ancla",
