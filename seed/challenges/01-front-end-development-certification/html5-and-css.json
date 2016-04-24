@@ -1211,7 +1211,7 @@
       "tests": [
         "assert((/cat photos/gi).test($(\"a\").text()), 'message: 你的<code>a</code>元素应该使用\"cat photos\"作为其<code>anchor text（锚文本）</code>。');",
         "assert(/http:\\/\\/freecatphotoapp\\.com/gi.test($(\"a\").attr(\"href\")), 'message: 你需要有一个链接到<code>http&#58;//freecatphotoapp.com</code>的<code>a</code>元素。');",
-        "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: 确保你的<code>a</code>元素有一个关闭标记。');"
+        "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: 确保你的<code>a</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Enlaza páginas externas con elementos ancla",
@@ -1244,12 +1244,12 @@
       ],
       "title": "Nest an Anchor Element within a Paragraph",
       "description": [
-        "Again, here's a diagram of an <code>a</code> element for your reference:",
+        "作为参考，再次看一看<code>a</code>元素的图示：",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
-        "Here's an example:",
+        "例如：",
         "<code>&#60;p&#62;Here's a &#60;a href=\"https://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
-        "<code>Nesting</code> just means putting one element inside of another element.",
-        "Now nest your existing <code>a</code> element within a new <code>p</code> element (just after the existing <code>h2</code> element) so that the surrounding paragraph says \"View more cat photos\", but where only \"cat photos\" is a link, and the rest of the text is plain text."
+        "<code>Nesting（嵌套）</code>就是把一个元素放在另一个元素里面。",
+        "现在，把你已有的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），使包围的段落为\"View more cat photos\"，但是其中仅\"cat photos\"是一个链接，其余的文本是普通文本。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1289,14 +1289,14 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").length > 0, 'message: You need an <code>a</code> element that links to \"http://www.freecatphotoapp.com\".');",
-        "assert($(\"a\").text().match(/cat\\sphotos/gi), 'message: Your <code>a</code> element should have the anchor text of \"cat photos\"');",
-        "assert($(\"p\") && $(\"p\").length > 2, 'message: Create a new <code>p</code> element around your <code>a</code> element.');",
-        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").parent().is(\"p\"), 'message: Your <code>a</code> element should be nested within your new <code>p</code> element.');",
-        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").parent().text().match(/^\\s*View\\smore\\s/gi), 'message: Your <code>p</code> element should have the text \"View more \" (with a space after it).');",
-        "assert(!$(\"a\").text().match(/View\\smore/gi), 'message: Your <code>a</code> element should <em>not</em> have the text \"View more\".');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<p/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure each of your <code>p</code> elements has a closing tag.');",
-        "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: Make sure each of your <code>a</code> elements has a closing tag.');"
+        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").length > 0, 'message: 你需要有一个链接到\"http://www.freecatphotoapp.com\"的<code>a</code>元素。');",
+        "assert($(\"a\").text().match(/cat\\sphotos/gi), 'message: 你的<code>a</code>元素的锚文本应该为\"cat photos\"。');",
+        "assert($(\"p\") && $(\"p\").length > 2, 'message: 创建一个新的包围你的<code>a</code>元素的<code>p</code>元素。');",
+        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").parent().is(\"p\"), 'message: 你的<code>a</code>元素应该嵌套在你新的<code>p</code>元素中。');",
+        "assert($(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").parent().text().match(/^\\s*View\\smore\\s/gi), 'message: 你的<code>p</code>元素应该包含文本\"View more \"（后面有一个空格）。');",
+        "assert(!$(\"a\").text().match(/View\\smore/gi), 'message: 你的<code>a</code>元素<em>不</em>应该包含文本\"View more\"。');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<p/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都有一个结束标记。');",
+        "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: 确保你的每一个<code>a</code>元素都有一个结束标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Anida un elemento de ancla dentro de un párrafo",
