@@ -1478,11 +1478,11 @@
       ],
       "title": "Add Alt Text to an Image for Accessibility",
       "description": [
-        "<code>alt</code> attributes, also known as <code>alt text</code>, are what browsers will display if they fail to load the image. <code>alt</code> attributes are also important for blind or visually impaired users to understand what an image portrays. And search engines also look at <code>alt</code> attributes.",
-        "In short, every image should have an <code>alt</code> attribute!",
-        "You can add an <code>alt</code> attribute right in the img element like this:",
+        "<code>alt</code>属性，也被称为<code>alt text</code>, 是当浏览器无法调入图片时显示的文本。<code>alt</code>属性对于盲人或视觉损伤的用户理解一幅图片中所描绘的内容也非常重要，搜索引擎也会搜索<code>alt</code>属性。",
+        "简而言之，每一张图片都应该有一个<code>alt</code>属性！",
+        "你可以像下面例子中一样为img元素添加一个<code>alt</code>属性：",
         "<code>&#60img src=\"www.your-image-source.com/your-image.jpg\" alt=\"your alt text\"&#62</code>",
-        "Add an <code>alt</code> attribute with the text <code>A cute orange cat lying on its back</code> to our cat photo."
+        "为你的猫咪图片添加一个<code>alt</code>属性，内容为<code>A cute orange cat lying on its back</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1522,7 +1522,7 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").filter(function(){ return /cat/gi.test(this.alt) }).length > 0, 'message: Your image element should have an <code>alt</code> attribute set to <code>A cute orange cat lying on its back</code>');"
+        "assert($(\"img\").filter(function(){ return /cat/gi.test(this.alt) }).length > 0, 'message: 你的图片元素应该有一个设置为<code>A cute orange cat lying on its back</code>的<code>alt</code>属性。');"
       ],
       "type": "waypoint",
       "titleEs": "Agrega texto alternativo a una imagen para dar Accesibilidad",
