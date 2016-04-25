@@ -1732,12 +1732,12 @@
       ],
       "title": "Create a Text Field",
       "description": [
-        "Now let's create a web form.",
-        "Text inputs are a convenient way to get input from your user.",
-        "You can create one like this:",
+        "现在让我们来创建一个web form（web表单）。",
+        "Text inputs（文本输入框）是从你的用户获取输入的一条方便途径。",
+        "你可以用如下方法创建：",
         "<code>&#60;input type=\"text\"&#62;</code>",
-        "Note that <code>input</code> elements are self-closing.",
-        "Create an <code>input</code> element of type <code>text</code> below your lists."
+        "注意，<code>input</code>元素是自关闭的。",
+        "在你的列表下创建一个type（类型）为<code>text</code>的<code>input</code>元素。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1787,7 +1787,7 @@
         "</ol>"
       ],
       "tests": [
-        "assert($(\"input[type=text]\").length > 0, 'message: Your app should have an <code>input</code> element of type <code>text</code>.');"
+        "assert($(\"input[type=text]\").length > 0, 'message: 你的应用应该有一个type（类型）为<code>text</code>的<code>input</code>元素。');"
       ],
       "type": "waypoint",
       "titleEs": "Crea un campo de texto",
