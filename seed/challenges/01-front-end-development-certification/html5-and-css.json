@@ -1643,12 +1643,12 @@
       ],
       "title": "Create an Ordered List",
       "description": [
-        "HTML has a special element for creating <code>ordered lists</code>, or numbered-style lists.",
-        "Ordered lists start with a <code>&#60;ol&#62;</code> element. Then they contain some number of <code>&#60;li&#62;</code> elements.",
-        "For example:",
+        "HTML有一个特殊元素，用于创建<code>ordered lists（有序列表）</code>, 或数字编号列表。",
+        "有序列表以<code>&#60;ol&#62;</code>元素开始，并包含一个或多个<code>&#60;li&#62;</code>元素。",
+        "例如：",
         "<blockquote>&#60;ol&#62;<br>&nbsp;&nbsp;&#60;li&#62;Garfield&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;Sylvester&#60;/li&#62;<br>&#60;/ol&#62;</blockquote>",
-        "would create a numbered list of \"Garfield\" and \"Sylvester\".",
-        "Create an ordered list of the top 3 things cats hate the most."
+        "将创建一个包含\"Garfield\"和\"Sylvester\"的数字编号列表。",
+        "创建一个有关猫咪最痛恨的三件事情的有序列表。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1693,13 +1693,13 @@
         "<p>Top 3 things cats hate:</p>"
       ],
       "tests": [
-        "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: Your should have an ordered list for \"Top 3 things cats hate\"');",
-        "assert.equal($(\"ul\").prev().text(), \"Things cats love:\", 'message: You should have an unordered list for \"Things Cats Love\"');",
-        "assert.equal($(\"ul li\").length, 3, 'message: You should have three <code>li</code> elements within your <code>ul</code> element.');",
-        "assert.equal($(\"ol li\").length, 3, 'message: You should have three <code>li</code> elements within your <code>ol</code> element.');",
-        "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, 'message: Make sure your <code>ul</code> element has a closing tag.');",
-        "assert(code.match(/<\\/ol>/g) && code.match(/<\\/ol>/g).length === code.match(/<ol>/g).length, 'message: Make sure your <code>ol</code> element has a closing tag.');",
-        "assert(code.match(/<\\/li>/g) && code.match(/<li>/g) && code.match(/<\\/li>/g).length === code.match(/<li>/g).length, 'message: Make sure your <code>li</code> element has a closing tag.');"
+        "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: 你应该有一个关于\"Top 3 things cats hate（猫咪最痛恨的三件事情）\"的有序列表。');",
+        "assert.equal($(\"ul\").prev().text(), \"Things cats love:\", 'message: 你应该有一个关于\"Things Cats Love（猫咪最喜欢的三件事情）\"的无序列表。');",
+        "assert.equal($(\"ul li\").length, 3, 'message: 在你的<code>ul</code>元素中应该包含三条<code>li</code>元素。');",
+        "assert.equal($(\"ol li\").length, 3, 'message: 在你的<code>ol</code>元素中应该包含三条<code>li</code>元素。');",
+        "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, 'message: 确保你的<code>ul</code>元素有一个结束标记。');",
+        "assert(code.match(/<\\/ol>/g) && code.match(/<\\/ol>/g).length === code.match(/<ol>/g).length, 'message: 确保你的<code>ol</code>元素有一个结束标记。');",
+        "assert(code.match(/<\\/li>/g) && code.match(/<li>/g) && code.match(/<\\/li>/g).length === code.match(/<li>/g).length, 'message: 确保你的<code>li</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Crear una lista ordenada",
