@@ -11,9 +11,7 @@ codecademy早于freecodecamp创立，是一个非常优质的web编程社区。
 
 感兴趣的可以观看我的学习记录：https://www.codecademy.com/finalfantansy
 
-我至今还记得2012年时，codecademy一度在国内无法访问，翻墙也不行。
-
-codecademy在国内也是一时火爆，用户量居全球前十，官方也曾经考虑推出中文，最后不了了之。
+codecademy在国内也是一时火爆，官方也曾经考虑推出中文，最后不了了之。
 
 codecademy在英国很受欢迎，因为是本土语言，加上没有资源限制。
 
@@ -31,7 +29,7 @@ treehouse与codecademy同期创立，codecademy侧重在线学习，treehoue侧�
 
 与codecademy相同的原因，treehouse在国内也是无人问津。
 
-codecademy与treehouse都是创业公司，创业公司的精力是很有限的，做什么，不做什么，创始人要想清楚。
+codecademy与treehouse都是创业公司，创业公司的精力是很有限的，做什么，不做什么，创始人想得很清楚。
 
 他们迄今没有正式进入中国，因为成本太高，不仅仅是汉化问题。
 
@@ -64,7 +62,7 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
 真的不想再吐槽了，这些垃圾培训机构伤害了多少年轻人追求优质教育的心。
 
-我只希望由于freecodecamp中文社区和国内优质社区的存在，让这些受伤害的年轻人能少一点。
+我只希望由于freecodecamp.cn的存在，让这些受伤害的年轻人能少一点。
 
 ## freecodecamp中文社区进度安排
  0、部署上线  （已完成）
