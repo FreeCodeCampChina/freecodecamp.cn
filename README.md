@@ -94,4 +94,8 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
  传送门：https://github.com/huluoyang/freecodecamp.cn/wiki
 
- 最后感谢优才网CEO伍星和走之网的邹治，以及freecodecamp开源项目的贡献者，是你们让这一切成为了可能！
+ 感谢优才网CEO伍星，是他在2016年1月录制的公开课视频才让我接触了freecodecamp项目。
+ 感谢走之网的邹治，是他无偿提供了freecodecamp.cn的域名。
+ 感谢freecodecamp开源项目的创始人QuincyLarson，是他以一己之力开创了这个开源项目。
+ 感谢freecodecamp开源项目的贡献者，是你们的参与让这个项目得以完善、发展。
+ 感谢freecodecamp中文社区的翻译者，是你们的参与让这个项目得以在中国生根、发芽。
