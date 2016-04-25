@@ -12,7 +12,7 @@ codecademy 2011年在纽约创立，且经过YC孵化，是一个非常优质的
 
 codecademy 2012年经36kr的介绍引入中国，在国内也是一时火爆。
 
-感谢(fuck)伟大的防火墙，造成codecademy很多资源在国内无法访问，网站巨慢务必。
+感谢(fuck)伟大的防火墙，造成codecademy部分资源在国内无法访问。
 
 codecademy在英国很受欢迎，因为是本土语言，加上没有资源限制。
 
@@ -26,7 +26,9 @@ codecademy的课程练习和实践已经收费，20美元每月，不支持支�
 
 ### treehouse的发展历程
 
-treehouse 2012年创立，与codecademy侧重Web在线学习不同，treehoue侧重视频学习，课程主要为移动开发，两者各有优劣。
+treehouse 2012年创立，与codecademy侧重Web在线学习不同，
+
+treehoue侧重视频学习，课程主要为移动开发，两者各有优劣。
 
 treehouse从一开始就立足课程收费模式，用收费来确保视频的高质量，收获了一部分人群的喜爱。
 
