@@ -17,8 +17,8 @@
       "id": "cf1111c1c15feddfaeb1bdef",
       "title": "Declare JavaScript Objects as Variables",
       "description": [
-        "Before we dive into Object Oriented Programming, let's revisit JavaScript objects.",
-        "Give your <code>motorBike</code> object a <code>wheels</code>, <code>engines</code> and <code>seats</code> attribute and set them to numbers."
+        "在我们深入<strong>面向对象编程之前</strong>，让我们先回顾一下Javascript的<strong>对象（Object）</strong>",
+        "给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性， 并且设置他们的数量"
       ],
       "challengeSeed": [
         "var car = {",
@@ -29,7 +29,7 @@
         "",
         "var motorBike = {",
         "",
-        "  // Only change code below this line.",
+        "  // 只能在这一行下面写代码",
         "",
         "};"
       ],
