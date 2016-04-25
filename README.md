@@ -73,6 +73,6 @@ github这个编程社交网站上诞生了全球最大的编程学习网站，�
 
  2、课程翻译  （进行中）
 
- 翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/blob/dev/translate.md
+ 翻译规范请参考：https://github.com/huluoyang/freecodecamp.cn/wiki
 
  最后感谢优才网CEO伍星和走之网的邹治，以及freecodecamp开源项目的贡献者，是你们让这一切成为了可能！
