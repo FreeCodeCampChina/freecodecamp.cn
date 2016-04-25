@@ -7,11 +7,9 @@ freecodecamp是一个自由的开源编程社区，它致力于抹平教育差�
 让普通人也能享受到高等学校或培训机构才可能享受到的优质教育。
 
 ## freecodecamp与codecademy/treehouse有什么区别？
-codecademy早于freecodecamp创立，是一个非常优质的web编程社区。
+codecademy 2011年在纽约创立，且经过YC孵化，是一个非常优质的在线学习网站，掀起了在线教育的浪潮。
 
-感兴趣的可以观看我的学习记录：https://www.codecademy.com/finalfantansy
-
-codecademy在国内也是一时火爆，官方也曾经考虑推出中文，最后不了了之。
+codecademy 2012年经36kr的介绍引入中国，在国内也是一时火爆，官方也曾经考虑推出中文，并招募志愿者，最后不了了之，非常遗憾。
 
 codecademy在英国很受欢迎，因为是本土语言，加上没有资源限制。
 
