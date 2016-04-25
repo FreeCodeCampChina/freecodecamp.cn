@@ -422,9 +422,9 @@
       "id": "bad87fee1348cd8acef08811",
       "title": "Taste the Bootstrap Button Color Rainbow",
       "description": [
-        "The <code>btn-primary</code> class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take.",
-        "Add Bootstrap's <code>btn-primary</code> class to your button.",
-        "Note that this button will still need the <code>btn</code> and <code>btn-block</code> classes."
+        "<code>btn-primary</code> class 属性是你的应用的主要颜色。这对凸显出你想要用户采取的操作很有帮助。",
+        "添加Bootstrap的 <code>btn-primary</code> class 属性到按钮标签上。",
+        "注意：这个按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> 属性！"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -504,9 +504,9 @@
       "id": "bad87fee1348cd8acef08813",
       "title": "Call out Optional Actions with Button Info",
       "description": [
-        "Bootstrap comes with several pre-defined colors for buttons. The <code>btn-info</code> class is used to call attention to optional actions that the user can take.",
-        "Create a new block-level Bootstrap button below your \"Like\" button with the text \"Info\", and add Bootstrap's <code>btn-info</code> and <code>btn-block</code> classes to it.",
-        "Note that these buttons still need the <code>btn</code> and <code>btn-block</code> classes."
+        "Bootstrap自带了一些预定义的按钮颜色。<code>btn-info</code> 类被用在那些用户可能会采取的操作上。",
+        "在你的 \"Like\" 按钮下面添加一个文本为 \"Info\" 的块级Bootstrap按钮，并为其添加 <code>btn-info</code> 和 <code>btn-block</code> class属性。",
+        "注意：这些按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> class属性"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -587,7 +587,7 @@
       "id": "bad87fee1348ce8acef08814",
       "title": "Warn your Users of a Dangerous Action",
       "description": [
-        "Bootstrap comes with several pre-defined colors for buttons. The <code>btn-danger</code> class is the button color you'll use to notify users that the button performs a destructive action, such as deleting a cat photo.",
+        "Bootstrap自带了一些预定义的按钮颜色。 The <code>btn-danger</code> class is the button color you'll use to notify users that the button performs a destructive action, such as deleting a cat photo.",
         "Create a button with the text \"Delete\" and give it the class <code>btn-danger</code>.",
         "Note that these buttons still need the <code>btn</code> and <code>btn-block</code> classes."
       ],
