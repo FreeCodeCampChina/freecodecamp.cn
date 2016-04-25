@@ -1558,12 +1558,12 @@
       ],
       "title": "Create a Bulleted Unordered List",
       "description": [
-        "HTML has a special element for creating <code>unordered lists</code>, or bullet point-style lists.",
-        "Unordered lists start with a <code>&#60;ul&#62;</code> element. Then they contain some number of <code>&#60;li&#62;</code> elements.",
-        "For example: ",
+        "HTML有一个特殊元素，用于创建<code>unordered lists（无序列表）</code>, 或带项目符号的列表。",
+        "无序列表以<code>&#60;ul&#62;</code>元素开始，并包含一个或多个<code>&#60;li&#62;</code>元素。",
+        "例如：",
         "<blockquote>&#60;ul&#62;<br>&nbsp;&nbsp;&#60;li&#62;milk&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;cheese&#60;/li&#62;<br>&#60;/ul&#62;</blockquote>",
-        "would create a bullet point-style list of \"milk\" and \"cheese\".",
-        "Remove the last two <code>p</code> elements and create an unordered list of three things that cats love at the bottom of the page."
+        "将会创建一个带项目符号的\"milk\"和\"cheese\"列表。",
+        "删除最后两<code>p</code>元素，然后在页面底部创建一个有关猫咪喜欢的三件事情的无序列表。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1603,10 +1603,10 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"ul\").length > 0, 'message: Create a <code>ul</code> element.');",
-        "assert($(\"ul li\").length > 2, 'message: You should have three <code>li</code> elements within your <code>ul</code> element.');",
-        "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, 'message: Make sure your <code>ul</code> element has a closing tag.');",
-        "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, 'message: Make sure your <code>li</code> elements have closing tags.');"
+        "assert($(\"ul\").length > 0, 'message: 创建一个<code>ul</code>元素。');",
+        "assert($(\"ul li\").length > 2, 'message: 你应该在你的<code>ul</code>元素中添加三条<code>li</code>元素。');",
+        "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, 'message: 确保你的<code>ul</code>元素有结束标记。');",
+        "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, 'message: 确保你的<code>li</code>元素有结束标记。');"
       ],
       "type": "waypoint",
       "titleEs": "Crea una lista no ordenada con viñetas",
