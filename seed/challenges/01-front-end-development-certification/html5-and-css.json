@@ -42,7 +42,7 @@
         "<h1>Hello</h1>"
       ],
       "tests": [
-        "assert.isTrue((/hello(\\s)+world/gi).test($('h1').text()), 'message: Your <code>h1</code> element should have the text \"Hello World\".');"
+        "assert.isTrue((/hello(\\s)+world/gi).test($('h1').text()), 'message: 你的 <code>h1</code> 元素应该包含这个文本 \"Hello World\".');"
       ],
       "type": "waypoint",
       "titleEs": "Saluda a los Elementos HTML",
@@ -90,10 +90,10 @@
         "<h1>Hello World</h1>"
       ],
       "tests": [
-        "assert(($(\"h2\").length > 0), 'message: Create an <code>h2</code> element.');",
-        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: Make sure your <code>h2</code> element has a closing tag.');",
-        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: Your <code>h2</code> element should have the text \"CatPhotoApp\".');",
-        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: Your <code>h1</code> element should have the text \"Hello World\".');"
+        "assert(($(\"h2\").length > 0), 'message: 创建一个 <code>h2</code> 元素');",
+        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: 确保你的 <code>h2</code> 元素有一个结束标记.');",
+        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: 你的 <code>h2</code> 元素应该包含这个文本 \"CatPhotoApp\".');",
+        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: 你的 <code>h1</code> 元素应该包含这个文本 \"Hello World\".');"
       ],
       "type": "waypoint",
       "titleEs": "Encabezado con el elemento h2",
@@ -132,9 +132,9 @@
         "<h2>CatPhotoApp</h2>"
       ],
       "tests": [
-        "assert(($(\"p\").length > 0), 'message: Create a <code>p</code> element.');",
-        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: Your <code>p</code> element should have the text \"Hello Paragraph\".');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: Make sure your <code>p</code> element has a closing tag.');"
+        "assert(($(\"p\").length > 0), 'message: 创建一个 <code>p</code> 元素.');",
+        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: 你的 <code>p</code> 元素应该包含这个文本 \"Hello Paragraph\".');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的 <code>p</code> element 有结束标记.');"
       ],
       "type": "waypoint",
       "titleEs": "Informa con el Elemento Párrafo",
@@ -181,10 +181,10 @@
         "-->"
       ],
       "tests": [
-        "assert($(\"h1\").length > 0, 'message: Make your <code>h1</code> element visible on your page by uncommenting it.');",
-        "assert($(\"h2\").length > 0, 'message: Make your <code>h2</code> element visible on your page by uncommenting it.');",
-        "assert($(\"p\").length > 0, 'message: Make your <code>p</code> element visible on your page by uncommenting it.');",
-        "assert(!/-->/gi.test(code), 'message: Be sure to delete all trailing comment tags&#44; i.e. <code>--&#62;</code>.');"
+        "assert($(\"h1\").length > 0, 'message: 通过取消注释来让页面上的 <code>h1</code> 元素是可见的.');",
+        "assert($(\"h2\").length > 0, 'message: 通过取消注释来让页面上的 <code>h2</code> 元素是可见的.');",
+        "assert($(\"p\").length > 0, 'message: 通过取消注释来让页面上的 <code>p</code> 元素是可见的.');",
+        "assert(!/-->/gi.test(code), 'message: 确定你删除了所有的注释标记; i.e. <code>--&#62;</code>.');"
       ],
       "type": "waypoint",
       "titleEs": "Quita comentarios HTML",
@@ -226,10 +226,10 @@
         "-->"
       ],
       "tests": [
-        "assert(($(\"h1\").length === 0), 'message: Comment out your <code>h1</code> element so that it is not visible on your page.');",
-        "assert(($(\"h2\").length > 0), 'message: Leave your <code>h2</code> element uncommented so that it is visible on your page.');",
-        "assert(($(\"p\").length === 0), 'message: Comment out your <code>p</code> element so that it is not visible on your page.');",
-        "assert(code.match(/-->/g).length > 1, 'message: Be sure to close each of your comments with <code>--&#62;</code>.');"
+        "assert(($(\"h1\").length === 0), 'message: 给你的<code>h1</code> 元素添加注释会导致你在网页行看不到这个元素.');",
+        "assert(($(\"h2\").length > 0), 'message: 给你的 <code>h2</code> 元素删除注释可以让你在网页上看到这个元素.');",
+        "assert(($(\"p\").length === 0), 'message: 注释掉你的 <code>p</code> 元素这样你在网页上就看不到这个元素.');",
+        "assert(code.match(/-->/g).length > 1, 'message: 确保每一个注释都以<code>--&#62;</code>结尾.');"
       ],
       "type": "waypoint",
       "titleEs": "Comenta en HTML",
@@ -997,11 +997,11 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: Your <code>img</code> element should have the class <code>smaller-image</code>.');",
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: Your <code>img</code> element should have the class <code>thick-green-border</code>.');",
-        "assert($(\"img\").hasClass(\"thick-green-border\") && parseInt($(\"img\").css(\"border-top-width\"), 10) >= 8 && parseInt($(\"img\").css(\"border-top-width\"), 10) <= 12, 'message: Give your image a border width of <code>10px</code>.');",
-        "assert($(\"img\").css(\"border-right-style\") === \"solid\", 'message: Give your image a border style of <code>solid</code>.');",
-        "assert($(\"img\").css(\"border-left-color\") === \"rgb(0, 128, 0)\", 'message: The border around your <code>img</code> element should be green.');"
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的 <code>img</code> 元素应该有类 <code>smaller-image</code>.');",
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的 <code>img</code> 元素应该有类 <code>thick-green-border</code>.');",
+        "assert($(\"img\").hasClass(\"thick-green-border\") && parseInt($(\"img\").css(\"border-top-width\"), 10) >= 8 && parseInt($(\"img\").css(\"border-top-width\"), 10) <= 12, 'message: 指定图片的边框宽度为 <code>10px</code>.');",
+        "assert($(\"img\").css(\"border-right-style\") === \"solid\", 'message: 指定图标的边框样式为 <code>solid</code>.');",
+        "assert($(\"img\").css(\"border-left-color\") === \"rgb(0, 128, 0)\", 'message: 这个围绕着 <code>img</code> 元素的边框颜色应该是绿色.');"
       ],
       "type": "waypoint",
       "titleEs": "Añade bordes alrededor de tus elementos",
@@ -1031,8 +1031,8 @@
       ],
       "title": "Add Rounded Corners with a Border Radius",
       "description": [
-        "你的猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(圆形边框)的属性来让它的边框变成圆的。",
-        "你可以用像素来指定border-raidus的属性值，现在让你的猫咪图片的圆形边框为10px吧。",
+        "你的猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。",
+        "你可以用像素来指定border-raidus的属性值，现在让你的猫咪图片的边框半径为10px吧。",
         "注意：这个小节允许多种解决方案。你可以添加border-radius到<code>.thick-green-border</code> class 也可以添加到<code>.smaller-image</code> class."
       ],
       "challengeSeed": [
@@ -1070,8 +1070,8 @@
         "<p class=\"red-text\">有时候猫会把主人当成自己的孩子(听起来有点令人窝心)，这种行为是在给家里带来猎物。它把自己看成是家里的顶梁柱，有责任给不争气的主人找来食物——猫咪通过长时间对你的观察，沉痛地发现你不会打猎。经常出门的猫咪会把它逮到的老鼠、小鸟带回家里，不出门的就经常翻翻垃圾箱找点东西给你。这个时候，主人可不要责骂它，不然它会认为你对它带回来的食物不满意，下次去找更了不起的东西带回来，放在房间里最显眼的地方。但如果你看见它往家里运输死老鼠，最好也别谢它，别让它觉得你对这种猎物很满意，下次照单带回来。最好的办法是心里感念着猫咪所为你做的，并默默地收拾好一切。</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: Your image element should have the class \"thick-green-border\".');",
-        "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 8, 'message: Your image should have a border radius of <code>10px</code>');"
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的图片元素应该有类 \"thick-green-border\".');",
+        "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 8, 'message: 你的图片的边框半径应该为 <code>10px</code>');"
       ],
       "type": "waypoint",
       "titleEs": "Agrega esquinas redondeadas usando Border Radius",
