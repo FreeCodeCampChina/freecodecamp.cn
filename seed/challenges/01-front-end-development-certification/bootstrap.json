@@ -653,10 +653,10 @@
         "</div>"
       ],
       "tests": [
-        "assert(new RegExp(\"Delete\",\"gi\").test($(\"button\").text()), 'message: Create a new <code>button</code> element with the text \"Delete\".');",
-        "assert($(\"button.btn-block.btn\").length > 2, 'message: All of your Bootstrap buttons should have the <code>btn</code> and <code>btn-block</code> classes.');",
-        "assert($(\"button\").hasClass(\"btn-danger\"), 'message: Your new button should have the class <code>btn-danger</code>.');",
-        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: Make sure all your <code>button</code> elements have a closing tag.');"
+        "assert(new RegExp(\"Delete\",\"gi\").test($(\"button\").text()), 'message: 创建一个 <code>button</code> 新元素， 包含文本 \"Delete\"。');",
+        "assert($(\"button.btn-block.btn\").length > 2, 'message: 你的所有 Bootstrap 按钮都应该包含 <code>btn</code> 和 <code>btn-block</code> 类属性。');",
+        "assert($(\"button\").hasClass(\"btn-danger\"), 'message: 你的新按钮需要有 <code>btn-danger</code> 类属性.');",
+        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签.');"
       ],
       "type": "waypoint",
       "challengeType": 0,
