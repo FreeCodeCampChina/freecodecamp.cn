@@ -587,9 +587,9 @@
       "id": "bad87fee1348ce8acef08814",
       "title": "Warn your Users of a Dangerous Action",
       "description": [
-        "Bootstrap自带了一些预定义的按钮颜色。 The <code>btn-danger</code> class is the button color you'll use to notify users that the button performs a destructive action, such as deleting a cat photo.",
-        "Create a button with the text \"Delete\" and give it the class <code>btn-danger</code>.",
-        "Note that these buttons still need the <code>btn</code> and <code>btn-block</code> classes."
+        "Bootstrap自带了一些预定义的按钮颜色. <code>btn-danger</code> class 被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。",
+        "创建一个文本为 \"Delete\" 的按钮，并且给它添加 class <code>btn-danger</code>。",
+        "注意：这些标签仍然需要 <code>btn</code> 与 <code>btn-block</code> class。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
