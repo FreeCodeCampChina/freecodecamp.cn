@@ -73,9 +73,9 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"container-fluid\"), 'message: Your <code>div</code> element should have the class <code>container-fluid</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');",
-        "assert($(\".container-fluid\").children().length >= 8, 'message: Make sure you have nested all HTML elements in <code>.container-fluid</code>.');"
+        "assert($(\"div\").hasClass(\"container-fluid\"), 'message: 你的 <code>div</code> 元素应该包含类属性 <code>container-fluid</code>.');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签.');",
+        "assert($(\".container-fluid\").children().length >= 8, 'message: 确保你已经将所有HTML元素内嵌在 <code>.container-fluid</code> 之中.');"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -157,11 +157,11 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"img\").length === 2, 'message: You should have a total of two images.');",
-        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: Your new image should be below your old one and have the class <code>img-responsive</code>.');",
-        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: Your new image should not have the class <code>smaller-image</code>.');",
-        "assert($(\"img:eq(1)\").attr(\"src\") === \"http://bit.ly/fcc-running-cats\", 'message: Your new image should have a <code>src</code> of <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
-        "assert(code.match(/<img/g) && code.match(/<img[^<]*>/g).length === 2 && code.match(/<img/g).length === 2, 'message: Make sure your new <code>img</code> element has a closing angle bracket.');"
+        "assert($(\"img\").length === 2, 'message: 此时，你应该共有两张图片。');",
+        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 <code>img-responsive</code> 类属性。');",
+        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 <code>smaller-image</code> 类属性。');",
+        "assert($(\"img:eq(1)\").attr(\"src\") === \"http://bit.ly/fcc-running-cats\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
+        "assert(code.match(/<img/g) && code.match(/<img[^<]*>/g).length === 2 && code.match(/<img/g).length === 2, 'message: 确保你的新元素 <code>img</code> 有一个起闭合作用的右尖括号。');"
       ],
       "type": "waypoint",
       "challengeType": 0,
