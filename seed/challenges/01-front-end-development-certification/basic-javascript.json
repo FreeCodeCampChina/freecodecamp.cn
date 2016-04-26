@@ -50,13 +50,13 @@
         "举个栗子, 计算机能够辨别不同的数字, 例如数字 <code>12</code>,和 <code>strings</code>, <code>\"12\"</code>和<code>\"dog\"</code>, or <code>\"123 cats\"</code>, 都是数组。 计算机能够精确地执行对数字的各种操作, 但是对于字符串却无能为力",
         "<code>Variables</code>（变量）允许计算机一种动态的形式来存储数据, 避免了由于公式中的数据的经常变动而需要不断地更新一个公式中的数据。以上的七种不同的数据类型的其中一种都可以存储到一个变量（variable）中",
         "<code>Variables</code> 非常类似于你在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）不同于数学中的变量的一点就是，计算机可以在不同的时间存储不同类型的变量。",
-        "We tell JavaScript to create or <dfn>declare</dfn> a variable by putting the keyword <code>var</code> in front of it, like so:",
+        "通过在变量的前面使用关键字<code>var</code>，我们告诉 JavaScript 来创建或者 <dfn>declare</dfn>（声明）一个变量,就像这样：",
         "<blockquote>var ourName;</blockquote>",
-        "creates a <code>variable</code> called <code>ourName</code>. In JavaScript we end statements with semicolons.",
-        "<code>Variable</code> names can be made up of numbers, letters, and <code>$</code> or <code>_</code>, but may not contain spaces or start with a number.",
+        "上面代码的意思是创建一个名为<code>ourName</code>的<code>variable</code>（变量）。在JavaScript中我们使用分号来分隔去结束一段声明。",
+        "<code>Variable</code> （变量）的名字可以由数字，字母, 和 <code>$</code> 或者 <code>_</code>组成，但是不能包含空格或者以数字为首。",
         "<h4>Instructions</h4>",
-        "Use the <code>var</code> keyword to create a variable called <code>myName</code>.",
-        "<strong>Hint</strong><br>Look at the <code>ourName</code> example if you get stuck."
+        "使用<code>var</code> 关键字来创建一个名为<code>myName</code>的变量。",
+        "<strong>提示</strong><br>如果你卡住了，请看下<code>ourName</code>的例子是怎么写的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -89,10 +89,10 @@
       "id": "56533eb9ac21ba0edf2244a8",
       "title": "Storing Values with the Equal Operator",
       "description": [
-        "In JavaScript, you can store a value in a variable with the <dfn>assignment</dfn> or <code>equal</code> (<code>=</code>)  operator.",
+        "在JavaScript中，把一个值赋值到一个变量中，你可以使用 <dfn>assignment</dfn> 或者 <code>equal</code> (<code>=</code>) 来操作。",
         "<code>myVariable = 5;</code>",
-        "Assigns the <code>Number</code> value <code>5</code> to <code>myVariable</code>.",
-        "Assignment always goes from right to left. Everything to the right of the <code>=</code> operator is resolved before the value is assigned to the variable to the left of the operator.",
+        "把<code>Number</code>数字<code>5</code>的值赋给变量<code>myVariable</code>。",
+        "赋值过程是从右到左进行的。Everything to the right of the <code>=</code> operator is resolved before the value is assigned to the variable to the left of the operator.",
         "<blockquote>myVar = 5;<br>myNum = myVar;</blockquote>",
         "Assigns <code>5</code> to <code>myVar</code> and then resolves <code>myVar</code> to <code>5</code>  again and assigns it to <code>myNum</code>.",
         "<h4>Instructions</h4>",
@@ -139,9 +139,9 @@
       "id": "56533eb9ac21ba0edf2244a9",
       "title": "Initializing Variables with the Equal Operator",
       "description": [
-        "It is common to <dfn>initialize</dfn> a variable to an initial value in the same line as it is declared.",
+        "通常地我们会在<dfn>initialize</dfn>开始声明变量的时候就会给变量赋值一个初始值。",
         "<code>var myVar = 0;</code>",
-        "Creates a new variable called <code>myVar</code> and assigns it an initial value of <code>0</code>.",
+        "创建一个名为 <code>myVar</code> 的变量并指定一个初始值 <code>0</code>。",
         "<h4>Instructions</h4>",
         "Define a variable <code>a</code> with <code>var</code> and initialize it to a value of <code>9</code>."
       ],
