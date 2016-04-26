@@ -671,13 +671,13 @@
       "id": "bad88fee1348ce8acef08815",
       "title": "Use the Bootstrap Grid to Put Elements Side By Side",
       "description": [
-        "Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a <code>div</code> element.",
-        "Here's a diagram of how Bootstrap's 12-column grid layout works:",
+        "Bootstrap 使用了响应式栅格系统，这使得把元素放成一行一行并且为其指定相对宽度变得很容易。绝大多数的 Bootstrap 的 class 都可以被使用在 <code>div</code> 元素上。",
+        "这张图展示了 Bootstrap 的 12 列的栅格布局是怎样工作的：",
         "<a href=\"//i.imgur.com/FaYuui8.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/FaYuui8.png\" title=\"Click to enlarge\" alt=\"an image illustrating Bootstrap's grid system\"></a>",
-        "Note that in this illustration, the <code>col-md-*</code> class is being used. Here, <code>md</code> means medium, and <code>*</code> is a number specifying how many columns wide the element should be. In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.",
-        "In the Cat Photo App that we're building, we'll use <code>col-xs-*</code>, where <code>xs</code> means extra small (like an extra-small mobile phone screen), and <code>*</code> is the number of columns specifying how many columns wide the element should be.",
-        "Put the <code>Like</code>, <code>Info</code> and <code>Delete</code> buttons side-by-side by nesting all three of them within one <code>&#60;div class=\"row\"&#62;</code> element, then each of them within a <code>&#60;div class=\"col-xs-4\"&#62;</code> element.",
-        "The <code>row</code> class is applied to a <code>div</code>, and the buttons themselves can be nested within it."
+        "注意：在在这张图中， 我们使用了<code>col-md-*</code> class。 这里的 <code>md</code> 意味着“中等”， <code>*</code> 用来指定元素应该占有的列的个数。在这个案例里，我们指定了元素在中等大小的屏幕（例如笔记本）上的列的宽度大小。",
+        "在这个Cat Photo应用中，我们使用 <code>col-xs-*</code>，<code>xs</code> 指的是“特别小”（比如非常小的手机屏幕），<code>*</code> 用来指定元素应该占有的列的个数。",
+        "将 <code>Like</code>， <code>Info</code> 和 <code>Delete</code> 按钮依次排在一排。 把这三个按钮都放在一个 <code>&#60;div class=\"row\"&#62;</code> 元素下，然后它们每个都位于一个 <code>&#60;div class=\"col-xs-4\"&#62;</code> 元素下。",
+        "<code>row</code> class 被加到了 <code>div</code>元素上，这样这些元素就会被放在 div 标签下啦~"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
