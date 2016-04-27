@@ -8,11 +8,11 @@
       "id": "56bbb991ad1ed5201cd392d4",
       "title": "Trigger Click Events with jQuery",
       "description": [
-        "In this section, we'll learn how to get data from APIs. APIs - or Application Programming Interfaces - are tools that computers use to communicate with one another.",
-        "We'll also learn how to update HTML with the data we get from these APIs using a technology called Ajax.",
-        "First, let's review what the <code>$(document).ready()</code> function does. This function makes it so all code inside of it only runs  once our page loads.",
-        "Let's make our \"Get Message\" button change the text of the element with the class <code>message</code>.",
-        "Before we can do this, we need to implement a <code>click event</code> inside of our <code>$(document).ready()</code> function by adding this code:",
+        "这一节，我们将学习如何从应用程序接口(APIs)中获取数据——应用程序接口（APIs）——计算机之间相互交流沟通的工具。",
+		"在我们获取到数据之后，我们还会学习如何用Ajxa技术来将这些数据更新到HTML页面当中去。",
+		"首先，我们来看一下函数<code>$(document).ready()</code>干了些什么。这个函数中的代码只会在我们的页面加载时候运行一次。",
+		"本节要实现的功能是在点击\"Get Message\"按钮之后，改变含有<code>message</code> class的元素的显示值。",
+		"为了实现这个功能，我们先要在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
         "<blockquote>$(\"#getMessage\").on(\"click\", function(){</br></br>});</blockquote>"
       ],
       "challengeSeed": [
@@ -72,10 +72,10 @@
       "id": "56bbb991ad1ed5201cd392d5",
       "title": "Change Text with Click Events",
       "description": [
-        "When our click event happens, we can use jQuery to update an HTML element.",
-        "Let's make it so that when a user clicks the \"Get Message\" button, we change the text of the element with the class <code>message</code> to say \"Here is the message\".",
-        "We can do this by adding the following code within our click event:",
-        "<code>$(\".message\").html(\"Here is the message\");</code>"
+        "当我们点击按钮时，我们可以使用jQuery来更新HTML页面",
+		"这次我们要实现的功能是，点击\"Get Message\"按钮，将含有<code>message</code> class的元素显示的文本改为：“Here is the message”。",
+		"为此在我们的点击事件中加入如下代码：",
+		"<code>$(\".message\").html(\"Here is the message\");</code>"
       ],
       "challengeSeed": [
         "fccss",
@@ -131,15 +131,15 @@
       "id": "56bbb991ad1ed5201cd392d6",
       "title": "Get JSON with the jQuery getJSON Method",
       "description": [
-        "You can also request data from an external source. This is where APIs come into play.",
-        "Remember that APIs - or Application Programming Interfaces - are tools that computers use to communicate with one another.",
-        "Most web APIs transfer data in a format called JSON. JSON stands for JavaScript Object Notation.",
-        "You've already been using JSON whenever you create a JavaScript object. JSON is nothing more than object properties and their current values, sandwiched between a <code>{</code> and a <code>}</code>.",
-        "These properties and their values are often referred to as \"key-value pairs\".",
-        "Let's get the JSON from Free Code Camp's Cat Photo API.",
-        "Here's the code you can put in your click event to do this:",
-        "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
-        "Once you've added this, click the \"Get Message\" button. Your Ajax function will replace the \"The message will go here\" text with the raw JSON output from the Free Code Camp Cat Photo API."
+        "你也可以从外部来获取一些数据，来更新HTML页面，这个时候应用程序接口（APIs）就派上用场了。",
+		"记住，APIs——应用程序接口（Application Programming Interfaces——是计算机之间相互交流沟通的工具。",
+		"许多网站的应用程序接口（APIs）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
+		"其实如果你曾经创建过一个JS的对象的话，你已经使用过了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code> 、 <code>}</code>包围的对象属性，以及属性的值组成。",
+		"这些对象属性以及属性值就是我们进场听到的\"键值对（key-value pairs）\"。",
+		"那就让我们从之前章节中用到的FreeCodeCam的猫图API中拿取数据吧。",
+		"你应该在你的点击事件中加入如下的代码：",
+		"<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
+		"在这之后，点击\"Get Message\"按钮。你的Ajax函数将把文字\"The message will go here\"替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。"
       ],
       "challengeSeed": [
         "fccss",
