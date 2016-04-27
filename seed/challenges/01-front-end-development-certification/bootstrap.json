@@ -677,7 +677,7 @@
         "请注意，在这张图表中，类属性 <code>col-md-*</code> 正被使用。在这里，<code>md</code> 表示 medium (中等的)，<code>*</code> 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。",
         "在我们创建的 Cat Photo App 中，将会使用 <code>col-xs-*</code> ，其中 <code>xs</code> 是 extra small 缩写（应用于较小的屏幕，比如手机屏幕），<code>*</code> 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。",
         "把 <code>Like</code>, <code>Info</code> 和 <code>Delete</code> 三个按钮一并放入一个 <code>&#60;div class=\"row\"&#62;</code> 元素中；然后，其中的每一个按钮都需要各自被一个 <code>&#60;div class=\"col-xs-4\"&#62;</code> 元素包裹。",
-        "当<code>div</code> 元素设置了类属性 <code>row</code> 之后，那几个按钮便可嵌入其中。",
+        "当<code>div</code> 元素设置了类属性 <code>row</code> 之后，那几个按钮便可嵌入其中。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
