@@ -548,14 +548,11 @@
       "id": "564944c91be2204b269d51e3",
       "title": "Change Text Inside an Element Using jQuery",
       "description": [
-        "你甚至可以使用jQuery改变HTML文字的字体.",
-        "jQuery has a function called <code>.html()</code> that lets you add HTML tags and text within an element. Any content previously within the element will be completely replaced with the content you provide using this function.",
+        "你可以使用jQuery改变HTML文字的字体.",
         "使用jQuery的<code>.html()</code>方法可以添加HTML标签和文字,代元素原先的内容会被方法的内容所替换掉.",
-        "Here's how you would rewrite and italicize the text of our heading:",
         "我们是这样重写标题并让字体变斜体的:",
         "<code>$(\"h3\").html(\"&#60;i&#62;jQuery Playground&#60;/i&#62;\");</code>",
         "jQuery also has a similar function called <code>.text()</code> that only alters text without adding tags.",
-        "jQuery还有一个相似的方法<code>.text()</code>只改变文字内容不改变标签样式.",
         "改变id为<code>target4</code>按钮的字体为斜体. "
       ],
       "releasedOn": "November 18, 2015",
@@ -612,11 +609,8 @@
       "id": "bad87fee1348bd9aed708826",
       "title": "Remove an Element Using jQuery",
       "description": [
-        "Now let's remove an HTML element from your page using jQuery.",
         "现在让我们用jQuery来移除页面上的HTML元素吧.",
-        "jQuery has a function called <code>.remove()</code> that will remove an HTML element entirely",
         "jQuery 有一个<code>.remove()</code> 的方法可以移除HTML元素",
-        "Remove element <code>target4</code> from the page by using the <code>.remove()</code> function.",
         "试着使用<code>.remove()</code>方法来移除页面上的<code>target4</code>元素吧."
       ],
       "challengeSeed": [
@@ -669,14 +663,10 @@
       "id": "bad87fee1348bd9aed608826",
       "title": "Use appendTo to Move Elements with jQuery",
       "description": [
-        "Now let's try moving elements from one <code>div</code> to another.",
         "现在让我们尝试把元素从一个<code>div</code>移到另外一个.",
-        "jQuery has a function called <code>appendTo()</code> that allows you to select HTML elements and append them to another element.",
         "jQuery有一个<code>appendTo()</code>方法可以把选中的元素加到其他元素中.",
-        "For example, if we wanted to move <code>target4</code> from our right well to our left well, we would use:",
         "比如,你想让<code>target4</code>从我们的从<code>right-well</code>移到<code>left-well</code>,我们可以这样使用:",
         "<code>$(\"#target4\").appendTo(\"#left-well\");</code>",
-        "Move your <code>target2</code> element from your <code>left-well</code> to your <code>right-well</code>.",
         "来试着把<code>target2</code>元素从<code>left-well</code>移到<code>right-well</code>中."
       ],
       "challengeSeed": [
@@ -733,16 +723,11 @@
       "id": "bad87fee1348bd9aed508826",
       "title": "Clone an Element Using jQuery",
       "description": [
-        "In addition to moving elements, you can also copy them from one place to another.",
         "除了移动元素,你还第一把他们从一个地方拷贝到另外一个地方.",
-        "jQuery has a function called <code>clone()</code> that makes a copy of an element.",
         "jQuery的<code>clone()</code>方法可以拷贝元素.",
-        "For example, if we wanted to copy <code>target2</code> from our <code>left-well</code> to our <code>right-well</code>, we would use:",
         "比如,如果我想把<code>target2</code>从<code>left-well</code>拷贝到<code>right-well</code>,我们可以这样写:",
         "<code>$(\"#target2\").clone().appendTo(\"#right-well\");</code>",
-        "Did you notice this involves sticking two jQuery functions together? This is called <code>function chaining</code> and it's a convenient way to get things done with jQuery.",
         "你有没有发现这让两个jQuery方法合在一起使用了?这叫做<code>function chaining</code>并在这样使用也很方便.",
-        "Clone your <code>target5</code> element and append it to your <code>left-well</code>."
         "来尝试复制<code>target5</code>元素"
       ],
       "challengeSeed": [
