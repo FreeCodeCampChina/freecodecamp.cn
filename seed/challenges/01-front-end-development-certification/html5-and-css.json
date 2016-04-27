@@ -1456,13 +1456,13 @@
       "id": "bad87fee1348bd9aedf08835",
       "title": "Create a Set of Checkboxes",
       "description": [
-        "Forms commonly use <code>checkboxes</code> for questions that may have more than one answer.",
-        "Checkboxes are a type of <code>input</code>",
-        "Each of your checkboxes should be nested within its own <code>label</code> element.",
-        "All related checkbox inputs should have the same <code>name</code> attribute.",
-        "Here's an example of a checkbox:",
+        "表单中一般将<code>checkboxes（复选按钮）</code> 用于可能不止一个答案的问题。",
+        "复选按钮是<code>input</code>的一种。",
+        "每一个复选按钮应该嵌套进它自己的<code>label</code>元素。",
+        "所有关联的复选按钮输入应该具有相同的<code>name</code>属性。",
+        "下面是复选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"checkbox\" name=\"personality\"&#62; Loving&#60;/label&#62;</code>",
-        "Add to your form a set of three checkboxes. Each checkbox should be nested within its own <code>label</code> element. All three should share the <code>name</code> attribute of <code>personality</code>."
+        "为你的表单添加一个包含三个复选按钮的复选按钮组，每一个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有三个复选按钮应该共享值为<code>personality</code>的<code>name</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1518,10 +1518,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"checkbox\"]').length > 2, 'message: Your page should have three checkbox elements.');",
-        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: Each of your three checkbox elements should be nested in its own <code>label</code> element.');",
-        "assert(code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length, 'message: Make sure each of your <code>label</code> elements has a closing tag.');",
-        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: Give your checkboxes the <code>name</code> attribute of <code>personality</code>.');"
+        "assert($('input[type=\"checkbox\"]').length > 2, 'message: 你的页面上应该有三个复选按钮元素。');",
+        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: 三个复选按钮中的每一个都应该嵌套进它自己的<code>label</code>元素。');",
+        "assert(code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length, 'message: 确保每一个<code>label</code>元素都有一个结束标记。');",
+        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: 为你的复选按钮的<code>name</code>属性设置值<code>personality</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
