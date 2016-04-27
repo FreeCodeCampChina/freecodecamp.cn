@@ -1678,10 +1678,10 @@
       "id": "bad87fed1348bd9aede07836",
       "title": "Give a Background Color to a Div Element",
       "description": [
-        "You can set an element's background color with the <code>background-color</code> property.",
-        "For example, if you wanted an element's background color to be <code>green</code>, you'd put this within your <code>style</code> element:",
+        "你可以用 <code>background-color</code> 属性来设置一个元素的背景颜色。",
+        "例如，如果你想把一个元素的背景颜色设置为<code>green</code>，你应该把这些加到你的 <code>style</code> 元素中：",
         "<blockquote>.green-background {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "Create a class called <code>gray-background</code> with the <code>background-color</code> of gray. Assign this class to your <code>div</code> element."
+        "创建一个叫做 <code>gray-background</code> 的类，设置其 <code>background-color</code> 为 gray，把这个类指定给你的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1743,8 +1743,8 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"gray-background\"), 'message: Give your <code>div</code> element the class <code>gray-background</code>.');",
-        "assert($(\".gray-background\").css(\"background-color\") === \"rgb(128, 128, 128)\", 'message: Your <code>div</code> element should have a gray background.');"
+        "assert($(\"div\").hasClass(\"gray-background\"), 'message: 把 <code>gray-background</code> 类指定给你的 <code>div</code> 元素。');",
+        "assert($(\".gray-background\").css(\"background-color\") === \"rgb(128, 128, 128)\", 'message: 你的 <code>div</code> 元素应该有一个灰色（gray）的背景。');"
       ],
       "type": "waypoint",
       "challengeType": 0
