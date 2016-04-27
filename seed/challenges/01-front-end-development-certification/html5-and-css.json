@@ -1602,11 +1602,11 @@
       "id": "bad87fee1348bd9aede08835",
       "title": "Nest Many Elements within a Single Div Element",
       "description": [
-        "The <code>div</code> element, also known as a division element, is a general purpose container for other elements.",
-        "The <code>div</code> element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.",
-        "Just like any other non-self-closing element, you can open a <code>div</code> element with <code>&#60;div&#62;</code> and close it on another line with <code>&#60;/div&#62;</code>.",
-        "Try putting your opening <code>div</code> tag above your \"Things cats love\" <code>p</code> element and your closing <code>div</code> tag after your closing <code>ol</code> tag so that both of your lists are within one <code>div</code>.",
-        "Nest your \"Things cats love\" and \"Things cats hate\" lists all within a single <code>div</code> element."
+        "<code>div</code>元素，也被称作division（层）元素，是一个盛装其他元素的通用容器。",
+        "<code>div</code>可能是所有HTML元素中最常使用的元素，在将其自身类声明的CSS传递给它所包裹着的所有元素时非常有用。",
+        "像任何其他非自结束元素一样，你可以用<code>&#60;div&#62;</code>来标记一个<code>div</code>元素的块的开始，然后在另一行用<code>&#60;/div&#62;</code>来标记块的结束。",
+        "试着在你的\"Things cats love\" <code>p</code>元素之前放置<code>div</code>的开始标记，在你的<code>ol</code>结束标记之后放置<code>div</code>的结束标记，这样你的两个列表就都嵌套在<code>div</code>中了。",
+        "把\"Things cats love\"和\"Things cats hate\"两个列表都嵌套进同一个<code>div</code>元素中。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1666,10 +1666,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").children(\"p\").length > 1, 'message: Nest your <code>p</code> elements inside your <code>div</code> element.');",
-        "assert($(\"div\").children(\"ul\").length > 0, 'message: Nest your <code>ul</code> element inside your <code>div</code> element.');",
-        "assert($(\"div\").children(\"ol\").length > 0, 'message: Nest your <code>ol</code> element inside your <code>div</code> element.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<\\/div>/g).length === code.match(/<div>/g).length, 'message: Make sure your <code>div</code> element has a closing tag.');"
+        "assert($(\"div\").children(\"p\").length > 1, 'message: 把你的<code>p</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert($(\"div\").children(\"ul\").length > 0, 'message: 把你的<code>ul</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert($(\"div\").children(\"ol\").length > 0, 'message: 把你的<code>ol</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<\\/div>/g).length === code.match(/<div>/g).length, 'message: 确保你的<code>div</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "challengeType": 0
