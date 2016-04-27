@@ -143,7 +143,7 @@
         "<code>var myVar = 0;</code>",
         "创建一个名为 <code>myVar</code> 的变量并指定一个初始值 <code>0</code>。",
         "<h4>Instructions</h4>",
-		"通过关键字 <code>var</code> 给变量 <code>a</code> 赋值并且给它一个初始值 <code>9</code>。"
+		"通过关键字 <code>var</code> 定义一个变量 <code>a</code> 并且给它一个初始值 <code>9</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -179,7 +179,7 @@
       "description": [
         "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当你用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出一段 <dfn>string</dfn> (字符串) <code>\"undefined\"</code>。",
         "<h4>Instructions</h4>",
-        "初始化3个变量 <code>a</code>, <code>b</code>, and <code>c</code> ，并且分别给他们赋值为：<code>5</code>, <code>10</code>, and <code>\"I am a\"</code> ，这样它们就不会是 <code>undefined</code> （没定义的了）。"        
+        "定义3个变量 <code>a</code>, <code>b</code>, and <code>c</code> ，并且分别给他们赋值为：<code>5</code>, <code>10</code>，和 <code>\"I am a\"</code> ，这样它们就不会是 <code>undefined</code> （没定义的了）。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
