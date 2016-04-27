@@ -96,8 +96,8 @@
         "<blockquote>myVar = 5;<br>myNum = myVar;</blockquote>",
         "数值 <code>5</code> 被赋值到变量 <code>myVar</code> 中， 然后接着变量 <code>myVar</code> 又赋值给变量 <code>myNum</code> ，这样子 <code>myNum</code> 变量中的值也是 <code>5</code> 了。",
         "<h4>Instructions</h4>",
-        "把数值 <code>7</code> 赋值给变量 <code>a</code>.",
-        "把变量 <code>a</code> 中的内容赋值给变量 <code>b</code>."
+        "把数值 <code>7</code> 赋值给变量 <code>a</code>。",
+        "把变量 <code>a</code> 中的内容赋值给变量 <code>b</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -270,15 +270,15 @@
       "id": "cf1111c1c11feddfaeb3bdef",
       "title": "Add Two Numbers with JavaScript",
       "description": [
-        "<code>Number</code> is a data type in JavaScript which represents numeric data.",
-        "Now let's try to add two numbers using JavaScript.",
-        "JavaScript uses the <code>+</code> symbol as addition operation when placed between two numbers.",
+        "<code>Number</code>（数字）是一种在 JavaScript 中来代表数值的一种类型。",
+        "现在让我们来尝试在 JavaScript 中加入两个数字。",
+        "JavaScript 中使用 <code>+</code> 号来让两个数字执行加法运算。",
         "",
-        "<strong>Example</strong>",
-        "<blockquote>myVar = 5 + 10; // assigned 15</blockquote>",
+        "<strong>举个栗子</strong>",
+        "<blockquote>myVar = 5 + 10; // 等于 15</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so that sum will equal <code>20</code>."
+        "改变数字 <code>0</code> 让变量 sum 的值为 <code>20</code>."
       ],
       "challengeSeed": [
         "var sum = 10 + 0;",
@@ -307,14 +307,14 @@
       "id": "cf1111c1c11feddfaeb4bdef",
       "title": "Subtract One Number from Another with JavaScript",
       "description": [
-        "We can also subtract one number from another.",
-        "JavaScript uses the <code>-</code> symbol for subtraction.",
+        "我们也可以在 JavaScript 中执行减法运算。",
+        "JavaScript 中使用 <code>-</code> 来做减法运算。",
         "",
         "<strong>Example</strong>",
-        "<blockquote>myVar = 12 - 6; // assigned 6</blockquote>",
+        "<blockquote>myVar = 12 - 6; // 等于 6</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so the difference is <code>12</code>."
+        "改变数字 <code>0</code> 让变量 difference 的值为 <code>12</code>。"
       ],
       "challengeSeed": [
         "var difference = 45 - 0;",
@@ -345,14 +345,14 @@
       "id": "cf1231c1c11feddfaeb5bdef",
       "title": "Multiply Two Numbers with JavaScript",
       "description": [
-        "We can also multiply one number by another.",
-        "JavaScript uses the <code>*</code> symbol for multiplication of two numbers.",
+        "我们也可在 JavaScript 中使用乘法运算。",
+        "JavaScript 使用这个 <code>*</code> 符号来让两个数字相乘。",
         "",
         "<strong>Example</strong>",
         "<blockquote>myVar = 13 * 13; // assigned 169</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so that product will equal <code>80</code>."
+        "改变 <code>0</code> 来让变量 product 的值等于 <code>80</code>。"
       ],
       "challengeSeed": [
         "var product = 8 * 0;",
@@ -382,8 +382,8 @@
       "id": "cf1111c1c11feddfaeb6bdef",
       "title": "Divide One Number by Another with JavaScript",
       "description": [
-        "We can also divide one number by another.",
-        "JavaScript uses the <code>/</code> symbol for division.",
+        "我们可以在 JavaScript 中做除法运算。",
+        "JavaScript 中使用 <code>/</code> 符号做除法运算。",
         "",
         "<strong>Example</strong>",
         "<blockquote>myVar = 16 / 2; // assigned 8</blockquote>",
@@ -419,13 +419,13 @@
       "id": "56533eb9ac21ba0edf2244ac",
       "title": "Increment a Number with JavaScript",
       "description": [
-        "You can easily <dfn>increment</dfn> or add one to a variable with the <code>++</code> operator.",
+        "使用 <code>++</code> ，我们可以很容易地对变量进行自增或者加一运算。",
         "<code>i++;</code>",
-        "is the equivalent of",
+        "等效于",
         "<code>i = i + 1;</code>",
-        "<strong>Note</strong><br>The entire line becomes <code>i++;</code>, eliminating the need for the equal sign.",
+        "<strong>Note</strong><br>这种写法 <code>i++;</code>, 省去了书写=符号的必要。",
         "<h4>Instructions</h4>",
-        "Change the code to use the <code>++</code> operator on <code>myVar</code>."
+        "重写代码使用 <code>++</code> 来对变量 <code>myVar</code> 进行自增操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -463,13 +463,13 @@
       "id": "56533eb9ac21ba0edf2244ad",
       "title": "Decrement a Number with JavaScript",
       "description": [
-        "You can easily <dfn>decrement</dfn> or decrease a variable by one with the <code>--</code> operator.",
+        "使用自减符号 <code>--</code> ，你可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
         "<code>i--;</code>",
-        "is the equivalent of",
+        "等效于",
         "<code>i = i - 1;</code>",
-        "<strong>Note</strong><br>The entire line becomes <code>i--;</code>, eliminating the need for the equal sign.",
+        "<strong>Note</strong><br>这种操作 <code>i--;</code>, 省去了书写等号的必要。",
         "<h4>Instructions</h4>",
-        "Change the code to use the <code>--</code> operator on <code>myVar</code>."
+        "重写代码使用 <code>--</code> 符号对 <code>myVar</code> 执行自减操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
