@@ -113,17 +113,17 @@
       "id": "cf1111c1c15feddfaeb4bdef",
       "title": "Make Instances of Objects with a Constructor Function",
       "description": [
-        "Now let's put that great <code>constructor</code> function we made in the last lesson to use!",
-        "To use a <code>constructor</code> function we call it with the <code>new</code> keyword in front of it like:",
+        "现在，我们把上一节课我们写的 <strong>构造函数</strong> 在这里用起来！",
+        "使用构造函数时，我们通过在它前面使用 <code>new</code> <strong>关键字</strong> 来对它进行调用，如下：",
         "<code>var myCar = new Car();</code>",
-        "<code>myCar</code> is now an <code>instance</code> of the <code>Car</code> constructor that looks like the object it described:",
+        "<code>myCar</code> 现在成为了 <code>Car</code> 的一个 <strong>实例</strong>（instance），它被 <strong>构造函数</strong> 描述成下面的样子：",
         "<blockquote>{<br>&nbsp;&nbsp;wheels: 4,<br>&nbsp;&nbsp;engines: 1,<br>&nbsp;&nbsp;seats: 1<br>}</blockquote>",
-        "Note that it is important to use the <code>new</code> keyword when calling a constructor. This is how Javascript knows to create a new object and that all the references to <code>this</code> inside the constructor should be referring to this new object.",
-        "Now, once the <code>myCar</code> <code>instance</code> is created it can be used like any other object and can have its properties accessed and modified the same way you would usually. For example:",
+        "记住：要使用 <code>new</code> <strong>关键字</strong> 去调用构造函数。因为只有这样，Javascript才知道这是要去构造一个新 <strong>对象</strong> ，并且把构造函数中的 <code>this</code> 指向这个新对象。",
+        "现在，当 <code>myCar</code> （即 <code>Car</code> 的一个 <strong>实例</strong> ）创建后，他可以像普通对象一样被使用，包括创建、访问、修改它的属性等，就像我们使用其他对象一样。如下：",
         "<code>myCar.turboType = \"twin\";</code>",
-        "Our <code>myCar</code> variable now has a property <code>turboType</code> with a value of <code>\"twin\"</code>.",
-        "In the editor, use the <code>Car</code> <code>constructor</code> to create a new <code>instance</code> and assign it to <code>myCar</code>.",
-        "Then give <code>myCar</code> a <code>nickname</code> property with a string value."
+        "我们的 <code>myCar</code> 变量现在有了一个 <code>turboType</code> 属性了，且值为 <code>\"twin\"</code> 。",
+        "在编辑器中，使用 <code>Car</code> 这个构造函数去创建一个新的 <strong>实例</strong> ，并且把这个实例赋值给 <code>myCar</code> 。",
+        "然后给 <code>myCar</code> 创建一个 <code>nickname</code> 属性，且属性值为一个字符串"
       ],
       "challengeSeed": [
         "var Car = function() {",
