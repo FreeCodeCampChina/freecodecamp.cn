@@ -1,5 +1,4 @@
 var fs = require('fs');
-var path = require('path');
 var source = [
   './seed/challenges/01-front-end-development-certification/html5-and-css.json',
   './seed/challenges/01-front-end-development-certification/bootstrap.json',
@@ -35,9 +34,7 @@ var source = [
   './seed/challenges/04-video-challenges/bigonotation.json'
 ];
 for(var j=0;j<source.length;j++){
-  console.log(source[j]);
   var res = fs.readFileSync(source[j],'utf-8')
-  //if(err) console.log('read file error');
   var out = JSON.parse(res);
   var challenges = out.challenges;
   for(var i=0;i<challenges.length;i++){
@@ -48,9 +45,7 @@ for(var j=0;j<source.length;j++){
     delete challenges[i].titleEs;
     delete challenges[i].titleDe;
   }
-  console.log(out);
   //由于JSON.stringify默认会自动压缩文件，不利于翻译，所以必须添加参数2，表示缩进为2个空格。
   var input = JSON.stringify(out,null,2);
   fs.writeFileSync(source[j],input)
-
 }
