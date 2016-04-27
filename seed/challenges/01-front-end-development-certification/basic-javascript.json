@@ -352,7 +352,7 @@
         "<blockquote>myVar = 13 * 13; // assigned 169</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "改变 <code>0</code> 来让变量 product 的值等于 <code>80</code>。"
+        "改变数值 <code>0</code> 来让变量 product 的值等于 <code>80</code>。"
       ],
       "challengeSeed": [
         "var product = 8 * 0;",
@@ -425,7 +425,7 @@
         "<code>i = i + 1;</code>",
         "<strong>Note</strong><br>这种写法 <code>i++;</code>, 省去了书写=符号的必要。",
         "<h4>Instructions</h4>",
-        "重写代码使用 <code>++</code> 来对变量 <code>myVar</code> 进行自增操作。"
+        "重写代码，使用 <code>++</code> 来对变量 <code>myVar</code> 进行自增操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -469,7 +469,7 @@
         "<code>i = i - 1;</code>",
         "<strong>Note</strong><br>这种操作 <code>i--;</code>, 省去了书写等号的必要。",
         "<h4>Instructions</h4>",
-        "重写代码使用 <code>--</code> 符号对 <code>myVar</code> 执行自减操作。"
+        "重写代码，使用 <code>--</code> 符号对 <code>myVar</code> 执行自减操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -507,10 +507,10 @@
       "id": "cf1391c1c11feddfaeb4bdef",
       "title": "Create Decimal Numbers with JavaScript",
       "description": [
-        "We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as <dfn>floating point</dfn> numbers or <dfn>floats</dfn>.",
-        "<strong>Note</strong><br>Not all real numbers can accurately be represented in <dfn>floating point</dfn>. This can lead to rounding errors. <a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">Details Here</a>.",
+        "我们也可以把小数存储到变量中。小数有时会被称作 <dfn>浮点</dfn> 数字或被称作 <dfn>浮点</dfn> 。",
+        "<strong>Note</strong><br>不是所有的实数都可以用 <dfn>浮点</dfn> 数来表示。因此可能导致四舍五入的错误。<a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">详情在这儿</a>。",
         "<h4>Instructions</h4>",
-        "Create a variable <code>myDecimal</code> and give it a decimal value with a fractional part (e.g. <code>5.7</code>)."
+        "创建一个变量 <code>myDecimal</code> 并给它给它一个十进制值与小数部分 (e.g. <code>5.7</code>)。"
       ],
       "challengeSeed": [
         "var ourDecimal = 5.7;",
@@ -543,10 +543,10 @@
       "id": "bd7993c9c69feddfaeb7bdef",
       "title": "Multiply Two Decimals with JavaScript",
       "description": [
-        "In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.",
-        "Let's multiply two decimals together to get their product.",
+        "在 JavaScript 中，你也可以用小数进行计算，就像整数一样",
+        "让我们把两个小数相乘，并得到它们相乘的结果（product）。",
         "<h4>Instructions</h4>",
-        "Change the <code>0.0</code> so that product will equal <code>5.0</code>."
+        "改变 <code>0.0</code> 的数值让变量的值等于 <code>5.0</code>。"
       ],
       "challengeSeed": [
         "var product = 2.0 * 0.0;",
@@ -577,9 +577,9 @@
       "id": "bd7993c9ca9feddfaeb7bdef",
       "title": "Divide one Decimal by Another with JavaScript",
       "description": [
-        "Now let's divide one decimal by another.",
+        "现在让我们来用一个小数做除法操作。",
         "<h4>Instructions</h4>",
-        "Change the <code>0.0</code> so that <code>quotient</code> will equal to <code>2.2</code>."
+        "改变数值 <code>0.0</code> 的值让变量 <code>quotient</code> 的值等于 <code>2.2</code>."
       ],
       "challengeSeed": [
         "var quotient = 0.0 / 2.0;",
@@ -609,12 +609,12 @@
       "id": "56533eb9ac21ba0edf2244ae",
       "title": "Finding a Remainder in JavaScript",
       "description": [
-        "The <dfn>remainder</dfn> operator <code>%</code> gives the remainder of the division of two numbers.",
-        "<strong>Example</strong>",
-        "<blockquote>5 % 2 = 1 because<br>Math.floor(5 / 2) = 2 (Quotient)<br>2 * 2 = 4<br>5 - 4 = 1 (Remainder)</blockquote>",
-        "<strong>Usage</strong><br>In mathematics, a number can be checked even or odd by checking the remainder of the division of the number by <code>2</code>.",
-        "<blockquote>17 % 2 = 1 (17 is Odd)<br>48 % 2 = 0 (48 is Even)</blockquote>",
-        "<strong>Note</strong><br>The <dfn>remainder</dfn> operator is sometimes incorrectly referred to as  the \"modulus\" operator. It is very similar to modulus, but does not work properly with negative numbers.",
+        " <dfn>余</dfn> 运算符 <code>%</code> 给出了两个数字相除的余数。",
+        "<strong>举例</strong>",
+        "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (Quotient)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
+        "<strong>用法</strong><br>在数学中, 一个数字可以与数字 <code>2</code> 相除得到的余来看它是属于奇数还是偶数。",        
+        "<blockquote>17 % 2 = 1 (17 is 奇数)<br>48 % 2 = 0 (48 is 偶数)</blockquote>",
+        "<strong>Note</strong><br><dfn>余</dfn> 操作符有时被不正确地称为 \"取模\" 操作符。虽然它们之间非常相似，但是余在负数上的操作上是不能运行的。",
         "<h4>Instructions</h4>",
         "Set <code>remainder</code> equal to the remainder of <code>11</code> divided by <code>3</code> using the <dfn>remainder</dfn> (<code>%</code>) operator."
       ],
