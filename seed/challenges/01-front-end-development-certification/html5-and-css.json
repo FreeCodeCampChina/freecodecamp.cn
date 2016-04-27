@@ -30,10 +30,10 @@
       "description": [
         "欢迎来到FreeCodeCamp的第一个编码挑战",
         "你可以在右边的代码编辑器中编辑代码",
-        "你看到<code>&#60;h1&#62;Hello&#60;/h1&#62;</code>了吗? 那是个HTML<code>元素</code>。",
+        "你看到<code><h1>Hello</h1></code>了吗? 那是个HTML<code>元素</code>。",
         "大部分HTML元素都有一个<code>开始标记</code>和一个<code>结束标记</code>.",
-        "开始标记像这样：<code>&#60;h1&#62;</code>",
-        "结束标记像这样：<code>&#60;/h1&#62;</code>",
+        "开始标记像这样：<code><h1></code>",
+        "结束标记像这样：<code></h1></code>",
         "开始标记和结束标记的唯一区别就是结束标记多了一个<code>/</code>。",
         "每个挑战都有测试，你可以点击Run按钮，如果你测试通过，你将进入下一章节。",
         "为了通过这个挑战，请更改<code>h1</code>标签中的Hello为Hello World，然后点击Run。"
@@ -168,7 +168,7 @@
         "1、你想给你的代码添加一些说明，方便团队合作或日后自己查看，但又不想影响代码本身。",
         "2、你就是想让某一段代码不起作用，但又不想删除这一段代码。",
         "怎么办？用注释吧。",
-        "删除<code>&#60;!--</code>和<code>--&#62;</code>来去掉注释。",
+        "删除<code><!--</code>和<code>--></code>来去掉注释。",
         "试着先把一级标题、二级标题、段落都注释掉。"
       ],
       "challengeSeed": [
@@ -212,7 +212,7 @@
       ],
       "title": "Comment out HTML",
       "description": [
-        "注释的开始标记是<code>&#60;!--</code>",
+        "注释的开始标记是<code><!--</code>",
         "结束标记是<code>--></code>",
         "你的任务就是把一级标题和段落都注释掉，但把二级标题留着。"
       ],
@@ -350,7 +350,7 @@
         "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
         "负责颜色（color）的样式（style）是color样式。",
         "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法：",
-        "<code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
+        "<code><h2 style=\"color: blue\">CatPhotoApp</h2></code>",
         "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
       ],
       "challengeSeed": [
@@ -401,12 +401,12 @@
       "title": "Use CSS Selectors to Style Elements",
       "description": [
         "有几百个可以用于改变你的页面外观的CSS<code>属性</code>。",
-        "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就赋予独立的<code>h2</code>元素<code>inline style</code>.",
+        "当你键入<code><h2 style=\"color: red\">CatPhotoApp</h2></code>，你就赋予独立的<code>h2</code>元素<code>inline style</code>.",
         "这是为元素添加样式的一种途径，但是更好的途径是使用意为<code>层叠样式表（Cascading Style Sheets）</code>的<code>CSS</code>。",
         "在你代码的最顶端，创建一个如下的<code>style</code>元素：",
-        "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
+        "<blockquote><style><br></style></blockquote>",
         "在这个style元素内, 你可以为所有的<code>h2</code>元素创建一个<code>CSS选择器</code>。比如，如果你想要将所有的<code>h2</code>元素设置为红色, 你的样式元素应该看起来这样：",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h2 {color: red;}<br>&#60;/style&#62;</blockquote>",
+        "<blockquote><style><br>  h2 {color: red;}<br></style></blockquote>",
         "特别需要注意的是，必须将每一个元素的样式放在左花括号（<code>{</code>）和右花括号（<code>}</code>）之间，并且还需要确保你的元素的样式在style的开始和结束标记之间。最后需要注意的一点是，一定要在每一个元素样式的结尾加上分号。",
         "删除你的<code>h2</code>元素的样式属性，然后创建一个CSS <code>style</code>元素。添加必要的CSS，使所有<code>h2</code>元素变为蓝色。"
       ],
@@ -470,10 +470,10 @@
       "description": [
         "类是可以附加到HTML元素的可重复使用的样式。",
         "下面是一个CSS类声明的例子：",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "上面的语句在<code>&#60;style&#62;</code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
+        "<blockquote><style><br>  .blue-text {<br>    color: blue;<br>  }<br></style></blockquote>",
+        "上面的语句在<code><style></code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
         "你可以以如下的方式将类应用到HTML元素：",
-        "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
+        "<code><h2 class=\"blue-text\">CatPhotoApp</h2></code>",
         "注意，在你的CSS <code>style</code>元素中，类应该以英文的句号（.）引导，而在你的HTML元素的类声明中，类不能以英文句号引导。",
         "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
         "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
@@ -533,9 +533,9 @@
       "description": [
         "记住，你可以在HTML元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将类附加到相关元素中。",
         "记住，CSS类选择器要求以英文句号引导，如下：",
-        "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
+        "<blockquote>.blue-text {<br>  color: blue;<br>}</blockquote>",
         "但是，同样需要记住的是类声明不使用英文句号引导，如下：",
-        "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
+        "<code><h2 class=\"blue-text\">CatPhotoApp</h2></code>",
         "将<code>red-text</code>类应用到<code>h2</code>和<code>p</code>元素中。"
       ],
       "challengeSeed": [
@@ -588,9 +588,9 @@
       "title": "Change the Font Size of an Element",
       "description": [
         "字号是由CSS属性<code>font-size</code>来控制的, 如下：",
-        "<blockquote>h1 {<br>&nbsp;&nbsp;font-size: 30px;<br>}</blockquote>",
+        "<blockquote>h1 {<br>  font-size: 30px;<br>}</blockquote>",
         "用如下的kitty ipsum文本来创建第二个<code>p</code>元素：<code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
-        "在包含<code>red-text</code>类的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
+        "在包含<code>red-text</code>类的同一个<code><style></code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
         "<strong>注意</strong><br>因为浏览器实现上的不同，你可能需要将页面缩放调整为100%以通过本挑战的测试。",
         "同时，将不要为新的<code>p</code>元素添加类属性。"
       ],
@@ -645,7 +645,7 @@
       "description": [
         "你可以用<code>font-family</code>属性来设置元素的字体。",
         "例如，如果你想把你的<code>h2</code>元素的字体设置为<code>Sans-serif</code>，你可以使用下面的CSS：",
-        "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: Sans-serif;<br>}</blockquote>",
+        "<blockquote>h2 {<br>  font-family: Sans-serif;<br>}</blockquote>",
         "让你所有的<code>p</code>元素都使用<code>Monospace</code>字体。"
       ],
       "challengeSeed": [
@@ -700,7 +700,7 @@
         "现在，让我们来导入并应用谷歌字体（注意，因为谷歌在中国被屏蔽，所以你需要跳过本轮挑战；如果你已翻墙或肉身已在墙外，那么请继续）。",
         "首先，你需要<code>调用</code>谷歌以获取<code>Lobster</code>字体并将其载入你的HTML。",
         "复制下面的代码片断并将其粘贴到你的代码编辑器的顶部：",
-        "<code>&#60;link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
+        "<code><link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"></code>",
         "现在你可以将<code>Lobster</code>作为 font-family 的值应用到你的<code>h2</code>元素上了。",
         "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。"
       ],
@@ -763,7 +763,7 @@
         "有几种默认的字体是所有浏览器都可用的，包括<code>Monospace</code>、<code>Serif</code>和<code>Sans-Serif</code>。",
         "当某种字体不可用时，你可以告诉浏览器“降级”到另一种字体。",
         "例如，如果你想对某元素应用<code>Helvetica</code>字体，但你同时想在<code>Helvetica</code>不可用时降级使用<code>Sans-Serif</code>字体，你可以使用如下CSS样式：",
-        "<blockquote>p {<br>&nbsp;&nbsp;font-family: Helvetica, Sans-Serif;<br>}</blockquote>",
+        "<blockquote>p {<br>  font-family: Helvetica, Sans-Serif;<br>}</blockquote>",
         "现在注释掉你对谷歌字体的引用，以使<code>Lobster</code>字体不可用。注意它是如何降级到<code>Monospace</code>字体的。"
       ],
       "challengeSeed": [
@@ -827,7 +827,7 @@
       "description": [
         "你可以通过使用<code>img</code>元素来为你的网站添加图片，并且使用<code>src</code>属性指向一个特定图片的URL。",
         "举例如下：",
-        "<code>&#60img src=\"https://www.your-image-source.com/your-image.jpg\"&#62</code>",
+        "<code><img src=\"https://www.your-image-source.com/your-image.jpg\"></code>",
         "注意，在大多数情况下，<code>img</code>元素是自关闭的。",
         "用以下图片来测试：",
         "<code>https://bit.ly/fcc-relaxing-cat</code>"
@@ -893,7 +893,7 @@
       "description": [
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
         "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "<blockquote><style><br>  .larger-image {<br>    width: 500px;<br>  }<br></style></blockquote>",
         "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
         "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
@@ -963,10 +963,10 @@
       "description": [
         "CSS borders have properties like <code>style</code>, <code>color</code> and <code>width</code>",
         "For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:",
-        "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.thin-red-border {<br>&nbsp;&nbsp;&nbsp;&nbsp;border-color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-width: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
+        "<blockquote><style><br>  .thin-red-border {<br>    border-color: red;<br>    border-width: 5px;<br>    border-style: solid;<br>  }<br></style></blockquote>",
         "Create a class called <code>thick-green-border</code> that puts a 10-pixel-wide green border with a style of <code>solid</code> around an HTML element, and apply that class to your cat photo.",
         "Remember that you can apply multiple classes to an element by separating each class with a space within its <code>class</code> attribute. For example:",
-        "<code>&lt;img class=\"class1 class2\"&gt;</code>"
+        "<code><img class=\"class1 class2\"></code>"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1170,7 +1170,7 @@
         "下面是一张<code>a</code>元素的图示。在此，<code>a</code>元素被用在了一个段落元素的中间，这意味着链接会出现在句子的中间。",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
         "Here's an example:",
-        "<code>&#60;p&#62;Here's a &#60;a href=\"http://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
+        "<code><p>Here's a <a href=\"http://freecodecamp.com\"> link to Free Code Camp</a> for you to follow.</p></code>",
         "创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并且用\"cat photos\"作为其<code>anchor text（锚文本）</code>。"
       ],
       "challengeSeed": [
@@ -1247,7 +1247,7 @@
         "作为参考，再次看一看<code>a</code>元素的图示：",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
         "例如：",
-        "<code>&#60;p&#62;Here's a &#60;a href=\"https://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
+        "<code><p>Here's a <a href=\"https://freecodecamp.com\"> link to Free Code Camp</a> for you to follow.</p></code>",
         "<code>Nesting（嵌套）</code>就是把一个元素放在另一个元素里面。",
         "现在，把你已有的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），使包围的段落为\"View more cat photos\"，但是其中仅\"cat photos\"是一个链接，其余的文本是普通文本。"
       ],
@@ -1401,7 +1401,7 @@
       "description": [
         "你可以通过把某元素嵌套进<code>a</code>元素使其变成一个链接。",
         "把你的图片嵌套进<code>a</code>元素。举例如下：",
-        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"https://bit.ly/fcc-running-cats\"&#62;&#60;/a&#62;</code>",
+        "<code><a href=\"#\"><img src=\"https://bit.ly/fcc-running-cats\"></a></code>",
         "记得将<code>#</code>作为<code>a</code>元素的<code>href</code>属性，使其变为一个死链接。",
         "一旦完成，把你的光标悬停在你的图片上。你的光标此时应该由普通光标指针变成链接点击指针。图片现在是一个链接了。"
       ],
@@ -1481,7 +1481,7 @@
         "<code>alt</code>属性，也被称为<code>alt text</code>, 是当浏览器无法调入图片时显示的文本。<code>alt</code>属性对于盲人或视觉损伤的用户理解一幅图片中所描绘的内容也非常重要，搜索引擎也会搜索<code>alt</code>属性。",
         "简而言之，每一张图片都应该有一个<code>alt</code>属性！",
         "你可以像下面例子中一样为img元素添加一个<code>alt</code>属性：",
-        "<code>&#60img src=\"www.your-image-source.com/your-image.jpg\" alt=\"your alt text\"&#62</code>",
+        "<code><img src=\"www.your-image-source.com/your-image.jpg\" alt=\"your alt text\"></code>",
         "为你的猫咪图片添加一个<code>alt</code>属性，内容为<code>A cute orange cat lying on its back</code>。"
       ],
       "challengeSeed": [
@@ -1559,9 +1559,9 @@
       "title": "Create a Bulleted Unordered List",
       "description": [
         "HTML有一个特殊元素，用于创建<code>unordered lists（无序列表）</code>, 或带项目符号的列表。",
-        "无序列表以<code>&#60;ul&#62;</code>元素开始，并包含一个或多个<code>&#60;li&#62;</code>元素。",
+        "无序列表以<code><ul></code>元素开始，并包含一个或多个<code><li></code>元素。",
         "例如：",
-        "<blockquote>&#60;ul&#62;<br>&nbsp;&nbsp;&#60;li&#62;milk&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;cheese&#60;/li&#62;<br>&#60;/ul&#62;</blockquote>",
+        "<blockquote><ul><br>  <li>milk</li><br>  <li>cheese</li><br></ul></blockquote>",
         "将会创建一个带项目符号的\"milk\"和\"cheese\"列表。",
         "删除最后两<code>p</code>元素，然后在页面底部创建一个有关猫咪喜欢的三件事情的无序列表。"
       ],
@@ -1644,9 +1644,9 @@
       "title": "Create an Ordered List",
       "description": [
         "HTML有一个特殊元素，用于创建<code>ordered lists（有序列表）</code>, 或数字编号列表。",
-        "有序列表以<code>&#60;ol&#62;</code>元素开始，并包含一个或多个<code>&#60;li&#62;</code>元素。",
+        "有序列表以<code><ol></code>元素开始，并包含一个或多个<code><li></code>元素。",
         "例如：",
-        "<blockquote>&#60;ol&#62;<br>&nbsp;&nbsp;&#60;li&#62;Garfield&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;Sylvester&#60;/li&#62;<br>&#60;/ol&#62;</blockquote>",
+        "<blockquote><ol><br>  <li>Garfield</li><br>  <li>Sylvester</li><br></ol></blockquote>",
         "将创建一个包含\"Garfield\"和\"Sylvester\"的数字编号列表。",
         "创建一个有关猫咪最痛恨的三件事情的有序列表。"
       ],
@@ -1735,7 +1735,7 @@
         "现在让我们来创建一个web form（web表单）。",
         "Text inputs（文本输入框）是从你的用户获取输入的一条方便途径。",
         "你可以用如下方法创建：",
-        "<code>&#60;input type=\"text\"&#62;</code>",
+        "<code><input type=\"text\"></code>",
         "注意，<code>input</code>元素是自关闭的。",
         "在你的列表下创建一个type（类型）为<code>text</code>的<code>input</code>元素。"
       ],
@@ -1820,7 +1820,7 @@
       "description": [
         "占位文本（placeholder text）是在你的用户输入任何东西之前出现在你的文本<code>input（输入）</code>框中的文本。",
         "你可以以如下方式创建占位文本：",
-        "<code>&#60;input type=\"text\" placeholder=\"this is placeholder text\"&#62;</code>",
+        "<code><input type=\"text\" placeholder=\"this is placeholder text\"></code>",
         "把你的文本<code>input（输入）</code>框的<code>placeholder</code>的值设置为\"cat photo URL\"。"
       ],
       "challengeSeed": [
@@ -1903,10 +1903,10 @@
       ],
       "title": "Create a Form Element",
       "description": [
-        "You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <code>form</code> element.",
-        "For example:",
-        "<code>&#60;form action=\"/url-where-you-want-to-submit-form-data\"&#62;&#60;/form&#62;</code>",
-        "Nest your text field in a <code>form</code> element. Add the <code>action=\"/submit-cat-photo\"</code> attribute to this form element."
+        "你可以仅使用纯HTML来构建实际提交数据到服务器的web表单（form），通过给你的<code>form</code>元素添加一个动作来达到此目的。",
+        "例如：",
+        "<code><form action=\"/url-where-you-want-to-submit-form-data\"></form></code>",
+        "把你的文本框嵌套进一个<code>form</code>元素，并为此表单元素添加<code>action=\"/submit-cat-photo\"</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1990,7 +1990,7 @@
       "description": [
         "Let's add a <code>submit</code> button to your form. Clicking this button will send the data from your form to the URL you specified with your form's <code>action</code> attribute.",
         "Here's an example submit button:",
-        "<code>&#60;button type=\"submit\"&#62;this button submits the form&#60;/button&#62;</code>",
+        "<code><button type=\"submit\">this button submits the form</button></code>",
         "Add a submit button to your <code>form</code> element with type <code>submit</code> and \"Submit\" as its text."
       ],
       "challengeSeed": [
@@ -2077,7 +2077,7 @@
       "title": "Use HTML5 to Require a Field",
       "description": [
         "You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.",
-        "For example, if you wanted to make a text input field required, you can just add the word <code>required</code> within your <code>input</code> element, you would use: <code>&#60;input type=\"text\" required&#62;</code>",
+        "For example, if you wanted to make a text input field required, you can just add the word <code>required</code> within your <code>input</code> element, you would use: <code><input type=\"text\" required></code>",
         "Make your text <code>input</code> a <code>required</code> field, so that your user can't submit the form without completing this field.",
         "Then try to submit the form without inputing any text. See how your HTML5 form notifies you that the field is required?",
         "Note: This field does not work in Safari."
@@ -2175,7 +2175,7 @@
         "Each of your radio buttons should be nested within its own <code>label</code> element.",
         "All related radio buttons should have the same <code>name</code> attribute.",
         "Here's an example of a radio button:",
-        "<code>&#60;label&#62;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62; Indoor&#60;/label&#62;</code>",
+        "<code><label><input type=\"radio\" name=\"indoor-outdoor\"> Indoor</label></code>",
         "Add a pair of radio buttons to your form. One should have the option of <code>indoor</code> and the other should have the option of <code>outdoor</code>."
       ],
       "challengeSeed": [
@@ -2275,7 +2275,7 @@
         "Each of your checkboxes should be nested within its own <code>label</code> element.",
         "All related checkbox inputs should have the same <code>name</code> attribute.",
         "Here's an example of a checkbox:",
-        "<code>&#60;label&#62;&#60;input type=\"checkbox\" name=\"personality\"&#62; Loving&#60;/label&#62;</code>",
+        "<code><label><input type=\"checkbox\" name=\"personality\"> Loving</label></code>",
         "Add to your form a set of three checkboxes. Each checkbox should be nested within its own <code>label</code> element. All three should share the <code>name</code> attribute of <code>personality</code>."
       ],
       "challengeSeed": [
@@ -2369,7 +2369,7 @@
       "description": [
         "You can set a checkbox or radio button to be checked by default using the <code>checked</code> attribute.",
         "To do this, just add the word \"checked\" to the inside of an input element. For example:",
-        "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
+        "<code><input type=\"radio\" name=\"test-name\" checked></code>",
         "Set the first of your <code>radio buttons</code> and the first of your <code>checkboxes</code> to both be checked by default."
       ],
       "challengeSeed": [
@@ -2464,7 +2464,7 @@
       "description": [
         "The <code>div</code> element, also known as a division element, is a general purpose container for other elements.",
         "The <code>div</code> element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.",
-        "Just like any other non-self-closing element, you can open a <code>div</code> element with <code>&#60;div&#62;</code> and close it on another line with <code>&#60;/div&#62;</code>.",
+        "Just like any other non-self-closing element, you can open a <code>div</code> element with <code><div></code> and close it on another line with <code></div></code>.",
         "Try putting your opening <code>div</code> tag above your \"Things cats love\" <code>p</code> element and your closing <code>div</code> tag after your closing <code>ol</code> tag so that both of your lists are within one <code>div</code>.",
         "Nest your \"Things cats love\" and \"Things cats hate\" lists all within a single <code>div</code> element."
       ],
@@ -2549,7 +2549,7 @@
       "description": [
         "You can set an element's background color with the <code>background-color</code> property.",
         "For example, if you wanted an element's background color to be <code>green</code>, you'd put this within your <code>style</code> element:",
-        "<blockquote>.green-background {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
+        "<blockquote>.green-background {<br>  background-color: green;<br>}</blockquote>",
         "Create a class called <code>gray-background</code> with the <code>background-color</code> of gray. Assign this class to your <code>div</code> element."
       ],
       "challengeSeed": [
@@ -2642,7 +2642,7 @@
         "There are several benefits to using <code>id</code> attributes, and you'll learn more about them once you start using jQuery.",
         "<code>id</code> attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same <code>id</code> attribute.",
         "Here's an example of how you give your <code>h2</code> element the id of <code>cat-photo-app</code>:",
-        "<code>&#60;h2 id=\"cat-photo-app\"></code>",
+        "<code><h2 id=\"cat-photo-app\"></code>",
         "Give your <code>form</code> element the id <code>cat-photo-form</code>."
       ],
       "challengeSeed": [
@@ -2737,7 +2737,7 @@
       "description": [
         "One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.",
         "Here's an example of how you can take your element with the <code>id</code> attribute of <code>cat-photo-element</code> and give it the background color of green. In your <code>style</code> element:",
-        "<blockquote>#cat-photo-element {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
+        "<blockquote>#cat-photo-element {<br>  background-color: green;<br>}</blockquote>",
         "Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.",
         "Try giving your form, which now has the <code>id</code> attribute of <code>cat-photo-form</code>, a green background."
       ],
@@ -3361,7 +3361,7 @@
         "Every HTML page has a <code>body</code> element.",
         "We can prove that the <code>body</code> element exists here by giving it a <code>background-color</code> of black.",
         "We can do this by adding the following to our <code>style</code> element:",
-        "<blockquote>body {<br>&nbsp;&nbsp;background-color: black;<br>}</blockquote>"
+        "<blockquote>body {<br>  background-color: black;<br>}</blockquote>"
       ],
       "challengeSeed": [
         "<style>",
@@ -3494,7 +3494,7 @@
         "Applying multiple class attributes to a HTML element is done with a space between them like this:",
         "<code>class=\"class1 class2\"</code>",
         "Note: It doesn't matter which order the classes are listed in the HTML element.",
-        "However, the order of the <code>class</code> declarations in the <code>&#60;style&#62;</code> section are what is important. The second declaration will always take precedence over the first. Because <code>.blue-text</code> is declared second, it overrides the attributes of <code>.pink-text</code>"
+        "However, the order of the <code>class</code> declarations in the <code><style></code> section are what is important. The second declaration will always take precedence over the first. Because <code>.blue-text</code> is declared second, it overrides the attributes of <code>.pink-text</code>"
       ],
       "challengeSeed": [
         "<style>",
@@ -3548,10 +3548,10 @@
         "But we're not done yet. There are other ways that you can override CSS. Do you remember id attributes?",
         "Let's override your <code>pink-text</code> and <code>blue-text</code> classes, and make your <code>h1</code> element orange, by giving the <code>h1</code> element an id and then styling that id.",
         "Give your <code>h1</code> element the <code>id</code> attribute of <code>orange-text</code>. Remember, id styles look like this:",
-        "<code>&#60;h1 id=\"orange-text\"&#62;</code>",
+        "<code><h1 id=\"orange-text\"></code>",
         "Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element.",
         "Create a CSS declaration for your <code>orange-text</code> id in your <code>style</code> element. Here's an example of what this looks like:",
-        "<blockquote>#brown-text {<br>&nbsp;&nbsp;color: brown;<br>}</blockquote>",
+        "<blockquote>#brown-text {<br>  color: brown;<br>}</blockquote>",
         "Note: It doesn't matter whether you declare this css above or below pink-text class, since id attribute will always take precedence."
       ],
       "challengeSeed": [
@@ -3611,7 +3611,7 @@
         "So we've proven that id declarations override class declarations, regardless of where they are declared in your <code>style</code> element CSS.",
         "There are other ways that you can override CSS. Do you remember inline styles?",
         "Use an <code>in-line style</code> to try to make our <code>h1</code> element white. Remember, in line styles look like this:",
-        "<code>&#60;h1 style=\"color: green\"&#62;</code>",
+        "<code><h1 style=\"color: green\"></code>",
         "Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element."
       ],
       "challengeSeed": [
