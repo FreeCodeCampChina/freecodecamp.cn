@@ -1530,10 +1530,10 @@
       "id": "bad87fee1348bd9aedd08835",
       "title": "Check Radio Buttons and Checkboxes by Default",
       "description": [
-        "You can set a checkbox or radio button to be checked by default using the <code>checked</code> attribute.",
-        "To do this, just add the word \"checked\" to the inside of an input element. For example:",
+        "使用<code>checked</code>属性，你可以设置复选按钮和单选按钮默认被选中。",
+        "为此，只需在输入元素中添加单词\"checked\"。例如：",
         "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
-        "Set the first of your <code>radio buttons</code> and the first of your <code>checkboxes</code> to both be checked by default."
+        "将你的第一个<code>radio buttons</code>和第一个<code>checkboxes</code>都设置为默认选中。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1592,8 +1592,8 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: Your first radio button on your form should be checked by default.');",
-        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: Your first checkbox on your form should be checked by default.');"
+        "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: 你表单中的第一个单选按钮应该默认被选中。');",
+        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表彰中的第一个复选按钮应该默认被选中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
