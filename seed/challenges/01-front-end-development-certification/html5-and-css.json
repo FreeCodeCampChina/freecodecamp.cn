@@ -349,7 +349,7 @@
         "现在让我们来改变某些文本的颜色。",
         "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
         "负责颜色（color）的样式（style）是color样式。",
-        "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法："
+        "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法：",
         "<code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
         "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
       ],
