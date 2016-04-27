@@ -1247,10 +1247,10 @@
       "id": "bad87fee1348bd9aedd08830",
       "title": "Add a Submit Button to a Form",
       "description": [
-        "Let's add a <code>submit</code> button to your form. Clicking this button will send the data from your form to the URL you specified with your form's <code>action</code> attribute.",
-        "Here's an example submit button:",
+        "让我们来为你的form添加一个<code>submit（提交）</code>按钮，点击这个按钮，数据将会从你的form发送到你通过<code>action</code>属性指定的URL上。",
+        "下面是submit按钮的例子：",
         "<code>&#60;button type=\"submit\"&#62;this button submits the form&#60;/button&#62;</code>",
-        "Add a submit button to your <code>form</code> element with type <code>submit</code> and \"Submit\" as its text."
+        "为你的<code>form</code>元素添加一个type为<code>submit</code>的submit按钮，用\"Submit\"作按钮文本。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1303,10 +1303,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").children(\"button\").length > 0, 'message: Your form should have a button inside it.');",
-        "assert($(\"button\").attr(\"type\") === \"submit\", 'message: Your submit button should have the attribute <code>type</code> set to <code>submit</code>.');",
-        "assert($(\"button\").text().match(/^\\s*submit\\s*$/gi), 'message: Your submit button should only have the text \"Submit\".');",
-        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: Make sure your <code>button</code> element has a closing tag.');"
+        "assert($(\"form\").children(\"button\").length > 0, 'message: 你的form内部应该有一个button。');",
+        "assert($(\"button\").attr(\"type\") === \"submit\", 'message: 你的submit button应该有一个<code>type</code>属性，其值设置为<code>submit</code>。');",
+        "assert($(\"button\").text().match(/^\\s*submit\\s*$/gi), 'message: 你的submit button的按钮文本仅应该为\"Submit\"。');",
+        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你的<code>button</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "challengeType": 0
