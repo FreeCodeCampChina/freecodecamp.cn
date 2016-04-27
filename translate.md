@@ -54,11 +54,11 @@ wish you go go go!
 
     - [x] Make Images Mobile Responsive
 
-        翻译者：张三（github） 张三（wechart）
+        翻译者：张三（github） 张三（wechat）
         
     - [ ] Center Text with Bootstrap
     
-        翻译者：李四（github） lisi（wechart）
+        翻译者：李四（github） lisi（wechat）
         
 ### 进度记录：
 
@@ -68,11 +68,11 @@ wish you go go go!
     
         - [x] Learn how Free Code Camp Works
         
-            翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechat）
         
         - [x] Create a GitHub Account and Join our Chat Rooms 
         
-            翻译者：张三（github） 张三（wechart）
+            翻译者：张三（github） 张三（wechat）
         
         - [x] Configure your Code Portfolio
         
