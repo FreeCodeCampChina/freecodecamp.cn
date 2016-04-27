@@ -1315,11 +1315,11 @@
       "id": "bad87fee1348bd9aedc08830",
       "title": "Use HTML5 to Require a Field",
       "description": [
-        "You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.",
-        "For example, if you wanted to make a text input field required, you can just add the word <code>required</code> within your <code>input</code> element, you would use: <code>&#60;input type=\"text\" required&#62;</code>",
-        "Make your text <code>input</code> a <code>required</code> field, so that your user can't submit the form without completing this field.",
-        "Then try to submit the form without inputing any text. See how your HTML5 form notifies you that the field is required?",
-        "Note: This field does not work in Safari."
+        "你可以使指定的表单字段成为必填项（required），这样，只有当你的用户填写了该字段后，他（她）才能够提交你的表单。",
+        "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>这个单词就可以了， 你可以使用：<code>&#60;input type=\"text\" required&#62;</code>",
+        "把你的文本<code>input</code>改为<code>required</code>字段，这样你的用户不填写完这个字段就无法提交表单。",
+        "然后，试试不填写任何文本提交表单，看看你的HTML5表单如何提示你该字段为必填项。",
+        "注意：该字段在Safari浏览器中不起作用。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1373,7 +1373,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"input\").prop(\"required\"), 'message: Your text <code>input</code> element should have the <code>required</code> attribute.');"
+        "assert($(\"input\").prop(\"required\"), 'message: 你的文本<code>input</code>元素应该具有<code>required</code>属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1382,13 +1382,13 @@
       "id": "bad87fee1348bd9aedf08834",
       "title": "Create a Set of Radio Buttons",
       "description": [
-        "You can use <code>radio buttons</code> for questions where you want the user to only give you one answer.",
-        "Radio buttons are a type of <code>input</code>",
-        "Each of your radio buttons should be nested within its own <code>label</code> element.",
-        "All related radio buttons should have the same <code>name</code> attribute.",
-        "Here's an example of a radio button:",
+        "你可以将<code>radio buttons（单选按钮）</code>用于你想要用户只给出一个答案的问题中。",
+        "单选按钮是<code>input</code>的一种。",
+        "每一个单选按钮都应该嵌套在它自己的<code>label（标签）</code>元素中。",
+        "所有关联的单选按钮应该使用相同的<code>name</code>属性。",
+        "下面是一个单选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62; Indoor&#60;/label&#62;</code>",
-        "Add a pair of radio buttons to your form. One should have the option of <code>indoor</code> and the other should have the option of <code>outdoor</code>."
+        "给你的表单添加一对单选按钮，其中之一应该具有<code>indoor</code>选项，另一个应该具有<code>outdoor</code>选项。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1442,12 +1442,12 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"radio\"]').length > 1, 'message: Your page should have two radio button elements.');",
-        "assert($('label > input[type=\"radio\"]').filter(\"[name='indoor-outdoor']\").length > 1, 'message: Give your radio buttons the <code>name</code> attribute of <code>indoor-outdoor</code>.');",
-        "assert($('label > input[type=\"radio\"]:only-child').length > 1, 'message: Each of your two radio button elements should be nested in its own <code>label</code> element.');",
-        "assert((code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length), 'message: Make sure each of your <code>label</code> elements has a closing tag.');",
-        "assert($(\"label\").text().match(/indoor/gi), 'message: One of your radio buttons should have the label <code>indoor</code>.');",
-        "assert($(\"label\").text().match(/outdoor/gi), 'message: One of your radio buttons should have the label <code>outdoor</code>.');"
+        "assert($('input[type=\"radio\"]').length > 1, 'message: 你的页面上应该有两个单选按钮元素。');",
+        "assert($('label > input[type=\"radio\"]').filter(\"[name='indoor-outdoor']\").length > 1, 'message: 设置你的单选按钮的<code>name</code>属性为<code>indoor-outdoor</code>。');",
+        "assert($('label > input[type=\"radio\"]:only-child').length > 1, 'message: 你的两个单选按钮中的每一个都应该嵌套进它自己的<code>label</code>元素中。');",
+        "assert((code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length), 'message: 确保你的每一个<code>label</code>元素都有一个结束标记。');",
+        "assert($(\"label\").text().match(/indoor/gi), 'message: 应该有一个标签为<code>indoor</code>的单选按钮。');",
+        "assert($(\"label\").text().match(/outdoor/gi), 'message: 应该有一个标签为<code>outdoor</code>的单选按钮。');"
       ],
       "type": "waypoint",
       "challengeType": 0
