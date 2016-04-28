@@ -74,12 +74,12 @@
         "在JavaScript中，把一个值赋值到一个变量中，你可以使用 <dfn>assignment</dfn> 或者 <code>equal</code> (<code>=</code>) 来操作。",
         "<code>myVariable = 5;</code>",
         "把<code>Number</code>数字<code>5</code>的值赋给变量<code>myVariable</code>。",
-        "赋值过程是从右到左进行的。Everything to the right of the <code>=</code> operator is resolved before the value is assigned to the variable to the left of the operator.",
+        "赋值过程是从右到左进行的。所有 <code>=</code> 操作符右边的值都会被赋值到左边的变量。",
         "<blockquote>myVar = 5;<br>myNum = myVar;</blockquote>",
-        "Assigns <code>5</code> to <code>myVar</code> and then resolves <code>myVar</code> to <code>5</code>  again and assigns it to <code>myNum</code>.",
+        "数值 <code>5</code> 被赋值到变量 <code>myVar</code> 中， 然后接着变量 <code>myVar</code> 又赋值给变量 <code>myNum</code> ，这样子 <code>myNum</code> 变量中的值也是 <code>5</code> 了。",
         "<h4>Instructions</h4>",
-        "Assign the value <code>7</code> to variable <code>a</code>.",
-        "Assign the contents of <code>a</code> to variable <code>b</code>."
+        "把数值 <code>7</code> 赋值给变量 <code>a</code>。",
+        "把变量 <code>a</code> 中的内容赋值给变量 <code>b</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -113,7 +113,7 @@
         "<code>var myVar = 0;</code>",
         "创建一个名为 <code>myVar</code> 的变量并指定一个初始值 <code>0</code>。",
         "<h4>Instructions</h4>",
-        "Define a variable <code>a</code> with <code>var</code> and initialize it to a value of <code>9</code>."
+		"通过关键字 <code>var</code> 定义一个变量 <code>a</code> 并且给它一个初始值 <code>9</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -139,9 +139,9 @@
       "id": "56533eb9ac21ba0edf2244aa",
       "title": "Understanding Uninitialized Variables",
       "description": [
-        "When JavaScript variables are declared, they have an initial value of <code>undefined</code>. If you do a mathematical operation on an <code>undefined</code> variable your result will be <code>NaN</code> which means <dfn>\"Not a Number\"</dfn>. If you concatenate a string with an <code>undefined</code> variable, you will get a literal <dfn>string</dfn> of <code>\"undefined\"</code>.",
+        "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当你用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出一段 <dfn>string</dfn> (字符串) <code>\"undefined\"</code>。",
         "<h4>Instructions</h4>",
-        "Initialize the three variables <code>a</code>, <code>b</code>, and <code>c</code> with <code>5</code>, <code>10</code>, and <code>\"I am a\"</code> respectively so that they will not be <code>undefined</code>."
+        "定义3个变量 <code>a</code>, <code>b</code>, and <code>c</code> ，并且分别给他们赋值为：<code>5</code>, <code>10</code>，和 <code>\"I am a\"</code> ，这样它们就不会是 <code>undefined</code> （没定义的了）。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -176,14 +176,14 @@
       "id": "56533eb9ac21ba0edf2244ab",
       "title": "Understanding Case Sensitivity in Variables",
       "description": [
-        "In JavaScript all variables and function names are case sensitive. This means that capitalization matters.",
-        "<code>MYVAR</code> is not the same as <code>MyVar</code> nor <code>myvar</code>. It is possible to have multiple distinct variables with the same name but different casing. It is strongly recommended that for the sake of clarity, you <em>do not</em> use this language feature.",
+        "在 JavaScript 中所有的变量都是大小写敏感的。这意味着你要注意大写字母。",
+        "<code>MYVAR</code> 与这个 <code>MyVar</code> 还有这个 <code>myvar</code> 是不同的。这就有可能有多个截然不同的变量却有着有相同的名字。正是由于以上原因所以强烈地建议你, <em>不要</em> 使用这一特性。（以免给自己带来麻烦）",        
         "<h4>Best Practice</h4>",
-        "Write variable names in Javascript in <dfn>camelCase</dfn>. In <dfn>camelCase</dfn>, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.",
-        "<strong>Examples:</strong>",
+        "使用 <dfn>驼峰命名法</dfn> 来书写一个 Javascript 变量，在 <dfn>驼峰命名法</dfn> 中，含有变量名是多个单词组成的第一个单词的首字母小写，后面的单词的第一个字母大写。",
+        "<strong>举个栗子:</strong>",
         "<blockquote>var someVariable;<br>var anotherVariableName;<br>var thisVariableNameIsTooLong;</blockquote>",
         "<h4>Instructions</h4>",
-        "Fix the variable declarations and assignments so their names use <dfn>camelCase</dfn>."
+        "修正声明的变量，让它们的命名符合 <dfn>驼峰命名法</dfn> 的规范。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -215,15 +215,15 @@
       "id": "cf1111c1c11feddfaeb3bdef",
       "title": "Add Two Numbers with JavaScript",
       "description": [
-        "<code>Number</code> is a data type in JavaScript which represents numeric data.",
-        "Now let's try to add two numbers using JavaScript.",
-        "JavaScript uses the <code>+</code> symbol as addition operation when placed between two numbers.",
+        "<code>Number</code>（数字）是一种在 JavaScript 中来代表数值的一种类型。",
+        "现在让我们来尝试在 JavaScript 中加入两个数字。",
+        "JavaScript 中使用 <code>+</code> 号来让两个数字执行加法运算。",
         "",
-        "<strong>Example</strong>",
-        "<blockquote>myVar = 5 + 10; // assigned 15</blockquote>",
+        "<strong>举个栗子</strong>",
+        "<blockquote>myVar = 5 + 10; // 等于 15</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so that sum will equal <code>20</code>."
+        "改变数字 <code>0</code> 让变量 sum 的值为 <code>20</code>."
       ],
       "challengeSeed": [
         "var sum = 10 + 0;",
@@ -246,14 +246,14 @@
       "id": "cf1111c1c11feddfaeb4bdef",
       "title": "Subtract One Number from Another with JavaScript",
       "description": [
-        "We can also subtract one number from another.",
-        "JavaScript uses the <code>-</code> symbol for subtraction.",
+        "我们也可以在 JavaScript 中执行减法运算。",
+        "JavaScript 中使用 <code>-</code> 来做减法运算。",
         "",
         "<strong>Example</strong>",
-        "<blockquote>myVar = 12 - 6; // assigned 6</blockquote>",
+        "<blockquote>myVar = 12 - 6; // 等于 6</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so the difference is <code>12</code>."
+        "改变数字 <code>0</code> 让变量 difference 的值为 <code>12</code>。"
       ],
       "challengeSeed": [
         "var difference = 45 - 0;",
@@ -278,14 +278,14 @@
       "id": "cf1231c1c11feddfaeb5bdef",
       "title": "Multiply Two Numbers with JavaScript",
       "description": [
-        "We can also multiply one number by another.",
-        "JavaScript uses the <code>*</code> symbol for multiplication of two numbers.",
+        "我们也可在 JavaScript 中使用乘法运算。",
+        "JavaScript 使用这个 <code>*</code> 符号来让两个数字相乘。",
         "",
         "<strong>Example</strong>",
         "<blockquote>myVar = 13 * 13; // assigned 169</blockquote>",
         "",
         "<h4>Instructions</h4>",
-        "Change the <code>0</code> so that product will equal <code>80</code>."
+        "改变数值 <code>0</code> 来让变量 product 的值等于 <code>80</code>。"
       ],
       "challengeSeed": [
         "var product = 8 * 0;",
@@ -309,8 +309,8 @@
       "id": "cf1111c1c11feddfaeb6bdef",
       "title": "Divide One Number by Another with JavaScript",
       "description": [
-        "We can also divide one number by another.",
-        "JavaScript uses the <code>/</code> symbol for division.",
+        "我们可以在 JavaScript 中做除法运算。",
+        "JavaScript 中使用 <code>/</code> 符号做除法运算。",
         "",
         "<strong>Example</strong>",
         "<blockquote>myVar = 16 / 2; // assigned 8</blockquote>",
@@ -340,13 +340,13 @@
       "id": "56533eb9ac21ba0edf2244ac",
       "title": "Increment a Number with JavaScript",
       "description": [
-        "You can easily <dfn>increment</dfn> or add one to a variable with the <code>++</code> operator.",
+        "使用 <code>++</code> ，我们可以很容易地对变量进行自增或者加一运算。",
         "<code>i++;</code>",
-        "is the equivalent of",
+        "等效于",
         "<code>i = i + 1;</code>",
-        "<strong>Note</strong><br>The entire line becomes <code>i++;</code>, eliminating the need for the equal sign.",
+        "<strong>Note</strong><br>这种写法 <code>i++;</code>, 省去了书写=符号的必要。",
         "<h4>Instructions</h4>",
-        "Change the code to use the <code>++</code> operator on <code>myVar</code>."
+        "重写代码，使用 <code>++</code> 来对变量 <code>myVar</code> 进行自增操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -374,13 +374,13 @@
       "id": "56533eb9ac21ba0edf2244ad",
       "title": "Decrement a Number with JavaScript",
       "description": [
-        "You can easily <dfn>decrement</dfn> or decrease a variable by one with the <code>--</code> operator.",
+        "使用自减符号 <code>--</code> ，你可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
         "<code>i--;</code>",
-        "is the equivalent of",
+        "等效于",
         "<code>i = i - 1;</code>",
-        "<strong>Note</strong><br>The entire line becomes <code>i--;</code>, eliminating the need for the equal sign.",
+        "<strong>Note</strong><br>这种操作 <code>i--;</code>, 省去了书写等号的必要。",
         "<h4>Instructions</h4>",
-        "Change the code to use the <code>--</code> operator on <code>myVar</code>."
+        "重写代码，使用 <code>--</code> 符号对 <code>myVar</code> 执行自减操作。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -408,10 +408,10 @@
       "id": "cf1391c1c11feddfaeb4bdef",
       "title": "Create Decimal Numbers with JavaScript",
       "description": [
-        "We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as <dfn>floating point</dfn> numbers or <dfn>floats</dfn>.",
-        "<strong>Note</strong><br>Not all real numbers can accurately be represented in <dfn>floating point</dfn>. This can lead to rounding errors. <a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">Details Here</a>.",
+        "我们也可以把小数存储到变量中。小数有时会被称作 <dfn>浮点</dfn> 数字或被称作 <dfn>浮点</dfn> 。",
+        "<strong>Note</strong><br>不是所有的实数都可以用 <dfn>浮点</dfn> 数来表示。因此可能导致四舍五入的错误。<a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">详情在这儿</a>。",
         "<h4>Instructions</h4>",
-        "Create a variable <code>myDecimal</code> and give it a decimal value with a fractional part (e.g. <code>5.7</code>)."
+        "创建一个变量 <code>myDecimal</code> 并给它给它一个十进制值与小数部分 (e.g. <code>5.7</code>)。"
       ],
       "challengeSeed": [
         "var ourDecimal = 5.7;",
@@ -437,10 +437,10 @@
       "id": "bd7993c9c69feddfaeb7bdef",
       "title": "Multiply Two Decimals with JavaScript",
       "description": [
-        "In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.",
-        "Let's multiply two decimals together to get their product.",
+        "在 JavaScript 中，你也可以用小数进行计算，就像整数一样",
+        "让我们把两个小数相乘，并得到它们相乘的结果（product）。",
         "<h4>Instructions</h4>",
-        "Change the <code>0.0</code> so that product will equal <code>5.0</code>."
+        "改变 <code>0.0</code> 的数值让变量的值等于 <code>5.0</code>。"
       ],
       "challengeSeed": [
         "var product = 2.0 * 0.0;",
@@ -464,9 +464,9 @@
       "id": "bd7993c9ca9feddfaeb7bdef",
       "title": "Divide one Decimal by Another with JavaScript",
       "description": [
-        "Now let's divide one decimal by another.",
+        "现在让我们来用一个小数做除法操作。",
         "<h4>Instructions</h4>",
-        "Change the <code>0.0</code> so that <code>quotient</code> will equal to <code>2.2</code>."
+        "改变数值 <code>0.0</code> 的值让变量 <code>quotient</code> 的值等于 <code>2.2</code>."
       ],
       "challengeSeed": [
         "var quotient = 0.0 / 2.0;",
@@ -490,12 +490,12 @@
       "id": "56533eb9ac21ba0edf2244ae",
       "title": "Finding a Remainder in JavaScript",
       "description": [
-        "The <dfn>remainder</dfn> operator <code>%</code> gives the remainder of the division of two numbers.",
-        "<strong>Example</strong>",
-        "<blockquote>5 % 2 = 1 because<br>Math.floor(5 / 2) = 2 (Quotient)<br>2 * 2 = 4<br>5 - 4 = 1 (Remainder)</blockquote>",
-        "<strong>Usage</strong><br>In mathematics, a number can be checked even or odd by checking the remainder of the division of the number by <code>2</code>.",
-        "<blockquote>17 % 2 = 1 (17 is Odd)<br>48 % 2 = 0 (48 is Even)</blockquote>",
-        "<strong>Note</strong><br>The <dfn>remainder</dfn> operator is sometimes incorrectly referred to as  the \"modulus\" operator. It is very similar to modulus, but does not work properly with negative numbers.",
+        " <dfn>余</dfn> 运算符 <code>%</code> 给出了两个数字相除的余数。",
+        "<strong>举例</strong>",
+        "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (Quotient)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
+        "<strong>用法</strong><br>在数学中, 一个数字可以与数字 <code>2</code> 相除得到的余来看它是属于奇数还是偶数。",        
+        "<blockquote>17 % 2 = 1 (17 is 奇数)<br>48 % 2 = 0 (48 is 偶数)</blockquote>",
+        "<strong>Note</strong><br><dfn>余</dfn> 操作符有时被不正确地称为 \"取模\" 操作符。虽然它们之间非常相似，但是余在负数上的操作上是不能运行的。",
         "<h4>Instructions</h4>",
         "Set <code>remainder</code> equal to the remainder of <code>11</code> divided by <code>3</code> using the <dfn>remainder</dfn> (<code>%</code>) operator."
       ],
