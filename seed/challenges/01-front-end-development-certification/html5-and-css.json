@@ -1916,10 +1916,10 @@
       "description": [
         "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
         "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
-        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding</code>, <code>margin</code>, and <code>border</code>.",
-        "一个元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
+        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
+        "元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
         "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
-        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border（边界） 之间的距离。",
+        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border 之间的距离。",
         "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
@@ -1968,8 +1968,8 @@
       "id": "bad87fee1348bd9aedf08822",
       "title": "Adjust the Margin of an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>margin</code> than the green box, making it appear smaller.",
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块 Note that the red box has more <code>margin</code> than the green box, making it appear smaller.",
         "When you increase the green box's <code>margin</code>, it will increase the distance between its border and surrounding elements.",
         "Change the <code>margin</code> of the green box to match that of the red box."
       ],
