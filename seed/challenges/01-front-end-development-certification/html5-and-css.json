@@ -1914,13 +1914,13 @@
       "id": "bad88fee1348bd9aedf08825",
       "title": "Adjusting the Padding of an Element",
       "description": [
-        "Now let's put our Cat Photo App away for a little while and learn more about styling HTML.",
-        "You may have already noticed this, but all HTML elements are essentially little rectangles.",
-        "Three important properties control the space that surrounds each HTML element: <code>padding</code>, <code>margin</code>, and <code>border</code>.",
-        "An element's <code>padding</code> controls the amount of space between the element and its <code>border</code>.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the green box.",
-        "When you increase the green box's <code>padding</code>, it will increase the distance between the text <code>padding</code> and the border around it.",
-        "Change the <code>padding</code> of your green box to match that of your red box."
+        "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
+        "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
+        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding</code>, <code>margin</code>, and <code>border</code>.",
+        "一个元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
+        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border（边界） 之间的距离。",
+        "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -1959,7 +1959,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素设置一个 <code>20px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
