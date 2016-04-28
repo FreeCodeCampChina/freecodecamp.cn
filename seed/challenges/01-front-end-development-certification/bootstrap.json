@@ -1437,10 +1437,10 @@
       "id": "bad87fee1348bd9aec908846",
       "title": "Create a Bootstrap Headline",
       "description": [
-        "Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.",
-        "We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.",
-        "To start with, create an <code>h3</code> element, with the text <code>jQuery Playground</code>.",
-        "Color your <code>h3</code> element with the <code>text-primary</code> Bootstrap class, and center it with the <code>text-center</code> Bootstrap class."
+        "现在，让我们从头开始练习我们的HTML, CSS 和 Bootstrap 技术。",
+        "我们将会搭建一个 jQuery playground，它也即将在我们接下来的 jQuery 课程中被投入使用。",
+        "首先，创建一个 <code>h3</code> 元素，并且包含文本内容 <code>jQuery Playground</code> 。",
+        "在 <code>h3</code> 元素中设置 Bootstrap 的 class 属性 <code>text-primary</code> 为其上色，同时增加 Bootstrap 的 class 属性 <code>text-center</code> 使文本居中显示。"
       ],
       "challengeSeed": [
         "",
@@ -1448,11 +1448,11 @@
         ""
       ],
       "tests": [
-        "assert($(\"h3\") && $(\"h3\").length > 0, 'message: Add a <code>h3</code> element to your page.');",
-        "assert(code.match(/<\\/h3>/g) && code.match(/<h3/g) && code.match(/<\\/h3>/g).length === code.match(/<h3/g).length, 'message: Make sure your <code>h3</code> element has a closing tag.');",
-        "assert($(\"h3\").hasClass(\"text-primary\"), 'message: Your <code>h3</code> element should be colored by applying the class <code>text-primary</code>');",
-        "assert($(\"h3\").hasClass(\"text-center\"), 'message: Your <code>h3</code> element should be centered by applying the class <code>text-center</code>');",
-        "assert.isTrue((/jquery(\\s)+playground/gi).test($(\"h3\").text()), 'message: Your <code>h3</code> element should have the text <code>jQuery Playground</code>.');"
+        "assert($(\"h3\") && $(\"h3\").length > 0, 'message: 在你的页面中增加一个 <code>h3</code> 元素。');",
+        "assert(code.match(/<\\/h3>/g) && code.match(/<h3/g) && code.match(/<\\/h3>/g).length === code.match(/<h3/g).length, 'message: 确保你的 <code>h3</code> 元素有一个闭合标签。');",
+        "assert($(\"h3\").hasClass(\"text-primary\"), 'message: 为了让你的 <code>h3</code> element 能被上色，需要添加 class <code>text-primary</code> 。');",
+        "assert($(\"h3\").hasClass(\"text-center\"), 'message: 你的 <code>h3</code> element 居中显示徐超添加 class <code>text-center</code> 。');",
+        "assert.isTrue((/jquery(\\s)+playground/gi).test($(\"h3\").text()), 'message: 你的 <code>h3</code> 元素需要有文本 <code>jQuery Playground</code> 。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1481,8 +1481,8 @@
       "id": "bad87fee1348bd9bec908846",
       "title": "Create a Bootstrap Row",
       "description": [
-        "Now we'll create a Bootstrap row for our inline elements.",
-        "Create a <code>div</code> element below the <code>h3</code> tag, with a class of <code>row</code>."
+        "现在将要为我们的内联元素创建一个 Bootstrap 行。",
+        "在 <code>h3</code> 标签下创建一个 <code>div</code> 元素，并且带有 class 属性 <code>row</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1492,10 +1492,10 @@
         ""
       ],
       "tests": [
-        "assert(($(\"div\").length > 1) && ($(\"div.row h3.text-primary\").length == 0) && ($(\"div.row + h3.text-primary\").length == 0) && ($(\"h3.text-primary + div.row\").length > 0), 'message: Add a <code>div</code> element below your <code>h3</code> element.');",
-        "assert($(\"div\").hasClass(\"row\"), 'message: Your <code>div</code> element should have the class <code>row</code>');",
-        "assert($(\"div.container-fluid div.row\").length > 0, 'message: Your <code>row div</code> should be nested inside the <code>container-fluid div</code>');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure your <code>div</code> element has a closing tag.');"
+        "assert(($(\"div\").length > 1) && ($(\"div.row h3.text-primary\").length == 0) && ($(\"div.row + h3.text-primary\").length == 0) && ($(\"h3.text-primary + div.row\").length > 0), 'message: 在你的 <code>h3</code> 之下增加一个 <code>div</code> 元素。');",
+        "assert($(\"div\").hasClass(\"row\"), 'message: 你的 <code>div</code> 元素应该有 class <code>row</code>');",
+        "assert($(\"div.container-fluid div.row\").length > 0, 'message: 你的 <code>row div</code> 应该内嵌于 <code>container-fluid div</code> 之中');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的 <code>div</code> 元素有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1527,8 +1527,8 @@
       "id": "bad87fee1348bd9aec908848",
       "title": "Create Bootstrap Wells",
       "description": [
-        "Bootstrap has a class called <code>well</code> that can create a visual sense of depth for your columns.",
-        "Nest one <code>div</code> element with the class <code>well</code> within each of your <code>col-xs-6</code> <code>div</code> elements."
+        "Bootstrap 有一个 class 属性叫做 <code>well</code>，它的作用是为你(在一行中)设定的列创造出一种视觉上的深度感（一种视觉上的效果，动手代码体会一下）。",
+        "在你的每一个 <code>col-xs-6</code> <code>div</code> 元素中都分别嵌入一个带有 <code>well</code> class 属性的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1544,9 +1544,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.col-xs-6\").not(\":has(>div.well)\").length < 1, 'message: Add a <code>div</code> element with the class <code>well</code> inside each of your <code>div</code> elements with the class <code>\"col-xs-6\"</code>');",
-        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: Nest both of your <code>div</code> elements with the class <code>\"col-xs-6\"</code> within your <code>div</code> element with the class <code>\"row\"</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure all your <code>div</code> elements have closing tags.');"
+        "assert($(\"div.col-xs-6\").not(\":has(>div.well)\").length < 1, 'message: 创建一个 <code>div</code> 元素并包含 class <code>well</code> ， 将其分别放置于你的每一个有 class <code>\"col-xs-6\"</code> 的 <code>div</code> 元素中。 ');",
+        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: 将你两个含有 class <code>\"col-xs-6\"</code> 的 <code>div</code> 元素嵌入到有 class <code>\"row\"</code> 的 <code>div</code> 元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你所有的 <code>div</code> 元素都有闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1591,8 +1591,8 @@
       "id": "bad87fee1348bd9aec908850",
       "title": "Apply the Default Bootstrap Button Style",
       "description": [
-        "Bootstrap has another button class called <code>btn-default</code>.",
-        "Apply both the <code>btn</code> and <code>btn-default</code> classes to each of your <code>button</code> elements."
+        "Bootstrap 还有一种属于按钮的 class 属性叫做 <code>btn-default</code> 。",
+        "在你的每一个 <code>button</code> 元素中增加两个 class 属性: <code>btn</code> 和 <code>btn-default</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1616,8 +1616,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn\").length > 5, 'message: Apply the <code>btn</code> class to each of your <code>button</code> elements.');",
-        "assert($(\".btn-default\").length > 5, 'message: Apply the <code>btn-default</code> class to each of your <code>button</code> elements.');"
+        "assert($(\".btn\").length > 5, 'message: 将 <code>btn</code> class 添加到你所有的 <code>button</code> 元素中。');",
+        "assert($(\".btn-default\").length > 5, 'message: 将 <code>btn-default</code> class 添加到你每一个 <code>button</code> 元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
