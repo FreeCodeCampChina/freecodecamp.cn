@@ -1256,8 +1256,8 @@
       "id": "bad87fee1348bd9aed908845",
       "title": "Style Text Inputs as Form Controls",
       "description": [
-        "You can add the <code>fa-paper-plane</code> Font Awesome icon by adding <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> within your submit <code>button</code> element.",
-        "Give your form's text input field a class of <code>form-control</code>. Give your form's submit button the classes <code>btn btn-primary</code>. Also give this button the Font Awesome icon of <code>fa-paper-plane</code>."
+        "你可以在你的 <code>button</code> 提交按钮元素上添加 Font Awesome的 <code>fa-paper-plane</code> 图标，方法是在元素中增加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 。",
+        "在你表单的文本输入字段中增加类属性 <code>form-control</code> 。在你的表单提交按钮中增加类属性 <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1334,10 +1334,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button[type=\\\"submit\\\"]\").hasClass(\"btn btn-primary\"), 'message: Give the submit button in your form the classes <code>btn btn-primary</code>.');",
-        "assert($(\"button[type=\\\"submit\\\"]:has(i.fa.fa-paper-plane)\").length > 0, 'message: Add a <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> within your submit <code>button</code> element.');",
-        "assert($(\"input[type=\\\"text\\\"]\").hasClass(\"form-control\"), 'message: Give the text <code>input</code> in your form the class <code>form-control</code>.');",
-        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i/g).length > 3, 'message: Make sure each of your <code>i</code> elements has a closing tag.');"
+        "assert($(\"button[type=\\\"submit\\\"]\").hasClass(\"btn btn-primary\"), 'message: 给你表单中的提交按钮增加类属性 <code>btn btn-primary</code>。');",
+        "assert($(\"button[type=\\\"submit\\\"]:has(i.fa.fa-paper-plane)\").length > 0, 'message: 添加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 到你的 <code>button</code> 提交元素之中。');",
+        "assert($(\"input[type=\\\"text\\\"]\").hasClass(\"form-control\"), 'message: 给你表单中的文本元素 <code>input</code> 添加类属性 <code>form-control</code>。');",
+        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i/g).length > 3, 'message: 明确你的每一个 <code>i</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
