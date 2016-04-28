@@ -1832,11 +1832,11 @@
       "id": "bad87dee1348bd9aede07836",
       "title": "Use an ID Attribute to Style an Element",
       "description": [
-        "One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.",
-        "Here's an example of how you can take your element with the <code>id</code> attribute of <code>cat-photo-element</code> and give it the background color of green. In your <code>style</code> element:",
+        "关于 <code>id</code> 属性的一件非常酷的事情是，像 class 一样，你可以使用 CSS 来为其应用样式。",
+        "下面是如何引用你的 <code>id</code> 属性为 <code>cat-photo-element</code> 的元素，并将它的背景色设置为绿色的例子。在你的 <code>style</code> 元素内部：",
         "<blockquote>#cat-photo-element {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.",
-        "Try giving your form, which now has the <code>id</code> attribute of <code>cat-photo-form</code>, a green background."
+        "注意，在你的 <code>style</code> 元素内部，总是需要通过在名字前加一个 <code>.</code> 来引用 class，加一个 <code>#</code> 来引用 id。",
+        "试着给你的表单，它现在有一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1902,10 +1902,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: Give your <code>form</code> element the id of <code>cat-photo-form</code>.');",
-        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: Your <code>form</code> element should have the <code>background-color</code> of green.');",
-        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: Make sure your <code>form</code> element has an <code>id</code> attribute.');",
-        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: Do not give your <code>form</code> any <code>class</code> or <code>style</code> attributes.');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');",
+        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: 你的 <code>form</code> 元素的 <code>background-color</code> 应该为 green。');",
+        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: 确保你的 <code>form</code> 元素有一个 <code>id</code> 属性。');",
+        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: 不要给你的 <code>form</code> 添加任何 <code>class</code> 或 <code>style</code> 属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
