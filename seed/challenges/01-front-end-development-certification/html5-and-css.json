@@ -2290,10 +2290,10 @@
       "id": "bad87fee1348bd9aedf08736",
       "title": "Style the HTML Body Element",
       "description": [
-        "Now let's start fresh and talk about CSS inheritance.",
-        "Every HTML page has a <code>body</code> element.",
-        "We can prove that the <code>body</code> element exists here by giving it a <code>background-color</code> of black.",
-        "We can do this by adding the following to our <code>style</code> element:",
+        "现在让我们来一个全新的开始，讲一讲 CSS 继承。",
+        "每一个 HTML 页面都有一个 <code>body</code> 元素。",
+        "通过将其 <code>background-color</code> 设置为黑色，我们可以证明 <code>body</code> 元素的存在。",
+        "我们可以通过将下面的代码添加到我们的 <code>style</code> 元素来做到这一点：",
         "<blockquote>body {<br>&nbsp;&nbsp;background-color: black;<br>}</blockquote>"
       ],
       "challengeSeed": [
@@ -2302,8 +2302,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: Give your <code>body</code> element the <code>background-color</code> of black.');",
-        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: Make sure your CSS rule is properly formatted with both opening and closing curly brackets.');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为 black。');",
+        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: 确保你的 CSS 规则是正确的格式，具有开始和结束的花括号。');"
       ],
       "type": "waypoint",
       "challengeType": 0
