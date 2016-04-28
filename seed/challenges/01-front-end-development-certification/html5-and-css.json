@@ -1832,11 +1832,11 @@
       "id": "bad87dee1348bd9aede07836",
       "title": "Use an ID Attribute to Style an Element",
       "description": [
-        "One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.",
-        "Here's an example of how you can take your element with the <code>id</code> attribute of <code>cat-photo-element</code> and give it the background color of green. In your <code>style</code> element:",
+        "关于 <code>id</code> 属性的一件非常酷的事情是，像 class 一样，你可以使用 CSS 来为其应用样式。",
+        "下面是如何引用你的 <code>id</code> 属性为 <code>cat-photo-element</code> 的元素，并将它的背景色设置为绿色的例子。在你的 <code>style</code> 元素内部：",
         "<blockquote>#cat-photo-element {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.",
-        "Try giving your form, which now has the <code>id</code> attribute of <code>cat-photo-form</code>, a green background."
+        "注意，在你的 <code>style</code> 元素内部，总是需要通过在名字前加一个 <code>.</code> 来引用 class，加一个 <code>#</code> 来引用 id。",
+        "试着给你的表单，它现在有一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1902,10 +1902,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: Give your <code>form</code> element the id of <code>cat-photo-form</code>.');",
-        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: Your <code>form</code> element should have the <code>background-color</code> of green.');",
-        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: Make sure your <code>form</code> element has an <code>id</code> attribute.');",
-        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: Do not give your <code>form</code> any <code>class</code> or <code>style</code> attributes.');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');",
+        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: 你的 <code>form</code> 元素的 <code>background-color</code> 应该为 green。');",
+        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: 确保你的 <code>form</code> 元素有一个 <code>id</code> 属性。');",
+        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: 不要给你的 <code>form</code> 添加任何 <code>class</code> 或 <code>style</code> 属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1914,13 +1914,13 @@
       "id": "bad88fee1348bd9aedf08825",
       "title": "Adjusting the Padding of an Element",
       "description": [
-        "Now let's put our Cat Photo App away for a little while and learn more about styling HTML.",
-        "You may have already noticed this, but all HTML elements are essentially little rectangles.",
-        "Three important properties control the space that surrounds each HTML element: <code>padding</code>, <code>margin</code>, and <code>border</code>.",
-        "An element's <code>padding</code> controls the amount of space between the element and its <code>border</code>.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the green box.",
-        "When you increase the green box's <code>padding</code>, it will increase the distance between the text <code>padding</code> and the border around it.",
-        "Change the <code>padding</code> of your green box to match that of your red box."
+        "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
+        "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
+        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
+        "元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
+        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border 之间的距离。",
+        "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -1959,7 +1959,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素设置一个 <code>20px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1968,10 +1968,10 @@
       "id": "bad87fee1348bd9aedf08822",
       "title": "Adjust the Margin of an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>margin</code> than the green box, making it appear smaller.",
-        "When you increase the green box's <code>margin</code>, it will increase the distance between its border and surrounding elements.",
-        "Change the <code>margin</code> of the green box to match that of the red box."
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>margin</code>，使得它看起来更小。",
+        "当你增大绿方块的 <code>margin</code> 时，将会增加其边框和包围元素之间的距离。",
+        "修改绿方块的 <code>margin</code> 以使它与红方块匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2012,7 +2012,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>20px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2021,10 +2021,10 @@
       "id": "bad87fee1348bd9aedf08823",
       "title": "Add a Negative Margin to an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "If you set an element's <code>margin</code> to a negative value, the element will grow larger.",
-        "Try to set the <code>margin</code> to a negative value like the one for the red box.",
-        "Change the <code>margin</code> of the green box to <code>-15px</code>, so it fills the entire horizontal width of the yellow box around it."
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "如果你将一个元素的 <code>margin</code> 设置为负值，元素将会变大。",
+        "试着像红方块那样把 <code>margin</code> 设置为负值。",
+        "把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将包围它的黄方块的横向宽度填满。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2064,7 +2064,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: Your <code>green-box</code> class should give elements <code>-15px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>-15px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2073,9 +2073,9 @@
       "id": "bad87fee1348bd9aedf08824",
       "title": "Add Different Padding to Each Side of an Element",
       "description": [
-        "Sometimes you will want to customize an element so that it has different <code>padding</code> on each of its sides.",
-        "CSS allows you to control the <code>padding</code> of an element on all four sides with <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties.",
-        "Give the green box a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "有时你想要自定义元素，使它的每一个边具有不同的 <code>padding</code>。",
+        "CSS 允许你使用 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性来控制元素所有四个边的 <code>padding</code>。",
+        "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2116,10 +2116,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of the elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of the elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of the elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of the elements <code>20px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2128,9 +2128,9 @@
       "id": "bad87fee1248bd9aedf08824",
       "title": "Add Different Margins to Each Side of an Element",
       "description": [
-        "Sometimes you will want to customize an element so that it has a different <code>margin</code> on each of its sides.",
-        "CSS allows you to control the <code>margin</code> of an element on all four sides with <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties.",
-        "Give the green box a <code>margin</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "有时你想要自定义元素，使它的每一个边具有不同的 <code>margin</code>。",
+        "CSS 允许你使用 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性来控制元素所有四个边的 <code>margin</code>。",
+        "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2171,10 +2171,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2183,10 +2183,10 @@
       "id": "bad87fee1348bd9aedf08826",
       "title": "Use Clockwise Notation to Specify the Padding of an Element",
       "description": [
-        "Instead of specifying an element's <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties, you can specify them all in one line, like this:",
+        "除了指定元素的 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
         "<code>padding: 10px 20px 10px 20px;</code>",
-        "These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.",
-        "Use Clockwise Notation to give the \".green-box\" class a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 padding 具有完全相同的效果。",
+        "使用顺时针表示法设置 \".green-box\" class，使其顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧具有 <code>20px</code> 的 <code>padding</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2224,10 +2224,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2236,11 +2236,11 @@
       "id": "bad87fee1348bd9afdf08726",
       "title": "Use Clockwise Notation to Specify the Margin of an Element",
       "description": [
-        "Let's try this again, but with <code>margin</code> this time.",
-        "Instead of specifying an element's <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties, you can specify them all in one line, like this:",
+        "让我们再试一次，但这次是用于 <code>margin</code>。",
+        "除了指定元素的 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
         "<code>margin: 10px 20px 10px 20px;</code>",
-        "These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.",
-        "Use <code>Clockwise Notation</code> to give the element with the <code>green-box</code> class a margin of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 margin 具有完全相同的效果。",
+        "使用<code>顺时针表示法</code>设置含有 \".green-box\" class 的元素，使其顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧具有 <code>20px</code> 的 <code>margin</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2278,10 +2278,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2290,10 +2290,10 @@
       "id": "bad87fee1348bd9aedf08736",
       "title": "Style the HTML Body Element",
       "description": [
-        "Now let's start fresh and talk about CSS inheritance.",
-        "Every HTML page has a <code>body</code> element.",
-        "We can prove that the <code>body</code> element exists here by giving it a <code>background-color</code> of black.",
-        "We can do this by adding the following to our <code>style</code> element:",
+        "现在让我们来一个全新的开始，讲一讲 CSS 继承。",
+        "每一个 HTML 页面都有一个 <code>body</code> 元素。",
+        "通过将其 <code>background-color</code> 设置为黑色，我们可以证明 <code>body</code> 元素的存在。",
+        "我们可以通过将下面的代码添加到我们的 <code>style</code> 元素来做到这一点：",
         "<blockquote>body {<br>&nbsp;&nbsp;background-color: black;<br>}</blockquote>"
       ],
       "challengeSeed": [
@@ -2302,8 +2302,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: Give your <code>body</code> element the <code>background-color</code> of black.');",
-        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: Make sure your CSS rule is properly formatted with both opening and closing curly brackets.');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为 black。');",
+        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: 确保你的 CSS 规则是正确的格式，具有开始和结束的花括号。');"
       ],
       "type": "waypoint",
       "challengeType": 0
