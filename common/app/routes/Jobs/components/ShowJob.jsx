@@ -4,7 +4,7 @@ import urlRegexFactory from 'url-regex';
 
 const urlRegex = urlRegexFactory();
 const defaultImage =
-  'https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png';
+  '/images/camper-image-placeholder.png';
 
 const thumbnailStyle = {
   backgroundColor: 'white',
