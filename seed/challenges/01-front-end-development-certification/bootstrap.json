@@ -947,13 +947,13 @@
       "id": "bad87fee1348bd9aedd08845",
       "title": "Add Font Awesome Icons to our Buttons",
       "description": [
-        "Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the <code>.svg</code> file format. These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.",
-        "You can add Font Awesome to any app just by including it by adding the following code to the top of your HTML:",
+        "Font Awesome 是一个非常方便的图标库。这些图标都是矢量图形，被保存在 <code>.svg</code> 的文件格式中。这些图标可类似地当作是字体。通过像素单位指定它们的大小，它们将会承担其父HTML元素的字体大小。",
+        "你可以将 Font Awesome 图标库增添至任何一个应用中，方法很简单，只需要在你的 HTML 头部增加下列代码即可：",
         "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\"/&#62;</code>",
-        "In this case, we've already added it for you to this page behind the scenes.",
-        "The <code>i</code> element was originally used to make other elements italic, but is now commonly used for icons. You add the Font Awesome classes to the <code>i</code> element to turn it into an icon, for example:",
+        "不过，我们已经事先在幕后为此页面添加了该功能。（不必重复添加上面这段代码）",
+        "<code>i</code> 元素起初一般是让其它元素有斜体(italic)的功能，不过现在一般用来指代图标。你可以将 Font Awesome 中的类属性添加到 <code>i</code> 元素中，把它变成一个图标，比如：",
         "<code>&lt;i class=\"fa fa-info-circle\"&gt;&lt;/i&gt;</code>",
-        "Use Font Awesome to add a <code>thumbs-up</code> icon to your like button by giving it an <code>i</code> element with the classes <code>fa</code> and <code>fa-thumbs-up</code>."
+        "你可以通过 Font Awesome 库增加一个 <code>thumbs-up</code> 图标到你的 like 按钮中，方法是在<code>i</code> 元素中增加类属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1015,10 +1015,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"i\").is(\".fa.fa-thumbs-up\"), 'message: Add an <code>i</code> element with the classes <code>fa</code> and <code>fa-thumbs-up</code>.');",
-        "assert($(\"i.fa-thumbs-up\").parent().text().match(/Like/gi) && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: Your <code>fa-thumbs-up</code> icon should be located within the Like button.');",
-        "assert($(\"button\").children(\"i\").length > 0, 'message: Nest your <code>i</code> element within your <code>button</code> element.');",
-        "assert(code.match(/<\\/i>/g), 'message: Make sure your <code>i</code> element has a closing tag.');"
+        "assert($(\"i\").is(\".fa.fa-thumbs-up\"), 'message: 增加一个 <code>i</code> 元素包含类属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。');",
+        "assert($(\"i.fa-thumbs-up\").parent().text().match(/Like/gi) && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: 你的 <code>fa-thumbs-up</code> 图标应放置在 Like 按钮中。');",
+        "assert($(\"button\").children(\"i\").length > 0, 'message: 将 <code>i</code> 元素放置于你的 <code>button</code> 元素之中。');",
+        "assert(code.match(/<\\/i>/g), 'message: 确保你的 <code>i</code> 有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
