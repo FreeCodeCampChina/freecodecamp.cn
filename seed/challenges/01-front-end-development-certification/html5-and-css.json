@@ -224,13 +224,13 @@
       "id": "bad87fee1348bd9aecf08806",
       "title": "Use a CSS Class to Style an Element",
       "description": [
-        "类是可以附加到HTML元素的可重复使用的样式。",
-        "下面是一个CSS类声明的例子：",
+        "class 是可以附加到 HTML 元素的可重复使用的样式。",
+        "下面是一个 CSS class 声明的例子：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "上面的语句在<code>&#60;style&#62;</code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
-        "你可以以如下的方式将类应用到HTML元素：",
+        "上面的语句在 <code>&#60;style&#62;</code> 标记之间创建了一个叫做 <code>blue-text</code> 的 CSS class。",
+        "你可以以如下的方式将 class 应用到 HTML 元素：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "注意，在你的CSS <code>style</code>元素中，类应该以英文的句号（.）引导，而在你的HTML元素的类声明中，类不能以英文句号引导。",
+        "注意，在你的CSS <code>style</code>元素中，class 应该以英文的句号（.）引导，而在你的HTML元素的 class 声明中，class 不能以英文句号引导。",
         "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
         "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
       ],
@@ -247,8 +247,8 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
-        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code>类，并设置其color为red。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
+        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code> class，并设置其color为red。');",
         "assert($(\"h2\").attr(\"style\") === undefined, 'message: 不要在你的<code>h2</code>元素中使用形如<code>style=\"color&#58; red\"</code>的内联（inline）样式声明。');"
       ],
       "type": "waypoint",
@@ -258,12 +258,12 @@
       "id": "bad87fee1348bd9aefe08806",
       "title": "Style Multiple Elements with a CSS Class",
       "description": [
-        "记住，你可以在HTML元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将类附加到相关元素中。",
-        "记住，CSS类选择器要求以英文句号引导，如下：",
+        "记住，你可以在 HTML 元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将 class 附加到相关元素中。",
+        "记住，CSS class 选择器要求以英文句号引导，如下：",
         "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
-        "但是，同样需要记住的是类声明不使用英文句号引导，如下：",
+        "但是，同样需要记住的是 class 声明不使用英文句号引导，如下：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "将<code>red-text</code>类应用到<code>h2</code>和<code>p</code>元素中。"
+        "将<code>red-text</code> class 应用到<code>h2</code>和<code>p</code>元素中。"
       ],
       "challengeSeed": [
         "<style>",
@@ -278,9 +278,9 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
         "assert($(\"p\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>p</code>元素应该为红色。');",
-        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code>类。');"
+        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code> class。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -292,9 +292,9 @@
         "字号是由CSS属性<code>font-size</code>来控制的, 如下：",
         "<blockquote>h1 {<br>&nbsp;&nbsp;font-size: 30px;<br>}</blockquote>",
         "用如下的kitty ipsum文本来创建第二个<code>p</code>元素：<code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
-        "在包含<code>red-text</code>类的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
+        "在包含<code>red-text</code> class 的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
         "<strong>注意</strong><br>因为浏览器实现上的不同，你可能需要将页面缩放调整为100%以通过本挑战的测试。",
-        "同时，将不要为新的<code>p</code>元素添加类属性。"
+        "同时，将不要为新的<code>p</code>元素添加 class 属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -311,7 +311,7 @@
         "assert($(\"p\").length > 1, 'message: 你需要2个带有Kitty Ipsum文本的<code>p</code>元素。');",
         "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都包含结束标记。');",
         "assert.isTrue((/Purr\\s+jump\\s+eat/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含另外提供的<code>kitty ipsum文本</code>的前几个单词。');",
-        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加类属性，也不要将其从第一个中删除。');",
+        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加 class 属性，也不要将其从第一个中删除。');",
         "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。浏览器和文本缩放应该设置为100%。');"
       ],
       "type": "waypoint",
@@ -470,9 +470,9 @@
       "title": "Size your Images",
       "description": [
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
-        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
+        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS class，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "创建一个名为<code>larger-image</code>的 class，然后用它来改变图片尺寸，使图片仅有100像素宽。",
         "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
@@ -500,7 +500,7 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code>类。');",
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code> class。');",
         "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽，浏览器缩放比例应该为100%。');"
       ],
       "type": "waypoint",
@@ -546,8 +546,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的 <code>img</code> 元素应该有类 <code>smaller-image</code>.');",
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的 <code>img</code> 元素应该有类 <code>thick-green-border</code>.');",
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的 <code>img</code> 元素应该有 class <code>smaller-image</code>.');",
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的 <code>img</code> 元素应该有 class <code>thick-green-border</code>.');",
         "assert($(\"img\").hasClass(\"thick-green-border\") && parseInt($(\"img\").css(\"border-top-width\"), 10) >= 8 && parseInt($(\"img\").css(\"border-top-width\"), 10) <= 12, 'message: 指定图片的边框宽度为 <code>10px</code>.');",
         "assert($(\"img\").css(\"border-right-style\") === \"solid\", 'message: 指定图标的边框样式为 <code>solid</code>.');",
         "assert($(\"img\").css(\"border-left-color\") === \"rgb(0, 128, 0)\", 'message: 这个围绕着 <code>img</code> 元素的边框颜色应该是绿色.');"
@@ -598,7 +598,7 @@
         "<p class=\"red-text\">有时候猫会把主人当成自己的孩子(听起来有点令人窝心)，这种行为是在给家里带来猎物。它把自己看成是家里的顶梁柱，有责任给不争气的主人找来食物——猫咪通过长时间对你的观察，沉痛地发现你不会打猎。经常出门的猫咪会把它逮到的老鼠、小鸟带回家里，不出门的就经常翻翻垃圾箱找点东西给你。这个时候，主人可不要责骂它，不然它会认为你对它带回来的食物不满意，下次去找更了不起的东西带回来，放在房间里最显眼的地方。但如果你看见它往家里运输死老鼠，最好也别谢它，别让它觉得你对这种猎物很满意，下次照单带回来。最好的办法是心里感念着猫咪所为你做的，并默默地收拾好一切。</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的图片元素应该有类 \"thick-green-border\".');",
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的图片元素应该有 class \"thick-green-border\".');",
         "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 8, 'message: 你的图片的边框半径应该为 <code>10px</code>');"
       ],
       "type": "waypoint",
@@ -1603,7 +1603,7 @@
       "title": "Nest Many Elements within a Single Div Element",
       "description": [
         "<code>div</code>元素，也被称作division（层）元素，是一个盛装其他元素的通用容器。",
-        "<code>div</code>可能是所有HTML元素中最常使用的元素，在将其自身类声明的CSS传递给它所包裹着的所有元素时非常有用。",
+        "<code>div</code>可能是所有HTML元素中最常使用的元素，在将其自身 class 声明的CSS传递给它所包裹着的所有元素时非常有用。",
         "像任何其他非自结束元素一样，你可以用<code>&#60;div&#62;</code>来标记一个<code>div</code>元素的块的开始，然后在另一行用<code>&#60;/div&#62;</code>来标记块的结束。",
         "试着在你的\"Things cats love\" <code>p</code>元素之前放置<code>div</code>的开始标记，在你的<code>ol</code>结束标记之后放置<code>div</code>的结束标记，这样你的两个列表就都嵌套在<code>div</code>中了。",
         "把\"Things cats love\"和\"Things cats hate\"两个列表都嵌套进同一个<code>div</code>元素中。"
@@ -1681,7 +1681,7 @@
         "你可以用 <code>background-color</code> 属性来设置一个元素的背景颜色。",
         "例如，如果你想把一个元素的背景颜色设置为<code>green</code>，你应该把这些加到你的 <code>style</code> 元素中：",
         "<blockquote>.green-background {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "创建一个叫做 <code>gray-background</code> 的类，设置其 <code>background-color</code> 为 gray，把这个类指定给你的 <code>div</code> 元素。"
+        "创建一个叫做 <code>gray-background</code> 的 class，设置其 <code>background-color</code> 为 gray，把这个 class 指定给你的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1743,7 +1743,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"gray-background\"), 'message: 把 <code>gray-background</code> 类指定给你的 <code>div</code> 元素。');",
+        "assert($(\"div\").hasClass(\"gray-background\"), 'message: 把 <code>gray-background</code> class 指定给你的 <code>div</code> 元素。');",
         "assert($(\".gray-background\").css(\"background-color\") === \"rgb(128, 128, 128)\", 'message: 你的 <code>div</code> 元素应该有一个灰色（gray）的背景。');"
       ],
       "type": "waypoint",
@@ -1753,12 +1753,12 @@
       "id": "bad87eee1348bd9aede07836",
       "title": "Set the ID of an Element",
       "description": [
-        "In addition to classes, each HTML element can also have an <code>id</code> attribute.",
-        "There are several benefits to using <code>id</code> attributes, and you'll learn more about them once you start using jQuery.",
-        "<code>id</code> attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same <code>id</code> attribute.",
-        "Here's an example of how you give your <code>h2</code> element the id of <code>cat-photo-app</code>:",
+        "除了 class 之外，每一个 HTML 元素还可以拥有 <code>id</code> 属性。",
+        "使用 <code>id</code> 属性有若干好处，一旦当你开始使用 jQuery 的时候你会有更深的体会。",
+        "<code>id</code> 属性应该是唯一的，虽然浏览器并不强制唯一，但基于最佳实践，这一点是被广泛认可的，所以请不要给一个以上的元素设置相同的 <code>id</code> 属性。",
+        "下面举例说明了如何为你的 <code>h2</code> 元素添加值为 <code>cat-photo-app</code> 的 id。",
         "<code>&#60;h2 id=\"cat-photo-app\"></code>",
-        "Give your <code>form</code> element the id <code>cat-photo-form</code>."
+        "为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code>的 id。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1823,7 +1823,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: Give your <code>form</code> element the id of <code>cat-photo-form</code>.');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');"
       ],
       "type": "waypoint",
       "challengeType": 0
