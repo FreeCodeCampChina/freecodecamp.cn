@@ -1969,9 +1969,9 @@
       "title": "Adjust the Margin of an Element",
       "description": [
         "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
-        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块 Note that the red box has more <code>margin</code> than the green box, making it appear smaller.",
-        "When you increase the green box's <code>margin</code>, it will increase the distance between its border and surrounding elements.",
-        "Change the <code>margin</code> of the green box to match that of the red box."
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>margin</code>，使得它看起来更小。",
+        "当你增大绿方块的 <code>margin</code> 时，将会增加其边框和包围元素之间的距离。",
+        "修改绿方块的 <code>margin</code> 以使它与红方块匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2012,7 +2012,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>20px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
