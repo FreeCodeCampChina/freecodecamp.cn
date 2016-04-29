@@ -2312,11 +2312,11 @@
       "id": "bad87fee1348bd9aedf08746",
       "title": "Inherit Styles from the Body Element",
       "description": [
-        "Now we've proven that every HTML page has a <code>body</code> element, and that its <code>body</code> element can also be styled with CSS.",
-        "Remember, you can style your <code>body</code> element just like any other HTML element, and all your other elements will inherit your <code>body</code> element's styles.",
-        "First, create a <code>h1</code> element with the text <code>Hello World</code>",
-        "Then, let's give all elements on your page the color of <code>green</code> by adding <code>color: green;</code> to your <code>body</code> element's style declaration.",
-        "Finally, give your <code>body</code> element the font-family of <code>Monospace</code> by adding <code>font-family: Monospace;</code> to your <code>body</code> element's style declaration."
+        "现在我们证明了每一个 HTML 页面都有一个 <code>body</code> 元素，并且其 <code>body</code> 元素同样能够应用样式。",
+        "记住，你可以像对其他 HTML 元素一样对你的 <code>body</code> 元素应用样式，并且所有其他元素将继承你的 <code>body</code> 元素的样式。",
+        "首先，创建一个文字为 <code>Hello World</code> 的 <code>h1</code> 元素。",
+        "然后，让我们通过向 <code>body</code> 元素的样式声明部分添加 <code>color: green;</code> 使页面上的所有元素的颜色为 <code>green</code>。",
+        "最后，通过向 <code>body</code> 元素的样式声明部分添加 <code>font-family: Monospace;</code> 将 <code>body</code> 元素的 font-family（字体）设置为 <code>Monospace</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2327,13 +2327,13 @@
         "</style>"
       ],
       "tests": [
-        "assert(($(\"h1\").length > 0), 'message: Create an <code>h1</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: Your <code>h1</code> element should have the text <code>Hello World</code>.');",
-        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: Make sure your <code>h1</code> element has a closing tag.');",
-        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Give your <code>body</code> element the <code>color</code> property of <code>green</code>.');",
-        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: Give your <code>body</code> element the <code>font-family</code> property of <code>Monospace</code>.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: Your <code>h1</code> element should inherit the font <code>Monospace</code> from your <code>body</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Your <code>h1</code> element should inherit the color green from your <code>body</code> element.');"
+        "assert(($(\"h1\").length > 0), 'message: 创建一个 <code>h1</code> 元素。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: 你的 <code>h1</code> 元素的文字应该是 <code>Hello World</code>。');",
+        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: 确保你的 <code>h1</code> 元素有一个结束标记。');",
+        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 设置 <code>body</code> 元素的 <code>color</code> 属性为 <code>green</code>。');",
+        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: 设置 <code>body</code> 元素的 <code>font-family</code> 属性为 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承字体 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承绿色。');"
       ],
       "type": "waypoint",
       "challengeType": 0
