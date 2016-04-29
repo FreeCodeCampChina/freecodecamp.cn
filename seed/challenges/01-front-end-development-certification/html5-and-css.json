@@ -2342,11 +2342,11 @@
       "id": "bad87fee1348bd9aedf08756",
       "title": "Prioritize One Style Over Another",
       "description": [
-        "Sometimes your HTML elements will receive multiple styles that conflict with one another.",
-        "For example, your <code>h1</code> element can't be both green and pink at the same time.",
-        "Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class <code>override</code> the <code>body</code> element's <code>color: green;</code> CSS property?",
-        "Create a CSS class called <code>pink-text</code> that gives an element the color pink.",
-        "Give your <code>h1</code> element the class of <code>pink-text</code>."
+        "有时你的 HTML 元素会得到相互冲突的多个样式。",
+        "例如，你的 <code>h1</code> 元素不能同时为绿色和粉色。",
+        "让我们来看看当我们创建一个使其文字为粉色的 class 时会发生什么，然后将其应用到某元素。我们的 class 会 <code>override（覆盖）</code> <code>body</code> 元素的 <code>color: green;</code> CSS 属性吗？",
+        "创建一个使元素颜色成为粉色的名为 <code>pink-text</code> 的 CSS class。",
+        "设置 <code>h1</code> 元素的 class 为 <code>pink-text</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2359,9 +2359,9 @@
         "<h1>Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: Your <code>&#60;style&#62;</code> should have a <code>pink-text</code> CSS class with its color set to pink.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: Your <code>h1</code> element should be pink.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含名为 <code>pink-text</code> 的 class。');",
+        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: 你的 <code>&#60;style&#62;</code> 包含一个将 color 设置为 pink 的 <code>pink-text</code> CSS class。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: 你的 <code>h1</code> 元素应该为粉色。');"
       ],
       "type": "waypoint",
       "challengeType": 0
