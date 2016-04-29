@@ -224,13 +224,13 @@
       "id": "bad87fee1348bd9aecf08806",
       "title": "Use a CSS Class to Style an Element",
       "description": [
-        "类是可以附加到HTML元素的可重复使用的样式。",
-        "下面是一个CSS类声明的例子：",
+        "class 是可以附加到 HTML 元素的可重复使用的样式。",
+        "下面是一个 CSS class 声明的例子：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "上面的语句在<code>&#60;style&#62;</code>标记之间创建了一个叫做<code>blue-text</code>的CSS类。",
-        "你可以以如下的方式将类应用到HTML元素：",
+        "上面的语句在 <code>&#60;style&#62;</code> 标记之间创建了一个叫做 <code>blue-text</code> 的 CSS class。",
+        "你可以以如下的方式将 class 应用到 HTML 元素：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "注意，在你的CSS <code>style</code>元素中，类应该以英文的句号（.）引导，而在你的HTML元素的类声明中，类不能以英文句号引导。",
+        "注意，在你的CSS <code>style</code>元素中，class 应该以英文的句号（.）引导，而在你的HTML元素的 class 声明中，class 不能以英文句号引导。",
         "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
         "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
       ],
@@ -247,8 +247,8 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
-        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code>类，并设置其color为red。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
+        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code> class，并设置其color为red。');",
         "assert($(\"h2\").attr(\"style\") === undefined, 'message: 不要在你的<code>h2</code>元素中使用形如<code>style=\"color&#58; red\"</code>的内联（inline）样式声明。');"
       ],
       "type": "waypoint",
@@ -258,12 +258,12 @@
       "id": "bad87fee1348bd9aefe08806",
       "title": "Style Multiple Elements with a CSS Class",
       "description": [
-        "记住，你可以在HTML元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将类附加到相关元素中。",
-        "记住，CSS类选择器要求以英文句号引导，如下：",
+        "记住，你可以在 HTML 元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将 class 附加到相关元素中。",
+        "记住，CSS class 选择器要求以英文句号引导，如下：",
         "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
-        "但是，同样需要记住的是类声明不使用英文句号引导，如下：",
+        "但是，同样需要记住的是 class 声明不使用英文句号引导，如下：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "将<code>red-text</code>类应用到<code>h2</code>和<code>p</code>元素中。"
+        "将<code>red-text</code> class 应用到<code>h2</code>和<code>p</code>元素中。"
       ],
       "challengeSeed": [
         "<style>",
@@ -278,9 +278,9 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code>类。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
         "assert($(\"p\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>p</code>元素应该为红色。');",
-        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code>类。');"
+        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code> class。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -292,9 +292,9 @@
         "字号是由CSS属性<code>font-size</code>来控制的, 如下：",
         "<blockquote>h1 {<br>&nbsp;&nbsp;font-size: 30px;<br>}</blockquote>",
         "用如下的kitty ipsum文本来创建第二个<code>p</code>元素：<code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
-        "在包含<code>red-text</code>类的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
+        "在包含<code>red-text</code> class 的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
         "<strong>注意</strong><br>因为浏览器实现上的不同，你可能需要将页面缩放调整为100%以通过本挑战的测试。",
-        "同时，将不要为新的<code>p</code>元素添加类属性。"
+        "同时，将不要为新的<code>p</code>元素添加 class 属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -311,7 +311,7 @@
         "assert($(\"p\").length > 1, 'message: 你需要2个带有Kitty Ipsum文本的<code>p</code>元素。');",
         "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都包含结束标记。');",
         "assert.isTrue((/Purr\\s+jump\\s+eat/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含另外提供的<code>kitty ipsum文本</code>的前几个单词。');",
-        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加类属性，也不要将其从第一个中删除。');",
+        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加 class 属性，也不要将其从第一个中删除。');",
         "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。浏览器和文本缩放应该设置为100%。');"
       ],
       "type": "waypoint",
@@ -470,9 +470,9 @@
       "title": "Size your Images",
       "description": [
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
-        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS类，把HTML元素的宽度设定为500像，我们使用：",
+        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS class，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "创建一个名为<code>larger-image</code>的类，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "创建一个名为<code>larger-image</code>的 class，然后用它来改变图片尺寸，使图片仅有100像素宽。",
         "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
@@ -500,7 +500,7 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code>类。');",
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code> class。');",
         "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽，浏览器缩放比例应该为100%。');"
       ],
       "type": "waypoint",
@@ -546,8 +546,8 @@
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的 <code>img</code> 元素应该有类 <code>smaller-image</code>.');",
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的 <code>img</code> 元素应该有类 <code>thick-green-border</code>.');",
+        "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的 <code>img</code> 元素应该有 class <code>smaller-image</code>.');",
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的 <code>img</code> 元素应该有 class <code>thick-green-border</code>.');",
         "assert($(\"img\").hasClass(\"thick-green-border\") && parseInt($(\"img\").css(\"border-top-width\"), 10) >= 8 && parseInt($(\"img\").css(\"border-top-width\"), 10) <= 12, 'message: 指定图片的边框宽度为 <code>10px</code>.');",
         "assert($(\"img\").css(\"border-right-style\") === \"solid\", 'message: 指定图标的边框样式为 <code>solid</code>.');",
         "assert($(\"img\").css(\"border-left-color\") === \"rgb(0, 128, 0)\", 'message: 这个围绕着 <code>img</code> 元素的边框颜色应该是绿色.');"
@@ -598,7 +598,7 @@
         "<p class=\"red-text\">有时候猫会把主人当成自己的孩子(听起来有点令人窝心)，这种行为是在给家里带来猎物。它把自己看成是家里的顶梁柱，有责任给不争气的主人找来食物——猫咪通过长时间对你的观察，沉痛地发现你不会打猎。经常出门的猫咪会把它逮到的老鼠、小鸟带回家里，不出门的就经常翻翻垃圾箱找点东西给你。这个时候，主人可不要责骂它，不然它会认为你对它带回来的食物不满意，下次去找更了不起的东西带回来，放在房间里最显眼的地方。但如果你看见它往家里运输死老鼠，最好也别谢它，别让它觉得你对这种猎物很满意，下次照单带回来。最好的办法是心里感念着猫咪所为你做的，并默默地收拾好一切。</p>"
       ],
       "tests": [
-        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的图片元素应该有类 \"thick-green-border\".');",
+        "assert($(\"img\").hasClass(\"thick-green-border\"), 'message: 你的图片元素应该有 class \"thick-green-border\".');",
         "assert(parseInt($(\"img\").css(\"border-top-left-radius\")) > 8, 'message: 你的图片的边框半径应该为 <code>10px</code>');"
       ],
       "type": "waypoint",
@@ -1182,10 +1182,10 @@
       "id": "bad87fee1348bd9aede08830",
       "title": "Create a Form Element",
       "description": [
-        "You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <code>form</code> element.",
-        "For example:",
+        "你可以仅使用纯HTML来构建实际提交数据到服务器的web表单（form），通过给你的<code>form</code>元素添加一个动作来达到此目的。",
+        "例如：",
         "<code>&#60;form action=\"/url-where-you-want-to-submit-form-data\"&#62;&#60;/form&#62;</code>",
-        "Nest your text field in a <code>form</code> element. Add the <code>action=\"/submit-cat-photo\"</code> attribute to this form element."
+        "把你的文本框嵌套进一个<code>form</code>元素，并为此表单元素添加<code>action=\"/submit-cat-photo\"</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1236,9 +1236,9 @@
         "<input type=\"text\" placeholder=\"cat photo URL\">"
       ],
       "tests": [
-        "assert($(\"form\") && $(\"form\").children(\"input\") && $(\"form\").children(\"input\").length > 0, 'message: Nest your text input element within a <code>form</code> element.');",
-        "assert($(\"form\").attr(\"action\") === \"/submit-cat-photo\", 'message: Make sure your <code>form</code> has an <code>action</code> attribute which is set to <code>/submit-cat-photo</code>');",
-        "assert(code.match(/<\\/form>/g) && code.match(/<form/g) && code.match(/<\\/form>/g).length === code.match(/<form/g).length, 'message: Make sure your <code>form</code> element has a closing tag.');"
+        "assert($(\"form\") && $(\"form\").children(\"input\") && $(\"form\").children(\"input\").length > 0, 'message: 把你的文本输入元素嵌套进一个<code>form</code>元素。');",
+        "assert($(\"form\").attr(\"action\") === \"/submit-cat-photo\", 'message: 确保你的<code>form</code>有一个设置为<code>/submit-cat-photo</code>的<code>action</code>属性。');",
+        "assert(code.match(/<\\/form>/g) && code.match(/<form/g) && code.match(/<\\/form>/g).length === code.match(/<form/g).length, 'message: 确保你的<code>form</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1247,10 +1247,10 @@
       "id": "bad87fee1348bd9aedd08830",
       "title": "Add a Submit Button to a Form",
       "description": [
-        "Let's add a <code>submit</code> button to your form. Clicking this button will send the data from your form to the URL you specified with your form's <code>action</code> attribute.",
-        "Here's an example submit button:",
+        "让我们来为你的form添加一个<code>submit（提交）</code>按钮，点击这个按钮，数据将会从你的form发送到你通过<code>action</code>属性指定的URL上。",
+        "下面是submit按钮的例子：",
         "<code>&#60;button type=\"submit\"&#62;this button submits the form&#60;/button&#62;</code>",
-        "Add a submit button to your <code>form</code> element with type <code>submit</code> and \"Submit\" as its text."
+        "为你的<code>form</code>元素添加一个type为<code>submit</code>的submit按钮，用\"Submit\"作按钮文本。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1303,10 +1303,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").children(\"button\").length > 0, 'message: Your form should have a button inside it.');",
-        "assert($(\"button\").attr(\"type\") === \"submit\", 'message: Your submit button should have the attribute <code>type</code> set to <code>submit</code>.');",
-        "assert($(\"button\").text().match(/^\\s*submit\\s*$/gi), 'message: Your submit button should only have the text \"Submit\".');",
-        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: Make sure your <code>button</code> element has a closing tag.');"
+        "assert($(\"form\").children(\"button\").length > 0, 'message: 你的form内部应该有一个button。');",
+        "assert($(\"button\").attr(\"type\") === \"submit\", 'message: 你的submit button应该有一个<code>type</code>属性，其值设置为<code>submit</code>。');",
+        "assert($(\"button\").text().match(/^\\s*submit\\s*$/gi), 'message: 你的submit button的按钮文本仅应该为\"Submit\"。');",
+        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你的<code>button</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1315,11 +1315,11 @@
       "id": "bad87fee1348bd9aedc08830",
       "title": "Use HTML5 to Require a Field",
       "description": [
-        "You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.",
-        "For example, if you wanted to make a text input field required, you can just add the word <code>required</code> within your <code>input</code> element, you would use: <code>&#60;input type=\"text\" required&#62;</code>",
-        "Make your text <code>input</code> a <code>required</code> field, so that your user can't submit the form without completing this field.",
-        "Then try to submit the form without inputing any text. See how your HTML5 form notifies you that the field is required?",
-        "Note: This field does not work in Safari."
+        "你可以使指定的表单字段成为必填项（required），这样，只有当你的用户填写了该字段后，他（她）才能够提交你的表单。",
+        "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>这个单词就可以了， 你可以使用：<code>&#60;input type=\"text\" required&#62;</code>",
+        "把你的文本<code>input</code>改为<code>required</code>字段，这样你的用户不填写完这个字段就无法提交表单。",
+        "然后，试试不填写任何文本提交表单，看看你的HTML5表单如何提示你该字段为必填项。",
+        "注意：该字段在Safari浏览器中不起作用。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1373,7 +1373,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"input\").prop(\"required\"), 'message: Your text <code>input</code> element should have the <code>required</code> attribute.');"
+        "assert($(\"input\").prop(\"required\"), 'message: 你的文本<code>input</code>元素应该具有<code>required</code>属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1382,13 +1382,13 @@
       "id": "bad87fee1348bd9aedf08834",
       "title": "Create a Set of Radio Buttons",
       "description": [
-        "You can use <code>radio buttons</code> for questions where you want the user to only give you one answer.",
-        "Radio buttons are a type of <code>input</code>",
-        "Each of your radio buttons should be nested within its own <code>label</code> element.",
-        "All related radio buttons should have the same <code>name</code> attribute.",
-        "Here's an example of a radio button:",
+        "你可以将<code>radio buttons（单选按钮）</code>用于你想要用户只给出一个答案的问题中。",
+        "单选按钮是<code>input</code>的一种。",
+        "每一个单选按钮都应该嵌套在它自己的<code>label（标签）</code>元素中。",
+        "所有关联的单选按钮应该使用相同的<code>name</code>属性。",
+        "下面是一个单选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62; Indoor&#60;/label&#62;</code>",
-        "Add a pair of radio buttons to your form. One should have the option of <code>indoor</code> and the other should have the option of <code>outdoor</code>."
+        "给你的表单添加一对单选按钮，其中之一应该具有<code>indoor</code>选项，另一个应该具有<code>outdoor</code>选项。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1442,12 +1442,12 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"radio\"]').length > 1, 'message: Your page should have two radio button elements.');",
-        "assert($('label > input[type=\"radio\"]').filter(\"[name='indoor-outdoor']\").length > 1, 'message: Give your radio buttons the <code>name</code> attribute of <code>indoor-outdoor</code>.');",
-        "assert($('label > input[type=\"radio\"]:only-child').length > 1, 'message: Each of your two radio button elements should be nested in its own <code>label</code> element.');",
-        "assert((code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length), 'message: Make sure each of your <code>label</code> elements has a closing tag.');",
-        "assert($(\"label\").text().match(/indoor/gi), 'message: One of your radio buttons should have the label <code>indoor</code>.');",
-        "assert($(\"label\").text().match(/outdoor/gi), 'message: One of your radio buttons should have the label <code>outdoor</code>.');"
+        "assert($('input[type=\"radio\"]').length > 1, 'message: 你的页面上应该有两个单选按钮元素。');",
+        "assert($('label > input[type=\"radio\"]').filter(\"[name='indoor-outdoor']\").length > 1, 'message: 设置你的单选按钮的<code>name</code>属性为<code>indoor-outdoor</code>。');",
+        "assert($('label > input[type=\"radio\"]:only-child').length > 1, 'message: 你的两个单选按钮中的每一个都应该嵌套进它自己的<code>label</code>元素中。');",
+        "assert((code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length), 'message: 确保你的每一个<code>label</code>元素都有一个结束标记。');",
+        "assert($(\"label\").text().match(/indoor/gi), 'message: 应该有一个标签为<code>indoor</code>的单选按钮。');",
+        "assert($(\"label\").text().match(/outdoor/gi), 'message: 应该有一个标签为<code>outdoor</code>的单选按钮。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1456,13 +1456,13 @@
       "id": "bad87fee1348bd9aedf08835",
       "title": "Create a Set of Checkboxes",
       "description": [
-        "Forms commonly use <code>checkboxes</code> for questions that may have more than one answer.",
-        "Checkboxes are a type of <code>input</code>",
-        "Each of your checkboxes should be nested within its own <code>label</code> element.",
-        "All related checkbox inputs should have the same <code>name</code> attribute.",
-        "Here's an example of a checkbox:",
+        "表单中一般将<code>checkboxes（复选按钮）</code> 用于可能不止一个答案的问题。",
+        "复选按钮是<code>input</code>的一种。",
+        "每一个复选按钮应该嵌套进它自己的<code>label</code>元素。",
+        "所有关联的复选按钮输入应该具有相同的<code>name</code>属性。",
+        "下面是复选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"checkbox\" name=\"personality\"&#62; Loving&#60;/label&#62;</code>",
-        "Add to your form a set of three checkboxes. Each checkbox should be nested within its own <code>label</code> element. All three should share the <code>name</code> attribute of <code>personality</code>."
+        "为你的表单添加一个包含三个复选按钮的复选按钮组，每一个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有三个复选按钮应该共享值为<code>personality</code>的<code>name</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1518,10 +1518,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"checkbox\"]').length > 2, 'message: Your page should have three checkbox elements.');",
-        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: Each of your three checkbox elements should be nested in its own <code>label</code> element.');",
-        "assert(code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length, 'message: Make sure each of your <code>label</code> elements has a closing tag.');",
-        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: Give your checkboxes the <code>name</code> attribute of <code>personality</code>.');"
+        "assert($('input[type=\"checkbox\"]').length > 2, 'message: 你的页面上应该有三个复选按钮元素。');",
+        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: 三个复选按钮中的每一个都应该嵌套进它自己的<code>label</code>元素。');",
+        "assert(code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length, 'message: 确保每一个<code>label</code>元素都有一个结束标记。');",
+        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: 为你的复选按钮的<code>name</code>属性设置值<code>personality</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1530,10 +1530,10 @@
       "id": "bad87fee1348bd9aedd08835",
       "title": "Check Radio Buttons and Checkboxes by Default",
       "description": [
-        "You can set a checkbox or radio button to be checked by default using the <code>checked</code> attribute.",
-        "To do this, just add the word \"checked\" to the inside of an input element. For example:",
+        "使用<code>checked</code>属性，你可以设置复选按钮和单选按钮默认被选中。",
+        "为此，只需在输入元素中添加单词\"checked\"。例如：",
         "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
-        "Set the first of your <code>radio buttons</code> and the first of your <code>checkboxes</code> to both be checked by default."
+        "将你的第一个<code>radio buttons</code>和第一个<code>checkboxes</code>都设置为默认选中。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1592,8 +1592,8 @@
         "</form>"
       ],
       "tests": [
-        "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: Your first radio button on your form should be checked by default.');",
-        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: Your first checkbox on your form should be checked by default.');"
+        "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: 你表单中的第一个单选按钮应该默认被选中。');",
+        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表彰中的第一个复选按钮应该默认被选中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1602,11 +1602,11 @@
       "id": "bad87fee1348bd9aede08835",
       "title": "Nest Many Elements within a Single Div Element",
       "description": [
-        "The <code>div</code> element, also known as a division element, is a general purpose container for other elements.",
-        "The <code>div</code> element is probably the most commonly used HTML element of all. It's useful for passing the CSS of its own class declarations down to all the elements that it contains.",
-        "Just like any other non-self-closing element, you can open a <code>div</code> element with <code>&#60;div&#62;</code> and close it on another line with <code>&#60;/div&#62;</code>.",
-        "Try putting your opening <code>div</code> tag above your \"Things cats love\" <code>p</code> element and your closing <code>div</code> tag after your closing <code>ol</code> tag so that both of your lists are within one <code>div</code>.",
-        "Nest your \"Things cats love\" and \"Things cats hate\" lists all within a single <code>div</code> element."
+        "<code>div</code>元素，也被称作division（层）元素，是一个盛装其他元素的通用容器。",
+        "<code>div</code>可能是所有HTML元素中最常使用的元素，在将其自身 class 声明的CSS传递给它所包裹着的所有元素时非常有用。",
+        "像任何其他非自结束元素一样，你可以用<code>&#60;div&#62;</code>来标记一个<code>div</code>元素的块的开始，然后在另一行用<code>&#60;/div&#62;</code>来标记块的结束。",
+        "试着在你的\"Things cats love\" <code>p</code>元素之前放置<code>div</code>的开始标记，在你的<code>ol</code>结束标记之后放置<code>div</code>的结束标记，这样你的两个列表就都嵌套在<code>div</code>中了。",
+        "把\"Things cats love\"和\"Things cats hate\"两个列表都嵌套进同一个<code>div</code>元素中。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1666,10 +1666,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").children(\"p\").length > 1, 'message: Nest your <code>p</code> elements inside your <code>div</code> element.');",
-        "assert($(\"div\").children(\"ul\").length > 0, 'message: Nest your <code>ul</code> element inside your <code>div</code> element.');",
-        "assert($(\"div\").children(\"ol\").length > 0, 'message: Nest your <code>ol</code> element inside your <code>div</code> element.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<\\/div>/g).length === code.match(/<div>/g).length, 'message: Make sure your <code>div</code> element has a closing tag.');"
+        "assert($(\"div\").children(\"p\").length > 1, 'message: 把你的<code>p</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert($(\"div\").children(\"ul\").length > 0, 'message: 把你的<code>ul</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert($(\"div\").children(\"ol\").length > 0, 'message: 把你的<code>ol</code>元素嵌套进你的<code>div</code>元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<\\/div>/g).length === code.match(/<div>/g).length, 'message: 确保你的<code>div</code>元素有一个结束标记。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1678,10 +1678,10 @@
       "id": "bad87fed1348bd9aede07836",
       "title": "Give a Background Color to a Div Element",
       "description": [
-        "You can set an element's background color with the <code>background-color</code> property.",
-        "For example, if you wanted an element's background color to be <code>green</code>, you'd put this within your <code>style</code> element:",
+        "你可以用 <code>background-color</code> 属性来设置一个元素的背景颜色。",
+        "例如，如果你想把一个元素的背景颜色设置为<code>green</code>，你应该把这些加到你的 <code>style</code> 元素中：",
         "<blockquote>.green-background {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "Create a class called <code>gray-background</code> with the <code>background-color</code> of gray. Assign this class to your <code>div</code> element."
+        "创建一个叫做 <code>gray-background</code> 的 class，设置其 <code>background-color</code> 为 gray，把这个 class 指定给你的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1743,8 +1743,8 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"gray-background\"), 'message: Give your <code>div</code> element the class <code>gray-background</code>.');",
-        "assert($(\".gray-background\").css(\"background-color\") === \"rgb(128, 128, 128)\", 'message: Your <code>div</code> element should have a gray background.');"
+        "assert($(\"div\").hasClass(\"gray-background\"), 'message: 把 <code>gray-background</code> class 指定给你的 <code>div</code> 元素。');",
+        "assert($(\".gray-background\").css(\"background-color\") === \"rgb(128, 128, 128)\", 'message: 你的 <code>div</code> 元素应该有一个灰色（gray）的背景。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1753,12 +1753,12 @@
       "id": "bad87eee1348bd9aede07836",
       "title": "Set the ID of an Element",
       "description": [
-        "In addition to classes, each HTML element can also have an <code>id</code> attribute.",
-        "There are several benefits to using <code>id</code> attributes, and you'll learn more about them once you start using jQuery.",
-        "<code>id</code> attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same <code>id</code> attribute.",
-        "Here's an example of how you give your <code>h2</code> element the id of <code>cat-photo-app</code>:",
+        "除了 class 之外，每一个 HTML 元素还可以拥有 <code>id</code> 属性。",
+        "使用 <code>id</code> 属性有若干好处，一旦当你开始使用 jQuery 的时候你会有更深的体会。",
+        "<code>id</code> 属性应该是唯一的，虽然浏览器并不强制唯一，但基于最佳实践，这一点是被广泛认可的，所以请不要给一个以上的元素设置相同的 <code>id</code> 属性。",
+        "下面举例说明了如何为你的 <code>h2</code> 元素添加值为 <code>cat-photo-app</code> 的 id。",
         "<code>&#60;h2 id=\"cat-photo-app\"></code>",
-        "Give your <code>form</code> element the id <code>cat-photo-form</code>."
+        "为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code>的 id。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1823,7 +1823,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: Give your <code>form</code> element the id of <code>cat-photo-form</code>.');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1832,11 +1832,11 @@
       "id": "bad87dee1348bd9aede07836",
       "title": "Use an ID Attribute to Style an Element",
       "description": [
-        "One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.",
-        "Here's an example of how you can take your element with the <code>id</code> attribute of <code>cat-photo-element</code> and give it the background color of green. In your <code>style</code> element:",
+        "关于 <code>id</code> 属性的一件非常酷的事情是，像 class 一样，你可以使用 CSS 来为其应用样式。",
+        "下面是如何引用你的 <code>id</code> 属性为 <code>cat-photo-element</code> 的元素，并将它的背景色设置为绿色的例子。在你的 <code>style</code> 元素内部：",
         "<blockquote>#cat-photo-element {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.",
-        "Try giving your form, which now has the <code>id</code> attribute of <code>cat-photo-form</code>, a green background."
+        "注意，在你的 <code>style</code> 元素内部，总是需要通过在名字前加一个 <code>.</code> 来引用 class，加一个 <code>#</code> 来引用 id。",
+        "试着给你的表单，它现在有一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1902,10 +1902,10 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: Give your <code>form</code> element the id of <code>cat-photo-form</code>.');",
-        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: Your <code>form</code> element should have the <code>background-color</code> of green.');",
-        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: Make sure your <code>form</code> element has an <code>id</code> attribute.');",
-        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: Do not give your <code>form</code> any <code>class</code> or <code>style</code> attributes.');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');",
+        "assert($(\"#cat-photo-form\").css(\"background-color\") === \"rgb(0, 128, 0)\", 'message: 你的 <code>form</code> 元素的 <code>background-color</code> 应该为 green。');",
+        "assert(code.match(/<form.*cat-photo-form.*>/gi) && code.match(/<form.*cat-photo-form.*>/gi).length > 0, 'message: 确保你的 <code>form</code> 元素有一个 <code>id</code> 属性。');",
+        "assert(!code.match(/<form.*style.*>/gi) && !code.match(/<form.*class.*>/gi), 'message: 不要给你的 <code>form</code> 添加任何 <code>class</code> 或 <code>style</code> 属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1914,13 +1914,13 @@
       "id": "bad88fee1348bd9aedf08825",
       "title": "Adjusting the Padding of an Element",
       "description": [
-        "Now let's put our Cat Photo App away for a little while and learn more about styling HTML.",
-        "You may have already noticed this, but all HTML elements are essentially little rectangles.",
-        "Three important properties control the space that surrounds each HTML element: <code>padding</code>, <code>margin</code>, and <code>border</code>.",
-        "An element's <code>padding</code> controls the amount of space between the element and its <code>border</code>.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the green box.",
-        "When you increase the green box's <code>padding</code>, it will increase the distance between the text <code>padding</code> and the border around it.",
-        "Change the <code>padding</code> of your green box to match that of your red box."
+        "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
+        "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
+        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
+        "元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
+        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border 之间的距离。",
+        "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -1959,7 +1959,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素设置一个 <code>20px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1968,10 +1968,10 @@
       "id": "bad87fee1348bd9aedf08822",
       "title": "Adjust the Margin of an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "Here, we can see that the green box and the red box are nested within the yellow box. Note that the red box has more <code>margin</code> than the green box, making it appear smaller.",
-        "When you increase the green box's <code>margin</code>, it will increase the distance between its border and surrounding elements.",
-        "Change the <code>margin</code> of the green box to match that of the red box."
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>margin</code>，使得它看起来更小。",
+        "当你增大绿方块的 <code>margin</code> 时，将会增加其边框和包围元素之间的距离。",
+        "修改绿方块的 <code>margin</code> 以使它与红方块匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2012,7 +2012,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: Your <code>green-box</code> class should give elements <code>20px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>20px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2021,10 +2021,10 @@
       "id": "bad87fee1348bd9aedf08823",
       "title": "Add a Negative Margin to an Element",
       "description": [
-        "An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.",
-        "If you set an element's <code>margin</code> to a negative value, the element will grow larger.",
-        "Try to set the <code>margin</code> to a negative value like the one for the red box.",
-        "Change the <code>margin</code> of the green box to <code>-15px</code>, so it fills the entire horizontal width of the yellow box around it."
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "如果你将一个元素的 <code>margin</code> 设置为负值，元素将会变大。",
+        "试着像红方块那样把 <code>margin</code> 设置为负值。",
+        "把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将包围它的黄方块的横向宽度填满。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2064,7 +2064,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: Your <code>green-box</code> class should give elements <code>-15px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>-15px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2073,9 +2073,9 @@
       "id": "bad87fee1348bd9aedf08824",
       "title": "Add Different Padding to Each Side of an Element",
       "description": [
-        "Sometimes you will want to customize an element so that it has different <code>padding</code> on each of its sides.",
-        "CSS allows you to control the <code>padding</code> of an element on all four sides with <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties.",
-        "Give the green box a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "有时你想要自定义元素，使它的每一个边具有不同的 <code>padding</code>。",
+        "CSS 允许你使用 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性来控制元素所有四个边的 <code>padding</code>。",
+        "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2116,10 +2116,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of the elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of the elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of the elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of the elements <code>20px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2128,9 +2128,9 @@
       "id": "bad87fee1248bd9aedf08824",
       "title": "Add Different Margins to Each Side of an Element",
       "description": [
-        "Sometimes you will want to customize an element so that it has a different <code>margin</code> on each of its sides.",
-        "CSS allows you to control the <code>margin</code> of an element on all four sides with <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties.",
-        "Give the green box a <code>margin</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "有时你想要自定义元素，使它的每一个边具有不同的 <code>margin</code>。",
+        "CSS 允许你使用 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性来控制元素所有四个边的 <code>margin</code>。",
+        "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2171,10 +2171,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2183,10 +2183,10 @@
       "id": "bad87fee1348bd9aedf08826",
       "title": "Use Clockwise Notation to Specify the Padding of an Element",
       "description": [
-        "Instead of specifying an element's <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties, you can specify them all in one line, like this:",
+        "除了指定元素的 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
         "<code>padding: 10px 20px 10px 20px;</code>",
-        "These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.",
-        "Use Clockwise Notation to give the \".green-box\" class a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 padding 具有完全相同的效果。",
+        "使用顺时针表示法设置 \".green-box\" class，使其顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧具有 <code>20px</code> 的 <code>padding</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2224,10 +2224,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>padding</code>.');",
-        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>padding</code>.');"
+        "assert($(\".green-box\").css(\"padding-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>padding</code>。');",
+        "assert($(\".green-box\").css(\"padding-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>padding</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2236,11 +2236,11 @@
       "id": "bad87fee1348bd9afdf08726",
       "title": "Use Clockwise Notation to Specify the Margin of an Element",
       "description": [
-        "Let's try this again, but with <code>margin</code> this time.",
-        "Instead of specifying an element's <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties, you can specify them all in one line, like this:",
+        "让我们再试一次，但这次是用于 <code>margin</code>。",
+        "除了指定元素的 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
         "<code>margin: 10px 20px 10px 20px;</code>",
-        "These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.",
-        "Use <code>Clockwise Notation</code> to give the element with the <code>green-box</code> class a margin of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side."
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 margin 具有完全相同的效果。",
+        "使用<code>顺时针表示法</code>设置含有 \".green-box\" class 的元素，使其顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧具有 <code>20px</code> 的 <code>margin</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2278,10 +2278,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: Your <code>green-box</code> class should give the top of elements <code>40px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: Your <code>green-box</code> class should give the right of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: Your <code>green-box</code> class should give the bottom of elements <code>20px</code> of <code>margin</code>.');",
-        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: Your <code>green-box</code> class should give the left of elements <code>40px</code> of <code>margin</code>.');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的顶部设置 <code>40px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-right\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的右侧设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-bottom\") === \"20px\", 'message: 你的 <code>green-box</code> class 应该为元素的底部设置 <code>20px</code> 的 <code>margin</code>。');",
+        "assert($(\".green-box\").css(\"margin-left\") === \"40px\", 'message: 你的 <code>green-box</code> class 应该为元素的左侧设置 <code>40px</code> 的 <code>margin</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2290,10 +2290,10 @@
       "id": "bad87fee1348bd9aedf08736",
       "title": "Style the HTML Body Element",
       "description": [
-        "Now let's start fresh and talk about CSS inheritance.",
-        "Every HTML page has a <code>body</code> element.",
-        "We can prove that the <code>body</code> element exists here by giving it a <code>background-color</code> of black.",
-        "We can do this by adding the following to our <code>style</code> element:",
+        "现在让我们来一个全新的开始，讲一讲 CSS 继承。",
+        "每一个 HTML 页面都有一个 <code>body</code> 元素。",
+        "通过将其 <code>background-color</code> 设置为黑色，我们可以证明 <code>body</code> 元素的存在。",
+        "我们可以通过将下面的代码添加到我们的 <code>style</code> 元素来做到这一点：",
         "<blockquote>body {<br>&nbsp;&nbsp;background-color: black;<br>}</blockquote>"
       ],
       "challengeSeed": [
@@ -2302,8 +2302,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: Give your <code>body</code> element the <code>background-color</code> of black.');",
-        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: Make sure your CSS rule is properly formatted with both opening and closing curly brackets.');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为 black。');",
+        "assert(code.match(/<style>\\s*body\\s*\\{\\s*background.*\\s*:\\s*.*;?\\s*\\}\\s*<\\/style>/i), 'message: 确保你的 CSS 规则是正确的格式，具有开始和结束的花括号。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2312,11 +2312,11 @@
       "id": "bad87fee1348bd9aedf08746",
       "title": "Inherit Styles from the Body Element",
       "description": [
-        "Now we've proven that every HTML page has a <code>body</code> element, and that its <code>body</code> element can also be styled with CSS.",
-        "Remember, you can style your <code>body</code> element just like any other HTML element, and all your other elements will inherit your <code>body</code> element's styles.",
-        "First, create a <code>h1</code> element with the text <code>Hello World</code>",
-        "Then, let's give all elements on your page the color of <code>green</code> by adding <code>color: green;</code> to your <code>body</code> element's style declaration.",
-        "Finally, give your <code>body</code> element the font-family of <code>Monospace</code> by adding <code>font-family: Monospace;</code> to your <code>body</code> element's style declaration."
+        "现在我们证明了每一个 HTML 页面都有一个 <code>body</code> 元素，并且其 <code>body</code> 元素同样能够应用样式。",
+        "记住，你可以像对其他 HTML 元素一样对你的 <code>body</code> 元素应用样式，并且所有其他元素将继承你的 <code>body</code> 元素的样式。",
+        "首先，创建一个文字为 <code>Hello World</code> 的 <code>h1</code> 元素。",
+        "然后，让我们通过向 <code>body</code> 元素的样式声明部分添加 <code>color: green;</code> 使页面上的所有元素的颜色为 <code>green</code>。",
+        "最后，通过向 <code>body</code> 元素的样式声明部分添加 <code>font-family: Monospace;</code> 将 <code>body</code> 元素的 font-family（字体）设置为 <code>Monospace</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2327,13 +2327,13 @@
         "</style>"
       ],
       "tests": [
-        "assert(($(\"h1\").length > 0), 'message: Create an <code>h1</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: Your <code>h1</code> element should have the text <code>Hello World</code>.');",
-        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: Make sure your <code>h1</code> element has a closing tag.');",
-        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Give your <code>body</code> element the <code>color</code> property of <code>green</code>.');",
-        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: Give your <code>body</code> element the <code>font-family</code> property of <code>Monospace</code>.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: Your <code>h1</code> element should inherit the font <code>Monospace</code> from your <code>body</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Your <code>h1</code> element should inherit the color green from your <code>body</code> element.');"
+        "assert(($(\"h1\").length > 0), 'message: 创建一个 <code>h1</code> 元素。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: 你的 <code>h1</code> 元素的文字应该是 <code>Hello World</code>。');",
+        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: 确保你的 <code>h1</code> 元素有一个结束标记。');",
+        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 设置 <code>body</code> 元素的 <code>color</code> 属性为 <code>green</code>。');",
+        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: 设置 <code>body</code> 元素的 <code>font-family</code> 属性为 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承字体 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承绿色。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2342,11 +2342,11 @@
       "id": "bad87fee1348bd9aedf08756",
       "title": "Prioritize One Style Over Another",
       "description": [
-        "Sometimes your HTML elements will receive multiple styles that conflict with one another.",
-        "For example, your <code>h1</code> element can't be both green and pink at the same time.",
-        "Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class <code>override</code> the <code>body</code> element's <code>color: green;</code> CSS property?",
-        "Create a CSS class called <code>pink-text</code> that gives an element the color pink.",
-        "Give your <code>h1</code> element the class of <code>pink-text</code>."
+        "有时你的 HTML 元素会得到相互冲突的多个样式。",
+        "例如，你的 <code>h1</code> 元素不能同时为绿色和粉色。",
+        "让我们来看看当我们创建一个使其文字为粉色的 class 时会发生什么，然后将其应用到某元素。我们的 class 会 <code>override（覆盖）</code> <code>body</code> 元素的 <code>color: green;</code> CSS 属性吗？",
+        "创建一个使元素颜色成为粉色的名为 <code>pink-text</code> 的 CSS class。",
+        "设置 <code>h1</code> 元素的 class 为 <code>pink-text</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2359,9 +2359,9 @@
         "<h1>Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: Your <code>&#60;style&#62;</code> should have a <code>pink-text</code> CSS class with its color set to pink.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: Your <code>h1</code> element should be pink.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含名为 <code>pink-text</code> 的 class。');",
+        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: 你的 <code>&#60;style&#62;</code> 包含一个将 color 设置为 pink 的 <code>pink-text</code> CSS class。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: 你的 <code>h1</code> 元素应该为粉色。');"
       ],
       "type": "waypoint",
       "challengeType": 0

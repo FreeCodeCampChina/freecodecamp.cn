@@ -178,7 +178,7 @@ $(document).ready(function() {
       .unbind('error')
       .attr(
         'src',
-        'https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png'
+        '/images/camper-image-placeholder.png'
       );
   });
 

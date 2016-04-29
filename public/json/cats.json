@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "imageLink": "https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+    "imageLink": "/images/funny-cat.jpg",
     "codeNames": [
       "Juggernaut",
       "Mrs. Wallace",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "imageLink": "https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg",
+    "imageLink": "/images/grumpy-cat.jpg",
     "codeNames": [
       "Oscar",
       "Scrooge",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "imageLink": "https://s3.amazonaws.com/freecodecamp/mischievous-cat.jpg",
+    "imageLink": "/images/mischievous-cat.jpg",
     "codeNames": [
       "The Doctor",
       "Loki",
