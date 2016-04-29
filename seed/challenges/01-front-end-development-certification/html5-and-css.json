@@ -2370,14 +2370,14 @@
       "id": "bad87fee1348bd9aedf04756",
       "title": "Override Styles in Subsequent CSS",
       "description": [
-        "Our \"pink-text\" class overrode our <code>body</code> element's CSS declaration!",
-        "We just proved that our classes will override the <code>body</code> element's CSS. So the next logical question is, what can we do to override our <code>pink-text</code> class?",
-        "Create an additional CSS class called <code>blue-text</code> that gives an element the color blue. Make sure it's below your <code>pink-text</code> class declaration.",
-        "Apply the <code>blue-text</code> class to your <code>h1</code> element in addition to your <code>pink-text</code> class, and let's see which one wins.",
-        "Applying multiple class attributes to a HTML element is done with a space between them like this:",
+        "我们的 \"pink-text\" class 覆盖了 <code>body</code> 元素的 CSS 声明！",
+        "我们刚刚证明了我们的 class 会覆盖 <code>body</code> 元素的 CSS，那么下一个合乎情理的问题就是，我们怎样才能覆盖我们的 <code>pink-text</code> class 呢？",
+        "再创建一个把元素设置为蓝色的名为 <code>blue-text</code> 的 CSS class，确保它在你的 <code>pink-text</code> class 声明的下面。",
+        "除了 <code>pink-text</code> class 之外，再把 <code>blue-text</code> class 应用到你的 <code>h1</code> 元素，让我们来看看谁会赢。",
+        "如下例，通过用空格分隔多个 class 属性，可对 HTML 元素应用多个 class 属性：",
         "<code>class=\"class1 class2\"</code>",
-        "Note: It doesn't matter which order the classes are listed in the HTML element.",
-        "However, the order of the <code>class</code> declarations in the <code>&#60;style&#62;</code> section are what is important. The second declaration will always take precedence over the first. Because <code>.blue-text</code> is declared second, it overrides the attributes of <code>.pink-text</code>"
+        "注意：在 HTML 中这些 class 如何排序是无所谓的。",
+        "然而，在 <code>&#60;style&#62;</code> 部分中 <code>class</code> 声明的顺序却非常重要，第二个声明总是比第一个具有优先权。因为 <code>.blue-text</code> 是第二个声明，它覆盖了 <code>.pink-text</code> 属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2393,10 +2393,10 @@
         "<h1 class=\"pink-text\">Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: Your <code>h1</code> element should have the class <code>blue-text</code>.');",
-        "assert($(\".pink-text\").hasClass(\"blue-text\"), 'message: Both <code>blue-text</code> and <code>pink-text</code> should belong to the same <code>h1</code> element.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: Your <code>h1</code> element should be blue.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>pink-text</code> class。');",
+        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>blue-text</code> class。');",
+        "assert($(\".pink-text\").hasClass(\"blue-text\"), 'message: <code>blue-text</code> 和 <code>pink-text</code> 都应该属于同一个 <code>h1</code> 元素。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: 你的 <code>h1</code> 元素应该是蓝色的。');"
       ],
       "type": "waypoint",
       "challengeType": 0
