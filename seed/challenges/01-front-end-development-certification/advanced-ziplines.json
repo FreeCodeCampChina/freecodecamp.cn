@@ -46,21 +46,7 @@
       "tests": [],
       "type": "zipline",
       "isRequired": true,
-      "challengeType": 3,
-      "titleRu": "Создайте таймер Pomodoro",
-      "descriptionRu": [
-        "<span class='text-info'>Задание:</span> Создайте <a href='http://codepen.io' target='_blank'>CodePen.io</a> который успешно копирует вот этот: <a href='http://codepen.io/FreeCodeCamp/full/VemPZX' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemPZX</a>.",
-        "<span class='text-info'>Правило #1:</span> Не подсматривайте код приведенного на CodePen примера. Напишите его самостоятельно.",
-        "<span class='text-info'>Правило #2:</span> Можете использовать любые библиотеки или API, которые потребуются.",
-        "<span class='text-info'>Правило #3:</span> Воссоздайте функционал приведенного примера и не стесняйтесь добавить что-нибудь от себя.",
-        "Реализуйте следующие <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>пользовательские истории</a>, сделайте также бонусные по желанию:",
-        "<span class='text-info'>Пользовательская история:</span> В качестве пользователя, я могу запустить 25 минутную 'помидорку', по истечении которой таймер выключится.",
-        "<span class='text-info'>Бонусная пользовательская история:</span> В качестве пользователя, я могу сбросить таймер для установки следующей 'помидорки'.",
-        "<span class='text-info'>Бонусная пользовательская история:</span> В качестве пользователя, я могу выбирать длительность 'помидорки'.",
-        "Если что-то не получается, воспользуйтесь <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>.",
-        "Когда выполните задание кликните кнопку \"I've completed this challenge\" и добавьте ссылку на ваш CodePen. Если вы программировали с кем-то в паре, также добавьте имя вашего напарника.",
-        "Если вы хотите получить немедленную оценку вашего проекта, нажмите эту кнопку и добавьте ссылку на ваш CodePen. В противном случае мы проверим его перед тем как вы приступите к проектам для некоммерческих организаций.<br><br><a class='btn btn-primary btn-block' href='https://twitter.com/intent/tweet?text=Check%20out%20the%20project%20I%20just%20built%20with%20%40FreeCodeCamp:%20%0A%20%23LearnToCode%20%23JavaScript' target='_blank'>Click here then add your link to your tweet's text</a>"
-      ]
+      "challengeType": 3
     },
     {
       "id": "bd7158d8c442eedfaeb5bd1c",
@@ -99,7 +85,7 @@
         "<strong>User Story:</strong> If I want to restart, I can hit a button to do so, and the game will return to a single step.",
         "<strong>User Story:</strong> I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.",
         "<strong>User Story:</strong> I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over.",
-        "<strong>Hint:</strong> Here are mp3s you can use for each button: <code>https://s3.amazonaws.com/freecodecamp/simonSound1.mp3</code>, <code>https://s3.amazonaws.com/freecodecamp/simonSound2.mp3</code>, <code>https://s3.amazonaws.com/freecodecamp/simonSound3.mp3</code>, <code>https://s3.amazonaws.com/freecodecamp/simonSound4.mp3</code>.",
+        "<strong>Hint:</strong> Here are mp3s you can use for each button: <code>/images/simonSound1.mp3</code>, <code>/images/simonSound2.mp3</code>, <code>/images/simonSound3.mp3</code>, <code>/images/simonSound4.mp3</code>.",
         "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck.",
         "When you are finished, click the \"I've completed this challenge\" button and include a link to your CodePen.",
         "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."

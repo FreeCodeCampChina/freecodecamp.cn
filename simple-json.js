@@ -38,12 +38,14 @@ for(var j=0;j<source.length;j++){
   var out = JSON.parse(res);
   var challenges = out.challenges;
   for(var i=0;i<challenges.length;i++){
-    delete challenges[i].descriptionPtBR;
     delete challenges[i].namePtBR;
-    delete challenges[i].descriptionDe;
-    delete challenges[i].descriptionEs;
+    delete challenges[i].descriptionPtBR;
     delete challenges[i].titleEs;
+    delete challenges[i].descriptionEs;
     delete challenges[i].titleDe;
+    delete challenges[i].descriptionDe;
+    delete challenges[i].titleRu;
+    delete challenges[i].descriptionRu;
   }
   //由于JSON.stringify默认会自动压缩文件，不利于翻译，所以必须添加参数2，表示缩进为2个空格。
   var input = JSON.stringify(out,null,2);
