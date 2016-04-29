@@ -9,10 +9,10 @@
       "title": "Trigger Click Events with jQuery",
       "description": [
         "这一节，我们将学习如何从应用程序接口(APIs)中获取数据——应用程序接口（APIs）——计算机之间相互交流沟通的工具。",
-		"在我们获取到数据之后，我们还会学习如何用Ajxa技术来将这些数据更新到HTML页面当中去。",
-		"首先，我们来看一下函数<code>$(document).ready()</code>干了些什么。这个函数中的代码只会在我们的页面加载时候运行一次。",
-		"本节要实现的功能是在点击\"Get Message\"按钮之后，改变含有<code>message</code> class的元素的显示值。",
-		"为了实现这个功能，我们先要在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
+        "在我们获取到数据之后，我们还会学习如何用Ajxa技术来将这些数据更新到HTML页面当中去。",
+        "首先，我们来看一下函数<code>$(document).ready()</code>干了些什么。这个函数中的代码只会在我们的页面加载时候运行一次。",
+        "本节要实现的功能是在点击\"Get Message\"按钮之后，改变含有<code>message</code> class的元素的显示值。",
+        "为了实现这个功能，我们先要在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
         "<blockquote>$(\"#getMessage\").on(\"click\", function(){</br></br>});</blockquote>"
       ],
       "challengeSeed": [
@@ -49,15 +49,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Activa eventos de pulsación con jQuery",
-      "descriptionEs": [
-        "En esta sección, vamos a aprender cómo obtener datos de las APIs. Las APIs - o interfaces de programación de aplicaciones - son herramientas que utilizan los computadores para comunicarse entre sí.",
-        "También aprenderemos cómo actualizar HTML con los datos que obtenemos de estas API usando una tecnología llamada Ajax.",
-        "En primer lugar, vamos a revisar lo que hace la función <code>$(document).ready()</code>. Esta función hace que todo el código dentro de ella se ejecute sólo hasta que nuestra página ha sido cargada.",
-        "Hagamos que nuestro botón \"Get message\" cambie el texto del elemento con clase <code>message</code>.",
-        "Antes de poder hacer esto, tenemos que implementar un <code>evento de pulsación</code> dentro de nuestra función <code>$(document).ready()</code>, añadiendo este código:",
-        "<blockquote>$(\"#getMessage\").on(\"click\", function(){</br></br>});</blockquote>"
-      ],
       "titlePt": "Ativando eventos de clique com jQuery",
       "descriptionPt": [
         "Nesta sessão, vamos aprender como obter dados de uma API. As APIS - Interface de Programação de Aplicativos - são ferramentas usadas pelos computadores  para se comunicarem entre si.",
@@ -73,9 +64,9 @@
       "title": "Change Text with Click Events",
       "description": [
         "当我们点击按钮时，我们可以使用jQuery来更新HTML页面",
-		"这次我们要实现的功能是，点击\"Get Message\"按钮，将含有<code>message</code> class的元素显示的文本改为：“Here is the message”。",
-		"为此在我们的点击事件中加入如下代码：",
-		"<code>$(\".message\").html(\"Here is the message\");</code>"
+        "这次我们要实现的功能是，点击\"Get Message\"按钮，将含有<code>message</code> class的元素显示的文本改为：“Here is the message”。",
+        "为此在我们的点击事件中加入如下代码：",
+        "<code>$(\".message\").html(\"Here is the message\");</code>"
       ],
       "challengeSeed": [
         "fccss",
@@ -112,13 +103,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Cambia texto con eventos de pulsación",
-      "descriptionEs": [
-        "Cuando nuestro evento de pulsación ocurre, podemos utilizar jQuery para actualizar un elemento HTML.",
-        "Hagamos que cuando un usuario pulse el botón \"Get Message\", el texto del elemento con la clase <code>message</code> cambie para decir \"Here is the message\".",
-        "Podemos hacerlo añadiendo el siguiente código dentro de nuestro evento de pulsación:",
-        "<code>$(\".message\").html(\"Here is the message\");</code>"
-      ],
       "titlePt": "Mundando texto com eventos de clique",
       "descriptionPt": [
         "Quando nosso evento de clique ocorre, podemos utilizar o jQuery para atualixar um elemento HTML",
@@ -132,14 +116,14 @@
       "title": "Get JSON with the jQuery getJSON Method",
       "description": [
         "你也可以从外部来获取一些数据，来更新HTML页面，这个时候应用程序接口（APIs）就派上用场了。",
-		"记住，APIs——应用程序接口（Application Programming Interfaces——是计算机之间相互交流沟通的工具。",
-		"许多网站的应用程序接口（APIs）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
-		"其实如果你曾经创建过一个JS的对象的话，你已经使用过了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code> 、 <code>}</code>包围的对象属性，以及属性的值组成。",
-		"这些对象属性以及属性值就是我们进场听到的\"键值对（key-value pairs）\"。",
-		"那就让我们从之前章节中用到的FreeCodeCam的猫图API中拿取数据吧。",
-		"你应该在你的点击事件中加入如下的代码：",
-		"<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
-		"在这之后，点击\"Get Message\"按钮。你的Ajax函数将把文字\"The message will go here\"替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。"
+        "记住，APIs——应用程序接口（Application Programming Interfaces——是计算机之间相互交流沟通的工具。",
+        "许多网站的应用程序接口（APIs）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
+        "其实如果你曾经创建过一个JS的对象的话，你已经使用过了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code> 、 <code>}</code>包围的对象属性，以及属性的值组成。",
+        "这些对象属性以及属性值就是我们进场听到的\"键值对（key-value pairs）\"。",
+        "那就让我们从之前章节中用到的FreeCodeCam的猫图API中拿取数据吧。",
+        "你应该在你的点击事件中加入如下的代码：",
+        "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
+        "在这之后，点击\"Get Message\"按钮。你的Ajax函数将把文字\"The message will go here\"替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。"
       ],
       "challengeSeed": [
         "fccss",
@@ -183,18 +167,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Obtén JSON con el método getJSON de jQuery",
-      "descriptionEs": [
-        "También puedes solicitar los datos de una fuente externa. Aquí es donde entran en juego las API. ",
-        "Recuerda que las API - o interfaces de programación de aplicaciones - son herramientas que utilizan los ordenadores para comunicarse entre sí.",
-        "La mayoría de las API para el web transfieren datos en un formato llamado JSON. JSON significa notación de objeto JavaScript (<em>JavaScript Object Notation</em>).",
-        "Tú ya has usado JSON al crear objetos en JavaScript. JSON no es más que las propiedades del objeto y sus valores actuales, intercalados entre un <code>{</code> y un <code>}</code>. ",
-        "Estas propiedades y sus valores a menudo se denominan \" pares llave-valor\".",
-        "Vamos a obtener el JSON de la API de fotos de gato de Free Code Camp.",
-        "Aquí está el código que puedes poner en tu evento de pulsación para lograrlo:",
-        "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
-        "Una vez lo añadas, pulsa el botón \"Get Message\". Tu función Ajax sustituirá el texto \"The message will go here\" con la salida JSON en bruto de la API de fotos de gato de Free Code Camp."
-      ],
       "titlePt": "Obter um JSON com o método getJSON do jQuery",
       "descriptionPt": [
         "Também é possivel solicitar os dados de uma fonte externa. É aqui onde as API's entram em jogo. ",
@@ -263,15 +235,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Convierte datos JSON a datos HTML",
-      "descriptionEs": [
-        "Ahora que estamos obteniendo datos de una API JSON, mostremóslos en nuestro HTML.",
-        "Podemos usar el método <code>.forEach()</code> para recorrer nuestros datos y modificar nuestros elementos HTML.",
-        "En primer lugar, vamos a declarar una variable llamada <code>html</code> con <code>var html = \"\";</code>.",
-        "Después, iteremos a traveś de nuestro JSON, añadiendo más HTML a esa variable. Cuando se termina el ciclo, vamos a presentarla. ",
-        "Aquí está el código que hace esto:",
-        "<blockquote>json.forEach(function(val) {</br>  var keys = Object.keys(val);</br>  html += \"&lt;div class = 'cat'&gt;\";</br>  keys.forEach(function(key) {</br>    html += \"&lt;b&gt;\" + key + \"&lt;/b&gt;: \" + val[key] + \"&lt;br&gt;\";</br>  });</br>  html += \"&lt;/div&gt;&lt;br&gt;\";</br>});</blockquote>"
-      ],
       "titlePt": "Converter dados JSON para HTML",
       "descriptionPt": [
         "Agora que estamos obtendo os dados de uma API JSON, vamos mostra-los em nosso HTML",
@@ -344,13 +307,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Presenta imágenes de fuentes de datos",
-      "descriptionEs": [
-        "Hemos visto en las dos últimas lecciones que cada objeto en nuestro vector JSON contiene una llave <code>imageLink</code> con un valor que corresponde a la url de la imagen de un gato.",
-        "Cuando estamos recorriendo estos objetos, usemos esta propiedad <code>imageLink</code> para visualizar la imagen en un elemento <code>img</code>.",
-        "Aquí está el código que hace esto:",
-        "<code>html += \"&lt;img src = '\" + val.imageLink + \"'&gt;\";</code>"
-      ],
       "titlePt": "Apresentar as imagens da fonte de dados",
       "descriptionPt": [
         "Como temos visto nas ultimas lições, cada objeto em nosso array JSON contém a chave <code>imageLink</code> com um valor que corresponde a url da imagem de um gato.",
@@ -423,13 +379,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Pre-filtra JSON",
-      "descriptionEs": [
-        "Si no queremos presentar cada foto de gato que obtengamos de la API JSON de fotos de gato de Free Code Camp, podemos pre-filtrar el json antes de iterar a través de este.",
-        "Vamos a filtrar el gato cuya llave \"id\" tiene un valor de 1.",
-        "Aquí está el código para hacer esto:",
-        "<blockquote>json = json.filter(function(val) {</br>  return (val.id !== 1);</br>});</blockquote>"
-      ],
       "titlePt": "Pré-filtro JSON",
       "descriptionPt": [
         "Se não queremos apresentar cada foto de gato que obtemos da API JSON de fotos de gatos do Free Code Camp, podemos realizar um pré-filtro o JSON  antes de iterar através dele.",
@@ -467,15 +416,6 @@
       ],
       "type": "waypoint",
       "challengeType": 0,
-      "titleEs": "Recibir datos de Geo-localización",
-      "descriptionEs": [
-        "Otra cosa interesante que podemos hacer es acceder a la ubicación actual de nuestros usuarios. Todos los navegadores han incorporado un geo-localizador que nos puede dar esta información. ",
-        "El navegador puede obtener la longitud y latitud actual de nuestros usuarios.",
-        "Como usuario verás un mensaje para permitir o evitar que el sitio conozca tu ubicación actual. El desafío se puede completar de cualquier manera, siempre y cuando el código sea correcto. ",
-        "Si lo permites, verás que el texto en el teléfono de la derecha cambiará con tu latitud y longitud",
-        "Aquí hay un código que hace esto:",
-        "<blockquote>if (navigator.geolocation) {</br>  navigator.geolocation.getCurrentPosition(function(position) {</br>    $(\"#data\").html(\"latitude: \" + position.coords.latitude + \"&lt;br&gt;longitude: \" + position.coords.longitude);</br>  });</br>}</blockquote>"
-      ],
       "titlePt": "Receber dados de Geo-localização",
       "descriptionPt": [
         "Outra coisa interessante que podemos fazer é acessar a atual localização do nosso usuário. Todos os navegadores tem implementado um geo-localizador que pode nos fornecer essa informação.",

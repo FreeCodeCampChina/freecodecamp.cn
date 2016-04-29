@@ -11,7 +11,7 @@ import {
 import navLinks from './links.json';
 import FCCNavItem from './NavItem.jsx';
 
-const fCClogo = 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg';
+const fCClogo = '/images/freecodecamp_logo.svg';
 
 const logoElement = (
   <a href='/'>
