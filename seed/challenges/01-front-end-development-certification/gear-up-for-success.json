@@ -10,7 +10,7 @@
         [
           "//i.imgur.com/vJyiXzU.gif",
           "A gif showing how you can click the link below and fill in the necessary fields to add your Free Code Camp studies to your LinkedIn profile.",
-          "LinkedIn recognizes Free Code Camp as a university. You can gain access to our large alumni network by adding Free Code Camp to your LinkedIn profile's education section. Set your graduation date as next year. For \"Degree\", type \"Full Stack Web Development Certification\". For \"Field of study\", type \"Computer Software Engineering\". Then click \"Save Changes\".",
+          "在领英中，Free Code Camp也是一所大学。你可以通过在领英的教育背景一栏中添加Free Code Camp来加入我们的庞大的校友网络。详细设置步骤如下：设置你的毕业时间为明年。在\"获颁学位\"一栏填入 \"Full Stack Web Development Certification\"。在\"学习专业\"一栏填入 \"Computer Software Engineering\"。然后点击\"保存\"按钮。",
           "https://www.linkedin.com/profile/edit-education?school=Free+Code+Camp"
         ]
       ],
@@ -26,7 +26,7 @@
         [
           "//i.imgur.com/DYjJuCG.gif",
           "A gif showing how you can create a Reddit account and join Free Code Camp's subreddit.",
-          "Our community has its own subreddit on Reddit. This is a convenient way to ask questions and share links with our entire community. If you don't already have a Reddit account, you can create one in a few seconds - you don't even need an email address. Then you can click the \"subscribe\" button to join our subreddit. You may also want to subscribe to some of the other subreddits listed in our sidebar.",
+          "我们在Reddit上有专用子频道。在这里可以很方便地与我们整个社区分享链接和提问。如果你还没有Reddit账户，你可以在几秒内创建一个（邮箱都不需要填）。然后你需要点击\"订阅\"按钮来订阅我们的子频道。你还可以从我们的侧边栏里订阅其他你感兴趣的频道。",
           "https://reddit.com/r/freecodecamp"
         ]
       ],
@@ -43,13 +43,13 @@
         [
           "//i.imgur.com/FxSOL4a.gif",
           "A gif showing how you can create a Medium account.",
-          "Our community has a Medium publication where we write lots of articles about software development. If you don't already have a Medium account, you can follow the link and either sign in using social network, or by entering an email (they'll send you an email that you can click-through to create your account.) Once you select a topic of interest, you can continue through the steps.",
+          "我们写了很多关于软件开发的文章发布在Medium上。如果你还没有Medium账户，你可以点击下面的链接然后使用第三方登录或者是用邮箱注册一个（你将会收到一封验证邮件，点击其中的链接即可完成创建）。当你选择完感兴趣的话题，你就可以点击下一步了。",
           "https://www.medium.com"
         ],
         [
           "//i.imgur.com/zhhywSX.gif",
           "A gif showing how you can click the \"follow\" button to follow Free Code Camp's publication.",
-          "Once you're logged in, you can go to Free Code Camp's Medium publication and click \"follow\". Our campers publish several articles each week.",
+          "当你登录后，你可以进入Free Code Camp的Medium频道，点击\"关注\"。团员们每周会发布几篇文章。",
           "https://medium.freecodecamp.com"
         ]
       ],
@@ -66,7 +66,7 @@
         [
           "//i.imgur.com/8rtyRY1.gif",
           "A gif showing how you can sign up for Twitch.tv and follow our channel.",
-          "Our campers frequently code live on Twitch.tv, a popular streaming website. You can create an account in less than a minute, then follow Free Code Camp's channel. When you follow, you'll get the option of receiving an email notification each time one of our campers goes live. You can then join dozens of other campers and watch them code, and interact in a chat room. This is a fun, casual way to learn by watching people build projects.",
+          "团员们会经常在Twitch.tv直播写代码. 你可以在一分钟内创建一个Twitch帐户，然后关注Free Code Camp频道。 当你关注后，每次团员进行直播的时候你都会收到一封通知邮件。在与其他团员一起观看代码直播的时候还可以在直播间进行互动。通过观看团员们直播搭建项目来学习编程相当的有趣直观。",
           "https://twitch.tv/freecodecamp"
         ]
       ],
@@ -83,7 +83,7 @@
         [
           "//i.imgur.com/Og1ifsn.gif",
           "A gif showing how you can commit to a goal for your Free Code Camp studies and pledge a monthly donation to a nonprofit to give you external motivation to reach that goal.",
-          "You can set a goal and pledge to donate to a nonprofit each month until you achieve that goal. This will give you external motivation in your quest to learn to code, as well as an opportunity to help nonprofits right away. Choose your goal, then choose a monthly donation. When you click \"commit\", the nonprofit's donation page will open in a new tab. This is completely optional, and you can change your commitment or stop it at any time.",
+          "你可以为自己设定目标并承诺在完成设定的目标前每个月向非盈利组织捐款来敦促自己学习编程，同时也可以切实的帮助到非盈利组织。设定你的目标，然后选择月度捐献额度。当你点击\"提交\"，向非盈利性组织捐款的页面将会在新标签页打开。需要注意的是，这完全是自愿的，你也可以在任何时刻取消或是停止捐款。",
           "/commit"
         ]
       ],

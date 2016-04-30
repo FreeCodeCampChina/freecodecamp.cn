@@ -17,8 +17,8 @@
       "id": "cf1111c1c15feddfaeb1bdef",
       "title": "Declare JavaScript Objects as Variables",
       "description": [
-        "Before we dive into Object Oriented Programming, let's revisit JavaScript objects.",
-        "Give your <code>motorBike</code> object a <code>wheels</code>, <code>engines</code> and <code>seats</code> attribute and set them to numbers."
+        "在我们深入 <strong>面向对象编程之前</strong> ，让我们先回顾一下Javascript的 <strong>对象（Object）</strong> ",
+        "给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性， 并且设置他们的数量"
       ],
       "challengeSeed": [
         "var car = {",
@@ -29,7 +29,7 @@
         "",
         "var motorBike = {",
         "",
-        "  // Only change code below this line.",
+        "  // 只能在这一行下面写代码",
         "",
         "};"
       ],
@@ -45,26 +45,21 @@
         "assert(typeof motorBike.seats === 'number', 'message: <code>motorBike</code> should have a <code>seats</code> attribute set to a number.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Declara objetos de JavaScript como variables",
-      "descriptionEs": [
-        "Antes de sumergirnos en Programación Orientada a Objetos, vamos a revisar los objetos de JavaScript.",
-        "Dale a tu objeto <code>motorBike</code> un atributo <code>wheels</code>, otro llamado <code>motors</code> y otro <code>seats</code> y asignales números."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb2bdef",
       "title": "Construct JavaScript Objects with Functions",
       "description": [
-        "We are also able to create objects using <code>constructor</code> functions.",
-        "A <code>constructor</code> function is given a capitalized name to make it clear that it is a <code>constructor</code>.",
-        "Here's an example of a <code>constructor</code> function:",
+        "除了上一种方法外，我们还可以使用<strong>构造函数</strong>来创建对象。",
+        " <strong>构造函数</strong> 通常使用大写字母开头，以便把自己和其他普通函数区别开。",
+        "下面便是一个 <strong>构造函数</strong> 了：",
         "<blockquote>var Car = function() {<br>&nbsp;&nbsp;this.wheels = 4;<br>&nbsp;&nbsp;this.engines = 1;<br>&nbsp;&nbsp;this.seats = 1;<br>};</blockquote>",
-        "In a <code>constructor</code> the <code>this</code> variable refers to the new object being created by the constructor. So when we write,",
+        "在 <strong> 构造函数 </strong> 中， <code>this</code> 指向将要被此 <strong>构造函数</strong> 创建出来的的 <strong>对象</strong> 。所以，当我们在 <strong>构造函数</strong> 中写：",
         "<code>&nbsp;&nbsp;this.wheels = 4;</code>",
-        "inside of the <code>constructor</code> we are giving the new object it creates a property called <code>wheels</code> with a value of <code>4</code>.",
-        "You can think of a <code>constructor</code> as a description for the object it will create.",
-        "Have your <code>MotorBike</code> <code>constructor</code> describe an object with <code>wheels</code>, <code>engines</code> and <code>seats</code> properties and set them to numbers."
+        "这时，它创建出来的新<strong>对象</strong>将带有 <code>wheels</code> 属性，并且赋值为 <code>4</code>.",
+        "你可以认为 <strong>构造函数</strong> 描述了它所创建出来的<strong>对象</strong>。",
+        "让你的 <code>MotorBike</code> <strong>构造函数</strong> 描述一个具有 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性的 <strong>对象</strong> ，并且为这些属性设置值。"
       ],
       "challengeSeed": [
         "var Car = function() {",
@@ -73,7 +68,7 @@
         "  this.seats = 1;",
         "};",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "var MotorBike = function() {",
         "",
@@ -91,39 +86,23 @@
         "assert(typeof (new MotorBike()).seats === 'number', 'message: <code>MotorBike</code> should have a <code>seats</code> attribute set to a number.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Construye objetos de JavaScript con funciones",
-      "descriptionEs": [
-        "También podemos crear objetos utilizando funciones <code>constructoras</code>.",
-        "A cada función <code>constructora</code> se le da un nombre comenzando en mayúsculas para que quede claro que es una <code>constructora</code>.",
-        "He aquí un ejemplo de una función <code>constructora</code>:",
-        "<code>var Carro = function() {</code>",
-        "<code>& nbsp; & nbsp; this.llantas = 4; </code>",
-        "<code>& nbsp; & nbsp; this.motores = 1; </code>",
-        "<code>& nbsp; & nbsp; this.asientos = 1; </code>",
-        "<code>}; </code>",
-        "En una <code>constructora</code> la variable <code>this</code> hace referencia al nuevo objeto que está siendo creado por la constructora. Así que cuando escribimos ",
-        "<code>&nbsp;&nbsp;this.llantas = 4;</code>",
-        "dentro de la <code>constructora</code> le estamos dando el nuevo objeto que se crea una propiedad llamada <code>llantas</code> con un valor de <code>4</code>.",
-        "Puedes pensar en una <code>constructora</code> como una descripción del objeto que crea.",
-        "Haz que tu <code>constructora</code> <code>MotorBike</code> describa un objeto con las propiedades <code>wheels</code>,<code>engines</code> and <code>seats</code> y asignales números."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb4bdef",
       "title": "Make Instances of Objects with a Constructor Function",
       "description": [
-        "Now let's put that great <code>constructor</code> function we made in the last lesson to use!",
-        "To use a <code>constructor</code> function we call it with the <code>new</code> keyword in front of it like:",
+        "现在，我们把上一节课我们写的 <strong>构造函数</strong> 在这里用起来！",
+        "使用构造函数时，我们通过在它前面使用 <code>new</code> <strong>关键字</strong> 来对它进行调用，如下：",
         "<code>var myCar = new Car();</code>",
-        "<code>myCar</code> is now an <code>instance</code> of the <code>Car</code> constructor that looks like the object it described:",
+        "<code>myCar</code> 现在成为了 <code>Car</code> 的一个 <strong>实例</strong>（instance），它被 <strong>构造函数</strong> 描述成下面的样子：",
         "<blockquote>{<br>&nbsp;&nbsp;wheels: 4,<br>&nbsp;&nbsp;engines: 1,<br>&nbsp;&nbsp;seats: 1<br>}</blockquote>",
-        "Note that it is important to use the <code>new</code> keyword when calling a constructor. This is how Javascript knows to create a new object and that all the references to <code>this</code> inside the constructor should be referring to this new object.",
-        "Now, once the <code>myCar</code> <code>instance</code> is created it can be used like any other object and can have its properties accessed and modified the same way you would usually. For example:",
+        "记住：要使用 <code>new</code> <strong>关键字</strong> 去调用构造函数。因为只有这样，Javascript才知道这是要去构造一个新 <strong>对象</strong> ，并且把构造函数中的 <code>this</code> 指向这个新对象。",
+        "现在，当 <code>myCar</code> （即 <code>Car</code> 的一个 <strong>实例</strong> ）创建后，他可以像普通对象一样被使用，包括创建、访问、修改它的属性等，就像我们使用其他对象一样。如下：",
         "<code>myCar.turboType = \"twin\";</code>",
-        "Our <code>myCar</code> variable now has a property <code>turboType</code> with a value of <code>\"twin\"</code>.",
-        "In the editor, use the <code>Car</code> <code>constructor</code> to create a new <code>instance</code> and assign it to <code>myCar</code>.",
-        "Then give <code>myCar</code> a <code>nickname</code> property with a string value."
+        "我们的 <code>myCar</code> 变量现在有了一个 <code>turboType</code> 属性了，且值为 <code>\"twin\"</code> 。",
+        "在编辑器中，使用 <code>Car</code> 这个构造函数去创建一个新的 <strong>实例</strong> ，并且把这个实例赋值给 <code>myCar</code> 。",
+        "然后给 <code>myCar</code> 创建一个 <code>nickname</code> 属性，且属性值为一个字符串"
       ],
       "challengeSeed": [
         "var Car = function() {",
@@ -132,7 +111,7 @@
         "  this.seats = 1;",
         "};",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "var myCar;"
       ],
@@ -149,25 +128,7 @@
         "assert(typeof myCar.nickname === 'string', 'message: The property <code>nickname</code> of <code>myCar</code> should be a string.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Crea instancias de objetos con funciones constructoras",
-      "descriptionEs": [
-        "¡Ahora usemos esa gran <code>constructora</code> que hicimos en la última lección!",
-        "Para utilizar una función <code>constructora</code> la llamamos con la palabra reservada <code>new</code> al frente, como:",
-        "<code>var miCarro = new Carro();</code>",
-        "<code>miCarro</code>es ahora una <code>instancia</code> de la constructora <code>Carro</code> que se parece al objeto que describe:",
-        "<code>{</code>",
-        "<code>&nbsp;&nbsp;wheels: 4,</code>",
-        "<code>&nbsp;&nbsp;engines: 1,</code>",
-        "<code>&nbsp;&nbsp;seats: 1</code>",
-        "<code>}</code>",
-        "Ten en cuenta que es importante utilizar la palabra reservada <code>new</code> cuando se llama a una constructora. Así es como Javascript sabe crear un objeto nuevo y hace que todas las referencias a <code>this</code> dentro del constructor se refieran al objeto nuevo ",
-        "Ahora, una vez que la <code>instancia</code> <code>miCarro</code> se crea, puede ser utilizada como cualquier otro objeto y puedes acceder o modificar sus propiedades como lo harías normalmente. Por ejemplo:",
-        "<code>miCarro.tipoTurbo = \"doble\"; </code>",
-        "Nuestra variable <code>miCarro</code> tiene ahora una propiedad <code>tipoTurbo</code> con un valor de <code>\"doble\"</code>.",
-        "En el editor, utiliza la <code>constructora</code> <code>Car</code> para crear una nueva <code>instancia</code> y asignala a <code>myCar</code>.",
-        "A continuación, dale a <code>myCar</code> una propiedad <code>nickname</code> con un valor tipo cadena."
-      ]
+      "challengeType": 1
     },
     {
       "id": "563cfb55594311ffcb333c70",
@@ -207,27 +168,7 @@
         "assert(typeof myCar.wheels === 'number' && typeof myCar.seats === 'number' && typeof myCar.engines === 'number', 'message: <code>myCar</code> should have number values for the <code>wheels</code>, <code>seats</code>, and <code>engines</code> properties.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Crea objetos únicos pasando parámetros a la constructora",
-      "descriptionEs": [
-        "La <code>constructora</code> que tenemos es fabulosa, pero ¿qué hacer si no queremos crear siempre el mismo objeto?",
-        "Para solucionar esto podemos añadir<code>parámetros</code>en nuestra <code>constructora</code>. Hacemos esto como en el siguiente ejemplo: ",
-        "<code>var Carro = function (ruedas, asientos, motores) {</code>",
-        "<code>&nbsp;&nbsp;this.ruedas = ruedas;</code>",
-        "<code>&nbsp;&nbsp;this.asientos = asientos;</code>",
-        "<code>&nbsp;&nbsp;this.motores = motores;</code>",
-        "<code>};</code>",
-        "Ahora podemos pasar <code>argumentos</code> cuando llamamos a nuestra <code>constructora</code>.",
-        "<code>var miCarro = nuevo Carro(6, 3, 1); </code>",
-        "Este código crea un objeto que utiliza los <code>argumentos</code> que pasamos en y se ve así:",
-        "<code>{</code>",
-        "<code>&nbsp;&nbsp;ruedas: 6,</code>",
-        "<code>&nbsp;&nbsp;asientos: 3,</code>",
-        "<code>&nbsp;&nbsp;motores: 1</code>",
-        "<code>}</code>",
-        "¡Ahora date una oportunidad a ti mismo! Modifica la <code>constructora</code> <code>Car</code> para que use <code>parámetros</code> que permitan asignar valores para las propiedades <code>wheels</code>, <code>seats</code>, y <code>engines</code>. ",
-        "Entonces llama a tu nueva <code>constructora</code> con tres <code>argumentos</code> numéricos y asígnala a <code>myCar</code>para verla en acción."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb3bdef",
@@ -263,7 +204,7 @@
         "",
         "var Bike = function() {",
         "",
-        "  // Only change code below this line.",
+        "  // 只能在这一行下面写代码",
         "",
         "};",
         "",
@@ -286,18 +227,7 @@
         "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message: <code>myBike.getGear()</code> should return <code>1</code> after calling <code>myBike.setGear(1)</code>.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Crea propiedades privadas de un objeto",
-      "descriptionEs": [
-        "Los objetos tienen sus propios atributos, llamados <code>propiedades</code>, y sus propias funciones, llamadas<code>métodos</code>.",
-        "En los desafíos anteriores, se utilizó la palabra reservada <code>this</code> para referenciar <code>propiedades públicas</code>del objeto actual.",
-        "También podemos crear <code>propiedades privadas</code> y <code>métodos privados</code>, que no son accesibles desde fuera del objeto.",
-        "Para ello, creamos la variable dentro de la <code>constructora</code> usando la palabra reservada <code>var</code>, con la cual ya estamos familiarizados, en lugar de crearla con <code>this</code>. ",
-        "Esto es útil cuando necesitamos almacenar información sobre un objeto, pero controlando como se usa en el código externo al objeto.",
-        "Por ejemplo, ¿qué pasa si queremos almacenar la <code>velocidad</code> con la cual se desplaza nuestro carro, pero queremos que el código externo pueda modificarla sólo acelerando o desacelerando, de forma que la velocidad cambie de una manera controlada?",
-        "En el editor se puede ver un ejemplo de una <code>constructora</code> de <code>Car</code> que implementa este patrón.",
-        "¡Ahora pruébalo tú mismo! Modifica la <code>constructora</code> <code>Bike</code> para tener una <code>propiedad privada</code> llamada <code>gear</code>y dos<code>métodos públicos</code> llamados <code>getGear</code>y<code>setGear</code> para obtener y establecer ese valor."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb7bdef",
@@ -313,7 +243,7 @@
       "challengeSeed": [
         "var oldArray = [1,2,3,4,5];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "var newArray = oldArray;"
       ],
@@ -327,18 +257,7 @@
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\]/gi), 'message: You should only modify the array with <code>map</code>.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Iterar sobre vectores con .map",
-      "descriptionEs": [
-        "El método <code>map</code> es una manera conveniente de iterar sobre vectores. He aquí un ejemplo de uso: ",
-        "<code>var porCuatro = vectorAntiguo.map(function(val){</code>",
-        "<code>&nbsp;&nbsp;return val * 4;</code>",
-        "<code>});</code>",
-        "",
-        "El método <code>map</code> iterará sobre cada elemento del vector, creando un nuevo vector con los valores modificados por la función de devolución de llamada (<em>callback</em>) y retornará ese nuevo arreglo.",
-        "En nuestro ejemplo, la función de devolución de llamada sólo usa el valor del elemento del vector sobre el que está iterando (parámetro <code>val</code>), pero tu función de devolución de llamada también puede incluir parámetros para el <code>índice</code> y el <code>vector</code> completo. ",
-        "Usa la función <code>map</code> para añadir 3 a cada valor de la variable <code>oldArray</code>."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb8bdef",
@@ -355,7 +274,7 @@
         "var array = [4,5,6,7,8];",
         "var singleVal = 0;",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "singleVal = array;"
       ],
@@ -367,18 +286,7 @@
         "assert(editor.getValue().match(/\\.reduce\\s*\\(/gi), 'message: You should have made use of the <code>reduce</code> method.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Condensa vectores con .reduce",
-      "descriptionEs": [
-        "El método <code>reduce</code> de un vector, se utiliza para iterar a través del vector y condensarlo en un valor.",
-        "Para usar <code>reduce</code> tu le pasas una función de devolución de llamada cuyos argumentos sean un acumulador (en este caso, <code>valorPrevio</code>) y el valor actual (<code>valorActual</code>). ",
-        "<code>reduce</code> tiene un argumento opcional que puede usarse para asignar un valor inicial al acumulador. Si no se especifica ningún valor inicial, este será el primer elemento del vector y <code>valorActual</code> comenzará en el segundo elemento del vector. ",
-        "He aquí un ejemplo de<code>reduce</code> cuando se utiliza para restar todos los valores de una matriz:",
-        "<code>var singleVal = array.reduce(function(valorAnterior, valorActual) {</code>",
-        "<code>&nbsp;&nbsp;return valorAnterior - valorActual;</code>",
-        "<code>}, 0);</code>",
-        "Usa el método <code>reduce</code> para sumar todos los valores en <code>array</code> y asignarlo a <code>singleVal</code>."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c15feddfaeb9bdef",
@@ -395,7 +303,7 @@
       "challengeSeed": [
         "var oldArray = [1,2,3,4,5,6,7,8,9,10];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "var newArray = oldArray;"
       ],
@@ -409,19 +317,7 @@
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7\\,8\\,9\\,10\\]/gi), 'message: You should only be using <code>filter</code> to make the new array.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Filtrar vectores con .filter",
-      "descriptionEs": [
-        "El método <code>filter</code> se utiliza para iterar a través de un vector y filtrar los elementos que hagan falsa un condición determinada.",
-        "<code>filter</code> recibe una función de devolución de llamada que a su vez recibe como argumento el valor actual (que hemos llamado <code>val</code>).",
-        "Cualquier elemento del vector para el cual la función de devolución de llamada retorne <code>true</code> se mantendrá y los elementos que devuelven <code>false</code> serán filtrados.",
-        "El código siguiente es un ejemplo del uso de <code>filter</code> para eliminar los elementos de un vector que son iguales a cinco:",
-        "Nota: Omitimos el segundo y tercer argumentos ya que sólo necesitamos el valor",
-        "<code>array = array.filter(function(val) {</code>",
-        "<code>&nbsp;&nbsp;return val !== 5;</code>",
-        "<code>});</code>",
-        "Usa <code>filter</code> para crear un nuevo vector con todos los valores de <code>oldArray</code> que son menores a 6. <br><code>oldArray</code> no debe cambiar."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c16feddfaeb1bdef",
@@ -438,7 +334,7 @@
       "challengeSeed": [
         "var array = [1, 12, 21, 2];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "array.sort();"
       ],
@@ -451,19 +347,7 @@
         "assert(editor.getValue().match(/\\.sort\\s*\\(/g), 'message: You should have made use of the <code>sort</code> method.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Ordena vectores con .sort",
-      "descriptionEs": [
-        "Puedes utilizar el método <code>sort</code> para ordenar alfabética o numéricamente los valores de un vector.",
-        "A diferencia de los métodos de vector que hemos visto,<code>sort</code>en realidad altera el vector en su lugar. Sin embargo, también devuelve este vector ordenado. ",
-        "<code>sort</code> puede recibir como parámetro una función de devolución de llamada para comparar. Sin no se provee una función de comparación, convertirá los valores a cadenas y los ordenará alfabéticamente. ",
-        "He aquí un ejemplo del uso de <code>sort</code> con una función de comparación que ordena los elementos de menor a mayor:",
-        "<code>var array = [1, 12, 21, 2];</code>",
-        "<code>array.sort(function(a, b) {</code>",
-        "<code>&nbsp;&nbsp;return a - b;</code>",
-        "<code>});</code>",
-        "Usa <code>sort</code> para ordenar<code>array</code> de mayor a menor."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c16feddfaeb2bdef",
@@ -479,7 +363,7 @@
         "var array = [1,2,3,4,5,6,7];",
         "var newArray = [];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "newArray = array;"
       ],
@@ -492,16 +376,7 @@
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7/gi), 'message: You should only be using <code>reverse</code> to modify <code>array</code>.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Invierte vectores con .reverse",
-      "descriptionEs": [
-        "Puedes utilizar el método <code>reverse</code> para invertir los elementos en un vector.",
-        "<code>reverse</code> es otro método de vector que altera el vector mismo, y también devuelve el vector invertido.",
-        "<code>var miVector = [1, 2, 3];</code>",
-        "<code>miVector.reverse();</code>",
-        "<em>devuelve [3, 2, 1]</em>",
-        "Usa <code>reverse</code> para invertir la variable <code>array</code> y asignarla a <code>newArray</code>."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c16feddfaeb3bdef",
@@ -519,7 +394,7 @@
         "",
         "var concatMe = [4,5,6];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "newArray = oldArray;"
       ],
@@ -532,15 +407,7 @@
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\]/gi) && editor.getValue().match(/\\[4\\,5\\,6\\]/gi), 'message: You should only be using <code>concat</code> to modify the arrays.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Concatena vectores con .concat",
-      "descriptionEs": [
-        "<code>concat</code> se puede utilizar para combinar el contenido de dos vectores en uno solo.",
-        "<code>concat</code> recibe un vector como argumento y devuelve un nuevo vector con los elementos del vector que recibe concatenados al final.",
-        "He aquí un ejemplo de <code>concat</code> cuando se usa para concatenar <code>otroVector</code> al final de <code>vectorAntiguo</code>:",
-        "<code>vectorNuevo = vectorAntiguo.concat(otroVector);</code>",
-        "Usa <code>.concat ()</code> para concatenar <code>concatMe</code> al final de <code>oldArray</code> y asigna el vector resultante a <code>newArray</code>."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c16feddfaeb4bdef",
@@ -556,7 +423,7 @@
         "var string = \"Split me into an array\";",
         "var array = [];",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "array = string;"
       ],
@@ -568,15 +435,7 @@
         "assert(typeof array === 'object' && array.length === 5, 'message: You should split the string by its spaces.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Divide cadenas con .split",
-      "descriptionEs": [
-        "Puedes utilizar el método <code>split</code> para dividir una cadena en un vector.",
-        "<code>split</code> utiliza el argumento que recibe como delimitador para determinar en qué puntos debe dividir la cadena.",
-        "He aquí un ejemplo del uso de <code>split</code> para dividir una cadena en cada caracter <code>s</code>:",
-        "<code>var vector = string.split('s');</code>",
-        "Usa <code>split</code> para crear un vector con las palabras de una <code>cadena</code> y asígnalo a la variable <code>array</code>."
-      ]
+      "challengeType": 1
     },
     {
       "id": "cf1111c1c16feddfaeb5bdef",
@@ -591,7 +450,7 @@
         "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];",
         "var joinedString = '';",
         "",
-        "// Only change code below this line.",
+        "// 只能在这一行下面写代码",
         "",
         "joinedString = joinMe;"
       ],
@@ -603,16 +462,7 @@
         "assert(/\\.join\\(/gi, 'message: You should use of the <code>join</code> method on the array.');"
       ],
       "type": "waypoint",
-      "challengeType": 1,
-      "titleEs": "Une cadenas con .join",
-      "descriptionEs": [
-        "Podemos usar el método <code>join</code> para unir los elementos de un vector en una cadena, separándolos con el delimitador que proporciones como argumento.",
-        "El siguiente es un ejemplo del uso de <code>join</code> para unir todos los elementos de un vector en una cadena con todos los elementos separados entre si por palabra` Na`: ",
-        "<code>var uneme = [\"Na \", \"Na \", \"Na \", \"Na \", \"Batman!\"];</code>",
-        "<code>var cadenaUnida = uneme.join(\"Na \");</code>",
-        "<code>console.log(cadenaUnida);</code>",
-        "Usa el método <code>join</code> para crear una cadena a partir <code>joinMe</code> con espacios entre cada par de elementos y asignarla a <code>joinedString </code>."
-      ]
+      "challengeType": 1
     }
   ]
 }

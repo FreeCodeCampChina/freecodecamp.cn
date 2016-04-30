@@ -33,11 +33,9 @@
 ```
 注意每行结尾处的逗号千万不要忘记，且每行开头和结尾的逗号、双引号一定得是英文符文，不能是中文符文。
 
-一定要确保你翻译的description是个正确的json文件，否则会报错。
-
 翻译过程中遇到问题，请参阅课程第一章节的翻译记录。
 
-多谢参与^-^，一边学编程，一边练英文，何乐而不为呢。
+多谢参与，^-^，一边学编程，一边练英文，何乐而不为。
 
 ## 提交方式：
 1、fork此项目，创建分支，本地更改后pullrequest。
@@ -45,3 +43,48 @@
 2、边学习边翻译，翻译好后直接发邮件给我即可(huluoyang@gmail.com)。
 
 wish you go go go!
+
+## 翻译任务：
+
+请大家Fork过项目之后，在这里说明自己领取的翻译任务，并做好记录，提交一次PR，以防止和别人的翻译任务重复了
+
+### 例子：
+
+* Responsive Design with Bootstrap
+
+    - [x] Make Images Mobile Responsive
+
+        翻译者：张三（github） 张三（wechat）
+        
+    - [ ] Center Text with Bootstrap
+    
+        翻译者：李四（github） lisi（wechat）
+        
+### 进度记录：
+
+* Getting Started
+
+    * Join to Free Code Camp
+    
+        - [x] Learn how Free Code Camp Works
+        
+            翻译者：张三（github） 张三（wechat）
+        
+        - [x] Create a GitHub Account and Join our Chat Rooms 
+        
+            翻译者：张三（github） 张三（wechat）
+        
+        - [x] Configure your Code Portfolio
+        
+            翻译者：张三（github） 张三（wechart）
+        
+        - [x] Join a Campsite in Your City
+        
+            翻译者：张三（github） 张三（wechart）
+        
+        - [x] Learn What to Do If You Get Stuck
+        
+            翻译者：张三（github） 张三（wechart）
+        
+* Front End Development Certification
+        

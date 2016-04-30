@@ -15,6 +15,8 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
                 a#nav-chat-btn(href='#' onclick="return false") 交流互动
             li.visible-xs
                 a(href="//gitter.im/freecodecamp/chinese" target="_blank") 交流互动
+            li.visible-xs
+                a(href="https://github.com/huluoyang/freecodecamp.cn/wiki" target="_blank") 参与翻译
             li.hidden-xs
                 a#nav-wiki-btn(href='#' onclick='return false') 资料库
             li.visible-xs
@@ -23,7 +25,7 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
                 a(href='/about') 关于我们
             if !user
                 li
-                    a(href='/auth/github') GitHub登录
+                    a(href='/login') GitHub登录
             else
                 li.brownie-points-nav
                   a(href='/' + user.username) [&thinsp;#{user.progressTimestamps.length}&thinsp;]
