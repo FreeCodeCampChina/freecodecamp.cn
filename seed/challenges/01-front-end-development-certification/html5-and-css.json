@@ -2609,7 +2609,7 @@
       ],
       "tests": [
         "assert($(\"body\").css(\"background-color\") === \"rgb(0, 255, 0)\", 'message: 把你的 <code>body</code> 元素的 <code>background-color</code> 设置为绿色。');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((0F0)|(00FF00))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 而不是单词 <code>green</code> 来表示绿色，例如 <code>body { color&#58; #00FF00; }</code>');"
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((0F0)|(00FF00))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 而不是单词 <code>green</code> 来表示绿色，例如 <code>body { color&#58; #00FF00; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2618,9 +2618,9 @@
       "id": "bad87fee1348bd9aedf08722",
       "title": "Use Hex Code to Color Elements Blue",
       "description": [
-        "Hex code follows the red-green-blue, or <code>rgb</code> format. The first two digits of hex code represent the amount of red in the color. The third and fourth digit represent the amount of green. The fifth and sixth represent the amount of blue.",
-        "So to get the absolute brightest blue, we use <code>F</code> for the fifth and sixth digits (the highest possible value) and <code>0</code> for all the other digits (the lowest possible value).",
-        "Make the <code>body</code> element's background color blue by giving it the hex code value of <code>#0000FF</code>"
+        "<code>hex code</code> 遵循 red-green-blue（红-绿-蓝），或称为 <code>rgb</code> 格式。hex code 中的前两位表示颜色中红色的数量，第三四位代表绿色的数量，第五六位代表蓝色的数量。",
+        "所以要得到绝对的纯蓝色，你只需要在第五和第六位使用 <code>F</code> （最大可能的数值），且在其它位使用 <code>0</code> （最小可能数值）。",
+        "通过对 background-color 应用 hex code 值 <code>#0000FF</code> 以把 <code>body</code> 元素的背景色设置为蓝色。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2630,8 +2630,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 255)\", 'message: Give your <code>body</code> element the <code>background-color</code> of blue.');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((00F)|(0000FF))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: Use the <code>hex code</code> for the color blue instead of the word <code>blue</code>. For example <code>body { color&#58; #0000FF; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 255)\", 'message: 把你的 <code>body</code> 元素的 <code>background-color</code> 设置为蓝色。');",
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((00F)|(0000FF))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 而不是单词 <code>blue</code> 来表示蓝色，例如 <code>body { color&#58; #0000FF; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
