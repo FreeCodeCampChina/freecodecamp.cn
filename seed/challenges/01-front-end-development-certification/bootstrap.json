@@ -701,19 +701,11 @@
       "id": "bad87fee1347bd9aedf08845",
       "title": "Ditch Custom CSS for Bootstrap",
       "description": [
-<<<<<<< HEAD
-        "我们可以清除一些代码，使得 Cat Photo App 应用看上去更加常规。方法是，通过 Bootstrap 的内置样式替代我们以前创建的自定义样式。",
-        "不必担心，以后会有充足的时间来自定义我们的 CSS 。",
-        "从你的 <code>style</code> 元素中删除 <code>.red-text</code>, <code>p</code>, 和 <code>.smaller-image</code> 这三个 CSS 声明。这样，在 <code>style</code> 元素中只剩下 <code>h2</code> 和 <code>thick-green-border</code> 两个CSS声明。\n",
-        "然后，删除包含“死链接”(\"#\")的 <code>p</code> 元素。接着，在 <code>h2</code> 元素中删除 <code>red-text</code> 类属性，并用 Bootstrap 类属性 <code>text-primary</code> 替换之。",
-        "最后，在你第一个 <code>img</code> 元素中删除 \"smaller-image\" 类属性，并用类属性 <code>img-responsive</code> 替换之。"
-=======
         "现在，我们可以清理一下我们之前的代码了，为了让我们的 Cat Photo 应用看起来更和谐，让我们用 Bootstrap 内置的样式来替换我们之前自定义的样式。",
         "别担心 —— 以后我们会有大把时间来自定义我们的 CSS 样式的 ：）",
         "删除 <code>style</code> 元素里的 <code>.red-text</code>  <code>p</code> 和 <code>.smaller-image</code> CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。",
         "然后删除包涵无效链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。",
         "最后，移除第一个 <code>img</code> 元素的 \"smaller  -image\" class ，替换为 Bootstrap的 <code>img-responsive</code> class。"
->>>>>>> huluoyang/dev
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
