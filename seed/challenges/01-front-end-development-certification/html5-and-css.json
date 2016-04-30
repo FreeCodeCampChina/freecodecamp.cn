@@ -2640,7 +2640,7 @@
       "id": "bad87fee1348bd9aedf08721",
       "title": "Use Hex Code to Mix Colors",
       "description": [
-        "从这三种纯色（红、绿、蓝），我们能创造出 1600 万种其它的颜色。",
+        "从这三种纯色（红、绿、蓝），我们能得到 1600 万种其它的颜色。",
         "例如，橙色是纯红，混合一些绿，没有蓝。",
         "通过对 background-color 应用 hex code 值 <code>#FFA500</code> 以把 <code>body</code> 元素的背景色设置为橙色。"
       ],
@@ -2662,8 +2662,8 @@
       "id": "bad87fee1348bd9aede08720",
       "title": "Use Hex Code to Color Elements Gray",
       "description": [
-        "从这三种纯色（红、绿、蓝），我们能创造出 1600 万种其它的颜色。",
-        "我们也可以通过平均混合所有三种颜色来创造出不同灰度等级的灰色。",
+        "从这三种纯色（红、绿、蓝），我们能得到 1600 万种其它的颜色。",
+        "我们也可以通过平均混合所有三种颜色得到不同灰度等级的灰色。",
         "通过对 background-color 应用 hex code 值 <code>#808080</code> 以把 <code>body</code> 元素的背景色设置为灰色。"
       ],
       "challengeSeed": [
@@ -2684,8 +2684,8 @@
       "id": "bad87fee1348bd9aedf08720",
       "title": "Use Hex Code for Specific Shades of Gray",
       "description": [
-        "We can also create other shades of gray by evenly mixing all three colors. We can go very close to true black.",
-        "Make the <code>body</code> element's background color a dark gray by giving it the hex code value of <code>#111111</code>"
+        "通过平均混合所有三种颜色，我们还可以得到其他灰度等级的灰色。我们可以非常接近纯黑色。",
+        "通过对 background-color 应用 hex code 值 <code>#111111</code> 以把 <code>body</code> 元素的背景色设置为深灰色。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2695,8 +2695,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(17, 17, 17)\", 'message: Give your <code>body</code> element the <code>background-color</code> of a dark gray.');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#111(111)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: Use <code>hex code</code> to make a dark gray. For example <code>body { color&#58; #111111; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(17, 17, 17)\", 'message: 把你的 <code>body</code> 元素的 <code>background-color</code> 设置为深灰色。');",
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#111(111)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 来表示深灰色，例如 <code>body { color&#58; #111111; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
