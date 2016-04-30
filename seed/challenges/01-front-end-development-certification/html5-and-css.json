@@ -2527,10 +2527,10 @@
       "id": "bad87fee1348bd9aedf08726",
       "title": "Use Hex Code for Specific Colors",
       "description": [
-        "Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, or <code>hex code</code> for short.",
-        "We usually use <code>decimals</code>, or base 10 numbers, which use the symbols 0 to 9 for each digit. <code>Hexadecimals</code> (or <code>hex</code>) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represents values zero to nine. Then A,B,C,D,E,F represent values ten to fifteen. Altogether, 0 to F can represent a digit in <code>hexadecimal</code>, giving us 16 total possible values. You can find more information about <a target='_blank' href='https://en.wikipedia.org/wiki/Hexadecimal'>hexadecimal numbers here</a>.",
-        "In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, <code>#000000</code> is black and is also the lowest possible value. You can find more information about the <a target='_blank' href='https://en.wikipedia.org/wiki/RGB_color_model'>RGB color system here</a>.",
-        "Replace the word <code>black</code> in our <code>body</code> element's background-color with its <code>hex code</code> representation, <code>#000000</code>."
+        "你是否知道在 CSS 中还有其他表示颜色的方法？其中的一种方法称作 hexadecimal code（十六进制编码），或简写为 <code>hex code</code>。",
+        "我们通常使用 <code>decimals</code>，也就是十进制数字，它对每一位数字使用符号 0 到 9。<code>Hexadecimals</code> （或 <code>hex</code>）是十六进制数字，这意味着它使用十六个不同的符号。像十进制那样，符号 0-9 代表数值零到九，再使用 A、B、C、D、E、F 代表数值十到十五。合在一起，用 0 到 F 可以代表 <code>hexadecimal</code> 中的每一位数字，共为我们提供 16 个可能的数值。你可以在 <a target='_blank' href='https://en.wikipedia.org/wiki/Hexadecimal'>这儿</a> 找到更多关于十六进制数字的信息。",
+        "在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分。例如，<code>#000000</code> 是黑色，同时也是可能的数值中最小的。你可以在 <a target='_blank' href='https://en.wikipedia.org/wiki/RGB_color_model'>这儿</a> 找到更多关于 RGB 颜色系统的信息。",
+        "把 <code>body</code> 元素的 background-color 由 <code>black</code> 替换成其 <code>hex code</code> 表示，即<code>#000000</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2540,8 +2540,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: Give your <code>body</code> element the background-color of black.');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#000(000)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: Use the <code>hex code</code> for the color black instead of the word <code>black</code>. For example <code>body { color&#58; #000000; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 使你的 <code>body</code> 元素的背景为黑色。');",
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#000(000)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 来表示黑色而不是用单词 <code>black</code>，例如 <code>body { color&#58; #000000; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
