@@ -1660,12 +1660,12 @@
       "id": "bad87fee1348bd9aec908853",
       "title": "Add ID Attributes to Bootstrap Elements",
       "description": [
-        "Recall that in addition to class attributes, you can give each of your elements an <code>id</code> attribute.",
-        "Each id must be unique to a specific element and used only once per page.",
-        "Let's give a unique id to each of our <code>div</code> elements of class <code>well</code>.",
-        "Remember that you can give an element an id like this:",
+        "回忆一下，我们除了可以给元素增加 class 属性，你还可以给你的每个元素增添一个 id 属性。",
+        "每一个指定元素的 id 都是唯一的，并且在每个页面中只能使用一次。",
+        "现在给我们每个包含 class <code>well</code> 的 <code>div</code> 元素一个唯一的 id。",
+        "记住，你可以像这样赋予一个元素 id：",
         "<code>&#60;div class=\"well\" id=\"center-well\"&#62;</code>",
-        "Give the well on the left the id of <code>left-well</code>. Give the well on the right the id of <code>right-well</code>."
+        "给左边的 well 赋予 id <code>left-well</code>。给右边的 well 赋予 id <code>right-well</code>。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1689,8 +1689,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".col-xs-6\").children(\"#left-well\") && $(\".col-xs-6\").children(\"#left-well\").length > 0, 'message: Give your left <code>well</code> the id of <code>left-well</code>.');",
-        "assert($(\".col-xs-6\").children(\"#right-well\") && $(\".col-xs-6\").children(\"#right-well\").length > 0, 'message: Give your right <code>well</code> the id of <code>right-well</code>.');"
+        "assert($(\".col-xs-6\").children(\"#left-well\") && $(\".col-xs-6\").children(\"#left-well\").length > 0, 'message: 给你左边的 <code>well</code> 设置 id <code>left-well</code>。');",
+        "assert($(\".col-xs-6\").children(\"#right-well\") && $(\".col-xs-6\").children(\"#right-well\").length > 0, 'message: 给吃右边的 <code>well</code> 设置 id <code>right-well</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
