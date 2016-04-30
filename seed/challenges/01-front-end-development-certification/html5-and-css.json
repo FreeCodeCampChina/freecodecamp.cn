@@ -2572,11 +2572,11 @@
       "id": "bad87fee1348bd9aedf08724",
       "title": "Use Hex Code to Color Elements Red",
       "description": [
-        "You may be wondering why we use 6 digits to represent a color instead of just one or two. The answer is that using 6 digits gives us a huge variety.",
-        "How many colors are possible? 16 values and 6 positions means we have 16 to the 6th power, or more than 16 million possible colors.",
-        "Hex code follows the red-green-blue, or <code>rgb</code> format. The first two digits of hex code represent the amount of red in the color. The third and fourth digit represent the amount of green. The fifth and sixth represent the amount of blue.",
-        "So to get the absolute brightest red, you would just use <code>F</code> for the first and second digits (the highest possible value) and <code>0</code> for the third, fourth, fifth and sixth digits (the lowest possible value).",
-        "Make the <code>body</code> element's background color red by giving it the hex code value of <code>#FF0000</code>"
+        "你可能会疑惑为什么我们使用 6 位数表示一种颜色而不是只用一位或二位，答案是使用 6 位可提供给我们数量巨大的颜色变化。",
+        "会有多少种可能的颜色？16 个值和 6 个位置意味着我们有 16 的 6 次方，或者说超过 1600 万种可能的颜色。",
+        "Hex code 遵循 red-green-blue（红-绿-蓝），或者叫 <code>rgb</code> 格式。hex code 中的前两位表示颜色中红色的数量，第三四位代表绿色的数量，第五六位代表蓝色的数量。",
+        "所以要得到绝对的纯红色，你只需要在第一和第二位使用 <code>F</code> （最大可能的数值），且在第三、第四、第五和第六位使用 <code>0</code> （最小可能数值）。",
+        "通过对 background-color 应用 hex code 值 <code>#FF0000</code> 以把 <code>body</code> 元素的背景色设置为红色。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2586,8 +2586,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 0, 0)\", 'message: Give your <code>body</code> element the <code>background-color</code> of red.');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((F00)|(FF0000))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: Use the <code>hex code</code> for the color red instead of the word <code>red</code>. For example <code>body { color&#58; #FF0000; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 0, 0)\", 'message: 把你的 <code>body</code> 元素的 <code>background-color</code> 设置为红色。');",
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#((F00)|(FF0000))((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 而不是单词 <code>red</code> 表示红色，例如 <code>body { color&#58; #FF0000; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
