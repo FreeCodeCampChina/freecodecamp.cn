@@ -701,19 +701,11 @@
       "id": "bad87fee1347bd9aedf08845",
       "title": "Ditch Custom CSS for Bootstrap",
       "description": [
-<<<<<<< HEAD
-        "我们可以清除一些代码，使得 Cat Photo App 应用看上去更加常规。方法是，通过 Bootstrap 的内置样式替代我们以前创建的自定义样式。",
-        "不必担心，以后会有充足的时间来自定义我们的 CSS 。",
-        "从你的 <code>style</code> 元素中删除 <code>.red-text</code>, <code>p</code>, 和 <code>.smaller-image</code> 这三个 CSS 声明。这样，在 <code>style</code> 元素中只剩下 <code>h2</code> 和 <code>thick-green-border</code> 两个CSS声明。\n",
-        "然后，删除包含“死链接”(\"#\")的 <code>p</code> 元素。接着，在 <code>h2</code> 元素中删除 <code>red-text</code> 类属性，并用 Bootstrap 类属性 <code>text-primary</code> 替换之。",
-        "最后，在你第一个 <code>img</code> 元素中删除 \"smaller-image\" 类属性，并用类属性 <code>img-responsive</code> 替换之。"
-=======
         "现在，我们可以清理一下我们之前的代码了，为了让我们的 Cat Photo 应用看起来更和谐，让我们用 Bootstrap 内置的样式来替换我们之前自定义的样式。",
         "别担心 —— 以后我们会有大把时间来自定义我们的 CSS 样式的 ：）",
         "删除 <code>style</code> 元素里的 <code>.red-text</code>  <code>p</code> 和 <code>.smaller-image</code> CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。",
         "然后删除包涵无效链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。",
         "最后，移除第一个 <code>img</code> 元素的 \"smaller  -image\" class ，替换为 Bootstrap的 <code>img-responsive</code> class。"
->>>>>>> huluoyang/dev
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1668,12 +1660,12 @@
       "id": "bad87fee1348bd9aec908853",
       "title": "Add ID Attributes to Bootstrap Elements",
       "description": [
-        "Recall that in addition to class attributes, you can give each of your elements an <code>id</code> attribute.",
-        "Each id must be unique to a specific element and used only once per page.",
-        "Let's give a unique id to each of our <code>div</code> elements of class <code>well</code>.",
-        "Remember that you can give an element an id like this:",
+        "回忆一下，我们除了可以给元素增加 class 属性，你还可以给你的每个元素增添一个 id 属性。",
+        "每一个指定元素的 id 都是唯一的，并且在每个页面中只能使用一次。",
+        "现在给我们每个包含 class <code>well</code> 的 <code>div</code> 元素一个唯一的 id。",
+        "记住，你可以像这样赋予一个元素 id：",
         "<code>&#60;div class=\"well\" id=\"center-well\"&#62;</code>",
-        "Give the well on the left the id of <code>left-well</code>. Give the well on the right the id of <code>right-well</code>."
+        "给左边的 well 赋予 id <code>left-well</code>。给右边的 well 赋予 id <code>right-well</code>。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1697,8 +1689,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".col-xs-6\").children(\"#left-well\") && $(\".col-xs-6\").children(\"#left-well\").length > 0, 'message: Give your left <code>well</code> the id of <code>left-well</code>.');",
-        "assert($(\".col-xs-6\").children(\"#right-well\") && $(\".col-xs-6\").children(\"#right-well\").length > 0, 'message: Give your right <code>well</code> the id of <code>right-well</code>.');"
+        "assert($(\".col-xs-6\").children(\"#left-well\") && $(\".col-xs-6\").children(\"#left-well\").length > 0, 'message: 给你左边的 <code>well</code> 设置 id <code>left-well</code>。');",
+        "assert($(\".col-xs-6\").children(\"#right-well\") && $(\".col-xs-6\").children(\"#right-well\").length > 0, 'message: 给你右边的 <code>well</code> 设置 id <code>right-well</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1747,9 +1739,9 @@
       "id": "bad87fee1348bd9aec908855",
       "title": "Give Each Element a Unique ID",
       "description": [
-        "We will also want to be able to use jQuery to target each button by its unique id.",
-        "Give each of your buttons a unique id, starting with <code>target1</code> and ending with <code>target6</code>.",
-        "Make sure that <code>target1</code> to <code>target3</code> are in <code>#left-well</code>, and <code>target4</code> to <code>target6</code> are in <code>#right-well</code>."
+        "我们也希望使用 jQuery 并通过每个按钮各自唯一的 id 来标识出它们。\n",
+        "给你的每一个按钮一个唯一的 id ，以 <code>target1</code> 为开始，<code>target6</code> 为结束。",
+        "确保 <code>target1</code> 到 <code>target3</code> 在 <code>#left-well</code> 之中，<code>target4</code> 到 <code>target6</code> 则在 <code>#right-well</code> 之中。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1775,12 +1767,12 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#left-well\").children(\"#target1\") && $(\"#left-well\").children(\"#target1\").length > 0, 'message: One <code>button</code> element should have the id <code>target1</code>.');",
-        "assert($(\"#left-well\").children(\"#target2\") && $(\"#left-well\").children(\"#target2\").length > 0, 'message: One <code>button</code> element should have the id <code>target2</code>.');",
-        "assert($(\"#left-well\").children(\"#target3\") && $(\"#left-well\").children(\"#target3\").length > 0, 'message: One <code>button</code> element should have the id <code>target3</code>.');",
-        "assert($(\"#right-well\").children(\"#target4\") && $(\"#right-well\").children(\"#target4\").length > 0, 'message: One <code>button</code> element should have the id <code>target4</code>.');",
-        "assert($(\"#right-well\").children(\"#target5\") && $(\"#right-well\").children(\"#target5\").length > 0, 'message: One <code>button</code> element should have the id <code>target5</code>.');",
-        "assert($(\"#right-well\").children(\"#target6\") && $(\"#right-well\").children(\"#target6\").length > 0, 'message: One <code>button</code> element should have the id <code>target6</code>.');"
+        "assert($(\"#left-well\").children(\"#target1\") && $(\"#left-well\").children(\"#target1\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target1</code>。');",
+        "assert($(\"#left-well\").children(\"#target2\") && $(\"#left-well\").children(\"#target2\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target2</code>。');",
+        "assert($(\"#left-well\").children(\"#target3\") && $(\"#left-well\").children(\"#target3\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target3</code>。');",
+        "assert($(\"#right-well\").children(\"#target4\") && $(\"#right-well\").children(\"#target4\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target4</code>。');",
+        "assert($(\"#right-well\").children(\"#target5\") && $(\"#right-well\").children(\"#target5\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target5</code>。');",
+        "assert($(\"#right-well\").children(\"#target6\") && $(\"#right-well\").children(\"#target6\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target6</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1830,10 +1822,10 @@
       "id": "bad87fee1348bd9aec908857",
       "title": "Use Comments to Clarify Code",
       "description": [
-        "When we start using jQuery, we will modify HTML elements without needing to actually change them in HTML.",
-        "Let's make sure that everyone knows they shouldn't actually modify any of this code directly.",
-        "Remember that you can start a comment with <code>&#60;!--</code> and end a comment with <code>--&#62;</code>",
-        "Add a comment at the top of your HTML that says <code>Only change code above this line.</code>"
+        "当我们开始使用jQuery，我们将修改HTML元素，但是实际上我们并不是直接在 HTML 文本中修改。",
+        "我们必须确保让每个人都知道，他们不应该直接修改此页面上这些代码。",
+        "记住，你可以在 <code>&#60;!--</code> 为开始，  <code>--&#62;</code> 为结束的地方进行评论注释。(像这样， <code>&#60;!--</code> 我是一段注释 <code>--&#62;</code> )",
+        "请在你的 HTML 顶部加如下一段注释：<code>Only change code above this line.</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1859,10 +1851,10 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/^\\s*<!--/), 'message: Start a comment with <code>&#60;!--</code> at the top of your HTML.');",
-        "assert(code.match(/<!--(?!(>|->|.*-->.*this line)).*this line.*-->/gi), 'message: Your comment should have the text <code>Only change code above this line</code>.');",
-        "assert(code.match(/-->.*\\n+.+/g), 'message: Be sure to close your comment with <code>--&#62;</code>.');",
-        "assert(code.match(/<!--/g).length === code.match(/-->/g).length, 'message: You should have the same number of comment openers and closers.');"
+        "assert(code.match(/^\\s*<!--/), 'message: 在增加注释前，在你的 HTML 顶部增加此代码 <code>&#60;!--</code> 。');",
+        "assert(code.match(/<!--(?!(>|->|.*-->.*this line)).*this line.*-->/gi), 'message: 你的注释内容 <code>Only change code above this line</code>.');",
+        "assert(code.match(/-->.*\\n+.+/g), 'message: 确保你的注释有闭合代码 <code>--&#62;</code>.');",
+        "assert(code.match(/<!--/g).length === code.match(/-->/g).length, 'message: 注意，注释的开始标签和闭合标签数量应该一一对应，保持数量一致。');"
       ],
       "type": "waypoint",
       "challengeType": 0
