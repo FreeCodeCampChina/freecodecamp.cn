@@ -1741,8 +1741,7 @@
       "description": [
         "我们也希望使用 jQuery 并通过每个按钮各自唯一的 id 来标识出它们。\n",
         "给你的每一个按钮一个唯一的 id ，以 <code>target1</code> 为开始，<code>target6</code> 为结束。",
-        "确保 <code>target1</code> 到 <code>target3</code> 在 <code>#left-well</code> 之中，<code>target4</code> 到 <code>target6</code> 则在在 <code>#right-well</code> 之中。"
-      ],
+        "确保 <code>target1</code> 到 <code>target3</code> 在 <code>#left-well</code> 之中，<code>target4</code> 到 <code>target6</code> 则在 <code>#right-well</code> 之中。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
