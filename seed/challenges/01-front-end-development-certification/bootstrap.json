@@ -148,9 +148,15 @@
       ],
       "tests": [
         "assert($(\"img\").length === 2, 'message: 此时，你应该共有两张图片。');",
+<<<<<<< HEAD
+        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 class <code>img-responsive</code> 。');",
+        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 class <code>smaller-image</code> 。');",
+        "assert($(\"img:eq(1)\").attr(\"src\") === \"http://bit.ly/fcc-running-cats\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
+=======
         "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 <code>img-responsive</code> 类属性。');",
         "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 <code>smaller-image</code> 类属性。');",
         "assert($(\"img:eq(1)\").attr(\"src\") === \"/images/relaxing-cat.jpg\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
+>>>>>>> huluoyang/dev
         "assert(code.match(/<img/g) && code.match(/<img[^<]*>/g).length === 2 && code.match(/<img/g).length === 2, 'message: 确保你的新元素 <code>img</code> 有一个起闭合作用的右尖括号。');"
       ],
       "type": "waypoint",
@@ -224,8 +230,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"h2\").hasClass(\"text-center\"), 'message: 你的 <code>h2</code> 元素需要填写 <code>text-center</code> 类属性使其居中显示');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的 <code>h2</code> 元素仍然需要有 <code>red-text</code> 类属性');"
+        "assert($(\"h2\").hasClass(\"text-center\"), 'message: 你的 <code>h2</code> 元素需要填写 <code>text-center</code> class 属性使其居中显示');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的 <code>h2</code> 元素仍然需要有 <code>red-text</code> class 属性');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -299,7 +305,7 @@
       ],
       "tests": [
         "assert(new RegExp(\"like\",\"gi\").test($(\"button\").text()), 'message: 创建一个新的元素 <code>button</code> ，包含文本 \"Like\".');",
-        "assert($(\"button\").hasClass(\"btn\"), 'message: 你新创建的按钮需要有 <code>btn</code> 类属性。');",
+        "assert($(\"button\").hasClass(\"btn\"), 'message: 你新创建的按钮需要有 class <code>btn</code> 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -376,8 +382,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button\").hasClass(\"btn\"), 'message: 你的按钮仍然需要有 <code>btn</code> 类属性。');",
-        "assert($(\"button\").hasClass(\"btn-block\"), 'message: 你的按钮需要有 <code>btn-block</code> 类属性。');",
+        "assert($(\"button\").hasClass(\"btn\"), 'message: 你的按钮仍然需要有 class <code>btn</code> 属性。');",
+        "assert($(\"button\").hasClass(\"btn-block\"), 'message: 你的按钮需要有 class <code>btn-block</code> 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -452,8 +458,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button\").hasClass(\"btn-primary\"), 'message: 你的按钮需要有 <code>btn-primary</code> 类属性');",
-        "assert($(\"button\").hasClass(\"btn-block\") && $(\"button\").hasClass(\"btn\"), 'message: 你的按钮仍然需要有 <code>btn</code> 和 <code>btn-block</code> 类属性。');",
+        "assert($(\"button\").hasClass(\"btn-primary\"), 'message: 你的按钮需要有 class <code>btn-primary</code> 属性');",
+        "assert($(\"button\").hasClass(\"btn-block\") && $(\"button\").hasClass(\"btn\"), 'message: 你的按钮仍然需要有 class <code>btn</code> 和 <code>btn-block</code> 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -463,7 +469,7 @@
       "id": "bad87fee1348cd8acef08813",
       "title": "Call out Optional Actions with Button Info",
       "description": [
-        "Bootstrap自带了一些预定义的按钮颜色。<code>btn-info</code> 类被用在那些用户可能会采取的操作上。",
+        "Bootstrap自带了一些预定义的按钮颜色。class <code>btn-info</code> 被用在那些用户可能会采取的操作上。",
         "在你的 \"Like\" 按钮下面添加一个文本为 \"Info\" 的块级Bootstrap按钮，并为其添加 <code>btn-info</code> 和 <code>btn-block</code> class属性。",
         "注意：这些按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> class属性"
       ],
@@ -529,8 +535,8 @@
       ],
       "tests": [
         "assert(new RegExp(\"info\",\"gi\").test($(\"button\").text()), 'message: 创建一个新的 <code>button</code> 元素，包含文本 \"Info\"。');",
-        "assert($(\"button.btn-block.btn\").length > 1, 'message: 你的两个 Bootstrap 按钮都应该有 <code>btn</code> 和 <code>btn-block</code> 类属性。');",
-        "assert($(\"button\").hasClass(\"btn-info\"), 'message: 你的新按钮需要有 <code>btn-info</code> 类属性。');",
+        "assert($(\"button.btn-block.btn\").length > 1, 'message: 你的两个 Bootstrap 按钮都应该有 class <code>btn</code> 和 <code>btn-block</code> 属性。');",
+        "assert($(\"button\").hasClass(\"btn-info\"), 'message: 你的新按钮需要有 class <code>btn-info</code> 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -607,8 +613,8 @@
       ],
       "tests": [
         "assert(new RegExp(\"Delete\",\"gi\").test($(\"button\").text()), 'message: 创建一个 <code>button</code> 新元素， 包含文本 \"Delete\"。');",
-        "assert($(\"button.btn-block.btn\").length > 2, 'message: 你的所有 Bootstrap 按钮都应该包含 <code>btn</code> 和 <code>btn-block</code> 类属性。');",
-        "assert($(\"button\").hasClass(\"btn-danger\"), 'message: 你的新按钮需要有 <code>btn-danger</code> 类属性.');",
+        "assert($(\"button.btn-block.btn\").length > 2, 'message: 你的所有 Bootstrap 按钮都应该包含 class <code>btn</code> 和 <code>btn-block</code> 属性。');",
+        "assert($(\"button\").hasClass(\"btn-danger\"), 'message: 你的新按钮需要有 class <code>btn-danger</code> 属性.');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签.');"
       ],
       "type": "waypoint",
@@ -618,13 +624,13 @@
       "id": "bad88fee1348ce8acef08815",
       "title": "Use the Bootstrap Grid to Put Elements Side By Side",
       "description": [
-        "Bootstrap 使用一种响应式网格布局——可轻松实现将多个元素放入行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的类属性都可以设置于 <code>div</code> 元素中。",
+        "Bootstrap 使用一种响应式网格布局——可轻松实现将多个元素放入行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 <code>div</code> 元素中。",
         "下面这张图表显示了 Bootstraps 的12列网格布局是如何起作用的：",
         "<a href=\"//i.imgur.com/FaYuui8.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/FaYuui8.png\" title=\"Click to enlarge\" alt=\"an image illustrating Bootstrap's grid system\"></a>",
-        "请注意，在这张图表中，类属性 <code>col-md-*</code> 正被使用。在这里，<code>md</code> 表示 medium (中等的)，<code>*</code> 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。",
+        "请注意，在这张图表中，class属性 <code>col-md-*</code> 正被使用。在这里，<code>md</code> 表示 medium (中等的)，<code>*</code> 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。",
         "在我们创建的 Cat Photo App 中，将会使用 <code>col-xs-*</code> ，其中 <code>xs</code> 是 extra small 缩写（应用于较小的屏幕，比如手机屏幕），<code>*</code> 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。",
         "把 <code>Like</code>, <code>Info</code> 和 <code>Delete</code> 三个按钮一并放入一个 <code>&#60;div class=\"row\"&#62;</code> 元素中；然后，其中的每一个按钮都需要各自被一个 <code>&#60;div class=\"col-xs-4\"&#62;</code> 元素包裹。",
-        "当<code>div</code> 元素设置了类属性 <code>row</code> 之后，那几个按钮便可嵌入其中。"
+        "当<code>div</code> 元素设置了 class 属性 <code>row</code> 之后，那几个按钮便可嵌入其中。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -689,8 +695,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(button)\").length > 0, 'message: 你的所有按钮都需要嵌入在同一个 <code>div</code> 元素中， 并且该元素包含类属性 <code>row</code>。');",
-        "assert($(\"div.col-xs-4:has(button)\").length > 2, 'message: 每一个 Bootstrap 按钮都需要各自嵌入在自己的 <code>div</code> 元素中，并且该元素包含类属性 <code>col-xs-4</code>。');",
+        "assert($(\"div.row:has(button)\").length > 0, 'message: 你的所有按钮都需要嵌入在同一个 <code>div</code> 元素中， 并且该元素包含 class <code>row</code> 属性。');",
+        "assert($(\"div.col-xs-4:has(button)\").length > 2, 'message: 每一个 Bootstrap 按钮都需要各自嵌入在自己的 <code>div</code> 元素中，并且该元素包含 class <code>col-xs-4</code> 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你的每一个 <code>button</code> 元素都有一个闭合标签。');",
         "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签。');"
       ],
@@ -778,11 +784,11 @@
         "</div>"
       ],
       "tests": [
-        "assert(!$(\"h2\").hasClass(\"red-text\"), 'message: 你的 <code>h2</code> 元素应该不再有 <code>red-text</code> 类属性。');",
-        "assert($(\"h2\").hasClass(\"text-primary\"), 'message: 你的 <code>h2</code> 元素现在应该有 <code>text-primary</code> 类属性。');",
+        "assert(!$(\"h2\").hasClass(\"red-text\"), 'message: 你的 <code>h2</code> 元素应该不再有 class <code>red-text</code> 属性。');",
+        "assert($(\"h2\").hasClass(\"text-primary\"), 'message: 你的 <code>h2</code> 元素现在应该有 class <code>text-primary</code> 属性。');",
         "assert(!$(\"p\").css(\"font-family\").match(/monospace/i), 'message: 你的段落元素应该不再使用 <code>Monospace</code> 字体。');",
-        "assert(!$(\"img\").hasClass(\"smaller-image\"), 'message: 从你第一张照片中移除 <code>smaller-image</code> 类属性。');",
-        "assert($(\".img-responsive\").length > 1, 'message: 在你第一张照片中添加 <code>img-responsive</code> 类属性。');"
+        "assert(!$(\"img\").hasClass(\"smaller-image\"), 'message: 从你第一张照片中移除 class <code>smaller-image</code> 属性。');",
+        "assert($(\".img-responsive\").length > 1, 'message: 在你第一张照片中添加 class <code>img-responsive</code> 属性。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -951,9 +957,9 @@
         "你可以将 Font Awesome 图标库增添至任何一个应用中，方法很简单，只需要在你的 HTML 头部增加下列代码即可：",
         "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\"/&#62;</code>",
         "不过，我们已经事先在幕后为此页面添加了该功能。（不必重复添加上面这段代码）",
-        "<code>i</code> 元素起初一般是让其它元素有斜体(italic)的功能，不过现在一般用来指代图标。你可以将 Font Awesome 中的类属性添加到 <code>i</code> 元素中，把它变成一个图标，比如：",
+        "<code>i</code> 元素起初一般是让其它元素有斜体(italic)的功能，不过现在一般用来指代图标。你可以将 Font Awesome 中的 class 属性添加到 <code>i</code> 元素中，把它变成一个图标，比如：",
         "<code>&lt;i class=\"fa fa-info-circle\"&gt;&lt;/i&gt;</code>",
-        "你可以通过 Font Awesome 库增加一个 <code>thumbs-up</code> 图标到你的 like 按钮中，方法是在<code>i</code> 元素中增加类属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。"
+        "你可以通过 Font Awesome 库增加一个 <code>thumbs-up</code> 图标到你的 like 按钮中，方法是在<code>i</code> 元素中增加 class 属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1015,7 +1021,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"i\").is(\".fa.fa-thumbs-up\"), 'message: 增加一个 <code>i</code> 元素包含类属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。');",
+        "assert($(\"i\").is(\".fa.fa-thumbs-up\"), 'message: 增加一个 <code>i</code> 元素包含 class 属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。');",
         "assert($(\"i.fa-thumbs-up\").parent().text().match(/Like/gi) && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: 你的 <code>fa-thumbs-up</code> 图标应放置在 Like 按钮中。');",
         "assert($(\"button\").children(\"i\").length > 0, 'message: 将 <code>i</code> 元素放置于你的 <code>button</code> 元素之中。');",
         "assert(code.match(/<\\/i>/g), 'message: 确保你的 <code>i</code> 有一个闭合标签。');"
@@ -1101,7 +1107,7 @@
       "id": "bad87fee1348bd9aedb08845",
       "title": "Responsively Style Radio Buttons",
       "description": [
-        "你可以将 Bootstrap 的 <code>col-xs-*</code> 类属性设置在 <code>form</code> 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽。",
+        "你可以将 Bootstrap 的 <code>col-xs-*</code> class 属性设置在 <code>form</code> 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽。",
         "将你所有的单选按钮(两个)放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后，添加 <code>&#60;div class=\"col-xs-6\"&#62;</code> 元素并分别包裹每一个单选按钮。"
       ],
       "challengeSeed": [
@@ -1164,8 +1170,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(input[type=\\\"radio\\\"])\").length > 0, 'message: 将你所有的单选按钮放置于包含类属性 <code>row</code> 的 <code>div</code> 元素中。');",
-        "assert($(\"div.col-xs-6:has(input[type=\\\"radio\\\"])\").length > 1, 'message: 你的每一个单选按钮都分别嵌套于自己的 <code>div</code> 元素中，<code>div</code> 包含类属性 <code>col-xs-6</code>。');",
+        "assert($(\"div.row:has(input[type=\\\"radio\\\"])\").length > 0, 'message: 将你所有的单选按钮放置于包含 class 属性 <code>row</code> 的 <code>div</code> 元素中。');",
+        "assert($(\"div.col-xs-6:has(input[type=\\\"radio\\\"])\").length > 1, 'message: 你的每一个单选按钮都分别嵌套于自己的 <code>div</code> 元素中，<code>div</code> 包含 class 属性 <code>col-xs-6</code>。');",
         "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每个 <code>div</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -1257,7 +1263,7 @@
       "title": "Style Text Inputs as Form Controls",
       "description": [
         "你可以在你的 <code>button</code> 提交按钮元素上添加 Font Awesome的 <code>fa-paper-plane</code> 图标，方法是在元素中增加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 。",
-        "在你表单的文本输入字段中增加类属性 <code>form-control</code> 。在你的表单提交按钮中增加类属性 <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
+        "在你表单的文本输入字段中增加 class 属性 <code>form-control</code> 。在你的表单提交按钮中增加 class 属性 <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1334,9 +1340,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button[type=\\\"submit\\\"]\").hasClass(\"btn btn-primary\"), 'message: 给你表单中的提交按钮增加类属性 <code>btn btn-primary</code>。');",
+        "assert($(\"button[type=\\\"submit\\\"]\").hasClass(\"btn btn-primary\"), 'message: 给你表单中的提交按钮增加 class 属性 <code>btn btn-primary</code>。');",
         "assert($(\"button[type=\\\"submit\\\"]:has(i.fa.fa-paper-plane)\").length > 0, 'message: 添加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 到你的 <code>button</code> 提交元素之中。');",
-        "assert($(\"input[type=\\\"text\\\"]\").hasClass(\"form-control\"), 'message: 给你表单中的文本元素 <code>input</code> 添加类属性 <code>form-control</code>。');",
+        "assert($(\"input[type=\\\"text\\\"]\").hasClass(\"form-control\"), 'message: 给你表单中的文本元素 <code>input</code> 添加 class 属性 <code>form-control</code>。');",
         "assert(code.match(/<\\/i>/g) && code.match(/<\\/i/g).length > 3, 'message: 明确你的每一个 <code>i</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -1437,10 +1443,10 @@
       "id": "bad87fee1348bd9aec908846",
       "title": "Create a Bootstrap Headline",
       "description": [
-        "Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.",
-        "We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.",
-        "To start with, create an <code>h3</code> element, with the text <code>jQuery Playground</code>.",
-        "Color your <code>h3</code> element with the <code>text-primary</code> Bootstrap class, and center it with the <code>text-center</code> Bootstrap class."
+        "现在，让我们从头开始练习我们的HTML, CSS 和 Bootstrap 技术。",
+        "我们将会搭建一个 jQuery playground，它也即将在我们接下来的 jQuery 课程中被投入使用。",
+        "首先，创建一个 <code>h3</code> 元素，并且包含文本内容 <code>jQuery Playground</code> 。",
+        "在 <code>h3</code> 元素中设置 Bootstrap 的 class 属性 <code>text-primary</code> 为其上色，同时增加 Bootstrap 的 class 属性 <code>text-center</code> 使文本居中显示。"
       ],
       "challengeSeed": [
         "",
@@ -1448,11 +1454,11 @@
         ""
       ],
       "tests": [
-        "assert($(\"h3\") && $(\"h3\").length > 0, 'message: Add a <code>h3</code> element to your page.');",
-        "assert(code.match(/<\\/h3>/g) && code.match(/<h3/g) && code.match(/<\\/h3>/g).length === code.match(/<h3/g).length, 'message: Make sure your <code>h3</code> element has a closing tag.');",
-        "assert($(\"h3\").hasClass(\"text-primary\"), 'message: Your <code>h3</code> element should be colored by applying the class <code>text-primary</code>');",
-        "assert($(\"h3\").hasClass(\"text-center\"), 'message: Your <code>h3</code> element should be centered by applying the class <code>text-center</code>');",
-        "assert.isTrue((/jquery(\\s)+playground/gi).test($(\"h3\").text()), 'message: Your <code>h3</code> element should have the text <code>jQuery Playground</code>.');"
+        "assert($(\"h3\") && $(\"h3\").length > 0, 'message: 在你的页面中增加一个 <code>h3</code> 元素。');",
+        "assert(code.match(/<\\/h3>/g) && code.match(/<h3/g) && code.match(/<\\/h3>/g).length === code.match(/<h3/g).length, 'message: 确保你的 <code>h3</code> 元素有一个闭合标签。');",
+        "assert($(\"h3\").hasClass(\"text-primary\"), 'message: 为了让你的 <code>h3</code> element 能被上色，需要添加 class <code>text-primary</code> 。');",
+        "assert($(\"h3\").hasClass(\"text-center\"), 'message: 你的 <code>h3</code> element 居中显示徐超添加 class <code>text-center</code> 。');",
+        "assert.isTrue((/jquery(\\s)+playground/gi).test($(\"h3\").text()), 'message: 你的 <code>h3</code> 元素需要有文本 <code>jQuery Playground</code> 。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1481,8 +1487,8 @@
       "id": "bad87fee1348bd9bec908846",
       "title": "Create a Bootstrap Row",
       "description": [
-        "Now we'll create a Bootstrap row for our inline elements.",
-        "Create a <code>div</code> element below the <code>h3</code> tag, with a class of <code>row</code>."
+        "现在将要为我们的内联元素创建一个 Bootstrap 行。",
+        "在 <code>h3</code> 标签下创建一个 <code>div</code> 元素，并且带有 class 属性 <code>row</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1492,10 +1498,10 @@
         ""
       ],
       "tests": [
-        "assert(($(\"div\").length > 1) && ($(\"div.row h3.text-primary\").length == 0) && ($(\"div.row + h3.text-primary\").length == 0) && ($(\"h3.text-primary + div.row\").length > 0), 'message: Add a <code>div</code> element below your <code>h3</code> element.');",
-        "assert($(\"div\").hasClass(\"row\"), 'message: Your <code>div</code> element should have the class <code>row</code>');",
-        "assert($(\"div.container-fluid div.row\").length > 0, 'message: Your <code>row div</code> should be nested inside the <code>container-fluid div</code>');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure your <code>div</code> element has a closing tag.');"
+        "assert(($(\"div\").length > 1) && ($(\"div.row h3.text-primary\").length == 0) && ($(\"div.row + h3.text-primary\").length == 0) && ($(\"h3.text-primary + div.row\").length > 0), 'message: 在你的 <code>h3</code> 之下增加一个 <code>div</code> 元素。');",
+        "assert($(\"div\").hasClass(\"row\"), 'message: 你的 <code>div</code> 元素应该有 class <code>row</code>');",
+        "assert($(\"div.container-fluid div.row\").length > 0, 'message: 你的 <code>row div</code> 应该内嵌于 <code>container-fluid div</code> 之中');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的 <code>div</code> 元素有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1527,8 +1533,8 @@
       "id": "bad87fee1348bd9aec908848",
       "title": "Create Bootstrap Wells",
       "description": [
-        "Bootstrap has a class called <code>well</code> that can create a visual sense of depth for your columns.",
-        "Nest one <code>div</code> element with the class <code>well</code> within each of your <code>col-xs-6</code> <code>div</code> elements."
+        "Bootstrap 有一个 class 属性叫做 <code>well</code>，它的作用是为你(在一行中)设定的列创造出一种视觉上的深度感（一种视觉上的效果，动手代码体会一下）。",
+        "在你的每一个 <code>col-xs-6</code> <code>div</code> 元素中都分别嵌入一个带有 <code>well</code> class 属性的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1544,9 +1550,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.col-xs-6\").not(\":has(>div.well)\").length < 1, 'message: Add a <code>div</code> element with the class <code>well</code> inside each of your <code>div</code> elements with the class <code>\"col-xs-6\"</code>');",
-        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: Nest both of your <code>div</code> elements with the class <code>\"col-xs-6\"</code> within your <code>div</code> element with the class <code>\"row\"</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure all your <code>div</code> elements have closing tags.');"
+        "assert($(\"div.col-xs-6\").not(\":has(>div.well)\").length < 1, 'message: 创建一个 <code>div</code> 元素并包含 class <code>well</code> ， 将其分别放置于你的每一个有 class <code>\"col-xs-6\"</code> 的 <code>div</code> 元素中。 ');",
+        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: 将你两个含有 class <code>\"col-xs-6\"</code> 的 <code>div</code> 元素嵌入到有 class <code>\"row\"</code> 的 <code>div</code> 元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你所有的 <code>div</code> 元素都有闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1591,8 +1597,8 @@
       "id": "bad87fee1348bd9aec908850",
       "title": "Apply the Default Bootstrap Button Style",
       "description": [
-        "Bootstrap has another button class called <code>btn-default</code>.",
-        "Apply both the <code>btn</code> and <code>btn-default</code> classes to each of your <code>button</code> elements."
+        "Bootstrap 还有一种属于按钮的 class 属性叫做 <code>btn-default</code> 。",
+        "在你的每一个 <code>button</code> 元素中增加两个 class 属性: <code>btn</code> 和 <code>btn-default</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1616,8 +1622,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn\").length > 5, 'message: Apply the <code>btn</code> class to each of your <code>button</code> elements.');",
-        "assert($(\".btn-default\").length > 5, 'message: Apply the <code>btn-default</code> class to each of your <code>button</code> elements.');"
+        "assert($(\".btn\").length > 5, 'message: 将 <code>btn</code> class 添加到你所有的 <code>button</code> 元素中。');",
+        "assert($(\".btn-default\").length > 5, 'message: 将 <code>btn-default</code> class 添加到你每一个 <code>button</code> 元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
