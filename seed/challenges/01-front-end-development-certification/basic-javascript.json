@@ -39,14 +39,14 @@
         "在计算机科学中, <code>data</code>(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的<dfn>data types</dfn>(数据类型)，它们是<code>undefined</code>（无定义）, <code>null</code>（空）, <code>Boolean</code>（布尔型）, <code>string</code>（字符串）, <code>symbol</code>(符号), <code>number</code>（数字）, and <code>object</code>（对象）。",
         "举个栗子, 计算机能够辨别不同的数字, 例如数字 <code>12</code>,和 <code>strings</code>, <code>\"12\"</code>和<code>\"dog\"</code>, or <code>\"123 cats\"</code>, 都是数组。 计算机能够精确地执行对数字的各种操作, 但是对于字符串却无能为力",
         "<code>Variables</code>（变量）允许计算机一种动态的形式来存储数据, 避免了由于公式中的数据的经常变动而需要不断地更新一个公式中的数据。以上的七种不同的数据类型的其中一种都可以存储到一个变量（variable）中",
-        "<code>Variables</code> 非常类似于你在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）不同于数学中的变量的一点就是，计算机可以在不同的时间存储不同类型的变量。",
+        "<code>Variables</code> 非常类似于您在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）不同于数学中的变量的一点就是，计算机可以在不同的时间存储不同类型的变量。",
         "通过在变量的前面使用关键字<code>var</code>，我们告诉 JavaScript 来创建或者 <dfn>declare</dfn>（声明）一个变量,就像这样：",
         "<blockquote>var ourName;</blockquote>",
         "上面代码的意思是创建一个名为<code>ourName</code>的<code>variable</code>（变量）。在JavaScript中我们使用分号来分隔去结束一段声明。",
         "<code>Variable</code> （变量）的名字可以由数字，字母, 和 <code>$</code> 或者 <code>_</code>组成，但是不能包含空格或者以数字为首。",
         "<h4>Instructions</h4>",
         "使用<code>var</code> 关键字来创建一个名为<code>myName</code>的变量。",
-        "<strong>提示</strong><br>如果你卡住了，请看下<code>ourName</code>的例子是怎么写的。"
+        "<strong>提示</strong><br>如果您卡住了，请看下<code>ourName</code>的例子是怎么写的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -71,7 +71,7 @@
       "id": "56533eb9ac21ba0edf2244a8",
       "title": "Storing Values with the Equal Operator",
       "description": [
-        "在JavaScript中，把一个值赋值到一个变量中，你可以使用 <dfn>assignment</dfn> 或者 <code>equal</code> (<code>=</code>) 来操作。",
+        "在JavaScript中，把一个值赋值到一个变量中，您可以使用 <dfn>assignment</dfn> 或者 <code>equal</code> (<code>=</code>) 来操作。",
         "<code>myVariable = 5;</code>",
         "把<code>Number</code>数字<code>5</code>的值赋给变量<code>myVariable</code>。",
         "赋值过程是从右到左进行的。所有 <code>=</code> 操作符右边的值都会被赋值到左边的变量。",
@@ -139,7 +139,7 @@
       "id": "56533eb9ac21ba0edf2244aa",
       "title": "Understanding Uninitialized Variables",
       "description": [
-        "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当你用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出一段 <dfn>string</dfn> (字符串) <code>\"undefined\"</code>。",
+        "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当您对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当您用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出一段 <dfn>string</dfn> (字符串) <code>\"undefined\"</code>。",
         "<h4>Instructions</h4>",
         "定义3个变量 <code>a</code>, <code>b</code>, and <code>c</code> ，并且分别给他们赋值为：<code>5</code>, <code>10</code>，和 <code>\"I am a\"</code> ，这样它们就不会是 <code>undefined</code> （没定义的了）。"
       ],
@@ -374,7 +374,7 @@
       "id": "56533eb9ac21ba0edf2244ad",
       "title": "Decrement a Number with JavaScript",
       "description": [
-        "使用自减符号 <code>--</code> ，你可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
+        "使用自减符号 <code>--</code> ，您可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
         "<code>i--;</code>",
         "等效于",
         "<code>i = i - 1;</code>",
@@ -437,7 +437,7 @@
       "id": "bd7993c9c69feddfaeb7bdef",
       "title": "Multiply Two Decimals with JavaScript",
       "description": [
-        "在 JavaScript 中，你也可以用小数进行计算，就像整数一样",
+        "在 JavaScript 中，您也可以用小数进行计算，就像整数一样",
         "让我们把两个小数相乘，并得到它们相乘的结果（product）。",
         "<h4>Instructions</h4>",
         "改变 <code>0.0</code> 的数值让变量的值等于 <code>5.0</code>。"
@@ -492,12 +492,12 @@
       "description": [
         " <dfn>余</dfn> 运算符 <code>%</code> 给出了两个数字相除的余数。",
         "<strong>举例</strong>",
-        "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (Quotient)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
+        "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (商)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
         "<strong>用法</strong><br>在数学中, 一个数字可以与数字 <code>2</code> 相除得到的余来看它是属于奇数还是偶数。",
         "<blockquote>17 % 2 = 1 (17 is 奇数)<br>48 % 2 = 0 (48 is 偶数)</blockquote>",
         "<strong>Note</strong><br><dfn>余</dfn> 操作符有时被不正确地称为 \"取模\" 操作符。虽然它们之间非常相似，但是余在负数上的操作上是不能运行的。",
         "<h4>Instructions</h4>",
-        "Set <code>remainder</code> equal to the remainder of <code>11</code> divided by <code>3</code> using the <dfn>remainder</dfn> (<code>%</code>) operator."
+        "使用 <code>%</code> 操作符，让一个数与3通过求余操作使得变量 <dfn>remainder</dfn> 的值为11。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -523,13 +523,13 @@
       "id": "56533eb9ac21ba0edf2244af",
       "title": "Assignment with Plus Equals",
       "description": [
-        "In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:",
+        "在编程当中，通常通过赋值来修改变量的内容。请记住，一切操作等号右边先做求，所以我们可以这样子做：",
         "<code>myVar = myVar + 5;</code>",
-        "to add <code>5</code> to <code>myVar</code>. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.",
-        "One such operator is the <code>+=</code> operator.",
-        "<code>myVar += 5;</code> will add <code>5</code> to <code>myVar</code>.",
+        "把数值 <code>5</code> 加到变量 <code>myVar</code>上。 由于这是一种常用的模式，也有操作符是一步到位既做数学运算符也赋值的。",
+        "这种操作符中的其中的一种就是 <code>+=</code> 运算符。",
+        "<code>myVar += 5;</code> 也是把数值 <code>5</code> 加到变量 <code>myVar</code>上。",
         "<h4>Instructions</h4>",
-        "Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>+=</code> operator."
+        "使用 <code>+=</code> 操作符对变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code> 转换赋值的形式。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -564,12 +564,12 @@
       "id": "56533eb9ac21ba0edf2244b0",
       "title": "Assignment with Minus Equals",
       "description": [
-        "Like the <code>+=</code> operator, <code>-=</code> subtracts a number from a variable.",
+        "与 <code>+=</code> 操作符类似，<code>-=</code> 操作符用来对一个变量进行减法操作。",
         "<code>myVar = myVar - 5;</code>",
-        "will subtract <code>5</code> from <code>myVar</code>. This can be rewritten as: ",
+        "将会从变量 <code>myVar</code> 中减去数值 <code>5</code>。也可以写成这种形式：",
         "<code>myVar -= 5;</code>",
         "<h4>Instructions</h4>",
-        "Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>-=</code> operator."
+        "使用 <code>-=</code> 操作来对变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code> 转换赋值的形式。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -605,12 +605,12 @@
       "id": "56533eb9ac21ba0edf2244b1",
       "title": "Assignment with Times Equals",
       "description": [
-        "The <code>*=</code> operator multiplies a variable by a number.",
+        "<code>*=</code> 操作符是让变量与一个数相乘并赋值。",
         "<code>myVar = myVar * 5;</code>",
-        "will multiply <code>myVar</code> by <code>5</code>. This can be rewritten as: ",
+        "将会把变量 <code>myVar</code> 与数值 <code>5</code>相乘。也可以被写作这样的形式: ",
         "<code>myVar *= 5;</code>",
         "<h4>Instructions</h4>",
-        "Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>*=</code> operator."
+        "使用 <code>*=</code> 操作符来改变变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code>的赋值形式。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -646,12 +646,12 @@
       "id": "56533eb9ac21ba0edf2244b2",
       "title": "Assignment with Divided by Equals",
       "description": [
-        "The <code>/=</code> operator divides a variable by another number.",
+        "<code>/=</code> 操作符是让变量与另一个数相除并赋值。",
         "<code>myVar = myVar / 5;</code>",
-        "Will divide <code>myVar</code> by <code>5</code>. This can be rewritten as: ",
+        "会把变量 <code>myVar</code> 的值除于 <code>5</code>。等价于: ",
         "<code>myVar /= 5;</code>",
         "<h4>Instructions</h4>",
-        "Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> to use the <code>/=</code> operator."
+        "使用 <code>/=</code> 操作符来改变变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code>的赋值形式。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -686,9 +686,9 @@
       "id": "56533eb9ac21ba0edf2244b3",
       "title": "Convert Celsius to Fahrenheit",
       "description": [
-        "To test your learning you will create a solution \"from scratch\". Place your code between the indicated lines and it will be tested against multiple test cases.",
-        "The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.",
-        "You are given a variable <code>celsius</code> representing a temperature in Celsius. Create a variable <code>fahrenheit</code> and apply the algorithm to assign it the corresponding temperature in Fahrenheit."
+        "为了测试您的学习效果，您将创建\"从零开始\"的解决方案。把您的代码放置在指示线之间，它会针对多个测试用例来测试。",
+        "从摄氏转换为华氏的算法是：摄氏度的温度乘于9除于5，再加上32。",
+        "您将得到一个变量 <code>celsius</code> 的代表摄氏度的温度。创建一个变量 <code>fahrenheit</code>，然后应用算法来求出其在华氏相应的温度。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -725,11 +725,11 @@
       "id": "bd7123c9c444eddfaeb5bdef",
       "title": "Declare String Variables",
       "description": [
-        "Previously we have used the code",
+        "先前我们使用过的代码",
         "<code>var myName = \"your name\";</code>",
-        "<code>\"your name\"</code> is called a <dfn>string</dfn> <dfn>literal</dfn>. It is a string because it is a series of zero or more characters enclosed in single or double quotes.",
+        "<code>\"your name\"</code> 被称作 <dfn>字符串</dfn>。 这是一个字符串，因为它是用单或双引号包裹起来的一系列的零个或多个字符。",
         "<h4>Instructions</h4>",
-        "Create two new <code>string</code> variables: <code>myFirstName</code> and <code>myLastName</code> and assign them the values of your first and last name, respectively."
+        "创建两个新的 <code>字符串</code> 变量：<code>myFirstName</code> 和 <code>myLastName</code> 分别为它们赋上您的姓和名的值。"
       ],
       "challengeSeed": [
         "// Example",
@@ -758,13 +758,13 @@
       "id": "56533eb9ac21ba0edf2244b5",
       "title": "Escaping Literal Quotes in Strings",
       "description": [
-        "When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: <code>\"</code> or <code>'</code> inside of your string?",
-        "In JavaScript, you can <dfn>escape</dfn> a quote from considering it as an end of string quote by placing a <dfn>backslash</dfn> (<code>\\</code>) in front of the quote.",
+        "当您定义一个字符串必须要用并用单或双引号来包裹它。当您需要在您的字符串中使用一个: <code>\"</code> 或者 <code>'</code> 会发生什么?",
+        "在 JavaScript 中，您可以通过在引号前面使用 <dfn>反斜杠</dfn> (<code>\\</code>) 来转义引号。",
         "<code>var sampleStr = \"Alan said, \\\"Peter is learning JavaScript\\\".\";</code>",
-        "This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:",
+        "这标志着提醒 JavaScript 下列引号并不是字符串的结尾，而应该是出现在字符串内的字符。所以，如果你要打印这个到控制台，您将得到：",
         "<code>Alan said, \"Peter is learning JavaScript\".</code>",
         "<h4>Instruction</h4>",
-        "Use <dfn>backslashes</dfn> to assign a string to the <code>myStr</code> variable so that <em>if</em> you were to print it to the console, you would see:",
+        "使用 <dfn>反斜杠</dfn> 将一个字符串赋值给变量 <code>myStr</code>，以便如果你要打印到控制台，你会看到：",
         "<code>I am a \"double quoted\" string inside \"double quotes\"</code>"
       ],
       "releasedOn": "January 1, 2016",
@@ -796,12 +796,12 @@
       "id": "56533eb9ac21ba0edf2244b4",
       "title": "Quoting Strings with Single Quotes",
       "description": [
-        "<dfn>String</dfn> values in JavaScript may be written with single or double quotes, so long as you start and end with the same type of quote. Unlike some languages, single and double quotes are functionally identical in JavaScript.",
+        "在 JavaScript 中的 <dfn>字符串</dfn> 值可以用单或双引号写，只要你在开始和结束都使用相同类型的引号。不像某些语言，单引号和双引号在功能上是在JavaScript中是相同的。",
         "<code>\"This string has \\\"double quotes\\\" in it\"</code>",
-        "The value in using one or the other has to do with the need to <dfn>escape</dfn> quotes of the same type. If you have a string with many double quotes, this can be difficult to read and write. Instead, use single quotes:",
+        "当使用的值与引号具有相同的类型的时候我们需要对它进行 <dfn>转义</dfn> 。如果你有很多双引号的字符串，使用转义字符这可能导致难以阅读和写字。相反地，可以使用单引号:",
         "<code>'This string has \"double quotes\" in it. And \"probably\" lots of them.'</code>",
         "<h4>Instructions</h4>",
-        "Change the provided string from double to single quotes and remove the escaping."
+        "更改 provided 字符串的双引号为单引号，并移除转义符号。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [

@@ -44,6 +44,8 @@ for(var j=0;j<source.length;j++){
     delete challenges[i].descriptionEs;
     delete challenges[i].titleDe;
     delete challenges[i].descriptionDe;
+    delete challenges[i].titlePt;
+    delete challenges[i].descriptionPt;
     delete challenges[i].titleRu;
     delete challenges[i].descriptionRu;
   }

@@ -2312,11 +2312,11 @@
       "id": "bad87fee1348bd9aedf08746",
       "title": "Inherit Styles from the Body Element",
       "description": [
-        "Now we've proven that every HTML page has a <code>body</code> element, and that its <code>body</code> element can also be styled with CSS.",
-        "Remember, you can style your <code>body</code> element just like any other HTML element, and all your other elements will inherit your <code>body</code> element's styles.",
-        "First, create a <code>h1</code> element with the text <code>Hello World</code>",
-        "Then, let's give all elements on your page the color of <code>green</code> by adding <code>color: green;</code> to your <code>body</code> element's style declaration.",
-        "Finally, give your <code>body</code> element the font-family of <code>Monospace</code> by adding <code>font-family: Monospace;</code> to your <code>body</code> element's style declaration."
+        "现在我们证明了每一个 HTML 页面都有一个 <code>body</code> 元素，并且其 <code>body</code> 元素同样能够应用样式。",
+        "记住，你可以像对其他 HTML 元素一样对你的 <code>body</code> 元素应用样式，并且所有其他元素将继承你的 <code>body</code> 元素的样式。",
+        "首先，创建一个文字为 <code>Hello World</code> 的 <code>h1</code> 元素。",
+        "然后，让我们通过向 <code>body</code> 元素的样式声明部分添加 <code>color: green;</code> 使页面上的所有元素的颜色为 <code>green</code>。",
+        "最后，通过向 <code>body</code> 元素的样式声明部分添加 <code>font-family: Monospace;</code> 将 <code>body</code> 元素的 font-family（字体）设置为 <code>Monospace</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2327,13 +2327,13 @@
         "</style>"
       ],
       "tests": [
-        "assert(($(\"h1\").length > 0), 'message: Create an <code>h1</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: Your <code>h1</code> element should have the text <code>Hello World</code>.');",
-        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: Make sure your <code>h1</code> element has a closing tag.');",
-        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Give your <code>body</code> element the <code>color</code> property of <code>green</code>.');",
-        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: Give your <code>body</code> element the <code>font-family</code> property of <code>Monospace</code>.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: Your <code>h1</code> element should inherit the font <code>Monospace</code> from your <code>body</code> element.');",
-        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: Your <code>h1</code> element should inherit the color green from your <code>body</code> element.');"
+        "assert(($(\"h1\").length > 0), 'message: 创建一个 <code>h1</code> 元素。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").text().match(/hello world/i)), 'message: 你的 <code>h1</code> 元素的文字应该是 <code>Hello World</code>。');",
+        "assert(code.match(/<\\/h1>/g) && code.match(/<h1/g) && code.match(/<\\/h1>/g).length === code.match(/<h1/g).length, 'message: 确保你的 <code>h1</code> 元素有一个结束标记。');",
+        "assert(($(\"body\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 设置 <code>body</code> 元素的 <code>color</code> 属性为 <code>green</code>。');",
+        "assert(($(\"body\").css(\"font-family\").match(/Monospace/i)), 'message: 设置 <code>body</code> 元素的 <code>font-family</code> 属性为 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"font-family\").match(/monospace/i)), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承字体 <code>Monospace</code>。');",
+        "assert(($(\"h1\").length > 0 && $(\"h1\").css(\"color\") === \"rgb(0, 128, 0)\"), 'message: 你的 <code>h1</code> 元素应该从 <code>body</code> 元素继承绿色。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2342,11 +2342,11 @@
       "id": "bad87fee1348bd9aedf08756",
       "title": "Prioritize One Style Over Another",
       "description": [
-        "Sometimes your HTML elements will receive multiple styles that conflict with one another.",
-        "For example, your <code>h1</code> element can't be both green and pink at the same time.",
-        "Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class <code>override</code> the <code>body</code> element's <code>color: green;</code> CSS property?",
-        "Create a CSS class called <code>pink-text</code> that gives an element the color pink.",
-        "Give your <code>h1</code> element the class of <code>pink-text</code>."
+        "有时你的 HTML 元素会得到相互冲突的多个样式。",
+        "例如，你的 <code>h1</code> 元素不能同时为绿色和粉色。",
+        "让我们来看看当我们创建一个使其文字为粉色的 class 时会发生什么，然后将其应用到某元素。我们的 class 会 <code>override（覆盖）</code> <code>body</code> 元素的 <code>color: green;</code> CSS 属性吗？",
+        "创建一个使元素颜色成为粉色的名为 <code>pink-text</code> 的 CSS class。",
+        "设置 <code>h1</code> 元素的 class 为 <code>pink-text</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2359,9 +2359,9 @@
         "<h1>Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: Your <code>&#60;style&#62;</code> should have a <code>pink-text</code> CSS class with its color set to pink.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: Your <code>h1</code> element should be pink.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含名为 <code>pink-text</code> 的 class。');",
+        "assert(code.match(/\\.pink-text\\s*\\{\\s*color\\s*:\\s*pink\\s*;\\s*\\}/g), 'message: 你的 <code>&#60;style&#62;</code> 包含一个将 color 设置为 pink 的 <code>pink-text</code> CSS class。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 192, 203)\", 'message: 你的 <code>h1</code> 元素应该为粉色。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2370,14 +2370,14 @@
       "id": "bad87fee1348bd9aedf04756",
       "title": "Override Styles in Subsequent CSS",
       "description": [
-        "Our \"pink-text\" class overrode our <code>body</code> element's CSS declaration!",
-        "We just proved that our classes will override the <code>body</code> element's CSS. So the next logical question is, what can we do to override our <code>pink-text</code> class?",
-        "Create an additional CSS class called <code>blue-text</code> that gives an element the color blue. Make sure it's below your <code>pink-text</code> class declaration.",
-        "Apply the <code>blue-text</code> class to your <code>h1</code> element in addition to your <code>pink-text</code> class, and let's see which one wins.",
-        "Applying multiple class attributes to a HTML element is done with a space between them like this:",
+        "我们的 \"pink-text\" class 覆盖了 <code>body</code> 元素的 CSS 声明！",
+        "我们刚刚证明了我们的 class 会覆盖 <code>body</code> 元素的 CSS，那么下一个合乎情理的问题就是，我们怎样才能覆盖我们的 <code>pink-text</code> class 呢？",
+        "再创建一个把元素设置为蓝色的名为 <code>blue-text</code> 的 CSS class，确保它在你的 <code>pink-text</code> class 声明的下面。",
+        "除了 <code>pink-text</code> class 之外，再把 <code>blue-text</code> class 应用到你的 <code>h1</code> 元素，让我们来看看谁会赢。",
+        "如下例，通过用空格分隔多个 class 属性，可对 HTML 元素应用多个 class 属性：",
         "<code>class=\"class1 class2\"</code>",
-        "Note: It doesn't matter which order the classes are listed in the HTML element.",
-        "However, the order of the <code>class</code> declarations in the <code>&#60;style&#62;</code> section are what is important. The second declaration will always take precedence over the first. Because <code>.blue-text</code> is declared second, it overrides the attributes of <code>.pink-text</code>"
+        "注意：在 HTML 中这些 class 如何排序是无所谓的。",
+        "然而，在 <code>&#60;style&#62;</code> 部分中 <code>class</code> 声明的顺序却非常重要，第二个声明总是比第一个具有优先权。因为 <code>.blue-text</code> 是第二个声明，它覆盖了 <code>.pink-text</code> 属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2393,10 +2393,10 @@
         "<h1 class=\"pink-text\">Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: Your <code>h1</code> element should have the class <code>blue-text</code>.');",
-        "assert($(\".pink-text\").hasClass(\"blue-text\"), 'message: Both <code>blue-text</code> and <code>pink-text</code> should belong to the same <code>h1</code> element.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: Your <code>h1</code> element should be blue.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>pink-text</code> class。');",
+        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>blue-text</code> class。');",
+        "assert($(\".pink-text\").hasClass(\"blue-text\"), 'message: <code>blue-text</code> 和 <code>pink-text</code> 都应该属于同一个 <code>h1</code> 元素。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(0, 0, 255)\", 'message: 你的 <code>h1</code> 元素应该是蓝色的。');"
       ],
       "type": "waypoint",
       "challengeType": 0
