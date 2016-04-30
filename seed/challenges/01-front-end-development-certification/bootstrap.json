@@ -1739,9 +1739,10 @@
       "id": "bad87fee1348bd9aec908855",
       "title": "Give Each Element a Unique ID",
       "description": [
-        "We will also want to be able to use jQuery to target each button by its unique id.",
-        "Give each of your buttons a unique id, starting with <code>target1</code> and ending with <code>target6</code>.",
-        "Make sure that <code>target1</code> to <code>target3</code> are in <code>#left-well</code>, and <code>target4</code> to <code>target6</code> are in <code>#right-well</code>."
+        "我们也希望使用 jQuery 并通过每个按钮各自唯一的 id 来标识出它们。\n",
+        "给你的每一个按钮一个唯一的 id ，以 <code>target1</code> 为开始，<code>target6</code> 为结束。",
+        "确保 <code>target1</code> 到 <code>target3</code> 在 <code>#left-well</code> 之中，<code>target4</code> 到 <code>target6</code> 则在在 <code>#right-well</code> 之中。"
+      ],
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1767,12 +1768,12 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#left-well\").children(\"#target1\") && $(\"#left-well\").children(\"#target1\").length > 0, 'message: One <code>button</code> element should have the id <code>target1</code>.');",
-        "assert($(\"#left-well\").children(\"#target2\") && $(\"#left-well\").children(\"#target2\").length > 0, 'message: One <code>button</code> element should have the id <code>target2</code>.');",
-        "assert($(\"#left-well\").children(\"#target3\") && $(\"#left-well\").children(\"#target3\").length > 0, 'message: One <code>button</code> element should have the id <code>target3</code>.');",
-        "assert($(\"#right-well\").children(\"#target4\") && $(\"#right-well\").children(\"#target4\").length > 0, 'message: One <code>button</code> element should have the id <code>target4</code>.');",
-        "assert($(\"#right-well\").children(\"#target5\") && $(\"#right-well\").children(\"#target5\").length > 0, 'message: One <code>button</code> element should have the id <code>target5</code>.');",
-        "assert($(\"#right-well\").children(\"#target6\") && $(\"#right-well\").children(\"#target6\").length > 0, 'message: One <code>button</code> element should have the id <code>target6</code>.');"
+        "assert($(\"#left-well\").children(\"#target1\") && $(\"#left-well\").children(\"#target1\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target1</code>。');",
+        "assert($(\"#left-well\").children(\"#target2\") && $(\"#left-well\").children(\"#target2\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target2</code>。');",
+        "assert($(\"#left-well\").children(\"#target3\") && $(\"#left-well\").children(\"#target3\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target3</code>。');",
+        "assert($(\"#right-well\").children(\"#target4\") && $(\"#right-well\").children(\"#target4\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target4</code>。');",
+        "assert($(\"#right-well\").children(\"#target5\") && $(\"#right-well\").children(\"#target5\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target5</code>。');",
+        "assert($(\"#right-well\").children(\"#target6\") && $(\"#right-well\").children(\"#target6\").length > 0, 'message: 其中一个 <code>button</code> 元素应该有 id <code>target6</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
