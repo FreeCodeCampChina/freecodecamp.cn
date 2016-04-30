@@ -2405,15 +2405,15 @@
       "id": "bad87fee1348bd8aedf06756",
       "title": "Override Class Declarations by Styling ID Attributes",
       "description": [
-        "We just proved that browsers read CSS from top to bottom. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last.",
-        "But we're not done yet. There are other ways that you can override CSS. Do you remember id attributes?",
-        "Let's override your <code>pink-text</code> and <code>blue-text</code> classes, and make your <code>h1</code> element orange, by giving the <code>h1</code> element an id and then styling that id.",
-        "Give your <code>h1</code> element the <code>id</code> attribute of <code>orange-text</code>. Remember, id styles look like this:",
+        "我们刚刚证明了浏览器读取 CSS 的顺序是从上到下，这意味着，在发生冲突时，浏览器会使用最后的 CSS 声明。",
+        "但是并非只有这些，还有其他覆盖 CSS 的方法。你还记得 id 属性吗？",
+        "让我们来覆盖你的 <code>pink-text</code> 和 <code>blue-text</code> 两个 class，通过为 <code>h1</code> 元素添加 id 并设置 id 的样式，使你的 <code>h1</code> 元素变成 orange（橙色）。",
+        "给你的 <code>h1</code> 元素添加名为 <code>orange-text</code> 的 <code>id</code> 属性。记住，id 样式看起来是这样的：",
         "<code>&#60;h1 id=\"orange-text\"&#62;</code>",
-        "Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element.",
-        "Create a CSS declaration for your <code>orange-text</code> id in your <code>style</code> element. Here's an example of what this looks like:",
+        "在你的 <code>h1</code> 元素中保留 <code>blue-text</code> 和 <code>pink-text</code> 两个 class。",
+        "在你的 <code>style</code> 元素中为你的 <code>orange-text</code> id 创建一个 CSS 声明，就像下面例子中的样子：",
         "<blockquote>#brown-text {<br>&nbsp;&nbsp;color: brown;<br>}</blockquote>",
-        "Note: It doesn't matter whether you declare this css above or below pink-text class, since id attribute will always take precedence."
+        "注意：你声明的这个 CSS 在 pink-text class 的上面还是下面是无所谓的，因为 id 属性总是具有更高的优先级。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2432,12 +2432,12 @@
         "<h1 class=\"pink-text blue-text\">Hello World!</h1>"
       ],
       "tests": [
-        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: Your <code>h1</code> element should have the class <code>pink-text</code>.');",
-        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: Your <code>h1</code> element should have the class <code>blue-text</code>.');",
-        "assert($(\"h1\").attr(\"id\") === \"orange-text\", 'message: Give your <code>h1</code> element the id of <code>orange-text</code>.');",
-        "assert(code.match(/#orange-text\\s*{/gi), 'message: Create a CSS declaration for your <code>orange-text</code> id');",
-        "assert(!code.match(/<h1.*style.*>/gi), 'message: Do not give your <code>h1</code> any <code>style</code> attributes.');",
-        "assert($(\"h1\").css(\"color\") === \"rgb(255, 165, 0)\", 'message: Your <code>h1</code> element should be orange.');"
+        "assert($(\"h1\").hasClass(\"pink-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>pink-text</code> class。');",
+        "assert($(\"h1\").hasClass(\"blue-text\"), 'message: 你的 <code>h1</code> 元素应该包含 <code>blue-text</code> class。');",
+        "assert($(\"h1\").attr(\"id\") === \"orange-text\", 'message: 为你的 <code>h1</code> 元素添加 <code>orange-text</code> id。');",
+        "assert(code.match(/#orange-text\\s*{/gi), 'message: 为你的 <code>orange-text</code> id 创建一个 CSS 声明。');",
+        "assert(!code.match(/<h1.*style.*>/gi), 'message: 不要为你的 <code>h1</code> 添加任何 <code>style</code> 属性。');",
+        "assert($(\"h1\").css(\"color\") === \"rgb(255, 165, 0)\", 'message: 你的 <code>h1</code> 元素应该是橙色的。');"
       ],
       "type": "waypoint",
       "challengeType": 0
