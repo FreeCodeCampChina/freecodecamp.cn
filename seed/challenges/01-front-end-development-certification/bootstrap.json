@@ -1823,10 +1823,10 @@
       "id": "bad87fee1348bd9aec908857",
       "title": "Use Comments to Clarify Code",
       "description": [
-        "When we start using jQuery, we will modify HTML elements without needing to actually change them in HTML.",
-        "Let's make sure that everyone knows they shouldn't actually modify any of this code directly.",
-        "Remember that you can start a comment with <code>&#60;!--</code> and end a comment with <code>--&#62;</code>",
-        "Add a comment at the top of your HTML that says <code>Only change code above this line.</code>"
+        "当我们开始使用jQuery，我们将修改HTML元素，但是实际上我们并不是直接在 HTML 文本中修改。",
+        "我们必须确保让每个人都知道，他们不应该直接修改此页面上这些代码。",
+        "记住，你可以在 <code>&#60;!--</code> 为开始，  <code>--&#62;</code> 为结束的地方进行评论注释。(像这样， <code>&#60;!--</code> 我是一段注释 <code>--&#62;</code> )",
+        "请在你的 HTML 顶部加如下一段注释：<code>Only change code above this line.</code> 。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1852,10 +1852,10 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/^\\s*<!--/), 'message: Start a comment with <code>&#60;!--</code> at the top of your HTML.');",
-        "assert(code.match(/<!--(?!(>|->|.*-->.*this line)).*this line.*-->/gi), 'message: Your comment should have the text <code>Only change code above this line</code>.');",
-        "assert(code.match(/-->.*\\n+.+/g), 'message: Be sure to close your comment with <code>--&#62;</code>.');",
-        "assert(code.match(/<!--/g).length === code.match(/-->/g).length, 'message: You should have the same number of comment openers and closers.');"
+        "assert(code.match(/^\\s*<!--/), 'message: 在增加注释前，在你的 HTML 顶部增加此代码 <code>&#60;!--</code> 。');",
+        "assert(code.match(/<!--(?!(>|->|.*-->.*this line)).*this line.*-->/gi), 'message: 你的注释内容 <code>Only change code above this line</code>.');",
+        "assert(code.match(/-->.*\\n+.+/g), 'message: 确保你的注释有闭合代码 <code>--&#62;</code>.');",
+        "assert(code.match(/<!--/g).length === code.match(/-->/g).length, 'message: 注意，注释的开始标签和闭合标签数量应该一一对应，保持数量一致。');"
       ],
       "type": "waypoint",
       "challengeType": 0
