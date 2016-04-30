@@ -11,19 +11,19 @@
         [
           "//i.imgur.com/sJkp30a.png",
           "An image of a algorithm challenge showing directions, tests, and the code editor.",
-          "我们的算法挑战将会教会你用程序员的方式去思考问题。",
+          "我们的算法挑战教你用程序员的思维去思考问题。",
           ""
         ],
         [
           "//i.imgur.com/d8LuRNh.png",
           "A mother bird kicks a baby bird out of her nest.",
-          "之前的挑战向你介绍了编程的概念。接下来的挑战，你将会需要用你学到的东西来解决开放性的问题。",
+          "之前的挑战向你介绍了编程的概念。接下来的挑战，你将会用你学到的东西来解决开放性的问题。",
           ""
         ],
         [
           "//i.imgur.com/WBetuBa.jpg",
           "A programmer punching through his laptop screen in frustration.",
-          "算法挑战会很难，有些挑战可能需要你花上几个小时来完成。你也许会沮丧，但是千万别放弃！",
+          "算法挑战有点难度，有些挑战可能需要你花上几个小时来完成。你也许会沮丧，但是千万别放弃！",
           ""
         ],
         [
@@ -43,10 +43,10 @@
       "id": "a202eed8fc186c8434cb6d61",
       "title": "Reverse a String",
       "description": [
-        "Reverse the provided string.",
-        "You may need to turn the string into an array before you can reverse it.",
-        "Your result must be a string.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "翻转字符串",
+        "先把字符串转化成数组，再借助数组的reverse方法翻转数组顺序，最后把数组转化成字符串。",
+        "你的结果必须得是一个字符串",
+        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
       ],
       "challengeSeed": [
         "function reverseString(str) {",
@@ -78,11 +78,11 @@
       "id": "a302f7aae1aa3152a5b413bc",
       "title": "Factorialize a Number",
       "description": [
-        "Return the factorial of the provided integer.",
-        "If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.",
-        "Factorials are often represented with the shorthand notation <code>n!</code>",
-        "For example: <code>5! = 1 * 2 * 3 * 4 * 5 = 120</code>",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "计算一个整数的阶乘",
+        "如果用字母n来代表一个整数，阶乘代表着所有小于或等于n的整数的乘积。",
+        "阶乘通常简写成 <code>n!</code>",
+        "例如: <code>5! = 1 * 2 * 3 * 4 * 5 = 120</code>",
+        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
       ],
       "challengeSeed": [
         "function factorialize(num) {",
@@ -112,11 +112,11 @@
       "id": "aaa48de84e1ecc7c742e1124",
       "title": "Check for Palindromes",
       "description": [
-        "Return <code>true</code> if the given string is a palindrome. Otherwise, return <code>false</code>.",
-        "A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.",
-        "<strong>Note</strong><br>You'll need to remove <strong>all non-alphanumeric characters</strong> (punctuation, spaces and symbols) and turn everything lower case in order to check for palindromes.",
-        "We'll pass strings with varying formats, such as <code>\"racecar\"</code>, <code>\"RaceCar\"</code>, and <code>\"race CAR\"</code> among others.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "如果给定的字符串是回文，返回<code>true</code>，反之，返回<code>false</code>。",
+        "如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是回文<dfn>palindrome</dfn>。",
+        "<strong>注意</strong>你需要去掉字符串多余的标点符号和空格，然后把字符串转化成小写来验证此字符串是否为回文。",
+        "函数参数的值可以为<code>\"racecar\"</code>，<code>\"RaceCar\"</code>和<code>\"race CAR\"</code>。",
+        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
       ],
       "challengeSeed": [
         "function palindrome(str) {",
