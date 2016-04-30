@@ -148,15 +148,9 @@
       ],
       "tests": [
         "assert($(\"img\").length === 2, 'message: 此时，你应该共有两张图片。');",
-<<<<<<< HEAD
         "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 class <code>img-responsive</code> 。');",
         "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 class <code>smaller-image</code> 。');",
         "assert($(\"img:eq(1)\").attr(\"src\") === \"http://bit.ly/fcc-running-cats\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
-=======
-        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 <code>img-responsive</code> 类属性。');",
-        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 <code>smaller-image</code> 类属性。');",
-        "assert($(\"img:eq(1)\").attr(\"src\") === \"/images/relaxing-cat.jpg\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>http&#58;//bit.ly/fcc-running-cats</code>.');",
->>>>>>> huluoyang/dev
         "assert(code.match(/<img/g) && code.match(/<img[^<]*>/g).length === 2 && code.match(/<img/g).length === 2, 'message: 确保你的新元素 <code>img</code> 有一个起闭合作用的右尖括号。');"
       ],
       "type": "waypoint",
