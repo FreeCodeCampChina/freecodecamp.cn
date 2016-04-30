@@ -156,11 +156,11 @@
       "id": "56bbb991ad1ed5201cd392d7",
       "title": "Convert JSON Data to HTML",
       "description": [
-        "Now that we're getting data from a JSON API, let's display it in our HTML.",
-        "We can use the <code>.forEach()</code> method to loop through our data and modify our HTML elements.",
-        "First, let's declare an html variable with <code>var html = \"\";</code>.",
-        "Then, let's loop through our JSON, adding more HTML to that variable. When the loop is finished, we'll render it.",
-        "Here's the code that does this:",
+        "好了，我们现在已经从JSON API中获得了数据。把它们展现到我们的HTML页面中吧。",
+        "这里，我们使用了<code>.forEach()</code>函数来循环的将我们的数据写到HTML元素中。",
+        "首先我们定义一个HTML变量,<code>var html = \"\";</code> 。",
+        "然后，我们循环遍历JSON数据，不停在这个变量上加入更多的HTML元素。当循环结束，我们便将页面展示出来",
+        "整个过程的代码如下：",
         "<blockquote>json.forEach(function(val) {</br>  var keys = Object.keys(val);</br>  html += \"&lt;div class = 'cat'&gt;\";</br>  keys.forEach(function(key) {</br>    html += \"&lt;b&gt;\" + key + \"&lt;/b&gt;: \" + val[key] + \"&lt;br&gt;\";</br>  });</br>  html += \"&lt;/div&gt;&lt;br&gt;\";</br>});</blockquote>"
       ],
       "challengeSeed": [
@@ -212,9 +212,9 @@
       "id": "56bbb991ad1ed5201cd392d8",
       "title": "Render Images from Data Sources",
       "description": [
-        "We've seen from the last two lessons that each object in our JSON array contains an <code>imageLink</code> key with a value that is the url of a cat's image.",
-        "When we're looping through these objects, let's use this <code>imageLink</code> property to display this image in an <code>img</code> element.",
-        "Here's the code that does this:",
+        "在之前两节课里我们获得的JSON数组中，每个对象都包含了一个以<code>imageLink</code>为键（key），以猫的图片的url为值（value）的键值对。",
+        "在循环函数中，我们在<code>img</code>元素中添加<code>imageLink</code>的属性来显示图片。",
+        "代码如下：",
         "<code>html += \"&lt;img src = '\" + val.imageLink + \"'&gt;\";</code>"
       ],
       "challengeSeed": [
@@ -275,9 +275,9 @@
       "id": "56bbb991ad1ed5201cd392d9",
       "title": "Prefilter JSON",
       "description": [
-        "If we don't want to render every cat photo we get from our Free Code Camp's Cat Photo JSON API, we can pre-filter the json before we loop through it.",
-        "Let's filter out the cat whose \"id\" key has a value of 1.",
-        "Here's the code to do this:",
+        "如果我们不想把所有从Free Code Camp的JSON API中得到的猫图片展现出来，我们可以在循环之前先做一次过滤。",
+        "我们把其中 \"id\" 键的值为 1的 猫图片滤出来吧.",
+        "代码如下:",
         "<blockquote>json = json.filter(function(val) {</br>  return (val.id !== 1);</br>});</blockquote>"
       ],
       "challengeSeed": [
@@ -345,6 +345,14 @@
         "You will see a prompt to allow or block this site from knowing your current location. The challenge can be completed either way, as long as the code is correct.",
         "By selecting allow you will see the text on the output phone change to your latitude and longitude",
         "Here's some code that does this:",
+        "<blockquote>if (navigator.geolocation) {</br>  navigator.geolocation.getCurrentPosition(function(position) {</br>    $(\"#data\").html(\"latitude: \" + position.coords.latitude + \"&lt;br&gt;longitude: \" + position.coords.longitude);</br>  });</br>}</blockquote>"
+      ],
+      "description": [
+        "还有一件有趣的事情可以做，我们可以通过程序获得我们当前所在的位置。每个浏览器都内置了提供这个信息的定位器。",
+        "这个定位器能够提供我们所在位置当前的经度和纬度。",
+        "你将会看到一个是否允许获取当前位置的提示。不管你选选择允许或者禁止，只要代码正确，这关就能过了。",
+        "如果你选择允许，你将会看到右侧手机输出的文字为你当前的精度和纬度。",
+        "代码如下：",
         "<blockquote>if (navigator.geolocation) {</br>  navigator.geolocation.getCurrentPosition(function(position) {</br>    $(\"#data\").html(\"latitude: \" + position.coords.latitude + \"&lt;br&gt;longitude: \" + position.coords.longitude);</br>  });</br>}</blockquote>"
       ],
       "challengeSeed": [
