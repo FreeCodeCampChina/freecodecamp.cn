@@ -2550,9 +2550,9 @@
       "id": "bad87fee1348bd9aedf08725",
       "title": "Use Hex Code to Color Elements White",
       "description": [
-        "<code>0</code> is the lowest number in hex code, and represents a complete absence of color.",
-        "<code>F</code> is the highest number in hex code, and it represents the maximum possible brightness.",
-        "Let's turn our <code>body</code> element's background-color white by changing its hex code to <code>#FFFFFF</code>"
+        "<code>0</code> 是 hex code（十六进制编码）中最小的一个，它代表颜色的完全缺失。",
+        "<code>F</code> 是 hex code（十六进制编码）中最大的一个，它代表最大可能的亮度。",
+        "让我们通过把 background-color 的 hex code 修改为 <code>#FFFFFF</code>，以把 <code>body</code> 元素的背景改为白色。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2562,8 +2562,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: Your <code>body</code> element should have the <code>background-color</code> of white.');",
-        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#FFF(FFF)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: Use the <code>hex code</code> for the color white instead of the word <code>white</code>. For example <code>body { color&#58; #FFFFFF; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: 你的 <code>body</code> 元素的 <code>background-color</code> 应该是白色的。');",
+        "assert(code.match(/body\\s*{(([\\s\\S]*;\\s*?)|\\s*?)background.*\\s*:\\s*?#FFF(FFF)?((\\s*})|(;[\\s\\S]*?}))/gi), 'message: 使用 <code>hex code</code> 表示白色而不是使用单词 <code>white</code>，例如 <code>body { color&#58; #FFFFFF; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
