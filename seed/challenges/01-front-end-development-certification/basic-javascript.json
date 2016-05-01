@@ -827,11 +827,11 @@
       "id": "56533eb9ac21ba0edf2244b6",
       "title": "Escape Sequences in Strings",
       "description": [
-        "Quotes are not the only characters that can be <dfn>escaped</dfn> inside a string. Here is a table of common escape sequences:",
-        "<table class=\"table table-striped\"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td>\\'</td><td>single quote</td></tr><tr><td>\\\"</td><td>double quote</td></tr><tr><td>\\\\</td><td>backslash</td></tr><tr><td>\\n</td><td>new line</td></tr><tr><td>\\r</td><td>carriage return</td></tr><tr><td>\\t</td><td>tab</td></tr><tr><td>\\b</td><td>backspace</td></tr><tr><td>\\f</td><td>form feed</td></tr></tbody></table>",
-        "<em>Note that the backslash itself must be escaped in order to display as a backslash.</em>",
+        "引号不是唯一可以在字符串中唯一一个被转义的字符。下面是常见的转义序列的表:",
+        "<table class=\"table table-striped\"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td>\\'</td><td>单引号</td></tr><tr><td>\\\"</td><td>双引号</td></tr><tr><td>\\\\</td><td>反斜杠符</td></tr><tr><td>\\n</td><td>换行符</td></tr><tr><td>\\r</td><td>回车符</td></tr><tr><td>\\t</td><td>制表符</td></tr><tr><td>\\b</td><td>退格符</td></tr><tr><td>\\f</td><td>换页符</td></tr></tbody></table>",
+        "<em>注意，如果您想要显示一个反斜杠就必须要转义它。</em>",
         "<h4>Instructions</h4>",
-        "Encode the following sequence, separated by spaces:<br><code>backslash tab tab carriage-return new-line</code> and assign it to <code>myStr</code>"
+        "按照下面的顺序编码序列，并且用空格来分割开：<br><code>反斜杠 制表符 制表符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -858,12 +858,12 @@
       "id": "56533eb9ac21ba0edf2244b7",
       "title": "Concatenating Strings with Plus Operator",
       "description": [
-        "In JavaScript, when the <code>+</code> operator is used with a <code>String</code> value, it is called the <dfn>concatenation</dfn> operator. You can build a new string out of other strings by <dfn>concatenating</dfn> them together.",
-        "<strong>Example</strong>",
+        "在 JavaScript 中，当 <code>+</code> 操作符与 <code>字符串</code> 一起使用的时候，它被称作 <dfn>连接</dfn> 操作符。您可以通过和其他字符串<dfn>连接</dfn> 来创建一个新的字符串。",
+        "<strong>举个例子</strong>",
         "<blockquote>'My name is Alan,' + ' I concatenate.'</blockquote>",
-        "<strong>Note</strong><br>Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.",
+        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之间外面的空格，所以如果想要加上空格的话，您需要自己在字符串上面添加。",
         "<h4>Instructions</h4>",
-        "Build <code>myStr</code> from the strings <code>\"This is the start. \"</code> and <code>\"This is the end.\"</code> using the <code>+</code> operator."
+        "使用 <code>+</code> 操作，把字符串 <code>\"This is the start. \"</code> 和 <code>\"This is the end.\"</code> 连接起来并赋值给变量 <code>myStr</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -901,10 +901,10 @@
       "id": "56533eb9ac21ba0edf2244b8",
       "title": "Concatenating Strings with the Plus Equals Operator",
       "description": [
-        "We can also use the <code>+=</code> operator to <dfn>concatenate</dfn> a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.",
-        "<strong>Note</strong><br>Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.",
+        "我们还可以使用 <code>+=</code> 运算符来 <dfn>连接</dfn> 字符串到现有的字符串变量的结尾。对于那些需要占用几行的长字符串来说，这一操作是非常有用的。",
+        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之间外面的空格，所以如果想要加上空格的话，您需要自己在字符串上面添加。",
         "<h4>Instructions</h4>",
-        "Build <code>myStr</code> over several lines by concatenating these two strings:<br><code>\"This is the first sentence. \"</code> and <code>\"This is the second sentence.\"</code> using the <code>+=</code> operator."
+        "通过使用 <code>+=</code> 操作符来连接这两个字符串:<br><code>\"This is the first sentence. \"</code> 和 <code>\"This is the second sentence.\"</code> 来构建变量 <code>myStr</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
