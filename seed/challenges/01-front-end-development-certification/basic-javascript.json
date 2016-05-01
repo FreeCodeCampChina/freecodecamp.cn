@@ -492,7 +492,6 @@
       "description": [
         " <dfn>余</dfn> 运算符 <code>%</code> 给出了两个数字相除的余数。",
         "<strong>举例</strong>",
-
         "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (商)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
         "<strong>用法</strong><br>在数学中, 一个数字可以与数字 <code>2</code> 相除得到的余来看它是属于奇数还是偶数。",
         "<blockquote>17 % 2 = 1 (17 is 奇数)<br>48 % 2 = 0 (48 is 偶数)</blockquote>",
@@ -524,7 +523,7 @@
       "id": "56533eb9ac21ba0edf2244af",
       "title": "Assignment with Plus Equals",
       "description": [
-        "在编程当中，通常通过赋值来修改变量的内容。请记住，一切操作等号右边先做求，所以我们可以这样子做：",        
+        "在编程当中，通常通过赋值来修改变量的内容。请记住，一切操作等号右边先做求，所以我们可以这样子做：",
         "<code>myVar = myVar + 5;</code>",
         "把数值 <code>5</code> 加到变量 <code>myVar</code>上。 由于这是一种常用的模式，也有操作符是一步到位既做数学运算符也赋值的。",
         "这种操作符中的其中的一种就是 <code>+=</code> 运算符。",
@@ -797,7 +796,7 @@
       "id": "56533eb9ac21ba0edf2244b4",
       "title": "Quoting Strings with Single Quotes",
       "description": [
-        "在 JavaScript 中的 <dfn>字符串</dfn> 值可以用单或双引号写，只要你在开始和结束都使用相同类型的引号。不像某些语言，单引号和双引号在功能上是在JavaScript中是相同的。",        
+        "在 JavaScript 中的 <dfn>字符串</dfn> 值可以用单或双引号写，只要你在开始和结束都使用相同类型的引号。不像某些语言，单引号和双引号在功能上是在JavaScript中是相同的。",
         "<code>\"This string has \\\"double quotes\\\" in it\"</code>",
         "当使用的值与引号具有相同的类型的时候我们需要对它进行 <dfn>转义</dfn> 。如果你有很多双引号的字符串，使用转义字符这可能导致难以阅读和写字。相反地，可以使用单引号:",
         "<code>'This string has \"double quotes\" in it. And \"probably\" lots of them.'</code>",
