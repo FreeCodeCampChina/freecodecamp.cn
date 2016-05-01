@@ -29,7 +29,7 @@
         [
           "//i.imgur.com/p2TpOQd.jpg",
           "A cute dog jumping over a hurdle and winking and pointing his paw at you.",
-          "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。",
+          "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。<br>别担心，没啥难的。",
           ""
         ]
       ],
@@ -46,7 +46,7 @@
         "翻转字符串",
         "先把字符串转化成数组，再借助数组的reverse方法翻转数组顺序，最后把数组转化成字符串。",
         "你的结果必须得是一个字符串",
-        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function reverseString(str) {",
@@ -82,7 +82,7 @@
         "如果用字母n来代表一个整数，阶乘代表着所有小于或等于n的整数的乘积。",
         "阶乘通常简写成 <code>n!</code>",
         "例如: <code>5! = 1 * 2 * 3 * 4 * 5 = 120</code>",
-        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function factorialize(num) {",
@@ -116,7 +116,7 @@
         "如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是回文<dfn>palindrome</dfn>。",
         "<strong>注意</strong>你需要去掉字符串多余的标点符号和空格，然后把字符串转化成小写来验证此字符串是否为回文。",
         "函数参数的值可以为<code>\"racecar\"</code>，<code>\"RaceCar\"</code>和<code>\"race CAR\"</code>。",
-        "当你完成不了挑战的时候，记得使用“Read-Search-Ask”大法。<br>别担心，没啥难的。"
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function palindrome(str) {",
@@ -156,9 +156,9 @@
       "id": "a26cbbe9ad8655a977e1ceb5",
       "title": "Find the Longest Word in a String",
       "description": [
-        "Return the length of the longest word in the provided sentence.",
-        "Your response should be a number.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "找到提供的句子中长度最长的单词",
+        "函数的返回值的应该是一个数字",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function findLongestWord(str) {",
@@ -190,9 +190,9 @@
       "id": "ab6137d4e35944e21037b769",
       "title": "Title Case a Sentence",
       "description": [
-        "Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.",
-        "For the purpose of this exercise, you should also capitalize connecting words like \"the\" and \"of\".",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "确保字符串的每个单词首字母都大写，其余部分小写。",
+        "像'the'和'of'这样的连接符同理。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function titleCase(str) {",
@@ -221,9 +221,9 @@
       "id": "a789b3483989747d63b0e427",
       "title": "Return Largest Numbers in Arrays",
       "description": [
-        "Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.",
-        "Remember, you can iterate through an array with a simple for loop, and access each member with array syntax <code>arr[i]</code>.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "右边大数组中包含了4个小数组，分别找到每个小数组中的最大值，然后把它们串联起来，形成一个新数组。",
+        "提示：你可以用for循环来迭代数组，并通过<code>arr[i]</code>的方式来访问数组的每个元素。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function largestOfFour(arr) {",
@@ -252,8 +252,8 @@
       "id": "acda2fb1324d9b0fa741e6b5",
       "title": "Confirm the Ending",
       "description": [
-        "Check if a string (first argument, <code>str</code>) ends with the given target string (second argument, <code>target</code>).",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "检查一个字符串(第一个参数，<code>str</code>)是否以指定的字符串(第二个参数，<code>target</code>)结尾。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function confirmEnding(str, target) {",
@@ -287,8 +287,9 @@
       "id": "afcc8d540bea9ea2669306b6",
       "title": "Repeat a string repeat a string",
       "description": [
-        "Repeat a given string (first argument) <code>num</code> times (second argument). Return an empty string if <code>num</code> is a negative number.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "重要的事情说3遍！",
+        "重复一个指定的字符串(第一个参数)<code>num</code>次(第二个参数)，如果<code>num</code>是一个负数则返回一个空字符串。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function repeat(str, num) {",
@@ -320,10 +321,10 @@
       "id": "ac6993d51946422351508a41",
       "title": "Truncate a string",
       "description": [
-        "Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a \"...\" ending.",
-        "Note that the three dots at the end add to the string length.",
-        "If the <code>num</code> is less than or equal to 3, then the length of the three dots is not added to the string length.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "截断一个字符串！",
+        "如果字符串的长度比指定的参数<code>num</code>长，则把多余的部分用'...'来表示。",
+        "如果参数<code>num</code>小于或等于3，那么就不用缩短字符串了。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function truncate(str, num) {",
@@ -355,8 +356,11 @@
       "id": "a9bd25c716030ec90084d8a1",
       "title": "Chunky Monkey",
       "description": [
-        "Write a function that splits an array (first argument) into groups the length of <code>size</code> (second argument) and returns them as a two-dimensional array.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "猴子吃香蕉可是掰成好几段来吃哦！",
+        "把一个数组<code>arr</code>按照指定的数组大小<code>size</code>分割成若干个数组块。",
+        "例如:chunk([1,2,3,4],2)=[[1,2],[3,4]];",
+        "chunk([1,2,3,4,5],2)=[[1,2],[3,4],[5]];",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function chunk(arr, size) {",
@@ -389,9 +393,9 @@
       "id": "ab31c21b530c0dafa9e241ee",
       "title": "Slasher Flick",
       "description": [
-        "Return the remaining elements of an array after chopping off <code>n</code> elements from the head.",
-        "The head means the beginning of the array, or the zeroth index.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "打不死的小强！",
+        "返回一个数组被截断<code>n</code>个元素后还剩余的元素，截断从索引0开始。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function slasher(arr, howMany) {",
@@ -424,11 +428,12 @@
       "id": "af2170cad53daa0770fabdea",
       "title": "Mutations",
       "description": [
-        "Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.",
-        "For example, <code>[\"hello\", \"Hello\"]</code>, should return true because all of the letters in the second string are present in the first, ignoring case.",
-        "The arguments <code>[\"hello\", \"hey\"]</code> should return false because the string \"hello\" does not contain a \"y\".",
-        "Lastly, <code>[\"Alien\", \"line\"]</code>, should return true because all of the letters in \"line\" are present in \"Alien\".",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "蛤蟆可以吃队友，也可以吃对手。",
+        "如果数组第一个字符串元素包含了数组第二个字符串元素的所有字符，函数返回true。",
+        "举例，<code>[\"hello\", \"Hello\"]</code>应该返回true，因为在忽略大小写的情况下，第二个字符串的所有字符都可以在第一个字符串找到。",
+        "<code>[\"hello\", \"hey\"]</code>应该返回false，因为字符串\"hello\"并不包含字符\"y\"。",
+        "<code>[\"Alien\", \"line\"]</code>应该返回true，因为\"line\"中所有字符都可以在\"Alien\"找到。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function mutation(arr) {",
@@ -461,9 +466,10 @@
       "id": "adf08ec01beb4f99fc7a68f2",
       "title": "Falsy Bouncer",
       "description": [
-        "Remove all falsy values from an array.",
-        "Falsy values in JavaScript are <code>false</code>, <code>null</code>, <code>0</code>, <code>\"\"</code>, <code>undefined</code>, and <code>NaN</code>.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "真假美猴王！",
+        "删除数组中的所有假值。",
+        "在JavaScript中，假值有<code>false</code>、<code>null</code>、<code>0</code>、<code>\"\"</code>、<code>undefined</code> 和 <code>NaN</code>。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function bouncer(arr) {",
@@ -494,8 +500,9 @@
       "id": "a39963a4c10bc8b4d4f06d7e",
       "title": "Seek and Destroy",
       "description": [
-        "You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "金克斯的迫击炮！",
+        "实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function destroyer(arr) {",
@@ -527,10 +534,11 @@
       "id": "a24c1a4622e3c05097f71d67",
       "title": "Where do I belong",
       "description": [
-        "Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted.",
-        "For example, <code>where([1,2,3,4], 1.5)</code> should return <code>1</code> because it is greater than <code>1</code> (index 0), but less than <code>2</code> (index 1).",
-        "Likewise, <code>where([20,3,5], 19)</code> should return <code>2</code> because once the array has been sorted it will look like <code>[3,5,20]</code> and <code>19</code> is less than <code>20</code> (index 2) and greater than <code>5</code> (index 1).",
-        "Remember to use <a href=\"//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck\" target=\"_blank\">Read-Search-Ask</a> if you get stuck. Write your own code."
+        "我身在何处？",
+        "先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。",
+        "举例：<code>where([1,2,3,4], 1.5)</code> 应该返回 <code>1</code>。因为1.5大于<code>1</code>(index 0)，但小于<code>2</code>(index 1)。",
+        "同理， <code>where([20,3,5], 19)</code> 应该返回 <code>2</code> 因为数组会先排序为 <code>[3,5,20]</code>，<code>19</code> 小于 <code>20</code> (index 2) 但是大于<code>5</code> (index 1)。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function where(arr, num) {",
@@ -563,11 +571,12 @@
       "id": "56533eb9ac21ba0edf2244e2",
       "title": "Caesars Cipher",
       "description": [
-        "One of the simplest and most widely known <dfn>ciphers</dfn> is a <code>Caesar cipher</code>, also known as a <code>shift cipher</code>. In a <code>shift cipher</code> the meanings of the letters are shifted by some set amount.",
-        "A common modern use is the <a href=\"https://en.wikipedia.org/wiki/ROT13\" target='_blank'>ROT13</a> cipher, where the values of the letters are shifted by 13 places. Thus 'A' &harr; 'N', 'B' &harr;  'O' and so on.",
-        "Write a function which takes a <a href=\"https://en.wikipedia.org/wiki/ROT13\" target='_blank'>ROT13</a> encoded string as input and returns a decoded string.",
-        "All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "一个用的最广泛同时也是最简单的密码就是凯撒密码<code>Caesar cipher</code>，别名移位密码。",
+        "移位密码也就是密码中的字母会按照指定的数量来做移位。",
+        "一个通用的现代案例就是<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>密码，字母会移位13个位置。由'A' &harr; 'N', 'B' &harr;  'O'等等",
+        "写一个<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>函数，实现输入加密字符串，输出解密字符串。",
+        "所有的字母都是大写，不要转化任何非字母形式的字符(例如：空格，标点符号)，遇到这些特殊字符，跳过它们。",
+        "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function rot13(str) { // LBH QVQ VG!",
