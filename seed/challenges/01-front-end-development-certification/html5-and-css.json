@@ -2728,14 +2728,14 @@
       "id": "bad87fee1348bd9aede08718",
       "title": "Use RGB values to Color Elements",
       "description": [
-        "Another way you can represent colors in CSS is by using <code>rgb</code> values.",
-        "The RGB value for black looks like this:",
+        "可以在 CSS 中表示颜色的另一个方法是使用 <code>rgb</code> 值。",
+        "代表黑色的 RGB 值看起来是下面的样子：",
         "<code>rgb(0, 0, 0)</code>",
-        "The RGB value for white looks like this:",
+        "代表白色的 RGB 值看起来是下面的样子：",
         "<code>rgb(255, 255, 255)</code>",
-        "Instead of using six hexadecimal digits like you do with hex code, with <code>rgb</code> you specify the brightness of each color with a number between 0 and 255.",
-        "If you do the math, 16 times 16 is 256 total values. So <code>rgb</code>, which starts counting from zero, has the exact same number of possible values as hex code.",
-        "Let's replace the hex code in our <code>body</code> element's background color with the RGB value for black: <code>rgb(0, 0, 0)</code>"
+        "使用 <code>rgb</code>，你通过 0 至 255 之间的一个数字来指定每种颜色的亮度，而不是像 hex code 那样使用六个十六进制数字。",
+        "如果你做个算术，16 乘以 16 总共有 256 个值，所以从零开始计数的 <code>rgb</code>，和 hex code 一样有完全相同数量的可能数值。",
+        "让我们用黑色的 RGB 值 <code>rgb(0, 0, 0)</code> 替换掉 <code>body</code> 元素背景色的 hex code。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2745,8 +2745,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: Your <code>body</code> element should have a black background.');",
-        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*0\\s*,\\s*0\\s*\\)/ig), 'message: Use <code>rgb</code> to give your <code>body</code> element the <code>background-color</code> of black. For example <code>body { background-color&#58; rgb&#40;0&#44; 0&#44; 0&#41;; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 你的 <code>body</code> 元素具有黑色的背景。');",
+        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*0\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为黑色，例如，<code>body { background-color&#58; rgb&#40;0&#44; 0&#44; 0&#41;; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
