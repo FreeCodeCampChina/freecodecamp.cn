@@ -941,9 +941,9 @@
       "id": "56533eb9ac21ba0edf2244b9",
       "title": "Constructing Strings with Variables",
       "description": [
-        "Sometimes you will need to build a string, <a href=\"https://en.wikipedia.org/wiki/Mad_Libs\" target=\"_blank\">Mad Libs</a> style. By using the concatenation operator (<code>+</code>), you can insert one or more variables into a string you're building.",
+        "有时候您需要创建一个 <a href=\"https://en.wikipedia.org/wiki/Mad_Libs\" target=\"_blank\">Mad Libs（填字）</a> 风格的字符串。通过使用连接运算符（<code> + </ code>），您可以插入一个或多个变量来建立一个字符串。",
         "<h4>Instructions</h4>",
-        "Set <code>myName</code> to a string equal to your name and build <code>myStr</code> with <code>myName</code> between the strings <code>\"My name is \"</code> and <code>\" and I am swell!\"</code>"
+        "把您的名字赋值给变量 <code>myName</code> ，然后把变量 <code>myName</code> 插入到字符串 <code>\"My name is \"</code> 和 <code>\" and I am swell!\"</code>之间，并把得到的新字符串赋值给变量 <code>myStr</code> "
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -987,9 +987,9 @@
       "id": "56533eb9ac21ba0edf2244ed",
       "title": "Appending Variables to Strings",
       "description": [
-        "Just as we can build a string over multiple lines out of string <dfn>literals</dfn>, we can also append variables to a string using the plus equals (<code>+=</code>) operator.",
+        "正如我们可以创建出多行的字符串，我们还可以使用加等号(<code>+=</code>)运算符来追加变量到字符串上。",
         "<h4>Instructions</h4>",
-        "Set <code>someAdjective</code> and append it to <code>myStr</code> using the <code>+=</code> operator."
+        "设置变量 <code>someAdjective</code> 的值，并使用 <code>+=</code> 运算符把它追加到变量 <code>myStr</code> 上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1034,11 +1034,11 @@
       "id": "bd7123c9c448eddfaeb5bdef",
       "title": "Find the Length of a String",
       "description": [
-        "You can find the length of a <code>String</code> value by writing <code>.length</code> after the string variable or string literal.",
+        "您可以通过字符串变量或字符串后面写 <code>.length</code> 来得到 <code>字符串</code> 值的长度。",
         "<code>\"Alan Peter\".length; // 10</code>",
-        "For example, if we created a variable <code>var firstName = \"Charles\"</code>, we could find out how long the string <code>\"Charles\"</code> is by using the <code>firstName.length</code> property.",
+        "例如，我们创建了一个变量 <code>var firstName = \"Charles\"</code>，我们就可以通过使用 <code>firstName.length</code> 属性来得到 <code>\"Charles\"</code> 字符串的长度。",
         "<h4>Instructions</h4>",
-        "Use the <code>.length</code> property to count the number of characters in the <code>lastName</code> variable and assign it to <code>lastNameLength</code>."
+        "使用 <code>.length</code> 属性来得到变量 <code>lastName</code> 的长度，并把它赋值给变量 <code>lastNameLength</code>。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1074,12 +1074,12 @@
       "id": "bd7123c9c549eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the First Character in a String",
       "description": [
-        "<code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string.",
-        "Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as <dfn>Zero-based</dfn> indexing.",
-        "For example, the character at index 0 in the word \"Charles\" is \"C\". So if <code>var firstName = \"Charles\"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.",
+        "<code>括号标记符号</code> 是一种能够在字符串中通过指定 <code>索引</code> 来获得相应的字符的操作。",
+        "大多数现代编程语言，如JavaScript，不像人类那样是从1开始计数的。他们从0开始。这被称为 <dfn>基于零</dfn> 的索引。",
+        "例如, 在单词 \"Charles\" 中索引0上的字符为 \"C\". 所以在 <code>var firstName = \"Charles\"</code> 中，你可以使用 <code>firstName[0]</code> 来获得第一个位置上的字符。",
         "<h4>Instructions</h4>",
-        "Use <dfn>bracket notation</dfn> to find the first character in the <code>lastName</code> variable and assign it to <code>firstLetterOfLastName</code>.",
-        "<strong>Hint</strong><br>Try looking at the <code>firstLetterOfFirstName</code> variable declaration if you get stuck."
+        "使用 <dfn>括号标记符号</dfn> 来得到变量 <code>lastName</code> 中的第一个字符，并赋值给变量 <code>firstLetterOfLastName</code> 。",
+        "<strong>提示</strong><br>如果你卡住了，不妨查看在变量 <code>firstLetterOfFirstName</code> 上是如何声明的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1113,13 +1113,13 @@
       "id": "56533eb9ac21ba0edf2244ba",
       "title": "Understand String Immutability",
       "description": [
-        "In JavaScript, <code>String</code> values are <dfn>immutable</dfn>, which means that they cannot be altered once created.",
-        "For example, the following code:",
+        "在 JavaScript 中，<code>字符串</code> 的值是 <dfn>不可变的</dfn>，这意味着一旦字符串被创建就不能被改变。",
+        "例如，下面的代码：",
         "<blockquote>var myStr = \"Bob\";<br>myStr[0] = \"J\";</blockquote>",
-        "cannot change the value of <code>myStr</code> to \"Job\", because the contents of <code>myStr</code> cannot be altered. Note that this does <em>not</em> mean that <code>myStr</code> cannot be changed, just that the individual characters of a <dfn>string literal</dfn> cannot be changed. The only way to change <code>myStr</code> would be to assign it with a new string, like this:",
+        "是不能把变量 <code>myStr</code> 的值改变成 \"Job\" 的，因为变量 <code>myStr</code> 中的内容是不可变的。注意，这 <em>并不</em> 意味着 <code>myStr</code> 中不能被改变，只是一个 <dfn>string literal</dfn> 的各个字符不能被改变。改变 <code>myStr</code> 中的唯一方法是用一个新的字符串分配给它，就像这样：",
         "<blockquote>var myStr = \"Bob\";<br>myStr = \"Job\";</blockquote>",
         "<h4>Instructions</h4>",
-        "Correct the assignment to <code>myStr</code> to achieve the desired effect."
+        "纠正 <code>myStr</code> 的赋值以达到期望的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1149,11 +1149,11 @@
       "id": "bd7123c9c450eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Nth Character in a String",
       "description": [
-        "You can also use <dfn>bracket notation</dfn> to get the character at other positions within a string.",
-        "Remember that computers start counting at <code>0</code>, so the first character is actually the zeroth character.",
+        "您也可以使用 <dfn>括号标记符号</dfn> 来获得一个字符串中的其他位置的字符。",
+        "请记住，程序是从 <code>0</code> 开始计数，所以第一个字符实际上是零字符。",
         "<h4>Instructions</h4>",
-        "Let's try to set <code>thirdLetterOfLastName</code> to equal the third letter of the <code>lastName</code> variable using bracket notation.",
-        "<strong>Hint</strong><br>Try looking at the <code>secondLetterOfFirstName</code> variable declaration if you get stuck."
+        "让我们使用括号标记符号，把 <code>lastName</code> 变量的第三个字符赋值给 <code>thirdLetterOfLastName</code>。",
+        "<strong>提示</strong><br>如果你卡住了，看看 <code>secondLetterOfFirstName</code> 变量是如何做的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1185,11 +1185,11 @@
       "id": "bd7123c9c451eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Last Character in a String",
       "description": [
-        "In order to get the last letter of a string, you can subtract one from the string's length.",
-        "For example, if <code>var firstName = \"Charles\"</code>, you can get the value of the last letter of the string by using <code>firstName[firstName.length - 1]</code>.",
+        "为了得到一个字符串的最后一个字符，您可以用字符串的长度减去一。",
+        "例如，在 <code>var firstName = \"Charles\"</code> 中，您可以这样操作 <code>firstName[firstName.length - 1]</code> 来得到字符串的最后的一个字符。",
         "<h4>Instructions</h4>",
-        "Use <dfn>bracket notation</dfn> to find the last character in the <code>lastName</code> variable.",
-        "<strong>Hint</strong><br>Try looking at the <code>lastLetterOfFirstName</code> variable declaration if you get stuck."
+        "使用 <dfn>括号标记符号</dfn> 来取得 <code>lastName</code> 变量中的最后一个字符。",
+        "<strong>提示</strong><br>如果你卡住了，不妨看看在 <code>lastLetterOfFirstName</code> 变量上是怎么做的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1221,11 +1221,11 @@
       "id": "bd7123c9c452eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Nth-to-Last Character in a String",
       "description": [
-        "You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.",
-        "For example, you can get the value of the third-to-last letter of the <code>var firstName = \"Charles\"</code> string by using <code>firstName[firstName.length - 3]</code>",
+        "我们用于检索获取最后一个字符的字符串的原则，同样的，也可以用这套原则来检索获取第N个到最后一个字符。",
+        "例如，您可以这样 <code>firstName[firstName.length - 3]</code> 操作来获得 <code>var firstName = \"Charles\"</code> 字符串中的倒数第三个字符。",
         "<h4>Instructions</h4>",
-        "Use <dfn>bracket notation</dfn> to find the second-to-last character in the <code>lastName</code> string.",
-        "<strong>Hint</strong><br>Try looking at the <code>thirdToLastLetterOfFirstName</code> variable declaration if you get stuck."
+        "使用 <dfn>括号标记符号</dfn> 来获得 <code>lastName</code> 字符串中的倒数第二个字符。",
+        "<strong>提示</strong><br>如果你卡住了，不妨看看 <code>thirdToLastLetterOfFirstName</code> 变量是如何声明操作的。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1257,10 +1257,10 @@
       "id": "56533eb9ac21ba0edf2244bb",
       "title": "Word Blanks",
       "description": [
-        "We will now use our knowledge of strings to build a \"<a href='https://en.wikipedia.org/wiki/Mad_Libs' target='_blank'>Mad Libs</a>\" style word game we're calling \"Word Blanks\". You will create an (optionally humorous) \"Fill in the Blanks\" style sentence.",
-        "You will need to use string operators to build a new string, <code>result</code>, using the provided variables: <code>myNoun</code>, <code>myAdjective</code>, <code>myVerb</code>, and <code>myAdverb</code>.",
-        "You will also need to provide additional strings, which will not change, in between the provided words.",
-        "We have provided a framework for testing your results with different words. The tests will run your function with several different inputs to make sure all of the provided words appear in the output, as well as your extra strings."
+        "现在我们将使用我们的字符串的知识，建立一个\"<a href='https://en.wikipedia.org/wiki/Mad_Libs' target='_blank'>填字</a>\"风格的文字游戏，我们称之为“字空白”。您将创建一个（可选的）“在空白填充”样式的句子。“",
+        "通过使用提供的变量：<code>myNoun</code>，<code>myAdjective</code>，<code>myVerb</code>，和 <code>myAdverb</code>，来创建一个新的字符串 <code>result</code>。",
+        "此外，在所提供的词之间，您还需要提供额外的字符串。",
+        "我们提供了对不同单词得到的结果进行测试的框架。该测试将用多个不同的输入来运行你的函数，以确保所有的提供的单词，以及你的额外字符串能够输出。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
