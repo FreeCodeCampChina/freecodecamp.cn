@@ -2842,8 +2842,8 @@
       "id": "bad82fee1348bd9aedf08721",
       "title": "Use RGB to Mix Colors",
       "description": [
-        "Just like with hex code, you can mix colors in RGB by using combinations of different values.",
-        "Change the <code>body</code> element's background color to the RGB value orange: <code>rgb(255, 165, 0)</code>"
+        "就像使用 hex code 一样，你可以使用不同数值的组合在 RGB 中混合出各种颜色。",
+        "将 <code>body</code> 元素的背景色修改为橙色的 RGB 值：<code>rgb(255, 165, 0)</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2853,8 +2853,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 165, 0)\", 'message: Your <code>body</code> element should have an orange background.');",
-        "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*165\\s*,\\s*0\\s*\\)/ig), 'message: Use <code>rgb</code> to give your <code>body</code> element the <code>background-color</code> of orange. For example <code>body { background-color&#58; rgb&#40;255&#44; 165&#44; 0&#41;; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 165, 0)\", 'message: 你的 <code>body</code> 元素应该具有橙色的背景。');",
+        "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*165\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为橙色，例如 <code>body { background-color&#58; rgb&#40;255&#44; 165&#44; 0&#41;; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
