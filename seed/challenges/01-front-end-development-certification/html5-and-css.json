@@ -2745,8 +2745,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 你的 <code>body</code> 元素具有黑色的背景。');",
-        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*0\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为黑色，例如，<code>body { background-color&#58; rgb&#40;0&#44; 0&#44; 0&#41;; }</code>。');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 0, 0)\", 'message: 你的 <code>body</code> 元素应该具有黑色的背景。');",
+        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*0\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为黑色，例如 <code>body { background-color&#58; rgb&#40;0&#44; 0&#44; 0&#41;; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2759,8 +2759,8 @@
         "<code>rgb(0, 0, 0)</code>",
         "The RGB value for white looks like this:",
         "<code>rgb(255, 255, 255)</code>",
-        "Instead of using six hexadecimal digits like you do with hex code, with <code>rgb</code> you specify the brightness of each color with a number between 0 and 255.",
-        "Change the <code>body</code> element's background color from the RGB value for black to the <code>rgb</code> value for white: <code>rgb(255, 255, 255)</code>"
+        "使用 <code>rgb</code>，你通过 0 至 255 之间的一个数字来指定每种颜色的亮度，而不是像 hex code 那样使用六个十六进制数字。",
+        "把 <code>body</code> 元素的背景色从黑色的 RGB 值修改为白色的 <code>rgb</code> 值 <code>rgb(255, 255, 255)</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2770,8 +2770,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: Your <code>body</code> should have a white background.');",
-        "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*255\\s*,\\s*255\\s*\\)/ig), 'message: Use <code>rgb</code> to give your <code>body</code> element the <code>background-color</code> of white. For example <code>body { background-color&#58; rgb&#40;255&#44; 255 &#44; 255&#41;; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: 你的 <code>body</code> 应该具有白色的背景。');",
+        "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*255\\s*,\\s*255\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为白色，例如 <code>body { background-color&#58; rgb&#40;255&#44; 255 &#44; 255&#41;; }</code>');"
       ],
       "type": "waypoint",
       "challengeType": 0
