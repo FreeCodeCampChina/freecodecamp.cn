@@ -2770,7 +2770,7 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: 你的 <code>body</code> 应该具有白色的背景。');",
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 255, 255)\", 'message: 你的 <code>body</code> 元素应该具有白色的背景。');",
         "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*255\\s*,\\s*255\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为白色，例如 <code>body { background-color&#58; rgb&#40;255&#44; 255 &#44; 255&#41;; }</code>。');"
       ],
       "type": "waypoint",
@@ -2792,7 +2792,7 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 0, 0)\", 'message: 你的 <code>body</code> 应该具有红色的背景。');",
+        "assert($(\"body\").css(\"background-color\") === \"rgb(255, 0, 0)\", 'message: 你的 <code>body</code> 元素应该具有红色的背景。');",
         "assert(code.match(/rgb\\s*\\(\\s*255\\s*,\\s*0\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为红色，例如 <code>body { background-color&#58; rgb&#40;255&#44; 0&#44; 0&#41;; }</code>。');"
       ],
       "type": "waypoint",
@@ -2802,7 +2802,7 @@
       "id": "bad80fee1348bd9aedf08723",
       "title": "Use RGB to Color Elements Green",
       "description": [
-        "Now change the <code>body</code> element's background color to the <code>rgb</code> value green: <code>rgb(0, 255, 0)</code>"
+        "现在将你的 <code>body</code> 元素的背景色修改为绿色的 <code>rgb</code> 值：<code>rgb(0, 255, 0)</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2812,8 +2812,8 @@
         "</style>"
       ],
       "tests": [
-        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 255, 0)\", 'message: Your <code>body</code> element should have a green background.');",
-        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*255\\s*,\\s*0\\s*\\)/ig), 'message: Use <code>rgb</code> to give your <code>body</code> element the <code>background-color</code> of green. For example <code>body { background-color&#58; rgb&#40;0&#44; 255&#44; 0&#41;; }</code>');"
+        "assert($(\"body\").css(\"background-color\") === \"rgb(0, 255, 0)\", 'message: 你的 <code>body</code> 元素应该具有绿色的背景。');",
+        "assert(code.match(/rgb\\s*\\(\\s*0\\s*,\\s*255\\s*,\\s*0\\s*\\)/ig), 'message: 使用 <code>rgb</code> 将你的 <code>body</code> 元素的 <code>background-color</code> 设置为绿色，例如 <code>body { background-color&#58; rgb&#40;0&#44; 255&#44; 0&#41;; }</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
