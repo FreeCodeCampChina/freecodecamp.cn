@@ -8,15 +8,19 @@
       "id": "bd7123c8c441eddfaeb5bdef",
       "title": "Say Hello to HTML Element",
       "description": [
-        "欢迎来到FreeCodeCamp的第一个编码挑战",
-        "你可以在右边的代码编辑器中编辑代码",
-        "你看到<code>&#60;h1&#62;Hello&#60;/h1&#62;</code>了吗? 那是个HTML<code>元素</code>。",
-        "大部分HTML元素都有一个<code>开始标记</code>和一个<code>结束标记</code>.",
+        "欢迎来到FreeCodeCamp的第一个编码挑战！",
+        "整个课程的设计围绕两个原则：所见即所得、循序渐进。",
+        "界面简洁直观，左边是课程区、中间是编辑区、右边是结果区。",
+        "HTML是英文Hper Text Markup Language(超文本标记语言)的缩写。",
+        "你看到<code>&#60;h1&#62;Hello&#60;/h1&#62;</code>了吗? ",
+        "<code>h1</code>就是一个HTML<code>元素</code>，<code>h1</code>是<code>header1</code>的简写，意思是一级标题。",
+        "大部分元素都有一个<code>开始标记</code>和一个<code>结束标记</code>。",
         "开始标记像这样：<code>&#60;h1&#62;</code>",
         "结束标记像这样：<code>&#60;/h1&#62;</code>",
         "开始标记和结束标记的唯一区别就是结束标记多了一个<code>/</code>。",
-        "每个挑战都有测试，你可以点击Run按钮，如果你测试通过，你将进入下一章节。",
-        "为了通过这个挑战，请更改<code>h1</code>标签中的Hello为Hello World，然后点击Run。"
+        "每个挑战都有测试，当你完成任务后可以点击<code>Run tests</code>，如果你通过测试，你将获得学习积分。",
+        "如果你点击<code>Run tests</code>后没反应，说明测试没通过，用鼠标拖动课程区的滚动条到最下面，可以看到你没有通过测试的原因。",
+        "为了通过这个挑战，请更改<code>h1</code>标签中的Hello为Hello World，然后点击<code>Run tests</code>。"
       ],
       "challengeSeed": [
         "<h1>Hello</h1>"
@@ -31,19 +35,19 @@
       "id": "bad87fee1348bd9aedf0887a",
       "title": "Headline with the h2 Element",
       "description": [
-        "通过接下来的挑战，我们会构建一个类似于下图的HTML5 app：",
+        "接下来我们会设计一个类似于下图的页面：",
         "<a href=\"//i.imgur.com/jOc1JF1.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/jOc1JF1.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Cat Photo App\"></a>",
-        "标题通常是组织网站结构的头部分，h1是主标题(也就是一级标题)，h2是副标题，h3,h4,h5,h6依次递减标题字体的大小。",
-        "在h1一级标题下面创建一个h2二级标题，标题内容是：CatPhotoApp。"
+        "标题通常是网站结构的头部分，h1是主标题(一级标题)，h2是副标题，h3、h4、h5、h6依次递减标题字体的大小。",
+        "在h1主标题下面创建一个h2副标题，标题内容是：CatPhotoApp。"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>"
       ],
       "tests": [
         "assert(($(\"h2\").length > 0), 'message: 创建一个 <code>h2</code> 元素');",
-        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: 确保你的 <code>h2</code> 元素有一个结束标记.');",
-        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: 你的 <code>h2</code> 元素应该包含这个文本 \"CatPhotoApp\".');",
-        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: 你的 <code>h1</code> 元素应该包含这个文本 \"Hello World\".');"
+        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: 确保你的 <code>h2</code> 元素有一个结束标记');",
+        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: 你的 <code>h2</code> 元素应该包含这个文本 \"CatPhotoApp\"');",
+        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: 你的 <code>h1</code> 元素应该包含这个文本 \"Hello World\"');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -61,8 +65,8 @@
       ],
       "tests": [
         "assert(($(\"p\").length > 0), 'message: 创建一个 <code>p</code> 元素.');",
-        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: 你的 <code>p</code> 元素应该包含这个文本 \"Hello Paragraph\".');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的 <code>p</code> element 有结束标记.');"
+        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: 你的 <code>p</code> 元素应该包含这个文本 \"Hello Paragraph\"');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的 <code>p</code> element 有结束标记');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -71,12 +75,12 @@
       "id": "bad87fee1348bd9aedf08802",
       "title": "Uncomment HTML",
       "description": [
-        "注释有两个作用：",
-        "1、你想给你的代码添加一些说明，方便团队合作或日后自己查看，但又不想影响代码本身。",
-        "2、你就是想让某一段代码不起作用，但又不想删除这一段代码。",
-        "怎么办？用注释吧。",
+        "注释有两个功能：",
+        "1、想让某一段代码不起作用，但你又不想删除这一段代码。",
+        "2、给你的代码添加一些说明，方便团队合作或日后自己查看，但又不想影响代码本身。",
+        "我们先学会注释的第一个功能。",
         "删除<code>&#60;!--</code>和<code>--&#62;</code>来去掉注释。",
-        "试着先把一级标题、二级标题、段落都注释掉。"
+        "挑战：试着先把一级标题、二级标题、段落都注释掉。"
       ],
       "challengeSeed": [
         "<!--",
@@ -126,17 +130,18 @@
       "id": "bad87fee1348bd9aedf08833",
       "title": "Fill in the Blank with Placeholder Text",
       "description": [
-        "Web开发者通常用<code>lorem ipsum text</code>来做占位符，",
+        "Web开发者通常用<a href='http://www.ruanyifeng.com/blog/2009/04/lorem_ipsum.html'>lorem ipsum text</a>来做占位符，占位符就是占着位置的一些文字，没有实际意义。",
         "为什么叫<code>lorem ipsum text</code>呢?",
-        "是因为它是古罗马西塞罗谚语的前两个单词。",
+        "是因为<code>lorem ipsum</code>是古罗马西塞罗谚语的前两个单词。",
         "从公元16世纪开始<code>lorem ipsum text</code>就被当做占位符了，这种传统延续到了互联网时代。",
-        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，哈哈。因为我们要创建CatPhotoApp，所以让我们使用被称作<code>kitty ipsum text</code>的东东来填充页面内容。",
+        "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，是不是很巧合，哈哈。",
+        "因为我们要创建CatPhotoApp，所以让我们使用被称作<code>kitty ipsum text</code>的东东来填充页面内容。",
         "把<code>p</code>元素中的文本替换为这段kitty ipsum text的前几个单词：<code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
         "",
-        "<h2>CatPhotoApp</h2>",
+        "<h2>CatPhotoApp1</h2>",
         "",
         "<p>Hello Paragraph</p>"
       ],
@@ -150,8 +155,8 @@
       "id": "bad87fed1348bd9aedf08833",
       "title": "Delete HTML Elements",
       "description": [
-        "我们的手机没有多少纵向空间。",
-        "让我们来删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
+        "手机的屏幕空间是有限的。",
+        "让我们删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
         "删除你的<code>h1</code>元素以简化视图。"
       ],
       "challengeSeed": [
@@ -174,8 +179,8 @@
       "title": "Change the Color of Text",
       "description": [
         "现在让我们来改变某些文本的颜色。",
-        "我们可以通过修改<code>h2</code>元素的<code>style</code>来达到目的。",
-        "负责颜色（color）的样式（style）是color样式。",
+        "我们可以通过修改<code>h2</code>元素的<code>style</code>(样式)来达到目的。",
+        "样式的属性有很多，其中color用来指定颜色。",
         "以下是如何将你的<code>h2</code>元素的文本颜色设置为蓝色的方法：",
         "<code>&#60;h2 style=\"color: blue\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
         "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
@@ -195,10 +200,10 @@
       "id": "bad87fee1348bd9aedf08805",
       "title": "Use CSS Selectors to Style Elements",
       "description": [
-        "有几百个可以用于改变你的页面外观的CSS<code>属性</code>。",
-        "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就赋予独立的<code>h2</code>元素<code>inline style</code>.",
-        "这是为元素添加样式的一种途径，但是更好的途径是使用意为<code>层叠样式表（Cascading Style Sheets）</code>的<code>CSS</code>。",
-        "在你代码的最顶端，创建一个如下的<code>style</code>元素：",
+        "<code>style</code>样式的属性多达几百个，但常用的也就几十个。",
+        "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就给<code>h2</code>元素<code>添加了inline style(内联样式)</code>。",
+        "内联样式是为元素添加样式的一种途径，但是更好的途径是使用层叠样式表<code>CSS</code>（Cascading Style Sheets）。",
+        "在代码的最顶端，创建一个如下的<code>style</code>元素：",
         "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
         "在这个style元素内, 你可以为所有的<code>h2</code>元素创建一个<code>CSS选择器</code>。比如，如果你想要将所有的<code>h2</code>元素设置为红色, 你的样式元素应该看起来这样：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h2 {color: red;}<br>&#60;/style&#62;</blockquote>",

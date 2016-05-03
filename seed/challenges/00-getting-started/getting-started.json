@@ -11,31 +11,31 @@
         [
           "//i.imgur.com/6ibIavQ.jpg",
           "A picture of Free Code Camp's 4 benefits: Get connected, Learn JavaScript, Build your Portfolio, Help nonprofits",
-          "欢迎来到Free Code Camp，我们是帮助你学习编程的开源社区。",
+          "欢迎来到Free Code Camp，我们是帮助你自学编程的开源社区。",
           ""
         ],
         [
           "//i.imgur.com/Elb3dfj.jpg",
           "A screenshot of some of our campers coding together in Toronto.",
-          "学习编码是很难的。要想取得成功，就需要大量的实践和支持。这就是为什么我们创建了一个严格的课程和支持团体。",
+          "自学编程是不是一件容易的事情。要想取得成功，需要大量的实践和互助。这就是为什么我们创建了一个严格的课程和互助团体。",
           ""
         ],
         [
           "//i.imgur.com/D7Y5luw.jpg",
           "A graph of the rate of job growth against growth in computer science degree graduates. There are 1.4 million jobs and only 400 thousand people to fill them.",
-          "每年都有成千上万的编码工作空缺着，对程序员的需求每年持续增长。",
+          "每年都有成千上万的编程工作空缺着，对程序员的需求每年持续增长。",
           ""
         ],
         [
           "//i.imgur.com/WD3STY6.jpg",
           "Photos of three campers who've gotten jobs after learning to code at Free Code Camp.",
-          "Free Code Camp是开启你的程序员生涯的有效途径。事实上，没有人完成了整个课程，因为营员在毕业前一般都能找到工作。",
+          "FreeCodeCamp是开启你的程序员生涯的最有效路径。事实上，没有人完成了整个课程，因为营员在毕业前一般都能找到工作。",
           ""
         ],
         [
           "//i.imgur.com/vLNso6h.jpg",
           "An illustration showing that you will learn HTML5, CSS3, JavaScript, Databases, Git, Node.js, React and D3.",
-          "我们会通过几百个编码挑战来让你逐渐掌握这些Web开发技术。",
+          "我们会通过几百个编程挑战来让你逐渐掌握这些Web开发技术。",
           ""
         ],
         [
@@ -47,7 +47,7 @@
         [
           "//i.imgur.com/pbW7K5S.jpg",
           "An image of showing our front end, back end, and data visualization certifications (400 hours each), our nonprofit projects (800 hours), and interview prep (80 hours) for a total of 2,080 hours of coding experience.",
-          "全部通过我们的课程挑战可以获得四个证书，这些证书非常受到企业雇主的认可。前三个证书每个大约花费400个小时，最后一个证书将花费800个小时，我们推荐你按照顺序完成他们，但是你也可以自己跳跃。",
+          "全部通过我们的课程挑战可以获得四个证书，这些证书非常受到企业的认可。前三个证书每个大约花费400个小时，最后一个证书将花费800个小时，我们推荐你按照顺序完成他们，当然你也可以自由跳跃。",
           ""
         ],
         [
@@ -77,7 +77,7 @@
         [
           "//i.imgur.com/PDGQ9ZM.jpg",
           "An image of campers building projects together in a cafe in Seoul.",
-          "如果你完成了2080个小时的挑战和项目，你会获得我们的全栈开发证书。我们给你提供了免费的代码面试练习和工作机会信息，满足你面试和找工作的需求。",
+          "如果你完成了2080个小时的挑战和项目，你会获得我们的全栈开发证书。我们还给你提供了免费的代码面试练习和工作机会信息，满足你面试和找工作的需求。",
           ""
         ]
       ],
@@ -93,31 +93,31 @@
         [
           "//i.imgur.com/EAR7Lvh.jpg",
           "A screenshot of our one of our Gitter chat rooms.",
-          "在我们开始编码前，让我们先加入FreeCodeCamp聊天室，你可以在这里闲逛、提问或者寻找营友一起结对编程，当然首先你得有一个GitHub账户。",
+          "在我们开始编程前，让我们先加入FreeCodeCamp聊天室，你可以在这里闲逛、提问或者寻找营友一起结对编程，当然首先你得有一个GitHub账户。",
           ""
         ],
         [
           "//i.imgur.com/n6GeSEm.gif",
           "A gif showing you to click the link below to go to GitHub. Fill in the necessary fields and click submit. Then check your email inbox for an email from GitHub so you can verify your account.",
-          "点击下方的按钮可以打开GitHub网站，通过填写表格可以创建一个GitHub账户。确保你的邮箱是真实的，然后点击检查你的邮箱。打开你的邮箱后，找到最新的邮件，点击验证邮箱地址即可。 <br><div class=\"small\">提示：如果你已经有GitHub账户，你可以把新打开的页面关闭掉，然后点击前进。我们移除了跳过按钮，因为很多人仅仅是重复点击，而没有做这些重要的步骤。</div>",
+          "点击下方的按钮可以打开GitHub网站，通过填写表格来创建一个GitHub账户。确保你的邮箱是真实的，然后打开你的邮箱，找到最新的邮件，点击验证邮箱地址即可。 <br><div class=\"small\">提示：如果你已经有GitHub账户，请手动跳过这一步。</div>",
           "https://github.com/join"
         ],
         [
           "//i.imgur.com/hFqAEr8.gif",
           "A gif showing you how to click the profile image in the upper right hand corner of GitHub. Upload a photo of yourself or you will continue to use the automatically generated pixel art. Then fill in the remaining form fields and click submit.",
-          "点击GitHub右上角的像素艺术头像，然后选择设置。上传一张你自己的图片，最好是你的最帅的图片，以便其他营员在聊天室一眼就认出你来，为了让更多人了解你，你还可以添加你所在的城市和你的姓名。",
+          "点击GitHub右上角的像素头像，然后选择设置。上传一张你自己的照片，最好是你最帅的照片，以便其他营员在聊天室一眼就认出你来，为了让更多人了解你，你还可以添加你所在的城市和你的姓名。",
           "https://github.com/settings/profile"
         ],
         [
           "//i.imgur.com/pYk0wOk.gif",
           "A gif showing how you can star a GitHub repo.",
-          "打开FreeCodeCamp的开源仓库，这里是我们的志愿者一起协作搭建FreeCodeCamp的地方。你可以\"star\"我们的仓库，\"star\"在GitHub的意思就是收藏。",
+          "打开FreeCodeCamp的开源仓库，这里是我们的志愿者一起协作搭建FreeCodeCamp的地方。你可以\"Star\"我们的仓库，\"star\"在GitHub的意思就是赞👍。",
           "https://github.com/huluoyang/freecodecamp.cn"
         ],
         [
           "//i.imgur.com/OmRmLB4.gif",
           "A gif showing you how to click the link below to go to our chat room and click the \"sign in with GitHub\" button. Then you can click into the text input field and type a message to your fellow campers.",
-          "现在你已经有GitHub账户了，你可以加入通过登录GitHub来加入我们的聊天室。通过\"Hello World\"的方式向大家介绍你自己，你是如何发现FreeCodeCamp的，你为什么想要去学编程。",
+          "现在你已经有GitHub账户了，你可以通过登录GitHub来加入我们的聊天室。通过\"Hello World\"的方式向大家介绍你自己，你是如何发现FreeCodeCamp的，你为什么想要学编程。",
           "https://gitter.im/FreeCodeCamp/chinese"
         ],
         [
@@ -135,7 +135,7 @@
         [
           "//i.imgur.com/vDTMJSh.gif",
           "A gif showing that you can tab back and forth between challenges and our chat rooms.",
-          "在你通过我们的挑战的过程中，请保持聊天室常开。这样当你迷惑了可以及时询问获得帮助，还可以在休息时和其他营员聊聊天。",
+          "在你通过我们的挑战的过程中，请保持聊天室常开。这样当你困惑了可以及时询问来获得帮助，还可以在休息时和其他营员聊聊天。",
           ""
         ],
         [
@@ -157,7 +157,7 @@
         [
           "//i.imgur.com/tP2ccTE.gif",
           "A gif showing how you can click your profile image in your upper right hand corner to your code portfolio and connect GitHub.",
-          "点击右上角的头像，切换到代码记录区。你可以通过链接GitHub账户来同步你的代码提交。你的代码记录显示了你的学习进度和获得了多少奖励积分。当你完成了挑战或者在聊天室帮助同学解答问题时，你会获得奖励积分。如果你连续一周都获得了积分，你会获得一条彩带。",
+          "点击右上角的头像，切换到代码记录区。你可以通过连接GitHub账户来同步你的代码提交。你的代码记录区显示了你的学习进度和获得了多少奖励积分。当你完成了挑战或者在聊天室帮助同学解答问题时，你会获得奖励积分。如果你连续一周都获得了积分，你会获得一条彩带。",
           ""
         ]
       ],
@@ -173,7 +173,7 @@
         [
           "//i.imgur.com/XugIMb4.jpg",
           "A picture of some of our campers meeting in a local cafe.",
-          "我们的营地是Facebook群组，它可以帮助你遇到和你同一个城市的营员。你可以用这些群组去计划或者参加“咖啡代码”活动，在那里你会遇到更多的营员，他们经常一边喝开发，一边写代码。",
+          "我们的营地是Facebook群组，它可以帮助你遇到和你同一个城市的营员。你可以用这些群组去策划或者参加“coffee code”活动，在那里你会遇到更多的营员，他们经常一边喝咖啡，一边写代码。",
           ""
         ],
         [
@@ -195,19 +195,19 @@
         [
           "//i.imgur.com/lzKvwU2.jpg",
           "The text \"Coding is hard.\"",
-          "编程是个困难的事情，你总会遇到困惑。即使是有经验的高手也会困惑，关键点是他们懂得如何去除困惑。",
+          "编程是个困难的事情，你总会遇到困惑。即使是有经验的高手也会困惑，关键点是他们懂得如何解决困惑。",
           ""
         ],
         [
           "//i.imgur.com/sfsidp6.jpg",
           "The text \"It takes time to get good at coding.\"",
-          "要想成为编程高手需要花费大量的时间，你不可能仅仅学习三个月就打败象棋大师，更不要期望学习编程三个月就可以构建下一个Facebook。",
+          "要想成为编程高手需要花费大量的时间，你不可能学习象棋三个月就打败象棋大师，更不要期望学习编程三个月就可以构建下一个Facebook。",
           ""
         ],
         [
           "//i.imgur.com/EoTfOyC.jpg",
           "An image of some of our campers coding together in Montreal.",
-          "每天坚持练习编码，和其他写代码的人一起交流，你将会成为一个准程序猿。",
+          "每天坚持练习编程，和其他写代码的人一起交流，你将会成为一个准程序猿。",
           ""
         ],
         [
@@ -237,7 +237,7 @@
         [
           "//i.imgur.com/ZRgXraT.gif",
           "A gif showing us scrolling through our challenge map.",
-          "现在你已经准备好开始编程之路了，请点击页面上面的\"学习路径\"开始挑战。我们会持续更新课程内容的，所以看到章节变化别感到奇怪，Keep Moving，永不止步。",
+          "现在你已经准备好开始编程之路了，请点击页面上面的\"学习路径\"开始挑战。我们会持续更新课程内容的，所以看到章节变化别感到奇怪，Keep Moving、永不止步！",
           ""
         ]
       ],
