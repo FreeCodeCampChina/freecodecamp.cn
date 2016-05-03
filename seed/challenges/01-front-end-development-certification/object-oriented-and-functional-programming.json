@@ -86,9 +86,9 @@
         "var Car = function() {\n  this.wheels = 4;\n  this.engines = 1;\n  this.seats = 1;\n};\n\nvar myCar = new Car();\n\nvar MotorBike = function() {\n  this.engines = 1;\n  this.seats = 1;\n  this.wheels = 4;\n};\n\nvar myMotorBike = new MotorBike();"
       ],
       "tests": [
-        "assert(typeof (new MotorBike()).engines === 'number', 'message: <code>MotorBike</code> should have a <code>engines</code> attribute set to a number.');",
-        "assert(typeof (new MotorBike()).wheels === 'number', 'message: <code>MotorBike</code> should have a <code>wheels</code> attribute set to a number.');",
-        "assert(typeof (new MotorBike()).seats === 'number', 'message: <code>MotorBike</code> should have a <code>seats</code> attribute set to a number.');"
+        "assert(typeof (new MotorBike()).engines === 'number', 'message: <code>MotorBike</code> 应该有一个 <code>engines</code> 属性，且属性值为数字。');",
+        "assert(typeof (new MotorBike()).wheels === 'number', 'message: <code>MotorBike</code> 应该有一个 <code>wheels</code> 属性，且属性值为数字。');",
+        "assert(typeof (new MotorBike()).seats === 'number', 'message: <code>MotorBike</code> 应该有一个 <code>seats</code> 属性，且属性值为数字。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
