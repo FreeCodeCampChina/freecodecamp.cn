@@ -144,9 +144,9 @@
       ],
       "tests": [
         "assert((new Car()).wheels === 4, 'message:  <strong>构造函数</strong> 中的 <code>wheels</code> 属性的值应该还是 <code>4</code> 不变。');",
-        "assert(typeof (new Car()).nickname === 'undefined', 'message: There should not be a property <code>nickname</code> in the object <code>constructor</code>.');",
-        "assert(myCar.wheels === 4, 'message: The property <code>wheels</code> of <code>myCar</code> should equal <code>4</code>.');",
-        "assert(typeof myCar.nickname === 'string', 'message: The property <code>nickname</code> of <code>myCar</code> should be a string.');"
+        "assert(typeof (new Car()).nickname === 'undefined', 'message: <strong>构造函数</strong> 中不应该有 <code>nickname</code> 属性。');",
+        "assert(myCar.wheels === 4, 'message: <code>myCar</code> 中的 <code>wheels</code> 属性的值应该等于 <code>4</code> ');",
+        "assert(typeof myCar.nickname === 'string', 'message: <code>myCar</code> 中的 <code>nickname</code> 属性应该是一个字符串(String)。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
