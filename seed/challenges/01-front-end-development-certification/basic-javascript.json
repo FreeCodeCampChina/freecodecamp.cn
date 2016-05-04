@@ -1257,7 +1257,7 @@
       "id": "56533eb9ac21ba0edf2244bb",
       "title": "Word Blanks",
       "description": [
-        "现在我们将使用我们的字符串的知识，建立一个\"<a href='https://en.wikipedia.org/wiki/Mad_Libs' target='_blank'>填字</a>\"风格的文字游戏，我们称之为“字空白”。您将创建一个（可选的）“在空白填充”样式的句子。“",
+        "现在我们将使用我们的字符串的知识，建立一个\"<a href='https://en.wikipedia.org/wiki/Mad_Libs' target='_blank'>填字</a>\"风格的文字游戏，我们称之为“单词空白”。您将创建一个（可选的）“在空白填充”样式的句子。“",
         "通过使用提供的变量：<code>myNoun</code>，<code>myAdjective</code>，<code>myVerb</code>，和 <code>myAdverb</code>，来创建一个新的字符串 <code>result</code>。",
         "此外，在所提供的词之间，您还需要提供额外的字符串。",
         "我们提供了对不同单词得到的结果进行测试的框架。该测试将用多个不同的输入来运行你的函数，以确保所有的提供的单词，以及你的额外字符串能够输出。"
@@ -1295,11 +1295,11 @@
       "id": "bd7993c9c69feddfaeb8bdef",
       "title": "Store Multiple Values in one Variable using JavaScript Arrays",
       "description": [
-        "With JavaScript <code>array</code> variables, we can store several pieces of data in one place.",
-        "You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:<br><code>var sandwich = [\"peanut butter\", \"jelly\", \"bread\"]</code>.",
+        "使用 JavaScript <code>数组</code> 变量，我们可以在同一个地方存储多项数据。",
+        "你以左方括号开始声明一个数组，以右方括号结束它，并把每个条目之间用逗号隔开，就像这样：<br><code>var sandwich = [\"peanut butter\", \"jelly\", \"bread\"]</code>。",
         "<h4>Instructions</h4>",
-        "Create a new array called <code>myArray</code> that contains both a <code>string</code> and a <code>number</code> (in that order).",
-        "<strong>Hint</strong><br>Refer to the example code in the text editor if you get stuck."
+        "创建一个包含一个 <code>字符串</code> 和一个 <code>数字</code> 的数组 <code>myArray</code>。",
+        "<strong>提示</strong><br>如果你卡住，请参考文本编辑器中的示例代码。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1327,9 +1327,9 @@
       "id": "cf1111c1c11feddfaeb7bdef",
       "title": "Nest one Array within Another Array",
       "description": [
-        "You can also nest arrays within other arrays, like this: <code>[[\"Bulls\", 23], [\"White Sox\", 45]]</code>. This is also called a <dfn>Multi-dimensional Array<dfn>.",
+        "您也可以在数组中包含其他数组，就像这样: <code>[[\"Bulls\", 23], [\"White Sox\", 45]]</code>。这被称为一个 <dfn>多维数组<dfn>。",
         "<h4>Instructions</h4>",
-        "Create a nested array called <code>myArray</code>."
+        "创建一个多维数组命名为 <code>myArray</code>。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1355,12 +1355,12 @@
       "id": "56bbb991ad1ed5201cd392ca",
       "title": "Access Array Data with Indexes",
       "description": [
-        "We can access the data inside arrays using <code>indexes</code>.",
-        "Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use <dfn>zero-based</dfn> indexing, so the first element in an array is element <code>0</code>.",
-        "<strong>Example</strong>",
-        "<blockquote>var array = [1,2,3];<br>array[0]; // equals 1<br>var data = array[1];  // equals 2</blockquote>",
+        "我们可以通过数组索引来访问使用数组中的数据。",
+        "数组索引的使用与字符串索引一样，不同的是，通过字符串的索引得到的是一个字符，通过数组索引得到的是一个条目。与字符串类似，数组也是 <dfn>基于零</dfn> 的索引，因此数组的第一个元素的索引是 <code>0</code>。",
+        "<strong>例如</strong>",
+        "<blockquote>var array = [1,2,3];<br>array[0]; // 等于 1<br>var data = array[1];  // 等于 2</blockquote>",
         "<h4>Instructions</h4>",
-        "Create a variable called <code>myData</code> and set it to equal the first value of <code>myArray</code>."
+        "创建一个名为 <code>myData</code> 的变量，并把 <code>myArray</code> 的第一个索引上的值赋给它。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1389,11 +1389,11 @@
       "id": "cf1111c1c11feddfaeb8bdef",
       "title": "Modify Array Data With Indexes",
       "description": [
-        "Unlike strings, the entries of arrays are <dfn>mutable</dfn> and can be changed freely.",
-        "<strong>Example</strong>",
-        "<blockquote>var ourArray = [3,2,1];<br>ourArray[0] = 1; // equals [1,2,1]</blockquote>",
+        "不像字符串，数组的项（条目）是可变的，并且可以自由地改变。",
+        "<strong>例如</strong>",
+        "<blockquote>var ourArray = [3,2,1];<br>ourArray[0] = 1; // ourArray等于 [1,2,1]</blockquote>",
         "<h4>Instructions</h4>",
-        "Modify the data stored at index <code>0</code> of <code>myArray</code> to a value of <code>3</code>."
+        "修改数值 <code>myArray</code> 中索引0上的值为 <code>3</code>。"
       ],
       "challengeSeed": [
         "// Example",
