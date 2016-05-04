@@ -1424,11 +1424,11 @@
       "id": "56592a60ddddeae28f7aa8e1",
       "title": "Access Multi-Dimensional Arrays With Indexes",
       "description": [
-        "One way to think of a <dfn>multi-dimensional</dfn> array, is as an <em>array of arrays</em>. When you use brackets to access your array, the first set of bracket refers to the entries in the outer-most array, and each subsequent level of brackets refers to the next level of entries inside.",
-        "<strong>Example</strong>",
-        "<blockquote>var arr = [<br>    [1,2,3],<br>    [4,5,6],<br>    [7,8,9],<br>    [[10,11,12], 13, 14]<br>];<br>arr[0]; // equals [1,2,3]<br>arr[1][2]; // equals 6<br>arr[3][0][1]; // equals 11</blockquote>",
+        "可以把 <dfn>多维</dfn> 数组看作成是一个 <em>数组中的数组</em>。当使用括号去访问数组的时候，第一套括号是指最外层数组中的条目，第二套括号每增加1是指内部数组的下一个条目。",
+        "<strong>例子</strong>",
+        "<blockquote>var arr = [<br>    [1,2,3],<br>    [4,5,6],<br>    [7,8,9],<br>    [[10,11,12], 13, 14]<br>];<br>arr[0]; // 等于 [1,2,3]<br>arr[1][2]; // 等于 6<br>arr[3][0][1]; // 等于 11</blockquote>",
         "<h4>Instructions</h4>",
-        "Read from <code>myArray</code> using bracket notation so that myData is equal to <code>8</code>"
+        "对数组 <code>myArray</code> 使用括号标记符号操作使得 myData 的值为 <code>8</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1456,11 +1456,11 @@
       "id": "56bbb991ad1ed5201cd392cb",
       "title": "Manipulate Arrays With push()",
       "description": [
-        "An easy way to append data to the end of an array is via the <code>push()</code> function.",
-        "<code>.push()</code> takes one or more <dfn>parameter</dfn> and \"pushes\" it onto the end of the array.",
-        "<blockquote>var arr = [1,2,3];<br>arr.push(4);<br>// arr is now [1,2,3,4]</blockquote>",
+        "一个简单的方法将数据追加到一个数组的末尾是通过 <code>push()</code> 函数。",
+        "<code>.push()</code> 接受把一个或多个参数，并把它“推”入到数组的末尾。",
+        "<blockquote>var arr = [1,2,3];<br>arr.push(4);<br>// 现在arr的值为 [1,2,3,4]</blockquote>",
         "<h4>Instructions</h4>",
-        "Push <code>[\"dog\", 3]</code> onto the end of the <code>myArray</code> variable."
+        "把 <code>[\"dog\", 3]</code> “推”入到 <code>myArray</code> 变量的末尾。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1491,12 +1491,12 @@
       "id": "56bbb991ad1ed5201cd392cc",
       "title": "Manipulate Arrays With pop()",
       "description": [
-        "Another way to change the data in an array is with the <code>.pop()</code> function.",
-        "<code>.pop()</code> is used to \"pop\" a value off of the end of an array. We can store this \"popped off\" value by assigning it to a variable.",
-        "Any type of entry can be \"popped\" off of an array - numbers, strings, even nested arrays.",
-        "For example, for the code<br><code>var oneDown = [1, 4, 6].pop();</code><br>the variable <code>oneDown</code> now holds the value <code>6</code> and the array becomes <code>[1, 4]</code>.",
+        "改变数组中数据的另一种方法是用 <code>.pop()</code> 函数。",
+        "<code>.pop()</code> 函数用来“抛出”一个数组末尾的值。我们可以把这个“抛出”的值赋给一个变量存储起来。",
+        "数组中任何类型的条目（数值，字符串，甚至是数组）可以被“抛出来” 。",
+        "举个例子, 对于这段代码<br><code>var oneDown = [1, 4, 6].pop();</code><br>现在 <code>oneDown</code> 的值为 <code>6</code> ，数组变成了 <code>[1, 4]</code>。",
         "<h4>Instructions</h4>",
-        "Use the <code>.pop()</code> function to remove the last item from <code>myArray</code>, assigning the \"popped off\" value to <code>removedFromMyArray</code>."
+        "使用 <code>.pop()</code> 函数移除 <code>myArray</code> 中的最后一条，并且把“抛出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1529,10 +1529,10 @@
       "id": "56bbb991ad1ed5201cd392cd",
       "title": "Manipulate Arrays With shift()",
       "description": [
-        "<code>pop()</code> always removes the last element of an array. What if you want to remove the first?",
-        "That's where <code>.shift()</code> comes in. It works just like <code>.pop()</code>, except it removes the first element instead of the last.",
+        "<code>pop()</code> 函数用来移出数组中最后一个元素。如果想要移出第一个元素要怎么办呢？",
+        "这就是 <code>.shift()</code> 的用武之地。它的工作原理就像 <code>.pop()</code>，但它移除的是第一个元素，而不是最后一个。",
         "<h4>Instructions</h4>",
-        "Use the <code>.shift()</code> function to remove the first item from <code>myArray</code>, assigning the \"shifted off\" value to <code>removedFromMyArray</code>."
+        "使用 <code>.shift()</code> 函数移出 <code>myArray</code> 中的第一项，并把“移出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
         "// Example",
@@ -1565,8 +1565,8 @@
       "id": "56bbb991ad1ed5201cd392ce",
       "title": "Manipulate Arrays With unshift()",
       "description": [
-        "Not only can you <code>shift</code> elements off of the beginning of an array, you can also <code>unshift</code> elements to the beginning of an array i.e. add elements in front of the array.",
-        "<code>.unshift()</code> works exactly like <code>.push()</code>, but instead of adding the element at the end of the array, <code>unshift()</code> adds the element at the beginning of the array.",
+        "您不仅可以 <code>shift</code>（移出）数组中的第一个元素，您也可以 <code>unshift</code>（移入）第一个元到数组的头部。",
+        "<code>.unshift()</code> 函数用起来就像 <code>.push()</code> 函数一样, 但不是在数组的末尾添加元素，而是 把元素<code>unshift()</code>（移入）添加到元素的数组的头部",
         "<h4>Instructions</h4>",
         "Add <code>[\"Paul\",35]</code> to the beginning of the <code>myArray</code> variable using <code>unshift()</code>."
       ],
@@ -1601,10 +1601,10 @@
       "id": "56533eb9ac21ba0edf2244bc",
       "title": "Shopping List",
       "description": [
-        "Create a shopping list in the variable <code>myList</code>. The list should be a multi-dimensional array containing several sub-arrays.",
-        "The first element in each sub-array should contain a string with the name of the item. The second element should be a number representing the quantity i.e.",
+        "创建变量 <code>myList</code> 一个购物清单。列表应该是包含几个子数组的多维数组。",
+        "在各子数组中的第一个元素应该包含与该项目名称的字符串。第二个元素应当是表示物品的量的数目，即",
         "<code>[\"Chocolate Bar\", 15]</code>",
-        "There should be at least 5 sub-arrays in the list."
+        "应该有至少5个子数组在列表中。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
