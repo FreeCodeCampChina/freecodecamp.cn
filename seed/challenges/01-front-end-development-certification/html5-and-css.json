@@ -61,7 +61,7 @@
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
-        "<h2>CatPhotoApp</h2>"
+        "<h2>我家的猫咪</h2>"
       ],
       "tests": [
         "assert(($(\"p\").length > 0), 'message: 创建一个 <code>p</code> 元素.');",
@@ -86,7 +86,7 @@
         "<!--",
         "<h1>Hello World</h1>",
         "",
-        "<h2>CatPhotoApp</h2>",
+        "<h2>我家的猫咪</h2>",
         "",
         "<p>Hello Paragraph</p>",
         "-->"
@@ -112,7 +112,7 @@
         "<!--",
         "<h1>Hello World</h1>",
         "",
-        "<h2>CatPhotoApp</h2>",
+        "<h2>我家的猫咪</h2>",
         "",
         "<p>Hello Paragraph</p>",
         "-->"
@@ -135,18 +135,20 @@
         "是因为<code>lorem ipsum</code>是古罗马西塞罗谚语的前两个单词。",
         "从公元16世纪开始<code>lorem ipsum text</code>就被当做占位符了，这种传统延续到了互联网时代。",
         "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，是不是很巧合，哈哈。",
-        "因为我们要创建CatPhotoApp，所以让我们使用被称作<code>kitty ipsum text</code>的东东来填充页面内容。",
-        "把<code>p</code>元素中的文本替换为这段kitty ipsum text的前几个单词：<code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code>"
+        "让我们使用被称作<code>lorem ipsum</code>的占位符来填充页面内容。",
+        "把<code>p</code>元素中的文本替换为这段占位符：<code>Monkey code 猴哥猴哥，你真了不得，金箍棒在手，问世间谁是英雄。</code>"
       ],
       "challengeSeed": [
-        "<h1>Hello World</h1>",
+        "<h1>西游记</h1>",
         "",
-        "<h2>CatPhotoApp1</h2>",
+        "<h2>齐天大圣</h2>",
         "",
-        "<p>Hello Paragraph</p>"
+        "<h2>孙悟空</h2>",
+        "",
+        "<p>七十二变</p>"
       ],
       "tests": [
-        "assert.isTrue((/Kitty(\\s)+ipsum/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含指定的<code>kitty ipsum text</code>的前几个单词。');"
+        "assert.isTrue((/Monkey(\\s)+code/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含占位符的前的<code>Monkey code</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -156,15 +158,15 @@
       "title": "Delete HTML Elements",
       "description": [
         "手机的屏幕空间是有限的。",
-        "让我们删除不必要的元素，以便能开始创建我们的CatPhotoApp。",
+        "让我们删除不必要的元素，以便能开始设计我们的CatPhotoApp。",
         "删除你的<code>h1</code>元素以简化视图。"
       ],
       "challengeSeed": [
-        "<h1>Hello World</h1>",
+        "<h1>Hello cat!</h1>",
         "",
-        "<h2>CatPhotoApp</h2>",
+        "<h2>我家的猫咪</h2>",
         "",
-        "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p>在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert(($(\"h1\").length == 0), 'message: 删除你的<code>h1</code>元素。');",
@@ -186,9 +188,9 @@
         "修改你的<code>h2</code>元素的style，让文本的颜色变为红色。"
       ],
       "challengeSeed": [
-        "<h2>CatPhotoApp</h2>",
+        "<h2>我家的猫咪</h2>",
         "",
-        "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p>在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该是红色的。');"
@@ -207,13 +209,13 @@
         "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
         "在这个style元素内, 你可以为所有的<code>h2</code>元素创建一个<code>CSS选择器</code>。比如，如果你想要将所有的<code>h2</code>元素设置为红色, 你的样式元素应该看起来这样：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;h2 {color: red;}<br>&#60;/style&#62;</blockquote>",
-        "特别需要注意的是，必须将每一个元素的样式放在左花括号（<code>{</code>）和右花括号（<code>}</code>）之间，并且还需要确保你的元素的样式在style的开始和结束标记之间。最后需要注意的一点是，一定要在每一个元素样式的结尾加上分号。",
+        "特别需要注意的是，必须将每一个元素的样式放在左花括号<code>{</code>和右花括号<code>}</code>之间，并且还需要确保你的元素的样式在style的开始和结束标记之间。最后需要注意的一点是，一定要在每一个元素样式的结尾加上分号。",
         "删除你的<code>h2</code>元素的样式属性，然后创建一个CSS <code>style</code>元素。添加必要的CSS，使所有<code>h2</code>元素变为蓝色。"
       ],
       "challengeSeed": [
-        "<h2 style=\"color: red\">CatPhotoApp</h2>",
+        "<h2 style=\"color: red\">我家的猫咪</h2>",
         "",
-        "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p>在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert(!$(\"h2\").attr(\"style\"), 'message: 从你的<code>h2</code>元素中删除样式属性。');",
@@ -235,7 +237,9 @@
         "上面的语句在 <code>&#60;style&#62;</code> 标记之间创建了一个叫做 <code>blue-text</code> 的 CSS class。",
         "你可以以如下的方式将 class 应用到 HTML 元素：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "注意，在你的CSS <code>style</code>元素中，class 应该以英文的句号（.）引导，而在你的HTML元素的 class 声明中，class 不能以英文句号引导。",
+        "注意，在CSS中，class前应该添加<code>.</code>为前缀。",
+        "而在HTML中，class前不能以<code>.</code>为前缀。",
+        "因为在CSS中如果class前不添加<code>.</code> 浏览器就会误认为class是一个HTML元素。",
         "在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>，并把颜色值从<code>blue</code>修改为<code>red</code>。",
         "为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
       ],
@@ -246,9 +250,9 @@
         "  }",
         "</style>",
         "",
-        "<h2>CatPhotoApp</h2>",
+        "<h2>我家的猫咪</h2>",
         "",
-        "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p>在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
@@ -264,9 +268,9 @@
       "title": "Style Multiple Elements with a CSS Class",
       "description": [
         "记住，你可以在 HTML 元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将 class 附加到相关元素中。",
-        "记住，CSS class 选择器要求以英文句号引导，如下：",
+        "记住，CSS class 选择器要求以<code>.</code>为前缀，如下：",
         "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
-        "但是，同样需要记住的是 class 声明不使用英文句号引导，如下：",
+        "但是，同样需要记住的是HTML中class 声明不<code>.</code>为前缀，如下：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
         "将<code>red-text</code> class 应用到<code>h2</code>和<code>p</code>元素中。"
       ],
@@ -279,7 +283,7 @@
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
         "",
-        "<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p>在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
@@ -297,9 +301,8 @@
         "字号是由CSS属性<code>font-size</code>来控制的, 如下：",
         "<blockquote>h1 {<br>&nbsp;&nbsp;font-size: 30px;<br>}</blockquote>",
         "用如下的kitty ipsum文本来创建第二个<code>p</code>元素：<code>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</code>",
-        "在包含<code>red-text</code> class 的同一个<code>&#60;style&#62;</code>标记中，为<code>p</code>元素创建一个条目并设置其<code>font-size</code>为16像素（<code>16px</code>）。",
-        "<strong>注意</strong><br>因为浏览器实现上的不同，你可能需要将页面缩放调整为100%以通过本挑战的测试。",
-        "同时，将不要为新的<code>p</code>元素添加 class 属性。"
+        "任务：让第一个<code>p</code>元素和第二个<code>p</code>元素的<code>font-size</code>都为<code>16px</code>。",
+        "请不要为第二个<code>p</code>元素添加 class 属性。"
       ],
       "challengeSeed": [
         "<style>",
@@ -310,7 +313,7 @@
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>"
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>"
       ],
       "tests": [
         "assert($(\"p\").length > 1, 'message: 你需要2个带有Kitty Ipsum文本的<code>p</code>元素。');",
@@ -344,7 +347,7 @@
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -357,12 +360,13 @@
       "id": "bad87fee1348bd9aedf08807",
       "title": "Import a Google Font",
       "description": [
-        "现在，让我们来导入并应用谷歌字体（注意，因为谷歌在中国被屏蔽，所以你需要跳过本轮挑战；如果你已翻墙或肉身已在墙外，那么请继续）。",
-        "首先，你需要<code>调用</code>谷歌以获取<code>Lobster</code>字体并将其载入你的HTML。",
+        "现在，让我们来导入谷歌字体（注意，因为谷歌在中国被屏蔽，所以你需要跳过本轮挑战；如果你已翻墙或肉身已在墙外，那么请继续。",
+        "首先，你需要用<code>link</code>标签来引入谷歌<code>Lobster</code>字体。",
         "复制下面的代码片断并将其粘贴到你的代码编辑器的顶部：",
         "<code>&#60;link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
         "现在你可以将<code>Lobster</code>作为 font-family 的值应用到你的<code>h2</code>元素上了。",
-        "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。"
+        "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。",
+        "当你遇到困难时可以参考<code><a href='https://github.com/huluoyang/freecodecamp.cn/wiki/common-question'>wiki</a></code>"
       ],
       "challengeSeed": [
         "<style>",
@@ -378,7 +382,7 @@
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -418,7 +422,7 @@
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -434,10 +438,10 @@
       "id": "bad87fee1348bd9aedf08812",
       "title": "Add Images to your Website",
       "description": [
-        "你可以通过使用<code>img</code>元素来为你的网站添加图片，并且使用<code>src</code>属性指向一个特定图片的URL。",
+        "使用<code>img</code>元素来为你的网站添加图片，使用<code>src</code>属性指向一个图片的具体地址。",
         "举例如下：",
         "<code>&#60img src=\"https://www.your-image-source.com/your-image.jpg\"&#62</code>",
-        "注意，在大多数情况下，<code>img</code>元素是自关闭的。",
+        "注意，<code>img</code>元素是自关闭元素，不需要添加<code></img></code>。",
         "用以下图片来测试：",
         "<code>https://bit.ly/fcc-relaxing-cat</code>"
       ],
@@ -458,10 +462,18 @@
         "  }",
         "</style>",
         "",
-        "<h2 class=\"red-text\">CatPhotoApp</h2>",
+        "<h2 class=\"red-text\">我家的猫咪</h2>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
-        "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
+        "<p class=\"red-text\">猫咪猫咪我就喜欢你</p>",
+        "<p class=\"red-text\">深深地爱上你</p>",
+        "<p class=\"red-text\">没有理由没有原因</p>",
+        "<p class=\"red-text\">从见到你的那一天起</p>",
+        "<p class=\"red-text\">你知道我在等你吗?</p>",
+        "<p class=\"red-text\">你如果真的在乎我</p>",
+        "<p class=\"red-text\">又怎会让无尽的夜陪我度过</p>",
+        "<p class=\"red-text\">猫咪猫咪我就喜欢你</p>",
+        "<p class=\"red-text\">深深地爱上你</p>",
+        "<p class=\"red-text\">在黑夜里倾听你的声音</p>"
       ],
       "tests": [
         "assert($(\"img\").length > 0, 'message: 你的页面应该包含一个图片元素。');",
@@ -477,7 +489,7 @@
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
         "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS class，把HTML元素的宽度设定为500像，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "创建一个名为<code>larger-image</code>的 class，然后用它来改变图片尺寸，使图片仅有100像素宽。",
+        "创建一个名为<code>smaller-image</code>的 class，然后用它来改变图片尺寸，使图片仅有100像素宽。",
         "<strong>注意</strong><br>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
       ],
       "challengeSeed": [
@@ -501,7 +513,7 @@
         "",
         "<img src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -547,7 +559,7 @@
         "",
         "<img class=\"smaller-image\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -648,7 +660,7 @@
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -662,12 +674,12 @@
       "id": "bad87fee1348bd9aedf08816",
       "title": "Link to External Pages with Anchor Elements",
       "description": [
-        "<code>a</code>元素, 也叫<code>anchor（锚）</code>元素，被用来链接到当前页面的外部内容。",
+        "<code>a</code>元素, 也叫<code>anchor（锚点）</code>元素，可以用来链接到其他页面，也可以链接到当前页面的某部分。",
         "下面是一张<code>a</code>元素的图示。在此，<code>a</code>元素被用在了一个段落元素的中间，这意味着链接会出现在句子的中间。",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
         "Here's an example:",
         "<code>&#60;p&#62;Here's a &#60;a href=\"http://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
-        "创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并且用\"cat photos\"作为其<code>anchor text（锚文本）</code>。"
+        "创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并且用<code>cat photos</code>作为其<code>anchor text（锚点文本）</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -701,7 +713,7 @@
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -721,7 +733,7 @@
         "例如：",
         "<code>&#60;p&#62;Here's a &#60;a href=\"https://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
         "<code>Nesting（嵌套）</code>就是把一个元素放在另一个元素里面。",
-        "现在，把你已有的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），使包围的段落为\"View more cat photos\"，但是其中仅\"cat photos\"是一个链接，其余的文本是普通文本。"
+        "现在，把你已有的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），使包围的段落为<code>View more cat photos</code>，但是其中仅<code>cat photos</code>是一个链接，其余的文本是普通文本。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -757,7 +769,7 @@
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -815,7 +827,7 @@
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -868,7 +880,7 @@
         "",
         "<img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\">",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -923,7 +935,7 @@
         "",
         "<a href=\"#\"><img class=\"smaller-image thick-green-border\" src=\"https://bit.ly/fcc-relaxing-cat\"></a>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -977,7 +989,7 @@
         "",
         "<a href=\"#\"><img class=\"smaller-image thick-green-border\" alt=\"A cute orange cat lying on its back\" src=\"https://bit.ly/fcc-relaxing-cat\"></a>",
         "",
-        "<p class=\"red-text\">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>",
+        "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，可猫可狗。</p>",
         "<p class=\"red-text\">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>"
       ],
       "tests": [
@@ -1032,7 +1044,7 @@
         "",
         "<p>Click here for <a href=\"#\">cat photos</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"smaller-image thick-green-border\" alt=\"A cute orange cat lying on its back\" src=\"https://bit.ly/fcc-relaxing-cat\"></a>",
+        "<a href=\"#\"><img class=\"smaller-image thick-green-border\" alt=\"A cute orange cat lying on its back\" src=\"https://freecodecamp.cn/images/fcc-relaxing-cat\"></a>",
         "",
         "<p>Things cats love:</p>",
         "<ul>",
@@ -1058,7 +1070,7 @@
       "id": "bad87fee1348bd9aedf08829",
       "title": "Create a Text Field",
       "description": [
-        "现在让我们来创建一个web form（web表单）。",
+        "现在让我们来创建一个form（表单）。",
         "Text inputs（文本输入框）是从你的用户获取输入的一条方便途径。",
         "你可以用如下方法创建：",
         "<code>&#60;input type=\"text\"&#62;</code>",
@@ -1122,10 +1134,10 @@
       "id": "bad87fee1348bd9aedf08830",
       "title": "Add Placeholder Text to a Text Field",
       "description": [
-        "占位文本（placeholder text）是在你的用户输入任何东西之前出现在你的文本<code>input（输入）</code>框中的文本。",
-        "你可以以如下方式创建占位文本：",
+        "占位符（placeholder text）是在你的用户输入任何东西之前出现在你的<code>input（输入）</code>框中的文本。",
+        "你可以以如下方式创建占位符：",
         "<code>&#60;input type=\"text\" placeholder=\"this is placeholder text\"&#62;</code>",
-        "把你的文本<code>input（输入）</code>框的<code>placeholder</code>的值设置为\"cat photo URL\"。"
+        "把你的<code>input（输入）</code>框的<code>placeholder</code>的值设置为\"cat photo URL\"。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
