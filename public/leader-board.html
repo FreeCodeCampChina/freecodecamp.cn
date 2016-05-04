@@ -2,7 +2,7 @@
 <html ng-app="app">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>学习进度排行榜</title>
   <style>
@@ -22,7 +22,7 @@
   }
   </style>
   <base target="_blank" />
-  <script src="//i2.yongche.name/js/angular.js?1451245680"></script>
+  <script src="https://i2.yongche.name/js/angular.js?1451245680"></script>
 </head>
 <body>
   <h1>学习进度排行榜</h1>
@@ -35,7 +35,7 @@
     </tr>
     <tr ng-repeat="item in items | orderBy:'-score' " >
       <td>{{$index+1}}</td>
-      <td><a href="https://freecodecamp.cn/{{item.username}}">{{item.username}}</td>
+      <td><a href="https://freecodecamp.cn/{{item.username}}">{{item.username}}</a></td>
       <td><img src="{{item.picture}}" width="64px"></td>
       <td>{{item.score}}</td>
     </tr>
