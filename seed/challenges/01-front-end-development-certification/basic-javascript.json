@@ -1568,7 +1568,7 @@
         "您不仅可以 <code>shift</code>（移出）数组中的第一个元素，您也可以 <code>unshift</code>（移入）第一个元到数组的头部。",
         "<code>.unshift()</code> 函数用起来就像 <code>.push()</code> 函数一样, 但不是在数组的末尾添加元素，而是 把元素<code>unshift()</code>（移入）添加到元素的数组的头部",
         "<h4>Instructions</h4>",
-        "Add <code>[\"Paul\",35]</code> to the beginning of the <code>myArray</code> variable using <code>unshift()</code>."
+        "使用 <code>unshift()</code> 函数把<code>[\"Paul\",35]</code> 加入到 <code>myArray</code> 的头部。"
       ],
       "challengeSeed": [
         "// Example",
