@@ -34,10 +34,10 @@
       <th>总得分</th>
     </tr>
     <tr ng-repeat="item in items | orderBy:'-score' " >
-      <td>{{$index+1}}</td>
+      <td ng-bind="$index+1">{{$index+1}}</td>
       <td><a href="https://freecodecamp.cn/{{item.username}}">{{item.username}}</a></td>
-      <td><img src="{{item.picture}}" width="64px"></td>
-      <td>{{item.score}}</td>
+      <td><img ng-src="{{item.picture}}" width="64px"></td>
+      <td ng-bind="item.score"></td>
     </tr>
   </table>
 <script>
