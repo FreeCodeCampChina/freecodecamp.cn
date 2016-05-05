@@ -1,3 +1,4 @@
+[![Join the chat at https://gitter.im/freecodecamp/freecodecamp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FreeCodeCamp/chinese?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ## freecodecamp.cn
 欢迎来到freecodecamp中文社区(http://freecodecamp.cn)
 
