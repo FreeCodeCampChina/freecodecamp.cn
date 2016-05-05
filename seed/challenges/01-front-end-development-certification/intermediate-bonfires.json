@@ -10,7 +10,7 @@
       "description": [
         "我们会传递给你一个包含两个数字的数组。返回这两个数字和它们之间所有数字的合。",
         "最小的数字并非总在最前面。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。Try to pair program. Write your own code."
+        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumAll(arr) {",
@@ -42,8 +42,8 @@
       "id": "a5de63ebea8dbee56860f4f2",
       "title": "Diff Two Arrays",
       "description": [
-        "Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。",
+        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function diff(arr1, arr2) {",
@@ -58,14 +58,14 @@
         "function diff(arr1, arr2) {\n  var newArr = [];\n  var h1 = Object.create(null);\n  arr1.forEach(function(e) {\n    h1[e] = e;\n  });\n  \n  var h2 = Object.create(null);\n  arr2.forEach(function(e) {\n    h2[e] = e;\n  });\n  \n  Object.keys(h1).forEach(function(e) {\n     if (!(e in h2)) newArr.push(h1[e]);\n  });\n  Object.keys(h2).forEach(function(e) {\n     if (!(e in h1)) newArr.push(h2[e]);\n  });\n  // Same, same; but different.\n  return newArr;\n}"
       ],
       "tests": [
-        "assert(typeof diff([1, 2, 3, 5], [1, 2, 3, 4, 5]) === \"object\", 'message: <code>diff([1, 2, 3, 5], [1, 2, 3, 4, 5])</code> should return an array.');",
-        "assert.sameMembers(diff([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"pink wool\"], 'message: <code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[\"pink wool\"]</code>.');",
-        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"diorite\", \"pink wool\"], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[\"diorite\", \"pink wool\"]</code>.');",
-        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> should return <code>[]</code>.');",
-        "assert.sameMembers(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4], 'message: <code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> should return <code>[4]</code>.');",
-        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]), [\"piglet\", 4], 'message: <code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> should return <code>[\"piglet\", 4]</code>.');",
-        "assert.sameMembers(diff([], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]), [\"snuffleupagus\", \"cookie monster\", \"elmo\"], 'message: <code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> should return <code>[\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code>.');",
-        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [7, \"filly\"]), [1, \"calf\", 3, \"piglet\", 7, \"filly\"], 'message: <code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> should return <code>[1, \"calf\", 3, \"piglet\", 7, \"filly\"]</code>.');"
+        "assert(typeof diff([1, 2, 3, 5], [1, 2, 3, 4, 5]) === \"object\", 'message: <code>diff([1, 2, 3, 5], [1, 2, 3, 4, 5])</code> 应该返回一个数组。');",
+        "assert.sameMembers(diff([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"pink wool\"], 'message: <code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"pink wool\"]</code>.');",
+        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"diorite\", \"pink wool\"], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"diorite\", \"pink wool\"]</code>.');",
+        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[]</code>.');",
+        "assert.sameMembers(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4], 'message: <code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> 应该返回 <code>[4]</code>.');",
+        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]), [\"piglet\", 4], 'message: <code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> 应该返回 <code>[\"piglet\", 4]</code>.');",
+        "assert.sameMembers(diff([], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]), [\"snuffleupagus\", \"cookie monster\", \"elmo\"], 'message: <code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> 应该返回 <code>[\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code>.');",
+        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [7, \"filly\"]), [1, \"calf\", 3, \"piglet\", 7, \"filly\"], 'message: <code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> 应该返回 <code>[1, \"calf\", 3, \"piglet\", 7, \"filly\"]</code>.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -82,9 +82,9 @@
       "id": "a7f4d8f2483413a6ce226cac",
       "title": "Roman Numeral Converter",
       "description": [
-        "Convert the given number into a roman numeral.",
-        "All <a href=\"http://www.mathsisfun.com/roman-numerals.html\" target=\"_blank\">roman numerals</a> answers should be provided in upper-case.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "将给定的数字转换成罗马数字。",
+        "所有返回的 <a href=\"http://www.mathsisfun.com/roman-numerals.html\" target=\"_blank\">罗马数字</a> 都应该是大写形式。",
+        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function convert(num) {",
@@ -97,31 +97,31 @@
         "function convert(num) {\n  var ref = [['M', 1000], ['CM', 900], ['D', 500], ['CD', 400], ['C', 100], ['XC', 90], ['L', 50], ['XL', 40], ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]];\n  var res = [];\n  ref.forEach(function(p) {\n    while (num >= p[1]) {\n      res.push(p[0]);\n      num -= p[1];\n    }\n  });\n  return res.join('');\n}"
       ],
       "tests": [
-        "assert.deepEqual(convert(2), \"II\", 'message: <code>convert(2)</code> should return \"II\".');",
-        "assert.deepEqual(convert(3), \"III\", 'message: <code>convert(3)</code> should return \"III\".');",
-        "assert.deepEqual(convert(4), \"IV\", 'message: <code>convert(4)</code> should return \"IV\".');",
-        "assert.deepEqual(convert(5), \"V\", 'message: <code>convert(5)</code> should return \"V\".');",
-        "assert.deepEqual(convert(9), \"IX\", 'message: <code>convert(9)</code> should return \"IX\".');",
-        "assert.deepEqual(convert(12), \"XII\", 'message: <code>convert(12)</code> should return \"XII\".');",
-        "assert.deepEqual(convert(16), \"XVI\", 'message: <code>convert(16)</code> should return \"XVI\".');",
-        "assert.deepEqual(convert(29), \"XXIX\", 'message: <code>convert(29)</code> should return \"XXIX\".');",
-        "assert.deepEqual(convert(44), \"XLIV\", 'message: <code>convert(44)</code> should return \"XLIV\".');",
-        "assert.deepEqual(convert(45), \"XLV\", 'message: <code>convert(45)</code> should return \"XLV\"');",
-        "assert.deepEqual(convert(68), \"LXVIII\", 'message: <code>convert(68)</code> should return \"LXVIII\"');",
-        "assert.deepEqual(convert(83), \"LXXXIII\", 'message: <code>convert(83)</code> should return \"LXXXIII\"');",
-        "assert.deepEqual(convert(97), \"XCVII\", 'message: <code>convert(97)</code> should return \"XCVII\"');",
-        "assert.deepEqual(convert(99), \"XCIX\", 'message: <code>convert(99)</code> should return \"XCIX\"');",
-        "assert.deepEqual(convert(500), \"D\", 'message: <code>convert(500)</code> should return \"D\"');",
-        "assert.deepEqual(convert(501), \"DI\", 'message: <code>convert(501)</code> should return \"DI\"');",
-        "assert.deepEqual(convert(649), \"DCXLIX\", 'message: <code>convert(649)</code> should return \"DCXLIX\"');",
-        "assert.deepEqual(convert(798), \"DCCXCVIII\", 'message: <code>convert(798)</code> should return \"DCCXCVIII\"');",
-        "assert.deepEqual(convert(891), \"DCCCXCI\", 'message: <code>convert(891)</code> should return \"DCCCXCI\"');",
-        "assert.deepEqual(convert(1000), \"M\", 'message: <code>convert(1000)</code> should return \"M\"');",
-        "assert.deepEqual(convert(1004), \"MIV\", 'message: <code>convert(1004)</code> should return \"MIV\"');",
-        "assert.deepEqual(convert(1006), \"MVI\", 'message: <code>convert(1006)</code> should return \"MVI\"');",
-        "assert.deepEqual(convert(1023), \"MXXIII\", 'message: <code>convert(1023)</code> should return \"MXXIII\"');",
-        "assert.deepEqual(convert(2014), \"MMXIV\", 'message: <code>convert(2014)</code> should return \"MMXIV\"');",
-        "assert.deepEqual(convert(3999), \"MMMCMXCIX\", 'message: <code>convert(3999)</code> should return \"MMMCMXCIX\"');"
+        "assert.deepEqual(convert(2), \"II\", 'message: <code>convert(2)</code> 应该返回 \"II\".');",
+        "assert.deepEqual(convert(3), \"III\", 'message: <code>convert(3)</code> 应该返回 \"III\".');",
+        "assert.deepEqual(convert(4), \"IV\", 'message: <code>convert(4)</code> 应该返回 \"IV\".');",
+        "assert.deepEqual(convert(5), \"V\", 'message: <code>convert(5)</code> 应该返回 \"V\".');",
+        "assert.deepEqual(convert(9), \"IX\", 'message: <code>convert(9)</code> 应该返回 \"IX\".');",
+        "assert.deepEqual(convert(12), \"XII\", 'message: <code>convert(12)</code> 应该返回 \"XII\".');",
+        "assert.deepEqual(convert(16), \"XVI\", 'message: <code>convert(16)</code> 应该返回 \"XVI\".');",
+        "assert.deepEqual(convert(29), \"XXIX\", 'message: <code>convert(29)</code> 应该返回 \"XXIX\".');",
+        "assert.deepEqual(convert(44), \"XLIV\", 'message: <code>convert(44)</code> 应该返回 \"XLIV\".');",
+        "assert.deepEqual(convert(45), \"XLV\", 'message: <code>convert(45)</code> 应该返回 \"XLV\"');",
+        "assert.deepEqual(convert(68), \"LXVIII\", 'message: <code>convert(68)</code> 应该返回 \"LXVIII\"');",
+        "assert.deepEqual(convert(83), \"LXXXIII\", 'message: <code>convert(83)</code> 应该返回 \"LXXXIII\"');",
+        "assert.deepEqual(convert(97), \"XCVII\", 'message: <code>convert(97)</code> 应该返回 \"XCVII\"');",
+        "assert.deepEqual(convert(99), \"XCIX\", 'message: <code>convert(99)</code> 应该返回 \"XCIX\"');",
+        "assert.deepEqual(convert(500), \"D\", 'message: <code>convert(500)</code> 应该返回 \"D\"');",
+        "assert.deepEqual(convert(501), \"DI\", 'message: <code>convert(501)</code> 应该返回 \"DI\"');",
+        "assert.deepEqual(convert(649), \"DCXLIX\", 'message: <code>convert(649)</code> 应该返回 \"DCXLIX\"');",
+        "assert.deepEqual(convert(798), \"DCCXCVIII\", 'message: <code>convert(798)</code> 应该返回 \"DCCXCVIII\"');",
+        "assert.deepEqual(convert(891), \"DCCCXCI\", 'message: <code>convert(891)</code> 应该返回 \"DCCCXCI\"');",
+        "assert.deepEqual(convert(1000), \"M\", 'message: <code>convert(1000)</code> 应该返回 \"M\"');",
+        "assert.deepEqual(convert(1004), \"MIV\", 'message: <code>convert(1004)</code> 应该返回 \"MIV\"');",
+        "assert.deepEqual(convert(1006), \"MVI\", 'message: <code>convert(1006)</code> 应该返回 \"MVI\"');",
+        "assert.deepEqual(convert(1023), \"MXXIII\", 'message: <code>convert(1023)</code> 应该返回 \"MXXIII\"');",
+        "assert.deepEqual(convert(2014), \"MMXIV\", 'message: <code>convert(2014)</code> 应该返回 \"MMXIV\"');",
+        "assert.deepEqual(convert(3999), \"MMMCMXCIX\", 'message: <code>convert(3999)</code> 应该返回 \"MMMCMXCIX\"');"
       ],
       "type": "bonfire",
       "MDNlinks": [
