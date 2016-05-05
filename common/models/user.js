@@ -53,6 +53,7 @@ module.exports = function(User) {
   User.settings.emailVerificationRequired = false;
 
   User.on('dataSourceAttached', () => {
+    User.find$ = Observable.fromNodeCallback(User.find, User);
     User.findOne$ = Observable.fromNodeCallback(User.findOne, User);
     User.update$ = Observable.fromNodeCallback(User.updateAll, User);
     User.count$ = Observable.fromNodeCallback(User.count, User);
