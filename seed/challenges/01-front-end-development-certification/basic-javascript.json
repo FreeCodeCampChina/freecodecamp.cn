@@ -1656,14 +1656,14 @@
       "id": "56bbb991ad1ed5201cd392cf",
       "title": "Write Reusable JavaScript with Functions",
       "description": [
-        "In JavaScript, we can divide up our code into reusable parts called <dfn>functions</dfn>.",
-        "Here's an example of a function:",
+        "在 JavaScript 中，我们可以把我们的代码划分到可重用部分，我们称之为 <dfn>函数</dfn>（functions）的地方。",
+        "这儿是一个函数（function）的例子：",
         "<blockquote>function functionName() {<br>  console.log(\"Hello World\");<br>}</blockquote>",
-        "You can call or <dfn>invoke</dfn> this function by using its name followed by parentheses, like this:",
+        "您可以调用或者 <dfn>使用</dfn> 这个函数（function）通过其名称及后面的括号，就像这样：",
         "<code>functionName();</code>",
-        "Each time the function is called it will print out the message <code>\"Hello World\"</code> on the dev console. All of the code between the curly braces will be executed every time the function is called.",
+        "每次调用函数时它会打印出消息的“Hello World”到开发的控制台上。所有的花括号之间的代码将在每次函数调用时执行。",
         "<h4>Instructions</h4>",
-        "<ol><li>Create a function called <code>myFunction</code> which prints <code>\"Hi World\"</code> to the dev console.</li><li>Call the function.</li></ol>"
+        "<ol><li>创建一个名为 <code>myFunction</code> 的函数，这个函数可以打印“Hi World”到开发控制台上。</li><li>调用这个函数。</li></ol>"
       ],
       "challengeSeed": [
         "// Example",
@@ -1721,14 +1721,14 @@
       "id": "56533eb9ac21ba0edf2244bd",
       "title": "Passing Values to Functions with Arguments",
       "description": [
-        "<dfn>Parameters</dfn> are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or <dfn>\"passed\"</dfn>) into a function when it is called are known as <dfn>arguments</dfn>.",
-        "Here is a function with two parameters, <code>param1</code> and <code>param2</code>:",
+        "函数的 <dfn>参数</dfn>（parameters）在函数中充当占位符的作用，当传递一个值到函数中时，它被称为值得变量。当函数被定义的时候，可以给它定义一个或者多个参数。所输入（或“传递”）的实际值进入到一个函数被调用时被称为参数",
+        "这是带有两个参数的函数， <code>param1</code> 和 <code>param2</code>：",
         "<blockquote>function testFun(param1, param2) {<br>  console.log(param1, param2);<br>}</blockquote>",
-        "Then we can call <code>testFun</code>:",
+        "接着我们调用 <code>testFun</code>：",
         "<code>testFun(\"Hello\", \"World\");</code>",
-        "We have passed two arguments, <code>\"Hello\"</code> and <code>\"World\"</code>. Inside the function, <code>param1</code> will equal \"Hello\" and <code>param2</code> will equal \"World\". Note that you could call <code>testFun</code> again with different arguments and the parameters would take on the value of the new arguments.",
+        "我们传递了两个参数， <code>\"Hello\"</code> 和 <code>\"World\"</code>。在函数内部，<code>param1</code> 等于“Hello”和 <code>param2</code> 将等于“World”。请注意，您可以使用不同的值再次调用 <code>testFun</code> 函数，它内部的参数将会采取新参数的值来执行。",
         "<h4>Instructions</h4>",
-        "<ol><li>Create a function called <code>myFunction</code> that accepts two arguments and outputs their sum to the dev console.</li><li>Call the function.</li></ol>"
+        "<ol><li>创建一个名为 <code>myFunction</code> 的函数，它可以接收两个参数，并且可以输出它们的和到开发控制台。</li><li>调用这个函数。</li></ol>"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1789,11 +1789,11 @@
       "id": "56533eb9ac21ba0edf2244be",
       "title": "Global Scope and Functions",
       "description": [
-        "In JavaScript, <dfn>scope</dfn> refers to the visibility of variables. Variables which are defined outside of a function block have <dfn>Global</dfn> scope. This means, they can be seen everywhere in your JavaScript code.",
-        "Variables which are used without the <code>var</code> keyword are automatically created in the <code>global</code> scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with <code>var</code>.",
+        "在 JavaScript 中， <dfn>作用域</dfn> 涉及到变量的可见范围。在函数块外定义的变量具有 <dfn>全局</dfn> 作用域。这意味着，具有全局作用域的变量可以在 JavaScript 代码的所有的地方被调用。",
+        "这些没有使用var关键字定义的变量，会被自动的自动创建在全局作用域中。当在其他地方使用您的代码或重新运行函数时，这可能会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。",
         "<h4>Instructions</h4>",
-        "Declare a <code>global</code> variable <code>myGlobal</code> outside of any function. Initialize it to have a value of <code>10</code> ",
-        "Inside function <code>fun1</code>, assign <code>5</code> to <code>oopsGlobal</code> <strong><em>without</em></strong> using the <code>var</code> keyword."
+        "在函数外声明一个 <code>全局</code> 变量 <code>myGlobal</code>。并给它一个初始值 <code>10</code> ",
+        "在函数 <code>fun1</code> 的内部，<strong><em>不</em></strong>使用 <code>var</code> 关键字来声明 <code>oopsGlobal</code>，并赋值为 <code>5</code>。"        
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1862,12 +1862,12 @@
       "id": "56533eb9ac21ba0edf2244bf",
       "title": "Local Scope and Functions",
       "description": [
-        "Variables which are declared within a function, as well as the function parameters have <dfn>local</dfn> scope. That means, they are only visible within that function.",
-        "Here is a function <code>myTest</code> with a local variable called <code>loc</code>.",
+        "这些在一个函数内声明的变量，以及该函数的参数有 <dfn>局部</dfn> 作用域。这意味着，它们只在该函数内可见。",
+        "这是一个带有局部变量 <code>loc</code> 的函数 <code>myTest</code>。",
         "<blockquote>function myTest() {<br>  var loc = \"foo\";<br>  console.log(loc);<br>}<br>myTest(); // \"foo\"<br>console.log(loc); // \"undefined\"</blockquote>",
-        "<code>loc</code> is not defined outside of the function.",
+        "在函数外，<code>loc</code> 是未定义的。",
         "<h4>Instructions</h4>",
-        "Declare a local variable <code>myVar</code> inside <code>myFunction</code>"
+        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1925,12 +1925,12 @@
       "id": "56533eb9ac21ba0edf2244c0",
       "title": "Global vs. Local Scope in Functions",
       "description": [
-        "It is possible to have both <dfn>local</dfn> and <dfn>global</dfn> variables with the same name. When you do this, the <code>local</code> variable takes precedence over the <code>global</code> variable.",
-        "In this example:",
+        "一个程序中有可能具有相同的名称的 <dfn>局部</dfn> 变量 和 <dfn>全局</dfn> 变量。当你这样做的话，<code>局部</code> 变量将会优先于 <code>全局</code> 变量。",
+        "下面为例：",
         "<blockquote>var someVar = \"Hat\";<br>function myFun() {<br>  var someVar = \"Head\";<br>  return someVar;<br>}</blockquote>",
-        "The function <code>myFun</code> will return <code>\"Head\"</code> because the <code>local</code> version of the variable is present.",
+        "函数 <code>myFun</code> 将会返回 <code>\"Head\"</code>，因为 <code>局部变量</code> 优先。",
         "<h4>Instructions</h4>",
-        "Add a local variable to <code>myFunction</code> to override the value of <code>outerWear</code> with <code>\"sweater\"</code>."
+        "给 <code>myFunction</code> 添加一个局部变量来覆盖 <code>outerWear</code> 的值为 <code>\"sweater\"</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
