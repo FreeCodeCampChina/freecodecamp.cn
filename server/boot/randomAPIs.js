@@ -43,6 +43,7 @@ module.exports = function(app) {
   router.get('/how-nonprofit-projects-work', howNonprofitProjectsWork);
   router.get('/code-of-conduct', codeOfConduct);
   router.get('/academic-honesty', academicHonesty);
+  router.route('/leader-board').get(leaderBoard);
 
   router.get(
     '/the-fastest-web-page-on-the-internet',
@@ -286,6 +287,25 @@ module.exports = function(app) {
 
   function twitch(req, res) {
     res.redirect('https://twitch.tv/freecodecamp');
+  }
+  function leaderBoard(req,res,next){
+    // var data = User.find({}, {"_id":0, "username":1, "picture":1, "progressTimestamps":1});
+    // for(var i=0;i<data.length;i++){
+    //     data[i].score = data[i].progressTimestamps.length;
+    //     delete  data[i].progressTimestamps;
+    // };
+    // console.log(data);
+    User.find( { fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for(var i=0;i<data.length;i++){
+          console.log(data[i].progressTimestamps.length);
+          data[i].score = data[i].progressTimestamps.length;
+          delete data[i].progressTimestamps;
+      };
+      console.log(data);
+      res.send(data);
+    });
   }
 
   function unsubscribeMonthly(req, res, next) {
