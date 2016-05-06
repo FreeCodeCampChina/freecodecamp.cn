@@ -1963,12 +1963,12 @@
       "id": "56533eb9ac21ba0edf2244c2",
       "title": "Return a Value from a Function with Return",
       "description": [
-        "We can pass values into a function with <dfn>arguments</dfn>. You can use a <code>return</code> statement to send a value back out of a function.",
-        "<strong>Example</strong>",
+        "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数。您可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
+        "<strong>例子</strong>",
         "<blockquote>function plusThree(num) {<br>  return num + 3;<br>}<br>var answer = plusThree(5); // 8</blockquote>",
-        "<code>plusThree</code> takes an <dfn>argument</dfn> for <code>num</code> and returns a value equal to <code>num + 3</code>.",
+        "<code>plusThree</code> 带有一个为 <code>num</code> 的 <dfn>参数</dfn> 并且返回（returns）一个等于 <code>num + 3</code> 的值。",
         "<h4>Instructions</h4>",
-        "Create a function <code>timesFive</code> that accepts one argument, multiplies it by <code>5</code>, and returns the new value."
+        "创建一个函数 <code>timesFive</code> 接受一个参数, 把它乘于 <code>5</code> 之后并返回（returns）。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2000,12 +2000,12 @@
       "id": "56533eb9ac21ba0edf2244c3",
       "title": "Assignment with a Returned Value",
       "description": [
-        "If you'll recall from our discussion of <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a>, everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.",
-        "Assume we have pre-defined a function <code>sum</code> which adds two numbers together, then: ",
+        "如果你还记得我们在这一节 <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a> 的讨论，赋值之前，在等号右边的一切操作要先完成。这意味着我们可把一个函数的返回值，赋值给一个变量。",
+        "假设我们预先定义的函数 <code>sum</code> 其将两个数字相加，那么：",
         "<code>ourSum = sum(5, 12);</code>",
-        "will call <code>sum</code> function, which returns a value of <code>17</code> and assigns it to <code>ourSum</code> variable.",
+        "将调用 <code>sum</code> 函数，返回（returns）了一个数值 <code>17</code>，然后把它赋值给了 <code>ourSum</code> 变量。",
         "<h4>Instructions</h4>",
-        "Call the <code>process</code> function with an argument of <code>7</code> and assign its return value to the variable <code>processed</code>."
+        "调用 <code>process</code> 函数并给参数一个值 <code>7</code>，然后把返回的值赋值给变量 <code>processed</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2046,8 +2046,8 @@
       "id": "56533eb9ac21ba0edf2244c6",
       "title": "Stand in Line",
       "description": [
-        "In Computer Science a <dfn>queue</dfn> is an abstract <dfn>Data Structure</dfn> where items are kept in order. New items can be added at the back of the <code>queue</code> and old items are taken off from the front of the <code>queue</code>.",
-        "Write a function <code>queue</code> which takes an array (<code>arr</code>) and a number (<code>item</code>) as arguments. Add the number to the end of the array, then remove the first element of array. The queue function should then return the element that was removed."
+        "在计算机科学中的 <dfn>队列</dfn>（queue）是一个抽象的数据结构，其中的项目被保留了秩序。新的条目会被加到 <code>队列</code> 的末尾，旧的项目会从 <code>队列</code> 的前部被拿出。",
+        "写一个函数 <code>queue</code> 这需要一个数组（<code>arr</code>）和一个数字（<code>item</code>）作为参数。数字添加到数组的结尾，然后取出数组的第一个元素。然后队列函数应该返回被删除的元素。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -2108,10 +2108,10 @@
       "id": "bd7123c9c441eddfaeb5bdef",
       "title": "Understanding Boolean Values",
       "description": [
-        "Another data type is the <dfn>Boolean</dfn>. <code>Booleans</code> may only be one of two values: <code>true</code> or <code>false</code>. They are basically little on-off switches, where <code>true</code> is \"on\" and <code>false</code> is \"off.\"  These two states are mutually exclusive.",
-        "<strong>Note</strong><br><code>Boolean</code> values are never written with quotes. The <code>strings</code> <code>\"true\"</code> and <code>\"false\"</code> are not <code>Boolean</code> and have no special meaning in JavaScript.",
+        "另一种数据类型是<dfn>布尔</dfn>（Boolean）。<code>布尔</code> 值只有可能是这两个值之一：<code>true</code> 或者 <code>false</code>。它们基本上就像是通断开关，其中 <code>true</code> 是“开”，<code>false</code> 是“关”。这两种状态是互斥的。",
+        "<strong>注意</strong><br><code>Boolean</code> 值绝不会写作被引号包裹起来的形式。<code>字符串</code> 的 <code>\"true\"</code> 和 <code>\"false\"</code> 不是 <code>布尔值</code>，在 JavaScript 中也没有特殊含义。",        
         "<h4>Instructions</h4>",
-        "Modify the <code>welcomeToBooleans</code> function so that it returns <code>true</code> instead of <code>false</code> when the run button is clicked."
+        "修改 <code>welcomeToBooleans</code> 函数，让它返回 <code>true</code> 而不是 <code>false</code>。"
       ],
       "challengeSeed": [
         "function welcomeToBooleans() {",
