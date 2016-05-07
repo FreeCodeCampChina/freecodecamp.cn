@@ -469,11 +469,11 @@
       "id": "cf1111c1c16feddfaeb2bdef",
       "title": "Reverse Arrays with .reverse",
       "description": [
-        "You can use the <code>reverse</code> method to reverse the elements of an array.",
-        "<code>reverse</code> is another array method that alters the array in place, but it also returns the reversed array.",
+        "你可以使用 <code>reverse</code> 方法来使数组中的元素反序排列。",
+        "<code>reverse</code> 是另外一个会改变原始数组的方法（变成反序），但它也返回反序后的数组。",
         "<blockquote>var myArray = [1, 2, 3];<br>myArray.reverse();</blockquote>",
         "<em>returns [3, 2, 1]</em>",
-        "Use <code>reverse</code> to reverse the <code>array</code> variable and assign it to <code>newArray</code>."
+        "使用 <code>reverse</code> 来反序 <code>array</code> 数组。并赋值给 <code>newArray</code>."
       ],
       "challengeSeed": [
         "var array = [1,2,3,4,5,6,7];",
@@ -487,9 +487,9 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(newArray, [7,6,5,4,3,2,1], 'message: You should reverse the array.');",
-        "assert(editor.getValue().match(/\\.reverse\\s*\\(\\)/gi), 'message: You should use the <code>reverse</code> method.');",
-        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7/gi), 'message: You should only be using <code>reverse</code> to modify <code>array</code>.');"
+        "assert.deepEqual(newArray, [7,6,5,4,3,2,1], 'message:你应该反序数组。');",
+        "assert(editor.getValue().match(/\\.reverse\\s*\\(\\)/gi), 'message:你应该使用 <code>reverse</code> 方法。');",
+        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7/gi), 'message:你应该仅用 <code>reverse</code> 去修改 <code>array</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
