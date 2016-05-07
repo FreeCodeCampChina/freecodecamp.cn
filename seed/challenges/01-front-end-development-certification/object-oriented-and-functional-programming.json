@@ -427,13 +427,13 @@
       "id": "cf1111c1c16feddfaeb1bdef",
       "title": "Sort Arrays with .sort",
       "description": [
-        "You can use the method <code>sort</code> to easily sort the values in an array alphabetically or numerically.",
-        "Unlike the previous array methods we have been looking at, <code>sort</code> actually alters the array in place. However, it also returns this sorted array.",
-        "<code>sort</code> can be passed a compare function as a callback. The compare function should return a negative number if <code>a</code> should be before <code>b</code>, a positive number if <code>a</code> should be after <code>b</code>, or <code>0</code> if they are equal.",
-        "If no compare function is passed in it will convert the values to strings and sort alphabetically.",
-        "Here is an example of using sort with a compare function that will sort the elements from smallest to largest number:",
+        "使用 <code>sort</code> 方法，你可以很容易的按字母顺序或数字顺序对数组中的元素进行排序。",
+        "与我们之前看到的数组方法不同， <code>sort</code> 方法将对原数组进行改变，并且返回被排序的数组。",
+        "<code>sort</code> 可以把对比用的函数作为参数传入。对比用的函数应该有返回值，当 <code>a</code> 应该在 <code>b</code> 之前，应该返回一个负数；当 <code>a</code> 应该在 <code>b</code> 之后，应该返回一个正数；相等时返回0。",
+        "如果没有传入对比函数，它将把值全部转成字符串，并按照字母顺序进行排序。",
+        "下面的例子将展示 <code>sort</code> 的使用，传入的对比函数把元素按照从小到大的顺序进行排列：",
         "<blockquote>var array = [1, 12, 21, 2];<br>array.sort(function(a, b) {<br>&nbsp;&nbsp;return a - b;<br>});</blockquote>",
-        "Use <code>sort</code> to sort <code>array</code> from largest to smallest."
+        "使用 <code>sort</code> 按照从大到小的顺序排序 <code>array</code> 。"
       ],
       "challengeSeed": [
         "var array = [1, 12, 21, 2];",
@@ -446,9 +446,9 @@
         "(function() {return array;})();"
       ],
       "tests": [
-        "assert.deepEqual(array, [21, 12, 2, 1], 'message: You should have sorted the array from largest to smallest.');",
-        "assert(editor.getValue().match(/\\[1,\\s*12,\\s*21,\\s*2\\];/gi), 'message: You should only be using <code>sort</code> to modify the array.');",
-        "assert(editor.getValue().match(/\\.sort\\s*\\(/g), 'message: You should have made use of the <code>sort</code> method.');"
+        "assert.deepEqual(array, [21, 12, 2, 1], 'message:你应该按照从大到小的顺序排序。');",
+        "assert(editor.getValue().match(/\\[1,\\s*12,\\s*21,\\s*2\\];/gi), 'message:你应该使用 <code>sort</code> 来改变数组。');",
+        "assert(editor.getValue().match(/\\.sort\\s*\\(/g), 'message:你应该使用 <code>sort</code> 方法。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
