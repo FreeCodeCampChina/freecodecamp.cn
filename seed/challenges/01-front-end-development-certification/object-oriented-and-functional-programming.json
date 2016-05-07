@@ -173,15 +173,15 @@
       "id": "563cfb55594311ffcb333c70",
       "title": "Make Unique Objects by Passing Parameters to our Constructor",
       "description": [
-        "The <code>constructor</code> we have is great, but what if we don't always want to create the same object?",
-        "To solve this we can add <code>parameters</code> to our <code>constructor</code>. We do this like the following example:",
+        "我们之前写的 <code>构造函数</code> 很好，但是我们不想总是创建相同的对象，怎么办呢？",
+        "为了解决这个问题，我们要向 <code>构造函数</code> 中添加 <code>参数</code> 。像下面这样：",
         "<blockquote>var Car = function(wheels, seats, engines) {<br>&nbsp;&nbsp;this.wheels = wheels;<br>&nbsp;&nbsp;this.seats = seats;<br>&nbsp;&nbsp;this.engines = engines;<br>};</blockquote>",
-        "Now we can pass in <code>arguments</code> when we call our <code>constructor</code>.",
+        "现在，我们可以在调用 <code>构造函数</code> 时传入一组 <code>参数</code> 了。",
         "<code>var myCar = new Car(6, 3, 1);</code>",
-        "This code will create an object that uses the <code>arguments</code> we passed in and looks like:",
+        "这段代码将会使用这一组 <code>参数</code> 来创建出下面的对象：",
         "<blockquote>{<br>&nbsp;&nbsp;wheels: 6,<br>&nbsp;&nbsp;seats: 3,<br>&nbsp;&nbsp;engines: 1<br>}</blockquote>",
-        "Now give it a try yourself! Alter the <code>Car</code> <code>constructor</code> to use <code>parameters</code> to assign values to the <code>wheels</code>, <code>seats</code>, and <code>engines</code> properties.",
-        "Then call your new <code>constructor</code> with three number <code>arguments</code> and assign it to <code>myCar</code> to see it in action."
+        "现在该你试试了！改动 <code>Car</code> 的 <code>构造函数</code> ，使它能够通过使用 <code>参数</code> 来为 <code>wheels</code> 、 <code>seats</code> 、 <code>engines</code> 属性进行赋值。",
+        "然后调用你刚刚改写过的 <code>构造函数</code> ，并传入三个 <code>参数</code> ，我们就能看到创建的新对象赋值给了 <code>myCar</code> 。"
       ],
       "challengeSeed": [
         "var Car = function() {",
@@ -201,10 +201,10 @@
         "var Car = function(wheels,seats,engines) {\n  this.wheels = wheels;\n  this.seats = seats;\n  this.engines = engines;\n};\n\nvar myCar = new Car(4,1,1);"
       ],
       "tests": [
-        "assert((function(){var testCar = new Car(3,1,2); return testCar.wheels === 3 && testCar.seats === 1 && testCar.engines === 2;})(), 'message: Calling <code>new Car(3,1,2)</code> should produce an object with a <code>wheels</code> property of <code>3</code>, a <code>seats</code> property of <code>1</code>, and an <code>engines</code> property of <code>2</code>.');",
-        "assert((function(){var testCar = new Car(4,4,2); return testCar.wheels === 4 && testCar.seats === 4 && testCar.engines === 2;})(), 'message: Calling <code>new Car(4,4,2)</code> should produce an object with a <code>wheels</code> property of <code>4</code>, a <code>seats</code> property of <code>4</code>, and an <code>engines</code> property of <code>2</code>.');",
-        "assert((function(){var testCar = new Car(2,6,3); return testCar.wheels === 2 && testCar.seats === 6 && testCar.engines === 3;})(), 'message: Calling <code>new Car(2,6,3)</code> should produce an object with a <code>wheels</code> property of <code>2</code>, a <code>seats</code> property of <code>6</code>, and an <code>engines</code> property of <code>3</code>.');",
-        "assert(typeof myCar.wheels === 'number' && typeof myCar.seats === 'number' && typeof myCar.engines === 'number', 'message: <code>myCar</code> should have number values for the <code>wheels</code>, <code>seats</code>, and <code>engines</code> properties.');"
+        "assert((function(){var testCar = new Car(3,1,2); return testCar.wheels === 3 && testCar.seats === 1 && testCar.engines === 2;})(), 'message:调用 <code>new Car(3,1,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>3</code>，一个 <code>seats</code> 属性，且值为 <code>1</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>。');",
+        "assert((function(){var testCar = new Car(4,4,2); return testCar.wheels === 4 && testCar.seats === 4 && testCar.engines === 2;})(), 'message:调用 <code>new Car(4,4,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>4</code，一个 <code>seats</code> 属性，且值为 <code>4</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>.');",
+        "assert((function(){var testCar = new Car(2,6,3); return testCar.wheels === 2 && testCar.seats === 6 && testCar.engines === 3;})(), 'message:调用 <code>new Car(2,6,3)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>2</code>，一个 <code>seats</code> 属性，且值为<code>6</code>，和一个 <code>engines</code> 属性，且值为 <code>3</code>.');",
+        "assert(typeof myCar.wheels === 'number' && typeof myCar.seats === 'number' && typeof myCar.engines === 'number', 'message: <code>myCar</code> 的 <code>wheels</code>、<code>seats</code>、 <code>engines</code> 属性的值应该是一个数字。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
@@ -233,14 +233,14 @@
       "id": "cf1111c1c15feddfaeb3bdef",
       "title": "Make Object Properties Private",
       "description": [
-        "Objects have their own attributes, called <code>properties</code>, and their own functions, called <code>methods</code>.",
-        "In the previous challenges, we used the <code>this</code> keyword to reference <code>public properties</code> of the current object.",
-        "We can also create <code>private properties</code> and <code>private methods</code>, which aren't accessible from outside the object.",
-        "To do this, we create the variable inside the <code>constructor</code> using the <code>var</code> keyword we're familiar with, instead of creating it as a <code>property</code> of <code>this</code>.",
-        "This is useful for when we need to store information about an object but we want to control how it is used by outside code.",
-        "For example, what if we want to store the <code>speed</code> our car is traveling at but we only want outside code to be able to modify it by accelerating or decelerating, so the speed changes in a controlled way?",
-        "In the editor you can see an example of a <code>Car</code> <code>constructor</code> that implements this pattern.",
-        "Now try it yourself! Modify the <code>Bike</code> <code>constructor</code> to have a <code>private property</code> called <code>gear</code> and two <code>public methods</code> called <code>getGear</code> and <code>setGear</code> to get and set that value."
+        "对象拥有自己的特征，称为 <code>属性</code> （就像我们之前一直称呼的那样），对象还有自己的函数，称为 <code>方法</code> 。",
+        "在前面的改动中，（构造函数中）我们使用了 <code>this</code> 指向当前（将要被创建的）对象中的 <code>公有属性</code> 。",
+        "我们也可以创建 <code>私有属性</code> 和 <code>私有方法</code> ，它们两个在对象外部是不可访问的。",
+        "为了完成这个，我们在 <code>构造函数</code> 中，使用我们熟悉的 <code>var</code> 关键字去创建变量，来替代我们使用 <code>this</code> 创建 <code>属性</code> 。",
+        "当我们想保存对象的某些信息，但又想这个信息在被外界使用时，是受控制的。这个方法很有用。",
+        "比如，我们想记录我们的car行驶的 <code>speed</code> ，但是我们希望外面的代码对 <code>speed</code> 的修改只能是加速或减速（而不是变成字符串、直接赋值成某个速度等其他操作），那么如何达到这类操作的目的呢？",
+        "编辑器中的 <code>构造函数</code> 展示了如何实现这种控制模式。",
+        "该你自己试试了！修改 <code>Bike</code> 的 <code>构造函数</code> ，使它有一个名为 <code>gear</code> 的 <code>私有属性</code> ，还有两个公有方法，叫做 <code>getGear</code> 和 <code>setGear</code> ，这两个方法用来获得和设置 <code>gear</code> 的值。"
       ],
       "challengeSeed": [
         "var Car = function() {",
@@ -278,12 +278,12 @@
         "var Car = function() {\n  var speed = 10;\n\n  this.accelerate = function(change) {\n    speed += change;\n  };\n\n  this.decelerate = function() {\n    speed -= 5;\n  };\n\n  this.getSpeed = function() {\n    return speed;\n  };\n};\n\nvar Bike = function() {\n  var gear = 1;\n  \n  this.getGear = function() {\n    return gear;\n  };\n  \n  this.setGear = function(newGear) {\n    gear = newGear;\n  };\n};\n\nvar myCar = new Car();\n\nvar myBike = new Bike();"
       ],
       "tests": [
-        "assert(typeof myBike.getGear !== 'undefined' && typeof myBike.getGear === 'function', 'message: The method <code>getGear</code> of <code>myBike</code> should be accessible outside the object.');",
-        "assert(typeof myBike.setGear !== 'undefined' && typeof myBike.setGear === 'function', 'message: The method <code>setGear</code> of <code>myBike</code> should be accessible outside the object.');",
-        "assert(typeof myBike.gear === 'undefined', 'message: <code>myBike.gear</code> should remain  <code>40</code> .');",
-        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message: <code>myBike.getGear()</code> should return <code>4</code> after calling <code>myBike.setGear(4)</code>.');",
-        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message: <code>myBike.getGear()</code> should return <code>3</code> after calling <code>myBike.setGear(3)</code>.');",
-        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message: <code>myBike.getGear()</code> should return <code>1</code> after calling <code>myBike.setGear(1)</code>.');"
+        "assert(typeof myBike.getGear !== 'undefined' && typeof myBike.getGear === 'function', 'message: <code>myBike</code> 的 <code>getGear</code> 方法在对象之外应该可以访问。');",
+        "assert(typeof myBike.setGear !== 'undefined' && typeof myBike.setGear === 'function', 'message: <code>myBike</code> 的 <code>setGear</code> 方法在对象之外应该可以访问。 ');",
+        "assert(typeof myBike.gear === 'undefined', 'message: <code>myBike.gear</code> 在外部访问时，应该保持  <code>undefined</code> ，即外部访问不到私有属性。');",
+        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message:当调用 <code>myBike.setGear(4)</code>时，<code>myBike.getGear()</code> 应该返回 <code>4</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message:当调用 <code>myBike.setGear(3)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>3</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message:当调用 <code>myBike.setGear(1)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>1</code> 。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
@@ -303,12 +303,12 @@
       "id": "cf1111c1c15feddfaeb7bdef",
       "title": "Iterate over Arrays with .map",
       "description": [
-        "The <code>map</code> method is a convenient way to iterate through arrays. Here's an example usage:",
+        " <code>map</code> 方法可以方便的迭代数组。下面是使用的例子：",
         "<blockquote>var timesFour = oldArray.map(function(val){<br>&nbsp;&nbsp;return val * 4;<br>});</blockquote>",
         "",
-        "The <code>map</code> method will iterate through every element of the array, creating a new array with values that have been modified by the callback function, and return it.  Note that it does not modify the original array.",
-        "In our example the callback only uses the value of the array element (the <code>val</code> argument) but your callback can also include arguments for the <code>index</code> and <code>array</code> being acted on.",
-        "Use the map function to add 3 to every value in the variable <code>oldArray</code>, and save the results into variable <code>newArray</code>. oldArray should not change."
+        " <code>map</code> 方法会迭代数组中的每一个元素，并在创建一个新数组用来接收被回调函数处理过的每一个元素，最后返回这个新数组。注意，这个方法不会改变原始数组。",
+        "在我们的例子中，回调函数只会使用数组中的元素的值 (<code>val</code> 参数) ，但其实，你的回调函数也可以为 <code>元素的索引</code> 和 <code>原始数组</code>，在回调函数中增加他们的参数，这样你也可以在回调函数中使用它们了。",
+        "使用 <code>map</code> 函数来为 <code>oldArray</code> 中的每一项增加3，并且在 <code>newArray</code> 中保存它们。 <code>oldArray</code> 不应该被改变。"
       ],
       "challengeSeed": [
         "var oldArray = [1,2,3,4,5];",
@@ -321,10 +321,10 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(oldArray, [1,2,3,4,5], 'message: You should not change the original array.');",
-        "assert.deepEqual(newArray, [4,5,6,7,8], 'message: You should add three to each value in the array.');",
-        "assert(editor.getValue().match(/\\.map\\s*\\(/gi), 'message: You should be making use of the <code>map</code> method.');",
-        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\]/gi), 'message: You should only modify the array with <code>map</code>.');"
+        "assert.deepEqual(oldArray, [1,2,3,4,5], 'message:你不应该改变原始数组。');",
+        "assert.deepEqual(newArray, [4,5,6,7,8], 'message:你应该为数组中的每一项加3.');",
+        "assert(editor.getValue().match(/\\.map\\s*\\(/gi), 'message:你应该使用 <code>map</code> 方法。');",
+        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\]/gi), 'message: 你只能用 <code>map</code> 来更该数组。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
