@@ -582,10 +582,10 @@
       "id": "cf1111c1c16feddfaeb5bdef",
       "title": "Join Strings with .join",
       "description": [
-        "We can use the <code>join</code> method to join each element of an array into a string separated by whatever delimiter you provide as an argument.",
-        "The following is an example of using <code>join</code> to join all of the elements of an array into a string with all the elements separated by word <code>and</code>:",
+        "我们可以使用 <code>join</code> 方法来把数组转换成字符串，里面的每一个元素可以用你指定的分隔符来隔开，这个分隔符是你要传入的参数。",
+        "下面展示了使用 <code>join</code> 来将数组中的每一项放入字符串，并用 <code> and </code> 进行分隔：",
         "<blockquote>var veggies = [\"Celery\", \"Radish\", \"Carrot\", \"Potato\"];<br>var salad = veggies.join(\" and \");<br>console.log(salad); // \"Celery and Radish and Carrot and Potato\" </blockquote>",
-        "Use the <code>join</code> method to create a string from <code>joinMe</code> with spaces in between each element and assign it to <code>joinedString</code>."
+        "使用 <code>join</code> 方法创建一个字符串，字符串来自 <code>jionMe</code> 数组，各元素之间使用空格来分隔，最后把它赋值给 <code>joinedString</code>."
       ],
       "challengeSeed": [
         "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];",
@@ -599,8 +599,8 @@
         "(function() {return joinedString;})();"
       ],
       "tests": [
-        "assert(typeof joinedString === 'string' && joinedString === \"Split me into an array\", 'message: You should join the elements of the array with spaces.');",
-        "assert(/\\.join\\(/gi, 'message: You should use of the <code>join</code> method on the array.');"
+        "assert(typeof joinedString === 'string' && joinedString === \"Split me into an array\", 'message:你应该使用空格来分隔元素。');",
+        "assert(/\\.join\\(/gi, 'message:你应该在数组上使用 <code>join</code> 方法。');"
       ],
       "type": "waypoint",
       "challengeType": 1,
