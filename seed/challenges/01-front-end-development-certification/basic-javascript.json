@@ -1425,7 +1425,7 @@
       "title": "Access Multi-Dimensional Arrays With Indexes",
       "description": [
         "可以把 <dfn>多维</dfn> 数组看作成是一个 <em>数组中的数组</em>。当使用括号去访问数组的时候，第一套括号是指最外层数组中的条目，第二套括号每增加1是指内部数组的下一个条目。",
-        "<strong>例子</strong>",
+        "<strong>例如</strong>",
         "<blockquote>var arr = [<br>    [1,2,3],<br>    [4,5,6],<br>    [7,8,9],<br>    [[10,11,12], 13, 14]<br>];<br>arr[0]; // 等于 [1,2,3]<br>arr[1][2]; // 等于 6<br>arr[3][0][1]; // 等于 11</blockquote>",
         "<h4>Instructions</h4>",
         "对数组 <code>myArray</code> 使用括号标记符号操作使得 myData 的值为 <code>8</code>"
@@ -1964,7 +1964,7 @@
       "title": "Return a Value from a Function with Return",
       "description": [
         "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数。您可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
-        "<strong>例子</strong>",
+        "<strong>例如</strong>",
         "<blockquote>function plusThree(num) {<br>  return num + 3;<br>}<br>var answer = plusThree(5); // 8</blockquote>",
         "<code>plusThree</code> 带有一个为 <code>num</code> 的 <dfn>参数</dfn> 并且返回（returns）一个等于 <code>num + 3</code> 的值。",
         "<h4>Instructions</h4>",
@@ -2143,7 +2143,7 @@
         "<code>If</code> 语句用于在代码中做判断。关键字 <code>if</code> 告诉 JavaScript 在括号中一定的条件下去执行定义在大括号里面的代码。这些条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
         "当条件的计算结果为 <code>true</code>，程序执行大括号内的语句。当布尔条件的计算结果为 <code>false</code>，大括号内的代码将不会执行。",
         "<strong>伪代码</strong>",
-        "<blockquote>if (<i>condition is true</i>) {<br>  <i>statement is executed</i><br>}</blockquote>",
+        "<blockquote>if(<i>条件为真</i>){<br>  <i>语句被执行</i><br>}</blockquote>",
         "<strong>示例</strong>",
         "<blockquote>function test (myCondition) {<br>  if (myCondition) {<br>     return \"It was true\";<br>  }<br>  return \"It was false\";<br>}<br>test(true);  // returns \"It was true\"<br>test(false); // returns \"It was false\"</blockquote>",
         "当 <code>test</code> 被调用，并且传递进来的参数值为 <code>true</code>，<code>if</code> 语句会计算 <code>myCondition</code> 的结果，看它是真还是假。如果条件为 <code>true</code>，函数会返回 <code>\"It was true\"</code>。当 <code>test</code> 被调用，并且传递进来的参数值为 <code>false</code>，<code>myCondition</code> <em>不</em> 为 <code>true</code>，并且不执行大括号后面的语句，函数返回 <code>\"It was false\"</code>。",
@@ -2264,11 +2264,11 @@
       "id": "56533eb9ac21ba0edf2244d2",
       "title": "Comparison with the Inequality Operator",
       "description": [
-        "The inequality operator (<code>!=</code>) is the opposite of the equality operator. It means \"Not Equal\" and returns <code>false</code> where equality would return <code>true</code> and <em>vice versa</em>. Like the equality operator, the inequality operator will convert data types of values while comparing.",
-        "<strong>Examples</strong>",
+        "不相等运算符（<code>!=</code>）与相等运算符是相反的。这意味着不相等运算符中，如果“不为真”并且返回 <code>false</code> 的地方，在相等运算符中会返回<code>true</code>，<em>反之亦然</em>。与相等运算符类似，不相等运算符在比较的时候也会转换值的数据类型。",        
+        "<strong>例如</strong>",
         "<blockquote>1 != 2      // true<br>1 != \"1\"    // false<br>1 != '1'    // false<br>1 != true   // false<br>0 != false  // false</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the inequality operator <code>!=</code> in the <code>if</code> statement so that the function will return \"Not Equal\" when <code>val</code> is not equivalent to <code>99</code>"
+        "在 <code>if</code> 语句中，添加不相等运算符 <code>!=</code>，这样函数在当 <code>val</code> 不等于  <code>99</code> 的时候，会返回 \"Not Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2301,11 +2301,11 @@
       "id": "56533eb9ac21ba0edf2244d3",
       "title": "Comparison with the Strict Inequality Operator",
       "description": [
-        "The strict inequality operator (<code>!==</code>) is the opposite of the strict equality operator. It means \"Strictly Not Equal\" and returns <code>false</code> where strict equality would return <code>true</code> and <em>vice versa</em>. Strict inequality will not convert data types.",
-        "<strong>Examples</strong>",
+        "不全等运算符（<code>!==</code>）与全等运算符是相反的。这意味着“不全等”并返回 <code>false</code> 的地方，用全等运算会返回 <code>true</code>，<em>反之亦然</em>。全等运算符不会转换值的数据类型。",
+        "<strong>例如</strong>",
         "<blockquote>3 !== 3   // false<br>3 !== '3' // true<br>4 !== 3   // true</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>strict inequality operator</code> to the <code>if</code> statement so the function will return \"Not Equal\" when <code>val</code> is not strictly equal to <code>17</code>"
+        "在 <code>if</code> 语句中，添加 <code>全等运算符</code>，这样如果 <code>val</code> 不全等于 <code>17</code> 的时候，函数会返回 \"Not Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2342,12 +2342,12 @@
       "id": "56533eb9ac21ba0edf2244d4",
       "title": "Comparison with the Greater Than Operator",
       "description": [
-        "The greater than operator (<code>&gt;</code>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns <code>true</code>. Otherwise, it returns <code>false</code>.",
-        "Like the equality operator, greater than operator will convert data types of values while comparing.",
-        "<strong>Examples</strong>",
+        "使用大于运算符（<code>&gt;</code>）来比较两个数字。如果大于运算符左边的数字大于右边的数字，将会返回 <code>true</code>。否则，它返回 <code>false</code>。",        
+        "与相等运算符相似，大于运算符在比较的时候，会转换值的数据类型。",
+        "<strong>例如</strong>",
         "<blockquote> 5 > 3   // true<br> 7 > '3' // true<br> 2 > 3   // false<br>'1' > 9  // false</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>greater than</code> operator to the indicated lines so that the return statements make sense."
+        "添加 <code>大于</code> 运算符到指定的行，使得返回的语句是有意义的。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2386,12 +2386,12 @@
       "id": "56533eb9ac21ba0edf2244d5",
       "title": "Comparison with the Greater Than Or Equal To Operator",
       "description": [
-        "The <code>greater than or equal to</code> operator (<code>&gt;=</code>) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns <code>true</code>. Otherwise, it returns <code>false</code>.",
-        "Like the equality operator, <code>greater than or equal to</code> operator will convert data types while comparing.",
-        "<strong>Examples</strong>",
+        "使用 <code>大于等于</code> 运算符（<code>&gt;=</code>）来比较两个数字的大小。如果大于等于运算符左边的数字比右边的数字大或者相等，它会返回 <code>true</code>。否则，它会返回 <code>false</code>。",
+        "与相等运算符相似，<code>大于等于/code> 运算符在比较的时候会转换值的数据类型。",
+        "<strong>例如</strong>",
         "<blockquote> 6  >=  6  // true<br> 7  >= '3' // true<br> 2  >=  3  // false<br>'7' >=  9  // false</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>greater than or equal to</code> operator to the indicated lines so that the return statements make sense."
+        "添加 <code>大于等于</code> 运算符到指定行，使得函数的返回语句有意义。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2430,11 +2430,11 @@
       "id": "56533eb9ac21ba0edf2244d6",
       "title": "Comparison with the Less Than Operator",
       "description": [
-        "The <dfn>less than</dfn> operator (<code>&lt;</code>) compares the values of two numbers. If the number to the left is less than the number to the right, it returns <code>true</code>. Otherwise, it returns <code>false</code>. Like the equality operator, <dfn>less than</dfn> operator converts data types while comparing.",
-        "<strong>Examples</strong>",
+        "使用 <dfn>小于</dfn> 运算符（<code>&lt;</code>）比较两个数字的大小。如果小于运算符左边的数字比右边的数字大，它会返回 <code>true</code>。否则，他会返回 <code>false</code>。与相等运算符类似，<dfn>小于</dfn> 运算符在做比较的时候会转换值的数据类型。",        
+        "<strong>例如</strong>",
         "<blockquote>  2 &lt; 5  // true<br>'3' &lt; 7  // true<br>  5 &lt; 5  // false<br>  3 &lt; 2  // false<br>'8' &lt; 4  // false</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>less than</code> operator to the indicated lines so that the return statements make sense."
+        "添加 <code>小于</code> 运算符到指定行，使得函数的返回语句有意义。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2472,11 +2472,11 @@
       "id": "56533eb9ac21ba0edf2244d7",
       "title": "Comparison with the Less Than Or Equal To Operator",
       "description": [
-        "The <code>less than or equal to</code> operator (<code>&lt;=</code>) compares the values of two numbers. If the number to the left is less than or equal the number to the right, it returns <code>true</code>. If the number on the left is greater than the number on the right, it returns <code>false</code>. Like the equality operator, <code>less than or equal to</code> converts data types.",
-        "<strong>Examples</strong>",
+        "使用 <code>小于等于</code> 运算符（<code>&lt;=</code>）比较两个数字的大小。如果在小于等于运算符，左边的数字小于或者等于右边的数字，它会返回 <code>true</code>。如果在小于等于运算符，左边的数字大于或者等于右边的数字，它会返回 <code>false</code>。与相等运算符类型，<code>小于等于</code> 运算符会转换数据类型。",      
+        "<strong>例如</strong>",
         "<blockquote>  4 &lt;= 5  // true<br>'7' &lt;= 7  // true<br>  5 &lt;= 5  // true<br>  3 &lt;= 2  // false<br>'8' &lt;= 4  // false</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>less than or equal to</code> operator to the indicated lines so that the return statements make sense."
+        "添加 <code>小于等于</code> 运算符到指定行，使得函数的返回语句有意义。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2516,13 +2516,13 @@
       "id": "56533eb9ac21ba0edf2244d8",
       "title": "Comparisons with the Logical And Operator",
       "description": [
-        "Sometimes you will need to test more than one thing at a time. The <dfn>logical and</dfn> operator (<code>&&</code>) returns <code>true</code> if and only if the <dfn>operands</dfn> to the left and right of it are true.",
-        "The same effect could be achieved by nesting an if statement inside another if:",
+        "有时你需要在一次测试中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",        
+        "同样的效果可以通过if语句的嵌套来实现：",
         "<blockquote>if (num > 5) {<br>  if (num < 10) {<br>    return \"Yes\";<br>  }<br>}<br>return \"No\";</blockquote>",
-        "will only return \"Yes\" if <code>num</code> is between <code>6</code> and <code>9</code> (6 and 9 included). The same logic can be written as:",
+        "只有当 <code>num</code> 的值在6和9之间（包括6和9）才会返回 \"Yes\"。相同的逻辑可被写为：",
         "<blockquote>if (num > 5 && num < 10) {<br>  return \"Yes\";<br>}<br>return \"No\";</blockquote>",
         "<h4>Instructions</h4>",
-        "Combine the two if statements into one statement which will return <code>\"Yes\"</code> if <code>val</code> is less than or equal to <code>50</code> and greater than or equal to <code>25</code>. Otherwise, will return <code>\"No\"</code>."
+        "结合两个if语句为一个语句，如果 <code>val</code> 小于或等于 <code>50</code> 并且大于或等于 <code>25</code>，返回 <code>\"Yes\"</code>。否则，将返回 <code>\"No\"</code>。"        
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
