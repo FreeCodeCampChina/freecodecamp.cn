@@ -2140,15 +2140,15 @@
       "id": "cf1111c1c12feddfaeb3bdef",
       "title": "Use Conditional Logic with If Statements",
       "description": [
-        "<code>If</code> statements are used to make decisions in code. The keyword <code>if</code> tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as <code>Boolean</code> conditions because they may only be <code>true</code> or <code>false</code>.",
-        "When the condition evaluates to <code>true</code>, the program executes the statement inside the curly braces. When the Boolean condition evaluates to <code>false</code>, the statement inside the curly braces will not execute.",
-        "<strong>Pseudocode</strong>",
+        "<code>If</code> 语句用于在代码中做判断。关键字 <code>if</code> 告诉 JavaScript 在括号中一定的条件下去执行定义在大括号里面的代码。这些条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
+        "当条件的计算结果为 <code>true</code>，程序执行大括号内的语句。当布尔条件的计算结果为 <code>false</code>，大括号内的代码将不会执行。",
+        "<strong>伪代码</strong>",
         "<blockquote>if (<i>condition is true</i>) {<br>  <i>statement is executed</i><br>}</blockquote>",
-        "<strong>Example</strong>",
+        "<strong>示例</strong>",
         "<blockquote>function test (myCondition) {<br>  if (myCondition) {<br>     return \"It was true\";<br>  }<br>  return \"It was false\";<br>}<br>test(true);  // returns \"It was true\"<br>test(false); // returns \"It was false\"</blockquote>",
-        "When <code>test</code> is called with a value of <code>true</code>, the <code>if</code> statement evaluates <code>myCondition</code> to see if it is <code>true</code> or not. Since it is <code>true</code>, the function returns <code>\"It was true\"</code>. When we call <code>test</code> with a value of <code>false</code>, <code>myCondition</code> is <em>not</em> <code>true</code> and the statement in the curly braces is not executed and the function returns <code>\"It was false\"</code>.",
+        "当 <code>test</code> 被调用，并且传递进来的参数值为 <code>true</code>，<code>if</code> 语句会计算 <code>myCondition</code> 的结果，看它是真还是假。如果条件为 <code>true</code>，函数会返回 <code>\"It was true\"</code>。当 <code>test</code> 被调用，并且传递进来的参数值为 <code>false</code>，<code>myCondition</code> <em>不</em> 为 <code>true</code>，并且不执行大括号后面的语句，函数返回 <code>\"It was false\"</code>。",
         "<h4>Instructions</h4>",
-        "Create an <code>if</code> statement inside the function to return <code>\"That was true\"</code> if the parameter <code>wasThatTrue</code> is <code>true</code> and return <code>\"That was false\"</code> otherwise."
+        "在函数内部创建一个 <code>if</code> 语句，如果该参数 <code>wasThatTrue</code> 值为 <code>true</code>，返回 <code>\"That was true\"</code>，否则，并返回 <code>\"That was false\"</code>。"
       ],
       "challengeSeed": [
         "// Example",
@@ -2190,14 +2190,14 @@
       "id": "56533eb9ac21ba0edf2244d0",
       "title": "Comparison with the Equality Operator",
       "description": [
-        "There are many <dfn>Comparison Operators</dfn> in JavaScript. All of these operators return a boolean <code>true</code> or <code>false</code> value.",
-        "The most basic operator is the equality operator <code>==</code>. The equality operator compares two values and returns <code>true</code> if they're equivalent or <code>false</code> if they are not. Note that equality is different from assignment (<code>=</code>), which assigns the value at the right of the operator to a variable in the left.",
+        "在 JavaScript 中，有很多 <dfn>相互比较的操作</dfn>。所有这些操作符返回一个 <code>true</code> 或 <code>false</code> 值。",
+        "最基本的运算符是相等运算符：<code>==</code>。相等运算符比较两个值，如果它们是同等，返回 <code>true</code>，如果它们不等，返回 <code>false</code>。值得注意的是相等运算符不同于赋值操作符（<code>=</code>），赋值操作符是把等号右边的值赋给左边的变量。",        
         "<blockquote>function equalityTest(myVal) {<br>  if (myVal == 10) {<br>     return \"Equal\";<br>  }<br>  return \"Not Equal\";<br>}</blockquote>",
-        "If <code>myVal</code> is equal to <code>10</code>, the equality operator returns <code>true</code>, so the code in the curly braces will execute, and the function will return <code>\"Equal\"</code>. Otherwise, the function will return <code>\"Not Equal\"</code>.",
-        "In order for JavaScript to compare two different <code>data types</code> (for example, <code>numbers</code> and <code>strings</code>), it must convert one type to another. Once it does, however, it can compare terms as follows:",
+        "如果 <code>myVal</code> 等于 <code>10</code>，相等运算符会返回 <code>true</code>，因此大括号里面的代码会被执行，函数将返回 <code>\"Equal\"</code>。否则，函数返回 <code>\"Not Equal\"</code>。",        
+        "在 JavaScript 中，为了让两个不同的 <code>数据类型</code>（例如 <code>数字</code> 和 <code>字符串</code>）的数据可以作比较，它必须把一种类型转换为另一种类型。然而一旦这样做，它可以像下面这样来比较：",        
         "<blockquote>   1   ==  1    // true<br>   1   ==  2    // false<br>   1   == '1'   // true<br>  \"3\"  ==  3    // true</blockquote>",
         "<h4>Instructions</h4>",
-        "Add the <code>equality operator</code> to the indicated line so that the function will return \"Equal\" when <code>val</code> is equivalent to <code>12</code>"
+        "把 <code>等于运算符</code> 添加到指定的行，这样当 <code>val</code> 的值为<code>12</code>的时候，函数会返回\"Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2228,12 +2228,12 @@
       "id": "56533eb9ac21ba0edf2244d1",
       "title": "Comparison with the Strict Equality Operator",
       "description": [
-        "Strict equality (<code>===</code>) is the counterpart to the equality operator (<code>==</code>). Unlike the equality operator, strict equality tests both the <code>data type</code> and value of the compared elements.",
-        "<strong>Examples</strong>",
+        "全等（<code>===</code>）是相对于相等操作符（<code>==</code>）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 <code>数据类型</code>。",
+        "<strong>两个例子</strong>",
         "<blockquote>3 === 3   // true<br>3 === '3' // false</blockquote>",
-        "In the second example, <code>3</code> is a <code>Number</code> type and <code>'3'</code> is a <code>String</code> type.",
+        "在第二个示例中, <code>3</code> 是一个 <code>数字</code> 类型的，<code>'3'</code> 是一个 <code>字符</code> 类型的。",
         "<h4>Instructions</h4>",
-        "Use strict equality operator in <code>if</code> statement so the function will return \"Equal\" when <code>val</code> is strictly equal to <code>7</code>"
+        "在 <code>if</code> 语句值使用全等运算符，这样当 <code>val</code> 严格等于7的时候，函数会返回\"Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
