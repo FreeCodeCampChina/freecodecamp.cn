@@ -103,7 +103,7 @@
         "记住，APIs——应用程序接口（Application Programming Interfaces——是计算机之间相互交流沟通的工具。",
         "许多网站的应用程序接口（APIs）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
         "其实如果你曾经创建过一个JS的对象的话，你已经使用过了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code> 、 <code>}</code>包围的对象属性，以及属性的值组成。",
-        "这些对象属性以及属性值就是我们进场听到的\"键值对（key-value pairs）\"。",
+        "这些对象属性以及属性值就是我们经常听到的\"键值对（key-value pairs）\"。",
         "那就让我们从之前章节中用到的FreeCodeCam的猫图API中拿取数据吧。",
         "你应该在你的点击事件中加入如下的代码：",
         "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
