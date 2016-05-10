@@ -9,7 +9,7 @@
       "title": "Trigger Click Events with jQuery",
       "description": [
         "这一节，我们将学习如何从应用程序接口(APIs)中获取数据——应用程序接口（APIs）——计算机之间相互交流沟通的工具。",
-        "在我们获取到数据之后，我们还会学习如何用Ajxa技术来将这些数据更新到HTML页面当中去。",
+        "在我们获取到数据之后，我们还会学习如何用Ajax技术来将这些数据更新到HTML页面当中去。",
         "首先，我们来看一下函数<code>$(document).ready()</code>干了些什么。这个函数中的代码只会在我们的页面加载时候运行一次。",
         "本节要实现的功能是在点击\"Get Message\"按钮之后，改变含有<code>message</code> class的元素的显示值。",
         "为了实现这个功能，我们先要在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
@@ -103,7 +103,7 @@
         "记住，APIs——应用程序接口（Application Programming Interfaces——是计算机之间相互交流沟通的工具。",
         "许多网站的应用程序接口（APIs）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
         "其实如果你曾经创建过一个JS的对象的话，你已经使用过了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code> 、 <code>}</code>包围的对象属性，以及属性的值组成。",
-        "这些对象属性以及属性值就是我们进场听到的\"键值对（key-value pairs）\"。",
+        "这些对象属性以及属性值就是我们经常听到的\"键值对（key-value pairs）\"。",
         "那就让我们从之前章节中用到的FreeCodeCam的猫图API中拿取数据吧。",
         "你应该在你的点击事件中加入如下的代码：",
         "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
