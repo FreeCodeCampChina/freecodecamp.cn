@@ -2564,13 +2564,13 @@
       "id": "56533eb9ac21ba0edf2244d9",
       "title": "Comparisons with the Logical Or Operator",
       "description": [
-        "The <dfn>logical or</dfn> operator (<code>||</code>) returns <code>true</code> if either of the <dfn>operands</dfn> is <code>true</code>. Otherwise, it returns <code>false</code>.",
-        "The pattern below should look familiar from prior waypoints:",
+        "如果任一 <dfn>操作数</dfn> 为 <code>true</code>，<dfn>逻辑或</dfn>操作符（<code>||</code>）会返回 <code>true</code>。否则，它返回 <code>false</code>。",
+        "通过之前的测试，对于下面的模式应该很熟悉了：",
         "<blockquote>if (num > 10) {<br>  return \"No\";<br>}<br>if (num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
-        "will return \"Yes\" only if <code>num</code> is between <code>5</code> and <code>10</code> (5 and 10 included). The same logic can be written as:",
+        "只有当 <code>num</code> 的值在 <code>5</code> 和 <code>10</code> 之间（包括5和10），才会返回 \"Yes\"。相同的逻辑可被写为：",
         "<blockquote>if (num > 10 || num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
         "<h4>Instructions</h4>",
-        "Combine the two <code>if</code> statements into one statement which returns <code>\"Outside\"</code> if <code>val</code> is not between <code>10</code> and <code>20</code>, inclusive. Otherwise, return <code>\"Inside\"</code>."
+        "合并两个 <code>if</code> 语句为一条语句，如果val不在 <code>10</code> 和 <code>20</code>（含）之间，返回\"Outside\"。否则，返回 <code>\"Inside\"</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2614,10 +2614,10 @@
       "id": "56533eb9ac21ba0edf2244da",
       "title": "Introducing Else Statements",
       "description": [
-        "When a condition for an <code>if</code> statement is true, the block of code following it is executed. What about when that condition is false?  Normally nothing would happen. With an <code>else</code> statement, an alternate block of code can be executed.",
+        "当一个 <code>if</code> 语句中的条件为真（true）时，则执行之后它的代码块。如果条件为假（false）怎么办呢？通常情况下什么都不会发生。使用 <code>else</code> 语句，else之后的代码块将会被执行。",
         "<blockquote>if (num > 10) {<br>  return \"Bigger than 10\";<br>} else {<br>  return \"10 or Less\";<br>}</blockquote>",
         "<h4>Instructions</h4>",
-        "Combine the <code>if</code> statements into a single <code>if/else</code> statement."
+        "合并 <code>if</code> 语句到一个单一的 <code>if/else</code> 语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2660,10 +2660,10 @@
       "id": "56533eb9ac21ba0edf2244db",
       "title": "Introducing Else If Statements",
       "description": [
-        "If you have multiple conditions that need to be addressed, you can chain <code>if</code> statements together with <code>else if</code> statements.",
+        "如果您有需要解决多个条件，可以把  <code>if</code>  语句与 <code>else if</code> 语句结合起来使用。",
         "<blockquote>if (num > 15) {<br>  return \"Bigger than 15\";<br>} else if (num < 5) {<br>  return \"Smaller than 5\";<br>} else {<br>  return \"Between 5 and 15\";<br>}</blockquote>",
         "<h4>Instructions</h4>",
-        "Convert the logic to use <code>else if</code> statements."
+        "使用 <code>else if</code> 语句来处理逻辑。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2702,17 +2702,17 @@
       "id": "5690307fddb111c6084545d7",
       "title": "Logical Order in If Else Statements",
       "description": [
-        "Order is important in <code>if</code>, <code>else if</code> statements.",
-        "The loop is executed from top to bottom so you will want to be careful of what statement comes first.",
-        "Take these two functions as an example.",
-        "Heres the first:",
+        "在 <code>if</code>，<code>else if</code> 语句中，顺序是很重要的。",
+        "语句是从上到下执行的，因此你就要注意应该把什么语句放在第一位。",
+        "取这两个函数作为例子。",
+        "第一个例子：",
         "<blockquote>function foo(x) {<br>  if (x < 1) {<br>    return \"Less than one\";<br>  } else if (x < 2) {<br>    return \"Less than two\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "And the second just switches the order of the statements:",
+        "而第二个只是切换了语句的顺序：",
         "<blockquote>function bar(x) {<br>  if (x < 2) {<br>    return \"Less than two\";<br>  } else if (x < 1) {<br>    return \"Less than one\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "While these two functions look nearly identical if we pass a number to both we get different outputs.",
+        "虽然这两个函数看起来几乎一样，如果我们传递一个数字却得到的是不同的输出。",
         "<blockquote>foo(0) // \"Less than one\"<br>bar(0) // \"Less than two\"</blockquote>",
         "<h4>Instructions</h4>",
-        "Change the order of logic in the function so that it will return the correct statements in all cases."
+        "改变在函数中逻辑的顺序，以便在所有情况下，将返回正确的语句。"
       ],
       "challengeSeed": [
         "function myTest(val) {",
@@ -2743,10 +2743,10 @@
       "id": "56533eb9ac21ba0edf2244dc",
       "title": "Chaining If Else Statements",
       "description": [
-        "<code>if/else</code> statements can be chained together for complex logic. Here is <dfn>pseudocode</dfn> of multiple chained <code>if</code> / <code>else if</code> statements:",
-        "<blockquote>if (<em>condition1</em>) {<br>  <em>statement1</em><br>} else if (<em>condition2</em>) {<br>  <em>statement2</em><br>} else if (<em>condition3</em>) {<br>  <em>statement3</em><br>. . .<br>} else {<br>  <em>statementN</em><br>}</blockquote>",
+        "<code>if/else</code> 语句可以一起处理复杂的逻辑链。这里的 <dfn>伪代码</dfn> 是多个 <code>if</code> / <code>else if</code> 的语句链：",
+        "<blockquote>if (<em>条件1</em>) {<br>  <em>语句1</em><br>} else if (<em>条件2</em>) {<br>  <em>语句2</em><br>} else if (<em>条件3</em>) {<br>  <em>语句3</em><br>. . .<br>} else {<br>  <em>语句N</em><br>}</blockquote>",
         "<h4>Instructions</h4>",
-        "Write chained <code>if</code>/<code>else if</code> statements to fulfill the following conditions:",
+        "写出满足下列条件的 <code>if</code>/<code>else if</code> 语句链：",
         "<code>num &lt;   5</code> - return \"Tiny\"<br><code>num &lt;  10</code> - return \"Small\"<br><code>num &lt; 15</code> - return \"Medium\"<br><code>num &lt; 20</code> - return \"Large\"<br><code>num >= 20</code>  - return \"Huge\""
       ],
       "releasedOn": "January 1, 2016",
@@ -2787,7 +2787,7 @@
       "id": "5664820f61c48e80c9fa476c",
       "title": "Golf Code",
       "description": [
-        "In the game of <a href=\"https://en.wikipedia.org/wiki/Golf\" target=\"_blank\">golf</a> each hole has a <code>par</code> for the average number of <code>strokes</code> needed to sink the ball. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.",
+        "在 <a href=\"https://en.wikipedia.org/wiki/Golf\" target=\"_blank\">高尔夫</a> 游戏中，each hole has a <code>par</code> for the average number of <code>strokes</code> needed to sink the ball. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.",
         "Your function will be passed <code>par</code> and <code>strokes</code> arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):",
         "<table class=\"table table-striped\"><thead><tr><th>Strokes</th><th>Return</th></tr></thead><tbody><tr><td>1</td><td>\"Hole-in-one!\"</td></tr><tr><td>&lt;= par - 2</td><td>\"Eagle\"</td></tr><tr><td>par - 1</td><td>\"Birdie\"</td></tr><tr><td>par</td><td>\"Par\"</td></tr><tr><td>par + 1</td><td>\"Bogey\"</td></tr><tr><td>par + 2</td><td>\"Double Bogey\"</td></tr><tr><td>&gt;= par + 3</td><td>\"Go Home!\"</td></tr></tbody></table>",
         "<code>par</code> and <code>strokes</code> will always be numeric and positive."
