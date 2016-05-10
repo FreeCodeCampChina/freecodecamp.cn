@@ -215,11 +215,10 @@
       "id": "cf1111c1c11feddfaeb3bdef",
       "title": "Add Two Numbers with JavaScript",
       "description": [
-        "<code>Number</code>（数字）是一种在 JavaScript 中来代表数值的一种类型。",
-        "现在让我们来尝试在 JavaScript 中加入两个数字。",
+        "现在让我们来尝试在JavaScript中做加法运算。",
         "JavaScript 中使用 <code>+</code> 号来让两个数字执行加法运算。",
         "",
-        "<strong>举个栗子</strong>",
+        "<strong>举例</strong>",
         "<blockquote>myVar = 5 + 10; // 等于 15</blockquote>",
         "",
         "<h4>任务</h4>",
@@ -249,7 +248,7 @@
         "我们也可以在 JavaScript 中执行减法运算。",
         "JavaScript 中使用 <code>-</code> 来做减法运算。",
         "",
-        "<strong>Example</strong>",
+        "<strong>举例</strong>",
         "<blockquote>myVar = 12 - 6; // 等于 6</blockquote>",
         "",
         "<h4>任务</h4>",
@@ -281,7 +280,7 @@
         "我们也可在 JavaScript 中使用乘法运算。",
         "JavaScript 使用这个 <code>*</code> 符号来让两个数字相乘。",
         "",
-        "<strong>Example</strong>",
+        "<strong>举例</strong>",
         "<blockquote>myVar = 13 * 13; // assigned 169</blockquote>",
         "",
         "<h4>任务</h4>",
@@ -312,11 +311,11 @@
         "我们可以在 JavaScript 中做除法运算。",
         "JavaScript 中使用 <code>/</code> 符号做除法运算。",
         "",
-        "<strong>Example</strong>",
+        "<strong>举例</strong>",
         "<blockquote>myVar = 16 / 2; // assigned 8</blockquote>",
         "",
         "<h4>任务</h4>",
-        "Change the <code>0</code> so that the <code>quotient</code> is equal to <code>2</code>."
+        "改变数值<code>0</code>来让变量 <code>quotient</code> 的值等于<code>2</code>。"
       ],
       "challengeSeed": [
         "var quotient = 66 / 0;",
@@ -340,11 +339,11 @@
       "id": "56533eb9ac21ba0edf2244ac",
       "title": "Increment a Number with JavaScript",
       "description": [
-        "使用 <code>++</code> ，我们可以很容易地对变量进行自增或者加一运算。",
+        "使用 <code>++</code> ，我们可以很容易地对变量进行自增或者<code>+1</code>运算。",
         "<code>i++;</code>",
         "等效于",
         "<code>i = i + 1;</code>",
-        "<strong>Note</strong><br>这种写法 <code>i++;</code>, 省去了书写=符号的必要。",
+        "<strong>提示</strong><br><code>i++;</code>这种写法，省去了书写=符号的必要。",
         "<h4>任务</h4>",
         "重写代码，使用 <code>++</code> 来对变量 <code>myVar</code> 进行自增操作。"
       ],
@@ -378,7 +377,7 @@
         "<code>i--;</code>",
         "等效于",
         "<code>i = i - 1;</code>",
-        "<strong>Note</strong><br>这种操作 <code>i--;</code>, 省去了书写等号的必要。",
+        "<strong>提示</strong><br><code>i--;</code>这种写法，省去了书写等号的必要。",
         "<h4>任务</h4>",
         "重写代码，使用 <code>--</code> 符号对 <code>myVar</code> 执行自减操作。"
       ],
@@ -408,8 +407,8 @@
       "id": "cf1391c1c11feddfaeb4bdef",
       "title": "Create Decimal Numbers with JavaScript",
       "description": [
-        "我们也可以把小数存储到变量中。小数有时会被称作 <dfn>浮点</dfn> 数字或被称作 <dfn>浮点</dfn> 。",
-        "<strong>Note</strong><br>不是所有的实数都可以用 <dfn>浮点</dfn> 数来表示。因此可能导致四舍五入的错误。<a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">详情在这儿</a>。",
+        "我们也可以把小数存储到变量中。小数也被称作 <dfn>浮点数</dfn> 。",
+        "<strong>提示</strong><br>不是所有的实数都可以用 <dfn>浮点数</dfn> 来表示。因为可能存在四舍五入的错误，<a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">详情在这儿</a>。",
         "<h4>任务</h4>",
         "创建一个变量 <code>myDecimal</code> 并给它给它一个十进制值与小数部分 (e.g. <code>5.7</code>)。"
       ],
@@ -437,10 +436,10 @@
       "id": "bd7993c9c69feddfaeb7bdef",
       "title": "Multiply Two Decimals with JavaScript",
       "description": [
-        "在 JavaScript 中，您也可以用小数进行计算，就像整数一样",
+        "在 JavaScript 中，您也可以用小数进行计算，就像整数一样。",
         "让我们把两个小数相乘，并得到它们相乘的结果（product）。",
         "<h4>任务</h4>",
-        "改变 <code>0.0</code> 的数值让变量的值等于 <code>5.0</code>。"
+        "改变 <code>0.0</code> 的数值让变量<code>product</code>的值等于 <code>5.0</code>。"
       ],
       "challengeSeed": [
         "var product = 2.0 * 0.0;",
@@ -490,14 +489,13 @@
       "id": "56533eb9ac21ba0edf2244ae",
       "title": "Finding a Remainder in JavaScript",
       "description": [
-        " <dfn>余</dfn> 运算符 <code>%</code> 给出了两个数字相除的余数。",
+        "现在我们用<code>%</code>运算符来取余。",
         "<strong>举例</strong>",
-        "<blockquote>5 % 2 = 1 因为<br>Math.floor(5 / 2) = 2 (商)<br>2 * 2 = 4<br>5 - 4 = 1 (余)</blockquote>",
-        "<strong>用法</strong><br>在数学中, 一个数字可以与数字 <code>2</code> 相除得到的余来看它是属于奇数还是偶数。",
+        "<blockquote>5 % 2 = 1</blockquote>",
+        "<strong>用法</strong><br>在数学中，看一个数是奇数还是偶数，只需要看这个数除以2得到的余数是0还是1。  ",
         "<blockquote>17 % 2 = 1 (17 is 奇数)<br>48 % 2 = 0 (48 is 偶数)</blockquote>",
-        "<strong>Note</strong><br><dfn>余</dfn> 操作符有时被不正确地称为 \"取模\" 操作符。虽然它们之间非常相似，但是余在负数上的操作上是不能运行的。",
         "<h4>任务</h4>",
-        "使用 <code>%</code> 操作符，让一个数与3通过求余操作使得变量 <dfn>remainder</dfn> 的值为11。"
+        "使用 <code>%</code> 操作符，计算11除以3剩下的余数，并把余数赋给变量remainder。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -523,13 +521,14 @@
       "id": "56533eb9ac21ba0edf2244af",
       "title": "Assignment with Plus Equals",
       "description": [
-        "在编程当中，通常通过赋值来修改变量的内容。请记住，一切操作等号右边先做求，所以我们可以这样子做：",
+        "在编程当中，通常通过赋值来修改变量的内容。请记住，先计算<code>=</code>右边，然后把计算出来的结果赋给左边。",
         "<code>myVar = myVar + 5;</code>",
-        "把数值 <code>5</code> 加到变量 <code>myVar</code>上。 由于这是一种常用的模式，也有操作符是一步到位既做数学运算符也赋值的。",
-        "这种操作符中的其中的一种就是 <code>+=</code> 运算符。",
+        "以上是最常见的运算赋值语句，先运算、再赋值。",
+        "还有一类操作符是一步到位既做运算也赋值的。",
+        "这类操作符的其中一种就是 <code>+=</code> 运算符。",
         "<code>myVar += 5;</code> 也是把数值 <code>5</code> 加到变量 <code>myVar</code>上。",
         "<h4>任务</h4>",
-        "使用 <code>+=</code> 操作符对变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code> 转换赋值的形式。"
+        "使用 <code>+=</code> 操作符实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -564,12 +563,12 @@
       "id": "56533eb9ac21ba0edf2244b0",
       "title": "Assignment with Minus Equals",
       "description": [
-        "与 <code>+=</code> 操作符类似，<code>-=</code> 操作符用来对一个变量进行减法操作。",
+        "与 <code>+=</code> 操作符类似，<code>-=</code> 操作符用来对一个变量进行减法赋值操作。",
         "<code>myVar = myVar - 5;</code>",
         "将会从变量 <code>myVar</code> 中减去数值 <code>5</code>。也可以写成这种形式：",
         "<code>myVar -= 5;</code>",
         "<h4>任务</h4>",
-        "使用 <code>-=</code> 操作来对变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code> 转换赋值的形式。"
+        "使用 <code>-=</code> 操作符实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -607,10 +606,10 @@
       "description": [
         "<code>*=</code> 操作符是让变量与一个数相乘并赋值。",
         "<code>myVar = myVar * 5;</code>",
-        "将会把变量 <code>myVar</code> 与数值 <code>5</code>相乘。也可以被写作这样的形式: ",
+        "将会把变量 <code>myVar</code> 与数值 <code>5</code>相乘。也可以写作这样的形式: ",
         "<code>myVar *= 5;</code>",
         "<h4>任务</h4>",
-        "使用 <code>*=</code> 操作符来改变变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code>的赋值形式。"
+        "使用 <code>*=</code>操作符实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -651,7 +650,7 @@
         "会把变量 <code>myVar</code> 的值除于 <code>5</code>。等价于: ",
         "<code>myVar /= 5;</code>",
         "<h4>任务</h4>",
-        "使用 <code>/=</code> 操作符来改变变量 <code>a</code>, <code>b</code>, 还有变量 <code>c</code>的赋值形式。"
+        "使用 <code>/=</code>操作符实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -686,9 +685,9 @@
       "id": "56533eb9ac21ba0edf2244b3",
       "title": "Convert Celsius to Fahrenheit",
       "description": [
-        "为了测试您的学习效果，您将创建\"从零开始\"的解决方案。把您的代码放置在指示线之间，它会针对多个测试用例来测试。",
-        "从摄氏转换为华氏的算法是：摄氏度的温度乘于9除于5，再加上32。",
-        "您将得到一个变量 <code>celsius</code> 的代表摄氏度的温度。创建一个变量 <code>fahrenheit</code>，然后应用算法来求出其在华氏相应的温度。"
+        "为了测试你的学习效果，我们来做一个摄氏度转华氏度的小应用。",
+        "从<code>Celsius</code>摄氏度转换为<code>Fahrenheit</code>华氏度的算法是：摄氏度的温度乘于9除于5，再加上32。",
+        "创建一个变量 <code>fahrenheit</code>，然后计算出摄氏度对应的华氏度。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -697,11 +696,7 @@
         "  ",
         "",
         "  // Only change code above this line",
-        "  if ( typeof fahrenheit !== 'undefined' ) {",
         "    return fahrenheit;",
-        "  } else {",
-        "    return 'fahrenheit not defined';",
-        "  }",
         "}",
         "",
         "// Change the inputs below to test your code",
@@ -725,9 +720,9 @@
       "id": "bd7123c9c444eddfaeb5bdef",
       "title": "Declare String Variables",
       "description": [
-        "先前我们使用过的代码",
+        "先前我们使用过的代码：",
         "<code>var myName = \"your name\";</code>",
-        "<code>\"your name\"</code> 被称作 <dfn>字符串</dfn>。 这是一个字符串，因为它是用单或双引号包裹起来的一系列的零个或多个字符。",
+        "<code>\"your name\"</code> 被称作 <dfn>字符串</dfn>。 字符串是用单或双引号包裹起来的一连串的零个或多个字符。",
         "<h4>任务</h4>",
         "创建两个新的 <code>字符串</code> 变量：<code>myFirstName</code> 和 <code>myLastName</code> 分别为它们赋上您的姓和名的值。"
       ],
@@ -758,12 +753,12 @@
       "id": "56533eb9ac21ba0edf2244b5",
       "title": "Escaping Literal Quotes in Strings",
       "description": [
-        "当您定义一个字符串必须要用并用单或双引号来包裹它。当您需要在您的字符串中使用一个: <code>\"</code> 或者 <code>'</code> 会发生什么?",
+        "当您定义一个字符串必须要用单引号或双引号来包裹它。那么当你需要在字符串中使用一个: <code>\"</code> 或者 <code>'</code> 时该怎么办呢?",
         "在 JavaScript 中，您可以通过在引号前面使用 <dfn>反斜杠</dfn> (<code>\\</code>) 来转义引号。",
         "<code>var sampleStr = \"Alan said, \\\"Peter is learning JavaScript\\\".\";</code>",
-        "这标志着提醒 JavaScript 下列引号并不是字符串的结尾，而应该是出现在字符串内的字符。所以，如果你要打印这个到控制台，您将得到：",
+        "这标志着提醒 JavaScript 单引号或双引号并不是字符串的结尾，而是出现在字符串内的字符。所以，如果你要打印字符串到控制台，你将得到：",
         "<code>Alan said, \"Peter is learning JavaScript\".</code>",
-        "<h4>Instruction</h4>",
+        "<h4>任务</h4>",
         "使用 <dfn>反斜杠</dfn> 将一个字符串赋值给变量 <code>myStr</code>，以便如果你要打印到控制台，你会看到：",
         "<code>I am a \"double quoted\" string inside \"double quotes\"</code>"
       ],
@@ -796,12 +791,12 @@
       "id": "56533eb9ac21ba0edf2244b4",
       "title": "Quoting Strings with Single Quotes",
       "description": [
-        "在 JavaScript 中的 <dfn>字符串</dfn> 值可以用单或双引号写，只要你在开始和结束都使用相同类型的引号。不像某些语言，单引号和双引号在功能上是在JavaScript中是相同的。",
+        "在 JavaScript 中的 <dfn>字符串</dfn> 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号在功能上是在JavaScript中是相同的。",
         "<code>\"This string has \\\"double quotes\\\" in it\"</code>",
-        "当使用的值与引号具有相同的类型的时候我们需要对它进行 <dfn>转义</dfn> 。如果你有很多双引号的字符串，使用转义字符这可能导致难以阅读和写字。相反地，可以使用单引号:",
+        "当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 <dfn>转义</dfn> 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。",
         "<code>'This string has \"double quotes\" in it. And \"probably\" lots of them.'</code>",
         "<h4>任务</h4>",
-        "更改 provided 字符串的双引号为单引号，并移除转义符号。"
+        "更改myStr字符串的双引号为单引号，并移除转义符号。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -827,11 +822,11 @@
       "id": "56533eb9ac21ba0edf2244b6",
       "title": "Escape Sequences in Strings",
       "description": [
-        "引号不是唯一可以在字符串中唯一一个被转义的字符。下面是常见的转义序列的表:",
+        "引号不是可以在字符串中唯一一个被转义的字符。下面是常见的转义符号的列表:",
         "<table class=\"table table-striped\"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td>\\'</td><td>单引号</td></tr><tr><td>\\\"</td><td>双引号</td></tr><tr><td>\\\\</td><td>反斜杠符</td></tr><tr><td>\\n</td><td>换行符</td></tr><tr><td>\\r</td><td>回车符</td></tr><tr><td>\\t</td><td>制表符</td></tr><tr><td>\\b</td><td>退格符</td></tr><tr><td>\\f</td><td>换页符</td></tr></tbody></table>",
         "<em>注意，如果您想要显示一个反斜杠就必须要转义它。</em>",
         "<h4>任务</h4>",
-        "按照下面的顺序编码序列，并且用空格来分割开：<br><code>反斜杠 制表符 制表符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
+        "按照下面的顺序，并且用空格来分割：<br><code>反斜杠 制表符 制表符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -861,7 +856,7 @@
         "在 JavaScript 中，当 <code>+</code> 操作符与 <code>字符串</code> 一起使用的时候，它被称作 <dfn>连接</dfn> 操作符。您可以通过和其他字符串<dfn>连接</dfn> 来创建一个新的字符串。",
         "<strong>举个例子</strong>",
         "<blockquote>'My name is Alan,' + ' I concatenate.'</blockquote>",
-        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之间外面的空格，所以如果想要加上空格的话，您需要自己在字符串上面添加。",
+        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之外的空格，所以想加上空格的话，您需要自己在字符串上面添加。",
         "<h4>任务</h4>",
         "使用 <code>+</code> 操作，把字符串 <code>\"This is the start. \"</code> 和 <code>\"This is the end.\"</code> 连接起来并赋值给变量 <code>myStr</code>。"
       ],
@@ -2915,7 +2910,7 @@
         "Cases for 1, 2, and 3 will all produce the same result.",
         "<h4>任务</h4>",
         "Write a switch statement to set <code>answer</code> for the following ranges:<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
-        "<strong>Note</strong><br>You will need to have a <code>case</code> statement for each number in the range."
+        "<strong>提示</strong><br>You will need to have a <code>case</code> statement for each number in the range."
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3116,7 +3111,7 @@
         "}",
         "",
         "// Add/remove calls to test your function.",
-        "// Note: Only the last will display",
+        "// 提示: Only the last will display",
         "cc(2); cc(3); cc(7); cc('K'); cc('A');"
       ],
       "solutions": [
@@ -3228,7 +3223,7 @@
         "The second way to access the properties of an object is bracket notation (<code>[]</code>). If the property of the object you are trying to access has a space in it, you will need to use bracket notation.",
         "Here is a sample of using bracket notation to read an object property:",
         "<blockquote>var myObj = {<br>  \"Space Name\": \"Kirk\",<br>  \"More Space\": \"Spock\"<br>};<br>myObj[\"Space Name\"]; // Kirk<br>myObj['More Space']; // Spock</blockquote>",
-        "Note that property names with spaces in them must be in quotes (single or double).",
+        "提示 that property names with spaces in them must be in quotes (single or double).",
         "<h4>任务</h4>",
         "Read the values of the properties <code>\"an entree\"</code> and <code>\"the drink\"</code> of <code>testObj</code> using bracket notation."
       ],
@@ -3271,7 +3266,7 @@
         "<blockquote>var someProp = \"propName\";<br>var myObj = {<br>  propName: \"Some Value\"<br >}<br>myObj[someProp]; // \"Some Value\"</blockquote>",
         "Here is one more:",
         "<blockquote>var myDog = \"Hunter\";<br>var dogs = {<br>  Fido: \"Mutt\",\n  Hunter: \"Doberman\",\n  Snoopie: \"Beagle\"<br >}<br>var breed = dogs[myDog]; // \"Hunter\"<br>console.log(breed)// \"Doberman\"</blockquote>",
-        "Note that we  do <em>not</em> use quotes around the variable name when using it to access the property because we are using the <em>value</em> of the variable, not the <em>name</em>",
+        "提示 that we  do <em>not</em> use quotes around the variable name when using it to access the property because we are using the <em>value</em> of the variable, not the <em>name</em>",
         "<h4>任务</h4>",
         "Use the <code>playerNumber</code> variable to lookup player <code>16</code> in <code>testObj</code> using bracket notation."
       ],
@@ -3559,7 +3554,7 @@
         "Here is an example of a JSON object:",
         "<blockquote>var ourMusic = [<br>  {<br>    \"artist\": \"Daft Punk\",<br>    \"title\": \"Homework\",<br>    \"release_year\": 1997,<br>    \"formats\": [ <br>      \"CD\", <br>      \"Cassette\", <br>      \"LP\" ],<br>    \"gold\": true<br>  }<br>];</blockquote>",
         "This is an array of objects and the object has various pieces of <dfn>metadata</dfn> about an album. It also has a nested <code>formats</code> array. Additional album records could be added to the top level array.",
-        "<strong>Note</strong><br>You will need a comma in between objects in JSON objects with more than one object in the array.",
+        "<strong>提示</strong><br>You will need a comma in between objects in JSON objects with more than one object in the array.",
         "<h4>任务</h4>",
         "Add a new album to the <code>myMusic</code> JSON object. Add <code>artist</code> and <code>title</code> strings, <code>release_year</code> number, and a <code>formats</code> array of strings."
       ],
@@ -3714,7 +3709,7 @@
         "If the <code>prop</code> is <code>\"tracks\"</code> and <code>value</code> is non-blank, push the <code>value</code> onto the end of the <code>tracks</code> array.",
         "If <code>value</code> is blank, delete that <code>prop</code>.",
         "Always return the entire collection object.",
-        "<strong>Note</strong><br>Don't forget to use <code>bracket notation</code> when <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">accessing object properties with variables</a>."
+        "<strong>提示</strong><br>Don't forget to use <code>bracket notation</code> when <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">accessing object properties with variables</a>."
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3946,7 +3941,7 @@
       "description": [
         "If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:",
         "<blockquote>var arr = [<br>  [1,2], [3,4], [5,6]<br>];<br>for (var i=0; i &lt; arr.length; i++) {<br>  for (var j=0; j &lt; arr[i].length; j++) {<br>    console.log(arr[i][j]);<br>  }<br>}</blockquote>",
-        "This outputs each sub-element in <code>arr</code> one at a time. Note that for the inner loop, we are checking the <code>.length</code> of <code>arr[i]</code>, since <code>arr[i]</code> is itself an array.",
+        "This outputs each sub-element in <code>arr</code> one at a time. 提示 that for the inner loop, we are checking the <code>.length</code> of <code>arr[i]</code>, since <code>arr[i]</code> is itself an array.",
         "<h4>任务</h4>",
         "Modify function <code>multiplyAll</code> so that it multiplies the <code>product</code> variable by each number in the sub-arrays of <code>arr</code>"
       ],
@@ -4081,7 +4076,7 @@
       "description": [
         "Random numbers are useful for creating random behavior.",
         "JavaScript has a <code>Math.random()</code> function that generates a random decimal number between <code>0</code> (inclusive) and not quite up to <code>1</code> (exclusive). Thus <code>Math.random()</code> can return a <code>0</code> but never quite return a <code>1</code>",
-        "<strong>Note</strong><br>Like <a href='waypoint-storing-values-with-the-equal-operator' target='_blank'>Storing Values with the Equal Operator</a>, all function calls will be resolved before the <code>return</code> executes, so we can simply <code>return</code> the value of the <code>Math.random()</code> function.",
+        "<strong>提示</strong><br>Like <a href='waypoint-storing-values-with-the-equal-operator' target='_blank'>Storing Values with the Equal Operator</a>, all function calls will be resolved before the <code>return</code> executes, so we can simply <code>return</code> the value of the <code>Math.random()</code> function.",
         "<h4>任务</h4>",
         "Change <code>myFunction</code> to return a random number instead of returning <code>0</code>."
       ],
