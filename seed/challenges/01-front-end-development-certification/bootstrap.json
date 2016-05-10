@@ -235,7 +235,7 @@
       "title": "Create a Bootstrap Button",
       "description": [
         "Bootstrap有它自己的 <code>button</code> 元素的风格， 看起来要比普通的HTML好看得多。",
-        "在你的大大的猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及\"Like\"文本"
+        "在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及\"Like\"文本"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -387,7 +387,7 @@
       "id": "bad87fee1348cd8acef08811",
       "title": "Taste the Bootstrap Button Color Rainbow",
       "description": [
-        "<code>btn-primary</code> class 属性是你的应用的主要颜色。这对凸显出你想要用户采取的操作很有帮助。",
+        "深蓝色<code>btn-primary</code>是你的应用的主要颜色，被用在那些用户主要采取的操作上。",
         "添加Bootstrap的 <code>btn-primary</code> class 属性到按钮标签上。",
         "注意：这个按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> 属性！"
       ],
@@ -463,7 +463,7 @@
       "id": "bad87fee1348cd8acef08813",
       "title": "Call out Optional Actions with Button Info",
       "description": [
-        "Bootstrap自带了一些预定义的按钮颜色。class <code>btn-info</code> 被用在那些用户可能会采取的操作上。",
+        "Bootstrap自带了一些预定义的按钮颜色。浅蓝色 <code>btn-info</code> 被用在那些用户可能会采取的操作上。",
         "在你的 \"Like\" 按钮下面添加一个文本为 \"Info\" 的块级Bootstrap按钮，并为其添加 <code>btn-info</code> 和 <code>btn-block</code> class属性。",
         "注意：这些按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> class属性"
       ],
@@ -540,7 +540,7 @@
       "id": "bad87fee1348ce8acef08814",
       "title": "Warn your Users of a Dangerous Action",
       "description": [
-        "Bootstrap自带了一些预定义的按钮颜色. <code>btn-danger</code> class 被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。",
+        "Bootstrap自带了一些预定义的按钮颜色。红色<code>btn-danger</code>被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。",
         "创建一个文本为 \"Delete\" 的按钮，并且给它添加 class <code>btn-danger</code>。",
         "注意：这些标签仍然需要 <code>btn</code> 与 <code>btn-block</code> class。"
       ],
@@ -618,7 +618,7 @@
       "id": "bad88fee1348ce8acef08815",
       "title": "Use the Bootstrap Grid to Put Elements Side By Side",
       "description": [
-        "Bootstrap 使用一种响应式网格布局——可轻松实现将多个元素放入行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 <code>div</code> 元素中。",
+        "Bootstrap 使用一种响应式网格布局——可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 <code>div</code> 元素中。",
         "下面这张图表显示了 Bootstraps 的12列网格布局是如何起作用的：",
         "<a href=\"//i.imgur.com/FaYuui8.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/FaYuui8.png\" title=\"Click to enlarge\" alt=\"an image illustrating Bootstrap's grid system\"></a>",
         "请注意，在这张图表中，class属性 <code>col-md-*</code> 正被使用。在这里，<code>md</code> 表示 medium (中等的)，<code>*</code> 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。",
@@ -701,10 +701,10 @@
       "id": "bad87fee1347bd9aedf08845",
       "title": "Ditch Custom CSS for Bootstrap",
       "description": [
-        "现在，我们可以清理一下我们之前的代码了，为了让我们的 Cat Photo 应用看起来更和谐，让我们用 Bootstrap 内置的样式来替换我们之前自定义的样式。",
+        "现在，让我们清理一下之前的代码了，以让我们的 Cat Photo 应用看起来更简洁，用 Bootstrap 内置的样式来替换我们之前自定义的样式。",
         "别担心 —— 以后我们会有大把时间来自定义我们的 CSS 样式的 ：）",
-        "删除 <code>style</code> 元素里的 <code>.red-text</code>  <code>p</code> 和 <code>.smaller-image</code> CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。",
-        "然后删除包涵无效链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。",
+        "删除 <code>style</code> 元素里的 <code>.red-text</code>, <code>p</code> 和 <code>.smaller-image</code> CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。",
+        "然后删除包含死链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。",
         "最后，移除第一个 <code>img</code> 元素的 \"smaller  -image\" class ，替换为 Bootstrap的 <code>img-responsive</code> class。"
       ],
       "challengeSeed": [
@@ -791,12 +791,12 @@
       "id": "bad87fee1348bd9aedf08845",
       "title": "Use Spans for Inline Elements",
       "description": [
-        "你可以用 span 标签来创建行内元素。还记得我们是怎样使用 <code>btn-block</code> class to 来创建填满整行的按钮的吗？",
+        "你可以用 span 标签来创建行内元素。还记得我们是怎样使用 <code>.btn-block</code>来创建填满整行的按钮吗？",
         "这张图展示了 <code>inline</code> 元素与 <code>block-level</code> 块级元素的区别：",
         "<a href=\"//i.imgur.com/O32cDWE.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/O32cDWE.png\" title=\"Click to enlarge\" alt=\"An \"inline\" button is as small as the text it contains. In this image, it's centered. Below it is a \"block-level\" button, which stretches to fill the entire horizontal space.'></a>",
         "通过使用 <code>span</code> 元素，你可以把几个元素放在一起。你甚至可以用此为一个元素的不同部分指定样式。",
         "把 \"Things cats love\" 中的 \"love\" 放到 <code>span</code> 标签下。然后为其添加 <code>text-danger</code> class 来使文字变成红色。",
-        "这是展示了完成后 \"Top 3 things cats hate\" 元素的显示效果：",
+        "下面是完成后 \"Top 3 things cats hate\" 元素的显示效果：",
         "<code>&#60;p&#62;Top 3 things cats &#60;span class = \"text-danger\"&#62;hate:&#60;/span&#62;&#60;/p&#62;</code>"
       ],
       "challengeSeed": [
@@ -869,7 +869,7 @@
       "id": "bad87fee1348bd9aede08845",
       "title": "Create a Custom Heading",
       "description": [
-        "让我们来为我们的Cat Photo 应用做一个简单的开头吧，把标题和惬意的猫图片放在同一行。",
+        "让我们来为Cat Photo 应用做一个导航吧，把标题和惬意的猫图片放在同一行。",
         "记住，Bootstrap使用响应式栅格系统，这使得把元素放入行内并为每个元素指定宽度变得很容易。大部分的 Bootstrap的 class 都可以被用在 <code>div</code> 元素上。",
         "这张图展示了 Bootstrap 的12栏栅格布局是如何工作的：",
         "<a href=\"//i.imgur.com/FaYuui8.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/FaYuui8.png\" title=\"Click to enlarge\" alt=\"an image illustrating Bootstrap's grid system\"></a>",
@@ -947,7 +947,7 @@
       "id": "bad87fee1348bd9aedd08845",
       "title": "Add Font Awesome Icons to our Buttons",
       "description": [
-        "Font Awesome 是一个非常方便的图标库。这些图标都是矢量图形，被保存在 <code>.svg</code> 的文件格式中。这些图标可类似地当作是字体。通过像素单位指定它们的大小，它们将会继承其父HTML元素的字体大小。",
+        "Font Awesome 是一个非常方便的图标库。这些图标都是矢量图形，被保存在 <code>.svg</code> 的文件格式中。这些图标就和字体一样，你可以通过像素单位指定它们的大小，它们将会继承其父HTML元素的字体大小。",
         "你可以将 Font Awesome 图标库增添至任何一个应用中，方法很简单，只需要在你的 HTML 头部增加下列代码即可：",
         "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\"/&#62;</code>",
         "不过，我们已经事先在幕后为此页面添加了该功能。（不必重复添加上面这段代码）",
@@ -1027,7 +1027,7 @@
       "id": "bad87fee1348bd9aedc08845",
       "title": "Add Font Awesome Icons to all of our Buttons",
       "description": [
-        "Font Awesome 是一个非常方便的图标库。这些图片都是矢量图，以 <code>.svg</code> 文件格式保存。这些图标用起来就像字体一样。你可以使用像素单位来指定他们的大小，默认情况下它们会继承父级HTML元素的字体大小。",
+        "Font Awesome 是一个非常方便的图标库。这些图片都是矢量图，以 <code>.svg</code> 文件格式保存。这些图标用起来就像字体一样。你可以使用像素单位来指定他们的大小，它们会继承父级HTML元素的字体大小。",
         "使用 Font Awesome 分别为你的 info 按钮添加 <code>info-circle</code> 图标，为你的 delete 按钮添加 <code>trash</code> 图标。"
       ],
       "challengeSeed": [
@@ -1101,8 +1101,8 @@
       "id": "bad87fee1348bd9aedb08845",
       "title": "Responsively Style Radio Buttons",
       "description": [
-        "你可以将 Bootstrap 的 <code>col-xs-*</code> class 属性设置在 <code>form</code> 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽。",
-        "将你所有的单选按钮(两个)放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后，添加 <code>&#60;div class=\"col-xs-6\"&#62;</code> 元素并分别包裹每一个单选按钮。"
+        "你还可以将 Bootstrap 的 <code>col-xs-*</code>用在 <code>form</code> 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽。",
+        "将页面中的两个单选按钮放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后，添加 <code>&#60;div class=\"col-xs-6\"&#62;</code> 元素并分别包裹每一个单选按钮。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1175,7 +1175,7 @@
       "id": "bad87fee1348bd9aeda08845",
       "title": "Responsively Style Checkboxes",
       "description": [
-        "你也可以为 <code>form</code> 元素添加 Bootstrap 的 <code>col-xs-*</code> class。这样我们的复选框就可以均匀地在页面上展开了，不管屏幕的分辨率是多大。",
+        "你还可以将 Bootstrap 的 <code>col-xs-*</code>用在 <code>form</code> 元素中。这样我们的复选框就可以均匀地在页面上展开了，不管屏幕的分辨率是多大。",
         "将你所有的复选框都放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后分别把每个按钮都放置于一个 <code>&#60;div class=\"col-xs-4\"&#62;</code> 元素中。"
       ],
       "challengeSeed": [
@@ -1256,8 +1256,8 @@
       "id": "bad87fee1348bd9aed908845",
       "title": "Style Text Inputs as Form Controls",
       "description": [
-        "你可以在你的 <code>button</code> 提交按钮元素上添加 Font Awesome的 <code>fa-paper-plane</code> 图标，方法是在元素中增加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 。",
-        "在你表单的文本输入字段中增加 class 属性 <code>form-control</code> 。在你的表单提交按钮中增加 class 属性 <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
+        "你可以在你的 <code>button</code> 提交按钮上添加 Font Awesome的 <code>fa-paper-plane</code> 图标，方法是在元素中增加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 。",
+        "给你表单的文本输入框增加 class<code>form-control</code> 。在你的表单提交按钮中增加 class <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1461,7 +1461,7 @@
       "id": "bad87fee1348bd9aec908746",
       "title": "House our page within a Bootstrap Container Fluid Div",
       "description": [
-        "现在让我们确保页面里所有的内容都是响应移动式设备的。",
+        "现在让我们确保页面里所有的内容都是响应式的。",
         "让我们将 <code>h3</code> 元素放置于一个class属性为 <code>container-fluid</code> 的 <code>div</code> 元素中。"
       ],
       "challengeSeed": [
@@ -1527,8 +1527,8 @@
       "id": "bad87fee1348bd9aec908848",
       "title": "Create Bootstrap Wells",
       "description": [
-        "Bootstrap 有一个 class 属性叫做 <code>well</code>，它的作用是为你(在一行中)设定的列创造出一种视觉上的深度感（一种视觉上的效果，动手写代码体会一下）。",
-        "在你的每一个 <code>col-xs-6</code> <code>div</code> 元素中都分别嵌入一个带有 <code>well</code> class 属性的 <code>div</code> 元素。"
+        "Bootstrap 有一个 class 属性叫做 <code>well</code>，它的作用是为设定的列创造出一种视觉上的深度感（一种视觉上的效果，动手写代码体会一下）。",
+        "在你的每一个class为<code>col-xs-6</code>的<code>div</code> 元素中都嵌入一个带有 <code>well</code> class 属性的 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",
@@ -1660,7 +1660,7 @@
       "id": "bad87fee1348bd9aec908853",
       "title": "Add ID Attributes to Bootstrap Elements",
       "description": [
-        "回忆一下，我们除了可以给元素增加 class 属性，你还可以给你的每个元素增添一个 id 属性。",
+        "回忆一下，我们除了可以给元素增加 class 属性，还可以给你的每个元素增添一个 id 属性。",
         "每一个指定元素的 id 都是唯一的，并且在每个页面中只能使用一次。",
         "现在给我们每个包含 class <code>well</code> 的 <code>div</code> 元素一个唯一的 id。",
         "记住，你可以像这样赋予一个元素 id：",
@@ -1699,7 +1699,7 @@
       "id": "bad87fee1348bd9aec908854",
       "title": "Label Bootstrap Wells",
       "description": [
-        "明白起见，让我们为我们的 wells 都标上它们的 id 吧。",
+        "让我们为我们的 wells 都标上它们的 id 吧。",
         "在 left-well 之上，class为 <code>col-xs-6</code> 的 <code>div</code> 元素里面，添加一个文本为 <code>#left-well</code> 的 <code>h4</code>元素。",
         "在 right-well 之上，class为 <code>col-xs-6</code> 的 <code>div</code> 元素里面，添加一个文本为 <code>#right-well</code> 的 <code>h4</code>元素。"
       ],
@@ -1739,7 +1739,7 @@
       "id": "bad87fee1348bd9aec908855",
       "title": "Give Each Element a Unique ID",
       "description": [
-        "我们也希望使用 jQuery 并通过每个按钮各自唯一的 id 来标识出它们。\n",
+        "我们也可以使用jQuery并通过每个按钮各自唯一的 id 来标识出它们。\n",
         "给你的每一个按钮一个唯一的 id ，以 <code>target1</code> 为开始，<code>target6</code> 为结束。",
         "确保 <code>target1</code> 到 <code>target3</code> 在 <code>#left-well</code> 之中，<code>target4</code> 到 <code>target6</code> 则在 <code>#right-well</code> 之中。"
       ],
@@ -1782,7 +1782,7 @@
       "title": "Label Bootstrap Buttons",
       "description": [
         "正如我们标注了每个 wells， 我们同样想要标注每一个按钮。",
-        "为你的每个 <code>button</code> 元素与其 id 选择器相同的文本。"
+        "为你的每个 <code>button</code> 元素选择与其 id 选择器相同的文本。"
       ],
       "challengeSeed": [
         "<div class=\"container-fluid\">",

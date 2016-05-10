@@ -1044,7 +1044,7 @@
         "",
         "<p>Click here for <a href=\"#\">cat photos</a>.</p>",
         "",
-        "<a href=\"#\"><img class=\"smaller-image thick-green-border\" alt=\"A cute orange cat lying on its back\" src=\"https://freecodecamp.cn/images/fcc-relaxing-cat\"></a>",
+        "<a href=\"#\"><img class=\"smaller-image thick-green-border\" alt=\"A cute orange cat lying on its back\" src=\"/images/relaxing-cat.jpg\"></a>",
         "",
         "<p>Things cats love:</p>",
         "<ul>",
@@ -1071,7 +1071,7 @@
       "title": "Create a Text Field",
       "description": [
         "现在让我们来创建一个form（表单）。",
-        "Text inputs（文本输入框）是从你的用户获取输入的一条方便途径。",
+        "Text inputs（文本输入框）是获得用户输入的一条方便途径。",
         "你可以用如下方法创建：",
         "<code>&#60;input type=\"text\"&#62;</code>",
         "注意，<code>input</code>元素是自关闭的。",
@@ -1134,8 +1134,8 @@
       "id": "bad87fee1348bd9aedf08830",
       "title": "Add Placeholder Text to a Text Field",
       "description": [
-        "占位符（placeholder text）是在你的用户输入任何东西之前出现在你的<code>input（输入）</code>框中的文本。",
-        "你可以以如下方式创建占位符：",
+        "占位符（placeholder text）是用户在<code>input（输入）</code>框输入任何东西之前放置在<code>input（输入）</code>框中的预定义文本。",
+        "你可以用如下方式创建占位符：",
         "<code>&#60;input type=\"text\" placeholder=\"this is placeholder text\"&#62;</code>",
         "把你的<code>input（输入）</code>框的<code>placeholder</code>的值设置为\"cat photo URL\"。"
       ],
@@ -1199,10 +1199,10 @@
       "id": "bad87fee1348bd9aede08830",
       "title": "Create a Form Element",
       "description": [
-        "你可以仅使用纯HTML来构建实际提交数据到服务器的web表单（form），通过给你的<code>form</code>元素添加一个动作来达到此目的。",
+        "使用HTML来构建实际提交数据到服务器的web表单（form），通过给你的<code>form</code>元素添加一个动作<code>action</code>来达到此目的。",
         "例如：",
         "<code>&#60;form action=\"/url-where-you-want-to-submit-form-data\"&#62;&#60;/form&#62;</code>",
-        "把你的文本框嵌套进一个<code>form</code>元素，并为此表单元素添加<code>action=\"/submit-cat-photo\"</code>属性。"
+        "把你的文本框嵌套进<code>form</code>元素，并为此<code>form</code>元素添加<code>action=\"/submit-cat-photo\"</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1264,7 +1264,7 @@
       "id": "bad87fee1348bd9aedd08830",
       "title": "Add a Submit Button to a Form",
       "description": [
-        "让我们来为你的form添加一个<code>submit（提交）</code>按钮，点击这个按钮，数据将会从你的form发送到你通过<code>action</code>属性指定的URL上。",
+        "让我们来为你的form添加一个提交<code>submit</code>按钮，点击这个按钮，数据将会从你的form发送到你通过<code>action</code>属性指定的URL上。",
         "下面是submit按钮的例子：",
         "<code>&#60;button type=\"submit\"&#62;this button submits the form&#60;/button&#62;</code>",
         "为你的<code>form</code>元素添加一个type为<code>submit</code>的submit按钮，用\"Submit\"作按钮文本。"
@@ -1334,7 +1334,7 @@
       "description": [
         "你可以使指定的表单字段成为必填项（required），这样，只有当你的用户填写了该字段后，他（她）才能够提交你的表单。",
         "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>这个单词就可以了， 你可以使用：<code>&#60;input type=\"text\" required&#62;</code>",
-        "把你的文本<code>input</code>改为<code>required</code>字段，这样你的用户不填写完这个字段就无法提交表单。",
+        "给你的输入框添加<code>required</code>字段，这样你的用户不填写输入框就无法提交表单。",
         "然后，试试不填写任何文本提交表单，看看你的HTML5表单如何提示你该字段为必填项。",
         "注意：该字段在Safari浏览器中不起作用。"
       ],
@@ -1399,8 +1399,8 @@
       "id": "bad87fee1348bd9aedf08834",
       "title": "Create a Set of Radio Buttons",
       "description": [
-        "你可以将<code>radio buttons（单选按钮）</code>用于你想要用户只给出一个答案的问题中。",
-        "单选按钮是<code>input</code>的一种。",
+        "多选一的场景就用<code>radio buttons（单选按钮）</code>",
+        "单选按钮是<code>input</code>输入框的一种类型。",
         "每一个单选按钮都应该嵌套在它自己的<code>label（标签）</code>元素中。",
         "所有关联的单选按钮应该使用相同的<code>name</code>属性。",
         "下面是一个单选按钮的例子：",
@@ -1473,13 +1473,13 @@
       "id": "bad87fee1348bd9aedf08835",
       "title": "Create a Set of Checkboxes",
       "description": [
-        "表单中一般将<code>checkboxes（复选按钮）</code> 用于可能不止一个答案的问题。",
-        "复选按钮是<code>input</code>的一种。",
+        "多选一的场景就用<code>checkboxes（复选按钮）</code>。",
+        "复选按钮是<code>input</code>的输入框的另一种类型。",
         "每一个复选按钮应该嵌套进它自己的<code>label</code>元素。",
-        "所有关联的复选按钮输入应该具有相同的<code>name</code>属性。",
+        "所有关联的复选按钮应该具有相同的<code>name</code>属性。",
         "下面是复选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"checkbox\" name=\"personality\"&#62; Loving&#60;/label&#62;</code>",
-        "为你的表单添加一个包含三个复选按钮的复选按钮组，每一个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有三个复选按钮应该共享值为<code>personality</code>的<code>name</code>属性。"
+        "为你的表单添加三个复选按钮，每个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有复选按钮共享值为<code>personality</code>的<code>name</code>属性。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1550,7 +1550,7 @@
         "使用<code>checked</code>属性，你可以设置复选按钮和单选按钮默认被选中。",
         "为此，只需在输入元素中添加单词\"checked\"。例如：",
         "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
-        "将你的第一个<code>radio buttons</code>和第一个<code>checkboxes</code>都设置为默认选中。"
+        "把你的第一个<code>radio buttons</code>和第一个<code>checkboxes</code>都设置为默认选中。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1620,8 +1620,8 @@
       "title": "Nest Many Elements within a Single Div Element",
       "description": [
         "<code>div</code>元素，也被称作division（层）元素，是一个盛装其他元素的通用容器。",
-        "<code>div</code>可能是所有HTML元素中最常使用的元素，在将其自身 class 声明的CSS传递给它所包裹着的所有元素时非常有用。",
-        "像任何其他非自结束元素一样，你可以用<code>&#60;div&#62;</code>来标记一个<code>div</code>元素的块的开始，然后在另一行用<code>&#60;/div&#62;</code>来标记块的结束。",
+        "所以可以利用CSS的继承关系把<code>div</code>上的CSS传递给它所有子元素。",
+        "你可以用<code>&#60;div&#62;</code>来标记一个div元素的开始，然后用<code>&#60;/div&#62;</code>来标记一个div元素的结束。",
         "试着在你的\"Things cats love\" <code>p</code>元素之前放置<code>div</code>的开始标记，在你的<code>ol</code>结束标记之后放置<code>div</code>的结束标记，这样你的两个列表就都嵌套在<code>div</code>中了。",
         "把\"Things cats love\"和\"Things cats hate\"两个列表都嵌套进同一个<code>div</code>元素中。"
       ],
@@ -1933,10 +1933,10 @@
       "description": [
         "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
         "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
-        "有三个控制围绕 HTML 元素的空间的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
-        "元素的 <code>padding</code> 控制元素和其 <code>border</code> 之间空间的大小。",
+        "有三个影响HTML元素布局的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
+        "元素的 <code>padding</code> 控制元素内容和元素边框 <code>border</code> 之间的距离。",
         "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
-        "当你加大绿方块的 <code>padding</code>, 它将加大文字  <code>padding</code> 和围绕它的 border 之间的距离。",
+        "当你加大绿方块的 <code>padding</code>, 它将扩大元素内容和元素边框的距离。",
         "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
@@ -1985,9 +1985,9 @@
       "id": "bad87fee1348bd9aedf08822",
       "title": "Adjust the Margin of an Element",
       "description": [
-        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
-        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>margin</code>，使得它看起来更小。",
-        "当你增大绿方块的 <code>margin</code> 时，将会增加其边框和包围元素之间的距离。",
+        "元素的外边距 <code>margin</code> 控制元素边框 <code>border</code> 和元素实际所占空间的距离。",
+        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的外边距 <code>margin</code>，使得它看起来更小。",
+        "当你增大绿方块的 <code>margin</code> 时，将会增加元素边框和元素实际所占空间之间的距离。",
         "修改绿方块的 <code>margin</code> 以使它与红方块匹配。"
       ],
       "challengeSeed": [
@@ -2038,10 +2038,10 @@
       "id": "bad87fee1348bd9aedf08823",
       "title": "Add a Negative Margin to an Element",
       "description": [
-        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和包围元素之间空间的大小。",
+        "元素的 <code>margin</code> 控制元素的 <code>border</code> 和元素实际所占空间的距离。",
         "如果你将一个元素的 <code>margin</code> 设置为负值，元素将会变大。",
         "试着像红方块那样把 <code>margin</code> 设置为负值。",
-        "把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将包围它的黄方块的横向宽度填满。"
+        "把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将父容器(黄方块)的横向宽度填满。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2091,7 +2091,7 @@
       "title": "Add Different Padding to Each Side of an Element",
       "description": [
         "有时你想要自定义元素，使它的每一个边具有不同的 <code>padding</code>。",
-        "CSS 允许你使用 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性来控制元素所有四个边的 <code>padding</code>。",
+        "CSS 允许你使用 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code>来控制元素上右下左四个方向的 <code>padding</code>。",
         "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
@@ -2146,7 +2146,7 @@
       "title": "Add Different Margins to Each Side of an Element",
       "description": [
         "有时你想要自定义元素，使它的每一个边具有不同的 <code>margin</code>。",
-        "CSS 允许你使用 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性来控制元素所有四个边的 <code>margin</code>。",
+        "CSS 允许你使用 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 来控制元素上右下左四个方向的 <code>margin</code>。",
         "使你的绿方块的顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧则是 <code>20px</code>。"
       ],
       "challengeSeed": [
@@ -2200,10 +2200,10 @@
       "id": "bad87fee1348bd9aedf08826",
       "title": "Use Clockwise Notation to Specify the Padding of an Element",
       "description": [
-        "除了指定元素的 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
+        "除了分别指定元素的 <code>padding-top</code>、<code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code> 属性外，你还可以集中起来指定它们，举例如下：",
         "<code>padding: 10px 20px 10px 20px;</code>",
-        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 padding 具有完全相同的效果。",
-        "使用顺时针表示法设置 \".green-box\" class，使其顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧具有 <code>20px</code> 的 <code>padding</code>。"
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，简称：上右下左。",
+        "使用顺时针方式设置 \".green-box\" class，使其顶部和左侧具有 <code>40px</code> 的 <code>padding</code>，而底部和右侧具有 <code>20px</code> 的 <code>padding</code>。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2254,9 +2254,9 @@
       "title": "Use Clockwise Notation to Specify the Margin of an Element",
       "description": [
         "让我们再试一次，但这次是用于 <code>margin</code>。",
-        "除了指定元素的 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性外，你还可以在一行中指定它们，举例如下：",
+        "除了分别指定元素的 <code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code> 和 <code>margin-left</code> 属性外，你还可以集中起来指定它们，举例如下：",
         "<code>margin: 10px 20px 10px 20px;</code>",
-        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，且与分别指定每边的 margin 具有完全相同的效果。",
+        "这四个值以顺时针方式排列：顶部、右侧、底部、左侧，简称：上右下左。",
         "使用<code>顺时针表示法</code>设置含有 \".green-box\" class 的元素，使其顶部和左侧具有 <code>40px</code> 的 <code>margin</code>，而底部和右侧具有 <code>20px</code> 的 <code>margin</code>。"
       ],
       "challengeSeed": [
@@ -2504,7 +2504,7 @@
       "description": [
         "耶！我们刚刚证明了行内样式将覆盖你的 <code>style</code> 元素中的所有 CSS 声明。",
         "但是等一下，还有最后一种覆盖 CSS 的方法，这是所有方法中最强大的，但是在讲它之前，我们先讲讲为什么你要覆盖 CSS。",
-        "很多情况下，你会使用 CSS 库，这些库可能会意外覆盖掉你自己的 CSS。所有当你确实需要确保某元素具有指定的 CSS 时，你可以使用 <code>!important</code>。",
+        "很多情况下，你会使用 CSS 库，这些库可能会意外覆盖掉你自己的 CSS。所以当你需要确保某元素具有指定的 CSS 时，你可以使用 <code>!important</code>。",
         "让我们再回到我们的 <code>pink-text</code> class 声明。还记得不？我们的 <code>pink-text</code> class 被随后的 class 声明、id 声明和行内样式所覆盖了。",
         "让我们来给 pink-text 元素的 color 声明加上关键字 <code>!important</code>，以便 100% 确保你的 <code>h1</code> 元素是粉色的。",
         "举例如下：",
@@ -2544,8 +2544,8 @@
       "id": "bad87fee1348bd9aedf08726",
       "title": "Use Hex Code for Specific Colors",
       "description": [
-        "你是否知道在 CSS 中还有其他表示颜色的方法？其中的一种方法称作 hexadecimal code（十六进制编码），或简写为 <code>hex code</code>。",
-        "我们通常使用 <code>decimals</code>，也就是十进制数字，它对每一位数字使用符号 0 到 9。<code>Hexadecimals</code> （或 <code>hex</code>）是十六进制数字，这意味着它使用十六个不同的符号。像十进制那样，符号 0-9 代表数值零到九，再使用 A、B、C、D、E、F 代表数值十到十五。合在一起，用 0 到 F 可以代表 <code>hexadecimal</code> 中的每一位数字，共为我们提供 16 个可能的数值。你可以在 <a target='_blank' href='https://en.wikipedia.org/wiki/Hexadecimal'>这儿</a> 找到更多关于十六进制数字的信息。",
+        "你是否知道在 CSS 中还有其他表示颜色的方法？其中的一种方法称作 hexadecimal code（十六进制编码），简写为 <code>hex code</code>。",
+        "我们通常使用 <code>decimals</code>，也就是十进制数字，它对每一位数字使用符号0到9来表示。<code>Hexadecimals</code> （或 <code>hex</code>）是十六进制数字，这意味着它使用十六个不同的符号。像十进制那样，符号 0-9 代表数值零到九，再使用 A、B、C、D、E、F 代表数值十到十五。合在一起，用 0 到 F 可以代表 <code>hexadecimal</code> 中的每一位数字，共为我们提供 16 个可能的数值。你可以在 <a target='_blank' href='https://en.wikipedia.org/wiki/Hexadecimal'>这儿</a> 找到更多关于十六进制数字的信息。",
         "在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分。例如，<code>#000000</code> 是黑色，同时也是可能的数值中最小的。你可以在 <a target='_blank' href='https://en.wikipedia.org/wiki/RGB_color_model'>这儿</a> 找到更多关于 RGB 颜色系统的信息。",
         "把 <code>body</code> 元素的 background-color 由 <code>black</code> 替换成其 <code>hex code</code> 表示，即<code>#000000</code>。"
       ],
@@ -2589,7 +2589,7 @@
       "id": "bad87fee1348bd9aedf08724",
       "title": "Use Hex Code to Color Elements Red",
       "description": [
-        "你可能会疑惑为什么我们使用 6 位数表示一种颜色而不是只用一位或二位，答案是使用 6 位可提供给我们数量巨大的颜色变化。",
+        "你可能会疑惑为什么我们使用6位数来表示一种颜色而不是只用一位或二位，答案是使用6位数可提供给我们巨大数量的颜色变化。",
         "会有多少种可能的颜色？16 个值和 6 个位置意味着我们有 16 的 6 次方，或者说超过 1600 万种可能的颜色。",
         "Hex code 遵循 red-green-blue（红-绿-蓝），或者叫 <code>rgb</code> 格式。hex code 中的前两位表示颜色中红色的数量，第三四位代表绿色的数量，第五六位代表蓝色的数量。",
         "所以要得到绝对的纯红色，你只需要在第一和第二位使用 <code>F</code> （最大可能的数值），且在第三、第四、第五和第六位使用 <code>0</code> （最小可能数值）。",
@@ -2701,7 +2701,7 @@
       "id": "bad87fee1348bd9aedf08720",
       "title": "Use Hex Code for Specific Shades of Gray",
       "description": [
-        "通过平均混合所有三种颜色，我们还可以得到其他灰度等级的灰色。我们可以非常接近纯黑色。",
+        "通过平均混合所有三种颜色，我们还可以得到其他色度等级的灰色，这样我们可以非常接近纯黑色。",
         "通过对 background-color 应用 hex code 值 <code>#111111</code> 以把 <code>body</code> 元素的背景色设置为深灰色。"
       ],
       "challengeSeed": [
@@ -2722,7 +2722,7 @@
       "id": "bad87fee1348bd9aedf08719",
       "title": "Use Abbreviated Hex Code",
       "description": [
-        "许多人对超过 1600 万种可能的颜色感觉十分地抓狂，并且 hex code 非常难以记忆。幸运的是，你可以缩短它。",
+        "许多人对超过 1600 万种颜色感觉十分地抓狂，并且 hex code 非常难以记忆。幸运的是，你可以缩短它。",
         "例如，红，hex code 是 <code>#FF0000</code> ，可被缩写成 <code>#F00</code>。也就是说，一位表示红，一位表示绿，一位表示蓝。",
         "这会把所有可能的颜色数减少至大约 4000 种，但是浏览器会把 <code>#FF0000</code> 和 <code>#F00</code> 解释为完全相同的颜色。",
         "继续前进，尝试使用 <code>#F00</code> 把 <code>body</code> 元素的背景色改为红色。"
@@ -2745,7 +2745,7 @@
       "id": "bad87fee1348bd9aede08718",
       "title": "Use RGB values to Color Elements",
       "description": [
-        "可以在 CSS 中表示颜色的另一个方法是使用 <code>rgb</code> 值。",
+        "在 CSS 中表示颜色的另一个方法是使用 <code>rgb</code> 值。",
         "代表黑色的 RGB 值看起来是下面的样子：",
         "<code>rgb(0, 0, 0)</code>",
         "代表白色的 RGB 值看起来是下面的样子：",
@@ -2772,9 +2772,9 @@
       "id": "bad88fee1348bd9aedf08726",
       "title": "Use RGB to Color Elements White",
       "description": [
-        "The RGB value for black looks like this:",
+        "代表黑色的 RGB 值看起来是下面的样子：",
         "<code>rgb(0, 0, 0)</code>",
-        "The RGB value for white looks like this:",
+        "代表白色的 RGB 值看起来是下面的样子：",
         "<code>rgb(255, 255, 255)</code>",
         "使用 <code>rgb</code>，你通过 0 至 255 之间的一个数字来指定每种颜色的亮度，而不是像 hex code 那样使用六个十六进制数字。",
         "把 <code>body</code> 元素的背景色从黑色的 RGB 值修改为白色的 <code>rgb</code> 值 <code>rgb(255, 255, 255)</code>。"
@@ -2797,8 +2797,8 @@
       "id": "bad89fee1348bd9aedf08724",
       "title": "Use RGB to Color Elements Red",
       "description": [
-        "就像使用 hex code 一样，你可以通过不同数值的组合来表示 RGB 中不同的颜色。",
-        "这些数值遵循 RGB 构成模式：第一位表示红色，第二位表示绿色，第三位表示蓝色。",
+        "和使用 hex code 一样，你可以通过不同数值的组合来表示 RGB 中不同的颜色。",
+        "这些数值遵循 RGB 顺序模式：第一位表示红色，第二位表示绿色，第三位表示蓝色。",
         "把 <code>body</code> 元素的背景色修改为红色的 RGB 值：<code>rgb(255, 0, 0)</code>。"
       ],
       "challengeSeed": [
@@ -2819,7 +2819,7 @@
       "id": "bad80fee1348bd9aedf08723",
       "title": "Use RGB to Color Elements Green",
       "description": [
-        "现在将你的 <code>body</code> 元素的背景色修改为绿色的 <code>rgb</code> 值：<code>rgb(0, 255, 0)</code>。"
+        "现在将<code>body</code> 元素的背景色修改为绿色的 <code>rgb</code> 值：<code>rgb(0, 255, 0)</code>。"
       ],
       "challengeSeed": [
         "<style>",
