@@ -303,7 +303,6 @@ module.exports = function(app) {
           data[i].score = data[i].progressTimestamps.length;
           delete data[i].progressTimestamps;
       };
-      console.log(data);
       res.send(data);
     });
   }
