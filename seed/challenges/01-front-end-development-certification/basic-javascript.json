@@ -1792,7 +1792,7 @@
         "在 JavaScript 中， <dfn>作用域</dfn> 涉及到变量的作用范围。在函数外定义的变量具有 <dfn>全局</dfn> 作用域。这意味着，具有全局作用域的变量可以在代码的任何地方被调用。",
         "这些没有使用<code>var</code>关键字定义的变量，会被自动创建在全局作用域中，形成全局变量。当在代码其他地方无意间定义了一个变量，刚好变量名与全局变量相同，这时会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。",
         "<h4>任务</h4>",
-        "在函数外声明一个 <code>全局</code> 变量 <code>myGlobal</code>。并给它一个初始值 <code>10</code> ",
+        "在函数外声明一个 <code>全局</code> 变量 <code>myGlobal</code>，并给它一个初始值 <code>10</code> ",
         "在函数 <code>fun1</code> 的内部，<strong>不</strong>使用 <code>var</code> 关键字来声明 <code>oopsGlobal</code>，并赋值为 <code>5</code>。"
       ],
       "releasedOn": "January 1, 2016",
@@ -1862,12 +1862,12 @@
       "id": "56533eb9ac21ba0edf2244bf",
       "title": "Local Scope and Functions",
       "description": [
-        "这些在一个函数内声明的变量，以及该函数的参数有 <dfn>局部</dfn> 作用域。这意味着，它们只在该函数内可见。",
-        "这是一个带有局部变量 <code>loc</code> 的函数 <code>myTest</code>。",
+        "在一个函数内声明的变量，以及该函数的参数都是局部变量，意味着它们只在该函数内可见。",
+        "这是在函数 <code>myTest</code>内声明局部变量<code>loc</code> 的最佳例子：",
         "<blockquote>function myTest() {<br>  var loc = \"foo\";<br>  console.log(loc);<br>}<br>myTest(); // \"foo\"<br>console.log(loc); // \"undefined\"</blockquote>",
         "在函数外，<code>loc</code> 是未定义的。",
         "<h4>任务</h4>",
-        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>。"
+        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>，并根据右边编辑器的提示来完成任务。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1925,10 +1925,10 @@
       "id": "56533eb9ac21ba0edf2244c0",
       "title": "Global vs. Local Scope in Functions",
       "description": [
-        "一个程序中有可能具有相同的名称的 <dfn>局部</dfn> 变量 和 <dfn>全局</dfn> 变量。当你这样做的话，<code>局部</code> 变量将会优先于 <code>全局</code> 变量。",
+        "一个程序中有可能具有相同名称的 <dfn>局部</dfn> 变量 和 <dfn>全局</dfn> 变量。在这种情况下，<code>局部</code> 变量将会优先于 <code>全局</code> 变量。",
         "下面为例：",
         "<blockquote>var someVar = \"Hat\";<br>function myFun() {<br>  var someVar = \"Head\";<br>  return someVar;<br>}</blockquote>",
-        "函数 <code>myFun</code> 将会返回 <code>\"Head\"</code>，因为 <code>局部变量</code> 优先。",
+        "函数 <code>myFun</code> 将会返回 <code>\"Head\"</code>，因为 <code>局部变量</code> 优先级更高。",
         "<h4>任务</h4>",
         "给 <code>myFunction</code> 添加一个局部变量来覆盖 <code>outerWear</code> 的值为 <code>\"sweater\"</code>。"
       ],
@@ -1963,7 +1963,7 @@
       "id": "56533eb9ac21ba0edf2244c2",
       "title": "Return a Value from a Function with Return",
       "description": [
-        "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数。你可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
+        "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数，也可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
         "<strong>例如</strong>",
         "<blockquote>function plusThree(num) {<br>  return num + 3;<br>}<br>var answer = plusThree(5); // 8</blockquote>",
         "<code>plusThree</code> 带有一个为 <code>num</code> 的 <dfn>参数</dfn> 并且返回（returns）一个等于 <code>num + 3</code> 的值。",
@@ -2000,10 +2000,10 @@
       "id": "56533eb9ac21ba0edf2244c3",
       "title": "Assignment with a Returned Value",
       "description": [
-        "如果你还记得我们在这一节 <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a> 的讨论，赋值之前，在等号右边的一切操作要先完成。这意味着我们可把一个函数的返回值，赋值给一个变量。",
-        "假设我们预先定义的函数 <code>sum</code> 其将两个数字相加，那么：",
+        "如果你还记得我们在这一节 <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a> 的讨论，赋值之前，先完成等号右边的操作。这意味着我们可把一个函数的返回值，赋值给一个变量。",
+        "假设我们预先定义的函数 <code>sum</code> 其功能就是将两个数字相加，那么：",
         "<code>ourSum = sum(5, 12);</code>",
-        "将调用 <code>sum</code> 函数，返回（returns）了一个数值 <code>17</code>，然后把它赋值给了 <code>ourSum</code> 变量。",
+        "将调用 <code>sum</code> 函数，返回<code>return</code>了一个数值 <code>17</code>，然后把它赋值给了 <code>ourSum</code> 变量。",
         "<h4>任务</h4>",
         "调用 <code>process</code> 函数并给参数一个值 <code>7</code>，然后把返回的值赋值给变量 <code>processed</code>。"
       ],
@@ -2046,8 +2046,8 @@
       "id": "56533eb9ac21ba0edf2244c6",
       "title": "Stand in Line",
       "description": [
-        "在计算机科学中的 <dfn>队列</dfn>（queue）是一个抽象的数据结构，其中的项目被保留了秩序。新的条目会被加到 <code>队列</code> 的末尾，旧的项目会从 <code>队列</code> 的前部被拿出。",
-        "写一个函数 <code>queue</code> 这需要一个数组（<code>arr</code>）和一个数字（<code>item</code>）作为参数。数字添加到数组的结尾，然后取出数组的第一个元素。然后队列函数应该返回被删除的元素。"
+        "在计算机科学中 <dfn>队列</dfn>（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到 <code>队列</code> 的末尾，旧的条目会从 <code>队列</code> 的头部被移出。",
+        "写一个函数 <code>queue</code> ，用一个数组<code>arr</code>和一个数字<code>item</code>作为参数。数字<code>item</code>添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -2108,7 +2108,7 @@
       "id": "bd7123c9c441eddfaeb5bdef",
       "title": "Understanding Boolean Values",
       "description": [
-        "另一种数据类型是<dfn>布尔</dfn>（Boolean）。<code>布尔</code> 值只有可能是这两个值之一：<code>true</code> 或者 <code>false</code>。它们基本上就像是通断开关，其中 <code>true</code> 是“开”，<code>false</code> 是“关”。这两种状态是互斥的。",
+        "另一种数据类型是<dfn>布尔</dfn>（Boolean）。<code>布尔</code> 值要么是<code>true</code> 要么是<code>false</code>。它非常像电路开关， <code>true</code> 是“开”，<code>false</code> 是“关”。这两种状态是互斥的。",
         "<strong>注意</strong><br><code>Boolean</code> 值绝不会写作被引号包裹起来的形式。<code>字符串</code> 的 <code>\"true\"</code> 和 <code>\"false\"</code> 不是 <code>布尔值</code>，在 JavaScript 中也没有特殊含义。",
         "<h4>任务</h4>",
         "修改 <code>welcomeToBooleans</code> 函数，让它返回 <code>true</code> 而不是 <code>false</code>。"
@@ -2140,7 +2140,7 @@
       "id": "cf1111c1c12feddfaeb3bdef",
       "title": "Use Conditional Logic with If Statements",
       "description": [
-        "<code>If</code> 语句用于在代码中做判断。关键字 <code>if</code> 告诉 JavaScript 在括号中一定的条件下去执行定义在大括号里面的代码。这些条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
+        "<code>If</code> 语句用于在代码中做条件判断。关键字 <code>if</code> 告诉 JavaScript 在小括号中的条件为真的情况下去执行定义在大括号里面的代码。这种条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
         "当条件的计算结果为 <code>true</code>，程序执行大括号内的语句。当布尔条件的计算结果为 <code>false</code>，大括号内的代码将不会执行。",
         "<strong>伪代码</strong>",
         "<blockquote>if(<i>条件为真</i>){<br>  <i>语句被执行</i><br>}</blockquote>",
@@ -2190,14 +2190,14 @@
       "id": "56533eb9ac21ba0edf2244d0",
       "title": "Comparison with the Equality Operator",
       "description": [
-        "在 JavaScript 中，有很多 <dfn>相互比较的操作</dfn>。所有这些操作符返回一个 <code>true</code> 或 <code>false</code> 值。",
-        "最基本的运算符是相等运算符：<code>==</code>。相等运算符比较两个值，如果它们是同等，返回 <code>true</code>，如果它们不等，返回 <code>false</code>。值得注意的是相等运算符不同于赋值操作符（<code>=</code>），赋值操作符是把等号右边的值赋给左边的变量。",
+        "在 JavaScript 中，有很多 <dfn>相互比较的操作</dfn>。所有这些操作符都返回一个 <code>true</code> 或 <code>false</code> 值。",
+        "最基本的运算符是相等运算符：<code>==</code>。相等运算符比较两个值，如果它们是同等，返回 <code>true</code>，如果它们不等，返回 <code>false</code>。值得注意的是相等运算符不同于赋值运算符（<code>=</code>），赋值运算符是把等号右边的值赋给左边的变量。",
         "<blockquote>function equalityTest(myVal) {<br>  if (myVal == 10) {<br>     return \"Equal\";<br>  }<br>  return \"Not Equal\";<br>}</blockquote>",
         "如果 <code>myVal</code> 等于 <code>10</code>，相等运算符会返回 <code>true</code>，因此大括号里面的代码会被执行，函数将返回 <code>\"Equal\"</code>。否则，函数返回 <code>\"Not Equal\"</code>。",
-        "在 JavaScript 中，为了让两个不同的 <code>数据类型</code>（例如 <code>数字</code> 和 <code>字符串</code>）的数据可以作比较，它必须把一种类型转换为另一种类型。然而一旦这样做，它可以像下面这样来比较：",
+        "在 JavaScript 中，为了让两个不同的 <code>数据类型</code>（例如 <code>数字</code> 和 <code>字符串</code>）的值可以作比较，它必须把一种类型转换为另一种类型。然而一旦这样做，它可以像下面这样来比较：",
         "<blockquote>   1   ==  1    // true<br>   1   ==  2    // false<br>   1   == '1'   // true<br>  \"3\"  ==  3    // true</blockquote>",
         "<h4>任务</h4>",
-        "把 <code>等于运算符</code> 添加到指定的行，这样当 <code>val</code> 的值为<code>12</code>的时候，函数会返回\"Equal\"。"
+        "把 <code>相等运算符</code> 添加到指定的行，这样当 <code>val</code> 的值为<code>12</code>的时候，函数会返回\"Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2229,9 +2229,9 @@
       "title": "Comparison with the Strict Equality Operator",
       "description": [
         "全等（<code>===</code>）是相对于相等操作符（<code>==</code>）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 <code>数据类型</code>。",
-        "<strong>两个例子</strong>",
+        "<strong>举个例子</strong>",
         "<blockquote>3 === 3   // true<br>3 === '3' // false</blockquote>",
-        "在第二个示例中, <code>3</code> 是一个 <code>数字</code> 类型的，<code>'3'</code> 是一个 <code>字符</code> 类型的。",
+        "<code>3</code> 是一个 <code>数字</code> 类型的，而<code>'3'</code> 是一个 <code>字符</code> 类型的，所以3不全等于'3'。",
         "<h4>任务</h4>",
         "在 <code>if</code> 语句值使用全等运算符，这样当 <code>val</code> 严格等于7的时候，函数会返回\"Equal\"。"
       ],
@@ -2343,7 +2343,7 @@
       "title": "Comparison with the Greater Than Operator",
       "description": [
         "使用大于运算符（<code>&gt;</code>）来比较两个数字。如果大于运算符左边的数字大于右边的数字，将会返回 <code>true</code>。否则，它返回 <code>false</code>。",
-        "与相等运算符相似，大于运算符在比较的时候，会转换值的数据类型。",
+        "与相等运算符一样，大于运算符在比较的时候，会转换值的数据类型。",
         "<strong>例如</strong>",
         "<blockquote> 5 > 3   // true<br> 7 > '3' // true<br> 2 > 3   // false<br>'1' > 9  // false</blockquote>",
         "<h4>任务</h4>",
@@ -2387,7 +2387,7 @@
       "title": "Comparison with the Greater Than Or Equal To Operator",
       "description": [
         "使用 <code>大于等于</code> 运算符（<code>&gt;=</code>）来比较两个数字的大小。如果大于等于运算符左边的数字比右边的数字大或者相等，它会返回 <code>true</code>。否则，它会返回 <code>false</code>。",
-        "与相等运算符相似，<code>大于等于/code> 运算符在比较的时候会转换值的数据类型。",
+        "与相等运算符相似，<code>大于等于</code> 运算符在比较的时候会转换值的数据类型。",
         "<strong>例如</strong>",
         "<blockquote> 6  >=  6  // true<br> 7  >= '3' // true<br> 2  >=  3  // false<br>'7' >=  9  // false</blockquote>",
         "<h4>任务</h4>",
@@ -2516,7 +2516,7 @@
       "id": "56533eb9ac21ba0edf2244d8",
       "title": "Comparisons with the Logical And Operator",
       "description": [
-        "有时你需要在一次测试中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
+        "有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
         "同样的效果可以通过if语句的嵌套来实现：",
         "<blockquote>if (num > 5) {<br>  if (num < 10) {<br>    return \"Yes\";<br>  }<br>}<br>return \"No\";</blockquote>",
         "只有当 <code>num</code> 的值在6和9之间（包括6和9）才会返回 \"Yes\"。相同的逻辑可被写为：",
@@ -2564,13 +2564,13 @@
       "id": "56533eb9ac21ba0edf2244d9",
       "title": "Comparisons with the Logical Or Operator",
       "description": [
-        "如果任一 <dfn>操作数</dfn> 为 <code>true</code>，<dfn>逻辑或</dfn>操作符（<code>||</code>）会返回 <code>true</code>。否则，它返回 <code>false</code>。",
-        "通过之前的测试，对于下面的模式应该很熟悉了：",
+        "如果任何一个操作数是<code>true</code>，<dfn>逻辑或</dfn> 运算符 (<code>||</code>) 返回 <code>true</code>。反之，返回 <code>false</code>。",
+        "举个例子：",
         "<blockquote>if (num > 10) {<br>  return \"No\";<br>}<br>if (num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
-        "只有当 <code>num</code> 的值在 <code>5</code> 和 <code>10</code> 之间（包括5和10），才会返回 \"Yes\"。相同的逻辑可被写为：",
+        "只有当<code>num</code>大于等于5或小于等于10时，函数返回\"Yes\"。相同的逻辑可以简写成：",
         "<blockquote>if (num > 10 || num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
         "<h4>任务</h4>",
-        "合并两个 <code>if</code> 语句为一条语句，如果val不在 <code>10</code> 和 <code>20</code>（含）之间，返回\"Outside\"。否则，返回 <code>\"Inside\"</code>。"
+        "结合两个if语句为一个语句，如果<code>val</code>不在10和20之间(包括10和20)，返回 <code>\"Outside\"</code>。反之，返回 <code>\"Inside\"</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2614,10 +2614,12 @@
       "id": "56533eb9ac21ba0edf2244da",
       "title": "Introducing Else Statements",
       "description": [
-        "当一个 <code>if</code> 语句中的条件为真（true）时，则执行之后它的代码块。如果条件为假（false）怎么办呢？通常情况下什么都不会发生。使用 <code>else</code> 语句，else之后的代码块将会被执行。",
+        "当<code>if</code>语句的条件为真，大括号里的代码执行，那如果条件为假呢？",
+        "正常情况下什么也不会发生。",
+        "写一个<code>else</code>语句，当条件为假时执行相应的代码。",
         "<blockquote>if (num > 10) {<br>  return \"Bigger than 10\";<br>} else {<br>  return \"10 or Less\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "合并 <code>if</code> 语句到一个单一的 <code>if/else</code> 语句。"
+        "结合多个<code>if</code>语句为一个<code>if/else</code>语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2660,10 +2662,10 @@
       "id": "56533eb9ac21ba0edf2244db",
       "title": "Introducing Else If Statements",
       "description": [
-        "如果您有需要解决多个条件，可以把  <code>if</code>  语句与 <code>else if</code> 语句结合起来使用。",
+        "如果你有多个条件语句，你可以通过<code>else if</code>语句把 <code>if</code>语句链起来。",
         "<blockquote>if (num > 15) {<br>  return \"Bigger than 15\";<br>} else if (num < 5) {<br>  return \"Smaller than 5\";<br>} else {<br>  return \"Between 5 and 15\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "使用 <code>else if</code> 语句来处理逻辑。"
+        "使用<code>else if</code>实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2702,17 +2704,17 @@
       "id": "5690307fddb111c6084545d7",
       "title": "Logical Order in If Else Statements",
       "description": [
-        "在 <code>if</code>，<code>else if</code> 语句中，顺序是很重要的。",
-        "语句是从上到下执行的，因此你就要注意应该把什么语句放在第一位。",
-        "取这两个函数作为例子。",
+        "<code>if</code>、<code>else if</code>语句中代码的执行顺序是很重要的。",
+        "在条件判断语句中，代码的执行顺序是从上到下，所以你需要考虑清楚先执行哪一句，后执行哪一句。",
+        "这有两个例子。",
         "第一个例子：",
         "<blockquote>function foo(x) {<br>  if (x < 1) {<br>    return \"Less than one\";<br>  } else if (x < 2) {<br>    return \"Less than two\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "而第二个只是切换了语句的顺序：",
+        "第二个例子更改了代码的执行顺序：",
         "<blockquote>function bar(x) {<br>  if (x < 2) {<br>    return \"Less than two\";<br>  } else if (x < 1) {<br>    return \"Less than one\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "虽然这两个函数看起来几乎一样，如果我们传递一个数字却得到的是不同的输出。",
+        "这两个函数看起来几乎一模一样，我们传一个值进去看看它们有什么区别。",
         "<blockquote>foo(0) // \"Less than one\"<br>bar(0) // \"Less than two\"</blockquote>",
         "<h4>任务</h4>",
-        "改变在函数中逻辑的顺序，以便在所有情况下，将返回正确的语句。"
+        "更改函数的逻辑顺序以便通过所有的测试用例。"
       ],
       "challengeSeed": [
         "function myTest(val) {",
@@ -2743,10 +2745,10 @@
       "id": "56533eb9ac21ba0edf2244dc",
       "title": "Chaining If Else Statements",
       "description": [
-        "<code>if/else</code> 语句可以一起处理复杂的逻辑链。这里的 <dfn>伪代码</dfn> 是多个 <code>if</code> / <code>else if</code> 的语句链：",
-        "<blockquote>if (<em>条件1</em>) {<br>  <em>语句1</em><br>} else if (<em>条件2</em>) {<br>  <em>语句2</em><br>} else if (<em>条件3</em>) {<br>  <em>语句3</em><br>. . .<br>} else {<br>  <em>语句N</em><br>}</blockquote>",
+        "<code>if/else</code> 语句串联在一起可以实现复杂的逻辑，这是多个<code>if/else if</code> 语句串联在一起的伪代码：",
+        "<blockquote>if (<em>condition1</em>) {<br>  <em>statement1</em><br>} else if (<em>condition2</em>) {<br>  <em>statement2</em><br>} else if (<em>condition3</em>) {<br>  <em>statement3</em><br>. . .<br>} else {<br>  <em>statementN</em><br>}</blockquote>",
         "<h4>任务</h4>",
-        "写出满足下列条件的 <code>if</code>/<code>else if</code> 语句链：",
+        "把<code>if</code>/<code>else if</code>语句串联起来实现下面的逻辑：",
         "<code>num &lt;   5</code> - return \"Tiny\"<br><code>num &lt;  10</code> - return \"Small\"<br><code>num &lt; 15</code> - return \"Medium\"<br><code>num &lt; 20</code> - return \"Large\"<br><code>num >= 20</code>  - return \"Huge\""
       ],
       "releasedOn": "January 1, 2016",
@@ -2787,10 +2789,10 @@
       "id": "5664820f61c48e80c9fa476c",
       "title": "Golf Code",
       "description": [
-        "在 <a href=\"https://en.wikipedia.org/wiki/Golf\" target=\"_blank\">高尔夫</a> 游戏中，each hole has a <code>par</code> for the average number of <code>strokes</code> needed to sink the ball. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.",
-        "Your function will be passed <code>par</code> and <code>strokes</code> arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):",
+        "在高尔夫<code>golf</code>游戏中，每个洞都有自己的标准杆数<code>par</code>，代表着距离。根据你把球打进洞所挥杆的次数<code>strokes</code>，可以计算出你的高尔夫水平。",
+        "函数将会传送2个参数，分别是标准杆数<code>par</code> 和 挥杆次数<code>strokes</code> ，根据下面的表格返回正确的水平段位。",
         "<table class=\"table table-striped\"><thead><tr><th>Strokes</th><th>Return</th></tr></thead><tbody><tr><td>1</td><td>\"Hole-in-one!\"</td></tr><tr><td>&lt;= par - 2</td><td>\"Eagle\"</td></tr><tr><td>par - 1</td><td>\"Birdie\"</td></tr><tr><td>par</td><td>\"Par\"</td></tr><tr><td>par + 1</td><td>\"Bogey\"</td></tr><tr><td>par + 2</td><td>\"Double Bogey\"</td></tr><tr><td>&gt;= par + 3</td><td>\"Go Home!\"</td></tr></tbody></table>",
-        "<code>par</code> and <code>strokes</code> will always be numeric and positive."
+        "<code>par</code> 和 <code>strokes</code> 必须是数字而且是正数。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2828,12 +2830,12 @@
       "id": "56533eb9ac21ba0edf2244dd",
       "title": "Selecting from many options with Switch Statements",
       "description": [
-        "If you have many options to choose from, use a <code>switch</code> statement. A <code>switch</code> statement tests a value and can have many <code>case</code> statements which defines various possible values. Statements are executed from the first matched <code>case</code> value until a <code>break</code> is encountered.",
-        "Here is a <dfn>pseudocode</dfn> example:",
+        "如果你有非常多的选项需要选择，可以使用switch语句。根据不同的参数值会匹配上不同的case分支，语句会从第一个匹配的case分支开始执行，直到碰到break就结束。",
+        "这是一个伪代码案例：",
         "<blockquote>switch (num) {<br>  case value1:<br>    statement1;<br>    break;<br>  case value2:<br>    statement2;<br>    break;<br>...<br>  case valueN:<br>    statementN;<br>    break;<br>}</blockquote>",
-        "<code>case</code> values are tested with strict equality (<code>===</code>). The <code>break</code> tells JavaScript to stop executing statements. If the <code>break</code> is omitted, the next statement will be executed.",
+        "测试<code>case</code> 值使用严格等于，break关键字告诉javascript停止执行语句。如果没有break关键字，下一个语句会继续执行。",
         "<h4>任务</h4>",
-        "Write a switch statement which tests <code>val</code> and sets <code>answer</code> for the following conditions:<br><code>1</code> - \"alpha\"<br><code>2</code> - \"beta\"<br><code>3</code> - \"gamma\"<br><code>4</code> - \"delta\""
+        "写一个测试 <code>val</code>的switch语句，并且根据下面的条件来设置不同的<code>answer</code>：<br><code>1</code> - \"alpha\"<br><code>2</code> - \"beta\"<br><code>3</code> - \"gamma\"<br><code>4</code> - \"delta\""
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2869,11 +2871,11 @@
       "id": "56533eb9ac21ba0edf2244de",
       "title": "Adding a default option in Switch statements",
       "description": [
-        "In a <code>switch</code> statement you may not be able to specify all possible values as <code>case</code> statements. Instead, you can add the <code>default</code> statement which will be executed if no matching <code>case</code> statements are found. Think of it like the final <code>else</code> statement in an <code>if/else</code> chain.",
-        "A <code>default</code> statement should be the last case.",
+        "在<code>switch</code> 语句中你可能无法用case来指定所有情况，这时你可以添加default语句。当再也找不到case匹配的时候default语句会执行，非常类似于if/else组合中的else语句。",
+        "<code>default</code>语句应该是最后一个case。",
         "<blockquote>switch (num) {<br>  case value1:<br>    statement1;<br>    break;<br>  case value2:<br>    statement2;<br>    break;<br>...<br>  default:<br>    defaultStatement;<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Write a switch statement to set <code>answer</code> for the following conditions:<br><code>\"a\"</code> - \"apple\"<br><code>\"b\"</code> - \"bird\"<br><code>\"c\"</code> - \"cat\"<br><code>default</code> - \"stuff\""
+        "写一个根据下面的条件来设置<code>answer</code>的switch语句：<br><code>\"a\"</code> - \"apple\"<br><code>\"b\"</code> - \"bird\"<br><code>\"c\"</code> - \"cat\"<br><code>default</code> - \"stuff\""
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2910,12 +2912,12 @@
       "id": "56533eb9ac21ba0edf2244df",
       "title": "Multiple Identical Options in Switch Statements",
       "description": [
-        "If the <code>break</code> statement is omitted from a <code>switch</code> statement's <code>case</code>, the following <code>case</code> statement(s) are executed until a <code>break</code> is encountered. If you have multiple inputs with the same output, you can represent them in a <code>switch</code> statement like this:",
+        "如果<code>switch</code>语句中的<code>case</code>分支的<code>break</code> 语句漏掉了，后面的 <code>case</code>语句会一直执行直到遇到<code>break</code>。如果你有多个输入值和输出值一样，可以试试下面的<code>switch</code>语句：",
         "<blockquote>switch(val) {<br>  case 1:<br>  case 2:<br>  case 3:<br>    result = \"1, 2, or 3\";<br>    break;<br>  case 4:<br>    result = \"4 alone\";<br>}</blockquote>",
-        "Cases for 1, 2, and 3 will all produce the same result.",
+        "分支1、2、3将会产生相同的输出结果。",
         "<h4>任务</h4>",
-        "Write a switch statement to set <code>answer</code> for the following ranges:<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
-        "<strong>提示</strong><br>You will need to have a <code>case</code> statement for each number in the range."
+        "写一个根据下面的范围来设置<code>answer</code> 的switch语句：<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
+        "<strong>提示</strong><br>你需要为范围中的每个数字准备一个<code>answer</code>语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2956,12 +2958,12 @@
       "id": "56533eb9ac21ba0edf2244e0",
       "title": "Replacing If Else Chains with Switch",
       "description": [
-        "If you have many options to choose from, a <code>switch</code> statement can be easier to write than many chained <code>if</code>/<code>if else</code> statements. The following:",
+        "如果你有多个选项需要选择，<code>switch</code> 语句写起来会比多个串联的<code>if</code>/<code>if else</code>语句容易些，譬如:",
         "<blockquote>if (val === 1) {<br>  answer = \"a\";<br>} else if (val === 2) {<br>  answer = \"b\";<br>} else {<br>  answer = \"c\";<br>}</blockquote>",
-        "can be replaced with:",
+        "可以被下面替代：",
         "<blockquote>switch (val) {<br>  case 1:<br>    answer = \"a\";<br>    break;<br>  case 2:<br>    answer = \"b\";<br>    break;<br>  default:<br>    answer = \"c\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Change the chained <code>if</code>/<code>if else</code> statements into a <code>switch</code> statement."
+        "把串联的 <code>if</code>/<code>if else</code> 语句改成 <code>switch</code> 语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
