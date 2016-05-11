@@ -172,11 +172,11 @@
       "id": "a0b5010f579e69b815e7c5d6",
       "title": "Search and Replace",
       "description": [
-        "Perform a search and replace on the sentence using the arguments provided and return the new sentence.",
-        "First argument is the sentence to perform the search and replace on.",
-        "Second argument is the word that you will be replacing (before).",
-        "Third argument is what you will be replacing the second argument with (after).",
-        "NOTE: Preserve the case of the original word when you are replacing it. For example if you mean to replace the word \"Book\" with the word \"dog\", it should be replaced as \"Dog\"",
+        "使用给定的参数对句子执行一次查找和替换，然后返回新句子。",
+        "第一个参数是将要对其执行查找和替换的句子。",
+        "第二个参数是将被替换掉的单词（替换前的单词）。",
+        "第三个参数用于替换第二个参数（替换后的单词）。",
+        "注意：NOTE: Preserve the case of the original word when you are replacing it. For example if you mean to replace the word \"Book\" with the word \"dog\", it should be replaced as \"Dog\"",
         "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
       ],
       "challengeSeed": [
