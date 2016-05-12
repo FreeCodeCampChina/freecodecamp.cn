@@ -39,7 +39,7 @@
         "在计算机科学中, <code>data</code>(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的<dfn>data types</dfn>(数据类型)，它们是<code>undefined</code>（未定义）, <code>null</code>（空）, <code>boolean</code>（布尔型）, <code>string</code>（字符串）, <code>symbol</code>(符号), <code>number</code>（数字）, and <code>object</code>（对象）。",
         "举个栗子, 计算机能够分辨不同的数字, 例如数字 <code>12</code>和 <code>strings</code>，<code>\"12\"</code>和<code>\"dog\"</code>, 或<code>\"123 cats\"</code>, 都是字母的集合。 计算机能够精确地操作数字， 但是对于字符串却无能为力。",
         "<code>Variables</code>（变量）允许计算机以一种动态的形式来存储和操作数据，通过操作指向数据的指针而不是数据本身来避免了内存泄露，以上的七种数据类型都可以存储到一个变量（variable）中。",
-        "<code>Variables</code> 非常类似于您在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）与数学中的变量不同的是，计算机可以在不同的时间存储不同类型的变量。",
+        "<code>Variables</code> 非常类似于你在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）与数学中的变量不同的是，计算机可以在不同的时间存储不同类型的变量。",
         "通过在变量的前面使用关键字<code>var</code>，我们告诉 JavaScript 来创建或者 <dfn>declare</dfn>（声明）一个变量,就像这样：",
         "<blockquote>var ourName;</blockquote>",
         "上面代码的意思是创建一个名为<code>ourName</code>的<code>variable</code>（变量），在JavaScript中我们使用分号来结束一段声明。",
@@ -49,7 +49,7 @@
         "<strong>提示</strong><br>如果遇到困难了，请看下<code>ourName</code>的例子是怎么写的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourName;",
         "",
         "// Define myName below this line",
@@ -117,7 +117,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourVar = 19;",
         "",
         "// Only change code below this line",
@@ -139,7 +139,7 @@
       "id": "56533eb9ac21ba0edf2244aa",
       "title": "Understanding Uninitialized Variables",
       "description": [
-        "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当您用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出<code>\"undefined\"</code>。",
+        "当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code> 的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 <dfn>\"Not a Number\"</dfn>。当你用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出<code>\"undefined\"</code>。",
         "<h4>任务</h4>",
         "定义3个变量 <code>a</code>、<code>b</code>、<code>c</code> ，并且分别给他们赋值：<code>5</code>、<code>10</code>、<code>\"I am a\"</code> ，这样它们就不会是 <code>undefined</code>（未定义的了）。"
       ],
@@ -373,7 +373,7 @@
       "id": "56533eb9ac21ba0edf2244ad",
       "title": "Decrement a Number with JavaScript",
       "description": [
-        "使用自减符号 <code>--</code> ，您可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
+        "使用自减符号 <code>--</code> ，你可以很方便地对一个变量执行 <dfn>自减</dfn> 或者减一操作。",
         "<code>i--;</code>",
         "等效于",
         "<code>i = i - 1;</code>",
@@ -436,7 +436,7 @@
       "id": "bd7993c9c69feddfaeb7bdef",
       "title": "Multiply Two Decimals with JavaScript",
       "description": [
-        "在 JavaScript 中，您也可以用小数进行计算，就像整数一样。",
+        "在 JavaScript 中，你也可以用小数进行计算，就像整数一样。",
         "让我们把两个小数相乘，并得到它们相乘的结果（product）。",
         "<h4>任务</h4>",
         "改变 <code>0.0</code> 的数值让变量<code>product</code>的值等于 <code>5.0</code>。"
@@ -724,10 +724,10 @@
         "<code>var myName = \"your name\";</code>",
         "<code>\"your name\"</code> 被称作 <dfn>字符串</dfn>。 字符串是用单或双引号包裹起来的一连串的零个或多个字符。",
         "<h4>任务</h4>",
-        "创建两个新的 <code>字符串</code> 变量：<code>myFirstName</code> 和 <code>myLastName</code> 分别为它们赋上您的姓和名的值。"
+        "创建两个新的 <code>字符串</code> 变量：<code>myFirstName</code> 和 <code>myLastName</code> 分别为它们赋上你的姓和名的值。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Alan\";",
         "var lastName = \"Turing\";",
         "",
@@ -753,8 +753,8 @@
       "id": "56533eb9ac21ba0edf2244b5",
       "title": "Escaping Literal Quotes in Strings",
       "description": [
-        "当您定义一个字符串必须要用单引号或双引号来包裹它。那么当你需要在字符串中使用一个: <code>\"</code> 或者 <code>'</code> 时该怎么办呢?",
-        "在 JavaScript 中，您可以通过在引号前面使用 <dfn>反斜杠</dfn> (<code>\\</code>) 来转义引号。",
+        "当你定义一个字符串必须要用单引号或双引号来包裹它。那么当你需要在字符串中使用一个: <code>\"</code> 或者 <code>'</code> 时该怎么办呢?",
+        "在 JavaScript 中，你可以通过在引号前面使用 <dfn>反斜杠</dfn> (<code>\\</code>) 来转义引号。",
         "<code>var sampleStr = \"Alan said, \\\"Peter is learning JavaScript\\\".\";</code>",
         "这标志着提醒 JavaScript 单引号或双引号并不是字符串的结尾，而是出现在字符串内的字符。所以，如果你要打印字符串到控制台，你将得到：",
         "<code>Alan said, \"Peter is learning JavaScript\".</code>",
@@ -791,7 +791,7 @@
       "id": "56533eb9ac21ba0edf2244b4",
       "title": "Quoting Strings with Single Quotes",
       "description": [
-        "在 JavaScript 中的 <dfn>字符串</dfn> 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号在功能上是在JavaScript中是相同的。",
+        "在 JavaScript 中的 <dfn>字符串</dfn> 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号的功能在JavaScript中是相同的。",
         "<code>\"This string has \\\"double quotes\\\" in it\"</code>",
         "当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 <dfn>转义</dfn> 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。",
         "<code>'This string has \"double quotes\" in it. And \"probably\" lots of them.'</code>",
@@ -824,7 +824,7 @@
       "description": [
         "引号不是可以在字符串中唯一一个被转义的字符。下面是常见的转义符号的列表:",
         "<table class=\"table table-striped\"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td>\\'</td><td>单引号</td></tr><tr><td>\\\"</td><td>双引号</td></tr><tr><td>\\\\</td><td>反斜杠符</td></tr><tr><td>\\n</td><td>换行符</td></tr><tr><td>\\r</td><td>回车符</td></tr><tr><td>\\t</td><td>制表符</td></tr><tr><td>\\b</td><td>退格符</td></tr><tr><td>\\f</td><td>换页符</td></tr></tbody></table>",
-        "<em>注意，如果您想要显示一个反斜杠就必须要转义它。</em>",
+        "<em>注意，如果你想要显示一个反斜杠就必须要转义它。</em>",
         "<h4>任务</h4>",
         "按照下面的顺序，并且用空格来分割：<br><code>反斜杠 制表符 制表符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
       ],
@@ -853,16 +853,16 @@
       "id": "56533eb9ac21ba0edf2244b7",
       "title": "Concatenating Strings with Plus Operator",
       "description": [
-        "在 JavaScript 中，当 <code>+</code> 操作符与 <code>字符串</code> 一起使用的时候，它被称作 <dfn>连接</dfn> 操作符。您可以通过和其他字符串<dfn>连接</dfn> 来创建一个新的字符串。",
+        "在 JavaScript 中，当 <code>+</code> 操作符与 <code>字符串</code> 一起使用的时候，它被称作 <dfn>连接</dfn> 操作符。你可以通过和其他字符串<dfn>连接</dfn> 来创建一个新的字符串。",
         "<strong>举个例子</strong>",
         "<blockquote>'My name is Alan,' + ' I concatenate.'</blockquote>",
-        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之外的空格，所以想加上空格的话，您需要自己在字符串上面添加。",
+        "<strong>注意</strong><br>当心空格。连接操作不会添加两个字符串之外的空格，所以想加上空格的话，你需要自己在字符串里面添加。",
         "<h4>任务</h4>",
         "使用 <code>+</code> 操作，把字符串 <code>\"This is the start. \"</code> 和 <code>\"This is the end.\"</code> 连接起来并赋值给变量 <code>myStr</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourStr = \"I come first. \" + \"I come second.\";",
         "",
         "// Only change code below this line",
@@ -896,14 +896,14 @@
       "id": "56533eb9ac21ba0edf2244b8",
       "title": "Concatenating Strings with the Plus Equals Operator",
       "description": [
-        "我们还可以使用 <code>+=</code> 运算符来 <dfn>连接</dfn> 字符串到现有的字符串变量的结尾。对于那些需要占用几行的长字符串来说，这一操作是非常有用的。",
-        "<strong>注意</strong><br>当心空格。连接操作不会添加上两个字符串之间外面的空格，所以如果想要加上空格的话，您需要自己在字符串上面添加。",
+        "我们还可以使用 <code>+=</code> 运算符来 <dfn>连接</dfn> 字符串到现有字符串的结尾。对于那些非常长的字符串来说，这一操作是非常有用的。",
+        "<strong>注意</strong><br>当心空格。连接操作不会添加两个字符串外面的空格，所以如果想要加上空格的话，你需要自己在字符串里面添加。",
         "<h4>任务</h4>",
-        "通过使用 <code>+=</code> 操作符来连接这两个字符串:<br><code>\"This is the first sentence. \"</code> 和 <code>\"This is the second sentence.\"</code> 来构建变量 <code>myStr</code>。"
+        "通过使用 <code>+=</code> 操作符来连接这两个字符串:<br><code>\"This is the first sentence. \"</code> 和 <code>\"This is the second sentence.\"</code> 并赋给变量 <code>myStr</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourStr = \"I come first. \";",
         "ourStr += \"I come second.\";",
         "",
@@ -936,13 +936,14 @@
       "id": "56533eb9ac21ba0edf2244b9",
       "title": "Constructing Strings with Variables",
       "description": [
-        "有时候您需要创建一个 <a href=\"https://en.wikipedia.org/wiki/Mad_Libs\" target=\"_blank\">Mad Libs（填字）</a> 风格的字符串。通过使用连接运算符（<code> + </ code>），您可以插入一个或多个变量来建立一个字符串。",
+        "有时候你需要创建一个填字风格的字符串。",
+        "通过使用连接运算符<code> + </code>，你可以插入一个或多个变量来组成一个字符串。",
         "<h4>任务</h4>",
-        "把您的名字赋值给变量 <code>myName</code> ，然后把变量 <code>myName</code> 插入到字符串 <code>\"My name is \"</code> 和 <code>\" and I am swell!\"</code>之间，并把得到的新字符串赋值给变量 <code>myStr</code> "
+        "把你的名字赋值给变量 <code>myName</code> ，然后把变量 <code>myName</code> 插入到字符串 <code>\"My name is \"</code> 和 <code>\" and I am swell!\"</code>之间，并把连接后的结果赋值给变量 <code>myStr</code>。 "
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourName = \"Free Code Camp\";",
         "var ourStr = \"Hello, our name is \" + ourName + \", how are you?\";",
         "",
@@ -982,13 +983,13 @@
       "id": "56533eb9ac21ba0edf2244ed",
       "title": "Appending Variables to Strings",
       "description": [
-        "正如我们可以创建出多行的字符串，我们还可以使用加等号(<code>+=</code>)运算符来追加变量到字符串上。",
+        "我们不仅可以创建出多行的字符串，还可以使用加等号(<code>+=</code>)运算符来追加变量到字符串上。",
         "<h4>任务</h4>",
         "设置变量 <code>someAdjective</code> 的值，并使用 <code>+=</code> 运算符把它追加到变量 <code>myStr</code> 上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var anAdjective = \"awesome!\";",
         "var ourStr = \"Free Code Camp is \";",
         "ourStr += anAdjective;",
@@ -1029,14 +1030,14 @@
       "id": "bd7123c9c448eddfaeb5bdef",
       "title": "Find the Length of a String",
       "description": [
-        "您可以通过字符串变量或字符串后面写 <code>.length</code> 来得到 <code>字符串</code> 值的长度。",
+        "你可以通过在字符串变量或字符串后面写上 <code>.length</code> 来获得字符串变量 <code>字符串</code> 值的长度。",
         "<code>\"Alan Peter\".length; // 10</code>",
-        "例如，我们创建了一个变量 <code>var firstName = \"Charles\"</code>，我们就可以通过使用 <code>firstName.length</code> 属性来得到 <code>\"Charles\"</code> 字符串的长度。",
+        "例如，我们创建了一个变量 <code>var firstName = \"Charles\"</code>，我们就可以通过使用 <code>firstName.length</code> 来获得 <code>\"Charles\"</code> 字符串的长度。",
         "<h4>任务</h4>",
-        "使用 <code>.length</code> 属性来得到变量 <code>lastName</code> 的长度，并把它赋值给变量 <code>lastNameLength</code>。"
+        "使用 <code>.length</code> 属性来获得变量 <code>lastName</code> 的长度，并把它赋值给变量 <code>lastNameLength</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstNameLength = 0;",
         "var firstName = \"Ada\";",
         "",
@@ -1069,15 +1070,17 @@
       "id": "bd7123c9c549eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the First Character in a String",
       "description": [
-        "<code>括号标记符号</code> 是一种能够在字符串中通过指定 <code>索引</code> 来获得相应的字符的操作。",
-        "大多数现代编程语言，如JavaScript，不像人类那样是从1开始计数的。他们从0开始。这被称为 <dfn>基于零</dfn> 的索引。",
-        "例如, 在单词 \"Charles\" 中索引0上的字符为 \"C\". 所以在 <code>var firstName = \"Charles\"</code> 中，你可以使用 <code>firstName[0]</code> 来获得第一个位置上的字符。",
+        "[]叫中括号，{}叫大括号，()叫小括号。",
+        "JavaScript中只有字符串类型，没有字符类型。那么如何获取到字符串中的某个字符呢？",
+        "我们通过<code>[索引]</code> 来获得对应的字符。",
+        "大多数现代编程语言，如JavaScript，不同于人类从1开始计数。它们是从0开始计数，这被称为 <dfn>基于零</dfn> 的索引。",
+        "例如, 在单词 \"Charles\" 中索引0上的字符为 \"C\"，所以在 <code>var firstName = \"Charles\"</code> 中，你可以使用 <code>firstName[0]</code> 来获得第一个位置上的字符。",
         "<h4>任务</h4>",
-        "使用 <dfn>括号标记符号</dfn> 来得到变量 <code>lastName</code> 中的第一个字符，并赋值给变量 <code>firstLetterOfLastName</code> 。",
-        "<strong>提示</strong><br>如果你卡住了，不妨查看在变量 <code>firstLetterOfFirstName</code> 上是如何声明的。"
+        "使用<code>[索引]</code>来得到变量 <code>lastName</code> 中的第一个字符，并赋给变量 <code>firstLetterOfLastName</code> 。",
+        "<strong>提示</strong><br>如果你遇到困难了，不妨看看变量 <code>firstLetterOfFirstName</code> 是如何赋值的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstLetterOfFirstName = \"\";",
         "var firstName = \"Ada\";",
         "",
@@ -1108,13 +1111,14 @@
       "id": "56533eb9ac21ba0edf2244ba",
       "title": "Understand String Immutability",
       "description": [
+        "理解字符串的不可变性！当你搞懂不可变性后immutable.js对于你就是小菜一碟了。",
         "在 JavaScript 中，<code>字符串</code> 的值是 <dfn>不可变的</dfn>，这意味着一旦字符串被创建就不能被改变。",
         "例如，下面的代码：",
         "<blockquote>var myStr = \"Bob\";<br>myStr[0] = \"J\";</blockquote>",
-        "是不能把变量 <code>myStr</code> 的值改变成 \"Job\" 的，因为变量 <code>myStr</code> 中的内容是不可变的。注意，这 <em>并不</em> 意味着 <code>myStr</code> 中不能被改变，只是一个 <dfn>string literal</dfn> 的各个字符不能被改变。改变 <code>myStr</code> 中的唯一方法是用一个新的字符串分配给它，就像这样：",
+        "是不会把变量 <code>myStr</code> 的值改变成 \"Job\" 的，因为变量 <code>myStr</code> 是不可变的。注意，这 <em>并不</em> 意味着 <code>myStr</code> 永远不能被改变，只是字符串字面量 <dfn>string literal</dfn> 的各个字符不能被改变。改变 <code>myStr</code> 中的唯一方法是重新给它赋一个值，就像这样：",
         "<blockquote>var myStr = \"Bob\";<br>myStr = \"Job\";</blockquote>",
         "<h4>任务</h4>",
-        "纠正 <code>myStr</code> 的赋值以达到期望的效果。"
+        "把<code>myStr</code> 的值改为<code>Hello World</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1144,14 +1148,14 @@
       "id": "bd7123c9c450eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Nth Character in a String",
       "description": [
-        "您也可以使用 <dfn>括号标记符号</dfn> 来获得一个字符串中的其他位置的字符。",
-        "请记住，程序是从 <code>0</code> 开始计数，所以第一个字符实际上是零字符。",
+        "你也可以使用 <code>[索引]</code>来获得一个字符串中的其他位置的字符。",
+        "请记住，程序是从 <code>0</code> 开始计数，所以获取第一个字符实际上是[0]。",
         "<h4>任务</h4>",
-        "让我们使用括号标记符号，把 <code>lastName</code> 变量的第三个字符赋值给 <code>thirdLetterOfLastName</code>。",
-        "<strong>提示</strong><br>如果你卡住了，看看 <code>secondLetterOfFirstName</code> 变量是如何做的。"
+        "让我们使用<code>[索引]</code>，把 <code>lastName</code> 变量的第三个字符赋值给 <code>thirdLetterOfLastName</code>。",
+        "<strong>提示</strong><br>如果你遇到困难了，看看 <code>secondLetterOfFirstName</code> 变量是如何做的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var secondLetterOfFirstName = firstName[1];",
         "",
@@ -1180,14 +1184,14 @@
       "id": "bd7123c9c451eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Last Character in a String",
       "description": [
-        "为了得到一个字符串的最后一个字符，您可以用字符串的长度减去一。",
-        "例如，在 <code>var firstName = \"Charles\"</code> 中，您可以这样操作 <code>firstName[firstName.length - 1]</code> 来得到字符串的最后的一个字符。",
+        "为了得到一个字符串的最后一个字符，你可以用<code>[字符串的长度减去一]</code>。",
+        "例如，在 <code>var firstName = \"Charles\"</code> 中，你可以这样操作 <code>firstName[firstName.length - 1]</code> 来得到字符串的最后的一个字符。",
         "<h4>任务</h4>",
-        "使用 <dfn>括号标记符号</dfn> 来取得 <code>lastName</code> 变量中的最后一个字符。",
-        "<strong>提示</strong><br>如果你卡住了，不妨看看在 <code>lastLetterOfFirstName</code> 变量上是怎么做的。"
+        "使用 <code>[索引]</code> 来取得 <code>lastName</code> 变量中的最后一个字符。",
+        "<strong>提示</strong><br>如果你遇到困难了，不妨看看在 <code>lastLetterOfFirstName</code> 变量上是怎么做的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var lastLetterOfFirstName = firstName[firstName.length - 1];",
         "",
@@ -1216,14 +1220,14 @@
       "id": "bd7123c9c452eddfaeb5bdef",
       "title": "Use Bracket Notation to Find the Nth-to-Last Character in a String",
       "description": [
-        "我们用于检索获取最后一个字符的字符串的原则，同样的，也可以用这套原则来检索获取第N个到最后一个字符。",
-        "例如，您可以这样 <code>firstName[firstName.length - 3]</code> 操作来获得 <code>var firstName = \"Charles\"</code> 字符串中的倒数第三个字符。",
+        "我们既可以获取字符串的最后一个字符，也可以用获取字符串的倒数第N个字符。",
+        "例如，你可以这样 <code>firstName[firstName.length - 3]</code> 操作来获得 <code>var firstName = \"Charles\"</code> 字符串中的倒数第三个字符。",
         "<h4>任务</h4>",
-        "使用 <dfn>括号标记符号</dfn> 来获得 <code>lastName</code> 字符串中的倒数第二个字符。",
-        "<strong>提示</strong><br>如果你卡住了，不妨看看 <code>thirdToLastLetterOfFirstName</code> 变量是如何声明操作的。"
+        "使用 <code>[索引]</code> 来获得 <code>lastName</code> 字符串中的倒数第二个字符。",
+        "<strong>提示</strong><br>如果你遇到困难了，不妨看看 <code>thirdToLastLetterOfFirstName</code> 变量是如何做到的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];",
         "",
@@ -1252,10 +1256,10 @@
       "id": "56533eb9ac21ba0edf2244bb",
       "title": "Word Blanks",
       "description": [
-        "现在我们将使用我们的字符串的知识，建立一个\"<a href='https://en.wikipedia.org/wiki/Mad_Libs' target='_blank'>填字</a>\"风格的文字游戏，我们称之为“单词空白”。您将创建一个（可选的）“在空白填充”样式的句子。“",
-        "通过使用提供的变量：<code>myNoun</code>，<code>myAdjective</code>，<code>myVerb</code>，和 <code>myAdverb</code>，来创建一个新的字符串 <code>result</code>。",
-        "此外，在所提供的词之间，您还需要提供额外的字符串。",
-        "我们提供了对不同单词得到的结果进行测试的框架。该测试将用多个不同的输入来运行你的函数，以确保所有的提供的单词，以及你的额外字符串能够输出。"
+        "现在我们将使用字符串的相关知识，建立一个填字风格的文字游戏。",
+        "通过使用提供的变量：名词<code>myNoun</code>、形容词<code>myAdjective</code>、动词<code>myVerb</code>、副词<code>myAdverb</code>，来创建一个新的字符串 <code>result</code>。",
+        "此外，除了所提供的词之外，你还需要添加额外的连接字符串。",
+        "我们提供了多种测试，该测试将用多个不同的输入来运行你的函数，以确保所有提供的单词和你额外添加的连接字符串能够准确输出。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1290,14 +1294,14 @@
       "id": "bd7993c9c69feddfaeb8bdef",
       "title": "Store Multiple Values in one Variable using JavaScript Arrays",
       "description": [
-        "使用 JavaScript <code>数组</code> 变量，我们可以在同一个地方存储多项数据。",
-        "你以左方括号开始声明一个数组，以右方括号结束它，并把每个条目之间用逗号隔开，就像这样：<br><code>var sandwich = [\"peanut butter\", \"jelly\", \"bread\"]</code>。",
+        "使用 <code>数组</code>，我们可以在一个地方存储多个数据。",
+        "你以左方括号<code>[</code>开始定义一个数组，以右方括号<code>]</code>结束定义，并把每个条目之间用逗号隔开，就像这样：<br><code>var sandwich = [\"peanut butter\", \"jelly\", \"bread\"]</code>。",
         "<h4>任务</h4>",
-        "创建一个包含一个 <code>字符串</code> 和一个 <code>数字</code> 的数组 <code>myArray</code>。",
-        "<strong>提示</strong><br>如果你卡住，请参考文本编辑器中的示例代码。"
+        "创建一个包含 <code>字符串</code> 和 <code>数字</code> 的数组 <code>myArray</code>。",
+        "<strong>提示</strong><br>如果你遇到困难，请参考文本编辑器中的示例代码。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var array = [\"John\", 23];",
         "",
         "// Only change code below this line.",
@@ -1322,12 +1326,12 @@
       "id": "cf1111c1c11feddfaeb7bdef",
       "title": "Nest one Array within Another Array",
       "description": [
-        "您也可以在数组中包含其他数组，就像这样: <code>[[\"Bulls\", 23], [\"White Sox\", 45]]</code>。这被称为一个 <dfn>多维数组<dfn>。",
+        "你也可以在数组中包含其他数组，就像这样: <code>[[\"Bulls\", 23], [\"White Sox\", 45]]</code>。这被称为一个 <dfn>多维数组<dfn>。",
         "<h4>任务</h4>",
-        "创建一个多维数组命名为 <code>myArray</code>。"
+        "创建一个名为 <code>myArray</code>的多维数组。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [[\"the universe\", 42], [\"everything\", 101010]];",
         "",
         "// Only change code below this line.",
@@ -1350,7 +1354,7 @@
       "id": "56bbb991ad1ed5201cd392ca",
       "title": "Access Array Data with Indexes",
       "description": [
-        "我们可以通过数组索引来访问使用数组中的数据。",
+        "我们可以像操作字符串一样通过数组索引<code>[index]</code>来访问数组中的数据。",
         "数组索引的使用与字符串索引一样，不同的是，通过字符串的索引得到的是一个字符，通过数组索引得到的是一个条目。与字符串类似，数组也是 <dfn>基于零</dfn> 的索引，因此数组的第一个元素的索引是 <code>0</code>。",
         "<strong>例如</strong>",
         "<blockquote>var array = [1,2,3];<br>array[0]; // 等于 1<br>var data = array[1];  // 等于 2</blockquote>",
@@ -1358,7 +1362,7 @@
         "创建一个名为 <code>myData</code> 的变量，并把 <code>myArray</code> 的第一个索引上的值赋给它。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "var ourData = ourArray[0]; // equals 1",
         "",
@@ -1384,14 +1388,14 @@
       "id": "cf1111c1c11feddfaeb8bdef",
       "title": "Modify Array Data With Indexes",
       "description": [
-        "不像字符串，数组的项（条目）是可变的，并且可以自由地改变。",
+        "与字符串的数据不可变不同，数组的数据是可变的，并且可以自由地改变。",
         "<strong>例如</strong>",
         "<blockquote>var ourArray = [3,2,1];<br>ourArray[0] = 1; // ourArray等于 [1,2,1]</blockquote>",
         "<h4>任务</h4>",
-        "修改数值 <code>myArray</code> 中索引0上的值为 <code>3</code>。"
+        "修改数组 <code>myArray</code> 中索引0上的值为 <code>3</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "ourArray[1] = 3; // ourArray now equals [1,3,3].",
         "",
@@ -1419,11 +1423,11 @@
       "id": "56592a60ddddeae28f7aa8e1",
       "title": "Access Multi-Dimensional Arrays With Indexes",
       "description": [
-        "可以把 <dfn>多维</dfn> 数组看作成是一个 <em>数组中的数组</em>。当使用括号去访问数组的时候，第一套括号是指最外层数组中的条目，第二套括号每增加1是指内部数组的下一个条目。",
+        "可以把 <dfn>多维</dfn> 数组看作成是一个 <em>数组中的数组</em>。当使用<code>[]</code>去访问数组的时候，第一个<code>[index]</code>访问的是第N个子数组，第二个<code>[index]</code>访问的是第N个子数组的第N个元素。",
         "<strong>例如</strong>",
         "<blockquote>var arr = [<br>    [1,2,3],<br>    [4,5,6],<br>    [7,8,9],<br>    [[10,11,12], 13, 14]<br>];<br>arr[0]; // 等于 [1,2,3]<br>arr[1][2]; // 等于 6<br>arr[3][0][1]; // 等于 11</blockquote>",
         "<h4>任务</h4>",
-        "对数组 <code>myArray</code> 使用括号标记符号操作使得 myData 的值为 <code>8</code>"
+        "对数组 <code>myArray</code> 使用<code>[index]</code>操作使得 myData 的值为 <code>8</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1458,7 +1462,7 @@
         "把 <code>[\"dog\", 3]</code> “推”入到 <code>myArray</code> 变量的末尾。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.push([\"happy\", \"joy\"]); ",
         "// ourArray now equals [\"Stimpson\", \"J\", \"cat\", [\"happy\", \"joy\"]]",
@@ -1494,7 +1498,7 @@
         "使用 <code>.pop()</code> 函数移除 <code>myArray</code> 中的最后一条，并且把“抛出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "var removedFromOurArray = ourArray.pop(); ",
         "// removedFromOurArray now equals 3, and ourArray now equals [1,2]",
@@ -1530,7 +1534,7 @@
         "使用 <code>.shift()</code> 函数移出 <code>myArray</code> 中的第一项，并把“移出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", [\"cat\"]];",
         "removedFromOurArray = ourArray.shift();",
         "// removedFromOurArray now equals \"Stimpson\" and ourArray now equals [\"J\", [\"cat\"]].",
@@ -1560,13 +1564,13 @@
       "id": "56bbb991ad1ed5201cd392ce",
       "title": "Manipulate Arrays With unshift()",
       "description": [
-        "您不仅可以 <code>shift</code>（移出）数组中的第一个元素，您也可以 <code>unshift</code>（移入）第一个元到数组的头部。",
-        "<code>.unshift()</code> 函数用起来就像 <code>.push()</code> 函数一样, 但不是在数组的末尾添加元素，而是 把元素<code>unshift()</code>（移入）添加到元素的数组的头部",
+        "你不仅可以 <code>shift</code>（移出）数组中的第一个元素，你也可以 <code>unshift</code>（移入）一个元素到数组的头部。",
+        "<code>.unshift()</code> 函数用起来就像 <code>.push()</code> 函数一样, 但不是在数组的末尾添加元素，而是在数组的头部添加元素。",
         "<h4>任务</h4>",
         "使用 <code>unshift()</code> 函数把<code>[\"Paul\",35]</code> 加入到 <code>myArray</code> 的头部。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.shift(); // ourArray now equals [\"J\", \"cat\"]",
         "ourArray.unshift(\"Happy\"); ",
@@ -1596,10 +1600,11 @@
       "id": "56533eb9ac21ba0edf2244bc",
       "title": "Shopping List",
       "description": [
-        "创建变量 <code>myList</code> 一个购物清单。列表应该是包含几个子数组的多维数组。",
-        "在各子数组中的第一个元素应该包含与该项目名称的字符串。第二个元素应当是表示物品的量的数目，即",
+        "购物清单",
+        "创建一个名叫 <code>myList</code>的购物清单，清单的数据格式就是多维数组。",
+        "每个子数组中的第一个元素应该是购买的物品名称，第二个元素应该是物品的数量，类似于：",
         "<code>[\"Chocolate Bar\", 15]</code>",
-        "应该有至少5个子数组在列表中。"
+        "任务：你的购物清单至少应该有5个子数组。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -1651,17 +1656,17 @@
       "id": "56bbb991ad1ed5201cd392cf",
       "title": "Write Reusable JavaScript with Functions",
       "description": [
-        "在 JavaScript 中，我们可以把我们的代码划分到可重用部分，我们称之为 <dfn>函数</dfn>（functions）的地方。",
-        "这儿是一个函数（function）的例子：",
+        "在 JavaScript 中，我们可以把代码的重复部分抽取出来，放到一个<dfn>函数</dfn>（functions）中。",
+        "这是一个函数（function）的例子：",
         "<blockquote>function functionName() {<br>  console.log(\"Hello World\");<br>}</blockquote>",
-        "您可以调用或者 <dfn>使用</dfn> 这个函数（function）通过其名称及后面的括号，就像这样：",
+        "你可以通过函数名称<code>functionName</code>加上后面的小括号来调用这个函数（function），就像这样：",
         "<code>functionName();</code>",
-        "每次调用函数时它会打印出消息的“Hello World”到开发的控制台上。所有的花括号之间的代码将在每次函数调用时执行。",
+        "每次调用函数时它会打印出消息的“Hello World”到开发的控制台上。所有的大括号之间的代码将在每次函数调用时执行。",
         "<h4>任务</h4>",
         "<ol><li>创建一个名为 <code>myFunction</code> 的函数，这个函数可以打印“Hi World”到开发控制台上。</li><li>调用这个函数。</li></ol>"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction() {",
         "  console.log(\"Heyya, World\");",
         "}",
@@ -1716,14 +1721,14 @@
       "id": "56533eb9ac21ba0edf2244bd",
       "title": "Passing Values to Functions with Arguments",
       "description": [
-        "函数的 <dfn>参数</dfn>（parameters）在函数中充当占位符的作用，当传递一个值到函数中时，它被称为值得变量。当函数被定义的时候，可以给它定义一个或者多个参数。所输入（或“传递”）的实际值进入到一个函数被调用时被称为参数",
+        "函数的参数<code>parameters</code>在函数中充当占位符(也叫形参)的作用，参数可以为一个或多个。调用一个函数时所传入的参数为实参，实参决定着形参真正的值。简单理解：形参即形式、实参即内容。",
         "这是带有两个参数的函数， <code>param1</code> 和 <code>param2</code>：",
         "<blockquote>function testFun(param1, param2) {<br>  console.log(param1, param2);<br>}</blockquote>",
         "接着我们调用 <code>testFun</code>：",
         "<code>testFun(\"Hello\", \"World\");</code>",
-        "我们传递了两个参数， <code>\"Hello\"</code> 和 <code>\"World\"</code>。在函数内部，<code>param1</code> 等于“Hello”和 <code>param2</code> 将等于“World”。请注意，您可以使用不同的值再次调用 <code>testFun</code> 函数，它内部的参数将会采取新参数的值来执行。",
+        "我们传递了两个参数， <code>\"Hello\"</code> 和 <code>\"World\"</code>。在函数内部，<code>param1</code> 等于“Hello”，<code>param2</code> 等于“World”。请注意，<code>testFun</code> 函数可以多次调用，每次调用时传递的参数会决定形参的实际值。",
         "<h4>任务</h4>",
-        "<ol><li>创建一个名为 <code>myFunction</code> 的函数，它可以接收两个参数，并且可以输出它们的和到开发控制台。</li><li>调用这个函数。</li></ol>"
+        "<ol><li>创建一个名为 <code>myFunction</code> 的函数，它可以接收两个参数，计算参数的和，将结果输出到控制台。</li><li>调用这个函数。</li></ol>"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1749,7 +1754,7 @@
         "capture();"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(a, b) {",
         "  console.log(a - b);",
         "}",
@@ -1784,11 +1789,11 @@
       "id": "56533eb9ac21ba0edf2244be",
       "title": "Global Scope and Functions",
       "description": [
-        "在 JavaScript 中， <dfn>作用域</dfn> 涉及到变量的可见范围。在函数块外定义的变量具有 <dfn>全局</dfn> 作用域。这意味着，具有全局作用域的变量可以在 JavaScript 代码的所有的地方被调用。",
-        "这些没有使用var关键字定义的变量，会被自动的自动创建在全局作用域中。当在其他地方使用您的代码或重新运行函数时，这可能会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。",
+        "在 JavaScript 中， <dfn>作用域</dfn> 涉及到变量的作用范围。在函数外定义的变量具有 <dfn>全局</dfn> 作用域。这意味着，具有全局作用域的变量可以在代码的任何地方被调用。",
+        "这些没有使用<code>var</code>关键字定义的变量，会被自动创建在全局作用域中，形成全局变量。当在代码其他地方无意间定义了一个变量，刚好变量名与全局变量相同，这时会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。",
         "<h4>任务</h4>",
-        "在函数外声明一个 <code>全局</code> 变量 <code>myGlobal</code>。并给它一个初始值 <code>10</code> ",
-        "在函数 <code>fun1</code> 的内部，<strong><em>不</em></strong>使用 <code>var</code> 关键字来声明 <code>oopsGlobal</code>，并赋值为 <code>5</code>。"
+        "在函数外声明一个 <code>全局</code> 变量 <code>myGlobal</code>，并给它一个初始值 <code>10</code> ",
+        "在函数 <code>fun1</code> 的内部，<strong>不</strong>使用 <code>var</code> 关键字来声明 <code>oopsGlobal</code>，并赋值为 <code>5</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1857,12 +1862,12 @@
       "id": "56533eb9ac21ba0edf2244bf",
       "title": "Local Scope and Functions",
       "description": [
-        "这些在一个函数内声明的变量，以及该函数的参数有 <dfn>局部</dfn> 作用域。这意味着，它们只在该函数内可见。",
-        "这是一个带有局部变量 <code>loc</code> 的函数 <code>myTest</code>。",
+        "在一个函数内声明的变量，以及该函数的参数都是局部变量，意味着它们只在该函数内可见。",
+        "这是在函数 <code>myTest</code>内声明局部变量<code>loc</code> 的最佳例子：",
         "<blockquote>function myTest() {<br>  var loc = \"foo\";<br>  console.log(loc);<br>}<br>myTest(); // \"foo\"<br>console.log(loc); // \"undefined\"</blockquote>",
         "在函数外，<code>loc</code> 是未定义的。",
         "<h4>任务</h4>",
-        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>。"
+        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>，并根据右边编辑器的提示来完成任务。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -1920,10 +1925,10 @@
       "id": "56533eb9ac21ba0edf2244c0",
       "title": "Global vs. Local Scope in Functions",
       "description": [
-        "一个程序中有可能具有相同的名称的 <dfn>局部</dfn> 变量 和 <dfn>全局</dfn> 变量。当你这样做的话，<code>局部</code> 变量将会优先于 <code>全局</code> 变量。",
+        "一个程序中有可能具有相同名称的 <dfn>局部</dfn> 变量 和 <dfn>全局</dfn> 变量。在这种情况下，<code>局部</code> 变量将会优先于 <code>全局</code> 变量。",
         "下面为例：",
         "<blockquote>var someVar = \"Hat\";<br>function myFun() {<br>  var someVar = \"Head\";<br>  return someVar;<br>}</blockquote>",
-        "函数 <code>myFun</code> 将会返回 <code>\"Head\"</code>，因为 <code>局部变量</code> 优先。",
+        "函数 <code>myFun</code> 将会返回 <code>\"Head\"</code>，因为 <code>局部变量</code> 优先级更高。",
         "<h4>任务</h4>",
         "给 <code>myFunction</code> 添加一个局部变量来覆盖 <code>outerWear</code> 的值为 <code>\"sweater\"</code>。"
       ],
@@ -1958,7 +1963,7 @@
       "id": "56533eb9ac21ba0edf2244c2",
       "title": "Return a Value from a Function with Return",
       "description": [
-        "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数。您可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
+        "我们可以把数据通过函数的 <dfn>参数</dfn> 来传入函数，也可以使用 <code>return</code> 语句把数据从一个函数中传出来。",
         "<strong>例如</strong>",
         "<blockquote>function plusThree(num) {<br>  return num + 3;<br>}<br>var answer = plusThree(5); // 8</blockquote>",
         "<code>plusThree</code> 带有一个为 <code>num</code> 的 <dfn>参数</dfn> 并且返回（returns）一个等于 <code>num + 3</code> 的值。",
@@ -1967,7 +1972,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function minusSeven(num) {",
         "  return num - 7;",
         "}",
@@ -1995,16 +2000,16 @@
       "id": "56533eb9ac21ba0edf2244c3",
       "title": "Assignment with a Returned Value",
       "description": [
-        "如果你还记得我们在这一节 <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a> 的讨论，赋值之前，在等号右边的一切操作要先完成。这意味着我们可把一个函数的返回值，赋值给一个变量。",
-        "假设我们预先定义的函数 <code>sum</code> 其将两个数字相加，那么：",
+        "如果你还记得我们在这一节 <a href=\"waypoint-storing-values-with-the-equal-operator\" target=\"_blank\">Storing Values with the Equal Operator</a> 的讨论，赋值之前，先完成等号右边的操作。这意味着我们可把一个函数的返回值，赋值给一个变量。",
+        "假设我们预先定义的函数 <code>sum</code> 其功能就是将两个数字相加，那么：",
         "<code>ourSum = sum(5, 12);</code>",
-        "将调用 <code>sum</code> 函数，返回（returns）了一个数值 <code>17</code>，然后把它赋值给了 <code>ourSum</code> 变量。",
+        "将调用 <code>sum</code> 函数，返回<code>return</code>了一个数值 <code>17</code>，然后把它赋值给了 <code>ourSum</code> 变量。",
         "<h4>任务</h4>",
         "调用 <code>process</code> 函数并给参数一个值 <code>7</code>，然后把返回的值赋值给变量 <code>processed</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var changed = 0;",
         "",
         "function change(num) {",
@@ -2041,8 +2046,8 @@
       "id": "56533eb9ac21ba0edf2244c6",
       "title": "Stand in Line",
       "description": [
-        "在计算机科学中的 <dfn>队列</dfn>（queue）是一个抽象的数据结构，其中的项目被保留了秩序。新的条目会被加到 <code>队列</code> 的末尾，旧的项目会从 <code>队列</code> 的前部被拿出。",
-        "写一个函数 <code>queue</code> 这需要一个数组（<code>arr</code>）和一个数字（<code>item</code>）作为参数。数字添加到数组的结尾，然后取出数组的第一个元素。然后队列函数应该返回被删除的元素。"
+        "在计算机科学中 <dfn>队列</dfn>（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到 <code>队列</code> 的末尾，旧的条目会从 <code>队列</code> 的头部被移出。",
+        "写一个函数 <code>queue</code> ，用一个数组<code>arr</code>和一个数字<code>item</code>作为参数。数字<code>item</code>添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
@@ -2103,7 +2108,7 @@
       "id": "bd7123c9c441eddfaeb5bdef",
       "title": "Understanding Boolean Values",
       "description": [
-        "另一种数据类型是<dfn>布尔</dfn>（Boolean）。<code>布尔</code> 值只有可能是这两个值之一：<code>true</code> 或者 <code>false</code>。它们基本上就像是通断开关，其中 <code>true</code> 是“开”，<code>false</code> 是“关”。这两种状态是互斥的。",
+        "另一种数据类型是<dfn>布尔</dfn>（Boolean）。<code>布尔</code> 值要么是<code>true</code> 要么是<code>false</code>。它非常像电路开关， <code>true</code> 是“开”，<code>false</code> 是“关”。这两种状态是互斥的。",
         "<strong>注意</strong><br><code>Boolean</code> 值绝不会写作被引号包裹起来的形式。<code>字符串</code> 的 <code>\"true\"</code> 和 <code>\"false\"</code> 不是 <code>布尔值</code>，在 JavaScript 中也没有特殊含义。",
         "<h4>任务</h4>",
         "修改 <code>welcomeToBooleans</code> 函数，让它返回 <code>true</code> 而不是 <code>false</code>。"
@@ -2135,7 +2140,7 @@
       "id": "cf1111c1c12feddfaeb3bdef",
       "title": "Use Conditional Logic with If Statements",
       "description": [
-        "<code>If</code> 语句用于在代码中做判断。关键字 <code>if</code> 告诉 JavaScript 在括号中一定的条件下去执行定义在大括号里面的代码。这些条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
+        "<code>If</code> 语句用于在代码中做条件判断。关键字 <code>if</code> 告诉 JavaScript 在小括号中的条件为真的情况下去执行定义在大括号里面的代码。这种条件被称为 <code>Boolean</code> 条件，因为他们只可能是 <code>true</code>（真）或 <code>false</code>（假）。",
         "当条件的计算结果为 <code>true</code>，程序执行大括号内的语句。当布尔条件的计算结果为 <code>false</code>，大括号内的代码将不会执行。",
         "<strong>伪代码</strong>",
         "<blockquote>if(<i>条件为真</i>){<br>  <i>语句被执行</i><br>}</blockquote>",
@@ -2146,7 +2151,7 @@
         "在函数内部创建一个 <code>if</code> 语句，如果该参数 <code>wasThatTrue</code> 值为 <code>true</code>，返回 <code>\"That was true\"</code>，否则，并返回 <code>\"That was false\"</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(isItTrue) {",
         "  if (isItTrue) { ",
         "    return \"Yes, it's true\";",
@@ -2185,14 +2190,14 @@
       "id": "56533eb9ac21ba0edf2244d0",
       "title": "Comparison with the Equality Operator",
       "description": [
-        "在 JavaScript 中，有很多 <dfn>相互比较的操作</dfn>。所有这些操作符返回一个 <code>true</code> 或 <code>false</code> 值。",
-        "最基本的运算符是相等运算符：<code>==</code>。相等运算符比较两个值，如果它们是同等，返回 <code>true</code>，如果它们不等，返回 <code>false</code>。值得注意的是相等运算符不同于赋值操作符（<code>=</code>），赋值操作符是把等号右边的值赋给左边的变量。",
+        "在 JavaScript 中，有很多 <dfn>相互比较的操作</dfn>。所有这些操作符都返回一个 <code>true</code> 或 <code>false</code> 值。",
+        "最基本的运算符是相等运算符：<code>==</code>。相等运算符比较两个值，如果它们是同等，返回 <code>true</code>，如果它们不等，返回 <code>false</code>。值得注意的是相等运算符不同于赋值运算符（<code>=</code>），赋值运算符是把等号右边的值赋给左边的变量。",
         "<blockquote>function equalityTest(myVal) {<br>  if (myVal == 10) {<br>     return \"Equal\";<br>  }<br>  return \"Not Equal\";<br>}</blockquote>",
         "如果 <code>myVal</code> 等于 <code>10</code>，相等运算符会返回 <code>true</code>，因此大括号里面的代码会被执行，函数将返回 <code>\"Equal\"</code>。否则，函数返回 <code>\"Not Equal\"</code>。",
-        "在 JavaScript 中，为了让两个不同的 <code>数据类型</code>（例如 <code>数字</code> 和 <code>字符串</code>）的数据可以作比较，它必须把一种类型转换为另一种类型。然而一旦这样做，它可以像下面这样来比较：",
+        "在 JavaScript 中，为了让两个不同的 <code>数据类型</code>（例如 <code>数字</code> 和 <code>字符串</code>）的值可以作比较，它必须把一种类型转换为另一种类型。然而一旦这样做，它可以像下面这样来比较：",
         "<blockquote>   1   ==  1    // true<br>   1   ==  2    // false<br>   1   == '1'   // true<br>  \"3\"  ==  3    // true</blockquote>",
         "<h4>任务</h4>",
-        "把 <code>等于运算符</code> 添加到指定的行，这样当 <code>val</code> 的值为<code>12</code>的时候，函数会返回\"Equal\"。"
+        "把 <code>相等运算符</code> 添加到指定的行，这样当 <code>val</code> 的值为<code>12</code>的时候，函数会返回\"Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2224,9 +2229,9 @@
       "title": "Comparison with the Strict Equality Operator",
       "description": [
         "全等（<code>===</code>）是相对于相等操作符（<code>==</code>）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 <code>数据类型</code>。",
-        "<strong>两个例子</strong>",
+        "<strong>举个例子</strong>",
         "<blockquote>3 === 3   // true<br>3 === '3' // false</blockquote>",
-        "在第二个示例中, <code>3</code> 是一个 <code>数字</code> 类型的，<code>'3'</code> 是一个 <code>字符</code> 类型的。",
+        "<code>3</code> 是一个 <code>数字</code> 类型的，而<code>'3'</code> 是一个 <code>字符</code> 类型的，所以3不全等于'3'。",
         "<h4>任务</h4>",
         "在 <code>if</code> 语句值使用全等运算符，这样当 <code>val</code> 严格等于7的时候，函数会返回\"Equal\"。"
       ],
@@ -2338,7 +2343,7 @@
       "title": "Comparison with the Greater Than Operator",
       "description": [
         "使用大于运算符（<code>&gt;</code>）来比较两个数字。如果大于运算符左边的数字大于右边的数字，将会返回 <code>true</code>。否则，它返回 <code>false</code>。",
-        "与相等运算符相似，大于运算符在比较的时候，会转换值的数据类型。",
+        "与相等运算符一样，大于运算符在比较的时候，会转换值的数据类型。",
         "<strong>例如</strong>",
         "<blockquote> 5 > 3   // true<br> 7 > '3' // true<br> 2 > 3   // false<br>'1' > 9  // false</blockquote>",
         "<h4>任务</h4>",
@@ -2382,7 +2387,7 @@
       "title": "Comparison with the Greater Than Or Equal To Operator",
       "description": [
         "使用 <code>大于等于</code> 运算符（<code>&gt;=</code>）来比较两个数字的大小。如果大于等于运算符左边的数字比右边的数字大或者相等，它会返回 <code>true</code>。否则，它会返回 <code>false</code>。",
-        "与相等运算符相似，<code>大于等于/code> 运算符在比较的时候会转换值的数据类型。",
+        "与相等运算符相似，<code>大于等于</code> 运算符在比较的时候会转换值的数据类型。",
         "<strong>例如</strong>",
         "<blockquote> 6  >=  6  // true<br> 7  >= '3' // true<br> 2  >=  3  // false<br>'7' >=  9  // false</blockquote>",
         "<h4>任务</h4>",
@@ -2511,7 +2516,7 @@
       "id": "56533eb9ac21ba0edf2244d8",
       "title": "Comparisons with the Logical And Operator",
       "description": [
-        "有时你需要在一次测试中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
+        "有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
         "同样的效果可以通过if语句的嵌套来实现：",
         "<blockquote>if (num > 5) {<br>  if (num < 10) {<br>    return \"Yes\";<br>  }<br>}<br>return \"No\";</blockquote>",
         "只有当 <code>num</code> 的值在6和9之间（包括6和9）才会返回 \"Yes\"。相同的逻辑可被写为：",
@@ -2559,13 +2564,13 @@
       "id": "56533eb9ac21ba0edf2244d9",
       "title": "Comparisons with the Logical Or Operator",
       "description": [
-        "如果任一 <dfn>操作数</dfn> 为 <code>true</code>，<dfn>逻辑或</dfn>操作符（<code>||</code>）会返回 <code>true</code>。否则，它返回 <code>false</code>。",
-        "通过之前的测试，对于下面的模式应该很熟悉了：",
+        "如果任何一个操作数是<code>true</code>，<dfn>逻辑或</dfn> 运算符 (<code>||</code>) 返回 <code>true</code>。反之，返回 <code>false</code>。",
+        "举个例子：",
         "<blockquote>if (num > 10) {<br>  return \"No\";<br>}<br>if (num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
-        "只有当 <code>num</code> 的值在 <code>5</code> 和 <code>10</code> 之间（包括5和10），才会返回 \"Yes\"。相同的逻辑可被写为：",
+        "只有当<code>num</code>大于等于5或小于等于10时，函数返回\"Yes\"。相同的逻辑可以简写成：",
         "<blockquote>if (num > 10 || num < 5) {<br>  return \"No\";<br>}<br>return \"Yes\";</blockquote>",
         "<h4>任务</h4>",
-        "合并两个 <code>if</code> 语句为一条语句，如果val不在 <code>10</code> 和 <code>20</code>（含）之间，返回\"Outside\"。否则，返回 <code>\"Inside\"</code>。"
+        "结合两个if语句为一个语句，如果<code>val</code>不在10和20之间(包括10和20)，返回 <code>\"Outside\"</code>。反之，返回 <code>\"Inside\"</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2609,10 +2614,12 @@
       "id": "56533eb9ac21ba0edf2244da",
       "title": "Introducing Else Statements",
       "description": [
-        "当一个 <code>if</code> 语句中的条件为真（true）时，则执行之后它的代码块。如果条件为假（false）怎么办呢？通常情况下什么都不会发生。使用 <code>else</code> 语句，else之后的代码块将会被执行。",
+        "当<code>if</code>语句的条件为真，大括号里的代码执行，那如果条件为假呢？",
+        "正常情况下什么也不会发生。",
+        "写一个<code>else</code>语句，当条件为假时执行相应的代码。",
         "<blockquote>if (num > 10) {<br>  return \"Bigger than 10\";<br>} else {<br>  return \"10 or Less\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "合并 <code>if</code> 语句到一个单一的 <code>if/else</code> 语句。"
+        "结合多个<code>if</code>语句为一个<code>if/else</code>语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2655,10 +2662,10 @@
       "id": "56533eb9ac21ba0edf2244db",
       "title": "Introducing Else If Statements",
       "description": [
-        "如果您有需要解决多个条件，可以把  <code>if</code>  语句与 <code>else if</code> 语句结合起来使用。",
+        "如果你有多个条件语句，你可以通过<code>else if</code>语句把 <code>if</code>语句链起来。",
         "<blockquote>if (num > 15) {<br>  return \"Bigger than 15\";<br>} else if (num < 5) {<br>  return \"Smaller than 5\";<br>} else {<br>  return \"Between 5 and 15\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "使用 <code>else if</code> 语句来处理逻辑。"
+        "使用<code>else if</code>实现同样的效果。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2697,17 +2704,17 @@
       "id": "5690307fddb111c6084545d7",
       "title": "Logical Order in If Else Statements",
       "description": [
-        "在 <code>if</code>，<code>else if</code> 语句中，顺序是很重要的。",
-        "语句是从上到下执行的，因此你就要注意应该把什么语句放在第一位。",
-        "取这两个函数作为例子。",
+        "<code>if</code>、<code>else if</code>语句中代码的执行顺序是很重要的。",
+        "在条件判断语句中，代码的执行顺序是从上到下，所以你需要考虑清楚先执行哪一句，后执行哪一句。",
+        "这有两个例子。",
         "第一个例子：",
         "<blockquote>function foo(x) {<br>  if (x < 1) {<br>    return \"Less than one\";<br>  } else if (x < 2) {<br>    return \"Less than two\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "而第二个只是切换了语句的顺序：",
+        "第二个例子更改了代码的执行顺序：",
         "<blockquote>function bar(x) {<br>  if (x < 2) {<br>    return \"Less than two\";<br>  } else if (x < 1) {<br>    return \"Less than one\";<br>  } else {<br>    return \"Greater than or equal to two\";<br>  }<br>}</blockquote>",
-        "虽然这两个函数看起来几乎一样，如果我们传递一个数字却得到的是不同的输出。",
+        "这两个函数看起来几乎一模一样，我们传一个值进去看看它们有什么区别。",
         "<blockquote>foo(0) // \"Less than one\"<br>bar(0) // \"Less than two\"</blockquote>",
         "<h4>任务</h4>",
-        "改变在函数中逻辑的顺序，以便在所有情况下，将返回正确的语句。"
+        "更改函数的逻辑顺序以便通过所有的测试用例。"
       ],
       "challengeSeed": [
         "function myTest(val) {",
@@ -2738,10 +2745,10 @@
       "id": "56533eb9ac21ba0edf2244dc",
       "title": "Chaining If Else Statements",
       "description": [
-        "<code>if/else</code> 语句可以一起处理复杂的逻辑链。这里的 <dfn>伪代码</dfn> 是多个 <code>if</code> / <code>else if</code> 的语句链：",
-        "<blockquote>if (<em>条件1</em>) {<br>  <em>语句1</em><br>} else if (<em>条件2</em>) {<br>  <em>语句2</em><br>} else if (<em>条件3</em>) {<br>  <em>语句3</em><br>. . .<br>} else {<br>  <em>语句N</em><br>}</blockquote>",
+        "<code>if/else</code> 语句串联在一起可以实现复杂的逻辑，这是多个<code>if/else if</code> 语句串联在一起的伪代码：",
+        "<blockquote>if (<em>condition1</em>) {<br>  <em>statement1</em><br>} else if (<em>condition2</em>) {<br>  <em>statement2</em><br>} else if (<em>condition3</em>) {<br>  <em>statement3</em><br>. . .<br>} else {<br>  <em>statementN</em><br>}</blockquote>",
         "<h4>任务</h4>",
-        "写出满足下列条件的 <code>if</code>/<code>else if</code> 语句链：",
+        "把<code>if</code>/<code>else if</code>语句串联起来实现下面的逻辑：",
         "<code>num &lt;   5</code> - return \"Tiny\"<br><code>num &lt;  10</code> - return \"Small\"<br><code>num &lt; 15</code> - return \"Medium\"<br><code>num &lt; 20</code> - return \"Large\"<br><code>num >= 20</code>  - return \"Huge\""
       ],
       "releasedOn": "January 1, 2016",
@@ -2782,10 +2789,10 @@
       "id": "5664820f61c48e80c9fa476c",
       "title": "Golf Code",
       "description": [
-        "在 <a href=\"https://en.wikipedia.org/wiki/Golf\" target=\"_blank\">高尔夫</a> 游戏中，each hole has a <code>par</code> for the average number of <code>strokes</code> needed to sink the ball. Depending on how far above or below <code>par</code> your <code>strokes</code> are, there is a different nickname.",
-        "Your function will be passed <code>par</code> and <code>strokes</code> arguments. Return the correct string according to this table which lists the strokes in order of priority; top (highest) to bottom (lowest):",
+        "在高尔夫<code>golf</code>游戏中，每个洞都有自己的标准杆数<code>par</code>，代表着距离。根据你把球打进洞所挥杆的次数<code>strokes</code>，可以计算出你的高尔夫水平。",
+        "函数将会传送2个参数，分别是标准杆数<code>par</code> 和 挥杆次数<code>strokes</code> ，根据下面的表格返回正确的水平段位。",
         "<table class=\"table table-striped\"><thead><tr><th>Strokes</th><th>Return</th></tr></thead><tbody><tr><td>1</td><td>\"Hole-in-one!\"</td></tr><tr><td>&lt;= par - 2</td><td>\"Eagle\"</td></tr><tr><td>par - 1</td><td>\"Birdie\"</td></tr><tr><td>par</td><td>\"Par\"</td></tr><tr><td>par + 1</td><td>\"Bogey\"</td></tr><tr><td>par + 2</td><td>\"Double Bogey\"</td></tr><tr><td>&gt;= par + 3</td><td>\"Go Home!\"</td></tr></tbody></table>",
-        "<code>par</code> and <code>strokes</code> will always be numeric and positive."
+        "<code>par</code> 和 <code>strokes</code> 必须是数字而且是正数。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2823,12 +2830,12 @@
       "id": "56533eb9ac21ba0edf2244dd",
       "title": "Selecting from many options with Switch Statements",
       "description": [
-        "If you have many options to choose from, use a <code>switch</code> statement. A <code>switch</code> statement tests a value and can have many <code>case</code> statements which defines various possible values. Statements are executed from the first matched <code>case</code> value until a <code>break</code> is encountered.",
-        "Here is a <dfn>pseudocode</dfn> example:",
+        "如果你有非常多的选项需要选择，可以使用switch语句。根据不同的参数值会匹配上不同的case分支，语句会从第一个匹配的case分支开始执行，直到碰到break就结束。",
+        "这是一个伪代码案例：",
         "<blockquote>switch (num) {<br>  case value1:<br>    statement1;<br>    break;<br>  case value2:<br>    statement2;<br>    break;<br>...<br>  case valueN:<br>    statementN;<br>    break;<br>}</blockquote>",
-        "<code>case</code> values are tested with strict equality (<code>===</code>). The <code>break</code> tells JavaScript to stop executing statements. If the <code>break</code> is omitted, the next statement will be executed.",
+        "测试<code>case</code> 值使用严格等于，break关键字告诉javascript停止执行语句。如果没有break关键字，下一个语句会继续执行。",
         "<h4>任务</h4>",
-        "Write a switch statement which tests <code>val</code> and sets <code>answer</code> for the following conditions:<br><code>1</code> - \"alpha\"<br><code>2</code> - \"beta\"<br><code>3</code> - \"gamma\"<br><code>4</code> - \"delta\""
+        "写一个测试 <code>val</code>的switch语句，并且根据下面的条件来设置不同的<code>answer</code>：<br><code>1</code> - \"alpha\"<br><code>2</code> - \"beta\"<br><code>3</code> - \"gamma\"<br><code>4</code> - \"delta\""
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2864,11 +2871,11 @@
       "id": "56533eb9ac21ba0edf2244de",
       "title": "Adding a default option in Switch statements",
       "description": [
-        "In a <code>switch</code> statement you may not be able to specify all possible values as <code>case</code> statements. Instead, you can add the <code>default</code> statement which will be executed if no matching <code>case</code> statements are found. Think of it like the final <code>else</code> statement in an <code>if/else</code> chain.",
-        "A <code>default</code> statement should be the last case.",
+        "在<code>switch</code> 语句中你可能无法用case来指定所有情况，这时你可以添加default语句。当再也找不到case匹配的时候default语句会执行，非常类似于if/else组合中的else语句。",
+        "<code>default</code>语句应该是最后一个case。",
         "<blockquote>switch (num) {<br>  case value1:<br>    statement1;<br>    break;<br>  case value2:<br>    statement2;<br>    break;<br>...<br>  default:<br>    defaultStatement;<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Write a switch statement to set <code>answer</code> for the following conditions:<br><code>\"a\"</code> - \"apple\"<br><code>\"b\"</code> - \"bird\"<br><code>\"c\"</code> - \"cat\"<br><code>default</code> - \"stuff\""
+        "写一个根据下面的条件来设置<code>answer</code>的switch语句：<br><code>\"a\"</code> - \"apple\"<br><code>\"b\"</code> - \"bird\"<br><code>\"c\"</code> - \"cat\"<br><code>default</code> - \"stuff\""
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2905,12 +2912,12 @@
       "id": "56533eb9ac21ba0edf2244df",
       "title": "Multiple Identical Options in Switch Statements",
       "description": [
-        "If the <code>break</code> statement is omitted from a <code>switch</code> statement's <code>case</code>, the following <code>case</code> statement(s) are executed until a <code>break</code> is encountered. If you have multiple inputs with the same output, you can represent them in a <code>switch</code> statement like this:",
+        "如果<code>switch</code>语句中的<code>case</code>分支的<code>break</code> 语句漏掉了，后面的 <code>case</code>语句会一直执行直到遇到<code>break</code>。如果你有多个输入值和输出值一样，可以试试下面的<code>switch</code>语句：",
         "<blockquote>switch(val) {<br>  case 1:<br>  case 2:<br>  case 3:<br>    result = \"1, 2, or 3\";<br>    break;<br>  case 4:<br>    result = \"4 alone\";<br>}</blockquote>",
-        "Cases for 1, 2, and 3 will all produce the same result.",
+        "分支1、2、3将会产生相同的输出结果。",
         "<h4>任务</h4>",
-        "Write a switch statement to set <code>answer</code> for the following ranges:<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
-        "<strong>提示</strong><br>You will need to have a <code>case</code> statement for each number in the range."
+        "写一个根据下面的范围来设置<code>answer</code> 的switch语句：<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
+        "<strong>提示</strong><br>你需要为范围中的每个数字准备一个<code>answer</code>语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2951,12 +2958,12 @@
       "id": "56533eb9ac21ba0edf2244e0",
       "title": "Replacing If Else Chains with Switch",
       "description": [
-        "If you have many options to choose from, a <code>switch</code> statement can be easier to write than many chained <code>if</code>/<code>if else</code> statements. The following:",
+        "如果你有多个选项需要选择，<code>switch</code> 语句写起来会比多个串联的<code>if</code>/<code>if else</code>语句容易些，譬如:",
         "<blockquote>if (val === 1) {<br>  answer = \"a\";<br>} else if (val === 2) {<br>  answer = \"b\";<br>} else {<br>  answer = \"c\";<br>}</blockquote>",
-        "can be replaced with:",
+        "可以被下面替代：",
         "<blockquote>switch (val) {<br>  case 1:<br>    answer = \"a\";<br>    break;<br>  case 2:<br>    answer = \"b\";<br>    break;<br>  default:<br>    answer = \"c\";<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Change the chained <code>if</code>/<code>if else</code> statements into a <code>switch</code> statement."
+        "把串联的 <code>if</code>/<code>if else</code> 语句改成 <code>switch</code> 语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3006,13 +3013,13 @@
       "id": "5679ceb97cbaa8c51670a16b",
       "title": "Returning Boolean Values from Functions",
       "description": [
-        "You may recall from <a href=\"waypoint-comparison-with-the-equality-operator\" target=\"_blank\">Comparison with the Equality Operator</a> that all comparison operators return a boolean <code>true</code> or <code>false</code> value.",
-        "A common <dfn>anti-pattern</dfn> is to use an <code>if/else</code> statement to do a comparison and then <code>return</code> <code>true</code>/<code>false</code>:",
+        "你可能会回想起<a href=\"waypoint-comparison-with-the-equality-operator\" target=\"_blank\">Comparison with the Equality Operator</a> ，所有的比较操作符返回的都是一个boolean值，要么是 <code>true</code> 要么是<code>false</code> 。",
+        "使用 <code>if/else</code>语句来做比较然后返回<code>true</code>或<code>false</code>已经成为大家的共识:",
         "<blockquote>function isEqual(a,b) {<br>  if (a === b) {<br>    return true;<br>  } else {<br>    return false;<br>  }<br>}</blockquote>",
-        "Since <code>===</code> returns <code>true</code> or <code>false</code>, we can simply return the result of the comparison:",
+        "因为<code>===</code> 总是返回 <code>true</code> 或 <code>false</code>，所以我们可以直接返回比较的结果：",
         "<blockquote>function isEqual(a,b) {<br>  return a === b;<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Fix the function <code>isLess</code> to remove the <code>if/else</code> statements."
+        "移除<code>isLess</code>函数的<code>if/else</code>语句但不影响函数的功能。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3046,13 +3053,13 @@
       "id": "56533eb9ac21ba0edf2244c4",
       "title": "Return Early Pattern for Functions",
       "description": [
-        "When a <code>return</code> statement is reached, the execution of the current function stops and control returns to the calling location.",
-        "<strong>Example</strong>",
+        "当代码执行到return语句时，函数返回一个结果就结束运行了，return后面的语句根本不会执行。",
+        "<strong>举例</strong>",
         "<blockquote>function myFun() {<br>  console.log(\"Hello\");<br>  return \"World\";<br>  console.log(\"byebye\")<br>}<br>myFun();</blockquote>",
-        "The above outputs \"Hello\" to the console, returns \"World\", but <code>\"byebye\"</code> is never output, because the function exits at the <code>return</code> statement.",
+        "上面的代码输出\"Hello\"到控制台、返回 \"World\"，但没有输出<code>\"byebye\"</code>，因为函数遇到return语句就退出了。",
         "<h4>任务</h4>",
-        "Modify the function <code>abTest</code> so that if <code>a</code> or <code>b</code> are less than <code>0</code> the function will immediately exit with a value of <code>undefined</code>.",
-        "<strong>Hint</strong><br>Remember that <a href='http://www.freecodecamp.com/challenges/understanding-uninitialized-variables' target='_blank'><code>undefined</code> is a keyword</a>, not a string."
+        "修改函数<code>abTest</code>当<code>a</code>或<code>b</code>小于0时，函数立即返回一个<code>undefined</code>并退出。",
+        "<strong>提示</strong><br>记住<a href='understanding-uninitialized-variables' target='_blank'><code>undefined</code></a>，是一个关键字，而不是一个字符串。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3091,12 +3098,12 @@
       "id": "565bbe00e9cc8ac0725390f4",
       "title": "Counting Cards",
       "description": [
-        "In the casino game Blackjack, a player can gain an advantage over the house by keeping track of the relative number of high and low cards remaining in the deck. This is called <a href='https://en.wikipedia.org/wiki/Card_counting' target='_blank'>Card Counting</a>.",
-        "Having more high cards remaining in the deck favors the player. Each card is assigned a value according to the table below. When the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.",
+        "在赌场21点游戏中，玩家可以通过计算牌桌上已经发放的卡牌的高低值来让自己在游戏中保持优势，这就叫<a href='https://www.douban.com/note/273781969/' target='_blank'>21点算法</a>。",
+        "根据下面的表格，每张卡牌都分配了一个值。如果卡牌的值<count>大于0，那么玩家应该追加赌注。反之，追加少许赌注甚至不追加赌注。",
         "<table class=\"table table-striped\"><thead><tr><th>Count Change</th><th>Cards</th></tr></thead><tbody><tr><td>+1</td><td>2, 3, 4, 5, 6</td></tr><tr><td>0</td><td>7, 8, 9</td></tr><tr><td>-1</td><td>10, 'J', 'Q', 'K','A'</td></tr></tbody></table>",
-        "You will write a card counting function. It will receive a <code>card</code> parameter and increment or decrement the global <code>count</code> variable according to the card's value (see table). The function will then return a string with the current count and the string <code>\"Bet\"</code> if the count is positive, or <code>\"Hold\"</code> if the count is zero or negative. The current count and the player's decision (<code>\"Bet\"</code> or <code>\"Hold\"</code>) should be separated by a single space.",
-        "<strong>Example Output</strong><br><code>\"-3 Hold\"<br>\"5 Bet\"</code>",
-        "<strong>Hint</strong><br>Do NOT reset <code>count</code> to 0 when value is 7, 8, or 9."
+        "你需要写一个函数，实现21点算法，它根据参数 <code>card</code>的值来递增或递减变量<code>count</code>，函数返回一个由当前<code>count</code>和 <code>\"Bet\"</code>(<code>count>0</code>)或<code>\"Hold\"</code>(<code>count<=0</code>) 拼接的字符串。注意<code>count</code>和<code>\"Bet\"</code> 或 <code>\"Hold\"</code>应该用空格分开。",
+        "<strong>例如：</strong><br><code>\"-3 Hold\"<br>\"5 Bet\"</code>",
+        "<strong>提示</strong><br>既然card的值为7、8、9时，count值不变，那我们就可以忽略这种情况。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3132,17 +3139,17 @@
       "id": "56bbb991ad1ed5201cd392d0",
       "title": "Build JavaScript Objects",
       "description": [
-        "You may have heard the term <code>object</code> before.",
-        "Objects are similar to <code>arrays</code>, except that instead of using indexes to access and modify their data, you access the data in objects through what are called <code>properties</code>.",
-        "Here's a sample object:",
+        "你之前可能听说过对象 <code>object</code> 。",
+        "对象和数组很相似，数组是通过索引来访问和修改数据，对象是通过属性来访问和修改数据的。",
+        "这是一个示例对象：",
         "<blockquote>var cat = {<br>  \"name\": \"Whiskers\",<br>  \"legs\": 4,<br>  \"tails\": 1,<br>  \"enemies\": [\"Water\", \"Dogs\"]<br>};</blockquote>",
-        "Objects are useful for storing data in a structured way, and can represent real world objects, like a cat.",
+        "对象适合用来存储结构化数据，就和真实世界的对象一模一样，比如一只猫。",
         "<h4>任务</h4>",
-        "Make an object that represents a dog called <code>myDog</code> which contains the properties <code>\"name\"</code> (a string), <code>\"legs\"</code>, <code>\"tails\"</code> and <code>\"friends\"</code>.",
-        "You can set these object properties to whatever values you want, as long <code>\"name\"</code> is a string, <code>\"legs\"</code> and <code>\"tails\"</code> are numbers, and <code>\"friends\"</code> is an array."
+        "创建一个叫做<code>myDog</code>的对象，它里面有这些属性： <code>名称\"name\"</code>、 <code>腿\"legs\"</code>, <code>尾巴\"tails\"</code>、<code>朋友\"friends\"</code>。",
+        "你可以设置对象属性为任何你想要的值，只要 <code>\"name\"</code> 是字符串、 <code>\"legs\"</code> 和 <code>\"tails\"</code> 是数字、<code>\"friends\"</code> 是数组。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3179,12 +3186,12 @@
       "id": "56533eb9ac21ba0edf2244c7",
       "title": "Accessing Objects Properties with the Dot Operator",
       "description": [
-        "There are two ways to access the properties of an object: the dot operator (<code>.</code>) and bracket notation (<code>[]</code>), similar to an array.",
-        "The dot operator is what you use when you know the name of the property you're trying to access ahead of time.",
-        "Here is a sample of using the dot operator (<code>.</code>) to read an object property:",
+        "和数组一样，有两种方式访问对象属性，一个是点操作符(<code>.</code>)，一个是中括号操作符(<code>[]</code>)。",
+        "当你知道属性的名称的时候，使用点操作符。",
+        "这是一个使用点操作符读取对象属性的例子：",
         "<blockquote>var myObj = {<br>  prop1: \"val1\",<br>  prop2: \"val2\"<br>};<br>var prop1val = myObj.prop1; // val1<br>var prop2val = myObj.prop2; // val2</blockquote>",
         "<h4>任务</h4>",
-        "Read in the property values of <code>testObj</code> using dot notation. Set the variable <code>hatValue</code> equal to the object property <code>hat</code> and set the variable <code>shirtValue</code> equal to the object property <code>shirt</code>."
+        "通过点操作符读取对象<code>testObj</code>，把<code>hat</code>的属性值赋给变量<code>hatValue</code>，把<code>shirt</code>的属性值赋给<code>shirtValue</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3220,12 +3227,12 @@
       "id": "56533eb9ac21ba0edf2244c8",
       "title": "Accessing Objects Properties with Bracket Notation",
       "description": [
-        "The second way to access the properties of an object is bracket notation (<code>[]</code>). If the property of the object you are trying to access has a space in it, you will need to use bracket notation.",
-        "Here is a sample of using bracket notation to read an object property:",
+        "第二种访问对象的方式就是中括号操作符(<code>[]</code>)，如果你想访问的属性的名称有一个空格，这时你只能使用中括号操作符(<code>[]</code>)。",
+        "这是一个使用中括号操作符(<code>[]</code>)读取对象属性的例子：",
         "<blockquote>var myObj = {<br>  \"Space Name\": \"Kirk\",<br>  \"More Space\": \"Spock\"<br>};<br>myObj[\"Space Name\"]; // Kirk<br>myObj['More Space']; // Spock</blockquote>",
-        "提示 that property names with spaces in them must be in quotes (single or double).",
+        "提示：属性名称中如果有空格，必须把属性名称用单引号或双引号包裹起来。",
         "<h4>任务</h4>",
-        "Read the values of the properties <code>\"an entree\"</code> and <code>\"the drink\"</code> of <code>testObj</code> using bracket notation."
+        "用中括号操作符读取对象<code>testObj</code>的属性<code>\"an entree\"</code>值和属性<code>\"the drink\"</code>值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3261,14 +3268,14 @@
       "id": "56533eb9ac21ba0edf2244c9",
       "title": "Accessing Objects Properties with Variables",
       "description": [
-        "Another use of bracket notation on objects is to use a variable to access a property. This can be very useful for iterating through lists of the object properties or for doing the lookup.",
-        "Here is an example of using a variable to access a property:",
+        "中括号操作符的另一个使用方式是用变量来访问一个属性。当你需要遍历对象的属性列表或查表时，这种方式极为有用。",
+        "这有一个使用变量来访问属性的例子：",
         "<blockquote>var someProp = \"propName\";<br>var myObj = {<br>  propName: \"Some Value\"<br >}<br>myObj[someProp]; // \"Some Value\"</blockquote>",
-        "Here is one more:",
+        "还有更多：",
         "<blockquote>var myDog = \"Hunter\";<br>var dogs = {<br>  Fido: \"Mutt\",\n  Hunter: \"Doberman\",\n  Snoopie: \"Beagle\"<br >}<br>var breed = dogs[myDog]; // \"Hunter\"<br>console.log(breed)// \"Doberman\"</blockquote>",
-        "提示 that we  do <em>not</em> use quotes around the variable name when using it to access the property because we are using the <em>value</em> of the variable, not the <em>name</em>",
+        "提示：当我们通过变量名访问属性的时候，不需要给变量名包裹引号。因为实际上我们使用的是变量的值，而不是变量的名称。",
         "<h4>任务</h4>",
-        "Use the <code>playerNumber</code> variable to lookup player <code>16</code> in <code>testObj</code> using bracket notation."
+        "使用变量<code>playerNumber</code>，通过中括号操作符找到<code>testObj</code>中的16。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3303,18 +3310,17 @@
       "id": "56bbb991ad1ed5201cd392d1",
       "title": "Updating Object Properties",
       "description": [
-        "After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.",
-        "For example, let's look at <code>ourDog</code>:",
+        "当你创建了一个对象后，你可以用点操作符或中括号操作符来更新对象的属性。",
+        "举个例子，让我们看看 <code>ourDog</code>:",
         "<blockquote>var ourDog = {<br>  \"name\": \"Camper\",<br>  \"legs\": 4,<br>  \"tails\": 1,<br>  \"friends\": [\"everything!\"]<br>};</blockquote>",
-        "Since he's a particularly happy dog, let's change his name to \"Happy Camper\". Here's how we update his object's name property:",
-        "<code>ourDog.name = \"Happy Camper\";</code> or",
+        "让我们更改它的名称为 \"Happy Camper\"，这有两种方式来更新对象的<code>name</code>属性：",
+        "<code>ourDog.name = \"Happy Camper\";</code>",
         "<code>ourDog[\"name\"] = \"Happy Camper\";</code>",
-        "Now when we evaluate <code>ourDog.name</code>, instead of getting \"Camper\", we'll get his new name, \"Happy Camper\".",
         "<h4>任务</h4>",
-        "Update the <code>myDog</code> object's name property. Let's change her name from \"Coder\" to \"Happy Coder\". You can use either dot or bracket notation."
+        "更新 <code>myDog</code> 对象的<code>name</code>属性，让它的名字从 \"Coder\" 变成 \"Happy Coder\"。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3353,17 +3359,16 @@
       "id": "56bbb991ad1ed5201cd392d2",
       "title": "Add New Properties to a JavaScript Object",
       "description": [
-        "You can add new properties to existing JavaScript objects the same way you would modify them.",
-        "Here's how we would add a <code>\"bark\"</code> property to <code>ourDog</code>:",
+        "你也可以像更改属性一样给对象添加属性。",
+        "看看我们是如何给<code>ourDog</code>添加 <code>\"bark\"</code>属性：",
         "<code>ourDog.bark = \"bow-wow\";</code> ",
-        "or",
+        "或者",
         "<code>ourDog[\"bark\"] = \"bow-wow\";</code>",
-        "Now when we evaluate <code>ourDog.bark</code>, we'll get his bark, \"bow-wow\".",
         "<h4>任务</h4>",
-        "Add a <code>\"bark\"</code> property to <code>myDog</code> and set it to a dog sound, such as \"woof\". You may use either dot or bracket notation."
+        "给<code>myDog</code>添加一个<code>\"bark\"</code> 属性，设置它的值为狗的声音，例如：\"woof\"。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3401,13 +3406,13 @@
       "id": "56bbb991ad1ed5201cd392d3",
       "title": "Delete Properties from a JavaScript Object",
       "description": [
-        "We can also delete properties from objects like this:",
+        "我们同样可以删除对象的属性，例如：",
         "<code>delete ourDog.bark;</code>",
         "<h4>任务</h4>",
-        "Delete the <code>\"tails\"</code> property from <code>myDog</code>. You may use either dot or bracket notation."
+        "删除<code>myDog</code>对象的<code>\"tails\"</code>属性。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3448,11 +3453,11 @@
       "id": "56533eb9ac21ba0edf2244ca",
       "title": "Using Objects for Lookups",
       "description": [
-        "Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to \"lookup\" values rather than a <code>switch</code> statement or an <code>if/else</code> chain. This is most useful when you know that your input data is limited to a certain range.",
-        "Here is an example of a simple reverse alphabet lookup:",
+        "对象和字典一样，可以用来存储键/值对。如果你的数据跟对象一样，你可以用对象来查找你想要的值，而不是使用switch或if/else语句。当你知道你的输入数据在某个范围时，这种查找方式极为有效。",
+        "这是简单的反向字母表：",
         "<blockquote>var alpha = {<br>  1:\"Z\",<br>  2:\"Y\",<br>  3:\"X\",<br>  4:\"W\",<br>  ...<br>  24:\"C\",<br>  25:\"B\",<br>  26:\"A\"<br>};<br>alpha[2]; // \"Y\"<br>alpha[24]; // \"C\"<br><br>var value = 2;<br>alpha[value]; // \"Y\"</blockquote>",
         "<h4>任务</h4>",
-        "Convert the switch statement into a lookup table called <code>lookup</code>. Use it to lookup <code>val</code> and assign the associated string to the <code>result</code> variable."
+        "把switch语句转化为一个叫做lookup的对象。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3508,11 +3513,12 @@
       "id": "567af2437cbaa8c51670a16c",
       "title": "Testing Objects for Properties",
       "description": [
-        "Sometimes it is useful to check if the property of a given object exists or not. We can use the <code>.hasOwnProperty(propname)</code> method of objects to determine if that object has the given property name. <code>.hasOwnProperty()</code> returns <code>true</code> or <code>false</code> if the property is found or not.",
-        "<strong>Example</strong>",
+        "有时检查一个对象属性是否存在是非常有用的，我们可以用<code>.hasOwnProperty(propname)</code>方法来检查对象是否有该属性。如果有返回<code>true</code>，反之返回 <code>false</code>。",
+        "<strong>举例</strong>",
         "<blockquote>var myObj = {<br>  top: \"hat\",<br>  bottom: \"pants\"<br>};<br>myObj.hasOwnProperty(\"top\");    // true<br>myObj.hasOwnProperty(\"middle\"); // false</blockquote>",
         "<h4>任务</h4>",
-        "Modify the function <code>checkObj</code> to test <code>myObj</code> for <code>checkProp</code>. If the property is found, return that property's value. If not, return <code>\"Not Found\"</code>."
+        "修改函数<code>checkObj</code>检查<code>myObj</code>是否有<code>checkProp</code>属性，如果属性存在，返回属性对应的值，如果不存在，返回 <code>\"Not Found\"</code>。",
+        "注意：如果你需要通过变量来访问对象的属性值，请用中括号操作符，点操作符不支持变量。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3786,7 +3792,7 @@
         "使用 <code>for</code> 循环把从 1 到 5 添加进 <code>myArray</code> 中。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 0; i < 5; i++) {",
@@ -3826,7 +3832,7 @@
         "使用一个 <code>for</code> 循环，把从1到9的奇数添加到 <code>myArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 0; i < 10; i += 2) {",
@@ -3867,7 +3873,7 @@
         "使用一个 <code>for</code> 循环，把奇数从 9 到 1 添加进 <code>myArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 10; i > 0; i -= 2) {",
@@ -3905,7 +3911,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArr = [ 9, 10, 11, 12];",
         "var ourTotal = 0;",
         "",
@@ -4154,7 +4160,7 @@
         "Create a function called <code>randomRange</code> that takes a range <code>myMin</code> and <code>myMax</code> and returns a random number that's greater than or equal to <code>myMin</code>, and is less than or equal to <code>myMax</code>, inclusive."
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(ourMin, ourMax) {",
         "",
         "  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;",
@@ -4224,7 +4230,7 @@
         "// Setup",
         "var testString = \"Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.\";",
         "",
-        "// Example",
+        "// 举例",
         "var expressionToGetSoftware = /software/gi;",
         "var softwareCount = testString.match(expressionToGetSoftware).length;",
         "  ",
