@@ -3945,11 +3945,11 @@
       "id": "56533eb9ac21ba0edf2244e1",
       "title": "Nesting For Loops",
       "description": [
-        "If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:",
+        "如果你有一个多维数组，可以使用相同的逻辑，在数组和子数组两个航点之前循环。下面是一个例子：",
         "<blockquote>var arr = [<br>  [1,2], [3,4], [5,6]<br>];<br>for (var i=0; i &lt; arr.length; i++) {<br>  for (var j=0; j &lt; arr[i].length; j++) {<br>    console.log(arr[i][j]);<br>  }<br>}</blockquote>",
-        "This outputs each sub-element in <code>arr</code> one at a time. 提示 that for the inner loop, we are checking the <code>.length</code> of <code>arr[i]</code>, since <code>arr[i]</code> is itself an array.",
+        "一次输出 <code>arr</code> 中的每个子元素。提示，对于内部循环，我们可以通过 <code>arr[i]</code> 的 <code>.length</code> 来查看它的长度，因为 <code>arr[i]</code> 的本身就是一个数组。",
         "<h4>任务</h4>",
-        "Modify function <code>multiplyAll</code> so that it multiplies the <code>product</code> variable by each number in the sub-arrays of <code>arr</code>"
+        "修改函数 <code>multiplyAll</code>，以便它得到在 <code>arr</code> 中子数组的每个数字相乘的结果 <code>product</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3983,12 +3983,12 @@
       "id": "cf1111c1c11feddfaeb1bdef",
       "title": "Iterate with JavaScript While Loops",
       "description": [
-        "You can run the same code multiple times by using a loop.",
-        "Another type of JavaScript loop is called a \"<code>while loop</code>\", because it runs \"while\" a specified condition is true and stops once that condition is no longer true.",
+        "您可以通过使用一个循环多次运行相同的代码。",
+        "另一种类型的 JavaScript 循环被称为“<code>while循环</code>”，因为它运行，当（while）规定的条件为真，并且一旦条件不再为真就会停止。",
         "<blockquote>var ourArray = [];<br>var i = 0;<br>while(i < 5) {<br>  ourArray.push(i);<br>  i++;<br>}</blockquote>",
-        "Let's try getting a while loop to work by pushing values to an array.",
+        "让我们试着通过一个while循环，把值添加到一个数组中。",
         "<h4>任务</h4>",
-        "Push the numbers 0 through 4 to <code>myArray</code> using a <code>while</code> loop."
+        "使用一个 <code>while</code> 循环，把从 0 到 4 的值添加到 <code>myArray</code> 中。"
       ],
       "challengeSeed": [
         "// Setup",
