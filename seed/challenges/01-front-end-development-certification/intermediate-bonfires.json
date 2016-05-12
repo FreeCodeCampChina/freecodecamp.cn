@@ -209,10 +209,10 @@
       "id": "aa7697ea2477d1316795783b",
       "title": "Pig Latin",
       "description": [
-        "Translate the provided string to pig latin.",
-        "<a href=\"http://en.wikipedia.org/wiki/Pig_Latin\" target=\"_blank\">Pig Latin</a> takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an \"ay\".",
-        "If a word begins with a vowel you just add \"way\" to the end.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "把指定的字符串翻译成 pig latin。",
+        "<a href=\"http://en.wikipedia.org/wiki/Pig_Latin\" target=\"_blank\">Pig Latin</a> 把一个英文单词的第一个辅音或辅音丛（consonant cluster）移到词尾，然后加上后缀 \"ay\"。",
+        "如果单词以元音开始，你只需要在词尾添加 \"way\" 就可以了。",
+        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function translate(str) {",
@@ -225,11 +225,11 @@
         "function translate(str) {\n  if (isVowel(str.charAt(0))) return str + \"way\";\n  var front = [];\n  str = str.split('');\n  while (str.length && !isVowel(str[0])) {\n    front.push(str.shift());\n  }\n  return [].concat(str, front).join('') + 'ay';\n}\n\nfunction isVowel(c) {\n  return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1;\n}"
       ],
       "tests": [
-        "assert.deepEqual(translate(\"california\"), \"aliforniacay\", 'message: <code>translate(\"california\")</code> should return \"aliforniacay\".');",
-        "assert.deepEqual(translate(\"paragraphs\"), \"aragraphspay\", 'message: <code>translate(\"paragraphs\")</code> should return \"aragraphspay\".');",
-        "assert.deepEqual(translate(\"glove\"), \"oveglay\", 'message: <code>translate(\"glove\")</code> should return \"oveglay\".');",
-        "assert.deepEqual(translate(\"algorithm\"), \"algorithmway\", 'message: <code>translate(\"algorithm\")</code> should return \"algorithmway\".');",
-        "assert.deepEqual(translate(\"eight\"), \"eightway\", 'message: <code>translate(\"eight\")</code> should return \"eightway\".');"
+        "assert.deepEqual(translate(\"california\"), \"aliforniacay\", 'message: <code>translate(\"california\")</code> 应该返回 \"aliforniacay\".');",
+        "assert.deepEqual(translate(\"paragraphs\"), \"aragraphspay\", 'message: <code>translate(\"paragraphs\")</code> 应该返回 \"aragraphspay\".');",
+        "assert.deepEqual(translate(\"glove\"), \"oveglay\", 'message: <code>translate(\"glove\")</code> 应该返回 \"oveglay\".');",
+        "assert.deepEqual(translate(\"algorithm\"), \"algorithmway\", 'message: <code>translate(\"algorithm\")</code> 应该返回 \"algorithmway\".');",
+        "assert.deepEqual(translate(\"eight\"), \"eightway\", 'message: <code>translate(\"eight\")</code> 应该返回 \"eightway\".');"
       ],
       "type": "bonfire",
       "MDNlinks": [
