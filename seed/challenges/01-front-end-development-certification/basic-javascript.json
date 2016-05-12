@@ -49,7 +49,7 @@
         "<strong>提示</strong><br>如果遇到困难了，请看下<code>ourName</code>的例子是怎么写的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourName;",
         "",
         "// Define myName below this line",
@@ -117,7 +117,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourVar = 19;",
         "",
         "// Only change code below this line",
@@ -727,7 +727,7 @@
         "创建两个新的 <code>字符串</code> 变量：<code>myFirstName</code> 和 <code>myLastName</code> 分别为它们赋上你的姓和名的值。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Alan\";",
         "var lastName = \"Turing\";",
         "",
@@ -862,7 +862,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourStr = \"I come first. \" + \"I come second.\";",
         "",
         "// Only change code below this line",
@@ -903,7 +903,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourStr = \"I come first. \";",
         "ourStr += \"I come second.\";",
         "",
@@ -943,7 +943,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourName = \"Free Code Camp\";",
         "var ourStr = \"Hello, our name is \" + ourName + \", how are you?\";",
         "",
@@ -989,7 +989,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var anAdjective = \"awesome!\";",
         "var ourStr = \"Free Code Camp is \";",
         "ourStr += anAdjective;",
@@ -1037,7 +1037,7 @@
         "使用 <code>.length</code> 属性来获得变量 <code>lastName</code> 的长度，并把它赋值给变量 <code>lastNameLength</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstNameLength = 0;",
         "var firstName = \"Ada\";",
         "",
@@ -1080,7 +1080,7 @@
         "<strong>提示</strong><br>如果你遇到困难了，不妨看看变量 <code>firstLetterOfFirstName</code> 是如何赋值的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstLetterOfFirstName = \"\";",
         "var firstName = \"Ada\";",
         "",
@@ -1155,7 +1155,7 @@
         "<strong>提示</strong><br>如果你遇到困难了，看看 <code>secondLetterOfFirstName</code> 变量是如何做的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var secondLetterOfFirstName = firstName[1];",
         "",
@@ -1191,7 +1191,7 @@
         "<strong>提示</strong><br>如果你遇到困难了，不妨看看在 <code>lastLetterOfFirstName</code> 变量上是怎么做的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var lastLetterOfFirstName = firstName[firstName.length - 1];",
         "",
@@ -1227,7 +1227,7 @@
         "<strong>提示</strong><br>如果你遇到困难了，不妨看看 <code>thirdToLastLetterOfFirstName</code> 变量是如何做到的。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var firstName = \"Ada\";",
         "var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];",
         "",
@@ -1301,7 +1301,7 @@
         "<strong>提示</strong><br>如果你遇到困难，请参考文本编辑器中的示例代码。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var array = [\"John\", 23];",
         "",
         "// Only change code below this line.",
@@ -1331,7 +1331,7 @@
         "创建一个名为 <code>myArray</code>的多维数组。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [[\"the universe\", 42], [\"everything\", 101010]];",
         "",
         "// Only change code below this line.",
@@ -1362,7 +1362,7 @@
         "创建一个名为 <code>myData</code> 的变量，并把 <code>myArray</code> 的第一个索引上的值赋给它。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "var ourData = ourArray[0]; // equals 1",
         "",
@@ -1395,7 +1395,7 @@
         "修改数组 <code>myArray</code> 中索引0上的值为 <code>3</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "ourArray[1] = 3; // ourArray now equals [1,3,3].",
         "",
@@ -1462,7 +1462,7 @@
         "把 <code>[\"dog\", 3]</code> “推”入到 <code>myArray</code> 变量的末尾。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.push([\"happy\", \"joy\"]); ",
         "// ourArray now equals [\"Stimpson\", \"J\", \"cat\", [\"happy\", \"joy\"]]",
@@ -1498,7 +1498,7 @@
         "使用 <code>.pop()</code> 函数移除 <code>myArray</code> 中的最后一条，并且把“抛出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [1,2,3];",
         "var removedFromOurArray = ourArray.pop(); ",
         "// removedFromOurArray now equals 3, and ourArray now equals [1,2]",
@@ -1534,7 +1534,7 @@
         "使用 <code>.shift()</code> 函数移出 <code>myArray</code> 中的第一项，并把“移出”的值赋给 <code>removedFromMyArray</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", [\"cat\"]];",
         "removedFromOurArray = ourArray.shift();",
         "// removedFromOurArray now equals \"Stimpson\" and ourArray now equals [\"J\", [\"cat\"]].",
@@ -1570,7 +1570,7 @@
         "使用 <code>unshift()</code> 函数把<code>[\"Paul\",35]</code> 加入到 <code>myArray</code> 的头部。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.shift(); // ourArray now equals [\"J\", \"cat\"]",
         "ourArray.unshift(\"Happy\"); ",
@@ -1666,7 +1666,7 @@
         "<ol><li>创建一个名为 <code>myFunction</code> 的函数，这个函数可以打印“Hi World”到开发控制台上。</li><li>调用这个函数。</li></ol>"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction() {",
         "  console.log(\"Heyya, World\");",
         "}",
@@ -1754,7 +1754,7 @@
         "capture();"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(a, b) {",
         "  console.log(a - b);",
         "}",
@@ -1972,7 +1972,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function minusSeven(num) {",
         "  return num - 7;",
         "}",
@@ -2009,7 +2009,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var changed = 0;",
         "",
         "function change(num) {",
@@ -2151,7 +2151,7 @@
         "在函数内部创建一个 <code>if</code> 语句，如果该参数 <code>wasThatTrue</code> 值为 <code>true</code>，返回 <code>\"That was true\"</code>，否则，并返回 <code>\"That was false\"</code>。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(isItTrue) {",
         "  if (isItTrue) { ",
         "    return \"Yes, it's true\";",
@@ -3013,13 +3013,13 @@
       "id": "5679ceb97cbaa8c51670a16b",
       "title": "Returning Boolean Values from Functions",
       "description": [
-        "You may recall from <a href=\"waypoint-comparison-with-the-equality-operator\" target=\"_blank\">Comparison with the Equality Operator</a> that all comparison operators return a boolean <code>true</code> or <code>false</code> value.",
-        "A common <dfn>anti-pattern</dfn> is to use an <code>if/else</code> statement to do a comparison and then <code>return</code> <code>true</code>/<code>false</code>:",
+        "你可能会回想起<a href=\"waypoint-comparison-with-the-equality-operator\" target=\"_blank\">Comparison with the Equality Operator</a> ，所有的比较操作符返回的都是一个boolean值，要么是 <code>true</code> 要么是<code>false</code> 。",
+        "使用 <code>if/else</code>语句来做比较然后返回<code>true</code>或<code>false</code>已经成为大家的共识:",
         "<blockquote>function isEqual(a,b) {<br>  if (a === b) {<br>    return true;<br>  } else {<br>    return false;<br>  }<br>}</blockquote>",
-        "Since <code>===</code> returns <code>true</code> or <code>false</code>, we can simply return the result of the comparison:",
+        "因为<code>===</code> 总是返回 <code>true</code> 或 <code>false</code>，所以我们可以直接返回比较的结果：",
         "<blockquote>function isEqual(a,b) {<br>  return a === b;<br>}</blockquote>",
         "<h4>任务</h4>",
-        "Fix the function <code>isLess</code> to remove the <code>if/else</code> statements."
+        "移除<code>isLess</code>函数的<code>if/else</code>语句但不影响函数的功能。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3053,13 +3053,13 @@
       "id": "56533eb9ac21ba0edf2244c4",
       "title": "Return Early Pattern for Functions",
       "description": [
-        "When a <code>return</code> statement is reached, the execution of the current function stops and control returns to the calling location.",
-        "<strong>Example</strong>",
+        "当代码执行到return语句时，函数返回一个结果就结束运行了，return后面的语句根本不会执行。",
+        "<strong>举例</strong>",
         "<blockquote>function myFun() {<br>  console.log(\"Hello\");<br>  return \"World\";<br>  console.log(\"byebye\")<br>}<br>myFun();</blockquote>",
-        "The above outputs \"Hello\" to the console, returns \"World\", but <code>\"byebye\"</code> is never output, because the function exits at the <code>return</code> statement.",
+        "上面的代码输出\"Hello\"到控制台、返回 \"World\"，但没有输出<code>\"byebye\"</code>，因为函数遇到return语句就退出了。",
         "<h4>任务</h4>",
-        "Modify the function <code>abTest</code> so that if <code>a</code> or <code>b</code> are less than <code>0</code> the function will immediately exit with a value of <code>undefined</code>.",
-        "<strong>Hint</strong><br>Remember that <a href='http://www.freecodecamp.com/challenges/understanding-uninitialized-variables' target='_blank'><code>undefined</code> is a keyword</a>, not a string."
+        "修改函数<code>abTest</code>当<code>a</code>或<code>b</code>小于0时，函数立即返回一个<code>undefined</code>并退出。",
+        "<strong>提示</strong><br>记住<a href='understanding-uninitialized-variables' target='_blank'><code>undefined</code></a>，是一个关键字，而不是一个字符串。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3098,12 +3098,12 @@
       "id": "565bbe00e9cc8ac0725390f4",
       "title": "Counting Cards",
       "description": [
-        "In the casino game Blackjack, a player can gain an advantage over the house by keeping track of the relative number of high and low cards remaining in the deck. This is called <a href='https://en.wikipedia.org/wiki/Card_counting' target='_blank'>Card Counting</a>.",
-        "Having more high cards remaining in the deck favors the player. Each card is assigned a value according to the table below. When the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.",
+        "在赌场21点游戏中，玩家可以通过计算牌桌上已经发放的卡牌的高低值来让自己在游戏中保持优势，这就叫<a href='https://www.douban.com/note/273781969/' target='_blank'>21点算法</a>。",
+        "根据下面的表格，每张卡牌都分配了一个值。如果卡牌的值<count>大于0，那么玩家应该追加赌注。反之，追加少许赌注甚至不追加赌注。",
         "<table class=\"table table-striped\"><thead><tr><th>Count Change</th><th>Cards</th></tr></thead><tbody><tr><td>+1</td><td>2, 3, 4, 5, 6</td></tr><tr><td>0</td><td>7, 8, 9</td></tr><tr><td>-1</td><td>10, 'J', 'Q', 'K','A'</td></tr></tbody></table>",
-        "You will write a card counting function. It will receive a <code>card</code> parameter and increment or decrement the global <code>count</code> variable according to the card's value (see table). The function will then return a string with the current count and the string <code>\"Bet\"</code> if the count is positive, or <code>\"Hold\"</code> if the count is zero or negative. The current count and the player's decision (<code>\"Bet\"</code> or <code>\"Hold\"</code>) should be separated by a single space.",
-        "<strong>Example Output</strong><br><code>\"-3 Hold\"<br>\"5 Bet\"</code>",
-        "<strong>Hint</strong><br>Do NOT reset <code>count</code> to 0 when value is 7, 8, or 9."
+        "你需要写一个函数，实现21点算法，它根据参数 <code>card</code>的值来递增或递减变量<code>count</code>，函数返回一个由当前<code>count</code>和 <code>\"Bet\"</code>(<code>count>0</code>)或<code>\"Hold\"</code>(<code>count<=0</code>) 拼接的字符串。注意<code>count</code>和<code>\"Bet\"</code> 或 <code>\"Hold\"</code>应该用空格分开。",
+        "<strong>例如：</strong><br><code>\"-3 Hold\"<br>\"5 Bet\"</code>",
+        "<strong>提示</strong><br>既然card的值为7、8、9时，count值不变，那我们就可以忽略这种情况。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3139,17 +3139,17 @@
       "id": "56bbb991ad1ed5201cd392d0",
       "title": "Build JavaScript Objects",
       "description": [
-        "You may have heard the term <code>object</code> before.",
-        "Objects are similar to <code>arrays</code>, except that instead of using indexes to access and modify their data, you access the data in objects through what are called <code>properties</code>.",
-        "Here's a sample object:",
+        "你之前可能听说过对象 <code>object</code> 。",
+        "对象和数组很相似，数组是通过索引来访问和修改数据，对象是通过属性来访问和修改数据的。",
+        "这是一个示例对象：",
         "<blockquote>var cat = {<br>  \"name\": \"Whiskers\",<br>  \"legs\": 4,<br>  \"tails\": 1,<br>  \"enemies\": [\"Water\", \"Dogs\"]<br>};</blockquote>",
-        "Objects are useful for storing data in a structured way, and can represent real world objects, like a cat.",
+        "对象适合用来存储结构化数据，就和真实世界的对象一模一样，比如一只猫。",
         "<h4>任务</h4>",
-        "Make an object that represents a dog called <code>myDog</code> which contains the properties <code>\"name\"</code> (a string), <code>\"legs\"</code>, <code>\"tails\"</code> and <code>\"friends\"</code>.",
-        "You can set these object properties to whatever values you want, as long <code>\"name\"</code> is a string, <code>\"legs\"</code> and <code>\"tails\"</code> are numbers, and <code>\"friends\"</code> is an array."
+        "创建一个叫做<code>myDog</code>的对象，它里面有这些属性： <code>名称\"name\"</code>、 <code>腿\"legs\"</code>, <code>尾巴\"tails\"</code>、<code>朋友\"friends\"</code>。",
+        "你可以设置对象属性为任何你想要的值，只要 <code>\"name\"</code> 是字符串、 <code>\"legs\"</code> 和 <code>\"tails\"</code> 是数字、<code>\"friends\"</code> 是数组。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3186,12 +3186,12 @@
       "id": "56533eb9ac21ba0edf2244c7",
       "title": "Accessing Objects Properties with the Dot Operator",
       "description": [
-        "There are two ways to access the properties of an object: the dot operator (<code>.</code>) and bracket notation (<code>[]</code>), similar to an array.",
-        "The dot operator is what you use when you know the name of the property you're trying to access ahead of time.",
-        "Here is a sample of using the dot operator (<code>.</code>) to read an object property:",
+        "和数组一样，有两种方式访问对象属性，一个是点操作符(<code>.</code>)，一个是中括号操作符(<code>[]</code>)。",
+        "当你知道属性的名称的时候，使用点操作符。",
+        "这是一个使用点操作符读取对象属性的例子：",
         "<blockquote>var myObj = {<br>  prop1: \"val1\",<br>  prop2: \"val2\"<br>};<br>var prop1val = myObj.prop1; // val1<br>var prop2val = myObj.prop2; // val2</blockquote>",
         "<h4>任务</h4>",
-        "Read in the property values of <code>testObj</code> using dot notation. Set the variable <code>hatValue</code> equal to the object property <code>hat</code> and set the variable <code>shirtValue</code> equal to the object property <code>shirt</code>."
+        "通过点操作符读取对象<code>testObj</code>，把<code>hat</code>的属性值赋给变量<code>hatValue</code>，把<code>shirt</code>的属性值赋给<code>shirtValue</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3227,12 +3227,12 @@
       "id": "56533eb9ac21ba0edf2244c8",
       "title": "Accessing Objects Properties with Bracket Notation",
       "description": [
-        "The second way to access the properties of an object is bracket notation (<code>[]</code>). If the property of the object you are trying to access has a space in it, you will need to use bracket notation.",
-        "Here is a sample of using bracket notation to read an object property:",
+        "第二种访问对象的方式就是中括号操作符(<code>[]</code>)，如果你想访问的属性的名称有一个空格，这时你只能使用中括号操作符(<code>[]</code>)。",
+        "这是一个使用中括号操作符(<code>[]</code>)读取对象属性的例子：",
         "<blockquote>var myObj = {<br>  \"Space Name\": \"Kirk\",<br>  \"More Space\": \"Spock\"<br>};<br>myObj[\"Space Name\"]; // Kirk<br>myObj['More Space']; // Spock</blockquote>",
-        "提示 that property names with spaces in them must be in quotes (single or double).",
+        "提示：属性名称中如果有空格，必须把属性名称用单引号或双引号包裹起来。",
         "<h4>任务</h4>",
-        "Read the values of the properties <code>\"an entree\"</code> and <code>\"the drink\"</code> of <code>testObj</code> using bracket notation."
+        "用中括号操作符读取对象<code>testObj</code>的属性<code>\"an entree\"</code>值和属性<code>\"the drink\"</code>值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3268,14 +3268,14 @@
       "id": "56533eb9ac21ba0edf2244c9",
       "title": "Accessing Objects Properties with Variables",
       "description": [
-        "Another use of bracket notation on objects is to use a variable to access a property. This can be very useful for iterating through lists of the object properties or for doing the lookup.",
-        "Here is an example of using a variable to access a property:",
+        "中括号操作符的另一个使用方式是用变量来访问一个属性。当你需要遍历对象的属性列表或查表时，这种方式极为有用。",
+        "这有一个使用变量来访问属性的例子：",
         "<blockquote>var someProp = \"propName\";<br>var myObj = {<br>  propName: \"Some Value\"<br >}<br>myObj[someProp]; // \"Some Value\"</blockquote>",
-        "Here is one more:",
+        "还有更多：",
         "<blockquote>var myDog = \"Hunter\";<br>var dogs = {<br>  Fido: \"Mutt\",\n  Hunter: \"Doberman\",\n  Snoopie: \"Beagle\"<br >}<br>var breed = dogs[myDog]; // \"Hunter\"<br>console.log(breed)// \"Doberman\"</blockquote>",
-        "提示 that we  do <em>not</em> use quotes around the variable name when using it to access the property because we are using the <em>value</em> of the variable, not the <em>name</em>",
+        "提示：当我们通过变量名访问属性的时候，不需要给变量名包裹引号。因为实际上我们使用的是变量的值，而不是变量的名称。",
         "<h4>任务</h4>",
-        "Use the <code>playerNumber</code> variable to lookup player <code>16</code> in <code>testObj</code> using bracket notation."
+        "使用变量<code>playerNumber</code>，通过中括号操作符找到<code>testObj</code>中的16。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3310,18 +3310,17 @@
       "id": "56bbb991ad1ed5201cd392d1",
       "title": "Updating Object Properties",
       "description": [
-        "After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.",
-        "For example, let's look at <code>ourDog</code>:",
+        "当你创建了一个对象后，你可以用点操作符或中括号操作符来更新对象的属性。",
+        "举个例子，让我们看看 <code>ourDog</code>:",
         "<blockquote>var ourDog = {<br>  \"name\": \"Camper\",<br>  \"legs\": 4,<br>  \"tails\": 1,<br>  \"friends\": [\"everything!\"]<br>};</blockquote>",
-        "Since he's a particularly happy dog, let's change his name to \"Happy Camper\". Here's how we update his object's name property:",
-        "<code>ourDog.name = \"Happy Camper\";</code> or",
+        "让我们更改它的名称为 \"Happy Camper\"，这有两种方式来更新对象的<code>name</code>属性：",
+        "<code>ourDog.name = \"Happy Camper\";</code>",
         "<code>ourDog[\"name\"] = \"Happy Camper\";</code>",
-        "Now when we evaluate <code>ourDog.name</code>, instead of getting \"Camper\", we'll get his new name, \"Happy Camper\".",
         "<h4>任务</h4>",
-        "Update the <code>myDog</code> object's name property. Let's change her name from \"Coder\" to \"Happy Coder\". You can use either dot or bracket notation."
+        "更新 <code>myDog</code> 对象的<code>name</code>属性，让它的名字从 \"Coder\" 变成 \"Happy Coder\"。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3360,17 +3359,16 @@
       "id": "56bbb991ad1ed5201cd392d2",
       "title": "Add New Properties to a JavaScript Object",
       "description": [
-        "You can add new properties to existing JavaScript objects the same way you would modify them.",
-        "Here's how we would add a <code>\"bark\"</code> property to <code>ourDog</code>:",
+        "你也可以像更改属性一样给对象添加属性。",
+        "看看我们是如何给<code>ourDog</code>添加 <code>\"bark\"</code>属性：",
         "<code>ourDog.bark = \"bow-wow\";</code> ",
-        "or",
+        "或者",
         "<code>ourDog[\"bark\"] = \"bow-wow\";</code>",
-        "Now when we evaluate <code>ourDog.bark</code>, we'll get his bark, \"bow-wow\".",
         "<h4>任务</h4>",
-        "Add a <code>\"bark\"</code> property to <code>myDog</code> and set it to a dog sound, such as \"woof\". You may use either dot or bracket notation."
+        "给<code>myDog</code>添加一个<code>\"bark\"</code> 属性，设置它的值为狗的声音，例如：\"woof\"。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3408,13 +3406,13 @@
       "id": "56bbb991ad1ed5201cd392d3",
       "title": "Delete Properties from a JavaScript Object",
       "description": [
-        "We can also delete properties from objects like this:",
+        "我们同样可以删除对象的属性，例如：",
         "<code>delete ourDog.bark;</code>",
         "<h4>任务</h4>",
-        "Delete the <code>\"tails\"</code> property from <code>myDog</code>. You may use either dot or bracket notation."
+        "删除<code>myDog</code>对象的<code>\"tails\"</code>属性。"
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourDog = {",
         "  \"name\": \"Camper\",",
         "  \"legs\": 4,",
@@ -3455,11 +3453,11 @@
       "id": "56533eb9ac21ba0edf2244ca",
       "title": "Using Objects for Lookups",
       "description": [
-        "Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to \"lookup\" values rather than a <code>switch</code> statement or an <code>if/else</code> chain. This is most useful when you know that your input data is limited to a certain range.",
-        "Here is an example of a simple reverse alphabet lookup:",
+        "对象和字典一样，可以用来存储键/值对。如果你的数据跟对象一样，你可以用对象来查找你想要的值，而不是使用switch或if/else语句。当你知道你的输入数据在某个范围时，这种查找方式极为有效。",
+        "这是简单的反向字母表：",
         "<blockquote>var alpha = {<br>  1:\"Z\",<br>  2:\"Y\",<br>  3:\"X\",<br>  4:\"W\",<br>  ...<br>  24:\"C\",<br>  25:\"B\",<br>  26:\"A\"<br>};<br>alpha[2]; // \"Y\"<br>alpha[24]; // \"C\"<br><br>var value = 2;<br>alpha[value]; // \"Y\"</blockquote>",
         "<h4>任务</h4>",
-        "Convert the switch statement into a lookup table called <code>lookup</code>. Use it to lookup <code>val</code> and assign the associated string to the <code>result</code> variable."
+        "把switch语句转化为一个叫做lookup的对象。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3515,11 +3513,12 @@
       "id": "567af2437cbaa8c51670a16c",
       "title": "Testing Objects for Properties",
       "description": [
-        "Sometimes it is useful to check if the property of a given object exists or not. We can use the <code>.hasOwnProperty(propname)</code> method of objects to determine if that object has the given property name. <code>.hasOwnProperty()</code> returns <code>true</code> or <code>false</code> if the property is found or not.",
-        "<strong>Example</strong>",
+        "有时检查一个对象属性是否存在是非常有用的，我们可以用<code>.hasOwnProperty(propname)</code>方法来检查对象是否有该属性。如果有返回<code>true</code>，反之返回 <code>false</code>。",
+        "<strong>举例</strong>",
         "<blockquote>var myObj = {<br>  top: \"hat\",<br>  bottom: \"pants\"<br>};<br>myObj.hasOwnProperty(\"top\");    // true<br>myObj.hasOwnProperty(\"middle\"); // false</blockquote>",
         "<h4>任务</h4>",
-        "Modify the function <code>checkObj</code> to test <code>myObj</code> for <code>checkProp</code>. If the property is found, return that property's value. If not, return <code>\"Not Found\"</code>."
+        "修改函数<code>checkObj</code>检查<code>myObj</code>是否有<code>checkProp</code>属性，如果属性存在，返回属性对应的值，如果不存在，返回 <code>\"Not Found\"</code>。",
+        "注意：如果你需要通过变量来访问对象的属性值，请用中括号操作符，点操作符不支持变量。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3793,7 +3792,7 @@
         "Use a <code>for</code> loop to work to push the values 1 through 5 onto <code>myArray</code>."
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 0; i < 5; i++) {",
@@ -3833,7 +3832,7 @@
         "Push the odd numbers from 1 through 9 to <code>myArray</code> using a <code>for</code> loop."
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 0; i < 10; i += 2) {",
@@ -3874,7 +3873,7 @@
         "Push the odd numbers from 9 through 1 to <code>myArray</code> using a <code>for</code> loop."
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArray = [];",
         "",
         "for (var i = 10; i > 0; i -= 2) {",
@@ -3912,7 +3911,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "var ourArr = [ 9, 10, 11, 12];",
         "var ourTotal = 0;",
         "",
@@ -4161,7 +4160,7 @@
         "Create a function called <code>randomRange</code> that takes a range <code>myMin</code> and <code>myMax</code> and returns a random number that's greater than or equal to <code>myMin</code>, and is less than or equal to <code>myMax</code>, inclusive."
       ],
       "challengeSeed": [
-        "// Example",
+        "// 举例",
         "function ourFunction(ourMin, ourMax) {",
         "",
         "  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;",
@@ -4231,7 +4230,7 @@
         "// Setup",
         "var testString = \"Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.\";",
         "",
-        "// Example",
+        "// 举例",
         "var expressionToGetSoftware = /software/gi;",
         "var softwareCount = testString.match(expressionToGetSoftware).length;",
         "  ",
