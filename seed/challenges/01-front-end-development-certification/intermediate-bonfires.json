@@ -176,8 +176,8 @@
         "第一个参数是将要对其执行查找和替换的句子。",
         "第二个参数是将被替换掉的单词（替换前的单词）。",
         "第三个参数用于替换第二个参数（替换后的单词）。",
-        "注意：NOTE: Preserve the case of the original word when you are replacing it. For example if you mean to replace the word \"Book\" with the word \"dog\", it should be replaced as \"Dog\"",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "注意：替换时保持原单词的大小写。例如，如果你想用单词 \"dog\" 替换单词 \"Book\" ，你应该替换成 \"Dog\"。",
+        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function myReplace(str, before, after) {",
@@ -190,11 +190,11 @@
         "function myReplace(str, before, after) {\n  if (before.charAt(0) === before.charAt(0).toUpperCase()) {\n    after = after.charAt(0).toUpperCase() + after.substring(1);\n  } else {\n    after = after.charAt(0).toLowerCase() + after.substring(1);\n  }\n  return str.replace(before, after);\n}"
       ],
       "tests": [
-        "assert.deepEqual(myReplace(\"Let us go to the store\", \"store\", \"mall\"), \"Let us go to the mall\", 'message: <code>myReplace(\"Let us go to the store\", \"store\", \"mall\")</code> should return \"Let us go to the mall\".');",
-        "assert.deepEqual(myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\"), \"He is Sitting on the couch\", 'message: <code>myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")</code> should return \"He is Sitting on the couch\".');",
-        "assert.deepEqual(myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\"), \"This has a spelling error\", 'message: <code>myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\")</code> should return \"This has a spelling error\".');",
-        "assert.deepEqual(myReplace(\"His name is Tom\", \"Tom\", \"john\"), \"His name is John\", 'message: <code>myReplace(\"His name is Tom\", \"Tom\", \"john\")</code> should return \"His name is John\".');",
-        "assert.deepEqual(myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\"), \"Let us get back to more Algorithms\", 'message: <code>myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\")</code> should return \"Let us get back to more Algorithms\".');"
+        "assert.deepEqual(myReplace(\"Let us go to the store\", \"store\", \"mall\"), \"Let us go to the mall\", 'message: <code>myReplace(\"Let us go to the store\", \"store\", \"mall\")</code> 应该返回 \"Let us go to the mall\".');",
+        "assert.deepEqual(myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\"), \"He is Sitting on the couch\", 'message: <code>myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")</code> 应该返回 \"He is Sitting on the couch\".');",
+        "assert.deepEqual(myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\"), \"This has a spelling error\", 'message: <code>myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\")</code> 应该返回 \"This has a spelling error\".');",
+        "assert.deepEqual(myReplace(\"His name is Tom\", \"Tom\", \"john\"), \"His name is John\", 'message: <code>myReplace(\"His name is Tom\", \"Tom\", \"john\")</code> 应该返回 \"His name is John\".');",
+        "assert.deepEqual(myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\"), \"Let us get back to more Algorithms\", 'message: <code>myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\")</code> 应该返回 \"Let us get back to more Algorithms\".');"
       ],
       "type": "bonfire",
       "MDNlinks": [
