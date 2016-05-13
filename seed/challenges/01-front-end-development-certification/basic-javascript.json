@@ -3556,13 +3556,13 @@
       "id": "56533eb9ac21ba0edf2244cb",
       "title": "Introducing JavaScript Object Notation (JSON)",
       "description": [
-        "JavaScript Object Notation 或者简称 <code>JSON</code> 使用JavaScript的对象格式存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>字符串</dfn>，和 <dfn>对象</dfn> 的任意组合。",        
+        "JavaScript Object Notation 简称 <code>JSON</code>，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>字符串</dfn>，和 <dfn>对象</dfn> 的任意组合。",
         "这里是一个JSON对象的示例：",
         "<blockquote>var ourMusic = [<br>  {<br>    \"artist\": \"Daft Punk\",<br>    \"title\": \"Homework\",<br>    \"release_year\": 1997,<br>    \"formats\": [ <br>      \"CD\", <br>      \"Cassette\", <br>      \"LP\" ],<br>    \"gold\": true<br>  }<br>];</blockquote>",
-        "这是一个对象数组，并且对象是有关于每个专辑的 <dfn>基础信息</dfn>。它也有一个嵌套的 <code>格式</code> 的数组。附加相册记录可以被添加到数组的最上层。",
+        "这是一个对象数组，并且对象有各种关于专辑的 <dfn>详细信息</dfn>。它也有一个嵌套的 <code>formarts</code> 的数组。附加专辑记录可以被添加到数组的最上层。",
         "<strong>提示</strong><br>数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。",
         "<h4>任务</h4>",
-        "添加一个新专辑到 <code>myMusic</code> 的JSON对象。添加 <code>artist</code> 和 <code>title</code> 字符串，<code>release_year</code> 数字和 <code>formats</code> 的字符串数组。"
+        "添加一个新专辑到 <code>myMusic</code> 的JSON对象。添加 <code>artist</code> 和 <code>title</code> 字符串，<code>release_year</code> 数字和 <code>formats</code> 字符串数组。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3605,11 +3605,11 @@
       "id": "56533eb9ac21ba0edf2244cc",
       "title": "Accessing Nested Objects in JSON",
       "description": [
-        "JSON对象的属性和子属性可以通过串联起来的点或括号符来访问。",
+        "通过串联起来的点操作符或中括号操作符来访问JSON对象的嵌套属性。",
         "下面是一个嵌套的JSON对象：",
         "<blockquote>var ourStorage = {<br>  \"desk\": {<br>    \"drawer\": \"stapler\"<br>  },<br>  \"cabinet\": {<br>    \"top drawer\": { <br>      \"folder1\": \"a file\",<br>      \"folder2\": \"secrets\"<br>    },<br>    \"bottom drawer\": \"soda\"<br>  }<br>}<br>ourStorage.cabinet[\"top drawer\"].folder2;  // \"secrets\"<br>ourStorage.desk.drawer; // \"stapler\"</blockquote>",
         "<h4>任务</h4>",
-        "进入 <code>myStorage</code> 的JSON对象来检索 <code>glove box</code> 的内容。因为属性的名字带有空格，请使用中括号来访问这些属性的值。"
+        "检索JSON对象 <code>myStorage</code> 来检索嵌套 <code>glove box</code> 的值。因为属性的名字带有空格，请使用中括号操作符来访问属性的值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3653,11 +3653,11 @@
       "id": "56533eb9ac21ba0edf2244cd",
       "title": "Accessing Nested Arrays in JSON",
       "description": [
-        "正如我们在前面的例子已经看到，JSON对象可以包含嵌套对象和嵌套数组。与访问嵌套的对象类似，数组括号标记可以链接访问到嵌套数组。",
+        "正如我们在前面的例子所见，JSON对象可以嵌套对象和数组。与访问嵌套对象一样，用中括号操作符同样可以访问嵌套数组。",
         "下面是如何访问嵌套数组的例子：",
         "<blockquote>var ourPets = { <br>  \"cats\": [<br>    \"Meowzer\",<br>    \"Fluffy\",<br>    \"Kit-Cat\"<br>  ],<br>  \"dogs\": [<br>    \"Spot\",<br>    \"Bowser\",<br>    \"Frankie\"<br>  ]<br>};<br>ourPets.cats[1]; // \"Fluffy\"<br>ourPets.dogs[0]; // \"Spot\"</blockquote>",
         "<h4>任务</h4>",
-        "使用对象点和阵列括号标记来检索变量 <code>myPlants</code> 的第二棵树。"
+        "使用点操作符和中括号操作符来检索变量 <code>myPlants</code> 的第二棵树。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3708,14 +3708,13 @@
       "id": "56533eb9ac21ba0edf2244cf",
       "title": "Record Collection",
       "description": [
-        "您将得到记录集中里面的一个JSON对象（一小部分）。每一张专辑是由一个唯一的ID号标识，并具有多种属性。并非所有的专辑都有完整的信息。",
-        "编写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
-        "对于给定的在 <code>集合</code 中的 <code>id</code>：",
-        "If <code>value</code> is non-blank (<code>value !== \"\"</code>) and <code>prop</code> is not <code>\"tracks\"</code> then update or set the <code>value</code> for the <code>prop</code>.",
-        "如果 <code>prop</code> 等于 <code>\"tracks\"</code>，并且 <code>value</code> 不为空,把 <code>value</code> 插入到 <code>tracks</code> 数组的末尾。",        
+        "右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id数字标识，并具有多种属性。并非所有的专辑都有完整的信息。",
+        "写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
+        "如果 <code>prop</code> 不等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code> 更新为<code>prop</code> 的值。",
+        "如果 <code>prop</code> 等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code>追加到<code>tracks</code>数组。",
         "如果 <code>value</code> 为空，删除 <code>prop</code>。",
-        "总是返回整个集合对象。",
-        "<strong>提示</strong><br>不要忘记使用 <code>括号标记</code> 当 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的属性</a> 的时候。"
+        "记住：函数返回的永远是整个对象。",
+        "<strong>提示</strong><br>使用中括号操作符来 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的变量属性</a>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3778,18 +3777,19 @@
       "id": "cf1111c1c11feddfaeb5bdef",
       "title": "Iterate with JavaScript For Loops",
       "description": [
-        "您可以通过使用一个循环多次运行相同的代码。",
-        "JavaScript 循环最常见的类型称为“<code>for循环</code>”，因为它运行的时候，使用“for”来指定特定次数。",
-        "For循环中的三个可选表达式用分号隔开：",
-        "<code>for ([初始化]; [条件]; [最终表达式])</code>",
-        "<code>初始化</ code>语句只会在执行循环开始之前执行一次。它通常用于定义和设置您的循环变量。",
-        "<code>条件</code> 语句会在每一轮循环的开始执行，只要演算值为 <code>true</code> 就会继续执行循环。当 <code>条件</code> 为 <code>false</code>的时候，循环将停止执行。这意味着，如果 <code>条件</code> 在一开始就为 <code>false</code>，这个循环将不会执行。",
-        "<code>最终表达式</code> 语句是在每一轮循环结束时执行，在接下来的 <code>条件</code> 执行之前检查，通常用于递增或递减的循环计数器。",
-        "在下面的例子中，我们初始化的<code>i = 0</ code>，然后循环重复，而我们的条件 <code>i < 5</ code> 为真。我们将在 code>最终表达式</code> 值使用 <code>i++</代码> 来让每次循环的i的值每次 +1。",        
+        "一个条件语句只能执行一次代码，而一个循环语句可以多次执行代码。",
+        "JavaScript 中最常见的循环就是“<code>for循环</code>”。",
+        "for循环中的三个表达式用分号隔开：",
+        "<code>for ([初始化]; [条件判断]; [计数器])</code>",
+        "<code>初始化</code>语句只会在执行循环开始之前执行一次。它通常用于定义和设置你的循环变量。",
+        "<code>条件判断</code>语句会在每一轮循环的开始执行，只要条件判断为 <code>true</code> 就会继续执行循环。当条件为 <code>false</code>的时候，循环将停止执行。这意味着，如果条件在一开始就为 <code>false</code>，这个循环将不会执行。",
+        "<code>计数器</code>是在每一轮循环结束时执行，通常用于递增或递减。",
+        "在下面的例子中，先初始化<code>i = 0</code>，条件 <code>i < 5</code> 为真，进入第一次循环，执行大括号里的代码，第一次循环结束。递增<code>i</code>的值，条件判断，就这样依次执行下去，直到条件判断为假，整个循环结束。",
         "<blockquote>var ourArray = [];<br>for (var i = 0; i < 5; i++) {<br>  ourArray.push(i);<br>}</blockquote>",
         "最终 <code>ourArray</code> 的值为 <code>[0,1,2,3,4]</code>.",
         "<h4>任务</h4>",
-        "使用 <code>for</code> 循环把从 1 到 5 添加进 <code>myArray</code> 中。"
+        "使用 <code>for</code> 循环把从 1 到 5 添加进 <code>myArray</code> 中。",
+        "for循环就是if条件语句的进化版。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3823,13 +3823,14 @@
       "id": "56104e9e514f539506016a5c",
       "title": "Iterate Odd Numbers With a For Loop",
       "description": [
-        "for循环不必每次只迭代一次。通过改变我们的 <code>最终表达式</code>，我们可以通过偶数计数。",
-        "我们初始 <code>i = 0</code>，并且当 <code>i < 10</code> 的时候继续循环。我们使用 <code>i += 2</code>，让 <code>i</code> 每次循环之后增加 2。",
+        "for循环可以按照我们指定的顺序来迭代，通过更改我们的 <code>计数器</code>，我们可以按照偶数顺序来迭代。",
+        "初始化 <code>i = 0</code>，当 <code>i < 10</code> 的时候继续循环。",
+        "<code>i += 2</code> 让 <code>i</code> 每次循环之后增加2。",
         "<blockquote>var ourArray = [];<br>for (var i = 0; i < 10; i += 2) {<br>  ourArray.push(i);<br>}</blockquote>",
         "循环结束后，<code>ourArray</code> 的值为 <code>[0,2,4,6,8]</code>。",
-        "改变 <code>初始化</code>，这样我们可以用奇数来数。",
+        "改变 <code>计数器</code>，这样我们可以用奇数来数。",
         "<h4>任务</h4>",
-        "使用一个 <code>for</code> 循环，把从1到9的奇数添加到 <code>myArray</code>。"
+        "写一个 <code>for</code> 循环，把从1到9的奇数添加到 <code>myArray</code>。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3863,14 +3864,14 @@
       "id": "56105e7b514f539506016a5e",
       "title": "Count Backwards With a For Loop",
       "description": [
-        "一个for循环也可以倒着数，只要我们可以定义合适的条件。",
-        "为了能够让从后往前两两倒数，我们需要改变我们的 <code>初始化</code>，<code>条件</code> 和 <code>最后表达式</code>。",
-        "一开始我们让 <code>i = 10</code>，并且当 <code>i > 0</code> 的时候才循环。我们使用 <code>i -= 2</code> 来让 <code>i</code> 每次循环之后减去 2。",
+        "for循环也可以逆向迭代，只要我们定义好合适的条件。",
+        "为了能够从后往前两两倒数，我们需要改变我们的 <code>初始化</code>，<code>条件判断</code> 和 <code>计数器</code>。",
+        "我们让 <code>i = 10</code>，并且当 <code>i > 0</code> 的时候才继续循环。我们使用 <code>i-=2</code> 来让 <code>i</code> 每次循环递减 2。",
         "<blockquote>var ourArray = [];<br>for (var i=10; i > 0; i-=2) {<br>  ourArray.push(i);<br>}</blockquote>",
         "循环结束后，<code>ourArray</code> 的值为 <code>[10,8,6,4,2]</code>。",
-        "让我们改变 <code>初始化</code> 和 <code>最终表达式</code>，这样我们就可以按照奇数从后往前两两倒着数。",
+        "让我们改变 <code>初始化</code> 和 <code>计数器</code>，这样我们就可以按照奇数从后往前两两倒着数。",
         "<h4>任务</h4>",
-        "使用一个 <code>for</code> 循环，把奇数从 9 到 1 添加进 <code>myArray</code>。"
+        "使用一个 <code>for</code> 循环，把9到1的奇数添加进 <code>myArray</code>。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3903,9 +3904,10 @@
       "id": "5675e877dbd60be8ad28edc6",
       "title": "Iterate Through an Array with a For Loop",
       "description": [
-        "在 JavaScript 中常见的任务是通过一个数组的内容进行循环迭代。做到这一点的方法之一是使用 <code>for</code> 循环。此代码将输出数组  <code>arr</code> 的每个元素到的控制台：",
+        "迭代输出一个数组的每个元素是 JavaScript 中的常见需求， <code>for</code> 循环可以做到这一点。",
+        "下面的代码将输出数组  <code>arr</code> 的每个元素到控制台：",
         "<blockquote>var arr = [10,9,8,7,6];<br>for (var i=0; i < arr.length; i++) {<br>   console.log(arr[i]);<br>}</blockquote>",
-        "记住数组具有从零开始编号的，这意味着数组的最后一个元素的下标是，数组的长度 - 1。我们这个循环的 <dfn>条件</dfn> 是 <code>i < arr.length</code>，它在当 <code>i</code> 的值为 长度-1 的时候停止。",        
+        "记住数组的索引从零开始的，这意味着数组的最后一个元素的下标是：数组的长度 - 1。我们这个循环的 <dfn>条件</dfn> 是 <code>i < arr.length</code>，当 <code>i</code> 的值为 长度-1 的时候循环就停止了。",
         "<h4>任务</h4>",
         "声明并初始化一个变量 <code>total</code> 为 <code>0</code>。使用 <code>for</code> 循环，使得 <code>total</code> 的值为 <code>myArr</code> 的数组中的每个元素的值的总和。"
       ],
