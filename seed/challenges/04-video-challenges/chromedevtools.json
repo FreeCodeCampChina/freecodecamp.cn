@@ -95,26 +95,26 @@
       "id": "56b15f15632298c12f315181",
       "title": "Chrome Dev Tools: Timeline",
       "description": [
-        "The Timeline panel lets you record and analyze all the activity in your application as it runs. It's the best place to start investigating perceived performance issues in your application.",
-        "Just like you use network to find out how long things take to communicate with the internet and you use sources to find out where something is broken, you can use the timeline to figure out what's going on and how long it takes in even more detail.",
-        "With the timeline you record events using the small circle button. You can record (or capture) stacks, profile js, memory, and paint (CSS).",
-        "When you record (capture) these, it sets them up in small, detailed logs that you can organize many ways to fit you.",
-        "All of this will help you to better understand what's happening in the browser, particularly which events require more browser memory than others.",
-        "When you're using timeline, remember to use this 'clear' button and to start recording before you load the page, depending on what you want to capture.",
-        "You'll notice that when you record JS events, clicking on the title or 'function call' on the left will take you to the document and line of that function using the resource panel.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/profile-performance/evaluate-performance/timeline-tool' target='_blank'>developers.google.com/web/tools/profile-performance/evaluate-performance/timeline-tool</a>"
+        "Timeline 面板可以在应用运行时记录和分析所有行为。此处最适合分析应用性能问题。",
+        "就像通过network标签找出时间耗费，通过sources标签找出有问题的代码一样，通过Timeline可以观察到更多详细细节。",
+        "使用点击timeline的圆形按钮，你可以记录（捕获）堆栈，js性能，内存和图形绘制(CSS)等信息。",
+        "chrome会以小粒度的详细日志来展现这些信息，可以通过很多种形式来查看。",
+        "所有这些信息可以帮助你很好地理解浏览器中发生的行为，尤其是发现内存占用比较多的事件。",
+        "在加载新页面之前记得先点击'clear'按钮再开始记录。",
+        "当记录JS事件时，点击title或左侧的'function call'，会重定向到resource标签，同时定位到函数所在位置的代码行。",
+        "更多详细内容请访问: <a href='http://developers.google.com/web/tools/profile-performance/evaluate-performance/timeline-tool' target='_blank'>developers.google.com/web/tools/profile-performance/evaluate-performance/timeline-tool</a>"
       ],
       "challengeSeed": [
         "137188786"
       ],
       "tests": [
         [
-          "The 'Timeline' tab records how long it takes APIs to return information.",
+          "Timeline标签页记录API返回信息所需时间。",
           false,
-          "The 'Timeline' tab is best utilized as a starting place for performance issues that relate to speed and memory usage"
+          "Timeline标签页最好用于速度和内存使用的性能问题分析。"
         ],
         [
-          "You need to press 'record' to start capturing information when using the 'Timeline' tab.",
+          "使用Timeline标签页时，需要点击'record'按钮来记录信息。",
           true
         ]
       ],
