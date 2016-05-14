@@ -4080,11 +4080,12 @@
       "id": "cf1111c1c11feddfaeb9bdef",
       "title": "Generate Random Fractions with JavaScript",
       "description": [
-        "Random numbers are useful for creating random behavior.",
-        "JavaScript has a <code>Math.random()</code> function that generates a random decimal number between <code>0</code> (inclusive) and not quite up to <code>1</code> (exclusive). Thus <code>Math.random()</code> can return a <code>0</code> but never quite return a <code>1</code>",
-        "<strong>提示</strong><br>Like <a href='waypoint-storing-values-with-the-equal-operator' target='_blank'>Storing Values with the Equal Operator</a>, all function calls will be resolved before the <code>return</code> executes, so we can simply <code>return</code> the value of the <code>Math.random()</code> function.",
+        "计算机的行为只有两种：确定性和随机性。当你一步步地闯关来到这里就是确定行为，当你随意点了个链接就来到这里就是随机行为。",
+        "而随机数最适合用来创建这种随机行为。",
+        "<code>Math.random()</code>用来生成一个在0(包括0)到1(不包括1)之间的随机小数，因此<code>Math.random()</code>可能返回0但绝不会返回1。",
+        "<strong>提示</strong><br>随后的函数都会在<code>return</code>执行前调用，所以我们可以直接返回<code>Math.random()</code>的值。",
         "<h4>任务</h4>",
-        "Change <code>myFunction</code> to return a random number instead of returning <code>0</code>."
+        "更改<code>myFunction</code> 来生成一个随机数取代 <code>0</code>。"
       ],
       "challengeSeed": [
         "function myFunction() {",
@@ -4114,14 +4115,14 @@
       "id": "cf1111c1c12feddfaeb1bdef",
       "title": "Generate Random Whole Numbers with JavaScript",
       "description": [
-        "It's great that we can generate random decimal numbers, but it's even more useful if we use it to generate random whole numbers.",
-        "<ol><li>Use <code>Math.random()</code> to generate a random decimal.</li><li>Multiply that random decimal by <code>20</code>.</li><li>Use another function, <code>Math.floor()</code> to round the number down to its nearest whole number.</li></ol>",
-        "Remember that <code>Math.random()</code> can never quite return a <code>1</code> and, because we're rounding down, it's impossible to actually get <code>20</code>. This technique will give us a whole number between <code>0</code> and <code>19</code>.",
-        "Putting everything together, this is what our code looks like:",
+        "生成随机小数很棒，但随机数更有用的地方在于生成随机整数。",
+        "<ol><li>用 <code>Math.random()</code> 生成一个随机小数。</li><li>把这个随机小数乘以 <code>20</code>。</li><li>用 <code>Math.floor()</code> 向下取整 获得它最近的整数。</li></ol>",
+        "记住 <code>Math.random()</code> 永远不会返回 <code>1</code>。同时因为我们是在用 <code>Math.floor()</code> 向下取整，所以最终我们获得的结果不可能有 <code>20</code>。这确保了我们获得了一个在0到19之间的整数。",
+        "把操作连缀起来，代码类似于下面：",
         "<code>Math.floor(Math.random() * 20);</code>",
-        "We are calling <code>Math.random()</code>, multiplying the result by 20, then passing the value to <code>Math.floor()</code> function to round the value down to the nearest whole number.",
+        "我们先调用 <code>Math.random()</code>，把它的结果乘以20，然后把上一步的结果传给 <code>Math.floor()</code>，最终通过向下取整获得最近的整数。",
         "<h4>任务</h4>",
-        "Use this technique to generate and return a random whole number between <code>0</code> and <code>9</code>."
+        "生成一个 <code>0</code> 到 <code>9</code>之间的随机整数。"
       ],
       "challengeSeed": [
         "var randomNumberBetween0and19 = Math.floor(Math.random() * 20);",
