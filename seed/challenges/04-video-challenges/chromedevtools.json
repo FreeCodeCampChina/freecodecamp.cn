@@ -7,7 +7,7 @@
       "id": "56b15f15632298c12f315184",
       "title": "Chrome Dev Tools: Elements",
       "description": [
-        "这个课程只对 Chrome 开发工具中的Elements(元素)标签做基本介绍,更多详细介绍请点击: <a href='http://developers.google.com/web/tools/iterate/inspect-styles/basics' target='_blank'>developers.google.com/web/tools/iterate/inspect-styles/basics</a>",
+        "这个课程只对Chrome开发工具中的Elements(元素)标签做基本介绍,更多详细介绍请点击: <a href='http://developers.google.com/web/tools/iterate/inspect-styles/basics' target='_blank'>developers.google.com/web/tools/iterate/inspect-styles/basics</a>",
         "我们接下来会在每个小节中中使用Free Code Camp用户kmiasko的网站 mckellen.com/ 来做演示。",
         "在chrome浏览器中右击选中'Inspect element'即可访问elements标签，然后你就可以随便修改元素文本，元素标签和任何其他CSS或者HTML。",
         "这些修改不会自动保存，不能当做IDE或者可以保存内容的编辑器。你可以使用chrome中的'persistent authoring'功能去保存更改。",
@@ -152,7 +152,7 @@
       "id": "56b15f15632298c12f31517f",
       "title": "Chrome Dev Tools: Resources",
       "description": [
-        "Resources 面板可以显示已经加载的资源，包括： IndexedDB，Web SQL数据库，local storage，session storage，cookies，Application Cache, 图片, 字体和样式表。",
+        "Resources 面板可以显示已经加载的资源，包括：IndexedDB，Web SQL数据库，local storage，session storage，cookies，Application Cache, 图片, 字体和样式表。",
         "可以在浏览器中查看和修改所有这些信息。",
         "当你进行高级网站构建时，resources 面板可以帮你更好的理解app和页面的实时性要求。",
         "更多详细内容请访问：<a href='http://developers.google.com/web/tools/iterate/manage-data/index' target='_blank'>developers.google.com/web/tools/iterate/manage-data/index</a>"
