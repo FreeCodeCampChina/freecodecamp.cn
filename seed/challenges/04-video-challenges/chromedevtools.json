@@ -173,25 +173,25 @@
       "id": "56b15f15632298c12f31517e",
       "title": "Chrome Dev Tools: Audits",
       "description": [
-        "The Audit tool walks you through how to improve your page step by step.",
-        "In this video, we use this tool on the quote generator that I made as a front end development project.",
-        "The suggestions you'd get using the Audit tool are generated automatically.",
-        "This is important to keep in mind so you can contextualize them with your other knowledge of your site.",
-        "Sometimes, it might be right, but sometimes, for your situation it might be wrong.",
-        "Use this tool when you want to improve your site or app, but you aren't sure where to start."
+        "Audit 工具帮助你逐步改善你的页面。",
+        "在这段视频中，我把这个工具用在我的名言生成应用中，该项目是当做课程中的前端开发项目。",
+        "Audit 工具会自动给你提供改进建议。",
+        "使用时需要注意和其他知识联系起来。",
+        "有时它提供的建议是正确的， 但是也有可能是错误的。",
+        "当你想要优化你的网站或应用，但是你不知道从哪里着手时，可以从使用这个工具开始。"
       ],
       "challengeSeed": [
         "137194227"
       ],
       "tests": [
         [
-          "The Audit tab will suggest ways to improve a webpage.",
+          "Audit 标签页会提供网页改进建议。",
           true
         ],
         [
-          "While you don't NEED to do everything suggested, you probably should.",
+          "虽然你不需要按照它提供的所有建议，但是最好这么做。",
           false,
-          "If you don't understand an error or suggestion, do more research before making major changes."
+          "如果你不理解工具提出的错误或建议，最好在修改前多做些功课。"
         ]
       ],
       "type": "hike",
