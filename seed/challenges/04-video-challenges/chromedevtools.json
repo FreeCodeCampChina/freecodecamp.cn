@@ -37,24 +37,24 @@
       "id": "56b15f15632298c12f315183",
       "title": "Chrome Dev Tools: Network",
       "description": [
-        "The network tab helps answer questions like 'Which element or part of the page took the longest?' or 'What initiated a request?'.",
-        "The network panel records detailed information about how long each element of your page or app takes to load.",
-        "Every request is recorded in the log, which can be found lower in the network panel.",
-        "If you look at the line on the side, you'll notice a pattern of colors. Those colors each represent a different type of content in the request.",
-        "The longer the line is a certain color, the longer that type of content took in that request. Ultimately, you want short lines, and if any request has long lines, you know what may be slowing down the web page.",
-        "If you click a request in the log, you can get even more detailed information.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/profile-performance/network-performance/resource-loading' target='_blank'>developers.google.com/web/tools/profile-performance/network-performance/resource-loading</a>"
+        "network标签页是用来回答'页面中哪个部分最耗时间'或'哪个调用初始化了网络请求'",
+        "network仪表盘记录了页面中每个元素加载的详细信息。",
+        "每一个请求都记录在network仪表盘的底部日志中",
+        "观察底部的线条，你会注意到彩色图案。每一个颜色都代表了请求中的不同类型内容。",
+        "线越长代表网络耗时越大，我们最终目标就是缩短线长。如果出现长线条，说明某些内容拖慢了整个网页。",
+        "点击请求日志，会看到更加详细的请求信息。",
+        "更多详细内容请访问: <a href='http://developers.google.com/web/tools/profile-performance/network-performance/resource-loading' target='_blank'>developers.google.com/web/tools/profile-performance/network-performance/resource-loading</a>"
       ],
       "challengeSeed": [
         "137187539"
       ],
       "tests": [
         [
-          "The Network tab is a good place to look to determine what requests are being made and how long they're taking.",
+          "Network标签页可以用来判断发生了那些请求及其耗时",
           true
         ],
         [
-          "Like all of the tabs in Chrome Developer tools, there are many ways to view and utilize the information it offers.",
+          "和很多Chrome开发者工具中的标签一样，有很多种形式来观察和使用Chrome提供的信息",
           true
         ]
       ],
