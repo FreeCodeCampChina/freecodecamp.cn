@@ -14,7 +14,7 @@
         "记住这里层叠，继承和其他CSS规则都可以使用，另外，被覆盖的式样会以穿越文字的横线的形式展示。",
         "需要注意的是现在\"树\"中看到的代码是当前的HTML，而不是页面加载时的代码。如果你用JavaScript或Jquery来改变页面元素，\"树\"就会更新。",
         "Padding，border和margin都很容易在右下角的彩色盒子里面检查和编辑。",
-        "更多详细内容请访问Chrome开发工具文档<a href='http://developers.google.com/web/tools/chrome-devtools/' target='_blank'>http://developers.google.com/web/tools/chrome-devtools/</a>a>"
+        "更多详细内容请访问Chrome开发工具文档： <a href='http://developers.google.com/web/tools/iterate/inspect-styles/basics' target='_blank'>developers.google.com/web/tools/iterate/inspect-styles/basics</a>"
       ],
       "challengeSeed": [
         "137186237"
