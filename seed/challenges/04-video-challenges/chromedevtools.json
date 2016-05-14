@@ -125,23 +125,23 @@
       "id": "56b15f15632298c12f315180",
       "title": "Chrome Dev Tools: Profiles",
       "description": [
-        "The Profiles panel lets you profile the execution time and memory usage of a web app or page. This primarily applies to the JavaScript running on your page or app.",
-        "There are three types of profiles you can collect: CPU profile, HEAP snapshot, and HEAP profile. HEAP profiles have more to do with memory usage, while a CPU profile has more to do with JavaScript performance.",
-        "A profiler called V8 is used while your code runs to pinpoint what in the JavaScript takes the most time, making it easy to optimize your code.",
-        "Each of these profiles can be viewed on the left, and you can take multiple profiles of each. Overall, the profiles tab is helpful when optimizing code.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/profile-performance/rendering-tools/js-execution' target='_blank'>developers.google.com/web/tools/profile-performance/rendering-tools/js-execution</a>"
+        "Profiles 面板可以提供web应用或页面的执行时间和内存，主要是针对运行于页面或app上的JavaScript。",
+        "这里可以收集到3种类型的概述信息: CPU profile，HEAP snapshot和HEAP profile。HEAP profiles更多的和内存使用信息相关，CPU profile和JavaScript性能相关。",
+        "V8分析器可以帮助定位JavaScript中的性能问题，有助于优化代码。",
+        "每一个profile都可以在左侧查看，可以对每个页面采集多个profile。总体而言，profiles标签页非常适合优化代码。",
+        "更多详细内容请访问：<a href='http://developers.google.com/web/tools/profile-performance/rendering-tools/js-execution' target='_blank'>developers.google.com/web/tools/profile-performance/rendering-tools/js-execution</a>"
       ],
       "challengeSeed": [
         "137189330"
       ],
       "tests": [
         [
-          "When you take a profile or a snapshot, the information that's collected will be viewable in only one format.",
+          "采集的profile或快照信息只能以一种展现形式查看。",
           false,
-          "Like all of the tabs in Chrome Dev Tools, there are multiple ways to view and interpret information."
+          "和其他Chrome开发工具一样，有很多种展现形式来理解信息。"
         ],
         [
-          "After hitting 'record', consider refreshing the page depending on what data you are trying to capture. ",
+          "点击'record'后，针对你需要捕获的页面进行刷新。",
           true
         ]
       ],
