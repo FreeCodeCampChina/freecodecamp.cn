@@ -3556,13 +3556,13 @@
       "id": "56533eb9ac21ba0edf2244cb",
       "title": "Introducing JavaScript Object Notation (JSON)",
       "description": [
-        "JavaScript Object Notation 或者简称 <code>JSON</code> 使用JavaScript的对象格式存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>字符串</dfn>，和 <dfn>对象</dfn> 的任意组合。",        
+        "JavaScript Object Notation 简称 <code>JSON</code>，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>字符串</dfn>，和 <dfn>对象</dfn> 的任意组合。",
         "这里是一个JSON对象的示例：",
         "<blockquote>var ourMusic = [<br>  {<br>    \"artist\": \"Daft Punk\",<br>    \"title\": \"Homework\",<br>    \"release_year\": 1997,<br>    \"formats\": [ <br>      \"CD\", <br>      \"Cassette\", <br>      \"LP\" ],<br>    \"gold\": true<br>  }<br>];</blockquote>",
-        "这是一个对象数组，并且对象是有关于每个专辑的 <dfn>基础信息</dfn>。它也有一个嵌套的 <code>格式</code> 的数组。附加相册记录可以被添加到数组的最上层。",
+        "这是一个对象数组，并且对象有各种关于专辑的 <dfn>详细信息</dfn>。它也有一个嵌套的 <code>formarts</code> 的数组。附加专辑记录可以被添加到数组的最上层。",
         "<strong>提示</strong><br>数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。",
         "<h4>任务</h4>",
-        "添加一个新专辑到 <code>myMusic</code> 的JSON对象。添加 <code>artist</code> 和 <code>title</code> 字符串，<code>release_year</code> 数字和 <code>formats</code> 的字符串数组。"
+        "添加一个新专辑到 <code>myMusic</code> 的JSON对象。添加 <code>artist</code> 和 <code>title</code> 字符串，<code>release_year</code> 数字和 <code>formats</code> 字符串数组。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3605,11 +3605,11 @@
       "id": "56533eb9ac21ba0edf2244cc",
       "title": "Accessing Nested Objects in JSON",
       "description": [
-        "JSON对象的属性和子属性可以通过串联起来的点或括号符来访问。",
+        "通过串联起来的点操作符或中括号操作符来访问JSON对象的嵌套属性。",
         "下面是一个嵌套的JSON对象：",
         "<blockquote>var ourStorage = {<br>  \"desk\": {<br>    \"drawer\": \"stapler\"<br>  },<br>  \"cabinet\": {<br>    \"top drawer\": { <br>      \"folder1\": \"a file\",<br>      \"folder2\": \"secrets\"<br>    },<br>    \"bottom drawer\": \"soda\"<br>  }<br>}<br>ourStorage.cabinet[\"top drawer\"].folder2;  // \"secrets\"<br>ourStorage.desk.drawer; // \"stapler\"</blockquote>",
         "<h4>任务</h4>",
-        "进入 <code>myStorage</code> 的JSON对象来检索 <code>glove box</code> 的内容。因为属性的名字带有空格，请使用中括号来访问这些属性的值。"
+        "检索JSON对象 <code>myStorage</code> 来检索嵌套 <code>glove box</code> 的值。因为属性的名字带有空格，请使用中括号操作符来访问属性的值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3653,11 +3653,11 @@
       "id": "56533eb9ac21ba0edf2244cd",
       "title": "Accessing Nested Arrays in JSON",
       "description": [
-        "正如我们在前面的例子已经看到，JSON对象可以包含嵌套对象和嵌套数组。与访问嵌套的对象类似，数组括号标记可以链接访问到嵌套数组。",
+        "正如我们在前面的例子所见，JSON对象可以嵌套对象和数组。与访问嵌套对象一样，用中括号操作符同样可以访问嵌套数组。",
         "下面是如何访问嵌套数组的例子：",
         "<blockquote>var ourPets = { <br>  \"cats\": [<br>    \"Meowzer\",<br>    \"Fluffy\",<br>    \"Kit-Cat\"<br>  ],<br>  \"dogs\": [<br>    \"Spot\",<br>    \"Bowser\",<br>    \"Frankie\"<br>  ]<br>};<br>ourPets.cats[1]; // \"Fluffy\"<br>ourPets.dogs[0]; // \"Spot\"</blockquote>",
         "<h4>任务</h4>",
-        "使用对象点和阵列括号标记来检索变量 <code>myPlants</code> 的第二棵树。"
+        "使用点操作符和中括号操作符来检索变量 <code>myPlants</code> 的第二棵树。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3708,14 +3708,13 @@
       "id": "56533eb9ac21ba0edf2244cf",
       "title": "Record Collection",
       "description": [
-        "您将得到记录集中里面的一个JSON对象（一小部分）。每一张专辑是由一个唯一的ID号标识，并具有多种属性。并非所有的专辑都有完整的信息。",
-        "编写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
-        "对于给定的在 <code>集合</code 中的 <code>id</code>：",
-        "If <code>value</code> is non-blank (<code>value !== \"\"</code>) and <code>prop</code> is not <code>\"tracks\"</code> then update or set the <code>value</code> for the <code>prop</code>.",
-        "如果 <code>prop</code> 等于 <code>\"tracks\"</code>，并且 <code>value</code> 不为空,把 <code>value</code> 插入到 <code>tracks</code> 数组的末尾。",        
+        "右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id数字标识，并具有多种属性。并非所有的专辑都有完整的信息。",
+        "写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
+        "如果 <code>prop</code> 不等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code> 更新为<code>prop</code> 的值。",
+        "如果 <code>prop</code> 等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code>追加到<code>tracks</code>数组。",
         "如果 <code>value</code> 为空，删除 <code>prop</code>。",
-        "总是返回整个集合对象。",
-        "<strong>提示</strong><br>不要忘记使用 <code>括号标记</code> 当 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的属性</a> 的时候。"
+        "记住：函数返回的永远是整个对象。",
+        "<strong>提示</strong><br>使用中括号操作符来 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的变量属性</a>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3778,18 +3777,19 @@
       "id": "cf1111c1c11feddfaeb5bdef",
       "title": "Iterate with JavaScript For Loops",
       "description": [
-        "您可以通过使用一个循环多次运行相同的代码。",
-        "JavaScript 循环最常见的类型称为“<code>for循环</code>”，因为它运行的时候，使用“for”来指定特定次数。",
-        "For循环中的三个可选表达式用分号隔开：",
-        "<code>for ([初始化]; [条件]; [最终表达式])</code>",
-        "<code>初始化</ code>语句只会在执行循环开始之前执行一次。它通常用于定义和设置您的循环变量。",
-        "<code>条件</code> 语句会在每一轮循环的开始执行，只要演算值为 <code>true</code> 就会继续执行循环。当 <code>条件</code> 为 <code>false</code>的时候，循环将停止执行。这意味着，如果 <code>条件</code> 在一开始就为 <code>false</code>，这个循环将不会执行。",
-        "<code>最终表达式</code> 语句是在每一轮循环结束时执行，在接下来的 <code>条件</code> 执行之前检查，通常用于递增或递减的循环计数器。",
-        "在下面的例子中，我们初始化的<code>i = 0</ code>，然后循环重复，而我们的条件 <code>i < 5</ code> 为真。我们将在 code>最终表达式</code> 值使用 <code>i++</代码> 来让每次循环的i的值每次 +1。",        
+        "一个条件语句只能执行一次代码，而一个循环语句可以多次执行代码。",
+        "JavaScript 中最常见的循环就是“<code>for循环</code>”。",
+        "for循环中的三个表达式用分号隔开：",
+        "<code>for ([初始化]; [条件判断]; [计数器])</code>",
+        "<code>初始化</code>语句只会在执行循环开始之前执行一次。它通常用于定义和设置你的循环变量。",
+        "<code>条件判断</code>语句会在每一轮循环的开始执行，只要条件判断为 <code>true</code> 就会继续执行循环。当条件为 <code>false</code>的时候，循环将停止执行。这意味着，如果条件在一开始就为 <code>false</code>，这个循环将不会执行。",
+        "<code>计数器</code>是在每一轮循环结束时执行，通常用于递增或递减。",
+        "在下面的例子中，先初始化<code>i = 0</code>，条件 <code>i < 5</code> 为真，进入第一次循环，执行大括号里的代码，第一次循环结束。递增<code>i</code>的值，条件判断，就这样依次执行下去，直到条件判断为假，整个循环结束。",
         "<blockquote>var ourArray = [];<br>for (var i = 0; i < 5; i++) {<br>  ourArray.push(i);<br>}</blockquote>",
         "最终 <code>ourArray</code> 的值为 <code>[0,1,2,3,4]</code>.",
         "<h4>任务</h4>",
-        "使用 <code>for</code> 循环把从 1 到 5 添加进 <code>myArray</code> 中。"
+        "使用 <code>for</code> 循环把从 1 到 5 添加进 <code>myArray</code> 中。",
+        "for循环就是if条件语句的进化版。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3823,13 +3823,14 @@
       "id": "56104e9e514f539506016a5c",
       "title": "Iterate Odd Numbers With a For Loop",
       "description": [
-        "for循环不必每次只迭代一次。通过改变我们的 <code>最终表达式</code>，我们可以通过偶数计数。",
-        "我们初始 <code>i = 0</code>，并且当 <code>i < 10</code> 的时候继续循环。我们使用 <code>i += 2</code>，让 <code>i</code> 每次循环之后增加 2。",
+        "for循环可以按照我们指定的顺序来迭代，通过更改我们的 <code>计数器</code>，我们可以按照偶数顺序来迭代。",
+        "初始化 <code>i = 0</code>，当 <code>i < 10</code> 的时候继续循环。",
+        "<code>i += 2</code> 让 <code>i</code> 每次循环之后增加2。",
         "<blockquote>var ourArray = [];<br>for (var i = 0; i < 10; i += 2) {<br>  ourArray.push(i);<br>}</blockquote>",
         "循环结束后，<code>ourArray</code> 的值为 <code>[0,2,4,6,8]</code>。",
-        "改变 <code>初始化</code>，这样我们可以用奇数来数。",
+        "改变 <code>计数器</code>，这样我们可以用奇数来数。",
         "<h4>任务</h4>",
-        "使用一个 <code>for</code> 循环，把从1到9的奇数添加到 <code>myArray</code>。"
+        "写一个 <code>for</code> 循环，把从1到9的奇数添加到 <code>myArray</code>。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3863,14 +3864,14 @@
       "id": "56105e7b514f539506016a5e",
       "title": "Count Backwards With a For Loop",
       "description": [
-        "一个for循环也可以倒着数，只要我们可以定义合适的条件。",
-        "为了能够让从后往前两两倒数，我们需要改变我们的 <code>初始化</code>，<code>条件</code> 和 <code>最后表达式</code>。",
-        "一开始我们让 <code>i = 10</code>，并且当 <code>i > 0</code> 的时候才循环。我们使用 <code>i -= 2</code> 来让 <code>i</code> 每次循环之后减去 2。",
+        "for循环也可以逆向迭代，只要我们定义好合适的条件。",
+        "为了能够从后往前两两倒数，我们需要改变我们的 <code>初始化</code>，<code>条件判断</code> 和 <code>计数器</code>。",
+        "我们让 <code>i = 10</code>，并且当 <code>i > 0</code> 的时候才继续循环。我们使用 <code>i-=2</code> 来让 <code>i</code> 每次循环递减 2。",
         "<blockquote>var ourArray = [];<br>for (var i=10; i > 0; i-=2) {<br>  ourArray.push(i);<br>}</blockquote>",
         "循环结束后，<code>ourArray</code> 的值为 <code>[10,8,6,4,2]</code>。",
-        "让我们改变 <code>初始化</code> 和 <code>最终表达式</code>，这样我们就可以按照奇数从后往前两两倒着数。",
+        "让我们改变 <code>初始化</code> 和 <code>计数器</code>，这样我们就可以按照奇数从后往前两两倒着数。",
         "<h4>任务</h4>",
-        "使用一个 <code>for</code> 循环，把奇数从 9 到 1 添加进 <code>myArray</code>。"
+        "使用一个 <code>for</code> 循环，把9到1的奇数添加进 <code>myArray</code>。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -3903,9 +3904,10 @@
       "id": "5675e877dbd60be8ad28edc6",
       "title": "Iterate Through an Array with a For Loop",
       "description": [
-        "在 JavaScript 中常见的任务是通过一个数组的内容进行循环迭代。做到这一点的方法之一是使用 <code>for</code> 循环。此代码将输出数组  <code>arr</code> 的每个元素到的控制台：",
+        "迭代输出一个数组的每个元素是 JavaScript 中的常见需求， <code>for</code> 循环可以做到这一点。",
+        "下面的代码将输出数组  <code>arr</code> 的每个元素到控制台：",
         "<blockquote>var arr = [10,9,8,7,6];<br>for (var i=0; i < arr.length; i++) {<br>   console.log(arr[i]);<br>}</blockquote>",
-        "记住数组具有从零开始编号的，这意味着数组的最后一个元素的下标是，数组的长度 - 1。我们这个循环的 <dfn>条件</dfn> 是 <code>i < arr.length</code>，它在当 <code>i</code> 的值为 长度-1 的时候停止。",        
+        "记住数组的索引从零开始的，这意味着数组的最后一个元素的下标是：数组的长度 - 1。我们这个循环的 <dfn>条件</dfn> 是 <code>i < arr.length</code>，当 <code>i</code> 的值为 长度-1 的时候循环就停止了。",
         "<h4>任务</h4>",
         "声明并初始化一个变量 <code>total</code> 为 <code>0</code>。使用 <code>for</code> 循环，使得 <code>total</code> 的值为 <code>myArr</code> 的数组中的每个元素的值的总和。"
       ],
@@ -3945,11 +3947,11 @@
       "id": "56533eb9ac21ba0edf2244e1",
       "title": "Nesting For Loops",
       "description": [
-        "如果你有一个多维数组，可以使用相同的逻辑，在数组和子数组两个航点之前循环。下面是一个例子：",
+        "如果你有一个二维数组，可以使用相同的逻辑，先遍历外面的数组，再遍历里面的子数组。下面是一个例子：",
         "<blockquote>var arr = [<br>  [1,2], [3,4], [5,6]<br>];<br>for (var i=0; i &lt; arr.length; i++) {<br>  for (var j=0; j &lt; arr[i].length; j++) {<br>    console.log(arr[i][j]);<br>  }<br>}</blockquote>",
-        "一次输出 <code>arr</code> 中的每个子元素。提示，对于内部循环，我们可以通过 <code>arr[i]</code> 的 <code>.length</code> 来查看它的长度，因为 <code>arr[i]</code> 的本身就是一个数组。",
+        "一次输出 <code>arr</code> 中的每个子元素。提示，对于内部循环，我们可以通过 <code>arr[i]</code> 的 <code>.length</code> 来获得子数组的长度，因为 <code>arr[i]</code> 的本身就是一个数组。",
         "<h4>任务</h4>",
-        "修改函数 <code>multiplyAll</code>，以便它得到在 <code>arr</code> 中子数组的每个数字相乘的结果 <code>product</code>。"
+        "修改函数 <code>multiplyAll</code>，获得 <code>arr</code> 内部数组的每个数字相乘的结果 <code>product</code>。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3983,12 +3985,10 @@
       "id": "cf1111c1c11feddfaeb1bdef",
       "title": "Iterate with JavaScript While Loops",
       "description": [
-        "您可以通过使用一个循环多次运行相同的代码。",
-        "另一种类型的 JavaScript 循环被称为“<code>while循环</code>”，因为它运行，当（while）规定的条件为真，并且一旦条件不再为真就会停止。",
+        "另一种类型的 JavaScript 循环被称为<code>while循环</code>，因为它规定，当（while）条件为真，循环才会执行，反之不执行。",
         "<blockquote>var ourArray = [];<br>var i = 0;<br>while(i < 5) {<br>  ourArray.push(i);<br>  i++;<br>}</blockquote>",
-        "让我们试着通过一个while循环，把值添加到一个数组中。",
         "<h4>任务</h4>",
-        "使用一个 <code>while</code> 循环，把从 0 到 4 的值添加到 <code>myArray</code> 中。"
+        "通过一个 <code>while</code> 循环，把从 0 到 4 的值添加到 <code>myArray</code> 中。"
       ],
       "challengeSeed": [
         "// Setup",
@@ -4015,12 +4015,12 @@
       "id": "5688e62ea601b2482ff8422b",
       "title": "Profile Lookup",
       "description": [
-        "We have an array of objects representing different people in our contacts lists.",
-        "A <code>lookUp</code> function that takes <code>firstName</code> and a property (<code>prop</code>) as arguments has been pre-written for you.",
-        "The function should check if <code>firstName</code> is an actual contact's <code>firstName</code> and the given property (<code>prop</code>) is a property of that contact.",
-        "If both are true, then return the \"value\" of that property.",
-        "If <code>firstName</code> does not correspond to any contacts then return <code>\"No such contact\"</code>",
-        "If <code>prop</code> does not correspond to any valid properties then return <code>\"No such property\"</code>",
+        "我们有一个对象数组，里面存储着通讯录。",
+        "函数 <code>lookUp</code> 有两个参数： <code>firstName</code> 和 <code>prop</code> 。",
+        "函数将会检查通讯录是否存在 <code>firstName</code> 值 和 <code>prop</code> 属性。",
+        "如果它们都存在，函数返回<code>prop</code>属性对应的值。",
+        "如果<code>firstName</code> 值不存在，返回 <code>\"No such contact\"</code>。",
+        "如果<code>prop</code> 属性不存在，返回 <code>\"No such property\"</code>。",
         ""
       ],
       "releasedOn": "January 8, 2016",
@@ -4080,11 +4080,12 @@
       "id": "cf1111c1c11feddfaeb9bdef",
       "title": "Generate Random Fractions with JavaScript",
       "description": [
-        "Random numbers are useful for creating random behavior.",
-        "JavaScript has a <code>Math.random()</code> function that generates a random decimal number between <code>0</code> (inclusive) and not quite up to <code>1</code> (exclusive). Thus <code>Math.random()</code> can return a <code>0</code> but never quite return a <code>1</code>",
-        "<strong>提示</strong><br>Like <a href='waypoint-storing-values-with-the-equal-operator' target='_blank'>Storing Values with the Equal Operator</a>, all function calls will be resolved before the <code>return</code> executes, so we can simply <code>return</code> the value of the <code>Math.random()</code> function.",
+        "计算机的行为只有两种：确定性和随机性。当你一步步地闯关来到这里就是确定行为，当你随意点了个链接就来到这里就是随机行为。",
+        "而随机数最适合用来创建这种随机行为。",
+        "<code>Math.random()</code>用来生成一个在0(包括0)到1(不包括1)之间的随机小数，因此<code>Math.random()</code>可能返回0但绝不会返回1。",
+        "<strong>提示</strong><br>随后的函数都会在<code>return</code>执行前调用，所以我们可以直接返回<code>Math.random()</code>的值。",
         "<h4>任务</h4>",
-        "Change <code>myFunction</code> to return a random number instead of returning <code>0</code>."
+        "更改<code>myFunction</code> 来生成一个随机数取代 <code>0</code>。"
       ],
       "challengeSeed": [
         "function myFunction() {",
@@ -4114,14 +4115,14 @@
       "id": "cf1111c1c12feddfaeb1bdef",
       "title": "Generate Random Whole Numbers with JavaScript",
       "description": [
-        "It's great that we can generate random decimal numbers, but it's even more useful if we use it to generate random whole numbers.",
-        "<ol><li>Use <code>Math.random()</code> to generate a random decimal.</li><li>Multiply that random decimal by <code>20</code>.</li><li>Use another function, <code>Math.floor()</code> to round the number down to its nearest whole number.</li></ol>",
-        "Remember that <code>Math.random()</code> can never quite return a <code>1</code> and, because we're rounding down, it's impossible to actually get <code>20</code>. This technique will give us a whole number between <code>0</code> and <code>19</code>.",
-        "Putting everything together, this is what our code looks like:",
+        "生成随机小数很棒，但随机数更有用的地方在于生成随机整数。",
+        "<ol><li>用 <code>Math.random()</code> 生成一个随机小数。</li><li>把这个随机小数乘以 <code>20</code>。</li><li>用 <code>Math.floor()</code> 向下取整 获得它最近的整数。</li></ol>",
+        "记住 <code>Math.random()</code> 永远不会返回 <code>1</code>。同时因为我们是在用 <code>Math.floor()</code> 向下取整，所以最终我们获得的结果不可能有 <code>20</code>。这确保了我们获得了一个在0到19之间的整数。",
+        "把操作连缀起来，代码类似于下面：",
         "<code>Math.floor(Math.random() * 20);</code>",
-        "We are calling <code>Math.random()</code>, multiplying the result by 20, then passing the value to <code>Math.floor()</code> function to round the value down to the nearest whole number.",
+        "我们先调用 <code>Math.random()</code>，把它的结果乘以20，然后把上一步的结果传给 <code>Math.floor()</code>，最终通过向下取整获得最近的整数。",
         "<h4>任务</h4>",
-        "Use this technique to generate and return a random whole number between <code>0</code> and <code>9</code>."
+        "生成一个 <code>0</code> 到 <code>9</code>之间的随机整数。"
       ],
       "challengeSeed": [
         "var randomNumberBetween0and19 = Math.floor(Math.random() * 20);",
@@ -4152,12 +4153,12 @@
       "id": "cf1111c1c12feddfaeb2bdef",
       "title": "Generate Random Whole Numbers within a Range",
       "description": [
-        "Instead of generating a random number between zero and a given number like we did before, we can generate a random number that falls within a range of two specific numbers.",
-        "To do this, we'll define a minimum number <code>min</code> and a maximum number <code>max</code>.",
-        "Here's the formula we'll use. Take a moment to read it and try to understand what this code is doing:",
+        "我们之前生成的随机数是在0到某个数之间，现在我们要生成的随机数是在两个指定的数之间。",
+        "我们需要定义一个最小值和一个最大值。",
+        "下面是我们将要使用的方法，仔细看看并尝试理解这行代码到底在干嘛：",
         "<code>Math.floor(Math.random() * (max - min + 1)) + min</code>",
         "<h4>任务</h4>",
-        "Create a function called <code>randomRange</code> that takes a range <code>myMin</code> and <code>myMax</code> and returns a random number that's greater than or equal to <code>myMin</code>, and is less than or equal to <code>myMax</code>, inclusive."
+        "创建一个叫<code>randomRange</code>的函数，参数为myMin和myMax，返回一个在<code>myMin</code>(包括myMin)和<code>myMax</code>(包括myMax)之间的随机数。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -4211,17 +4212,17 @@
       "id": "cf1111c1c12feddfaeb6bdef",
       "title": "Sift through Text with Regular Expressions",
       "description": [
-        "<code>Regular expressions</code> are used to find certain words or patterns inside of <code>strings</code>.",
-        "For example, if we wanted to find the word <code>the</code> in the string <code>The dog chased the cat</code>, we could use the following <code>regular expression</code>: <code>/the/gi</code>",
-        "Let's break this down a bit:",
-        "<code>/</code> is the start of the regular expression.",
-        "<code>the</code> is the pattern we want to match.",
-        "<code>/</code> is the end of the regular expression.",
-        "<code>g</code> means <code>global</code>, which causes the pattern to return all matches in the string, not just the first one.",
-        "<code>i</code> means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.",
+        "<code>Regular expressions</code> 正则表达式被用来根据某种匹配模式来寻找<code>strings</code>中的某些单词。",
+        "举例：如果我们想要找到字符串<code>The dog chased the cat</code>中单词 <code>the</code>，我们可以使用下面的正则表达式: <code>/the/gi</code>",
+        "我们可以把这个正则表达式分成几段：",
+        "<code>/</code> 是这个正则表达式的头部",
+        "<code>the</code> 是我们想要匹配的模式",
+        "<code>/</code> 是这个正则表达式的尾部",
+        "<code>g</code> 代表着 <code>global</code>(全局)，意味着返回所有的匹配而不仅仅是第一个。",
+        "<code>i</code> 代表着忽略大小写，意思是当我们寻找匹配的字符串的时候忽略掉字母的大小写。",
         "<h4>任务</h4>",
-        "Select all the occurrences of the word <code>and</code> in <code>testString</code>.",
-        "You can do this by replacing the <code>.</code> part of the regular expression with the word <code>and</code>."
+        "用全局、忽略大小写的模式选取字符串 <code>testString</code>中所有的单词 <code>and</code>。",
+        "你可以尝试把 <code>.</code> 替换成 <code>and</code>。"
       ],
       "head": [
         ""
@@ -4262,13 +4263,13 @@
       "id": "cf1111c1c12feddfaeb7bdef",
       "title": "Find Numbers with Regular Expressions",
       "description": [
-        "We can use special selectors in <dfn>Regular Expressions</dfn> to select a particular type of value.",
-        "One such selector is the digit selector <code>\\d</code> which is used to retrieve one digit (e.g. numbers 0 to 9) in a string.",
-        "In JavaScript, it is used like this: <code>/\\d/g</code>.",
-        "Appending a plus sign (<code>+</code>) after the selector, e.g. <code>/\\d+/g</code>, allows this regular expression to match one or more digits.",
-        "The trailing <code>g</code> is short for 'global', which allows this regular expression to find all matches rather than stop at the first match.",
+        "我们可以在正则表达式中使用特殊选择器来选取特殊类型的值。",
+        "特殊选择器中的一种就是数字选择器<code>\\d</code>，意思是被用来获取一个字符串的数字。",
+        "在JavaScript中, 数字选择器类似于: <code>/\\d/g</code>。",
+        "在选择器后面添加一个加号标记(<code>+</code>)，例如：<code>/\\d+/g</code>，它允许这个正则表达式匹配一个或更多数字。",
+        "尾部的<code>g</code>是'global'的简写，意思是允许这个正则表达式 找到所有的匹配而不是仅仅找到第一个匹配。",
         "<h4>任务</h4>",
-        "Use the <code>\\d</code> selector to select the number of numbers in the string, allowing for the possibility of one or more digit."
+        "用 <code>\\d</code> 选择器来选取字符串中的所有数字。"
       ],
       "head": [
         ""
@@ -4303,12 +4304,12 @@
       "id": "cf1111c1c12feddfaeb8bdef",
       "title": "Find Whitespace with Regular Expressions",
       "description": [
-        "We can also use regular expression selectors like <code>\\s</code> to find whitespace in a string.",
-        "The whitespace characters are <code>\" \"</code> (space), <code>\\r</code> (the carriage return), <code>\\n</code> (newline), <code>\\t</code> (tab), and <code>\\f</code> (the form feed).",
-        "The whitespace regular expression looks like this:",
+        "我们也可以使用正则表达式选择器 <code>\\s</code> 来选择一个字符串中的空白。",
+        "空白字符有 <code>\" \"</code> (空格符)、<code>\\r</code> (回车符)、<code>\\n</code> (换行符)、<code>\\t</code> (制表符) 和 <code>\\f</code> (换页符)。",
+        "空白正则表达式类似于：",
         "<code>/\\s+/g</code>",
         "<h4>任务</h4>",
-        "Use <code>\\s</code> to select all the whitespace characters in the sentence string."
+        "用 <code>\\s</code> 选取句子中的所有空白字符。"
       ],
       "head": [
         ""
@@ -4343,10 +4344,10 @@
       "id": "cf1111c1c13feddfaeb3bdef",
       "title": "Invert Regular Expression Matches with JavaScript",
       "description": [
-        "You can invert any match by using the uppercase version of the regular expression selector.",
-        "For example, <code>\\s</code> will match any whitespace, and <code>\\S</code> will match anything that isn't whitespace.",
+        "你可以用正则表达式选择器的大写版本 来转化任何匹配。",
+        "举个例子：<code>\\s</code> 匹配任何空白字符，<code>\\S</code> 匹配任何非空白字符。",
         "<h4>任务</h4>",
-        "Use <code>/\\S/g</code> to count the number of non-whitespace characters in <code>testString</code>."
+        "用 <code>/\\S/g</code> 来匹配字符串<code>testString</code>中的所有非空白字符。"
       ],
       "head": [
         ""
@@ -4381,10 +4382,10 @@
       "id": "cf1111c1c12feddfaeb9bdef",
       "title": "Create a JavaScript Slot Machine",
       "description": [
-        "We are now going to try and combine some of the stuff we've just learned and create the logic for a slot machine game.",
-        "For this we will need to generate three random numbers between <code>1</code> and <code>3</code> to represent the possible values of each individual slot.",
-        "Store the three random numbers in <code>slotOne</code>, <code>slotTwo</code> and <code>slotThree</code>.",
-        "Generate the random numbers by using the system we used earlier (an explanation of the formula can be found <a href='https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Waypoint-Generate-Random-Whole-Numbers-within-a-Range#explanation' target='_blank'>here</a>):",
+        "现在把我们之前的所学的知识点结合起来完成一个老虎机游戏。",
+        "这次我们生成3个随机数，范围在1到3之间。",
+        "分别用 <code>slotOne</code>、<code>slotTwo</code>、<code>slotThree</code>来存储着3个随机数。",
+        "用我们之前的所学来生成<a href='generate-random-whole-numbers-within-a-range' target='_blank'>随机数</a>)：",
         "<code>Math.floor(Math.random() * (3 - 1 + 1)) + 1;</code>"
       ],
       "challengeSeed": [
@@ -4422,7 +4423,7 @@
         "<div>",
         " <div class = \"container inset\">",
         "   <div class = \"header inset\">",
-        "     <img src=\"/images/freecodecamp_logo.svg.gz\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
+        "     <img src=\"/images/freecodecamp_logo.svg\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
         "     <h2>FCC Slot Machine</h2>",
         "   </div>",
         "   <div class = \"slots inset\">",
@@ -4528,8 +4529,7 @@
       "tests": [
         "assert(typeof(runSlots($(\".slot\"))[0]) === \"number\" && runSlots($(\".slot\"))[0] > 0 && runSlots($(\".slot\"))[0] < 4, '<code>slotOne</code> should be a random number.')",
         "assert(typeof(runSlots($(\".slot\"))[1]) === \"number\" && runSlots($(\".slot\"))[1] > 0 && runSlots($(\".slot\"))[1] < 4, '<code>slotTwo</code> should be a random number.')",
-        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> should be a random number.')",
-        "assert((function(){if(editor.match(/Math\\.floor\\(\\s?Math\\.random\\(\\)\\s?\\*\\s?\\(\\s?3\\s?\\-\\s?1\\s?\\+\\s?1\\s?\\)\\s?\\)\\s?\\+\\s?1/gi) !== null){return editor.match(/slot.*?=.*?\\(.*?\\).*?/gi).length >= 3;}else{return false;}})(), 'You should have used <code>Math.floor(Math.random() * (3 - 1 + 1)) + 1;</code> three times to generate your random numbers.')"
+        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> should be a random number.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4539,15 +4539,15 @@
       "id": "cf1111c1c13feddfaeb1bdef",
       "title": "Add your JavaScript Slot Machine Slots",
       "description": [
-        "Now that our slots will each generate random numbers, we need to check whether they've all returned the same number.",
-        "If they have, we should notify our user that they've won and we should return <code>null</code>.",
-        "<code>null</code> is a JavaScript data structure that means nothing.",
-        "The user wins when all the three numbers match. Let's create an <code>if statement</code> with multiple conditions in order to check whether all numbers are equal.",
+        "现在我们的老虎机每次生存3个随机数，我们得去检查随机数是否全部相等的情况。",
+        "如果全部相等，我们应该提示用户他们赢了，并返回中奖号码，否则我们应该返回null。",
+        "<code>null</code> 是JavaScript中的一种数据类型，意味着空。",
+        "当这3个随机数相等的时候，判定用户赢。让我们创建一个<code>if statement</code>，用多个条件按顺序来检查它们是否相等。类似于：",
         "<code>if (slotOne === slotTwo && slotTwo === slotThree){</code>",
-        "<code>&nbsp;&nbsp;return null;</code>",
+        "<code>&nbsp;&nbsp;return slotOne;</code>",
+        "<code>} else {</code>",
         "<code>}</code>",
-        "Also, we need to show the user that he has won the game when he gets the same number in all the slots.",
-        "If all three numbers match, we should also set the text <code>\"It's A Win\"</code> to the element with class <code>logger</code>."
+        "当3个随机数都一样的时候，我们把 <code>\"It's A Win\"</code> 追加到class <code>logger</code>的html中。"
       ],
       "challengeSeed": [
         "fccss",
@@ -4588,7 +4588,7 @@
         "<div>",
         " <div class = \"container inset\">",
         "   <div class = \"header inset\">",
-        "     <img src=\"/images/freecodecamp_logo.svg.gz\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
+        "     <img src=\"/images/freecodecamp_logo.svg\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
         "     <h2>FCC Slot Machine</h2>",
         "   </div>",
         "   <div class = \"slots inset\">",
@@ -4702,12 +4702,11 @@
       "id": "cf1111c1c13feddfaeb2bdef",
       "title": "Bring your JavaScript Slot Machine to Life",
       "description": [
-        "Now we can detect a win. Let's get this slot machine working.",
-        "Let's use the jQuery <code>selector</code> <code>$(\".slot\")</code> to select all of the slots.",
-        "Once they are all selected, we can use <code>bracket notation</code> to access each individual slot:",
+        "让我们用 jQuery 选择器 <code>$(\".slot\")</code> 获得所有老虎机。",
+        "一旦获取到所有老虎机，我们可以通过中括号操作符获取到每一个老虎机：",
         "<code>$($(\".slot\")[0]).html(slotOne);</code>",
-        "This jQuery will select the first slot and update it's HTML to display the correct number.",
-        "Use the above selector to display each number in its corresponding slot."
+        "jQuery将会获取到第一个老虎机，并更新它的HTML为正确的数字。",
+        "任务：分别更新每个老虎机上的HTML为对应的数字。"
       ],
       "challengeSeed": [
         "fccss",
@@ -4754,7 +4753,7 @@
         "<div>",
         " <div class = \"container inset\">",
         "   <div class = \"header inset\">",
-        "     <img src=\"/images/freecodecamp_logo.svg.gz\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
+        "     <img src=\"/images/freecodecamp_logo.svg\" alt=\"learn to code JavaScript at Free Code Camp logo\" class=\"img-responsive nav-logo\">",
         "     <h2>FCC Slot Machine</h2>",
         "   </div>",
         "   <div class = \"slots inset\">",
@@ -4860,8 +4859,7 @@
         ""
       ],
       "tests": [
-        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), 'You should be displaying the result of the slot numbers in the corresponding slots.')",
-        "assert((editor.match( /\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)/gi) && editor.match( /\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)/gi ).length >= 3 && editor.match( /\\.html\\(slotOne\\)/gi ) && editor.match( /\\.html\\(slotTwo\\)/gi ) && editor.match( /\\.html\\(slotThree\\)/gi )), 'You should have used the the selector given in the description to select each slot and assign it the value of <code>slotOne</code>&#44; <code>slotTwo</code> and <code>slotThree</code> respectively.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), 'You should be displaying the result of the slot numbers in the corresponding slots.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4871,11 +4869,11 @@
       "id": "cf1111c1c11feddfaeb1bdff",
       "title": "Give your JavaScript Slot Machine some Stylish Images",
       "description": [
-        "Now let's add some images to our slots.",
-        "We've already set up the images for you in an array called <code>images</code>. We can use different indexes to grab each of these.",
-        "Here's how we would set the first slot to show a different image depending on which number its random number generates:",
+        "现在给我们的老虎机加点图片。",
+        "我们已经为你准备好了图片<code>images</code>，我们可以通过不同的索引来获取每个图片。",
+        "现在让我们设置第一个老虎机根据随机数来显示一张图片：",
         "<code>$($('.slot')[0]).html('&lt;img src = \"' + images[slotOne-1] + '\"&gt;');</code>",
-        "Set up all three slots like this, then click the \"Go\" button to play the slot machine."
+        "任务：设置所有的老虎机根据随机数来显示对应的图片，最后点击RUN。"
       ],
       "challengeSeed": [
         "fccss",
@@ -4921,7 +4919,7 @@
         "<div>",
         " <div class = 'container inset'>",
         "   <div class = 'header inset'>",
-        "     <img src='/images/freecodecamp_logo.svg.gz' alt='learn to code JavaScript at Free Code Camp logo' class='img-responsive nav-logo'>",
+        "     <img src='/images/freecodecamp_logo.svg' alt='learn to code JavaScript at Free Code Camp logo' class='img-responsive nav-logo'>",
         "     <h2>FCC Slot Machine</h2>",
         "   </div>",
         "   <div class = 'slots inset'>",
@@ -5032,13 +5030,9 @@
         ""
       ],
       "tests": [
-        "assert((editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)\\.html\\(\\s*?\\'\\<img\\s?src\\s?=\\s?\"\\'\\s?\\+\\s?images\\[\\w+\\s*\\-\\s*1\\]\\s?\\+\\s?\\'\"\\>\\'\\s*?\\);/gi) && editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)\\.html\\(\\s*?\\'\\<img\\s?src\\s?=\\s?\"\\'\\s?\\+\\s?images\\[\\w+\\s*\\-\\s*1\\]\\s?\\+\\s?\\'\"\\>\\'\\s*?\\);/gi).length >= 3), 'Use the provided code three times. One for each slot.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[0\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[0]</code> at least once.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[1\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[1]</code> at least once.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[2\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[2]</code> at least once.')",
-        "assert(editor.match(/slotOne/gi) && editor.match(/slotOne/gi).length >= 7, 'You should have used the <code>slotOne</code> value at least once.')",
-        "assert(editor.match(/slotTwo/gi) && editor.match(/slotTwo/gi).length >= 8, 'You should have used the <code>slotTwo</code> value at least once.')",
-        "assert(editor.match(/slotThree/gi) && editor.match(/slotThree/gi).length >= 7, 'You should have used the <code>slotThree</code> value at least once.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneOne.')",
+        "assert((function(){runSlots();if($($(\".slot\")[1]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneTwo.')",
+        "assert((function(){runSlots();if($($(\".slot\")[2]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneThree.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
