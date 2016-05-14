@@ -4153,12 +4153,12 @@
       "id": "cf1111c1c12feddfaeb2bdef",
       "title": "Generate Random Whole Numbers within a Range",
       "description": [
-        "Instead of generating a random number between zero and a given number like we did before, we can generate a random number that falls within a range of two specific numbers.",
-        "To do this, we'll define a minimum number <code>min</code> and a maximum number <code>max</code>.",
-        "Here's the formula we'll use. Take a moment to read it and try to understand what this code is doing:",
+        "我们之前生成的随机数是在0到某个数之间，现在我们要生成的随机数是在两个指定的数之间。",
+        "我们需要定义一个最小值和一个最大值。",
+        "下面是我们将要使用的方法，仔细看看并尝试理解这行代码到底在干嘛：",
         "<code>Math.floor(Math.random() * (max - min + 1)) + min</code>",
         "<h4>任务</h4>",
-        "Create a function called <code>randomRange</code> that takes a range <code>myMin</code> and <code>myMax</code> and returns a random number that's greater than or equal to <code>myMin</code>, and is less than or equal to <code>myMax</code>, inclusive."
+        "创建一个叫<code>randomRange</code>的函数，参数为myMin和myMax，返回一个在<code>myMin</code>(包括myMin)和<code>myMax</code>(包括myMax)之间的随机数。"
       ],
       "challengeSeed": [
         "// 举例",
@@ -4212,17 +4212,17 @@
       "id": "cf1111c1c12feddfaeb6bdef",
       "title": "Sift through Text with Regular Expressions",
       "description": [
-        "<code>Regular expressions</code> are used to find certain words or patterns inside of <code>strings</code>.",
-        "For example, if we wanted to find the word <code>the</code> in the string <code>The dog chased the cat</code>, we could use the following <code>regular expression</code>: <code>/the/gi</code>",
-        "Let's break this down a bit:",
-        "<code>/</code> is the start of the regular expression.",
-        "<code>the</code> is the pattern we want to match.",
-        "<code>/</code> is the end of the regular expression.",
-        "<code>g</code> means <code>global</code>, which causes the pattern to return all matches in the string, not just the first one.",
-        "<code>i</code> means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.",
+        "<code>Regular expressions</code> 正则表达式被用来根据某种匹配模式来寻找<code>strings</code>中的某些单词。",
+        "举例：如果我们想要找到字符串<code>The dog chased the cat</code>中单词 <code>the</code>，我们可以使用下面的正则表达式: <code>/the/gi</code>",
+        "我们可以把这个正则表达式分成几段：",
+        "<code>/</code> 是这个正则表达式的头部",
+        "<code>the</code> 是我们想要匹配的模式",
+        "<code>/</code> 是这个正则表达式的尾部",
+        "<code>g</code> 代表着 <code>global</code>(全局)，意味着返回所有的匹配而不仅仅是第一个。",
+        "<code>i</code> 代表着忽略大小写，意思是当我们寻找匹配的字符串的时候忽略掉字母的大小写。",
         "<h4>任务</h4>",
-        "Select all the occurrences of the word <code>and</code> in <code>testString</code>.",
-        "You can do this by replacing the <code>.</code> part of the regular expression with the word <code>and</code>."
+        "用全局、忽略大小写的模式选取字符串 <code>testString</code>中所有的单词 <code>and</code>。",
+        "你可以尝试把 <code>.</code> 替换成 <code>and</code>。"
       ],
       "head": [
         ""
@@ -4263,13 +4263,13 @@
       "id": "cf1111c1c12feddfaeb7bdef",
       "title": "Find Numbers with Regular Expressions",
       "description": [
-        "We can use special selectors in <dfn>Regular Expressions</dfn> to select a particular type of value.",
-        "One such selector is the digit selector <code>\\d</code> which is used to retrieve one digit (e.g. numbers 0 to 9) in a string.",
-        "In JavaScript, it is used like this: <code>/\\d/g</code>.",
-        "Appending a plus sign (<code>+</code>) after the selector, e.g. <code>/\\d+/g</code>, allows this regular expression to match one or more digits.",
-        "The trailing <code>g</code> is short for 'global', which allows this regular expression to find all matches rather than stop at the first match.",
+        "我们可以在正则表达式中使用特殊选择器来选取特殊类型的值。",
+        "特殊选择器中的一种就是数字选择器<code>\\d</code>，意思是被用来获取一个字符串的数字。",
+        "在JavaScript中, 数字选择器类似于: <code>/\\d/g</code>。",
+        "在选择器后面添加一个加号标记(<code>+</code>)，例如：<code>/\\d+/g</code>，它允许这个正则表达式匹配一个或更多数字。",
+        "尾部的<code>g</code>是'global'的简写，意思是允许这个正则表达式 找到所有的匹配而不是仅仅找到第一个匹配。",
         "<h4>任务</h4>",
-        "Use the <code>\\d</code> selector to select the number of numbers in the string, allowing for the possibility of one or more digit."
+        "用 <code>\\d</code> 选择器来选取字符串中的所有数字。"
       ],
       "head": [
         ""
@@ -4304,12 +4304,12 @@
       "id": "cf1111c1c12feddfaeb8bdef",
       "title": "Find Whitespace with Regular Expressions",
       "description": [
-        "We can also use regular expression selectors like <code>\\s</code> to find whitespace in a string.",
-        "The whitespace characters are <code>\" \"</code> (space), <code>\\r</code> (the carriage return), <code>\\n</code> (newline), <code>\\t</code> (tab), and <code>\\f</code> (the form feed).",
-        "The whitespace regular expression looks like this:",
+        "我们也可以使用正则表达式选择器 <code>\\s</code> 来选择一个字符串中的空白。",
+        "空白字符有 <code>\" \"</code> (空格符)、<code>\\r</code> (回车符)、<code>\\n</code> (换行符)、<code>\\t</code> (制表符) 和 <code>\\f</code> (换页符)。",
+        "空白正则表达式类似于：",
         "<code>/\\s+/g</code>",
         "<h4>任务</h4>",
-        "Use <code>\\s</code> to select all the whitespace characters in the sentence string."
+        "用 <code>\\s</code> 选取句子中的所有空白字符。"
       ],
       "head": [
         ""
@@ -4344,10 +4344,10 @@
       "id": "cf1111c1c13feddfaeb3bdef",
       "title": "Invert Regular Expression Matches with JavaScript",
       "description": [
-        "You can invert any match by using the uppercase version of the regular expression selector.",
-        "For example, <code>\\s</code> will match any whitespace, and <code>\\S</code> will match anything that isn't whitespace.",
+        "你可以用正则表达式选择器的大写版本 来转化任何匹配。",
+        "举个例子：<code>\\s</code> 匹配任何空白字符，<code>\\S</code> 匹配任何非空白字符。",
         "<h4>任务</h4>",
-        "Use <code>/\\S/g</code> to count the number of non-whitespace characters in <code>testString</code>."
+        "用 <code>/\\S/g</code> 来匹配字符串<code>testString</code>中的所有非空白字符。"
       ],
       "head": [
         ""
@@ -4382,10 +4382,10 @@
       "id": "cf1111c1c12feddfaeb9bdef",
       "title": "Create a JavaScript Slot Machine",
       "description": [
-        "We are now going to try and combine some of the stuff we've just learned and create the logic for a slot machine game.",
-        "For this we will need to generate three random numbers between <code>1</code> and <code>3</code> to represent the possible values of each individual slot.",
-        "Store the three random numbers in <code>slotOne</code>, <code>slotTwo</code> and <code>slotThree</code>.",
-        "Generate the random numbers by using the system we used earlier (an explanation of the formula can be found <a href='https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Waypoint-Generate-Random-Whole-Numbers-within-a-Range#explanation' target='_blank'>here</a>):",
+        "现在把我们之前的所学的知识点结合起来完成一个老虎机游戏。",
+        "这次我们生成3个随机数，范围在1到3之间。",
+        "分别用 <code>slotOne</code>、<code>slotTwo</code>、<code>slotThree</code>来存储着3个随机数。",
+        "用我们之前的所学来生成<a href='generate-random-whole-numbers-within-a-range' target='_blank'>随机数</a>)：",
         "<code>Math.floor(Math.random() * (3 - 1 + 1)) + 1;</code>"
       ],
       "challengeSeed": [
@@ -4529,8 +4529,7 @@
       "tests": [
         "assert(typeof(runSlots($(\".slot\"))[0]) === \"number\" && runSlots($(\".slot\"))[0] > 0 && runSlots($(\".slot\"))[0] < 4, '<code>slotOne</code> should be a random number.')",
         "assert(typeof(runSlots($(\".slot\"))[1]) === \"number\" && runSlots($(\".slot\"))[1] > 0 && runSlots($(\".slot\"))[1] < 4, '<code>slotTwo</code> should be a random number.')",
-        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> should be a random number.')",
-        "assert((function(){if(editor.match(/Math\\.floor\\(\\s?Math\\.random\\(\\)\\s?\\*\\s?\\(\\s?3\\s?\\-\\s?1\\s?\\+\\s?1\\s?\\)\\s?\\)\\s?\\+\\s?1/gi) !== null){return editor.match(/slot.*?=.*?\\(.*?\\).*?/gi).length >= 3;}else{return false;}})(), 'You should have used <code>Math.floor(Math.random() * (3 - 1 + 1)) + 1;</code> three times to generate your random numbers.')"
+        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> should be a random number.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4540,15 +4539,15 @@
       "id": "cf1111c1c13feddfaeb1bdef",
       "title": "Add your JavaScript Slot Machine Slots",
       "description": [
-        "Now that our slots will each generate random numbers, we need to check whether they've all returned the same number.",
-        "If they have, we should notify our user that they've won and we should return <code>null</code>.",
-        "<code>null</code> is a JavaScript data structure that means nothing.",
-        "The user wins when all the three numbers match. Let's create an <code>if statement</code> with multiple conditions in order to check whether all numbers are equal.",
+        "现在我们的老虎机每次生存3个随机数，我们得去检查随机数是否全部相等的情况。",
+        "如果全部相等，我们应该提示用户他们赢了，并返回中奖号码，否则我们应该返回null。",
+        "<code>null</code> 是JavaScript中的一种数据类型，意味着空。",
+        "当这3个随机数相等的时候，判定用户赢。让我们创建一个<code>if statement</code>，用多个条件按顺序来检查它们是否相等。类似于：",
         "<code>if (slotOne === slotTwo && slotTwo === slotThree){</code>",
-        "<code>&nbsp;&nbsp;return null;</code>",
+        "<code>&nbsp;&nbsp;return slotOne;</code>",
+        "<code>} else {</code>",
         "<code>}</code>",
-        "Also, we need to show the user that he has won the game when he gets the same number in all the slots.",
-        "If all three numbers match, we should also set the text <code>\"It's A Win\"</code> to the element with class <code>logger</code>."
+        "当3个随机数都一样的时候，我们把 <code>\"It's A Win\"</code> 追加到class <code>logger</code>的html中。"
       ],
       "challengeSeed": [
         "fccss",
@@ -4703,12 +4702,11 @@
       "id": "cf1111c1c13feddfaeb2bdef",
       "title": "Bring your JavaScript Slot Machine to Life",
       "description": [
-        "Now we can detect a win. Let's get this slot machine working.",
-        "Let's use the jQuery <code>selector</code> <code>$(\".slot\")</code> to select all of the slots.",
-        "Once they are all selected, we can use <code>bracket notation</code> to access each individual slot:",
+        "让我们用 jQuery 选择器 <code>$(\".slot\")</code> 获得所有老虎机。",
+        "一旦获取到所有老虎器，我们可以通过中括号操作符获取到每一个老虎机：",
         "<code>$($(\".slot\")[0]).html(slotOne);</code>",
-        "This jQuery will select the first slot and update it's HTML to display the correct number.",
-        "Use the above selector to display each number in its corresponding slot."
+        "jQuery将会获取到第一个老虎机，并更新它的HTML为正确的数字。",
+        "任务：分别更新每个老虎机上的HTML为对应的数字。"
       ],
       "challengeSeed": [
         "fccss",
@@ -4861,8 +4859,7 @@
         ""
       ],
       "tests": [
-        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), 'You should be displaying the result of the slot numbers in the corresponding slots.')",
-        "assert((editor.match( /\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)/gi) && editor.match( /\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)/gi ).length >= 3 && editor.match( /\\.html\\(slotOne\\)/gi ) && editor.match( /\\.html\\(slotTwo\\)/gi ) && editor.match( /\\.html\\(slotThree\\)/gi )), 'You should have used the the selector given in the description to select each slot and assign it the value of <code>slotOne</code>&#44; <code>slotTwo</code> and <code>slotThree</code> respectively.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), 'You should be displaying the result of the slot numbers in the corresponding slots.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4872,11 +4869,11 @@
       "id": "cf1111c1c11feddfaeb1bdff",
       "title": "Give your JavaScript Slot Machine some Stylish Images",
       "description": [
-        "Now let's add some images to our slots.",
-        "We've already set up the images for you in an array called <code>images</code>. We can use different indexes to grab each of these.",
-        "Here's how we would set the first slot to show a different image depending on which number its random number generates:",
+        "现在给我们的老虎机加点图片。",
+        "我们已经为你准备好了图片<code>images</code>，我们可以通过不同的索引来获取每个图片。",
+        "现在让我们设置第一个老虎根据随机数来显示一张图片：",
         "<code>$($('.slot')[0]).html('&lt;img src = \"' + images[slotOne-1] + '\"&gt;');</code>",
-        "Set up all three slots like this, then click the \"Go\" button to play the slot machine."
+        "任务：设置所有的老虎机根据随机数来显示对应的图片，最后点击RUN。"
       ],
       "challengeSeed": [
         "fccss",
@@ -5033,13 +5030,9 @@
         ""
       ],
       "tests": [
-        "assert((editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)\\.html\\(\\s*?\\'\\<img\\s?src\\s?=\\s?\"\\'\\s?\\+\\s?images\\[\\w+\\s*\\-\\s*1\\]\\s?\\+\\s?\\'\"\\>\\'\\s*?\\);/gi) && editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[\\d\\]\\s*?\\)\\.html\\(\\s*?\\'\\<img\\s?src\\s?=\\s?\"\\'\\s?\\+\\s?images\\[\\w+\\s*\\-\\s*1\\]\\s?\\+\\s?\\'\"\\>\\'\\s*?\\);/gi).length >= 3), 'Use the provided code three times. One for each slot.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[0\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[0]</code> at least once.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[1\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[1]</code> at least once.')",
-        "assert(editor.match(/\\$\\s*?\\(\\s*?\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.slot\\s*?(?:'|\")\\s*?\\)\\[2\\]\\s*?\\)/gi), 'You should have used <code>$&#40;&#39;.slot&#39;&#41;[2]</code> at least once.')",
-        "assert(editor.match(/slotOne/gi) && editor.match(/slotOne/gi).length >= 7, 'You should have used the <code>slotOne</code> value at least once.')",
-        "assert(editor.match(/slotTwo/gi) && editor.match(/slotTwo/gi).length >= 8, 'You should have used the <code>slotTwo</code> value at least once.')",
-        "assert(editor.match(/slotThree/gi) && editor.match(/slotThree/gi).length >= 7, 'You should have used the <code>slotThree</code> value at least once.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneOne.')",
+        "assert((function(){runSlots();if($($(\".slot\")[1]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneTwo.')",
+        "assert((function(){runSlots();if($($(\".slot\")[2]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneThree.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
