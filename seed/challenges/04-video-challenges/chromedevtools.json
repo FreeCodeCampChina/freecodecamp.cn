@@ -201,26 +201,26 @@
       "id": "56b15f15632298c12f31517d",
       "title": "Chrome Dev Tools: Console",
       "description": [
-        "The Console panel provides two primary functions: logging diagnostic information in the development process and providing a shell prompt which can be used to interact with the document and Dev Tools.",
-        "When using the console, you can view raw or structured data by using standard JS statements and console-specific commands.",
-        "An example of structured data would be the information returned from an API in JSON. I used this a lot when I was building my first front end development projects for Free Code Camp.",
-        "You should know that messages stack up, and you can clear them by typing and entering 'clear()'. You can also save the log by selecting 'Preserve Log'.",
-        "There are different commands that will log differently, like console.log() for basic logging, console.error() & console.warn() for 'eye catching stuff'.",
-        "The console can track exceptions, which basically means when something goes wrong. It can even pause the code during those exceptions, a function that you might remember from the 'Source' tab.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/javascript/console/' target='_blank'>developers.google.com/web/tools/javascript/console/</a>"
+        "Console 面板提供了2个主要功能：在开发过程中记录调试信息和提供一个可以用于和文档、开发工具交互的shell环境。",
+        "可以使用标准JS语法和特定控制台命令来查看原始数据和结构化数据。",
+        "从API中获取的JSON数据是典型的结构化数据。在我给Free Code Camp构建第一个前端开发项目时，我经常使用。",
+        "信息经常会叠加满屏幕，你可以键入'clear()'来清空屏幕。通过勾选'Preserve Log'可以保存日志。",
+        "有几种不同的日志命令，比如console.log()用于基本日志记录，console.error()和colsole.warn()用于一些重要信息。",
+        "Console中可以追踪异常（代码出现了问题），甚至可以在出现异常时暂停代码的执行，如果你还记得，这个功能在Source标签页中也有。",
+        "更多详细信息请查看：<a href='http://developers.google.com/web/tools/javascript/console/' target='_blank'>developers.google.com/web/tools/javascript/console/</a>"
       ],
       "challengeSeed": [
         "137194773"
       ],
       "tests": [
         [
-          "The console in Chrome Dev Tools has many similarities to the console of a computer.",
+          "Chrome开发工具中的console和计算机中的console有很多相似之处。",
           true
         ],
         [
-          "This video is in-depth and covers everything you need to know.",
+          "这个视频很详细，包含了所有你需要的知识点。",
           false,
-          "Please review the documentation linked in the description."
+          "请点击浏览页面中的文档链接。"
         ]
       ],
       "type": "hike",
