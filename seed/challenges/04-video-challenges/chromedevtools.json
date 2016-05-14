@@ -152,17 +152,17 @@
       "id": "56b15f15632298c12f31517f",
       "title": "Chrome Dev Tools: Resources",
       "description": [
-        "The Resources panel lets you inspect resources that are loaded in the inspected page including IndexedDB or Web SQL databases, local and session storage, cookies, Application Cache, images, fonts, and style sheets.",
-        "You can view and edit all of this information within the browser.",
-        "As you get into more advanced web building, play around with the resources panel and see how it can help you understand the requirements of your app and page in real time.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/iterate/manage-data/index' target='_blank'>developers.google.com/web/tools/iterate/manage-data/index</a>"
+        "Resources 面板可以显示已经加载的资源，包括： IndexedDB，Web SQL数据库，local storage，session storage，cookies，Application Cache, 图片, 字体和样式表。",
+        "可以在浏览器中查看和修改所有这些信息。",
+        "当你进行高级网站构建时，resources 面板可以帮你更好的理解app和页面的实时性要求。",
+        "更多详细内容请访问：<a href='http://developers.google.com/web/tools/iterate/manage-data/index' target='_blank'>developers.google.com/web/tools/iterate/manage-data/index</a>"
       ],
       "challengeSeed": [
         "137193676"
       ],
       "tests": [
         [
-          "The 'Resources' tab helps you view external resources such as SQL and cookies.",
+          "Resources 标签中可以查看外部资源，如：SQL和cookies",
           true
         ]
       ],
