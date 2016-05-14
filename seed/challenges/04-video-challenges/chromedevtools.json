@@ -65,27 +65,27 @@
       "id": "56b15f15632298c12f315182",
       "title": "Chrome Dev Tools: Sources",
       "description": [
-        "The 'Sources' tab is most useful for debugging JavaScript. The bigger your project is, the harder it can be to find exactly where a problem occurs.",
-        "You can select different parts of the code to be 'breakpoints', checkpoints that will stop the code at that exact moment.",
-        "There are different breakpoints you can watch for, like for a specific line of code, on a DOM event, a server request called XMLHTTP request, or a JavaScript event.",
-        "When you set a breakpoint, the browser pauses everything when it interprets that line of code or event.",
-        "By slowing everything down and giving yourself a chance to examine what's happening at every spot you've set, you can keep track of exactly what's happening in the page or app.",
-        "Once all of the breakpoints are set, you can step through the code and examine the state of your page or app at every breakpoint.",
-        "Just like with elements, you can live-edit through Dev Tools, but remember to save those changes however you can so your progress isn't lost.",
-        "Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/javascript/breakpoints/' target='_blank'>developers.google.com/web/tools/javascript/breakpoints/</a>"
+        "Sources标签页对调试JavaScript帮助很大。项目越大，越难准确找到问题所在。",
+        "可以对代码的不同部分设置断点，代码会到此停止执行。",
+        "有很多种断点类型可以使用，如一行特定代码，一个DOM事件，XMLHTTP请求或一个JavaScript事件。",
+        "设置好断电之后，浏览器在进入这段代码或事件时，会暂停执行。",
+        "通过减缓代码执行，我们就有机会仔细观察每一个设置点，准确跟踪页面行为。",
+        "一旦断点设置好，我们就可以逐步浏览和检查页面中断点处的代码。",
+        "和elements标签一样，可以实时编辑代码观察结果，不过记得在别处保存更改。",
+        "更多详细内容请访问: <a href='http://developers.google.com/web/tools/javascript/breakpoints/' target='_blank'>developers.google.com/web/tools/javascript/breakpoints/</a>"
       ],
       "challengeSeed": [
         "137188025"
       ],
       "tests": [
         [
-          "Debugging can be done easily in the 'Sources' tab of Chrome Dev Tools.",
+          "可以很容易通过Chrome开发者工具进行代码调试。",
           true
         ],
         [
-          "These breakpoints are already established, but you can edit where they are in the code.",
+          "断点是事先设置好的，但是你可以设置其在代码中的位置。",
           false,
-          "You set up all of the breakpoints in the debugger."
+          "需要在调试中设置所有断点。"
         ]
       ],
       "type": "hike",
