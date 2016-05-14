@@ -230,16 +230,17 @@
       "id": "56b15f15632298c12f31517c",
       "title": "Chrome Dev Tools: Summary",
       "description": [
-        "1.) Chrome Dev Tools are awesome, and the more you can dive in and try to use them, the faster your skill level will grow.",
-        "2.) Use the documentation, even if you've never read documentation before: <a href='http://developers.google.com/web/tools/chrome-devtools/' target='_blank'>developers.google.com/web/tools/chrome-devtools/</a>",
-        "3.) Once you start to get comfortable in one tab, stretch yourself. Working effectively with all of the tabs will serve you exponentially more than sticking in your comfort zone."
+        "1.) Chrome开发工具非常棒，你用得越多越深，你的技能水平增长的越快。",
+        "2.) 经常阅读官方文档： <a href='http://developers.google.com/web/tools/chrome-devtools/' target='_blank'>developers.google.com/web/tools/chrome-devtools/</a>",
+        "3.) Chrome开发工具中的所有功能要结合起来使用，这样才能高效地完成任务，不要只用自己熟悉的功能。"
+
       ],
       "challengeSeed": [
         "137196041"
       ],
       "tests": [
         [
-          "Device mode allows you to view your page in different sizes of screens with different network connections.",
+          "设备模式可以模拟不同屏幕尺寸和网络情况下网页效果。",
           true
         ]
       ],
