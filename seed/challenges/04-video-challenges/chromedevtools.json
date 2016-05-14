@@ -7,27 +7,27 @@
       "id": "56b15f15632298c12f315184",
       "title": "Chrome Dev Tools: Elements",
       "description": [
-        "This is basic info and a mini-lesson on the Elements tab of Chrome Dev Tools. Check out more in-depth documentation here: <a href='http://developers.google.com/web/tools/iterate/inspect-styles/basics' target='_blank'>developers.google.com/web/tools/iterate/inspect-styles/basics</a>",
-        "We will be using the webpage mckellen.com/ per suggestion of Free Code Camp user kmiasko.",
-        "If you right click and select 'Inspect element', you can have access to the elements tab. You can change text, background color, text color, and any other CSS or HTML you'd like!",
-        "These changes don't set up automatically, so don't use this as an IDE or a place to create or edit anything you want to save. You can set up something called 'persistent authoring' to save.",
-        "Cascade, inherit, and other CSS rules still apply, so keep that in mind as you play around. Additionally, overridden styles will be shown as having a strike through them.",
-        "It should also be noted that all of the code you're seeing in this 'tree' is current HTML, not the original when the page loaded. If you use JavaScript or jQuery to change something, it will be updated on this tree.",
-        "Padding, border, and margins are easily inspected and edited using the colorful box on the right or bottom side.",
-        "Please check out the Chrome Dev Tools documentation at <a href='http://developers.google.com/web/tools/chrome-devtools/' target='_blank'>http://developers.google.com/web/tools/chrome-devtools/</a>"
+        "这个课程只对 Chrome 开发工具中的Elements(元素)标签做基本介绍,更多详细介绍请点击: <a href='http://developers.google.com/web/tools/iterate/inspect-styles/basics' target='_blank'>developers.google.com/web/tools/iterate/inspect-styles/basics</a>",
+        "我们接下来会在每个小节中中使用Free Code Camp用户kmiasko的网站 mckellen.com/ 来做演示。",
+        "在chrome浏览器中右击选中'Inspect element'即可访问elements标签，然后你就可以随便修改元素文本，元素标签和任何其他CSS或者HTML。",
+        "这些修改不会自动保存，不能当做IDE或者可以保存内容的编辑器。你可以使用chrome中的'persistent authoring'功能去保存更改。",
+        "记住这里层叠，继承和其他CSS规则都可以使用，另外，被覆盖的式样会以穿越文字的横线的形式展示。",
+        "需要注意的是现在\"树\"中看到的代码是当前的HTML，而不是页面加载时的代码。如果你用JavaScript或Jquery来改变页面元素，\"树\"就会更新。",
+        "Padding，border和margin都很容易在右下角的彩色盒子里面检查和编辑。",
+        "更多详细内容请访问Chrome开发工具文档<a href='http://developers.google.com/web/tools/chrome-devtools/' target='_blank'>http://developers.google.com/web/tools/chrome-devtools/</a>a>"
       ],
       "challengeSeed": [
         "137186237"
       ],
       "tests": [
         [
-          "The elements tab is where you should go if you want to edit HTML and CSS of an existing web page.",
+          "你应该使用elements标签页去编辑现有网页的HTML和CSS。",
           true
         ],
         [
-          "Any changes you make are saved, so it's safe to use as an editing tool.",
+          "在elements标签页中所做的更改都会保存，可以当做编辑器。",
           false,
-          "These changes are temporary, so if you find a great fix or idea, put it into your own documents so you don't lose your progress!"
+          "编辑都是临时的，如果你想要对代码进行更改，记得写到你自己的文档而中不至于丢失。"
         ]
       ],
       "type": "hike",
