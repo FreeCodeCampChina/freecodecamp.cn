@@ -18,7 +18,7 @@
       "title": "Declare JavaScript Objects as Variables",
       "description": [
         "在我们深入 <strong>面向对象编程之前</strong> ，让我们先回顾一下Javascript的 <strong>对象（Object）</strong> ",
-        "给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性， 并且设置他们的数量"
+        "给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性，并且设置他们的数量。"
       ],
       "challengeSeed": [
         "var car = {",
@@ -55,7 +55,7 @@
         " <strong>构造函数</strong> 通常使用大写字母开头，以便把自己和其他普通函数区别开。",
         "下面便是一个 <strong>构造函数</strong> 了：",
         "<blockquote>var Car = function() {<br>&nbsp;&nbsp;this.wheels = 4;<br>&nbsp;&nbsp;this.engines = 1;<br>&nbsp;&nbsp;this.seats = 1;<br>};</blockquote>",
-        "在 <strong> 构造函数 </strong> 中， <code>this</code> 指向将要被此 <strong>构造函数</strong> 创建出来的的 <strong>对象</strong> 。所以，当我们在 <strong>构造函数</strong> 中写：",
+        "在 <strong> 构造函数 </strong> 中， <code>this</code> 指向被此 <strong>构造函数</strong> 创建出来的 <strong>对象</strong> 。所以，当我们在 <strong>构造函数</strong> 中写：",
         "<code>&nbsp;&nbsp;this.wheels = 4;</code>",
         "这时，它创建出来的新<strong>对象</strong>将带有 <code>wheels</code> 属性，并且赋值为 <code>4</code>.",
         "你可以认为 <strong>构造函数</strong> 描述了它所创建出来的<strong>对象</strong>。",
