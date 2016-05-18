@@ -25,7 +25,7 @@ export default function about(app) {
             About our Open Source Community, our social media presence,
             and how to contact us`.split('\n').join(' '),
           globalCompletedCount: numberWithCommas(
-            512952 + (Math.floor((Date.now() - 1463557575258) / 18000))
+            12952 + (Math.floor((Date.now() - 1463557575258) / 18000))
           )
         });
       })
