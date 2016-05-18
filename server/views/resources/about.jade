@@ -1,122 +1,155 @@
 extends ../layout
 block content
     .row
-        .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3                                
-            h2.text-center Statistics
+        .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
+            h2.text-center 数据统计
             hr
             ul.population-table
-                li 
-                    span.tag Established:&#9;
-                    span.text-primary #{daysRunning}
-                    | days ago
-                li 
-                    span.tag Population:&#9;
-                    span.text-primary #{camperCount}
-                    | campers
                 li
-                    span.tag Completed:&#9;
+                    span.tag 创立时间:&#9;
+                    span.text-primary #{daysRunning}
+                    | 天以前
+                li
+                    span.tag 参与学习:&#9;
+                    span.text-primary #{camperCount}
+                    | 个学员
+                li
+                    span.tag 参与翻译:&#9;
+                    span.text-primary 14
+                    | 只猴子
+                li
+                    span.tag 已经完成:&#9;
                     span.text-primary #{globalCompletedCount}
-                    | challenges
-                li.nowrap
-                    span.tag Donated:&#9;
-                    span.text-primary $850,000
-                    | in pro-bono code
+                    | 个挑战
+    .spacer
+    .row
+      .qr_code_pc
+        img.img-responsive(src='https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzAxMjkxNTY2OQ==')
+        p.text-center
+          | 微信扫一扫
+          br
+          | 关注该公众号
     .spacer
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Links
+            h2.text-center 传送门
             hr
             table.table.link-table
                 tr
                     td.text-center
-                        i.fa.fa-medium
+                        img(src="https://www.zhihu.com/favicon.ico")
                     td
-                        a(href='//medium.freecodecamp.com', target='_blank') Our Medium publication
+                        a(href="https://www.zhihu.com/search?type=content&q=freecodecamp", target='_blank') 知乎
                 tr
                     td.text-center
-                        i.fa.fa-twitch
+                        img(src="/images/weixin.png" width="40px")
                     td
-                        a(href="//twitch.tv/freecodecamp", target='_blank') Our Twitch.tv channel
+                        a(href="https://mp.weixin.qq.com/s?__biz=MzAxMjkxNTY2OQ==&mid=2247483684&idx=1&sn=6bdd884038025aa12330255a20d81d01&scene=1&srcid=0518SnCgDHGWP6JQQAWdLaJH&key=f5c31ae61525f82e8576092f748bfa57bbfd4be05c966b20c7390f756f4abd27303a08660ee93533a464f76684bd0857&ascene=0&uin=MTMzODU3OTQwMA%3D%3D&devicetype=iMac+MacBookPro11%2C1+OSX+OSX+10.10.5+build(14F1713)&version=11020201&pass_ticket=AhL55zVNBJAMny%2B1IhWY2r6q%2BKV%2Bg8cCgUX05k3LWOnUJMz8SfYiLAPGoeagk9nv", target='_blank') 微信
                 tr
                     td.text-center
-                        i.fa.fa-reddit
+                        img(src="http://jianshu.com/favicon.ico")
                     td
-                        a(href="//www.reddit.com/r/freecodecamp", target='_blank') Our Subreddit
+                        a(href="http://www.jianshu.com/search?q=freecodecamp&type=notes", target='_blank') 简书
+                tr
+                    td.text-center
+                        img(src="http://weibo.com/favicon.ico")
+                    td
+                        a(href="http://weibo.com/FreeCodeCamp", target='_blank') 微博
                 tr
                     td.text-center
                         i.fa.fa-github
                     td
-                        a(href="//github.com/freecodecamp", target='_blank') Our GitHub repository
+                        a(href="//github.com/huluoyang/freecodecamp.cn", target='_blank') GitHub仓库
                 tr
                     td.text-center
-                        i.fa.fa-linkedin
+                        img(src="https://coding.net/static/7a51352fa766f4176d7c4543339e0e98.png" width="50px")
                     td
-                        a(href="//www.linkedin.com/edu/school?id=166029", target='_blank') Our LinkedIn university page
-                tr
-                    td.text-center
-                        i.fa.fa-twitter
-                    td
-                        a(href="//twitter.com/freecodecamp", target='_blank') Our Twitter feed
-                tr
-                    td.text-center
-                        i.fa.fa-facebook
-                    td
-                        a(href="//facebook.com/freecodecamp") Our Facebook page
-                tr
-                    td.text-center
-                        i.fa.fa-lock
-                    td
-                        a(href="/privacy") Our privacy policy
-                tr
-                    td.text-center
-                        i.fa.fa-balance-scale
-                    td
-                        a(href="/code-of-conduct") Our code of conduct
-                tr
-                    td.text-center
-                        i.fa.fa-university 
-                    td
-                        a(href="/academic-honesty") Our academic honesty policy
-                tr
-                    td.text-center
-                        i.fa.fa-book
-                    td
-                        a(href="/terms") Our terms of service
-                tr
-                    td.text-center
-                        i.fa.fa-heart
-                    td
-                        a(href="/how-nonprofit-projects-work") How our nonprofit projects work
+                        a(href="https://coding.net/u/huluoyang/p/freecodecamp.cn", target='_blank') Coding仓库
                 tr
                     td.text-center
                         i.fa.fa-flask
                     td
-                        a(href="/labs") Extra-curricular apps built by campers
+                        a(href="/labs") 学员完成的项目
                 tr
                     td.text-center
                         i.fa.fa-comment
                     td
-                        a(href="/stories") Stories from campers who've become professional software engineers
+                        a(href="/stories") 程序猿的故事
+                tr
+                    td.text-center
+                        i.fa.fa-medium
+                    td
+                        a(href='//medium.freecodecamp.com', target='_blank') Medium平台
+                tr
+                    td.text-center
+                        i.fa.fa-twitch
+                    td
+                        a(href="//twitch.tv/freecodecamp", target='_blank') Twitch.tv频道
+                tr
+                    td.text-center
+                        i.fa.fa-reddit
+                    td
+                        a(href="//www.reddit.com/r/freecodecamp", target='_blank') Reddit讨论组
+                tr
+                    td.text-center
+                        i.fa.fa-linkedin
+                    td
+                        a(href="//www.linkedin.com/edu/school?id=166029", target='_blank') LinkedIn大学主页
+                tr
+                    td.text-center
+                        i.fa.fa-twitter
+                    td
+                        a(href="//twitter.com/freecodecamp", target='_blank') Twitter流
+                tr
+                    td.text-center
+                        i.fa.fa-facebook
+                    td
+                        a(href="//facebook.com/freecodecamp") Facebook主页
+                tr
+                    td.text-center
+                        i.fa.fa-lock
+                    td
+                        a(href="/privacy") 隐私策略
+                tr
+                    td.text-center
+                        i.fa.fa-balance-scale
+                    td
+                        a(href="/code-of-conduct") 行为规范
+                tr
+                    td.text-center
+                        i.fa.fa-university
+                    td
+                        a(href="/academic-honesty") 学术诚实守则
+                tr
+                    td.text-center
+                        i.fa.fa-book
+                    td
+                        a(href="/terms") 服务条款
+                tr
+                    td.text-center
+                        i.fa.fa-heart
+                    td
+                        a(href="/how-nonprofit-projects-work") 如何运转公益项目
     .spacer
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
-            h2.text-center Frequently Asked Questions
+            h2.text-center 常见问题
             hr
             html
-                <h4>What is Free Code Camp?</h4>
-                <p class="negative-15">We’re an open source community that helps you learn to code.</p>
-                <h4>How do you help me learn to code?</h4>
-                <p class="negative-15">You can work through our self-paced coding challenges, build projects, and earn certifications. We also connect you with people in your city so you can code together.</p>
-                <h4>Can Free Code Camp help me get a job as a software engineer?</h4>
-                <p class="negative-15">Yes. Hundreds of people have gotten software engineering jobs after completing our coding challenges.</p>
-                <h4>Is Free Code Camp a coding bootcamp?</h4>
-                <p class="negative-15">No. A lot of coding bootcamps use Free Code Camp as part of their curriculum, though.</p>
-                <h4>Is Free Code Camp really free?</h4>
-                <p class="negative-15">Yes. Our curriculum, nonprofit projects, and verified certifications are all free.</p>
-                <h4>Which certifications does Free Code Camp offer?</h4>
-                <p class="negative-15">We offer four free verified certifications: front end development, back end development, data visualization, and full stack development.</p>
-                <h4>How can I help nonprofits through Free Code Camp?</h4>
-                <p class="negative-15">Once you finish the first three certifications, you’ll get to build a series of solutions for nonprofits. You’ll work in pairs, under the supervision of a volunteer project manager and a stakeholder from the nonprofit.</p>
+                <h4>FreeCodeCamp 是什么?</h4>
+                <p class="negative-15">我们是一个帮助你学习编程的开源社区。</p>
+                <h4>如何帮助我学习编程？</h4>
+                <p class="negative-15">你可以通过我们的自学编程挑战，构建项目，获得证，还可以参加在线下活动。</p>
+                <h4>FreeCodeCamp 可以帮我获得一份软件工程师的工作吗？</h4>
+                <p class="negative-15">可以，数以百计的人在完成我们的编程挑战后获得了软件工程师的工作。</p>
+                <h4>FreeCodeCamp 是一个编码训练营吗？</h4>
+                <p class="negative-15">不是，许多编码训练营使用FreeCodeCamp作为他们课程的一部分。</p>
+                <h4>FreeCodeCamp 彻底免费吗？</h4>
+                <p class="negative-15">是的，我们的课程、项目、证书全都是免费的。</p>
+                <h4>FreeCodeCamp 可以提供什么证书？</h4>
+                <p class="negative-15">我们提供4个免费的证书，但它们都需要经过验证。它们是：前端开发认证、数据可视化认证、后端开发认证、全栈开发认证。</p>
+                <h4>我如何通过FreeCodeCamp 帮助公益组织？</h4>
+                <p class="negative-15">一旦你完成了前面3个认证，你将会在一个志愿者项目经理的管理下，和多个小伙伴一起完成一些项目。</p>
                 <h4>How much money has Free Code Camp saved nonprofits?</h4>
                 <p class="negative-15">Our community has done nearly a million dollars worth of pro-bono coding for nonprofits so far.</p>
                 <h4>Is there a way I can help nonprofits before I earn my certifications?</h4>
