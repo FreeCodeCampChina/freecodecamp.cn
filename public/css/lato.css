@@ -12,3 +12,8 @@
   font-family: "Lato Bold";
   src: url(/fonts/Lato-Bold.ttf) format("truetype");
 }
+.qr_code_pc {
+  position: fixed;
+  top: 100px;
+  right: 0px;
+}
