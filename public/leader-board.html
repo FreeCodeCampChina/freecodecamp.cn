@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>学习进度排行榜</title>
   <style>
-  h1{padding-left: 10px;}
+  h2{padding-left: 10px;}
   table,th,td{
     padding-left: 5px;
     text-align:center;
@@ -20,735 +20,762 @@
   th, tr{
     padding:10px;
   }
+  #left{
+    float:left;
+  }
+  #right{
+    float:left;
+  }
   </style>
   <base target="_blank" />
   <script src="/js/angular.min.js"></script>
 </head>
 <body>
-  <h1>学习进度排行榜</h1>
-  <table ng-controller="table" >
-    <tr>
-      <th>排名</th>
-      <th>用户名</th>
-      <th>用户头像</th>
-      <th>总得分</th>
-    </tr>
-    <tr ng-repeat="item in items | orderBy:'-score' " >
-      <td ng-bind="$index+1"></td>
-      <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
-      <td><img ng-src="{{item.picture}}" width="64px"></td>
-      <td ng-bind="item.score"></td>
-    </tr>
-  </table>
+  <div id="left">
+    <h2>学习进度排行榜(5月5日)</h2>
+    <table ng-controller="left" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>总得分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score' " >
+        <td ng-bind="$index+1"></td>
+        <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="right">
+    <h2>学习进度排行榜(最新)</h2>
+    <table ng-controller="right" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>总得分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score' " >
+        <td ng-bind="$index+1"></td>
+        <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+      </tr>
+    </table>
+  </div>
 <script>
   var app = angular.module('app',[]);
-  app.controller('table',['$scope','$http', function($scope,$http){
-    // $http.get('/leader-board').then(function(res){
-    //   var out = res.data;
-    //   for(var i=0;i<out.length;i++){
-    //       delete out[i].progressTimestamps;
-    //   }
-      //$scope.items = out;
-      $scope.items =[
-	{
-		"username" : "huluoyang",
-		"picture" : "https://avatars.githubusercontent.com/u/1304552?v=3",
-		"score" : 35
-	},
-	{
-		"username" : "fcc22b7fb85",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "zoorz",
-		"picture" : "https://avatars.githubusercontent.com/u/1608741?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fccfcd0ceff",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "1767083130",
-		"picture" : "https://avatars.githubusercontent.com/u/13881435?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "irwinai",
-		"picture" : "https://avatars.githubusercontent.com/u/4981449?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "tegrat",
-		"picture" : "https://avatars.githubusercontent.com/u/13448467?v=3",
-		"score" : 76
-	},
-	{
-		"username" : "garengoh",
-		"picture" : "https://avatars.githubusercontent.com/u/13014689?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "eaglesjava",
-		"picture" : "https://avatars.githubusercontent.com/u/7812567?v=3",
-		"score" : 9
-	},
-	{
-		"username" : "zhwalker",
-		"picture" : "https://avatars.githubusercontent.com/u/7578819?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "becauseofyou",
-		"picture" : "https://avatars.githubusercontent.com/u/4079296?v=3",
-		"score" : 4
-	},
-	{
-		"username" : "seasonscao",
-		"picture" : "https://avatars.githubusercontent.com/u/16096229?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "jadeshi93",
-		"picture" : "https://avatars.githubusercontent.com/u/18574064?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcca8ffb892",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 3
-	},
-	{
-		"username" : "vizards",
-		"picture" : "https://avatars.githubusercontent.com/u/13443193?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "huoyinglyf",
-		"picture" : "https://avatars.githubusercontent.com/u/3368041?v=3",
-		"score" : 17
-	},
-	{
-		"username" : "kevinhu-1024",
-		"picture" : "https://avatars.githubusercontent.com/u/8946837?v=3",
-		"score" : 6
-	},
-	{
-		"username" : "godi13",
-		"picture" : "https://avatars.githubusercontent.com/u/13229469?v=3",
-		"score" : 5
-	},
-	{
-		"username" : "thinklife",
-		"picture" : "https://avatars.githubusercontent.com/u/8089221?v=3",
-		"score" : 11
-	},
-	{
-		"username" : "fccf41ef565",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 4
-	},
-	{
-		"username" : "zhen639",
-		"picture" : "https://avatars.githubusercontent.com/u/6891736?v=3",
-		"score" : 7
-	},
-	{
-		"username" : "fundijet",
-		"picture" : "https://avatars.githubusercontent.com/u/16789361?v=3",
-		"score" : 127
-	},
-	{
-		"username" : "luwu1991",
-		"picture" : "https://avatars.githubusercontent.com/u/15205301?v=3",
-		"score" : 80
-	},
-	{
-		"username" : "shengyangyu",
-		"picture" : "https://avatars.githubusercontent.com/u/2938251?v=3",
-		"score" : 7
-	},
-	{
-		"username" : "zhuyuun",
-		"picture" : "https://avatars.githubusercontent.com/u/5655140?v=3",
-		"score" : 38
-	},
-	{
-		"username" : "cedricdaniels",
-		"picture" : "https://avatars.githubusercontent.com/u/18255375?v=3",
-		"score" : 35
-	},
-	{
-		"username" : "elanyang",
-		"picture" : "https://avatars.githubusercontent.com/u/4235859?v=3",
-		"score" : 14
-	},
-	{
-		"username" : "stevenyesz",
-		"picture" : "https://avatars.githubusercontent.com/u/3197122?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "lucyluxuehua",
-		"picture" : "https://avatars.githubusercontent.com/u/18609182?v=3",
-		"score" : 37
-	},
-	{
-		"username" : "donggegithub",
-		"picture" : "https://avatars.githubusercontent.com/u/7390760?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "jackjin2014",
-		"picture" : "https://avatars.githubusercontent.com/u/1982447?v=3",
-		"score" : 6
-	},
-	{
-		"username" : "ybbz",
-		"picture" : "https://avatars.githubusercontent.com/u/4158468?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "zjt-github",
-		"picture" : "https://avatars.githubusercontent.com/u/17276029?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fccfd60170d",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "hugaohua",
-		"picture" : "https://avatars.githubusercontent.com/u/18617929?v=3",
-		"score" : 33
-	},
-	{
-		"username" : "hyper-carrot",
-		"picture" : "https://avatars.githubusercontent.com/u/315569?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "neo112358",
-		"picture" : "https://avatars.githubusercontent.com/u/7510180?v=3",
-		"score" : 23
-	},
-	{
-		"username" : "lichangwei",
-		"picture" : "https://avatars.githubusercontent.com/u/718802?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "scottsuen",
-		"picture" : "https://avatars.githubusercontent.com/u/13229431?v=3",
-		"score" : 97
-	},
-	{
-		"username" : "savokiss",
-		"picture" : "https://avatars.githubusercontent.com/u/5608189?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcca02467f9",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 9
-	},
-	{
-		"username" : "clever463",
-		"picture" : "https://avatars.githubusercontent.com/u/10934258?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "it-andy-hou",
-		"picture" : "https://avatars.githubusercontent.com/u/5291663?v=3",
-		"score" : 3
-	},
-	{
-		"username" : "fccb26ae6e8",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc2b291a2a",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fccdb7b9ce3",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc38de58c0",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc276ae3d6",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 3
-	},
-	{
-		"username" : "fcc28973b43",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 66
-	},
-	{
-		"username" : "fcc5d37a1d0",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 5
-	},
-	{
-		"username" : "fcc11ec14b3",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fccd6e14140",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc2d6106bf",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 35
-	},
-	{
-		"username" : "fcc4c29b4c0",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc1e0e18f8",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fcc913bfdcf",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 9
-	},
-	{
-		"username" : "samurais",
-		"picture" : "https://avatars.githubusercontent.com/u/3538629?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "jim-free",
-		"picture" : "https://avatars.githubusercontent.com/u/18638080?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fccfa9ec0ca",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "wuyongzhi",
-		"picture" : "https://avatars.githubusercontent.com/u/769321?v=3",
-		"score" : 7
-	},
-	{
-		"username" : "fcc332a83f2",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "jasonaccuibe",
-		"picture" : "https://avatars.githubusercontent.com/u/18645448?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcc739c9c1e",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fccf231bae2",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "nebulamax",
-		"picture" : "https://avatars.githubusercontent.com/u/18651301?v=3",
-		"score" : 51
-	},
-	{
-		"username" : "gshappy365",
-		"picture" : "https://avatars.githubusercontent.com/u/5722859?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fccd5084976",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 192
-	},
-	{
-		"username" : "yasic",
-		"picture" : "https://avatars.githubusercontent.com/u/11681135?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "gilldong",
-		"picture" : "https://avatars.githubusercontent.com/u/4616552?v=3",
-		"score" : 9
-	},
-	{
-		"username" : "fccaa713a79",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 5
-	},
-	{
-		"username" : "wenzhixin",
-		"picture" : "https://avatars.githubusercontent.com/u/2117018?v=3",
-		"score" : 4
-	},
-	{
-		"username" : "workcheng",
-		"picture" : "https://avatars.githubusercontent.com/u/9999969?v=3",
-		"score" : 45
-	},
-	{
-		"username" : "hopsken",
-		"picture" : "https://avatars.githubusercontent.com/u/8073519?v=3",
-		"score" : 27
-	},
-	{
-		"username" : "cuifan",
-		"picture" : "https://avatars.githubusercontent.com/u/18644132?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcc822fa4b7",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "kylezhang",
-		"picture" : "https://avatars.githubusercontent.com/u/3679798?v=3",
-		"score" : 15
-	},
-	{
-		"username" : "hq-dev",
-		"picture" : "https://avatars.githubusercontent.com/u/11014199?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "liyu001989",
-		"picture" : "https://avatars.githubusercontent.com/u/2981799?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fcca332c874",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "laihu",
-		"picture" : "https://avatars.githubusercontent.com/u/3377558?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fccc8974b71",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fccbd00ee4f",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fccdc0810c4",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc222bad93",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "iossocket",
-		"picture" : "https://avatars.githubusercontent.com/u/5876068?v=3",
-		"score" : 130
-	},
-	{
-		"username" : "yuler",
-		"picture" : "https://avatars.githubusercontent.com/u/6996341?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fcc7e1aff5d",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 6
-	},
-	{
-		"username" : "fccc0f0574b",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 43
-	},
-	{
-		"username" : "fccfdb4fc93",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc4dff3781",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "lionnbean",
-		"picture" : "https://avatars.githubusercontent.com/u/9405078?v=3",
-		"score" : 3
-	},
-	{
-		"username" : "kimmisue",
-		"picture" : "https://avatars.githubusercontent.com/u/18698831?v=3",
-		"score" : 5
-	},
-	{
-		"username" : "fccf5e4283e",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fcc118f8f5b",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "frankdou",
-		"picture" : "https://avatars.githubusercontent.com/u/1637162?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fccf5dcb66f",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "fcc0177f5ce",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "summerccy",
-		"picture" : "https://avatars.githubusercontent.com/u/18711400?v=3",
-		"score" : 11
-	},
-	{
-		"username" : "shuizhongyueming",
-		"picture" : "https://avatars.githubusercontent.com/u/2059860?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "xieyajie",
-		"picture" : "https://avatars.githubusercontent.com/u/1481701?v=3",
-		"score" : 61
-	},
-	{
-		"username" : "jinxhwang",
-		"picture" : "https://avatars.githubusercontent.com/u/17737950?v=3",
-		"score" : 43
-	},
-	{
-		"username" : "fccb8e4901a",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "guokr321",
-		"picture" : "https://avatars.githubusercontent.com/u/8400272?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "tqcenglish",
-		"picture" : "https://avatars.githubusercontent.com/u/3167619?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "guoyongfeng",
-		"picture" : "https://avatars.githubusercontent.com/u/8686869?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "zitqin",
-		"picture" : "https://avatars.githubusercontent.com/u/5271315?v=3",
-		"score" : 5
-	},
-	{
-		"username" : "zhufengnodejs",
-		"picture" : "https://avatars.githubusercontent.com/u/11471150?v=3",
-		"score" : 3
-	},
-	{
-		"username" : "yangfeiloveg",
-		"picture" : "https://avatars.githubusercontent.com/u/8132779?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fbambi",
-		"picture" : "https://avatars.githubusercontent.com/u/16192754?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "wohugb",
-		"picture" : "https://avatars.githubusercontent.com/u/149247?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "wandergis",
-		"picture" : "https://avatars.githubusercontent.com/u/5799374?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "dk-star",
-		"picture" : "https://avatars.githubusercontent.com/u/7970414?v=3",
-		"score" : 11
-	},
-	{
-		"username" : "colecool",
-		"picture" : "https://avatars.githubusercontent.com/u/8470293?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "fcc0c6f522c",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 1
-	},
-	{
-		"username" : "frostyleaf",
-		"picture" : "https://avatars.githubusercontent.com/u/8349568?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "jeluomsy",
-		"picture" : "https://avatars.githubusercontent.com/u/16234480?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "lucky0604",
-		"picture" : "https://avatars.githubusercontent.com/u/8739018?v=3",
-		"score" : 9
-	},
-	{
-		"username" : "fritx",
-		"picture" : "https://avatars.githubusercontent.com/u/6647633?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "tarofriend",
-		"picture" : "https://avatars.githubusercontent.com/u/11360494?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "geoffreyqiao",
-		"picture" : "https://avatars.githubusercontent.com/u/5956387?v=3",
-		"score" : 10
-	},
-	{
-		"username" : "wnyi",
-		"picture" : "https://avatars.githubusercontent.com/u/18729533?v=3",
-		"score" : 19
-	},
-	{
-		"username" : "fcc4fee8438",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "armysheng",
-		"picture" : "https://avatars.githubusercontent.com/u/4077310?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fccaa63e29f",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "wqli78",
-		"picture" : "https://avatars.githubusercontent.com/u/855499?v=3",
-		"score" : 16
-	},
-	{
-		"username" : "namelyy",
-		"picture" : "https://avatars.githubusercontent.com/u/18515169?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "danlyalex",
-		"picture" : "https://avatars.githubusercontent.com/u/13589876?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "dreamertn9527",
-		"picture" : "https://avatars.githubusercontent.com/u/16641530?v=3",
-		"score" : 59
-	},
-	{
-		"username" : "eyea",
-		"picture" : "https://avatars.githubusercontent.com/u/17020223?v=3",
-		"score" : 9
-	},
-	{
-		"username" : "balatintin",
-		"picture" : "https://avatars.githubusercontent.com/u/13432974?v=3",
-		"score" : 25
-	},
-	{
-		"username" : "vv314",
-		"picture" : "https://avatars.githubusercontent.com/u/7637375?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcc6ba2705c",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fcc03f0321c",
-		"picture" : "/images/camper-image-placeholder.png",
-		"score" : 2
-	},
-	{
-		"username" : "fjy5314",
-		"picture" : "https://avatars.githubusercontent.com/u/19164284?v=3",
-		"score" : 31
-	},
-	{
-		"username" : "tfojs",
-		"picture" : "https://avatars.githubusercontent.com/u/18749885?v=3",
-		"score" : 2
-	},
-	{
-		"username" : "peter2116",
-		"picture" : "https://avatars.githubusercontent.com/u/8514734?v=3",
-		"score" : 1
-	},
-	{
-		"username" : "fcc372f6b5e",
-		"picture" : "",
-		"score" : 1
-	},
-	{
-		"username" : "ziluoxingjun",
-		"picture" : "https://avatars.githubusercontent.com/u/13343084?v=3",
-		"score" : 46
-	},
-	{
-		"username" : "xsstomy",
-		"picture" : "https://avatars.githubusercontent.com/u/8943787?v=3",
-		"score" : 7
-	}
-];
-    // },function(err){
-    //   console.log(err);
-    // })
+  app.controller('left',function($scope){
+    $scope.items =[
+    	{
+    		"username" : "huluoyang",
+    		"picture" : "https://avatars.githubusercontent.com/u/1304552?v=3",
+    		"score" : 35
+    	},
+    	{
+    		"username" : "fcc22b7fb85",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "zoorz",
+    		"picture" : "https://avatars.githubusercontent.com/u/1608741?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fccfcd0ceff",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "1767083130",
+    		"picture" : "https://avatars.githubusercontent.com/u/13881435?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "irwinai",
+    		"picture" : "https://avatars.githubusercontent.com/u/4981449?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "tegrat",
+    		"picture" : "https://avatars.githubusercontent.com/u/13448467?v=3",
+    		"score" : 76
+    	},
+    	{
+    		"username" : "garengoh",
+    		"picture" : "https://avatars.githubusercontent.com/u/13014689?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "eaglesjava",
+    		"picture" : "https://avatars.githubusercontent.com/u/7812567?v=3",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "zhwalker",
+    		"picture" : "https://avatars.githubusercontent.com/u/7578819?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "becauseofyou",
+    		"picture" : "https://avatars.githubusercontent.com/u/4079296?v=3",
+    		"score" : 4
+    	},
+    	{
+    		"username" : "seasonscao",
+    		"picture" : "https://avatars.githubusercontent.com/u/16096229?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "jadeshi93",
+    		"picture" : "https://avatars.githubusercontent.com/u/18574064?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcca8ffb892",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 3
+    	},
+    	{
+    		"username" : "vizards",
+    		"picture" : "https://avatars.githubusercontent.com/u/13443193?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "huoyinglyf",
+    		"picture" : "https://avatars.githubusercontent.com/u/3368041?v=3",
+    		"score" : 17
+    	},
+    	{
+    		"username" : "kevinhu-1024",
+    		"picture" : "https://avatars.githubusercontent.com/u/8946837?v=3",
+    		"score" : 6
+    	},
+    	{
+    		"username" : "godi13",
+    		"picture" : "https://avatars.githubusercontent.com/u/13229469?v=3",
+    		"score" : 5
+    	},
+    	{
+    		"username" : "thinklife",
+    		"picture" : "https://avatars.githubusercontent.com/u/8089221?v=3",
+    		"score" : 11
+    	},
+    	{
+    		"username" : "fccf41ef565",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 4
+    	},
+    	{
+    		"username" : "zhen639",
+    		"picture" : "https://avatars.githubusercontent.com/u/6891736?v=3",
+    		"score" : 7
+    	},
+    	{
+    		"username" : "fundijet",
+    		"picture" : "https://avatars.githubusercontent.com/u/16789361?v=3",
+    		"score" : 127
+    	},
+    	{
+    		"username" : "luwu1991",
+    		"picture" : "https://avatars.githubusercontent.com/u/15205301?v=3",
+    		"score" : 80
+    	},
+    	{
+    		"username" : "shengyangyu",
+    		"picture" : "https://avatars.githubusercontent.com/u/2938251?v=3",
+    		"score" : 7
+    	},
+    	{
+    		"username" : "zhuyuun",
+    		"picture" : "https://avatars.githubusercontent.com/u/5655140?v=3",
+    		"score" : 38
+    	},
+    	{
+    		"username" : "cedricdaniels",
+    		"picture" : "https://avatars.githubusercontent.com/u/18255375?v=3",
+    		"score" : 35
+    	},
+    	{
+    		"username" : "elanyang",
+    		"picture" : "https://avatars.githubusercontent.com/u/4235859?v=3",
+    		"score" : 14
+    	},
+    	{
+    		"username" : "stevenyesz",
+    		"picture" : "https://avatars.githubusercontent.com/u/3197122?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "lucyluxuehua",
+    		"picture" : "https://avatars.githubusercontent.com/u/18609182?v=3",
+    		"score" : 37
+    	},
+    	{
+    		"username" : "donggegithub",
+    		"picture" : "https://avatars.githubusercontent.com/u/7390760?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "jackjin2014",
+    		"picture" : "https://avatars.githubusercontent.com/u/1982447?v=3",
+    		"score" : 6
+    	},
+    	{
+    		"username" : "ybbz",
+    		"picture" : "https://avatars.githubusercontent.com/u/4158468?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "zjt-github",
+    		"picture" : "https://avatars.githubusercontent.com/u/17276029?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccfd60170d",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "hugaohua",
+    		"picture" : "https://avatars.githubusercontent.com/u/18617929?v=3",
+    		"score" : 33
+    	},
+    	{
+    		"username" : "hyper-carrot",
+    		"picture" : "https://avatars.githubusercontent.com/u/315569?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "neo112358",
+    		"picture" : "https://avatars.githubusercontent.com/u/7510180?v=3",
+    		"score" : 23
+    	},
+    	{
+    		"username" : "lichangwei",
+    		"picture" : "https://avatars.githubusercontent.com/u/718802?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "scottsuen",
+    		"picture" : "https://avatars.githubusercontent.com/u/13229431?v=3",
+    		"score" : 97
+    	},
+    	{
+    		"username" : "savokiss",
+    		"picture" : "https://avatars.githubusercontent.com/u/5608189?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcca02467f9",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "clever463",
+    		"picture" : "https://avatars.githubusercontent.com/u/10934258?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "it-andy-hou",
+    		"picture" : "https://avatars.githubusercontent.com/u/5291663?v=3",
+    		"score" : 3
+    	},
+    	{
+    		"username" : "fccb26ae6e8",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc2b291a2a",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccdb7b9ce3",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc38de58c0",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc276ae3d6",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 3
+    	},
+    	{
+    		"username" : "fcc28973b43",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 66
+    	},
+    	{
+    		"username" : "fcc5d37a1d0",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 5
+    	},
+    	{
+    		"username" : "fcc11ec14b3",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccd6e14140",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc2d6106bf",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 35
+    	},
+    	{
+    		"username" : "fcc4c29b4c0",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc1e0e18f8",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcc913bfdcf",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "samurais",
+    		"picture" : "https://avatars.githubusercontent.com/u/3538629?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "jim-free",
+    		"picture" : "https://avatars.githubusercontent.com/u/18638080?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccfa9ec0ca",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "wuyongzhi",
+    		"picture" : "https://avatars.githubusercontent.com/u/769321?v=3",
+    		"score" : 7
+    	},
+    	{
+    		"username" : "fcc332a83f2",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "jasonaccuibe",
+    		"picture" : "https://avatars.githubusercontent.com/u/18645448?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc739c9c1e",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fccf231bae2",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "nebulamax",
+    		"picture" : "https://avatars.githubusercontent.com/u/18651301?v=3",
+    		"score" : 51
+    	},
+    	{
+    		"username" : "gshappy365",
+    		"picture" : "https://avatars.githubusercontent.com/u/5722859?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fccd5084976",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 192
+    	},
+    	{
+    		"username" : "yasic",
+    		"picture" : "https://avatars.githubusercontent.com/u/11681135?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "gilldong",
+    		"picture" : "https://avatars.githubusercontent.com/u/4616552?v=3",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "fccaa713a79",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 5
+    	},
+    	{
+    		"username" : "wenzhixin",
+    		"picture" : "https://avatars.githubusercontent.com/u/2117018?v=3",
+    		"score" : 4
+    	},
+    	{
+    		"username" : "workcheng",
+    		"picture" : "https://avatars.githubusercontent.com/u/9999969?v=3",
+    		"score" : 45
+    	},
+    	{
+    		"username" : "hopsken",
+    		"picture" : "https://avatars.githubusercontent.com/u/8073519?v=3",
+    		"score" : 27
+    	},
+    	{
+    		"username" : "cuifan",
+    		"picture" : "https://avatars.githubusercontent.com/u/18644132?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc822fa4b7",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "kylezhang",
+    		"picture" : "https://avatars.githubusercontent.com/u/3679798?v=3",
+    		"score" : 15
+    	},
+    	{
+    		"username" : "hq-dev",
+    		"picture" : "https://avatars.githubusercontent.com/u/11014199?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "liyu001989",
+    		"picture" : "https://avatars.githubusercontent.com/u/2981799?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcca332c874",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "laihu",
+    		"picture" : "https://avatars.githubusercontent.com/u/3377558?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccc8974b71",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fccbd00ee4f",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccdc0810c4",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc222bad93",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "iossocket",
+    		"picture" : "https://avatars.githubusercontent.com/u/5876068?v=3",
+    		"score" : 130
+    	},
+    	{
+    		"username" : "yuler",
+    		"picture" : "https://avatars.githubusercontent.com/u/6996341?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcc7e1aff5d",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 6
+    	},
+    	{
+    		"username" : "fccc0f0574b",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 43
+    	},
+    	{
+    		"username" : "fccfdb4fc93",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc4dff3781",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "lionnbean",
+    		"picture" : "https://avatars.githubusercontent.com/u/9405078?v=3",
+    		"score" : 3
+    	},
+    	{
+    		"username" : "kimmisue",
+    		"picture" : "https://avatars.githubusercontent.com/u/18698831?v=3",
+    		"score" : 5
+    	},
+    	{
+    		"username" : "fccf5e4283e",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcc118f8f5b",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "frankdou",
+    		"picture" : "https://avatars.githubusercontent.com/u/1637162?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccf5dcb66f",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc0177f5ce",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "summerccy",
+    		"picture" : "https://avatars.githubusercontent.com/u/18711400?v=3",
+    		"score" : 11
+    	},
+    	{
+    		"username" : "shuizhongyueming",
+    		"picture" : "https://avatars.githubusercontent.com/u/2059860?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "xieyajie",
+    		"picture" : "https://avatars.githubusercontent.com/u/1481701?v=3",
+    		"score" : 61
+    	},
+    	{
+    		"username" : "jinxhwang",
+    		"picture" : "https://avatars.githubusercontent.com/u/17737950?v=3",
+    		"score" : 43
+    	},
+    	{
+    		"username" : "fccb8e4901a",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "guokr321",
+    		"picture" : "https://avatars.githubusercontent.com/u/8400272?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "tqcenglish",
+    		"picture" : "https://avatars.githubusercontent.com/u/3167619?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "guoyongfeng",
+    		"picture" : "https://avatars.githubusercontent.com/u/8686869?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "zitqin",
+    		"picture" : "https://avatars.githubusercontent.com/u/5271315?v=3",
+    		"score" : 5
+    	},
+    	{
+    		"username" : "zhufengnodejs",
+    		"picture" : "https://avatars.githubusercontent.com/u/11471150?v=3",
+    		"score" : 3
+    	},
+    	{
+    		"username" : "yangfeiloveg",
+    		"picture" : "https://avatars.githubusercontent.com/u/8132779?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fbambi",
+    		"picture" : "https://avatars.githubusercontent.com/u/16192754?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "wohugb",
+    		"picture" : "https://avatars.githubusercontent.com/u/149247?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "wandergis",
+    		"picture" : "https://avatars.githubusercontent.com/u/5799374?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "dk-star",
+    		"picture" : "https://avatars.githubusercontent.com/u/7970414?v=3",
+    		"score" : 11
+    	},
+    	{
+    		"username" : "colecool",
+    		"picture" : "https://avatars.githubusercontent.com/u/8470293?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcc0c6f522c",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "frostyleaf",
+    		"picture" : "https://avatars.githubusercontent.com/u/8349568?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "jeluomsy",
+    		"picture" : "https://avatars.githubusercontent.com/u/16234480?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "lucky0604",
+    		"picture" : "https://avatars.githubusercontent.com/u/8739018?v=3",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "fritx",
+    		"picture" : "https://avatars.githubusercontent.com/u/6647633?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "tarofriend",
+    		"picture" : "https://avatars.githubusercontent.com/u/11360494?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "geoffreyqiao",
+    		"picture" : "https://avatars.githubusercontent.com/u/5956387?v=3",
+    		"score" : 10
+    	},
+    	{
+    		"username" : "wnyi",
+    		"picture" : "https://avatars.githubusercontent.com/u/18729533?v=3",
+    		"score" : 19
+    	},
+    	{
+    		"username" : "fcc4fee8438",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "armysheng",
+    		"picture" : "https://avatars.githubusercontent.com/u/4077310?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fccaa63e29f",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "wqli78",
+    		"picture" : "https://avatars.githubusercontent.com/u/855499?v=3",
+    		"score" : 16
+    	},
+    	{
+    		"username" : "namelyy",
+    		"picture" : "https://avatars.githubusercontent.com/u/18515169?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "danlyalex",
+    		"picture" : "https://avatars.githubusercontent.com/u/13589876?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "dreamertn9527",
+    		"picture" : "https://avatars.githubusercontent.com/u/16641530?v=3",
+    		"score" : 59
+    	},
+    	{
+    		"username" : "eyea",
+    		"picture" : "https://avatars.githubusercontent.com/u/17020223?v=3",
+    		"score" : 9
+    	},
+    	{
+    		"username" : "balatintin",
+    		"picture" : "https://avatars.githubusercontent.com/u/13432974?v=3",
+    		"score" : 25
+    	},
+    	{
+    		"username" : "vv314",
+    		"picture" : "https://avatars.githubusercontent.com/u/7637375?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc6ba2705c",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fcc03f0321c",
+    		"picture" : "/images/camper-image-placeholder.png",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "fjy5314",
+    		"picture" : "https://avatars.githubusercontent.com/u/19164284?v=3",
+    		"score" : 31
+    	},
+    	{
+    		"username" : "tfojs",
+    		"picture" : "https://avatars.githubusercontent.com/u/18749885?v=3",
+    		"score" : 2
+    	},
+    	{
+    		"username" : "peter2116",
+    		"picture" : "https://avatars.githubusercontent.com/u/8514734?v=3",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "fcc372f6b5e",
+    		"picture" : "",
+    		"score" : 1
+    	},
+    	{
+    		"username" : "ziluoxingjun",
+    		"picture" : "https://avatars.githubusercontent.com/u/13343084?v=3",
+    		"score" : 46
+    	},
+    	{
+    		"username" : "xsstomy",
+    		"picture" : "https://avatars.githubusercontent.com/u/8943787?v=3",
+    		"score" : 7
+    	}
+    ];
+  })
+  app.controller('right',['$scope','$http', function($scope,$http){
+    $http.get('/leader-board').then(function(res){
+      var out = res.data;
+      for(var i=0;i<out.length;i++){
+          delete out[i].progressTimestamps;
+      }
+      $scope.items = out;
+    },function(err){
+      console.log(err);
+    })
   }])
 </script>
 </body>

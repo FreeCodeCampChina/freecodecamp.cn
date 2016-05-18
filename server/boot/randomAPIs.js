@@ -299,11 +299,9 @@ module.exports = function(app) {
       if (err) { return next(err); }
       var data = user.slice();
       for(var i=0;i<data.length;i++){
-          console.log(data[i].progressTimestamps.length);
           data[i].score = data[i].progressTimestamps.length;
           delete data[i].progressTimestamps;
       };
-      console.log(data);
       res.send(data);
     });
   }

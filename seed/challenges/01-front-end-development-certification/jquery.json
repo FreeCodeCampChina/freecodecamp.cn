@@ -8,13 +8,13 @@
       "id": "bad87fee1348bd9acdd08826",
       "title": "Learn how Script Tags and Document Ready Work",
       "description": [
-        "现在让我们开始学习最流行的JavaScript工具jQuery吧.不用担心JavaScript本身-我们马上会提到他.",
-        "在开始学习使用jQuery之前,我们需要加一些代码到HTML文件中.",
-        "首先在页面顶端增加一行<code>脚本</code>元素.注意要写上结束符.",
-        "浏览器会在<code>脚本</code> 里运行所有的Javascript,包括jQuery.",
-        "在你的<code>脚本</code> 元素里面,在你的 <code>脚本里</code>增加这行代码:<code>$(document).ready(function() {</code> . 然后用下面这段 <code>});</code>结束 (还是写在你的 <code>脚本</code> 元素里)",
-        "下来我们会来更多的来学习如何写<code>方法</code>.你放在<code>方法</code>里面的代码会被浏览器加载.",
-        "在没有<code>document ready function</code>以前,你的代码会在HTML没有渲染完成就执行,这样会产生bug."
+        "现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。",
+        "在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。",
+        "首先在页面顶端增加一行<code>script</code>元素，然后写上结束符。",
+        "浏览器会运行<code>script</code> 里所有的Javascript，包括jQuery。",
+        "在你的<code>script</code>里，添加这个方法:<code>$(document).ready(function() {</code>到你的<code>script</code>，接下来用<code>});</code>结束这个方法",
+        "接下来我们来学习如何写<code>方法</code>，<code>方法</code>里面的代码会被浏览器加载。",
+        "在没有<code>document ready function</code>以前，你的代码会在HTML没有渲染完成就执行，这样会产生bug。"
       ],
       "challengeSeed": [
         "",
@@ -56,11 +56,11 @@
       "title": "Target HTML Elements with Selectors Using jQuery",
       "description": [
         "现在我们已经知道 <code>document ready function</code>的用法了.",
-        "那么让我开始写第一个jQuery吧.所有jQuery方法都是由<code>$</code>开始的,通常称作为 <code>美元符号</code>,或者简称为<code>bling</code>.",
-        "jQuery通过<code>选择器</code>来选择一个HTML页面元素的,然后为元素做些改变. ",
-        "举个例子,要让所有的<code>按钮</code>做弹回效果.只要把这段代码写在document ready function:里面就可以了",
+        "现在让我们开始写第一个jQuery语句，所有jQuery方法都是由<code>$</code>开始的，通常称作为 <code>美元符号</code>，或者简称为<code>bling</code>。",
+        "jQuery通过<code>选择器</code>来选择一个元素的，然后操作元素做些改变。",
+        "举个例子，要让所有的<code>按钮</code>做弹回效果，只要把这段代码写在<code>document ready function</code>里面就可以了。",
         "<code>$(\"button\").addClass(\"animated bounce\");</code>",
-        "注意我们这里要把jQuery库和Animate.css库引入,这样我们在编辑器里可以使用这两个库.这样你可以使用jQuery调用Animate.css中的<code>bounce</code>元素给<code>button</code>元素使用."
+        "我们已经在后台为你引入了jQuery库和Animate.css库，这样你就可以在编辑器里直接可以使用这两个库，进而通过jQuery给<code>button</code>元素添加<code>bounce</code>回弹动画效果。"
       ],
       "challengeSeed": [
         "fccss",
@@ -94,8 +94,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button\").hasClass(\"animated\") && $(\"button\").hasClass(\"bounce\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the classes <code>animated</code> and <code>bounce</code> to your <code>button</code> elements.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert($(\"button\").hasClass(\"animated\") && $(\"button\").hasClass(\"bounce\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the class <code>animated</code> and <code>bounce</code> to your <code>button</code> elements.');",
+        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -104,14 +104,14 @@
       "id": "bad87fee1348bd9aedc08826",
       "title": "Target Elements by Class Using jQuery",
       "description": [
-        "你看到我们是怎么给所有的<code>按钮</code>做弹回效果的了吗?我们用 <code>$(\"button\")</code>来选中按钮,然后用<code>.addClass(\"animated bounce\");</code>给按钮加CSS classes属性.",
-        "你只需要用jQuery的<code>.addClass()</code>方法,就可以给元素加classes属性了.",
-        "首先,我们来使用<code>$(\".well\")</code>来引用所有使用了<code>well</code> class属性的<code>div</code>元素.",
-        "注意,就像CSS class一样,只需要在class名字前加.就可以引用了.",
-        "然后使用jQuery的<code>.addClass()</code>方法添加<code>animated</code>和<code>shake</code>classes属性.",
-        "例如,你可以将下面的代码写在<code>document ready function</code>里:",
+        "你看到我们是怎么给所有的<code>按钮</code>做弹回效果了吗？我们用 <code>$(\"button\")</code>来选中按钮，然后用<code>.addClass(\"animated bounce\")</code>给按钮加CSS class。",
+        "你只需要用jQuery的<code>.addClass()</code>方法，就可以给元素加class了。",
+        "首先，我们来使用<code>$(\".well\")</code>来引用所有使用了<code>well</code> class的<code>div</code>元素。",
+        "注意，就像CSS class一样，只需要在class名字前加.就可以引用了。",
+        "然后使用jQuery的<code>.addClass()</code>方法添加<code>animated</code>和<code>shake</code>class。",
+        "例如，你可以将下面的代码写在<code>document ready function</code>里：",
         "<code>$(\".text-primary\").addClass(\"animated shake\");</code>",
-        "给所有使用了<code>text-primary</code>class属性的元素加shake class属性"
+        "上面的代码给所有class为<code>text-primary</code> 的元素添加shake class。"
       ],
       "challengeSeed": [
         "fccss",
@@ -145,8 +145,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the classes <code>animated</code> and <code>shake</code> to all your elements with the class <code>well</code>.');",
-        "assert(!code.match(/class\\.\\*animated/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the class <code>animated</code> and <code>shake</code> to all your elements with the class <code>well</code>.');",
+        "assert(!code.match(/class\\.\\*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -155,12 +155,12 @@
       "id": "bad87fee1348bd9aeda08826",
       "title": "Target Elements by ID Using jQuery",
       "description": [
-        "同时你还可以根据id属性来获取元素",
-        "首先用<code>$(\"#target3\")</code>来选择id为<code>target3</code>的<code>button</code>元素",
-        "注意,就像CSS一样,在id的名字前加上 <code>#</code>. ",
-        "然后使用jQuery的<code>.addClass()</code>方法来添加 <code>animated</code>和<code>fadeOut</code>class属性.",
-        "就是这样给id为<code>target6</code>的<code>button</code>元素添加fade out效果的:",
-        "<code>$(\"#target6\").addClass(\"animated fadeOut\")</code>."
+        "你还可以根据id属性来获取元素",
+        "首先用<code>$(\"#target3\")</code>来选择id为<code>target3</code>的<code>button</code>元素。",
+        "注意，就像CSS一样，在id的名字前加上 <code>#</code>。 ",
+        "然后使用jQuery的<code>.addClass()</code>方法来添加 <code>animated</code>和<code>fadeOut</code>class.",
+        "例如：下面的代码就是给id为<code>target6</code>的<code>button</code>元素添加fade out效果的：",
+        "<code>$(\"#target6\").addClass(\"animated fadeOut\")</code>"
       ],
       "challengeSeed": [
         "fccss",
@@ -198,7 +198,7 @@
       "tests": [
         "assert($(\"#target3\").hasClass(\"animated\"), 'message: Select the <code>button</code> element with the <code>id</code> of <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class of <code>animated</code>.');",
         "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: Target the element with the id <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class <code>fadeOut</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -207,8 +207,8 @@
       "id": "bad87fee1348bd9aeda08726",
       "title": "Delete your jQuery Functions",
       "description": [
-        "这些动画效果一开始很cool,但是有点太多了",
-        "在你的<code>document ready function</code>里删掉那三条语句,只留<code>document ready function</code>."
+        "这些动画效果一开始很cool，但是动画太多就有点喧宾夺主了。",
+        "在你的<code>document ready function</code>里删掉那三条语句，只留<code>document ready function</code>。"
       ],
       "challengeSeed": [
         "fccss",
@@ -258,12 +258,12 @@
       "id": "bad87fee1348bd9aed908626",
       "title": "Target the same element with multiple jQuery Selectors",
       "description": [
-        "现在你已经了解了3种指定元素的方法了:通过类型找:<code>$(\"button\")</code>,通过class属性找:<code>$(\".btn\")</code>,还有通过id找<code>$(\"#target1\")</code>.",
-        "尽管可以用<code>.addClass()</code>这种方式就可以加不同classes属性,不过还是让我们尝试永不同的方式给元素添加classes属性吧.",
-        "用上面介绍的jQuery选择器和<code>addClass()</code>方法:",
-        "给所有type是<code>button</code>的元素添加<code>animated</code>class属性.",
-        "给所有class是<code>.btn</code>的按钮添加<code>shake</code>class属性.",
-        "给所有id是<code>#target1</code>的按钮添加<code>btn-primary</code>class属性."
+        "现在你已经了解了3种选择器：元素选择器：<code>$(\"button\")</code>、class选择器：<code>$(\".btn\")</code>、id选择器：<code>$(\"#target1\")</code>。",
+        "尽管用<code>.addClass()</code>这种方式就可以加不同的class，不过还是让我们尝试用不同的方式给元素添加class吧。",
+        "用上面介绍的jQuery选择器和<code>addClass()</code>方法：",
+        "给所有type为<code>button</code>的元素添加<code>animated</code> class。",
+        "给所有class为<code>.btn</code>的按钮添加<code>shake</code> class。",
+        "给所有id为<code>#target1</code>的按钮添加<code>btn-primary</code> class。"
       ],
       "challengeSeed": [
         "fccss",
@@ -301,21 +301,21 @@
         "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?\\.btn\\s*?(?:'|\")/gi), 'message: Use the <code>$&#40\".btn\"&#41</code> selector.');",
         "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")/gi), 'message: Use the <code>$&#40\"#target1\"&#41</code> selector.');",
         "assert(code.match(/addClass/g) && code.match(/addClass\\(\\s*?('|\")[\\w-]+\\1\\s*?\\)/g).length > 2, 'message: Only add one class with each of your three selectors.');",
-        "assert($(\"#target1\").hasClass(\"animated\") && $(\"#target1\").hasClass(\"shake\") && $(\"#target1\").hasClass(\"btn-primary\"), 'message: Your <code>#target1</code> element should have the classes <code>animated</code>&#130; <code>shake</code> and <code>btn-primary</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert($(\"#target1\").hasClass(\"animated\") && $(\"#target1\").hasClass(\"shake\") && $(\"#target1\").hasClass(\"btn-primary\"), 'message: Your <code>#target1</code> element should have the class <code>animated</code>&#130; <code>shake</code> and <code>btn-primary</code>.');",
+        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
     },
     {
       "id": "bad87fee1348bd9aed918626",
-      "title": "Remove Classes from an element with jQuery",
+      "title": "Remove classes from an element with jQuery",
       "description": [
-        "你可以通过jQuery的<code>addClass()</code>方法给元素添加classes属性,用同样的jQuery<code>removeClass()</code>方法可以去掉元素上的classes属性.",
-        "像下面这样:",
+        "你可以通过jQuery的<code>addClass()</code>方法给元素添加class,也可以通过jQuery<code>removeClass()</code>方法去掉元素上的class。",
+        "像下面这样：",
         "<code>$(\"#target2\").removeClass(\"btn-default\");</code>",
         "<code>$(\"#target2\").removeClass(\"btn-default\");</code>",
-        "来尝试把所有<code>button</code>元素上的<code>btn-default</code>class元素移除掉."
+        "来尝试把所有<code>button</code>元素上的<code>btn-default</code> class移除掉。 "
       ],
       "challengeSeed": [
         "fccss",
@@ -363,13 +363,13 @@
       "id": "bad87fee1348bd9aed908826",
       "title": "Change the CSS of an Element Using jQuery",
       "description": [
-        "我们可以通过jQuery来改变HTML上面的CSS样式.",
-        "jQuery有一个叫做<code>.css()</code>的方法能让你改变元素CSS的样式.",
+        "我们可以通过jQuery来改变HTML元素的CSS样式。",
+        "jQuery有一个叫做<code>.css()</code>的方法能让你改变元素的CSS样式。",
         "我们是这样来把颜色改变成蓝色的:",
         "<code>$(\"#target1\").css(\"color\", \"blue\");</code>",
-        "这跟通常的CSS语法有点不同,因为CSS的属性和值是在引号内的,并且用逗号分开.",
-        "把你的<code>document ready function</code>清空.",
-        "来尝试把<code>target1</code>改变成红色."
+        "这跟通常的CSS语法有点不同，这里CSS的属性和值是在引号内的，并且用逗号分开。",
+        "把你的<code>document ready function</code>清空，",
+        "来尝试把<code>target1</code>改变成红色。"
       ],
       "challengeSeed": [
         "fccss",
@@ -408,7 +408,7 @@
       ],
       "tests": [
         "assert($(\"#target1\").css(\"color\") === 'rgb(255, 0, 0)', 'message: Your <code>target1</code> element should have red text.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -417,14 +417,13 @@
       "id": "bad87fee1348bd9aed808826",
       "title": "Disable an Element Using jQuery",
       "description": [
-        "你也可以用jQuery改变除了CSS以外的属性.比如,你可以让按钮变不可选.",
-        "当你把按钮设置成不可选以后,这会让按钮变灰并且不能点击.",
-        "jQuery有一个<code>.prop()</code>的方法让可以调整元素的属性.",
+        "你还可以用jQuery改变除了CSS以外的属性。比如，你可以让按钮变不可选。",
+        "当你把按钮设置成不可选以后，这会让按钮变灰并且不能点击。",
+        "jQuery有一个<code>.prop()</code>的方法让你来调整元素的属性.",
         "我们是这样来让按钮不可选的:",
         "<code>$(\"button\").prop(\"disabled\", true);</code>",
         "<code>$(\"button\").prop(\"disabled\", true);</code>",
-        "Disable only the <code>target1</code> button.",
-        "来尝试让 <code>target1</code>不可选."
+        "来尝试让 <code>target1</code> 按钮不可选."
       ],
       "challengeSeed": [
         "fccss",
@@ -461,7 +460,7 @@
       "tests": [
         "assert($(\"#target1\") && $(\"#target1\").prop(\"disabled\"), 'message: Disable your <code>target1</code> button.');",
         "assert($(\"#target2\") && !$(\"#target2\").prop(\"disabled\"), 'message: Do not disable any other buttons.');",
-        "assert(!code.match(/disabled>/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(!code.match(/disabled>/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -470,12 +469,12 @@
       "id": "564944c91be2204b269d51e3",
       "title": "Change Text Inside an Element Using jQuery",
       "description": [
-        "你可以使用jQuery改变HTML文字的字体.",
-        "使用jQuery的<code>.html()</code>方法可以添加HTML标签和文字,代元素原先的内容会被方法的内容所替换掉.",
-        "我们是这样重写标题并让字体变斜体的:",
-        "<code>$(\"h3\").html(\"&#60;i&#62;jQuery Playground&#60;/i&#62;\");</code>",
-        "jQuery also has a similar function called <code>.text()</code> that only alters text without adding tags.",
-        "改变id为<code>target4</code>按钮的字体为斜体. "
+        "jQuery不仅可以改变元素标记里的文本，甚至可以改变HTML标记本身。",
+        "jQuery的<code>.html()</code>方法可以添加HTML标签和文字到元素,而元素之前的内容都会被方法的内容所替换掉。",
+        "我们是这样重写和强调标题文本的：",
+        "<code>$(\"h3\").html(\"&#60;em&#62;jQuery Playground&#60;/em&#62;\");</code>",
+        "jQuery 还有一个类似的方法叫<code>.text()</code>，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。",
+        "强调id为<code>target4</code>按钮里的文本。 "
       ],
       "releasedOn": "November 18, 2015",
       "challengeSeed": [
@@ -511,9 +510,9 @@
         "</div>"
       ],
       "tests": [
-        "assert.isTrue((/<i>#target4<\\/i>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags.');",
+        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags.');",
         "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: Make sure the text is otherwise unchanged.');",
-        "assert.isFalse((/<i>/gi).test($(\"h3\").html()), 'message: Do not alter any other text.');"
+        "assert.isFalse((/<em>/gi).test($(\"h3\").html()), 'message: Do not alter any other text.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -570,11 +569,11 @@
       "id": "bad87fee1348bd9aed608826",
       "title": "Use appendTo to Move Elements with jQuery",
       "description": [
-        "现在让我们尝试把元素从一个<code>div</code>移到另外一个.",
-        "jQuery有一个<code>appendTo()</code>方法可以把选中的元素加到其他元素中.",
-        "比如,你想让<code>target4</code>从我们的从<code>right-well</code>移到<code>left-well</code>,我们可以这样使用:",
+        "现在让我们尝试把元素从一个<code>div</code>里移到另外一个<code>div</code>里。",
+        "jQuery有一个<code>appendTo()</code>方法可以把选中的元素加到其他元素中。",
+        "比如，你想让<code>target4</code>从我们的从<code>right-well</code>移到<code>left-well</code>，我们可以这样使用:",
         "<code>$(\"#target4\").appendTo(\"#left-well\");</code>",
-        "来试着把<code>target2</code>元素从<code>left-well</code>移到<code>right-well</code>中."
+        "来试着把<code>target2</code>元素从<code>left-well</code>移到<code>right-well</code>中。"
       ],
       "challengeSeed": [
         "fccss",
@@ -622,12 +621,12 @@
       "id": "bad87fee1348bd9aed508826",
       "title": "Clone an Element Using jQuery",
       "description": [
-        "除了移动元素,你还第一把他们从一个地方拷贝到另外一个地方.",
+        "除了移动元素，你还可以拷贝元素，简单理解：移动元素就是剪切，拷贝元素就是复制。",
         "jQuery的<code>clone()</code>方法可以拷贝元素.",
         "比如,如果我想把<code>target2</code>从<code>left-well</code>拷贝到<code>right-well</code>,我们可以这样写:",
         "<code>$(\"#target2\").clone().appendTo(\"#right-well\");</code>",
-        "你有没有发现这让两个jQuery方法合在一起使用了?这叫做<code>function chaining</code>并在这样使用也很方便.",
-        "来尝试复制<code>target5</code>元素"
+        "你有没有发现两个jQuery方法合在一起使用了？这就叫方法链<code>function chaining</code>，使用起来很方便。",
+        "复制<code>target5</code>元素追加到<code>left-well</code>。"
       ],
       "challengeSeed": [
         "fccss",
@@ -676,12 +675,12 @@
       "id": "bad87fee1348bd9aed308826",
       "title": "Target the Parent of an Element Using jQuery",
       "description": [
-        "Every HTML element has a <code>parent</code> element from which it <code>inherits</code> properties.",
-        "For example, your <code>jQuery Playground</code> <code>h3</code> element has the parent element of <code>&#60;div class=\"container-fluid\"&#62</code>, which itself has the parent <code>body</code>.",
-        "jQuery has a function called <code>parent()</code> that allows you to access the parent of whichever element you've selected.",
-        "Here's an example of how you would use the <code>parent()</code> function if you wanted to give the parent element of the <code>left-well</code> element a background color of blue:",
+        "每个HTML元素根据继承属性都有父<code>parent</code>元素。",
+        "举个例子，<code>h3</code> 元素的父元素是 <code>&#60;div class=\"container-fluid\"&#62</code>，<code>&#60;div class=\"container-fluid\"&#62</code>的父元素是 <code>body</code>。",
+        "jQuery有一个方法叫<code>parent()</code>，它允许你访问指定元素的父元素。",
+        "举个例子：让<code>left-well</code> 元素的父元素<code>parent()</code>的背景色变成蓝色。",
         "<code>$(\"#left-well\").parent().css(\"background-color\", \"blue\")</code>",
-        "Give the parent of the <code>#target1</code> element a background-color of red."
+        "试试让<code>#target1</code>元素的父元素的背景色变成红色。"
       ],
       "challengeSeed": [
         "fccss",
@@ -725,7 +724,7 @@
         "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: Your <code>left-well</code> element should have a red background.');",
         "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: You should use the <code>&#46;parent&#40;&#41;</code> function to modify this element.');",
         "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message: The <code>&#46;parent&#40;&#41;</code> method should be called on the <code>&#35;target1</code> element.');",
-        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -734,12 +733,12 @@
       "id": "bad87fee1348bd9aed208826",
       "title": "Target the Children of an Element Using jQuery",
       "description": [
-        "Many HTML elements have <code>children</code> which <code>inherit</code> their properties from their parent HTML elements.",
-        "For example, every HTML element is a child of your <code>body</code> element, and your \"jQuery Playground\" <code>h3</code> element is a child of your <code>&#60;div class=\"container-fluid\"&#62</code> element.",
-        "jQuery has a function called <code>children()</code> that allows you to access the children of whichever element you've selected.",
-        "Here's an example of how you would use the <code>children()</code> function to give the children of your <code>left-well</code> element the color of blue:",
+        "每个HTML元素根据继承属性都有子<code>child</code>元素。",
+        "举个例子，每个HTML元素都是 <code>body</code> 元素的子元素， 你的 \"jQuery Playground\" <code>h3</code> 元素是 <code>&#60;div class=\"container-fluid\"&#62</code> 的子元素。",
+        "jQuery有一个方法叫<code>child()</code>，它允许你访问指定元素的子元素。",
+        "举个例子：让<code>left-well</code> 元素的子元素<code>child()</code>的背景色变成蓝色。",
         "<code>$(\"#left-well\").children().css(\"color\", \"blue\")</code>",
-        "Give all the children of your <code>#right-well</code> element a color of orange."
+        "试试让<code>#right-well</code>元素的所有子元素的文本颜色都变成橙色。"
       ],
       "challengeSeed": [
         "fccss",
@@ -781,7 +780,7 @@
       "tests": [
         "assert($(\"#right-well\").children().css(\"color\") === 'rgb(255, 165, 0)', 'message: All children of <code>#right-well</code> should have orange text.');",
         "assert(code.match(/\\.children\\(\\)\\.css/g), 'message: You should use the <code>children&#40&#41</code> function to modify these elements.');",
-        "assert(code.match(/<div class=\"well\" id=\"right-well\">/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(code.match(/<div class=\"well\" id=\"right-well\">/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -790,12 +789,12 @@
       "id": "bad87fee1348bd9aed108826",
       "title": "Target a Specific Child of an Element Using jQuery",
       "description": [
-        "You've seen why id attributes are so convenient for targeting with jQuery selectors. But you won't always have such neat ids to work with.",
-        "Fortunately, jQuery has some other tricks for targeting the right elements.",
-        "jQuery uses CSS Selectors to target elements. <code>target:nth-child(n)</code> css selector allows you to select all the nth elements with the target class or element type.",
-        "Here's how you would give the third element in each well the bounce class:",
+        "你已经看到了当用jQuery选择器通过id属性来选取元素的时候是多么方便，但是你不能总是写这么整齐的id。",
+        "幸运的是，jQuery有一些另外的技巧可以达到同样的效果。",
+        "jQuery 用CSS选择器来选取元素，<code>target:nth-child(n)</code> CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。",
+        "示例：你可以给目标元素的第三个子元素添加bounce class。",
         "<code>$(\".target:nth-child(3)\").addClass(\"animated bounce\");</code>",
-        "Make the second child in each of your well elements bounce. You must target the children of element with the <code>target</code> class."
+        "任务：确保给目标元素的第二个子元素添加bounce class，你可以通过<code>target</code> class来选获得目标元素。"
       ],
       "challengeSeed": [
         "fccss",
@@ -838,7 +837,7 @@
       "tests": [
         "assert($(\".target:nth-child(2)\").hasClass(\"animated\") && $(\".target:nth-child(2)\").hasClass(\"bounce\"), 'message: The second element in your <code>target</code> elements should bounce.');",
         "assert(code.match(/\\:nth-child\\(/g), 'message: You should use the <code>&#58;nth-child&#40&#41</code> function to modify these elements.');",
-        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target2\">/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target2\">/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -847,11 +846,12 @@
       "id": "bad87fee1348bd9aed008826",
       "title": "Target Even Numbered Elements Using jQuery",
       "description": [
-        "You can also target all the even-numbered elements.",
-        "Here's how you would target all the odd-numbered elements with class <code>target</code> and give them classes:",
+        "你还可以获取所有索引为偶数的元素。",
+        "示例：获取<code>target</code>class 元素的所有奇数元素，并给他们添加class。",
         "<code>$(\".target:odd\").addClass(\"animated shake\");</code>",
-        "Note that jQuery is zero-indexed, meaning that, counter-intuitively, <code>:odd</code> selects the second element, fourth element, and so on.",
-        "Try selecting all the even-numbered elements and giving them the classes of <code>animated</code> and <code>shake</code>."
+        "记住，jQuery里的索引是从0开始的，也就是说：<code>:odd</code> 选择第二个元素，第四个元素，以此类推。",
+        "CSS中索引是从1开始的，但JS中索引是从0开始的，所以odd(奇数)代表2、4、6···，even(偶数)代表1、3、5···",
+        "任务：获取所有索引为偶数的元素，并给它们添加class <code>animated</code> 和 <code>shake</code>。"
       ],
       "challengeSeed": [
         "fccss",
@@ -896,7 +896,7 @@
       "tests": [
         "assert($('.target:even').hasClass('animated') && $('.target:even').hasClass('shake'), 'message: All the <code>target</code> elements that computer considers even should shake.');",
         "assert(code.match(/\\:even/g), 'message: You should use the <code>&#58;even</code> function to modify these elements.');",
-        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target3\">/g), 'message: Only use jQuery to add these classes to the element.');"
+        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target3\">/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -906,10 +906,9 @@
       "title": "Use jQuery to Modify the Entire Page",
       "description": [
         "We're done playing with our jQuery playground. Let's tear it down!",
-        "对jQuery的介绍就到这里吧.让我们来玩耍吧!",
-        "jQuery can target the <code>body</code> element as well.",
-        "Here's how we would make the entire body fade out: <code> $(\"body\").addClass(\"animated fadeOut\");</code>",
-        "But let's do something more dramatic. Add the classes <code>animated</code> and <code>hinge</code> to your <code>body</code> element."
+        "对jQuery的介绍就到这里吧，让我们来玩耍吧！",
+        "我们让整个body都有淡出效果(fadeOut)： <code> $(\"body\").addClass(\"animated fadeOut\");</code>",
+        "让我们做一些更为激动人心的事情，给body添加class <code>animated</code> 和<code>hinge</code> 。"
       ],
       "challengeSeed": [
         "fccss",
@@ -953,7 +952,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: Add the classes <code>animated</code> and <code>hinge</code> to your <code>body</code> element.');"
+        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: Add the class <code>animated</code> and <code>hinge</code> to your <code>body</code> element.');"
       ],
       "type": "waypoint",
       "challengeType": 0
