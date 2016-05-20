@@ -3609,7 +3609,7 @@
         "下面是一个嵌套的JSON对象：",
         "<blockquote>var ourStorage = {<br>  \"desk\": {<br>    \"drawer\": \"stapler\"<br>  },<br>  \"cabinet\": {<br>    \"top drawer\": { <br>      \"folder1\": \"a file\",<br>      \"folder2\": \"secrets\"<br>    },<br>    \"bottom drawer\": \"soda\"<br>  }<br>}<br>ourStorage.cabinet[\"top drawer\"].folder2;  // \"secrets\"<br>ourStorage.desk.drawer; // \"stapler\"</blockquote>",
         "<h4>任务</h4>",
-        "检索JSON对象 <code>myStorage</code> 来检索嵌套 <code>glove box</code> 的值。因为属性的名字带有空格，请使用中括号操作符来访问属性的值。"
+        "检索JSON对象 <code>myStorage</code> 中嵌套属性 <code>glove box</code> 的值。因为属性的名字带有空格，请使用中括号操作符来访问属性的值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3710,7 +3710,7 @@
       "description": [
         "右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id数字标识，并具有多种属性。并非所有的专辑都有完整的信息。",
         "写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
-        "如果 <code>prop</code> 不等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code> 更新为<code>prop</code> 的值。",
+        "如果 <code>prop</code> 不等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>prop</code> 的值更新为 <code>value</code> 。",
         "如果 <code>prop</code> 等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code>追加到<code>tracks</code>数组。",
         "如果 <code>value</code> 为空，删除 <code>prop</code>。",
         "记住：函数返回的永远是整个对象。",
