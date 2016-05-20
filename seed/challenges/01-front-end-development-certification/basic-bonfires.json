@@ -113,7 +113,7 @@
       "title": "Check for Palindromes",
       "description": [
         "如果给定的字符串是回文，返回<code>true</code>，反之，返回<code>false</code>。",
-        "如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是回文<dfn>palindrome</dfn>。",
+        "如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是<dfn>palindrome</dfn>(回文)。",
         "<strong>注意</strong>你需要去掉字符串多余的标点符号和空格，然后把字符串转化成小写来验证此字符串是否为回文。",
         "函数参数的值可以为<code>\"racecar\"</code>，<code>\"RaceCar\"</code>和<code>\"race CAR\"</code>。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
@@ -252,7 +252,7 @@
       "id": "acda2fb1324d9b0fa741e6b5",
       "title": "Confirm the Ending",
       "description": [
-        "检查一个字符串(第一个参数，<code>str</code>)是否以指定的字符串(第二个参数，<code>target</code>)结尾。",
+        "检查一个字符串(<code>str</code>)是否以指定的字符串(<code>target</code>)结尾。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
@@ -288,7 +288,7 @@
       "title": "Repeat a string repeat a string",
       "description": [
         "重要的事情说3遍！",
-        "重复一个指定的字符串(第一个参数)<code>num</code>次(第二个参数)，如果<code>num</code>是一个负数则返回一个空字符串。",
+        "重复一个指定的字符串 <code>num</code>次，如果<code>num</code>是一个负数则返回一个空字符串。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
@@ -321,9 +321,11 @@
       "id": "ac6993d51946422351508a41",
       "title": "Truncate a string",
       "description": [
+        "用瑞兹来截断对面的退路!",
         "截断一个字符串！",
-        "如果字符串的长度比指定的参数<code>num</code>长，则把多余的部分用'...'来表示。",
-        "如果参数<code>num</code>小于或等于3，那么就不用缩短字符串了。",
+        "如果字符串的长度比指定的参数<code>num</code>长，则把多余的部分用<code>...</code>来表示。",
+        "切记，插入到字符串尾部的三个点号也会计入字符串的长度。",
+        "但是，如果指定的参数<code>num</code>小于或等于3，则添加的三个点号不会计入字符串的长度。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
@@ -429,7 +431,7 @@
       "title": "Mutations",
       "description": [
         "蛤蟆可以吃队友，也可以吃对手。",
-        "如果数组第一个字符串元素包含了数组第二个字符串元素的所有字符，函数返回true。",
+        "如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。",
         "举例，<code>[\"hello\", \"Hello\"]</code>应该返回true，因为在忽略大小写的情况下，第二个字符串的所有字符都可以在第一个字符串找到。",
         "<code>[\"hello\", \"hey\"]</code>应该返回false，因为字符串\"hello\"并不包含字符\"y\"。",
         "<code>[\"Alien\", \"line\"]</code>应该返回true，因为\"line\"中所有字符都可以在\"Alien\"找到。",
@@ -536,8 +538,8 @@
       "description": [
         "我身在何处？",
         "先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。",
-        "举例：<code>where([1,2,3,4], 1.5)</code> 应该返回 <code>1</code>。因为1.5大于<code>1</code>(index 0)，但小于<code>2</code>(index 1)。",
-        "同理， <code>where([20,3,5], 19)</code> 应该返回 <code>2</code> 因为数组会先排序为 <code>[3,5,20]</code>，<code>19</code> 小于 <code>20</code> (index 2) 但是大于<code>5</code> (index 1)。",
+        "举例：<code>where([1,2,3,4], 1.5)</code> 应该返回 <code>1</code>。因为<code>1.5</code>插入到数组<code>[1,2,3,4]</code>后变成<code>[1,1.5,2,3,4]</code>，而<code>1.5</code>对应的索引值就是<code>1</code>。",
+        "同理，<code>where([20,3,5], 19)</code> 应该返回 <code>2</code>。因为数组会先排序为 <code>[3,5,20]</code>，<code>19</code>插入到数组<code>[3,5,20]</code>后变成<code>[3,5,19,20]</code>，而<code>19</code>对应的索引值就是<code>2</code>。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
@@ -571,7 +573,8 @@
       "id": "56533eb9ac21ba0edf2244e2",
       "title": "Caesars Cipher",
       "description": [
-        "一个用的最广泛同时也是最简单的密码就是凯撒密码<code>Caesar cipher</code>，别名移位密码。",
+        "让上帝的归上帝，凯撒的归凯撒。",
+        "下面我们来介绍风靡全球的凯撒密码<code>Caesar cipher</code>，又叫移位密码。",
         "移位密码也就是密码中的字母会按照指定的数量来做移位。",
         "一个通用的现代案例就是<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>密码，字母会移位13个位置。由'A' &harr; 'N', 'B' &harr;  'O'等等",
         "写一个<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>函数，实现输入加密字符串，输出解密字符串。",
