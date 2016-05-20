@@ -26,18 +26,18 @@
       ],
       "tests": [
         [
-          "The computer has 3 basic parts.",
+          "计算机有三个基本部分",
           false,
-          "The computer has 4 basic parts: input, output, CPU, and memory"
+          "计算机有四个基本组成: 输入，输出，中央处理单元(CPU)，存储器。"
         ],
         [
-          "CPU stands for Central Processing Unit.",
+          "CPU代表中央处理单元",
           true
         ],
         [
-          "All parts can access the memory",
+          "所有组成部分都可以访问内存",
           false,
-          "Only the CPU has access to the memory"
+          "只有CPU可以访问内存"
         ]
       ],
       "type": "hike",
@@ -47,36 +47,36 @@
       "id": "bd7127d8c441eddfbeb5bddf",
       "title": "Computer Basics: More Computer Hardware",
       "description": [
-        "In this video we cover the basic functions of a motherboard, expansion slots, and power supply.",
-        "Let's quickly review - the 4 basic parts of a computer are the input, like the mouse or the keyboard, the output, which is seen on the monitor or heard on the speakers, the CPU, the central processing unit, and the memory.",
-        "Now memory can be short term memory, called RAM, or longer term memory.",
-        "That's usually as a hard drive, but it can also be a CD-ROM or a flash drive, anything like that.",
-        "In addition to those four basic parts, we have three more things we're going to discuss today: the motherboard, expansion cards, and power supply.",
-        "The motherboard is what connects everything.",
-        "While the data's flying around over here trying to figure out where to go, the motherboard helps route it so it goes to the right place.",
-        "Expansion cards are sound cards, video cards, that kind of thing that can really up your experience as a user.",
-        "Power supply is, as it sounds, what gets power to the computer.",
-        "It's usually that part that has a fan on it to keep it from overheating.",
-        "So let's do a quick review.",
-        "In addition to the four basic parts of input, output, CPU, and memory, we also usually have a motherboard, expansion cards, and a power supply."
+        "这个视频涵盖了主板，扩展槽和电源的基本功能。",
+        "让我们快速的回顾一下 - 计算机的四个基本组成，有输入例如鼠标和键盘, 输出：在显示器中看到和扬声器中听到的, CPU：中央处理单元, 还有存储器。",
+        "现在存储器可以分为短期存储器, 称作RAM, 或者是长期存储器.",
+        "长期存储器通常是硬盘, 但是也可以是使CD-ROM或者是闪存设备, 或是任何这一类的。",
+        "除了这四个基本部分, 我们今天还有另外三样东西要谈论: 主板，扩展槽和电源。",
+        "主板是连接这些硬件的东西。",
+        "当这些数据到处流动试图找出该去哪时, 主板帮助他们导流他们，使他们去向正确的地方",
+        "扩展卡是声卡，显卡，这类可以提升用户体验的东西。",
+        "电源, 就像他的名字一样, 给我们的计算机提供电力。",
+        "它通常是一个部件并有一个风扇在上面来帮助它散热。",
+        "然后让我们快速的回顾一下。",
+        "除了输入，输出，CPU，存储器这四个基本部分，我们通常还有主板，扩展卡和电源。"
       ],
       "challengeSeed": [
         "132542458"
       ],
       "tests": [
         [
-          "The power supply isn't a necessary part of a computer since it's not one of the 4 main parts.",
+          "电源不是计算机的一个必要的部分因为它不是4个基本部分之一",
           false,
-          "The computer needs power!"
+          "计算机需要电力。"
         ],
         [
-          "A motherboard connects all of the working parts in a computer.",
+          "主板连接了计算机所有的工作部件。",
           true
         ],
         [
-          "Memory is usually categorized into 3 parts.",
+          "存储器通常分为三部分。",
           false,
-          "Only 2 parts, RAM and long term memory such as a hard drive"
+          "只有两部分:RAM和长期存储器例如硬盘。"
         ]
       ],
       "type": "hike",
@@ -86,34 +86,34 @@
       "id": "bd7129d8a441eddfbeb5bddf",
       "title": "Computer Basics: Chips and Moore's Law",
       "description": [
-        "We discuss what constitutes a chip and why technology gets cheaper every year.",
-        "In this video we are going to be talking about chips and something called Moore's Law.",
-        "You've probably noticed over the last 10 or so years, if you're going to go buy an MP3 player, you can get a lot more storage for a lot lower price.",
-        "You probably have even done the thing where you're at the store and you think, \"Well, I can get one now, or I could wait 6 months and see how far the price has dropped\", which might sound ridiculous but this is actually a trend that's been happening for a long time.",
-        "Let's talk about what makes a chip.",
-        "A chip is full of these little things called transistors, which are switches that can either be a 1 or a 0 (noticing a theme here?).",
-        "All of these transistors fit onto a chip, and that's how it stores information.",
-        "What makes these chips larger/faster is the amount of transistors on a single chip.",
-        "Moore's Law is the observation that the amount of transistors fit on each chip has doubled every two years since 1965.",
-        "This is important because it's making technology more affordable and accessible."
+        "我们讨论什么是芯片还有为什么技术一年比一年便宜。",
+        "在这个视频中我们要讨论芯片和摩尔定律。",
+        "你应该注意到近十年或者说很多年来，如我你要去买一个MP3，你或很少的钱就能买到很大容量。",
+        "当你在商店里的时候也许已经做了这些事并且想：\"嗯~，我现在可以入手一个了，或者我可以再等半年看看价格会降多少\", 这也许看起来可笑但是长期来说一直存在的一个趋势。",
+        "让我们谈谈什么组成了一个芯片。",
+        "一个芯片全是由成千上万的晶体管(一种只能是0或1的开关)组成的(注意到这里的主题了？).",
+        "所有的这些晶体管塞进了一个芯片里，并且这就是芯片存储信息的方式。",
+        "在一个芯片上集成的晶体管数量决定了芯片的大小和速度",
+        "摩尔定律是观察到自从1965年芯片上的晶体管数量每两年增加一倍的一种规律。",
+        "这很重要的，因为它使技术更经济实惠和方便。"
       ],
       "challengeSeed": [
         "133182057"
       ],
       "tests": [
         [
-          "Chips have transistors, little switches that can store a 1 or a 0.",
+          "芯片有晶体管，可存储1或0的小开关。",
           true
         ],
         [
-          "Moore's Law is the observation that technology doubles in speed every year.",
+          "穆尔定律是技术每年都在速度上加倍的规律。",
           false,
-          "Moore's Law is the observation that the number of transistors per chip doubles every 2 years)."
+          "摩尔定律是芯片上的晶体管的数量每两年加倍的规律."
         ],
         [
-          "Moore's Law has slowed down in recent years.",
+          "摩尔定律这几年慢下来了",
           true,
-          "As of 2015, the pace of Moore's law has indeed slowed. Brian Krzanich, CEO of Intel, announced that 'our cadence today is closer to two and a half years than two.'"
+          "截止2015年，摩尔定律确实慢下来了。英特尔(Intel)的(首席执行官)CEO，Brian Krzanich，宣布我们现在的节奏更接近于两年半而不是两年。'"
         ]
       ],
       "type": "hike",
@@ -123,30 +123,30 @@
       "id": "bd7126d8c441eddfbeb5bddf",
       "title": "Computer Basics: Intro to Binary Code",
       "description": [
-        "What binary looks like, and what it can mean.",
-        "0's and 1's can turn be interpreted into far more complex data.",
-        "Today we're going to talk a little bit about binary code.",
-        "Binary code is a really simple computer language where there are only 1's and 0's, that are either on or off, 1 being on and 0 being off.",
-        "Those 1's and 0's can be pretty much anything, but generally they are just numbers, letters, and symbols.",
-        "We're going to go into how you decode a number in binary, but as you can probably guess, translating binary can be done with a quick Google search.",
-        "The most important part of this is you understand the concept that even simple things like 1's and 0's can translate into something really complex that is the basis for all of the computer languages that exist today."
+        "二进制是什么，它意味着什么。",
+        "0和1可以转译为更复杂的数据。",
+        "今天我们要讨论一点二进制码。",
+        "二进制码是一种非常常见的计算机语言，它只能是1或0，也是on(开)或关，1代表on(开)，0代表off(关)。",
+        "这些1和0可以变成很多漂亮的东西，但通常来说它们是数字，字母和符号。",
+        "我们要深入学习如何在二进制中编码一个数字，但是就像你猜的那样，翻译二进制只要谷歌搜索一下就能完成。",
+        "最重要的是你要理解这个概念：即使是0和1这样简单的东西也可以翻译成很复杂的东西是现在所有计算机语言的基础。"
       ],
       "challengeSeed": [
         "132542757"
       ],
       "tests": [
         [
-          "1's and 0's are how we talk about little switches being on and off.",
+          "0和1我们讨论小开关是on(开)还是off(关)的方式。",
           true
         ],
         [
-          "1 means on, and 0 means off.",
+          "1代表on(开)，0代表off(关)。",
           true
         ],
         [
-          "There are some things which cannot be translated into binary.",
+          "有一些东西不能被转译成二进制码",
           false,
-          "everything can be expressed through binary code!"
+          "所有的东西都可以用二进制来表达！"
         ]
       ],
       "type": "hike",
@@ -156,31 +156,31 @@
       "id": "bd7125d8c441eddfbeb5bddf",
       "title": "Computer Basics: Decoding a Binary Number",
       "description": [
-        "In this video, we decode a number written in binary notation.",
-        "Let's talk about the binary numeral system, also known as a bunch of 1's and 0's over and over again.",
-        "We're going to start by labeling, staring backwards, how many numbers there are.",
-        "(In this video there are 7, but we start at 0, so we only get up to 6.) Pretty straightforward.",
-        "The next step is to take 2 to the power of whatever place it is, a 2 to the 0, 2 to the 1, all the way up to the largest placeholder.",
-        "Then, all we have to do is fill in some mathematical blanks by completing the exponential 2 problems.",
-        "If there is a 1, we keep that number (the two to the exponent solution) and add it to other \"1\" or \"on\" numbers.",
-        "If it's a 0, we disregard it.",
-        "In this video, our number adds up to 75."
+        "在这段视频中，我们用二进制来编码一个数字。",
+        "让我们来谈论二进制，也就是一堆一堆的0和1。",
+        "我们要从标记开始，向后看，有多少数字。",
+        "（在这个视频中是7，但是我们从0开始，所以我们得到了6。） 就是这么简单。",
+        "下一步就是要把2放到它发挥作用的地方：2到0，2到1，一直到最大的占位符。",
+        "接下来我们要做的就是填上几个数学题：2的指数问题。",
+        "如果是1我们，我们留下这个数字(2的指数解)并且把它加到其他 \"1\" 或是 \"on\" 数字。",
+        "如果是0，我们不要它。",
+        "在这个视频中，我们的数字累加到75。"
       ],
       "challengeSeed": [
         "132543332"
       ],
       "tests": [
         [
-          "1 === on and 0 ===off",
+          "1 === on(开) and 0 ===off(关)",
           true
         ],
         [
-          "Not all numbers can be expressed through binary numeral notation.",
+          "不是所有的数字都可以用二进制表达。",
           false,
-          "All numbers can!"
+          "所有的数字都可以！"
         ],
         [
-          "If we have the opportunity to include base 2 to every given power, we can create any number.",
+          "如果我们有机会计算以2为底的幂，我们可以创建任意的数字。",
           true
         ]
       ],
