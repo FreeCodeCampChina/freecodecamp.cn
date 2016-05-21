@@ -156,8 +156,8 @@
       "id": "a26cbbe9ad8655a977e1ceb5",
       "title": "Find the Longest Word in a String",
       "description": [
-        "找到提供的句子中长度最长的单词",
-        "函数的返回值的应该是一个数字",
+        "找到提供的句子中最长的单词，并计算它的长度。",
+        "函数的返回值应该是一个数字。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
