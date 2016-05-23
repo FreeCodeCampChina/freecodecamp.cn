@@ -1010,7 +1010,7 @@
         "例如：",
         "<blockquote>&#60;ol&#62;<br>&nbsp;&nbsp;&#60;li&#62;Garfield&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;Sylvester&#60;/li&#62;<br>&#60;/ol&#62;</blockquote>",
         "将创建一个包含\"Garfield\"和\"Sylvester\"的数字编号列表。",
-        "创建一个有关猫咪最痛恨的三件事情的有序列表。"
+        "创建一个有关猫咪最痛恨的三件事情<code>Top 3 things cats hate:</code>的有序列表。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1055,8 +1055,8 @@
         "<p>Top 3 things cats hate:</p>"
       ],
       "tests": [
-        "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: 你应该有一个关于\"Top 3 things cats hate（猫咪最痛恨的三件事情）\"的有序列表。');",
-        "assert.equal($(\"ul\").prev().text(), \"Things cats love:\", 'message: 你应该有一个关于\"Things cats love:（猫咪最喜欢的三件事情）\"的无序列表。');",
+        "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: 你应该有一个关于\"Top 3 things cats hate:\"的有序列表。');",
+        "assert.equal($(\"ul\").prev().text(), \"Things cats love:\", 'message: 你应该有一个关于\"Things cats love:\"的无序列表。');",
         "assert.equal($(\"ul li\").length, 3, 'message: 在你的<code>ul</code>元素中应该包含三条<code>li</code>元素。');",
         "assert.equal($(\"ol li\").length, 3, 'message: 在你的<code>ol</code>元素中应该包含三条<code>li</code>元素。');",
         "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, 'message: 确保你的<code>ul</code>元素有一个结束标记。');",
