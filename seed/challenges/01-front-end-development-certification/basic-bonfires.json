@@ -253,6 +253,7 @@
       "title": "Confirm the Ending",
       "description": [
         "检查一个字符串(<code>str</code>)是否以指定的字符串(<code>target</code>)结尾。",
+        "如果是，返回true;如果不是，返回false。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
@@ -576,7 +577,7 @@
         "让上帝的归上帝，凯撒的归凯撒。",
         "下面我们来介绍风靡全球的凯撒密码<code>Caesar cipher</code>，又叫移位密码。",
         "移位密码也就是密码中的字母会按照指定的数量来做移位。",
-        "一个通用的现代案例就是<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>密码，字母会移位13个位置。由'A' &harr; 'N', 'B' &harr;  'O'等等",
+        "一个常见的案例就是<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>密码，字母会移位13个位置。由'A' &harr; 'N', 'B' &harr;  'O'，以此类推。",
         "写一个<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>函数，实现输入加密字符串，输出解密字符串。",
         "所有的字母都是大写，不要转化任何非字母形式的字符(例如：空格，标点符号)，遇到这些特殊字符，跳过它们。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
