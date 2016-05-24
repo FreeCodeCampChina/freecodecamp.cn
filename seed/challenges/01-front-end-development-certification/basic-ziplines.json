@@ -58,10 +58,10 @@
         "致橡树",
         "<strong>目标:</strong> 设计一个类似于: <a href='https://codepen.io/FreeCodeCamp/full/NNvBQW/' target='_blank'>http://codepen.io/FreeCodeCamp/full/wMQrXV</a>的页面。",
         "<strong>规则#1:</strong> 不要看源码、自己独立完成这个项目。",
-        "<strong>规则#2:</strong> 实现下方的用户故事，用你喜爱的任何库来定制属于你自己的风格。",
+        "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现里面的功能。",
         "<strong>功能:</strong> 你可以用图片和文本来实现这个致敬页面。",
         "<strong>功能:</strong> 你可以点击链接穿越到另一个网站，获得关于这个主题的更多信息。",
-        "当你遇到苦难的时候，记得查看错误提示、阅读文档、搜索、提问。",
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"I've completed this challenge\" 按钮，输入你的项目在CodePen上的链接。",
         "你可以分享这个项目到朋友圈或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
@@ -80,8 +80,8 @@
       "description": [
         "<strong>目标:</strong> 设计一个类似于: <a href='http://codepen.io/FreeCodeCamp/full/VemmoX/' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemmoX/</a>的个人作品集。",
         "<strong>规则#1:</strong> 不要看源码、自己独立完成这个项目。",
-        "<strong>规则#2:</strong> 实现下方的用户故事、用你喜爱的任何库来定制属于你自己的风格。",
-        "<strong>规则#3:</strong> 你可以用你自己的css和框架，而不仅仅是Bootstrap",
+        "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现里面的功能。",
+        "<strong>规则#3:</strong> 你可以用你自己的css和框架，而不仅仅是Bootstrap。",
         "<strong>功能:</strong> 你可以通过滚动来浏览这个页面的所有内容。",
         "<strong>功能:</strong> 你可以通过点击不同的按钮来跳到不同的社交媒体页。",
         "<strong>功能:</strong> 你可以看到不同项目的缩略图。",
@@ -89,7 +89,7 @@
         "如果你现在没什么东西值得放在作品集上也别担心，后面我们会设计好几个应用，届时你可以再回头来更新你的作品集。",
         "CodePen上已经有很多很棒的作品集模板来供你参考，但你需要去设计你自己的作品集，用Bootstrap可能会容易实现一些。",
         "因为CodePen重载了Window.open()功能，所以你必须得用jQuery选取锚点元素<code>&lt;a target='_blank'&gt;</a></code>的方式来打开一个窗口。",
-        "当你遇到苦难的时候，记得查看错误提示、阅读文档、搜索、提问。",
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"I've completed this challenge\" 按钮，输入你的项目在CodePen上的链接。",
         "你可以分享这个项目到朋友圈或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
@@ -113,7 +113,7 @@
         "<strong>第一步:</strong> 先设计一个简单的弹幕页面，上面有弹幕墙、输入框、按钮，并添加样式。",
         "<strong>第二步:</strong> 然后给弹幕页面添加功能，能实现发射弹幕、清除弹幕、显示弹幕等功能。",
         "<strong>第三步:</strong> 最后通过你的github账户登录<a href='https://www.wilddog.com/' target='_blank'>野狗实时后端云</a>，创建一个你自己的应用，就可以把弹幕数据存储到数据库中，进而可以在多个终端进行实时互动。",
-        "当你遇到苦难的时候，记得查看错误提示、阅读文档、搜索、提问。",
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"I've completed this challenge\" 按钮，输入你的项目在CodePen上的链接。",
         "你可以分享这个项目到朋友圈或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],

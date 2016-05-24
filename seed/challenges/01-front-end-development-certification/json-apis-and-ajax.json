@@ -8,12 +8,11 @@
       "id": "56bbb991ad1ed5201cd392d4",
       "title": "Trigger Click Events with jQuery",
       "description": [
-        "这一节，我们将学习如何从应用程序接口(API)中获取数据，API也就是计算机之间互相交流沟通的接口。",
-        "在我们获取到数据之后，我们再用Ajax技术来将这些数据更新到HTML页面当中去。",
+        "通过jQuery来绑定点击事件。",
         "首先，我们来看一下函数 <code>$(document).ready()</code> 干了些什么。",
         "这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。",
-        "本节要实现的功能是在点击\"Get Message\"按钮之后，更改class为 <code>message</code> 的元素显示值。",
-        "为了实现这个功能，我们先要在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
+        "任务：给\"Get Message\"按钮绑定一个点击事件。",
+        "我们先在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:",
         "<blockquote>$(\"#getMessage\").on(\"click\", function(){</br></br>});</blockquote>"
       ],
       "challengeSeed": [
@@ -55,8 +54,9 @@
       "id": "56bbb991ad1ed5201cd392d5",
       "title": "Change Text with Click Events",
       "description": [
-        "当我们点击按钮时，我们可以使用jQuery来更新HTML页面",
-        "这次我们要实现的功能是，点击\"Get Message\"按钮，将含有<code>message</code> class的元素显示的文本改为：“Here is the message”。",
+        "通过点击事件来更改文本。",
+        "当我们点击按钮时，我们可以更新HTML页面",
+        "任务：点击\"Get Message\"按钮，将class为<code>message</code> 的元素的文本改为：“Here is the message”。",
         "为此在我们的点击事件中加入如下代码：",
         "<code>$(\".message\").html(\"Here is the message\");</code>"
       ],
@@ -100,12 +100,15 @@
       "id": "56bbb991ad1ed5201cd392d6",
       "title": "Get JSON with the jQuery getJSON Method",
       "description": [
-        "你也可以从远程服务器获取一些数据来更新HTML页面，这个时候应用程序接口（API）就派上用场了。",
-        "记住，API——应用程序接口（Application Programming Interface）是计算机之间相互交流沟通的工具。",
-        "许多网站的应用程序接口（API）都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
-        "其实如果你曾经创建过JS的对象的话，你就已经使用了这种数据格式。JSON是一种非常简洁的数据格式。仅仅由一串<code>{</code><code>}</code>包围的对象属性，以及属性的值组成。",
-        "这些对象属性以及属性值就是我们经常听到的\"键值对（key-value pairs）\"。",
-        "那就让我们从之前章节中用到的猫图API拿取数据吧。",
+        "当你需要根据服务器返回的数据来动态改变页面的时候，应用程序接口(API)就派上用场了。",
+        "记住，API——应用程序接口(Application Programming Interface)是计算机之间相互交流沟通的工具。",
+        "许多网站的应用程序接口(API)都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。",
+        "其实如果你曾经创建过JS对象的话，你就已经使用了这种数据格式，JSON是一种非常简洁的数据格式。",
+        "它通常表现为了两种形式，一种为单个对象，一种为多个对象",
+        "单个对象类似于：<br><code>{name:'盖伦',advantage:'单挑无敌'}</code>",
+        "多个对象类似于：<br><code>[{name:'盖伦',advantage:'单挑无敌'},{name:'诺克',advantage:'上单霸主'}]</code>",
+        "每个对象属性和属性值的组合就是我们经常听到的\"键值对(key-value pairs)\"。",
+        "让我们从之前的猫图API拿取数据吧。",
         "你应该在你的点击事件中加入如下的代码：",
         "<blockquote>$.getJSON(\"/json/cats.json\", function(json) {</code></br>  $(\".message\").html(JSON.stringify(json));</br>});</blockquote>",
         "在这之后，点击\"Get Message\"按钮。你的Ajax函数将把文字\"The message will go here\"替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。"
@@ -157,12 +160,13 @@
       "id": "56bbb991ad1ed5201cd392d7",
       "title": "Convert JSON Data to HTML",
       "description": [
-        "好了，我们现在已经从JSON API中获得了数据。把它们展现到我们的HTML页面中吧。",
-        "这里，我们使用了<code>.forEach()</code>函数来循环的将我们的数据写到HTML元素中。",
-        "首先我们定义一个HTML变量,<code>var html = \"\";</code> 。",
-        "然后，我们循环遍历JSON数据，不停在这个变量上加入更多的HTML元素。当循环结束，我们便将页面展示出来",
+        "好了，我们已经从JSON API中获得了数据，现在把它们展现到我们的HTML页面中吧。",
+        "这里，我们使用<code>.forEach()</code>函数来循环遍历JSON数据写到htmll变量中。",
+        "首先我们定义一个HTML变量，<br><code>var html = \"\";</code> 。",
+        "然后，我们使用<code>.forEach()</code>函数来循环遍历JSON数据写到html变量中，最后把html变量显示到我们的页面中。",
         "整个过程的代码如下：",
-        "<blockquote>json.forEach(function(val) {</br>  var keys = Object.keys(val);</br>  html += \"&lt;div class = 'cat'&gt;\";</br>  keys.forEach(function(key) {</br>    html += \"&lt;b&gt;\" + key + \"&lt;/b&gt;: \" + val[key] + \"&lt;br&gt;\";</br>  });</br>  html += \"&lt;/div&gt;&lt;br&gt;\";</br>});</blockquote>"
+        "<blockquote>json.forEach(function(val) {</br>  var keys = Object.keys(val);</br>  html += \"&lt;div class = 'cat'&gt;\";</br>  keys.forEach(function(key) {</br>    html += \"&lt;b&gt;\" + key + \"&lt;/b&gt;: \" + val[key] + \"&lt;br&gt;\";</br>  });</br>  html += \"&lt;/div&gt;&lt;br&gt;\";</br>});</blockquote>",
+        "提示：示例中难点在于两个forEach循环，而且里面夹杂有字符串拼接，这是最头疼也最容易出错的地方。"
       ],
       "challengeSeed": [
         "fccss",
@@ -213,8 +217,8 @@
       "id": "56bbb991ad1ed5201cd392d8",
       "title": "Render Images from Data Sources",
       "description": [
-        "在之前两节课里我们获得的JSON数组中，每个对象都包含了一个以<code>imageLink</code>为键（key），以猫的图片的url为值（value）的键值对。",
-        "在循环函数中，我们在<code>img</code>元素中添加<code>imageLink</code>的属性来显示图片。",
+        "从上节课获得的JSON数组中，每个对象都包含了一个以<code>imageLink</code>为键(key)，以猫的图片的url为值(value)的键值对。",
+        "当我们在遍历这些对象时，我们用<code>imageLink</code>的属性来显示<code>img</code>元素的图片。",
         "代码如下：",
         "<code>html += \"&lt;img src = '\" + val.imageLink + \"'&gt;\";</code>"
       ],
@@ -276,7 +280,7 @@
       "id": "56bbb991ad1ed5201cd392d9",
       "title": "Prefilter JSON",
       "description": [
-        "如果我们不想把所有从Free Code Camp的JSON API中得到的图片展现出来，我们可以在循环之前先做一次过滤。",
+        "如果我们不想把所有从JSON API中得到的图片都展现出来，我们可以在遍历之前做一次过滤。",
         "我们把其中 \"id\" 键的值为1的图片过滤掉。",
         "代码如下:",
         "<blockquote>json = json.filter(function(val) {</br>  return (val.id !== 1);</br>});</blockquote>"
