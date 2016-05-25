@@ -8,11 +8,11 @@
       "id": "aff0395860f5d3034dc0bfc9",
       "title": "Validate US Telephone Numbers",
       "description": [
-        "Return <code>true</code> if the passed string is a valid US phone number.",
-        "The user may fill out the form field any way they choose as long as it is a valid US number. The following are examples of valid formats for US numbers (refer to the tests below for other variants):",
+        "如果传入字符串是一个有效的美国电话号码，则返回 <code>true</code>.",
+        "用户可以在表单中填入一个任意有效美国电话号码. 下面是一些有效号码的例子(还有下面测试时用到的一些变体写法):",
         "<blockquote>555-555-5555\n(555)555-5555\n(555) 555-5555\n555 555 5555\n5555555555\n1 555 555 5555</blockquote>",
-        "For this challenge you will be presented with a string such as <code>800-692-7753</code> or <code>8oo-six427676;laskdjf</code>. Your job is to validate or reject the US phone number based on any combination of the formats provided above. The area code is required. If the country code is provided, you must confirm that the country code is <code>1</code>. Return <code>true</code> if the string is a valid US phone number; otherwise return <code>false</code>.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "在本节中你会看见如 <code>800-692-7753</code> or <code>8oo-six427676;laskdjf</code>这样的字符串. 你的任务就是验证前面给出的字符串是否是有效的美国电话号码. 区号是必须有的. 如果字符串中给出了国家代码, 你必须验证其是 <code>1</code>.  如果号码有效就返回 <code>true</code> ; 否则返回 <code>false</code>.",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function telephoneCheck(str) {",
@@ -28,30 +28,30 @@
         "var re = /^(?:(?:\\+?1\\s*(?:[.-]\\s*)?)?(?:\\(\\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\\s*\\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\\s*(?:[.-]\\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\\s*(?:[.-]\\s*)?([0-9]{4})$/;\n\nfunction telephoneCheck(str) {\n  return !!str.match(re);\n}\n\ntelephoneCheck(\"555-555-5555\");"
       ],
       "tests": [
-        "assert(typeof telephoneCheck(\"555-555-5555\") === \"boolean\", 'message: <code>telephoneCheck(\"555-555-5555\")</code> should return a boolean.');",
-        "assert(telephoneCheck(\"1 555-555-5555\") === true, 'message: <code>telephoneCheck(\"1 555-555-5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"1 (555) 555-5555\") === true, 'message: <code>telephoneCheck(\"1 (555) 555-5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"5555555555\") === true, 'message: <code>telephoneCheck(\"5555555555\")</code> should return true.');",
-        "assert(telephoneCheck(\"555-555-5555\") === true, 'message: <code>telephoneCheck(\"555-555-5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"(555)555-5555\") === true, 'message: <code>telephoneCheck(\"(555)555-5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"1(555)555-5555\") === true, 'message: <code>telephoneCheck(\"1(555)555-5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"1 555)555-5555\") === false, 'message: <code>telephoneCheck(\"1 555)555-5555\")</code> should return false.');",
-        "assert(telephoneCheck(\"1 555 555 5555\") === true, 'message: <code>telephoneCheck(\"1 555 555 5555\")</code> should return true.');",
-        "assert(telephoneCheck(\"1 456 789 4444\") === true, 'message: <code>telephoneCheck(\"1 456 789 4444\")</code> should return true.');",
-        "assert(telephoneCheck(\"123**&!!asdf#\") === false, 'message: <code>telephoneCheck(\"123**&!!asdf#\")</code> should return false.');",
-        "assert(telephoneCheck(\"55555555\") === false, 'message: <code>telephoneCheck(\"55555555\")</code> should return false.');",
-        "assert(telephoneCheck(\"(6505552368)\") === false, 'message: <code>telephoneCheck(\"(6505552368)\")</code> should return false');",
-        "assert(telephoneCheck(\"2 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"2 (757) 622-7382\")</code> should return false.');",
-        "assert(telephoneCheck(\"0 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"0 (757) 622-7382\")</code> should return false.');",
-        "assert(telephoneCheck(\"-1 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"-1 (757) 622-7382\")</code> should return false');",
-        "assert(telephoneCheck(\"2 757 622-7382\") === false, 'message: <code>telephoneCheck(\"2 757 622-7382\")</code> should return false.');",
-        "assert(telephoneCheck(\"10 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"10 (757) 622-7382\")</code> should return false.');",
-        "assert(telephoneCheck(\"27576227382\") === false, 'message: <code>telephoneCheck(\"27576227382\")</code> should return false.');",
-        "assert(telephoneCheck(\"(275)76227382\") === false, 'message: <code>telephoneCheck(\"(275)76227382\")</code> should return false.');",
-        "assert(telephoneCheck(\"2(757)6227382\") === false, 'message: <code>telephoneCheck(\"2(757)6227382\")</code> should return false.');",
-        "assert(telephoneCheck(\"2(757)622-7382\") === false, 'message: <code>telephoneCheck(\"2(757)622-7382\")</code> should return false.');",
-        "assert(telephoneCheck(\"555)-555-5555\") === false, 'message: <code>telephoneCheck(\"555)-555-5555\")</code> should return false.');",
-        "assert(telephoneCheck(\"(555-555-5555\") === false, 'message: <code>telephoneCheck(\"(555-555-5555\")</code> should return false.');"
+        "assert(typeof telephoneCheck(\"555-555-5555\") === \"boolean\", 'message: <code>telephoneCheck(\"555-555-5555\")</code> 应该返回一个布尔值.');",
+        "assert(telephoneCheck(\"1 555-555-5555\") === true, 'message: <code>telephoneCheck(\"1 555-555-5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"1 (555) 555-5555\") === true, 'message: <code>telephoneCheck(\"1 (555) 555-5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"5555555555\") === true, 'message: <code>telephoneCheck(\"5555555555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"555-555-5555\") === true, 'message: <code>telephoneCheck(\"555-555-5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"(555)555-5555\") === true, 'message: <code>telephoneCheck(\"(555)555-5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"1(555)555-5555\") === true, 'message: <code>telephoneCheck(\"1(555)555-5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"1 555)555-5555\") === false, 'message: <code>telephoneCheck(\"1 555)555-5555\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"1 555 555 5555\") === true, 'message: <code>telephoneCheck(\"1 555 555 5555\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"1 456 789 4444\") === true, 'message: <code>telephoneCheck(\"1 456 789 4444\")</code> 应该返回 true.');",
+        "assert(telephoneCheck(\"123**&!!asdf#\") === false, 'message: <code>telephoneCheck(\"123**&!!asdf#\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"55555555\") === false, 'message: <code>telephoneCheck(\"55555555\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"(6505552368)\") === false, 'message: <code>telephoneCheck(\"(6505552368)\")</code> 应该返回 false');",
+        "assert(telephoneCheck(\"2 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"2 (757) 622-7382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"0 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"0 (757) 622-7382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"-1 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"-1 (757) 622-7382\")</code> 应该返回 false');",
+        "assert(telephoneCheck(\"2 757 622-7382\") === false, 'message: <code>telephoneCheck(\"2 757 622-7382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"10 (757) 622-7382\") === false, 'message: <code>telephoneCheck(\"10 (757) 622-7382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"27576227382\") === false, 'message: <code>telephoneCheck(\"27576227382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"(275)76227382\") === false, 'message: <code>telephoneCheck(\"(275)76227382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"2(757)6227382\") === false, 'message: <code>telephoneCheck(\"2(757)6227382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"2(757)622-7382\") === false, 'message: <code>telephoneCheck(\"2(757)622-7382\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"555)-555-5555\") === false, 'message: <code>telephoneCheck(\"555)-555-5555\")</code> 应该返回 false.');",
+        "assert(telephoneCheck(\"(555-555-5555\") === false, 'message: <code>telephoneCheck(\"(555-555-5555\")</code> 应该返回 false.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -63,9 +63,9 @@
       "id": "a3f503de51cf954ede28891d",
       "title": "Symmetric Difference",
       "description": [
-        "Create a function that takes two or more arrays and returns an array of the <dfn>symmetric difference</dfn> (<code>&xutri;</code> or <code>&oplus;</code>) of the provided arrays.",
-        "Given two sets (for example set <code>A = {1, 2, 3}</code> and set <code>B = {2, 3, 4}</code>), the mathematical term \"symmetric difference\" of two sets is the set of elements which are in either of the two sets, but not in both (<code>A &xutri; B = C = {1, 4}</code>). For every additional symmetric difference you take (say on a set <code>D = {2, 3}</code>), you should get the set with elements which are in either of the two the sets but not both (<code>C &xutri; D = {1, 4} &xutri; {2, 3} = {1, 2, 3, 4}</code>).",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "创建一个函数，接受两个或多个数组，返回所给数组的 <dfn>对等差分(symmetric difference)</dfn> (<code>&xutri;</code> or <code>&oplus;</code>)数组.",
+        "给出两个集合 (如集合 <code>A = {1, 2, 3}</code> 和集合 <code>B = {2, 3, 4}</code>), 而数学术语 \"对等差分\" 的集合就是指由所有只在两个集合其中之一的元素组成的集合(<code>A &xutri; B = C = {1, 4}</code>). 对于传入的额外集合 (如 <code>D = {2, 3}</code>), 你应该安装前面原则求前两个集合的结果与新集合的对等差分集合 (<code>C &xutri; D = {1, 4} &xutri; {2, 3} = {1, 2, 3, 4}</code>).",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function sym(args) {",
@@ -78,16 +78,16 @@
         "function sym(args) {\n  var index = -1;\n  var length = arguments.length;\n  var result;\n  while (++index < length) {\n    var array = arguments[index];\n    result = result ? diff(result, array).concat(diff(array, result)) : array;\n  }\n  return result ? uniq(result) : [];\n}\n\nfunction uniq(arr) {\n  var h = Object.create(null);\n  var u = [];\n  arr.forEach(function(v) {\n    if (v in h) return;\n    h[v] = true;\n    u.push(v);\n  });\n  return u;\n}\n\nfunction diff(a, b) {\n  var h = Object.create(null);\n  b.forEach(function(v) {\n    h[v] = true;  \n  });\n  return a.filter(function(v) { return !(v in h);});\n}\nsym([1, 2, 3], [5, 2, 1, 4]);\n"
       ],
       "tests": [
-        "assert.sameMembers(sym([1, 2, 3], [5, 2, 1, 4]), [3, 4, 5], 'message: <code>sym([1, 2, 3], [5, 2, 1, 4])</code> should return <code>[3, 4, 5]</code>.');",
-        "assert.equal(sym([1, 2, 3], [5, 2, 1, 4]).length, 3, 'message: <code>sym([1, 2, 3], [5, 2, 1, 4])</code> should contain only three elements.');",
-        "assert.sameMembers(sym([1, 2, 5], [2, 3, 5], [3, 4, 5]), [1, 4, 5], 'message: <code>sym([1, 2, 5], [2, 3, 5], [3, 4, 5])</code> should return <code>[1, 4, 5]</code>');",
-        "assert.equal(sym([1, 2, 5], [2, 3, 5], [3, 4, 5]).length, 3, 'message: <code>sym([1, 2, 5], [2, 3, 5], [3, 4, 5])</code> should contain only three elements.');",
-        "assert.sameMembers(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]), [1, 4, 5], 'message: <code>sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5])</code> should return <code>[1, 4, 5]</code>.');",
-        "assert.equal(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]).length, 3, 'message: <code>sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5])</code> should contain only three elements.');",
-        "assert.sameMembers(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]), [2, 3, 4, 6, 7], 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3])</code> should return <code>[2, 3, 4, 6, 7]</code>.');",
-        "assert.equal(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]).length, 5, 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3])</code> should contain only five elements.');",
-        "assert.sameMembers(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]), [1, 2, 4, 5, 6, 7, 8, 9], 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1])</code> should return <code>[1, 2, 4, 5, 6, 7, 8, 9]</code>.');",
-        "assert.equal(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]).length, 8, 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1])</code> should contain only eight elements.');"
+        "assert.sameMembers(sym([1, 2, 3], [5, 2, 1, 4]), [3, 4, 5], 'message: <code>sym([1, 2, 3], [5, 2, 1, 4])</code> 应该返回 <code>[3, 4, 5]</code>.');",
+        "assert.equal(sym([1, 2, 3], [5, 2, 1, 4]).length, 3, 'message: <code>sym([1, 2, 3], [5, 2, 1, 4])</code> 应该只包含三个元素.');",
+        "assert.sameMembers(sym([1, 2, 5], [2, 3, 5], [3, 4, 5]), [1, 4, 5], 'message: <code>sym([1, 2, 5], [2, 3, 5], [3, 4, 5])</code> 应该返回 <code>[1, 4, 5]</code>');",
+        "assert.equal(sym([1, 2, 5], [2, 3, 5], [3, 4, 5]).length, 3, 'message: <code>sym([1, 2, 5], [2, 3, 5], [3, 4, 5])</code> 应该只包含三个元素.');",
+        "assert.sameMembers(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]), [1, 4, 5], 'message: <code>sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5])</code> 应该返回 <code>[1, 4, 5]</code>.');",
+        "assert.equal(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5]).length, 3, 'message: <code>sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5])</code> 应该只包含三个元素.');",
+        "assert.sameMembers(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]), [2, 3, 4, 6, 7], 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3])</code> 应该返回 <code>[2, 3, 4, 6, 7]</code>.');",
+        "assert.equal(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]).length, 5, 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3])</code> 应该只包含五个元素.');",
+        "assert.sameMembers(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]), [1, 2, 4, 5, 6, 7, 8, 9], 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1])</code> 应该返回 <code>[1, 2, 4, 5, 6, 7, 8, 9]</code>.');",
+        "assert.equal(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]).length, 8, 'message: <code>sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1])</code> 应该只包含八个元素.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -100,11 +100,11 @@
       "id": "aa2e6f85cab2ab736c9a9b24",
       "title": "Exact Change",
       "description": [
-        "Design a cash register drawer function <code>checkCashRegister()</code> that accepts purchase price as the first argument (<code>price</code>), payment as the second argument (<code>cash</code>), and cash-in-drawer (<code>cid</code>) as the third argument.",
-        "<code>cid</code> is a 2D array listing available currency.",
-        "Return the string <code>\"Insufficient Funds\"</code> if cash-in-drawer is less than the change due. Return the string <code>\"Closed\"</code> if cash-in-drawer is equal to the change due.",
-        "Otherwise, return change in coin and bills, sorted in highest to lowest order.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "设计一个收银程序 <code>checkCashRegister()</code> ，其把购买价格(<code>price</code>)作为第一个参数 , 付款金额 (<code>cash</code>)作为第二个参数, 和收银机中零钱 (<code>cid</code>) 作为第三个参数.",
+        "<code>cid</code> 是一个二维数组，存着当前可用的找零.",
+        "当收银机中的钱不够找零时返回字符串 <code>\"Insufficient Funds\"</code>. 如果正好则返回字符串 <code>\"Closed\"</code>.",
+        "否者, 返回应找回的零钱列表,且由大到小存在二维数组中.",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function checkCashRegister(price, cash, cid) {",
@@ -130,14 +130,14 @@
         "var denom = [\n\t{ name: 'ONE HUNDRED', val: 100.00},\n\t{ name: 'TWENTY', val: 20.00},\n\t{ name: 'TEN', val: 10.00},\n\t{ name: 'FIVE', val: 5.00},\n\t{ name: 'ONE', val: 1.00},\n\t{ name: 'QUARTER', val: 0.25},\n\t{ name: 'DIME', val: 0.10},\n\t{ name: 'NICKEL', val: 0.05},\n\t{ name: 'PENNY', val: 0.01}\n];\n\nfunction checkCashRegister(price, cash, cid) {\n    var change = cash - price;\n    var register = cid.reduce(function(acc, curr) {\n        acc.total += curr[1];\n        acc[curr[0]] = curr[1];\n        return acc;\n    }, {total: 0});\n    if(register.total === change) {\n        return 'Closed';\n    }\n    if(register.total < change) {\n        return 'Insufficient Funds';\n    }\n    var change_arr = denom.reduce(function(acc, curr) {\n        var value = 0;\n        while(register[curr.name] > 0 && change >= curr.val) {\n           change -= curr.val;\n           register[curr.name] -= curr.val;\n           value += curr.val;\n           change = Math.round(change * 100) / 100;\n        }\n        if(value > 0) {\n            acc.push([ curr.name, value ]);\n        }\n        return acc;\n    }, []);\n  if(change_arr.length < 1 || change > 0) {\n    return \"Insufficient Funds\";\n  }\n  return change_arr;\n}"
       ],
       "tests": [
-        "assert.isArray(checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> should return an array.');",
-        "assert.isString(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> should return a string.');",
-        "assert.isString(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> should return a string.');",
-        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), [[\"QUARTER\", 0.50]], 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> should return <code>[[\"QUARTER\", 0.50]]</code>.');",
-        "assert.deepEqual(checkCashRegister(3.26, 100.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), [[\"TWENTY\", 60.00], [\"TEN\", 20.00], [\"FIVE\", 15], [\"ONE\", 1], [\"QUARTER\", 0.50], [\"DIME\", 0.20], [\"PENNY\", 0.04]], 'message: <code>checkCashRegister(3.26, 100.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> should return <code>[[\"TWENTY\", 60.00], [\"TEN\", 20.00], [\"FIVE\", 15], [\"ONE\", 1], [\"QUARTER\", 0.50], [\"DIME\", 0.20], [\"PENNY\", 0.04]]</code>.');",
-        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Insufficient Funds\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> should return \"Insufficient Funds\".');",
-        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 1.00], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Insufficient Funds\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 1.00], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> should return \"Insufficient Funds\".');",
-        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Closed\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> should return \"Closed\".');"
+        "assert.isArray(checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> 应该返回一个数组.');",
+        "assert.isString(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> 应该返回一个字符串.');",
+        "assert.isString(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> 应该返回一个字符串.');",
+        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), [[\"QUARTER\", 0.50]], 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> 应该返回 <code>[[\"QUARTER\", 0.50]]</code>.');",
+        "assert.deepEqual(checkCashRegister(3.26, 100.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]]), [[\"TWENTY\", 60.00], [\"TEN\", 20.00], [\"FIVE\", 15], [\"ONE\", 1], [\"QUARTER\", 0.50], [\"DIME\", 0.20], [\"PENNY\", 0.04]], 'message: <code>checkCashRegister(3.26, 100.00, [[\"PENNY\", 1.01], [\"NICKEL\", 2.05], [\"DIME\", 3.10], [\"QUARTER\", 4.25], [\"ONE\", 90.00], [\"FIVE\", 55.00], [\"TEN\", 20.00], [\"TWENTY\", 60.00], [\"ONE HUNDRED\", 100.00]])</code> 应该返回 <code>[[\"TWENTY\", 60.00], [\"TEN\", 20.00], [\"FIVE\", 15], [\"ONE\", 1], [\"QUARTER\", 0.50], [\"DIME\", 0.20], [\"PENNY\", 0.04]]</code>.');",
+        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Insufficient Funds\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> 应该返回 \"Insufficient Funds\".');",
+        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 1.00], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Insufficient Funds\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.01], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 1.00], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> 应该返回 \"Insufficient Funds\".');",
+        "assert.deepEqual(checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]]), \"Closed\", 'message: <code>checkCashRegister(19.50, 20.00, [[\"PENNY\", 0.50], [\"NICKEL\", 0], [\"DIME\", 0], [\"QUARTER\", 0], [\"ONE\", 0], [\"FIVE\", 0], [\"TEN\", 0], [\"TWENTY\", 0], [\"ONE HUNDRED\", 0]])</code> 应该返回 \"Closed\".');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -149,8 +149,8 @@
       "id": "a56138aff60341a09ed6c480",
       "title": "Inventory Update",
       "description": [
-        "Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in <code>arr1</code>). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "依照一个存着新进货物的二维数组，更新存着现有库存(在 <code>arr1</code> 中)的二维数组. 如果货物已存在则更新数量 . 如果没有对应货物则把其加入到数组中，更新最新的数量. 返回当前的库存数组，且按货物名称的字母顺序排列.",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function updateInventory(arr1, arr2) {",
@@ -179,12 +179,12 @@
         "function updateInventory(arr1, arr2) {\n  arr2.forEach(function(item) {\n    createOrUpdate(arr1, item);\n  });\n  // All inventory must be accounted for or you're fired!\n  return arr1;\n}\n\nfunction createOrUpdate(arr1, item) {\n  var index = -1;\n  while (++index < arr1.length) {\n    if (arr1[index][1] === item[1]) {\n      arr1[index][0] += item[0];\n      return;\n    }\n    if (arr1[index][1] > item[1]) {\n      break;\n    }\n  }\n  arr1.splice(index, 0, item);\n}\n\n// Example inventory lists\nvar curInv = [\n    [21, 'Bowling Ball'],\n    [2, 'Dirty Sock'],\n    [1, 'Hair Pin'],\n    [5, 'Microphone']\n];\n\nvar newInv = [\n    [2, 'Hair Pin'],\n    [3, 'Half-Eaten Apple'],\n    [67, 'Bowling Ball'],\n    [7, 'Toothpaste']\n];\n\nupdateInventory(curInv, newInv);\n"
       ],
       "tests": [
-        "assert.isArray(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), 'message: <code>updateInventory()</code> should return an array.');",
-        "assert.equal(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]).length, 6, 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]).length</code> should return an array with a length of 6.');",
-        "assert.deepEqual(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), [[88, \"Bowling Ball\"], [2, \"Dirty Sock\"], [3, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [5, \"Microphone\"], [7, \"Toothpaste\"]], 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> should return <code>[[88, \"Bowling Ball\"], [2, \"Dirty Sock\"], [3, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [5, \"Microphone\"], [7, \"Toothpaste\"]]</code>.');",
-        "assert.deepEqual(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], []), [[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [])</code> should return <code>[[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]]</code>.');",
-        "assert.deepEqual(updateInventory([], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), [[67, \"Bowling Ball\"], [2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [7, \"Toothpaste\"]], 'message: <code>updateInventory([], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> should return <code>[[67, \"Bowling Ball\"], [2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [7, \"Toothpaste\"]]</code>.');",
-        "assert.deepEqual(updateInventory([[0, \"Bowling Ball\"], [0, \"Dirty Sock\"], [0, \"Hair Pin\"], [0, \"Microphone\"]], [[1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [1, \"Bowling Ball\"], [1, \"Toothpaste\"]]), [[1, \"Bowling Ball\"], [0, \"Dirty Sock\"], [1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [0, \"Microphone\"], [1, \"Toothpaste\"]], 'message: <code>updateInventory([[0, \"Bowling Ball\"], [0, \"Dirty Sock\"], [0, \"Hair Pin\"], [0, \"Microphone\"]], [[1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [1, \"Bowling Ball\"], [1, \"Toothpaste\"]])</code> should return <code>[[1, \"Bowling Ball\"], [0, \"Dirty Sock\"], [1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [0, \"Microphone\"], [1, \"Toothpaste\"]]</code>.');"
+        "assert.isArray(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), 'message: <code>updateInventory()</code> 应该返回一个数组.');",
+        "assert.equal(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]).length, 6, 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]).length</code> 应该返回一个长度为6的数组.');",
+        "assert.deepEqual(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), [[88, \"Bowling Ball\"], [2, \"Dirty Sock\"], [3, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [5, \"Microphone\"], [7, \"Toothpaste\"]], 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> 应该返回 <code>[[88, \"Bowling Ball\"], [2, \"Dirty Sock\"], [3, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [5, \"Microphone\"], [7, \"Toothpaste\"]]</code>.');",
+        "assert.deepEqual(updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], []), [[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], 'message: <code>updateInventory([[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]], [])</code> 应该返回 <code>[[21, \"Bowling Ball\"], [2, \"Dirty Sock\"], [1, \"Hair Pin\"], [5, \"Microphone\"]]</code>.');",
+        "assert.deepEqual(updateInventory([], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]]), [[67, \"Bowling Ball\"], [2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [7, \"Toothpaste\"]], 'message: <code>updateInventory([], [[2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [67, \"Bowling Ball\"], [7, \"Toothpaste\"]])</code> 应该返回 <code>[[67, \"Bowling Ball\"], [2, \"Hair Pin\"], [3, \"Half-Eaten Apple\"], [7, \"Toothpaste\"]]</code>.');",
+        "assert.deepEqual(updateInventory([[0, \"Bowling Ball\"], [0, \"Dirty Sock\"], [0, \"Hair Pin\"], [0, \"Microphone\"]], [[1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [1, \"Bowling Ball\"], [1, \"Toothpaste\"]]), [[1, \"Bowling Ball\"], [0, \"Dirty Sock\"], [1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [0, \"Microphone\"], [1, \"Toothpaste\"]], 'message: <code>updateInventory([[0, \"Bowling Ball\"], [0, \"Dirty Sock\"], [0, \"Hair Pin\"], [0, \"Microphone\"]], [[1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [1, \"Bowling Ball\"], [1, \"Toothpaste\"]])</code> 应该返回 <code>[[1, \"Bowling Ball\"], [0, \"Dirty Sock\"], [1, \"Hair Pin\"], [1, \"Half-Eaten Apple\"], [0, \"Microphone\"], [1, \"Toothpaste\"]]</code>.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -196,9 +196,9 @@
       "id": "a7bf700cd123b9a54eef01d5",
       "title": "No repeats please",
       "description": [
-        "Return the number of total permutations of the provided string that don't have repeated consecutive letters. Assume that duplicate characters are each unique.",
-        "For example, <code>aab</code> should return 2 because it has 6 total permutations (<code>aab</code>, <code>aab</code>, <code>aba</code>, <code>aba</code>, <code>baa</code>, <code>baa</code>), but only 2 of them (<code>aba</code> and <code>aba</code>) don't have the same letter (in this case <code>a</code>) repeating.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "把一个字符串中的字符重新排列生成新的字符串，返回新生成的字符串里没有连续重复字符的字符串个数.连续重复只以单个字符为准",
+        "例如, <code>aab</code> 应该返回 2 因为它总共有6中排列 (<code>aab</code>, <code>aab</code>, <code>aba</code>, <code>aba</code>, <code>baa</code>, <code>baa</code>), 但是只有两个 (<code>aba</code> and <code>aba</code>)没有连续重复的字符 (在本例中是 <code>a</code>).",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function permAlone(str) {",
@@ -211,13 +211,13 @@
         "function permAlone(str) {\n  return permutor(str).filter(function(perm) {\n    return !perm.match(/(.)\\1/g);\n  }).length;\n}\n\nfunction permutor(str) {\n  // http://staff.roguecc.edu/JMiller/JavaScript/permute.html\n  //permArr: Global array which holds the list of permutations\n  //usedChars: Global utility array which holds a list of \"currently-in-use\" characters\n  var permArr = [], usedChars = [];\n  function permute(input) {\n    //convert input into a char array (one element for each character)\n    var i, ch, chars = input.split(\"\");\n    for (i = 0; i < chars.length; i++) {\n      //get and remove character at index \"i\" from char array\n      ch = chars.splice(i, 1);\n      //add removed character to the end of used characters\n      usedChars.push(ch);\n      //when there are no more characters left in char array to add, add used chars to list of permutations\n      if (chars.length === 0) permArr[permArr.length] = usedChars.join(\"\");\n      //send characters (minus the removed one from above) from char array to be permuted\n      permute(chars.join(\"\"));\n      //add removed character back into char array in original position\n      chars.splice(i, 0, ch);\n      //remove the last character used off the end of used characters array\n      usedChars.pop();\n    }\n  }\n  permute(str);\n  return permArr;\n}\n\npermAlone('aab');\n"
       ],
       "tests": [
-        "assert.isNumber(permAlone('aab'), 'message: <code>permAlone(\"aab\")</code> should return a number.');",
-        "assert.strictEqual(permAlone('aab'), 2, 'message: <code>permAlone(\"aab\")</code> should return 2.');",
-        "assert.strictEqual(permAlone('aaa'), 0, 'message: <code>permAlone(\"aaa\")</code> should return 0.');",
-        "assert.strictEqual(permAlone('aabb'), 8, 'message: <code>permAlone(\"aabb\")</code> should return 8.');",
-        "assert.strictEqual(permAlone('abcdefa'), 3600, 'message: <code>permAlone(\"abcdefa\")</code> should return 3600.');",
-        "assert.strictEqual(permAlone('abfdefa'), 2640, 'message: <code>permAlone(\"abfdefa\")</code> should return 2640.');",
-        "assert.strictEqual(permAlone('zzzzzzzz'), 0, 'message: <code>permAlone(\"zzzzzzzz\")</code> should return 0.');"
+        "assert.isNumber(permAlone('aab'), 'message: <code>permAlone(\"aab\")</code> 应该返回一个数字.');",
+        "assert.strictEqual(permAlone('aab'), 2, 'message: <code>permAlone(\"aab\")</code> 应该返回 2.');",
+        "assert.strictEqual(permAlone('aaa'), 0, 'message: <code>permAlone(\"aaa\")</code> 应该返回 0.');",
+        "assert.strictEqual(permAlone('aabb'), 8, 'message: <code>permAlone(\"aabb\")</code> 应该返回 8.');",
+        "assert.strictEqual(permAlone('abcdefa'), 3600, 'message: <code>permAlone(\"abcdefa\")</code> 应该返回 3600.');",
+        "assert.strictEqual(permAlone('abfdefa'), 2640, 'message: <code>permAlone(\"abfdefa\")</code> 应该返回 2640.');",
+        "assert.strictEqual(permAlone('zzzzzzzz'), 0, 'message: <code>permAlone(\"zzzzzzzz\")</code> 应该返回 0.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -230,14 +230,14 @@
       "id": "a19f0fbe1872186acd434d5a",
       "title": "Friendly Date Ranges",
       "description": [
-        "Convert a date range consisting of two dates formatted as <code>YYYY-MM-DD</code> into a more readable format.",
-        "The friendly display should use month names instead of numbers and ordinal dates instead of cardinal (<code>1st</code> instead of <code>1</code>).",
-        "Do not display information that is redundant or that can be inferred by the user: if the date range ends in less than a year from when it begins, do not display the ending year. If the range ends in the same month that it begins, do not display the ending year or month.",
-        "Additionally, if the date range begins in the current year and ends within one year, the year should not be displayed at the beginning of the friendly range.",
-        "Examples:",
-        "<code>makeFriendlyDates([\"2016-07-01\", \"2016-07-04\"])</code> should return <code>[\"July 1st\",\"4th\"]</code>",
-        "<code>makeFriendlyDates([\"2016-07-01\", \"2018-07-04\"])</code> should return <code>[\"July 1st, 2016\", \"July 4th, 2018\"]</code>.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "把个个格式化的日期区间如两个 <code>YYYY-MM-DD</code> 转换成一种更易读的格式.",
+        "易读格式应该是用月份名称代替月份数字，用序数词代替数字来表示天 (<code>1st</code> 代替 <code>1</code>).",
+        "不要显示那些可以被推测出来的信息: 如果一个日期区间里结束日期与开始日期相差不超一年，则结束日期就不用写年份了. 月份开始和结束日期如果在同一个月，则结束日期月份就不用写了.",
+        "另外, 如果日期区间内开始日期年份是当前年份，且结束日期与开始不超过一年，则开始日期的年份也不用写.",
+        "例如:",
+        "<code>makeFriendlyDates([\"2016-07-01\", \"2016-07-04\"])</code> 应该返回 <code>[\"July 1st\",\"4th\"]</code>",
+        "<code>makeFriendlyDates([\"2016-07-01\", \"2018-07-04\"])</code> 应该返回 <code>[\"July 1st, 2016\", \"July 4th, 2018\"]</code>.",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function makeFriendlyDates(arr) {",
@@ -270,11 +270,11 @@
       "id": "a2f1d72d9b908d0bd72bb9f6",
       "title": "Make a Person",
       "description": [
-        "Fill in the object constructor with the methods specified in the tests.",
-        "Those methods are getFirstName(), getLastName(), getFullName(), setFirstName(first), setLastName(last), and setFullName(firstAndLast).",
-        "All functions that take an argument have an arity of 1, and the argument will be a string.",
-        "These methods must be the only available means for interacting with the object.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "用下面给定的方法构造一个对象.",
+        "方法有 getFirstName(), getLastName(), getFullName(), setFirstName(first), setLastName(last), and setFullName(firstAndLast).",
+        "所有有参数的方法只接受一个字符串参数.",
+        "所有的方法只与实体对象交互.",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "var Person = function(firstAndLast) {",
@@ -288,18 +288,18 @@
         "var Person = function(firstAndLast) {\n\n  var firstName, lastName;\n\n  function updateName(str) {    \n    firstName = str.split(\" \")[0];\n    lastName = str.split(\" \")[1];    \n  }\n\n  updateName(firstAndLast);\n\n  this.getFirstName = function(){\n    return firstName;\n  };\n  \n  this.getLastName = function(){\n    return lastName;\n  };\n  \n  this.getFullName = function(){\n    return firstName + \" \" + lastName;\n  };\n  \n  this.setFirstName = function(str){\n    firstName = str;\n  };\n  \n\n  this.setLastName = function(str){\n    lastName = str;\n  };\n  \n  this.setFullName = function(str){\n    updateName(str);\n  };\n};\n\nvar bob = new Person('Bob Ross');\nbob.getFullName();"
       ],
       "tests": [
-        "assert.deepEqual(Object.keys(bob).length, 6, 'message: <code>Object.keys(bob).length</code> should return 6.');",
-        "assert.deepEqual(bob instanceof Person, true, 'message: <code>bob instanceof Person</code> should return true.');",
-        "assert.deepEqual(bob.firstName, undefined, 'message: <code>bob.firstName</code> should return undefined.');",
-        "assert.deepEqual(bob.lastName, undefined, 'message: <code>bob.lastName</code> should return undefined.');",
-        "assert.deepEqual(bob.getFirstName(), 'Bob', 'message: <code>bob.getFirstName()</code> should return \"Bob\".');",
-        "assert.deepEqual(bob.getLastName(), 'Ross', 'message: <code>bob.getLastName()</code> should return \"Ross\".');",
-        "assert.deepEqual(bob.getFullName(), 'Bob Ross', 'message: <code>bob.getFullName()</code> should return \"Bob Ross\".');",
-        "assert.strictEqual((function () { bob.setFirstName(\"Haskell\"); return bob.getFullName(); })(), 'Haskell Ross', 'message: <code>bob.getFullName()</code> should return \"Haskell Ross\" after <code>bob.setFirstName(\"Haskell\")</code>.');",
-        "assert.strictEqual((function () { var _bob=new Person('Haskell Ross'); _bob.setLastName(\"Curry\"); return _bob.getFullName(); })(), 'Haskell Curry', 'message: <code>bob.getFullName()</code> should return \"Haskell Curry\" after <code>bob.setLastName(\"Curry\")</code>.');",
-        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getFullName(); })(), 'Haskell Curry', 'message: <code>bob.getFullName()</code> should return \"Haskell Curry\" after <code>bob.setFullName(\"Haskell Curry\")</code>.');",
-        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getFirstName(); })(), 'Haskell', 'message: <code>bob.getFirstName()</code> should return \"Haskell\" after <code>bob.setFullName(\"Haskell Curry\")</code>.');",
-        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getLastName(); })(), 'Curry', 'message: <code>bob.getLastName()</code> should return \"Curry\" after <code>bob.setFullName(\"Haskell Curry\")</code>.');"
+        "assert.deepEqual(Object.keys(bob).length, 6, 'message: <code>Object.keys(bob).length</code> 应该返回 6.');",
+        "assert.deepEqual(bob instanceof Person, true, 'message: <code>bob instanceof Person</code> 应该返回 true.');",
+        "assert.deepEqual(bob.firstName, undefined, 'message: <code>bob.firstName</code> 应该返回 undefined.');",
+        "assert.deepEqual(bob.lastName, undefined, 'message: <code>bob.lastName</code> 应该返回 undefined.');",
+        "assert.deepEqual(bob.getFirstName(), 'Bob', 'message: <code>bob.getFirstName()</code> 应该返回 \"Bob\".');",
+        "assert.deepEqual(bob.getLastName(), 'Ross', 'message: <code>bob.getLastName()</code> 应该返回 \"Ross\".');",
+        "assert.deepEqual(bob.getFullName(), 'Bob Ross', 'message: <code>bob.getFullName()</code> 应该返回 \"Bob Ross\".');",
+        "assert.strictEqual((function () { bob.setFirstName(\"Haskell\"); return bob.getFullName(); })(), 'Haskell Ross', 'message: <code>bob.getFullName()</code> 应该返回 \"Haskell Ross\" after <code>bob.setFirstName(\"Haskell\")</code>.');",
+        "assert.strictEqual((function () { var _bob=new Person('Haskell Ross'); _bob.setLastName(\"Curry\"); return _bob.getFullName(); })(), 'Haskell Curry', 'message: <code>bob.getFullName()</code> 应该返回 \"Haskell Curry\" after <code>bob.setLastName(\"Curry\")</code>.');",
+        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getFullName(); })(), 'Haskell Curry', 'message: <code>bob.getFullName()</code> 应该返回 \"Haskell Curry\" 在 <code>bob.setFullName(\"Haskell Curry\")</code> 之后.');",
+        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getFirstName(); })(), 'Haskell', 'message: <code>bob.getFirstName()</code> 应该返回 \"Haskell\" 在 <code>bob.setFullName(\"Haskell Curry\")</code> 之后.');",
+        "assert.strictEqual((function () { bob.setFullName(\"Haskell Curry\"); return bob.getLastName(); })(), 'Curry', 'message: <code>bob.getLastName()</code> 应该返回 \"Curry\" 在 <code>bob.setFullName(\"Haskell Curry\")</code> 之后.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -312,12 +312,12 @@
       "id": "af4afb223120f7348cdfc9fd",
       "title": "Map the Debris",
       "description": [
-        "Return a new array that transforms the element's average altitude into their orbital periods.",
-        "The array will contain objects in the format <code>{name: 'name', avgAlt: avgAlt}</code>.",
-        "You can read about orbital periods <a href=\"http://en.wikipedia.org/wiki/Orbital_period\" target='_blank'>on wikipedia</a>.",
-        "The values should be rounded to the nearest whole number. The body being orbited is Earth.",
-        "The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "返回一个数组，其内容是把原数组中对应元素的平均海拔转换成其对应的轨道周期.",
+        "原数组中会包含格式化的对象内容，像这样 <code>{name: 'name', avgAlt: avgAlt}</code>.",
+        "至于轨道周期怎么求，戳这里 <a href=\"http://en.wikipedia.org/wiki/Orbital_period\" target='_blank'>on wikipedia</a> (不想看英文的话可以自行搜索以轨道高度计算轨道周期的公式).",
+        "求得的值应该是一个与其最接近的整数，轨道是以地球为基准的.",
+        "地球半径是 6367.4447 kilometers, 地球的GM值是 398600.4418",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function orbitalPeriod(arr) {",
@@ -332,8 +332,8 @@
         "function orbitalPeriod(arr) {\n  var GM = 398600.4418;\n  var earthRadius = 6367.4447;\n  var TAU = 2 * Math.PI; \n  return arr.map(function(obj) {\n    return {\n      name: obj.name,\n      orbitalPeriod: Math.round(TAU * Math.sqrt(Math.pow(obj.avgAlt+earthRadius, 3)/GM))\n    };\n  });\n}\n\norbitalPeriod([{name : \"sputkin\", avgAlt : 35873.5553}]);\n"
       ],
       "tests": [
-        "assert.deepEqual(orbitalPeriod([{name : \"sputnik\", avgAlt : 35873.5553}]), [{name: \"sputnik\", orbitalPeriod: 86400}], 'message: <code>orbitalPeriod([{name : \"sputnik\", avgAlt : 35873.5553}])</code> should return <code>[{name: \"sputnik\", orbitalPeriod: 86400}]</code>.');",
-        "assert.deepEqual(orbitalPeriod([{name: \"iss\", avgAlt: 413.6}, {name: \"hubble\", avgAlt: 556.7}, {name: \"moon\", avgAlt: 378632.553}]), [{name : \"iss\", orbitalPeriod: 5557}, {name: \"hubble\", orbitalPeriod: 5734}, {name: \"moon\", orbitalPeriod: 2377399}], 'message: <code>orbitalPeriod([{name: \"iss\", avgAlt: 413.6}, {name: \"hubble\", avgAlt: 556.7}, {name: \"moon\", avgAlt: 378632.553}])</code> should return <code>[{name : \"iss\", orbitalPeriod: 5557}, {name: \"hubble\", orbitalPeriod: 5734}, {name: \"moon\", orbitalPeriod: 2377399}]</code>.');"
+        "assert.deepEqual(orbitalPeriod([{name : \"sputnik\", avgAlt : 35873.5553}]), [{name: \"sputnik\", orbitalPeriod: 86400}], 'message: <code>orbitalPeriod([{name : \"sputnik\", avgAlt : 35873.5553}])</code> 应该返回 <code>[{name: \"sputnik\", orbitalPeriod: 86400}]</code>.');",
+        "assert.deepEqual(orbitalPeriod([{name: \"iss\", avgAlt: 413.6}, {name: \"hubble\", avgAlt: 556.7}, {name: \"moon\", avgAlt: 378632.553}]), [{name : \"iss\", orbitalPeriod: 5557}, {name: \"hubble\", orbitalPeriod: 5734}, {name: \"moon\", orbitalPeriod: 2377399}], 'message: <code>orbitalPeriod([{name: \"iss\", avgAlt: 413.6}, {name: \"hubble\", avgAlt: 556.7}, {name: \"moon\", avgAlt: 378632.553}])</code> 应该返回 <code>[{name : \"iss\", orbitalPeriod: 5557}, {name: \"hubble\", orbitalPeriod: 5734}, {name: \"moon\", orbitalPeriod: 2377399}]</code>.');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -345,10 +345,10 @@
       "id": "a3f503de51cfab748ff001aa",
       "title": "Pairwise",
       "description": [
-        "Return the sum of all element indices of array <code>arr</code> that can be paired with one other element to form a sum that equals the value in the second argument <code>arg</code>. If multiple sums are possible, return the smallest sum. Once an element has been used, it cannot be reused to pair with another.",
-        "For example, <code>pairwise([1, 4, 2, 3, 0, 5], 7)</code> should return <code>11</code> because 4, 2, 3 and 5 can be paired with each other to equal 7 and their indices (1, 2, 3, and 5) sum to 11.",
-        "<code>pairwise([1, 3, 2, 4], 4)</code> would only return <code>1</code>, because only the first two elements can be paired to equal 4, and the first element has an index of 0!",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "返回数组 <code>arr</code> 中部分元素的索引值的和 这些元素要满足两个或多个相加的值等于第二个参数 <code>arg</code>. 另外，一个元素实用过后就不能再次使用。当多种组合相加值都等于给定值，但涉及同一个元素，选索引值和较小的组合",
+        "例如, <code>pairwise([1, 4, 2, 3, 0, 5], 7)</code> 应该返回 <code>11</code> 因为 4, 2, 3 和 5 相互匹配的和等于 7, 他们的索引 (1, 2, 3, and 5) 和等于 11.",
+        "<code>pairwise([1, 3, 2, 4], 4)</code> 应该返回 <code>1</code>, 应为其只有前俩个元素的和等于4，他们的索引值的和是1!",
+        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
         "function pairwise(arr, arg) {",
@@ -361,11 +361,11 @@
         "function pairwise(arr, arg) {\n  var sum = 0;\n  arr.forEach(function(e, i, a) {\n    if (e != null) {      \n      var diff = arg-e;\n      a[i] = null;\n      var dix = a.indexOf(diff);\n      if (dix !== -1) {\n        sum += dix;\n        sum += i;\n        a[dix] = null;\n      }  \n    }\n  });\n  return sum;\n}\n\npairwise([1,4,2,3,0,5], 7);\n"
       ],
       "tests": [
-        "assert.deepEqual(pairwise([1, 4, 2, 3, 0, 5], 7), 11, 'message: <code>pairwise([1, 4, 2, 3, 0, 5], 7)</code> should return 11.');",
-        "assert.deepEqual(pairwise([1, 3, 2, 4], 4), 1, 'message: <code>pairwise([1, 3, 2, 4], 4)</code> should return 1.');",
-        "assert.deepEqual(pairwise([1, 1, 1], 2), 1, 'message: <code>pairwise([1, 1, 1], 2)</code> should return 1.');",
-        "assert.deepEqual(pairwise([0, 0, 0, 0, 1, 1], 1), 10, 'message: <code>pairwise([0, 0, 0, 0, 1, 1], 1)</code> should return 10.');",
-        "assert.deepEqual(pairwise([], 100), 0, 'message: <code>pairwise([], 100)</code> should return 0.');"
+        "assert.deepEqual(pairwise([1, 4, 2, 3, 0, 5], 7), 11, 'message: <code>pairwise([1, 4, 2, 3, 0, 5], 7)</code> 应该返回 11.');",
+        "assert.deepEqual(pairwise([1, 3, 2, 4], 4), 1, 'message: <code>pairwise([1, 3, 2, 4], 4)</code> 应该返回 1.');",
+        "assert.deepEqual(pairwise([1, 1, 1], 2), 1, 'message: <code>pairwise([1, 1, 1], 2)</code> 应该返回 1.');",
+        "assert.deepEqual(pairwise([0, 0, 0, 0, 1, 1], 1), 10, 'message: <code>pairwise([0, 0, 0, 0, 1, 1], 1)</code> 应该返回 10.');",
+        "assert.deepEqual(pairwise([], 100), 0, 'message: <code>pairwise([], 100)</code> 应该返回 0.');"
       ],
       "type": "bonfire",
       "MDNlinks": [

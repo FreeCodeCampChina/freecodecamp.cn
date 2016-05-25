@@ -8,14 +8,14 @@
       "id": "bd7158d8c442eddfaeb5bd13",
       "title": "Build a Random Quote Machine",
       "description": [
-        "<strong>目标:</strong> 建立一个<a href='http://codepen.io' target='_blank'>CodePen.io</a> 应用，功能类似于: <a href='http://codepen.io/FreeCodeCamp/full/bELoPJ' target='_blank'>http://codepen.io/FreeCodeCamp/full/bELoPJ</a>.",
-        "<strong>规则 #1:</strong> Don't look at the example project's code. Figure it out for yourself.",
-        "<strong>规则 #2:</strong> Fulfill the below <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>user stories</a>. Use whichever libraries or APIs you need. Give it your own personal style.",
-        "<strong>User Story:</strong> I can click a button to show me a new random quote.",
-        "<strong>User Story:</strong> I can press a button to tweet out a quote.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck.",
-        "When you are finished, click the \"I've completed this challenge\" button and include a link to your CodePen. ",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "<strong>目标:</strong> 设计一个<a href='http://codepen.io' target='_blank'>CodePen.io</a> 应用，功能类似于: <a href='http://codepen.io/FreeCodeCamp/full/bELoPJ' target='_blank'>http://codepen.io/FreeCodeCamp/full/bELoPJ</a>.",
+        "<strong>规则 #1:</strong> 不要看源码、自己独立完成这个项目。",
+        "<strong>规则 #2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现里面的功能。",
+        "<strong>功能:</strong> 点击一个按钮就生存一个新的随机引用短语。",
+        "<strong>功能:</strong> 点击一个按钮就把这个引用短语发到twitter中。",
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
+        "当你完成了这个项目，请点击 \"I've completed this challenge\" 按钮，输入你的项目在CodePen上的链接。",
+        "你可以分享这个项目到朋友圈或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415122"
