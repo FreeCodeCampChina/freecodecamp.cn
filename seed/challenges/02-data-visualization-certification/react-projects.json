@@ -8,17 +8,17 @@
       "id": "bd7157d8c242eddfaeb5bd13",
       "title": "Build a Markdown Previewer",
       "description": [
-        "<strong>Objective:</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/obYYqW' target='_blank'>http://codepen.io/FreeCodeCamp/full/obYYqW</a>.",
-        "<strong>Rule #1:</strong> Don't look at the example project's code. Figure it out for yourself.",
-        "<strong>Rule #2:</strong> Fulfill the below <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>user stories</a>. Use whichever libraries or APIs you need. Give it your own personal style.",
-        "<strong>Rule #3:</strong> You must use both Sass and React to build this project.",
-        "<strong>User Story:</strong> I can type GitHub-flavored Markdown into a text area.",
-        "<strong>User Story:</strong> I can see a preview of the output of my markdown that is updated as I type.",
-        "<strong>Hint:</strong> You don't need to interpret Markdown yourself - you can import the Marked library for this: <a href='https://cdnjs.com/libraries/marked' target='_blank'>https://cdnjs.com/libraries/marked</a>",
-        "<strong>Note:</strong> If you want to use the React JSX syntax, you need to enable 'Babel' as a preprocessor",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck.",
-        "When you are finished, click the \"I've completed this challenge\" button and include a link to your CodePen. ",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个这样的应用，它的功能类似于这个 <a href='http://codepen.io/FreeCodeCamp/full/obYYqW' target='_blank'>http://codepen.io/FreeCodeCamp/full/obYYqW</a>。",
+        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户对应用功能的描述）</a>模式来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
+        " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
+        " <strong>用户故事：</strong> 我可以在文本域内写“Github风格”的Markdown文档。",
+        " <strong>用户故事：</strong> 我可以实时预览解析后的Markdown文档。",
+        " <strong>线索：</strong> 你不必自己实现Markdown的解析引擎，你可以引入这个<a href='https://cdnjs.com/libraries/marked' target='_blank'>https://cdnjs.com/libraries/marked</a>Markdown解析库来帮助你解析文档。",
+        " <strong>注意：</strong> 如果你想使用React的JSX语法，你需要使用“Babel”作为预处理器。",
+        "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
+        "当你完成后，点击 \"I've completed this challenge\" 并且附加一个你的 CodePen 链接。 ",
+        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
