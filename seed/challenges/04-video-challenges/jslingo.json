@@ -7,24 +7,25 @@
       "id": "56b15f15632298c12f31518c",
       "title": "JavaScript Lingo: MDN and Documentation",
       "description": [
-        "This is a basic intro to MDN and the concept of documentation.",
-        "MDN, Mozilla Developer Network, is a fantastic open source collaboration that documents not only JavaScript, but many other languages and topics. If you haven't heard of them, you should check them out now. I get lots of information from <a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>developer.mozilla.org/en-US/docs/Web/JavaScript</a>",
-        "When I say documentation, I am talking about information that is provided about the product to its users. The documentation at MDN isn't necessarily written by the people behind JS. Brendan Eich created JS in 1995, but it's now a community driven project that continues to grow.",
-        "As you continue to learn JavaScript, jQuery, and pretty much any languages or services for development or programming, documentation is your friend. ",
-        "The faster you get comfortable reading and referencing documentation, the faster you will grow as a developer.",
-        "These videos aren't going to teach you JavaScript - you will be introduced to terms and concepts that will be valuable as you continue to practice and learn."
+        "这是一个关于 MDN 和文档概念的基本介绍。",
+        "MDN (Mozilla Developer Network) 是一个非常棒的开源项目, 里面不仅有 JavaScript 的相关文档, 还有其他语言和主题的文档. 如果你从没有听说过 MDN , 那么你现在应该去体验一下。 我从<a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank'>developer.mozilla.org/en-US/docs/Web/JavaScript</a>中获得了不少帮助。",
+        "当我提到 文档 的时候, 我是指提供给用户的产品介绍. MDN  里的文档不完全是JS的开发人员写的. Brendan Eich 于1995年创造了 JS , 但是它现在已经成为一个社区驱动的项目，并且在不断发展。",
+        "当你继续学习 JavaScript, jQuery 或其他语言， 以及接触开发或编程服务时，, 文档都是你的好帮手。 ",
+        "你查询文档的速度越快，效率越高, 你成为一个合格的开发者的速度也就越快。",
+        "这些视频并不是要教你 JavaScript - 而是要介绍给你一些随着你学习的深入会变得更有价值的东西。"
       ],
       "challengeSeed": [
         "137072373"
       ],
       "tests": [
         [
-          "Documentation is not a good way to learn a programming language.",
+          "文档不是一个学习一门编程语言的好方法。",
           false,
           "Documentation can be your best friend once you learn how to get the most from it."
+          "当你学会充分利用文档的时候，你会发现它真的很有用。"
         ],
         [
-          "Mozilla Developer Network is a great resource that should be referenced regularly.",
+          "Mozilla Developer Network 是应该经常查阅的好资源。",
           true
         ]
       ],
@@ -35,23 +36,23 @@
       "id": "56b15f15632298c12f31518d",
       "title": "JavaScript Lingo: Value Types",
       "description": [
-        "Learn about the three most basic types of values: booleans, strings, and numbers.",
-        "A boolean is a true or false value. These words are special and reserved. You can't name a variable 'true', because that word is already universal as a boolean (as is 'false').",
-        "A string is a set of characters that is set between either single (') or double (\") quotation marks. This string can be named 'true', as long as it's between those quotation marks.",
-        "Numbers are pretty self-explanatory - a number is a value that consists only of digits, though it can also contain a decimal or a negative sign."
+        "三个最基本的值的类型 booleans（布尔值）, strings（字符串）, and numbers（数值）。",
+        "布尔值包含 true （真） 或 false （假） 两种值。 这些字是特殊的并且是保留字。 你不能将一个变量命名为 'true', 因为它已经被普遍地用作了布尔值 ('false' 也一样)。",
+        "字符串是一串字符， 它被包含与 (') 或 双引号 (\")  中。 字符串可以被命名为 'true', 只要它在引号之中。",
+        "数值是自解释的 —— 一个数值是由数字组成的值, 即使它包含小数或者负号。"
       ],
       "challengeSeed": [
         "137072769"
       ],
       "tests": [
         [
-          "Numbers can include decimals.",
+          "数值包含小数。",
           true
         ],
         [
-          "If a value is text that isn't the word true or false, it's a string. ",
+          "如果一个值既不为真，也不为假，那么它是一个字符串。 ",
           false,
-          "To be a string, the content must be wrapped in either single or double quotations."
+          "字符串应该被包含在引号中间。"
         ]
       ],
       "type": "hike",
@@ -67,20 +68,26 @@
         "You 'declare' variables the first time with 'var' in front of it, but those can be referenced later in your script.",
         "camelCase is the way that JavaScript pushes words together and still keeps them legible. The first letter of the first word is lowercase, along with the remainder of the word, but the first letter of every consecutive word is capitalized. There are no spaces. Examples: brianaLovesHerPets, bestFoodIsCheese, and codeIsWorthLearning.",
         "When you name variables, utilize camelCase. Also try to keep the names descriptive and short so that others (and yourself!) can tell what that variable is referring to just by the name."
+        "接下来我们会讲到 变量 和 骆驼拼写法 ",
+        "一个变量(variables)，简写为'var',是布尔值、字符串、或其他静态信息的名字或者占位符。",
+        "你可以用谷歌开发工具来检查FCC主页并且寻找变量",
+        "你可以在变量前加入'var'来‘声明’它，并在接下来的脚本中引用它。",
+        "骆驼拼写法是 JavaScript 拼写字符的一种方式，它有很高的易读性。 单词的第一个字母是小写的, 单词中其他的字母也是, 但是每个连续单词的第一个字母都是大写的。中间灭有空格。 例: brianaLovesHerPets, bestFoodIsCheese, and codeIsWorthLearning.",
+        "当你明明变量的时候， 使用 骆驼拼写法。 并且让变量的命名尽可能的具有描述性和尽可能短，这样别人（还有你）才可以根据名字来判断一个变量是什么"
       ],
       "challengeSeed": [
         "137078492"
       ],
       "tests": [
         [
-          "camelCase is mandatory in JavaScript.",
+          "骆驼拼写法在JavaScript中是强制性的。",
           false,
-          "Though camelCase is widely used, it isn't mandatory. It's not a bad idea to get used to using it sooner rather than later."
+          "即使骆驼拼写法应用广泛，但它并不是强制性的。 尽早习惯使用骆驼拼写法也不是什么坏主意。"
         ],
         [
-          "Variables can only hold information that is a boolean, string, or number.",
+          "变量只能包含 布尔值、字符串、或数值",
           false,
-          "Variables can hold all kinds of static information including arrays and objects."
+          "变量可以包含数组和对象在内的各种各样的静态值。"
         ]
       ],
       "type": "hike",
@@ -90,25 +97,25 @@
       "id": "56b15f15632298c12f31518a",
       "title": "JavaScript Lingo: Arrays & Objects",
       "description": [
-        "If you want to store more than one piece of information to a variable, you can do so by creating an array or an object.",
-        "**Disclaimer: Objects in JS are not exactly the same as objects in other languages. We will discuss objects here as they pertain to JS.",
-        "Arrays are sets of data between [square, brackets]. Data is separated by commas. That data can be in the form of a boolean, string, number, or even another array. We call that a nested array.",
-        "Objects are a type of data that can look or behave similar to an array in the way that it's more data stored in one variable in an organized way. You'll hear it referred to as JSON, and when you make API calls to other sites (getting information to display on your own page) it will frequently be returned in JSON.",
-        "An example of object notation is: var obj = {'name' : 'Briana', 'food' : 'cheese', 'dog' : 'Maurice'};",
-        "Notice the curly brackets, the 'keys' with values like name or food,, and the value called a 'property' that is tied to the 'key', like Briana or cheese. These are ALL stored as strings, although booleans, numbers, and other types of data are also valid."
+        "如果你想在一个变量中储存多个信息, 你可以创建一个数组或对象。",
+        "**声明: JS 中的对象和其他语言中的对象并不完全一样。 我们将在这里讨论的是JS中的对象。",
+        "数组是储存在 [方括号]中的许多数据. 数据由逗号（，）分隔）. 数据可以是布尔值 、字符串、数值，甚至是其他数组。 我们称之为嵌套数组",
+        "对象是和数组一样可以以一定的顺序储存许多数据于一个变量中的数据类型。 你以前一定听说过 JSON （JavaScript Object Notation） , 当你向其他网站发起API请求时(请求得到信息来展示在你的页面上) 通常的返回格式都是JSON",
+        " JSON 的例子: var obj = {'name' : 'Briana', 'food' : 'cheese', 'dog' : 'Maurice'};",
+        "注意那个大括号, name 和 food 被称作‘键’,, 与之对应的则称为‘值’, 如 Briana 和 cheese. 它们都以字符串形式保存, 但是布尔值、数值和其他数据类型也可以"
       ],
       "challengeSeed": [
         "137080554"
       ],
       "tests": [
         [
-          "Arrays are easy to spot because of their [square brackets]. ",
+          "数组很容易辨别，它们包含于[方括号]中 ",
           true
         ],
         [
-          "Objects in JavaScript are the same as objects in every other language.",
+          "JavaScript 语言中的对象与其他语言中的对象一样。",
           false,
-          "Objects in JS are slightly different, but as long as you understand the context for JS, you'll be fine until you decide to learn one of those other languages."
+          "JavaScript中的对象有一些轻微的不同, 但只要你理解了JS的上下文, 在你不想学习其他语言的情况下这就足够了。"
         ]
       ],
       "type": "hike",
@@ -118,23 +125,23 @@
       "id": "56b15f15632298c12f315189",
       "title": "JavaScript Lingo: Finding and Indexing Data in Arrays",
       "description": [
-        "There are many reasons you might need to access a certain piece of data from within a larger set, and you do that by referencing it's index.",
-        "We won't get into syntax now, but you should know that the first thing in an array is actually index 0.",
-        "This goes for strings and objects, too. All of these indices start at 0, so if you're looking asking the code to find indexArr[2], you're really going to get the third piece of information in that array."
+        "通常情况下，当你需要在许多数据中查找某个数据时，, 你可以通过索引来找到它。",
+        "我们现在不会介绍语法, 但是你应该知道数组中第一个值的索引为0.",
+        "这对字符串和对象来说也是， 这些索引都从0开始计数, 所以当你查询indexArr[2]时, 你会得到数组中的第三个值。"
       ],
       "challengeSeed": [
         "137081193"
       ],
       "tests": [
         [
-          "The first entry in array has the index of 1.",
+          "数组的第一个索引为1。",
           false,
-          "The first entry in an array has an index of 0."
+          "数组的第一个索引为0."
         ],
         [
-          "Arrays must contain all of the same type of information, like booleans.",
+          "同一个数组中的数据类型必须相同，如：都为布尔值。",
           false,
-          "Arrays can contain any mix of data types."
+          "数组可以包含各种不同的数据类型。"
         ]
       ],
       "type": "hike",
@@ -151,19 +158,26 @@
         "Functions, like variables, are something you define and create.",
         "During your algorithm practice at Free Code Camp, you will create functions that take a certain piece of information and manipulate it in whatever way you choose.",
         "You'll become more familiar with syntax there, but for now, just remember that with methods and functions you can do almost anything with your code."
+        "方法和函数可以帮助你处理变量和其他数据。",
+        "方法是JavaScript中内置的, 当你在做 bonfires 的时候，会对这些更加熟悉。",
+        "我建议你通过 MDN (Mozilla Developer Network that we discussed in the first video) 来熟悉这些方法和其他一些功能。 <a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index' target='_blank'>developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index</a>",
+        "例如 '.split(' ')'会返回一个字符串数组，并且可以通过多种方式来实现。 方法 是非常强大的- 许多时候，当你需要做某事的时候，总会有个方法来做这件事。",
+        "函数，比如：变量，是你定义并创建的东西。",
+        "在你在Free Code Camp中的算法实践中, 你会创建一个函数来接收数据并按你的想法处理它。",
+        "那时候，你会更熟悉语法， 但是现在，你只要记住，使用方法和函数，你可以做几乎任何事情。"
       ],
       "challengeSeed": [
         "137081423"
       ],
       "tests": [
         [
-          "Whenever there's a specific manipulation you want to apply, you should check the methods before writing your own code.",
+          "当你想要做任何特定的事情的时候, 你应该在这之前先搜索一下是否有已经存在的方法可以做这件事。",
           true
         ],
         [
-          "When writing your own functions, you should keep your code clean by only using minimal amounts of methods. ",
+          "当编写你自己的函数的时候, 为了保持代码整洁，你应该尽可能少的使用方法。 ",
           false,
-          "Methods are there to help you! Use them in your own functions as well as on their own."
+          "方法被开发出来就是用来帮助你的， 当你需要的时候，就使用它们。"
         ]
       ],
       "type": "hike",
@@ -173,25 +187,25 @@
       "id": "56b15f15632298c12f315187",
       "title": "JavaScript Lingo: Math",
       "description": [
-        "There is a static object named 'Math' in JS with many built in properties and methods.",
-        "You'll want to investigate this further whenever you're manipulating numbers. Check MDN documentation before writing your own functions, because they may already be defined there.",
-        "Examples include Math.random() which will return a random number in a given range and Math.round() which will round the input to the nearest integer.",
-        "I used Math.random() when I built the random quote generator for the Free Code Camp front end development project.",
-        "When you're working with numbers, you should also be aware that JS has an interesting attribute called 'floating-point format'.",
-        "Depending on the amount of numbers, the size of those numbers, and the number of computations, JS may return something that is inaccurate by .00004.",
-        "There are ways around this, and in general it doesn't pose issues, but it's something you should be aware of in the event you run into some problems that aren't making sense."
+        "JS中有一个叫作 'Math' 的静态对象，包含许多内置的属性和方法。",
+        "当你在处理数值相关的时候，你会想要更深入的了解这些。 在编写你自己的函数之前，搜索一下 MDN 文档, 可能这些函数已经存在了。",
+        "例如： Math.random() 会返回指定范围内的一个随机数， 而 Math.round() 会把输入值转换为最接近的整数。",
+        "当我在做Free Code Camp 的前端项目the random quote generator的时候使用了 Math.random() ",
+        "当你在处理数字的时候, 请记住JS有一个叫做'floating-point format'的有趣属性。",
+        "根据数值的数量、 数值的大小、 数值的计算, JS 的返回可能会有.00004的误差。",
+        "有一些办法可以解决它, 并且通常情况下，它并不会造成麻烦, 但是当你遇到一些莫名其妙的问题时你应该想到它。"
       ],
       "challengeSeed": [
         "137081785"
       ],
       "tests": [
         [
-          "When talking about Math in JavaScript, all of the methods and functions work like they would on any calculator.",
+          "当谈及JavaScript中的 Math 时, 所有的函数和方法会像它们在其他计算器上一样起作用。",
           false,
-          "Remember 'floating-point format'."
+          "记住 'floating-point format'."
         ],
         [
-          "There are special methods and functions specific for the 'Math' object.",
+          "'Math' 对象有许多特定的函数和方法。",
           true
         ]
       ],
@@ -205,20 +219,23 @@
         "If there's a set of data, (we'll use an array for this example, but it doesn't have to be,) and you want to perform the same manipulation to every piece in that set of data, you can use something called a loop.",
         "Loops have some complex syntax to get used to at first, but once you have it, they're extremely useful. I used loops in many of my algorithm solutions.",
         "You don't need to understand everything here - just know that loops exist when you need to traverse a set of data and they can cut down on the amount of code you need to write."
+        "如果有一组数据, (我们将会以数组为例，但这并不是必须的,) 并且你想对数组中的每个元素应用相同的操作, 你可以使用循环",
+        "循环的语法对新手来说可能很复杂, 但是一旦你掌握它，它们会特别有用. 我在许多算法解决中应用了循环。",
+        "你不必理解这里的所有一切 - 只需要知道当你想要处理一组数据时，循环可以大幅度减少你的工作量就好。"
       ],
       "challengeSeed": [
         "137082032"
       ],
       "tests": [
         [
-          "There's only one type of loop.",
+          "循环只有一种",
           false,
-          "There are many types of loops that fit many different needs."
+          "有许多种循环来满足不同的需要。"
         ],
         [
-          "Loops can only traverse arrays.",
+          "循环只能用来操作数组",
           false,
-          "Loops can be built to fit many different situations."
+          "循环可以被应用于许多解决方案。"
         ]
       ],
       "type": "hike",
@@ -228,26 +245,31 @@
       "id": "56b15f15632298c12f315185",
       "title": "JavaScript Lingo: Regular Expressions",
       "description": [
-        "RegExp is not formatted like anything else in JS, and can have a steep learning curve.",
-        "RegExp can also be an incredibly useful and efficient tool.",
+        "正则（RegExp） 并不像JS中的其他东西一样, 它有陡峭的学习曲线",
+        "正则会是非常有用并且有效率的工具",
         "Using RegExp, you can match, replace, search, and split a string, one of the more difficult types of values to manipulate.",
         "Like with all of the other videos, we won't get into the nitty gritty, but I want to show you a few examples of where RegExp is useful.",
         "If you wanted to create a registration page that verified passwords contained at least a number and a capital letter, you could use RegExp.",
         "If you wanted to ensure that dates entered in a page were all valid dates in the future, you could use RegExp.",
         "While there are limitless ways to use RegExp, many of them include validating or automatically editing information."
+        "使用正则，你可以匹配、替换、搜索和分离复杂字符串",
+        "如其他的视频一样, 我们不会注重细节, 但是我会介绍一些正则表达式来证明它们的价值。",
+        "当你想要创建一个注册页， 验证密码需要包含至少一个数字和大写字母, 你可以使用正则",
+        "当你想要确保输入页面的日期都是未来的有效日期, 你可以使用正则。",
+        "应用正则表达式的场合没有什么限制, 大多数情况下会在验证和自动编辑数据时使用。"
       ],
       "challengeSeed": [
         "137082304"
       ],
       "tests": [
         [
-          "RegExp can be a useful tool when working with strings. ",
+          "正则表达式对处理字符串非常有用。 ",
           true
         ],
         [
-          "RegExp can be intimidating, and if you don't like it, you can probably just avoid using it.",
+          "正则表达式是令人生畏的，如果你不喜欢它, 你可以尽量避免使用它。",
           false,
-          "Be patient with RegExp and with yourself. It can be a great tool that saves you from writing too much or inefficient code."
+          "对正则有点耐心，对你自己也要有耐心。 它会帮助你减少你所需要写的代码量。"
         ]
       ],
       "type": "hike",
