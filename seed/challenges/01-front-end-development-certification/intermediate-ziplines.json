@@ -91,7 +91,7 @@
         "<strong>功能:</strong> 我可以点击链接跳到 FreeCodeCamp 在Twitch.tv上的频道。",
         "<strong>功能:</strong> 如果有人在直播，我可以看到他正在直播什么。",
         "<strong>功能:</strong> 如果直播者关闭了他的账户，我会看到一个404提示页面。",
-        "<strong>提示:</strong> 这有一个如何调用 Twitch.tv的JSONP API的示例：<a href='https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-the-Twitchtv-JSON-API' target='_blank'>https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-the-Twitchtv-JSON-API</a>.",
+        "<strong>提示:</strong> 这有一个如何调用 Twitch.tv的JSONP API的示例：<a href='https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-Twitchtv-JSON-API' target='_blank'>https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-the-Twitchtv-JSON-API</a>.",
         "<strong>提示:</strong> 这个文档有更多关于如何调用这个API的细节：<a href='https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md#get-streamschannel' target='_blank'>https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md#get-streamschannel</a>.",
         "<strong>提示:</strong> 这有一个Twitch.tv 用户名数组，里面包含有通常正在直播写代码的人： <code>[\"freecodecamp\", \"storbeck\", \"terakilobyte\", \"habathcx\",\"RobotCaleb\",\"thomasballinger\",\"noobs2ninjas\",\"beohoff\"]</code>",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
