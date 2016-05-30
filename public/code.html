@@ -128,7 +128,7 @@
     </button>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document" style="width:95%;">
+      <div class="modal-dialog" role="document" style="margin: 15% auto;">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -137,49 +137,32 @@
           <div class="modal-body">
             <form class="form-horizontal" ng-controller="form">
               <div class="form-group">
-                <label for="username" class="col-sm-2 control-label">用户名</label>
-                <div class="col-sm-10">
+                <label for="username" class="col-xs-3 col-sm-3 control-label">用户名</label>
+                <div class="col-xs-9 col-sm-9">
                   <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="我们需要你的FCC用户名" required>
                   <span>如果你没有FCC用户名，</span><a href="/login">请先登录FCC</a>
                 </div>
               </div>
               <div class="form-group">
-                <label for="telphone" class="col-sm-2 control-label">手机号</label>
-                <div class="col-sm-10">
+                <label for="telphone" class="col-xs-3 col-sm-3 control-label">手机号</label>
+                <div class="col-xs-9 col-sm-9">
                   <input type="tel" class="form-control" id="telphone" ng-model="telphone" name="telphone"  placeholder="便于我们通知你领奖品哦" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="category" class="col-sm-2 control-label">选择组别</label>
-                <div class="col-sm-10">
+                <label for="category" class="col-xs-3 col-sm-3 control-label">选择组别</label>
+                <div class="col-xs-9 col-sm-9">
+                  <select style="vertical-align: -5px;">
+                     <option value="" >选组请谨慎，一旦选定不能修改。</option>
+                     <option value="master" >专业组（面向在职程序员和计算机高手）</option>
+                     <option value="newer" >业余组（面向非程序员和计算机小白）</option>
+                     <option value="women" >程序媛新秀组（只面向女性，男性选择该组无法获奖）</option>
+                   </select>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="ensure" class="col-sm-2 control-label">
-                  <input type="radio" name="category" value="master">
-                </label>
-                <div class="col-sm-10" style="line-height: 38px;">
-                  <p style="font-size:12px;">专业组（面向在职程序员和计算机高手）</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="ensure" class="col-sm-2 control-label">
-                  <input type="radio" name="category" value="newer">
-                </label>
-                <div class="col-sm-10" style="line-height: 38px;">
-                  <p style="font-size:12px;">业余组（面向非程序员和计算机小白）</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="ensure" class="col-sm-2 control-label">
-                  <input type="radio" name="category" value="women">
-                </label>
-                <div class="col-sm-10" style="line-height: 38px;">
-                  <p style="font-size:12px;">程序媛新秀组（只面向女性，男性选择该组无法获奖）</p>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
+              <div class="form-group" style="margin-top:30px;">
+                <label for="ensure" class="col-xs-3 col-sm-3 control-label"></label>
+                <div class="col-xs-9 col-sm-9">
                   <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
                   <!-- <input type="submit" id="submit" class="btn btn-default" value="提交"> -->
                 </div>
@@ -312,7 +295,7 @@
                 $(".close").click();
                 $('.btn-lg').text('报名成功')
               }else{
-                $http.post('/add-telphone',{username:$scope.username,telphone:$scope.telphone,category:$("input:checked").val()}).then(function(res){
+                $http.post('/add-telphone',{username:$scope.username,telphone:$scope.telphone,category:$("select").val()}).then(function(res){
                   var out = res.data;
                   if(out.status == 200){
                     alert("恭喜你，报名成功！");
@@ -346,7 +329,7 @@
     }else if(!telphoneRegex.test($("#telphone").val())){
       alert("手机号错误，请重新输入！")
       return false;
-    }else if(!$("input:checked").val()){
+    }else if(!$("select").val()){
       alert("请先选组，再提交！");
       return false;
     }else{
