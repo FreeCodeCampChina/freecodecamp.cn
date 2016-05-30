@@ -148,7 +148,7 @@
             <div class="form-group">
               <label for="username" class="col-xs-3 col-sm-3 control-label">用户名</label>
               <div class="col-xs-9 col-sm-9">
-                <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="我们需要你的FCC用户名" required>
+                <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="FCC的用户名都是小写哦" required>
                 <span>如果你没有FCC用户名，</span><a href="/login">请先登录FCC</a>
               </div>
             </div>
@@ -301,14 +301,15 @@
               if(out.status == 200){
                 alert("你已报名成功，请勿重复报名！");
                 $(".close").click();
-                $('.btn-lg').text('报名成功')
+                $('.btn-lg').text('报名成功').attr('disabled',true);
+                window.open("https://freecodecamp.cn");
               }else{
                 $http.post('/add-telphone',{username:$scope.username,telphone:$scope.telphone,category:$("select").val()}).then(function(res){
                   var out = res.data;
                   if(out.status == 200){
                     alert("恭喜你，报名成功！");
                     $(".close").click();
-                    $('.btn-lg').text('报名成功')
+                    $('.btn-lg').text('报名成功').attr('disabled',true);
                     window.open("https://freecodecamp.cn");
                   }else{
                     alert("提交数据有误，请重新输入！")
