@@ -10,13 +10,13 @@
   <style>
     body{margin:0;font-size:16px;}
     .content{width:38%;margin:0 auto;display:block;}
-    header{background-image: url("images/background.png");height:500px;color:white;}
+    header{background-image: url("images/background.png");height:450px;color:white;}
     #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
     #fcc{width: 100%;padding-top: 15px;}
-    h1,h2,h3,h4,/freecodecamp{margin:0;}
+    h1,h2,h3,h4,h5{margin:0;}
     h1{text-align:center;font-size:3em;padding-top:20px;}
     h2{text-align:center;padding-top:20px;}
-    h3{text-align:center;font-size:1.5em;padding-top:20px;}
+    h3{text-align:center;font-size:1.5em;}
     #myModal{color:#333;}
     .join{
       cursor: pointer;
@@ -31,13 +31,12 @@
     }
     .join:hover{font-weight: bold;}
     h4{font-size:1.5em;}
-    /freecodecamp{
-      font-size: 1.5em;
-    }
+    h5{font-size: 1.5em;}
     .chapter1{
       margin: 0 auto;
       text-align: center;
-      width:70%;
+      width:50%;
+      margin-top: 20px;
     }
     .chapter2{
       width:80%;
@@ -62,12 +61,11 @@
     #date{padding-bottom:10px;}
     .img{margin: 0 auto;  display: block;}
     .whitespace{padding-top:20px;padding-bottom:20px;}
-    .img-responsive{margin: 0 auto;display: block;width: 640px;}
-    .internet{line-height: 61px;margin: 0;font-size: 1.5em;text-align:center;color:red;}
+    .img-responsive{margin: 0 auto;display: block;width: 550px;}
     .green{color:#4CAF50;}
     .qrcode_panel{
       position: fixed;
-      top: 500px;
+      top: 450px;
       right: 0px;
       border-radius: 2px;
       -moz-border-radius: 2px;
@@ -78,7 +76,7 @@
     }
     .qrcode_panel2{
       position: fixed;
-      top: 500px;
+      top: 450px;
       left: 0px;
       border-radius: 2px;
       -moz-border-radius: 2px;
@@ -111,13 +109,13 @@
 <body>
   <img src="fcc.jpg" style="display:none;">
   <dl class="qrcode_panel">
-      <dt><img src="images/qrcode_for_nearest.jpg" width="102px"></dt>
-      <dd>扫码关注</dd>
+      <dt><img src="images/qrcode_for_nearest.jpg" width="150px"></dt>
+      <dd>搜索freecodecamp</dd>
       <span>回复“比赛”二字</span><br>
       <span>加入学习群</span>
   </dl>
   <div class="qrcode_panel2">
-      <img src="http://dev.juhe.cn/Public/front/images/enroll.png" width="130px" id="iwantjoin">
+      <img src="http://dev.juhe.cn/Public/front/images/enroll.png" width="150px" id="iwantjoin">
   </div>
   <header>
     <img src="images/wilddog.png" id="logo">
@@ -202,28 +200,28 @@
   <div class="chapter2">
     <h4>比赛平台：FreeCodeCamp中文社区</h4>
     <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-md-3">
         <img src="/images/landingIcons_connect.svg" width="150px;">
         <div class="button-spacer"></div>
         <span>全球30W+用户</span>
         <br><span>GitHub上排名第一</span>
         <div class="spacer"></div>
       </div>
-      <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-md-3">
         <img src="/images/landingIcons_learn.svg" width="150px;">
         <div class="button-spacer"></div>
         <span>游戏化编程</span><br>
         <span>无尽的挑战任务</span>
         <div class="spacer"></div>
       </div>
-      <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-md-3">
         <img src="/images/landingIcons_nonprofits.svg" width="150px;">
         <div class="button-spacer"></div>
         <span>8万+人在线交流</span><br>
         <span>有问必答</span>
         <div class="spacer"></div>
       </div>
-      <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="col-xs-12 col-sm-12 col-md-3">
         <img src="/images/landingIcons_portfolio.svg" width="150px;">
         <div class="button-spacer"></div>
         <span>帮助非盈利组织</span><br>
@@ -245,7 +243,7 @@
   <hr>
   <div class="chapter2">
     <h4>评分（标星的必做）</h4>
-    <embed src="images/challenges.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/"/>
+    <embed src="images/challenges.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" style="width:80%;"/>
   </div>
   <hr>
   <div class="chapter1" style="width:100%;">
