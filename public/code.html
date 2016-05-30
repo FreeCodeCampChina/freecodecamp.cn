@@ -104,10 +104,18 @@
     .button-spacer{height:10px;}
     .spacer{height:10px;}
     .row{margin-top:40px;}
+    .modal{font-size:24px;}
+    #commit{color: #fff;
+    background: orange;
+    border: none;
+    font-size: 24px;}
+    .form-control{font-size:24px;}
   </style>
 </head>
 <body>
-  <img src="fcc.jpg" style="display:none;">
+  <div style="display: none;">
+    <img src="/images/camper-image-placeholder.png" >
+  </div>
   <dl class="qrcode_panel">
       <dt><img src="images/qrcode_for_nearest.jpg" width="150px"></dt>
       <dd>搜索freecodecamp</dd>
@@ -126,53 +134,53 @@
     <button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#myModal">
       立即报名
     </button>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document" style="margin: 15% auto;">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" style="text-align:center;" id="myModalLabel">FreeCodeCamp 比赛报名入口</h4>
-          </div>
-          <div class="modal-body">
-            <form class="form-horizontal" ng-controller="form">
-              <div class="form-group">
-                <label for="username" class="col-xs-3 col-sm-3 control-label">用户名</label>
-                <div class="col-xs-9 col-sm-9">
-                  <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="我们需要你的FCC用户名" required>
-                  <span>如果你没有FCC用户名，</span><a href="/login">请先登录FCC</a>
-                </div>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="margin: 15% auto;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" style="text-align:center;" id="myModalLabel">FreeCodeCamp 比赛报名入口</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" ng-controller="form">
+            <div class="form-group">
+              <label for="username" class="col-xs-3 col-sm-3 control-label">用户名</label>
+              <div class="col-xs-9 col-sm-9">
+                <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="我们需要你的FCC用户名" required>
+                <span>如果你没有FCC用户名，</span><a href="/login">请先登录FCC</a>
               </div>
-              <div class="form-group">
-                <label for="telphone" class="col-xs-3 col-sm-3 control-label">手机号</label>
-                <div class="col-xs-9 col-sm-9">
-                  <input type="tel" class="form-control" id="telphone" ng-model="telphone" name="telphone"  placeholder="便于我们通知你领奖品哦" required>
-                </div>
+            </div>
+            <div class="form-group">
+              <label for="telphone" class="col-xs-3 col-sm-3 control-label">手机号</label>
+              <div class="col-xs-9 col-sm-9">
+                <input type="tel" class="form-control" id="telphone" ng-model="telphone" name="telphone"  placeholder="便于我们通知你领奖品哦" required>
               </div>
-              <div class="form-group">
-                <label for="category" class="col-xs-3 col-sm-3 control-label">选择组别</label>
-                <div class="col-xs-9 col-sm-9">
-                  <select style="vertical-align: -5px;">
-                     <option value="" >选组请谨慎，一旦选定不能修改。</option>
-                     <option value="master" >专业组（面向在职程序员和计算机高手）</option>
-                     <option value="newer" >业余组（面向非程序员和计算机小白）</option>
-                     <option value="women" >程序媛新秀组（只面向女性，男性选择该组无法获奖）</option>
-                   </select>
-                </div>
+            </div>
+            <div class="form-group">
+              <label for="category" class="col-xs-3 col-sm-3 control-label">选择组别</label>
+              <div class="col-xs-9 col-sm-9">
+                <select style="vertical-align: -5px;">
+                   <option value="" >选组请谨慎，一旦选定不能修改哦。</option>
+                   <option value="master" >专业组（面向在职程序员和计算机高手）</option>
+                   <option value="newer" >业余组（面向非程序员和计算机小白）</option>
+                   <option value="women" >程序媛新秀组（只面向女性，男性选择该组无法获奖）</option>
+                 </select>
               </div>
-              <div class="form-group" style="margin-top:30px;">
-                <label for="ensure" class="col-xs-3 col-sm-3 control-label"></label>
-                <div class="col-xs-9 col-sm-9">
-                  <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
-                  <!-- <input type="submit" id="submit" class="btn btn-default" value="提交"> -->
-                </div>
+            </div>
+            <div class="form-group" style="margin-top:30px;">
+              <label for="ensure" class="col-xs-3 col-sm-3 control-label"></label>
+              <div class="col-xs-9 col-sm-9">
+                <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
+                <!-- <input type="submit" id="submit" class="btn btn-default" value="提交"> -->
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </header>
+  </div>
   <div class="chapter1">
     <h4>人人皆可编程</h4>
     <p style="padding-top:20px;">本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。</p>
