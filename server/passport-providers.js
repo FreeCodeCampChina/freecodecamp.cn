@@ -41,16 +41,5 @@ module.exports = {
     scope: ['email'],
     link: true,
     failureFlash: true
-  },
-  "wechat-login": {
-    provider: "wechat",
-    authScheme: 'oauth2',
-    module: "passport-wechat-public",
-    callbackURL: "/auth/wechat/callback",
-    successRedirect: "/auth/wechat/account",
-    failureRedirect: "/auth/wechat/failure",
-    scope: ["snsapi_userinfo"],
-    appId: process.env.WECHAT_ID,
-    appSecret: process.env.WECHAT_SECRET
   }
 };
