@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>学习进度排行榜</title>
+  <style>
+  h2,table,th,td{
+    text-align:center;
+    border-spacing: 0px;
+  }
+  tr:nth-child(even){
+    background-color: #FAEBD7;
+  }
+  tr:nth-child(odd){
+    background-color: white;
+  }
+  th, tr{
+    padding:5px;
+  }
+  #left{
+    float:left;
+    margin-right:5px;
+  }
+  #center{
+    float:left;
+    margin-right:5px;
+  }
+  #right{
+    float:left;
+  }
+  </style>
+  <base target="_blank" />
+  <script src="/js/angular.js"></script>
+</head>
+<body>
+  <div id="left">
+    <h2>专业组排行榜</h2>
+    <table ng-controller="left" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>基础课程分</th>
+        <th>项目分</th>
+        <th>总分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score' " >
+        <td ng-bind="$index+1"></td>
+        <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+        <td ng-bind="item.projectScore"></td>
+        <td ng-bind="item.score + item.projectScore"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="center">
+    <h2>业余组排行榜</h2>
+    <table ng-controller="center" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>基础课程分</th>
+        <th>项目分</th>
+        <th>总分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score' " >
+        <td ng-bind="$index+1"></td>
+        <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+        <td ng-bind="item.projectScore"></td>
+        <td ng-bind="item.score + item.projectScore"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="right">
+    <h2>程序媛新秀组排行榜</h2>
+    <table ng-controller="right" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>基础课程分</th>
+        <th>项目分</th>
+        <th>总分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score' " >
+        <td ng-bind="$index+1"></td>
+        <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+        <td ng-bind="item.projectScore"></td>
+        <td ng-bind="item.score + item.projectScore"></td>
+      </tr>
+    </table>
+  </div>
+<script>
+  var project1 = ['bd7158d8c442eddfbeb5bd1f','bd7158d8c442eddfaeb5bd18','bd7158d8c242eddfaeb5bd13','bd7158d8c242eddfaeb5be13'];
+  var project2 = ['bd7158d8c442eddfaeb5bd13','bd7158d8c442eddfaeb5bd10','bd7158d8c442eddfaeb5bd19','bd7158d8c442eddfaeb5bd1f'];
+  var project3 = ['bd7158d8c442eddfaeb5bd17','bd7158d8c442eddfaeb5bd0f','bd7158d8c442eedfaeb5bd1c','bd7158d8c442eddfaeb5bd1c'];
+  var app = angular.module('app',[]);
+  app.controller('left',['$scope','$http', function($scope,$http){
+    $http.get('/master').then(function(res){
+      var out = res.data;
+      for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  console.log(project1[k]);
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  console.log(project2[k]);
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  console.log(project3[k]);
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+      }
+      $scope.items = out;
+    },function(err){
+      console.log(err);
+    })
+  }]);
+
+  app.controller('center',['$scope','$http', function($scope,$http){
+    $http.get('/newer').then(function(res){
+      var out = res.data;
+      for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  console.log(project1[k]);
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  console.log(project2[k]);
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  console.log(project3[k]);
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+      }
+      $scope.items = out;
+    },function(err){
+      console.log(err);
+    })
+  }])
+  app.controller('right',['$scope','$http', function($scope,$http){
+    $http.get('/women').then(function(res){
+      var out = res.data;
+      for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  console.log(project1[k]);
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  console.log(project2[k]);
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  console.log(project3[k]);
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+      }
+      $scope.items = out;
+    },function(err){
+      console.log(err);
+    })
+  }])
+</script>
+</body>
+</html>
