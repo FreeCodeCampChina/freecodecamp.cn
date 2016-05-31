@@ -49,13 +49,13 @@
         <th>项目分</th>
         <th>总分</th>
       </tr>
-      <tr ng-repeat="item in items | orderBy:'-score' " >
+      <tr ng-repeat="item in items | orderBy:'-totalScore' " >
         <td ng-bind="$index+1"></td>
         <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
         <td><img ng-src="{{item.picture}}" width="64px"></td>
         <td ng-bind="item.score"></td>
         <td ng-bind="item.projectScore"></td>
-        <td ng-bind="item.score + item.projectScore"></td>
+        <td ng-bind="item.totalScore = item.score + item.projectScore"></td>
       </tr>
     </table>
   </div>
@@ -70,13 +70,13 @@
         <th>项目分</th>
         <th>总分</th>
       </tr>
-      <tr ng-repeat="item in items | orderBy:'-score' " >
+      <tr ng-repeat="item in items | orderBy:'-totalScore' " >
         <td ng-bind="$index+1"></td>
         <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
         <td><img ng-src="{{item.picture}}" width="64px"></td>
         <td ng-bind="item.score"></td>
         <td ng-bind="item.projectScore"></td>
-        <td ng-bind="item.score + item.projectScore"></td>
+        <td ng-bind="item.totalScore = item.score + item.projectScore"></td>
       </tr>
     </table>
   </div>
@@ -91,13 +91,13 @@
         <th>项目分</th>
         <th>总分</th>
       </tr>
-      <tr ng-repeat="item in items | orderBy:'-score' " >
+      <tr ng-repeat="item in items | orderBy:'-totalScore' " >
         <td ng-bind="$index+1"></td>
         <td><a href="https://freecodecamp.cn/{{item.username}}" ng-bind="item.username"></a></td>
         <td><img ng-src="{{item.picture}}" width="64px"></td>
         <td ng-bind="item.score"></td>
         <td ng-bind="item.projectScore"></td>
-        <td ng-bind="item.score + item.projectScore"></td>
+        <td ng-bind="item.totalScore = item.score + item.projectScore"></td>
       </tr>
     </table>
   </div>
@@ -113,12 +113,11 @@
           for(var j=0;j<out[i].progressTimestamps.length;j++){
             if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
               for(var k=0;k<4;k++){
-                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){              
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
                   out[i].projectScore +=20;
                   out[i].score -=1;
                 }
                 if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
-                  console.log(project2[k]);
                   out[i].projectScore +=30;
                   out[i].score -=1;
                 }
@@ -144,17 +143,15 @@
           for(var j=0;j<out[i].progressTimestamps.length;j++){
             if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
               for(var k=0;k<4;k++){
-                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){              
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
                   out[i].projectScore +=20;
                   out[i].score -=1;
                 }
                 if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
-                  console.log(project2[k]);
                   out[i].projectScore +=30;
                   out[i].score -=1;
                 }
                 if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
-                  console.log(project3[k]);
                   out[i].projectScore +=40;
                   out[i].score -=1;
                 }
@@ -174,17 +171,15 @@
           for(var j=0;j<out[i].progressTimestamps.length;j++){
             if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
               for(var k=0;k<4;k++){
-                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){              
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
                   out[i].projectScore +=20;
                   out[i].score -=1;
                 }
                 if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
-                  console.log(project2[k]);
                   out[i].projectScore +=30;
                   out[i].score -=1;
                 }
                 if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
-                  console.log(project3[k]);
                   out[i].projectScore +=40;
                   out[i].score -=1;
                 }
