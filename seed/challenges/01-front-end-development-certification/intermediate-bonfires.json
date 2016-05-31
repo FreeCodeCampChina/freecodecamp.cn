@@ -486,10 +486,10 @@
       "id": "a3bfc1673c0526e06d3ac698",
       "title": "Sum All Primes",
       "description": [
-        "Sum all the prime numbers up to and including the provided number.",
-        "A prime number is defined as having only two divisors, 1 and itself. For example, 2 is a prime number because it's only divisible by 1 and 2. 1 isn't a prime number, because it's only divisible by itself.",
-        "The provided number may not be a prime.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "求小于等于给定数值的质数之和。",
+        "只有 1 和它本身两个约数的数叫质数。例如，2 是质数，因为它只能被 1 和 2 整除。1 不是质数，因为它只能被自身整除。",
+        "给定的数不一定是质数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumPrimes(num) {",
@@ -502,9 +502,9 @@
         "function eratosthenesArray(n) {\n    var primes = [];\n    if (n > 2) {\n        var half = n>>1;\n        var sieve = Array(half);\n        for (var i = 1, limit = Math.sqrt(n)>>1; i <= limit; i++) {\n            if (!sieve[i]) {\n                for (var step = 2*i+1, j = (step*step)>>1; j < half; j+=step) {\n                    sieve[j] = true;\n                }\n            }\n        }\n        primes.push(2);\n        for (var p = 1; p < half; p++) {\n            if (!sieve[p]) primes.push(2*p+1);\n        }\n    }\n    return primes;\n}\n\nfunction sumPrimes(num) {\n  return eratosthenesArray(num+1).reduce(function(a,b) {return a+b;}, 0);\n}\n\nsumPrimes(10);"
       ],
       "tests": [
-        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> should return a number.');",
-        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> should return 17.');",
-        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> should return 73156.');"
+        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> 应该返回一个数字。');",
+        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> 应该返回 17。');",
+        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> 应该返回 73156。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -518,10 +518,10 @@
       "id": "ae9defd7acaf69703ab432ea",
       "title": "Smallest Common Multiple",
       "description": [
-        "Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.",
-        "The range will be an array of two numbers that will not necessarily be in numerical order.",
-        "e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is evenly divisible by all numbers <em>between</em> 1 and 3.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "找出能被两个给定参数和它们之间的连续数字整除的最小公倍数。",
+        "范围是两个数字构成的数组，两个数字不一样按数字顺序排序。",
+        "例如对 1 和 3 —— 找出能被 1 和 3 和它们<em>之间</em>所有数字整除的最小公倍数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function smallestCommons(arr) {",
@@ -535,10 +535,10 @@
         "function gcd(a, b) {\n    while (b !== 0) {\n        a = [b, b = a % b][0];\n    }\n    return a;\n}\n\nfunction lcm(a, b) {\n    return (a * b) / gcd(a, b);\n}\n\nfunction smallestCommons(arr) {\n  arr.sort(function(a,b) {return a-b;});\n  var rng = [];\n  for (var i = arr[0]; i <= arr[1]; i++) {\n    rng.push(i);\n  }\n  return rng.reduce(lcm);\n}"
       ],
       "tests": [
-        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> should return a number.');",
-        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> should return 360360.');"
+        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> 应该返回一个数字。');",
+        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> 应该返回 360360。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -551,8 +551,8 @@
       "id": "a6e40f1041b06c996f7b2406",
       "title": "Finders Keepers",
       "description": [
-        "Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument).",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "写一个 function，它浏览数组（第一个参数）并返回数组中第一个通过某种方法（第二个参数）验证的元素。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function find(arr, func) {",
@@ -566,8 +566,8 @@
         "function find(arr, func) {\n  var num;\n  arr.some(function(e) {\n    if (func(e)) {\n      num = e;\n      return true;\n    }\n  });\n  return num;\n}"
       ],
       "tests": [
-        "assert.strictEqual(find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }), 8, 'message: <code>find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; })</code> should return 8.');",
-        "assert.strictEqual(find([1, 3, 5, 9], function(num) { return num % 2 === 0; }), undefined, 'message: <code>find([1, 3, 5, 9], function(num) { return num % 2 === 0; })</code> should return undefined.');"
+        "assert.strictEqual(find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }), 8, 'message: <code>find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; })</code> 应该返回 8。');",
+        "assert.strictEqual(find([1, 3, 5, 9], function(num) { return num % 2 === 0; }), undefined, 'message: <code>find([1, 3, 5, 9], function(num) { return num % 2 === 0; })</code> 应该返回 undefined。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -580,9 +580,9 @@
       "id": "a5deed1811a43193f9f1c841",
       "title": "Drop it",
       "description": [
-        "Drop the elements of an array (first argument), starting from the front, until the predicate (second argument) returns true.",
-        "Return the rest of the array, otherwise return an empty array.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "从数组（第一个参数）的最前面开始丢弃其中的元素，直到谓词（第二个参数）返回 true。",
+        "返回数组剩余的部分，如果没有剩余元素则返回一个空数组。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function drop(arr, func) {",
@@ -596,12 +596,12 @@
         "function drop(arr, func) {\n  // Drop them elements.\n  while (arr.length && !func(arr[0])) {\n    arr.shift();\n  }\n  return arr;\n}"
       ],
       "tests": [
-        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n >= 3;}), [3, 4], 'message: <code>drop([1, 2, 3, 4], function(n) {return n >= 3;})</code> should return <code>[3, 4]</code>.');",
-        "assert.deepEqual(drop([0, 1, 0, 1], function(n) {return n === 1;}), [1, 0, 1], 'message: <code>drop([0, 1, 0, 1], function(n) {return n === 1;})</code> should return <code>[1, 0, 1]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3], function(n) {return n > 0;}), [1, 2, 3], 'message: <code>drop([1, 2, 3], function(n) {return n > 0;})</code> should return <code>[1, 2, 3]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n > 5;}), [], 'message: <code>drop([1, 2, 3, 4], function(n) {return n > 5;})</code> should return <code>[]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 7, 4], function(n) {return n > 3;}), [7, 4], 'message: <code>drop([1, 2, 3, 7, 4], function(n) {return n > 3;})</code> should return <code>[7, 4]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 9, 2], function(n) {return n > 2;}), [3, 9, 2], 'message: <code>drop([1, 2, 3, 9, 2], function(n) {return n > 2;})</code> should return <code>[3, 9, 2]</code>.');"
+        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n >= 3;}), [3, 4], 'message: <code>drop([1, 2, 3, 4], function(n) {return n >= 3;})</code> 应该返回 <code>[3, 4]</code>。');",
+        "assert.deepEqual(drop([0, 1, 0, 1], function(n) {return n === 1;}), [1, 0, 1], 'message: <code>drop([0, 1, 0, 1], function(n) {return n === 1;})</code> 应该返回 <code>[1, 0, 1]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3], function(n) {return n > 0;}), [1, 2, 3], 'message: <code>drop([1, 2, 3], function(n) {return n > 0;})</code> 应该返回 <code>[1, 2, 3]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n > 5;}), [], 'message: <code>drop([1, 2, 3, 4], function(n) {return n > 5;})</code> 应该返回 <code>[]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 7, 4], function(n) {return n > 3;}), [7, 4], 'message: <code>drop([1, 2, 3, 7, 4], function(n) {return n > 3;})</code> 应该返回 <code>[7, 4]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 9, 2], function(n) {return n > 2;}), [3, 9, 2], 'message: <code>drop([1, 2, 3, 9, 2], function(n) {return n > 2;})</code> 应该返回 <code>[3, 9, 2]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
