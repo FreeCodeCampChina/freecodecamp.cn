@@ -108,8 +108,8 @@
     #commit{color: #fff;
     background: orange;
     border: none;
-    font-size: 24px;}
-    .form-control{font-size:24px;}
+    font-size: 30px;height:60px;}
+    .form-control{font-size:24px;height:60px;}
   </style>
 </head>
 <body>
@@ -137,7 +137,7 @@
   </header>
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document" style="margin: 15% auto;">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -146,22 +146,22 @@
         <div class="modal-body">
           <form class="form-horizontal" ng-controller="form">
             <div class="form-group">
-              <label for="username" class="col-xs-3 col-sm-3 control-label">用户名</label>
-              <div class="col-xs-9 col-sm-9">
+              <label for="username" class="col-xs-12 col-sm-3 control-label">用户名</label>
+              <div class="col-xs-12 col-sm-9">
                 <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="FCC的用户名都是小写哦" required>
-                <span>如果你没有FCC用户名，</span><a href="/login">请先登录FCC</a>
+                <span style="font-size:16px;">如果你没有FCC用户名，</span><a href="/login" style="font-size:16px;">请先登录FCC</a>
               </div>
             </div>
             <div class="form-group">
-              <label for="telphone" class="col-xs-3 col-sm-3 control-label">手机号</label>
-              <div class="col-xs-9 col-sm-9">
+              <label for="telphone" class="col-xs-12 col-sm-3 control-label">手机号</label>
+              <div class="col-xs-12 col-sm-9">
                 <input type="tel" class="form-control" id="telphone" ng-model="telphone" name="telphone"  placeholder="便于我们通知你领奖品哦" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="category" class="col-xs-3 col-sm-3 control-label">选择组别</label>
-              <div class="col-xs-9 col-sm-9">
-                <select style="vertical-align: -5px;">
+              <label for="category" class="col-xs-12 col-sm-3 control-label">选择组别</label>
+              <div class="col-xs-12 col-sm-9">
+                <select style="border: 1px solid #ccc;width: 100%;height: 60px;">
                    <option value="" >选组请谨慎，一旦选定不能修改哦。</option>
                    <option value="master" >专业组（面向在职程序员和计算机高手）</option>
                    <option value="newer" >业余组（面向非程序员和计算机小白）</option>
