@@ -486,10 +486,10 @@
       "id": "a3bfc1673c0526e06d3ac698",
       "title": "Sum All Primes",
       "description": [
-        "Sum all the prime numbers up to and including the provided number.",
-        "A prime number is defined as having only two divisors, 1 and itself. For example, 2 is a prime number because it's only divisible by 1 and 2. 1 isn't a prime number, because it's only divisible by itself.",
-        "The provided number may not be a prime.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "求小于等于给定数值的质数之和。",
+        "只有 1 和它本身两个约数的数叫质数。例如，2 是质数，因为它只能被 1 和 2 整除。1 不是质数，因为它只能被自身整除。",
+        "给定的数不一定是质数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumPrimes(num) {",
@@ -502,9 +502,9 @@
         "function eratosthenesArray(n) {\n    var primes = [];\n    if (n > 2) {\n        var half = n>>1;\n        var sieve = Array(half);\n        for (var i = 1, limit = Math.sqrt(n)>>1; i <= limit; i++) {\n            if (!sieve[i]) {\n                for (var step = 2*i+1, j = (step*step)>>1; j < half; j+=step) {\n                    sieve[j] = true;\n                }\n            }\n        }\n        primes.push(2);\n        for (var p = 1; p < half; p++) {\n            if (!sieve[p]) primes.push(2*p+1);\n        }\n    }\n    return primes;\n}\n\nfunction sumPrimes(num) {\n  return eratosthenesArray(num+1).reduce(function(a,b) {return a+b;}, 0);\n}\n\nsumPrimes(10);"
       ],
       "tests": [
-        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> should return a number.');",
-        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> should return 17.');",
-        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> should return 73156.');"
+        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> 应该返回一个数字。');",
+        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> 应该返回 17。');",
+        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> 应该返回 73156。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
