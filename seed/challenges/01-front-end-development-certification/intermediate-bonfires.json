@@ -518,10 +518,10 @@
       "id": "ae9defd7acaf69703ab432ea",
       "title": "Smallest Common Multiple",
       "description": [
-        "Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.",
-        "The range will be an array of two numbers that will not necessarily be in numerical order.",
-        "e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is evenly divisible by all numbers <em>between</em> 1 and 3.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "找出能被两个给定参数和它们之间的连续数字整除的最小公倍数。",
+        "范围是两个数字构成的数组，两个数字不一样按数字顺序排序。",
+        "例如对 1 和 3 —— 找出能被 1 和 3 和它们<em>之间</em>所有数字整除的最小公倍数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function smallestCommons(arr) {",
@@ -535,10 +535,10 @@
         "function gcd(a, b) {\n    while (b !== 0) {\n        a = [b, b = a % b][0];\n    }\n    return a;\n}\n\nfunction lcm(a, b) {\n    return (a * b) / gcd(a, b);\n}\n\nfunction smallestCommons(arr) {\n  arr.sort(function(a,b) {return a-b;});\n  var rng = [];\n  for (var i = arr[0]; i <= arr[1]; i++) {\n    rng.push(i);\n  }\n  return rng.reduce(lcm);\n}"
       ],
       "tests": [
-        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> should return a number.');",
-        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> should return 360360.');"
+        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> 应该返回一个数字。');",
+        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> 应该返回 360360。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
