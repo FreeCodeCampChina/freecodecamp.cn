@@ -3,47 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=640px,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <title>苏州全民编程挑战赛</title>
   <!-- 新 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <style>
     body{margin:0;font-size:16px;}
     .content{width:38%;margin:0 auto;display:block;}
+    h1,h2,h3,h4,p{text-align:center;}
     header{background-image: url("images/background.png");height:450px;color:white;}
     #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
     #fcc{width: 100%;padding-top: 15px;}
-    h1,h2,h3,h4,h5{margin:0;}
-    h1{text-align:center;font-size:3em;padding-top:20px;}
-    h2{text-align:center;padding-top:20px;}
-    h3{text-align:center;font-size:1.5em;}
+    .img-responsive{margin:0 auto;}
     #myModal{color:#333;}
-    .join{
-      cursor: pointer;
-      font-size: 1.5em;
-      width: 120px;
-      border-radius: 20px;
-      padding: 10px;
-      text-align: center;
-      margin:0 auto;
-      margin-top: 20px;
-      background: orange;
-    }
-    .join:hover{font-weight: bold;}
-    h4{font-size:1.5em;}
-    h5{font-size: 1.5em;}
-    .chapter1{
-      margin: 0 auto;
-      text-align: center;
-      width:50%;
-      margin-top: 20px;
-    }
-    .chapter2{
-      width:80%;
-      margin: 0 auto;
-      text-align: center;
-      padding:15px;
-    }
     .category{
       color:#333;
       text-align:center;
@@ -59,9 +31,6 @@
     i{font-style:normal;color:orange;}
     #notice{color: #FF9800;}
     #date{padding-bottom:10px;}
-    .img{margin: 0 auto;  display: block;}
-    .whitespace{padding-top:20px;padding-bottom:20px;}
-    .img-responsive{margin: 0 auto;display: block;width: 550px;}
     .green{color:#4CAF50;}
     .qrcode_panel{
       position: fixed;
@@ -92,37 +61,38 @@
     p.center{text-align:center;font-size:24px;}
     .btn-orange{background:orange;display:block;margin:0 auto;border:none;margin-top: 20px;font-size:30px;}
     .login{vertical-align: -7px;}
-
+    .carousel-indicators {
+         bottom: -30px;
+    }
     .carousel-indicators li {border: 1px solid #8BC34A;
     border-radius: 50%;}
     .carousel-indicators .active {background:#8BC34A;}
     @media screen and (min-width: 768px){
       .carousel-indicators {
-           bottom: 0px;
+           bottom: -30px;
       }
     }
     .button-spacer{height:10px;}
     .spacer{height:10px;}
-    .row{margin-top:40px;}
+    .row{margin-top:40px;text-align:center;}
     .modal{font-size:24px;}
     #commit{color: #fff;
     background: orange;
-    border: none;
-    font-size: 30px;height:60px;}
-    .form-control{font-size:24px;height:60px;}
+    border: none;}
+    .modal-footer{text-align:center;}
   </style>
 </head>
 <body>
   <div style="display: none;">
     <img src="/images/camper-image-placeholder.png" >
   </div>
-  <dl class="qrcode_panel">
-      <dt><img src="images/qrcode_for_nearest.jpg" width="150px"></dt>
+  <dl class="qrcode_panel hidden-xs">
+      <dt><img src="images/qrcode_for_nearest.jpg" width="120px"></dt>
       <dd>搜索freecodecamp</dd>
       <span>回复“比赛”二字</span><br>
       <span>加入学习群</span>
   </dl>
-  <div class="qrcode_panel2">
+  <div class="qrcode_panel2 hidden-xs">
       <img src="http://dev.juhe.cn/Public/front/images/enroll.png" width="150px" id="iwantjoin">
   </div>
   <header>
@@ -138,18 +108,17 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content" ng-controller="modal">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" style="text-align:center;" id="myModalLabel">FreeCodeCamp 比赛报名入口</h4>
         </div>
         <div class="modal-body">
-          <form class="form-horizontal" ng-controller="form">
+          <form class="form-horizontal">
             <div class="form-group">
               <label for="username" class="col-xs-12 col-sm-3 control-label">用户名</label>
               <div class="col-xs-12 col-sm-9">
                 <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="FCC的用户名都是小写哦" required>
-                <span style="font-size:16px;">如果你没有FCC用户名，</span><a href="/login" style="font-size:16px;">请先登录FCC</a>
+                <span style="font-size:12px;">如果你没有FCC用户名，</span><a href="/login" style="font-size:12px;">请先登录FCC</a>
               </div>
             </div>
             <div class="form-group">
@@ -161,59 +130,57 @@
             <div class="form-group">
               <label for="category" class="col-xs-12 col-sm-3 control-label">选择组别</label>
               <div class="col-xs-12 col-sm-9">
-                <select style="border: 1px solid #ccc;width: 100%;height: 60px;">
+                <select style="border: 1px solid #ccc;width:100%;">
                    <option value="" >选组请谨慎，一旦选定不能修改哦。</option>
                    <option value="master" >专业组（面向在职程序员和计算机高手）</option>
                    <option value="newer" >业余组（面向非程序员和计算机小白）</option>
-                   <option value="women" >程序媛新秀组（只面向女性，男性选择该组无法获奖）</option>
+                   <option value="women" >新秀组（只面向女性，男性选择该组无法获奖）</option>
                  </select>
-              </div>
-            </div>
-            <div class="form-group" style="margin-top:30px;">
-              <label for="ensure" class="col-xs-3 col-sm-3 control-label"></label>
-              <div class="col-xs-9 col-sm-9">
-                <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
-                <!-- <input type="submit" id="submit" class="btn btn-default" value="提交"> -->
               </div>
             </div>
           </form>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭此窗口</button>
+            <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="chapter1">
+  <div class="container">
     <h4>人人皆可编程</h4>
     <p style="padding-top:20px;">本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。</p>
     <p>全民编程时代已经来临，编程技能将会成为一项基本素质。</p>
     <p>本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。</p>
   </div>
+
   <hr>
-  <div class="chapter2">
+  <div class="container">
     <h4>比赛平台：FreeCodeCamp中文社区</h4>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-3">
-        <img src="/images/landingIcons_connect.svg" width="150px;">
+        <img src="/images/landingIcons_connect.svg" class="img-responsive" style="width:150px;">
         <div class="button-spacer"></div>
         <span>全球30W+用户</span>
         <br><span>GitHub上排名第一</span>
         <div class="spacer"></div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-3">
-        <img src="/images/landingIcons_learn.svg" width="150px;">
+        <img src="/images/landingIcons_learn.svg" class="img-responsive"  style="width:150px;">
         <div class="button-spacer"></div>
         <span>游戏化编程</span><br>
         <span>无尽的挑战任务</span>
         <div class="spacer"></div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-3">
-        <img src="/images/landingIcons_nonprofits.svg" width="150px;">
+        <img src="/images/landingIcons_nonprofits.svg" class="img-responsive"  style="width:150px;">
         <div class="button-spacer"></div>
         <span>8万+人在线交流</span><br>
         <span>有问必答</span>
         <div class="spacer"></div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-3">
-        <img src="/images/landingIcons_portfolio.svg" width="150px;">
+        <img src="/images/landingIcons_portfolio.svg" class="img-responsive"  style="width:150px;">
         <div class="button-spacer"></div>
         <span>帮助非盈利组织</span><br>
         <span>开发公益项目</span>
@@ -222,22 +189,22 @@
     </div>
   </div>
   <hr>
-  <div class="chapter2">
+  <div class="container">
     <h4>赛程</h4>
     <embed src="images/timeline.svg" type="image/svg+xml" />
   </div>
   <hr>
-  <div class="chapter2">
+  <div class="container">
     <h4>分组</h4>
     <embed src="images/groups.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" style="margin-left:20px;"/>
   </div>
   <hr>
-  <div class="chapter2">
+  <div class="container">
     <h4>评分（标星的必做）</h4>
-    <embed src="images/challenges.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" style="width:80%;"/>
+    <embed src="images/challenges.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" />
   </div>
   <hr>
-  <div class="chapter1" style="width:100%;">
+  <div class="container" style="width:100%;">
     <h4>奖品</h4>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -263,8 +230,8 @@
   </div>
   <hr>
   <div>
-    <img src="images/startup.png" class="img">
-    <a href="https://wilddog.com"><img src="images/zuanshi.png" class="img whitespace"></a>
+    <img src="images/startup.png" class="img-responsive">
+    <a href="https://wilddog.com"><img src="images/zuanshi.png" class="img-responsive"></a>
     <img src="images/media.png" class="img-responsive">
   </div>
 
@@ -273,7 +240,7 @@
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="/js/angular.js"></script>
+<script src="/js/angular.min.js"></script>
 <script>
   $('#iwantjoin').click(function(){
     $(".btn-lg").click();
@@ -288,7 +255,7 @@
   var email = document.getElementById("email");
   var commit= document.getElementById("commit");
   var app = angular.module('app',[]);
-  app.controller('form',['$scope','$http', function($scope,$http){
+  app.controller('modal',['$scope','$http', function($scope,$http){
     $scope.commit=function(){
       if(validator()){
         $http.post('/has-username',{username:$scope.username}).then(function(res){
