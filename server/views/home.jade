@@ -1,5 +1,7 @@
 extends layout
 block content
+    style.
+      body.top-and-bottom-margins{margin-bottom:0px;}
     .text-center
         h2 Learning-by-doing
         .spacer
@@ -147,5 +149,7 @@ block content
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
                 a.btn.btn-cta.signup-btn.btn-block(href="/signin") 准备好了，GO!
+        hr
+        p @版权所有 苏州猿生态信息科技有限公司
         script.
             challengeName = 'Home'
