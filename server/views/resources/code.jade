@@ -1,198 +1,126 @@
 extends ../layout
 block content
-    body
-      div(style='display: none;')
-        img(src='/images/camper-image-placeholder.png')
-      dl.qrcode_panel
-        dt
-          img(src='images/qrcode_for_nearest.jpg', width='150px')
-        dd 搜索freecodecamp
-        span 回复“比赛”二字
-        br
-        span 加入学习群
-      .qrcode_panel2
-        img#iwantjoin(src='http://dev.juhe.cn/Public/front/images/enroll.png', width='150px')
-      header
-        img#logo(src='images/wilddog.png')
-        h1 野狗杯
-        h1 苏州全民在线编程挑战赛
-        h2 06.05 -- 07.02
-        // Button trigger modal
-        button.btn.btn-orange.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
-          | 立即报名
-      // Modal
-      #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
-        .modal-dialog(role='document')
-          .modal-content
-            .modal-header
-              button.close(type='button', data-dismiss='modal', aria-label='Close')
-                span(aria-hidden='true') ×
-              h4#myModalLabel.modal-title(style='text-align:center;') FreeCodeCamp 比赛报名入口
-            .modal-body
-              form.form-horizontal(ng-controller='form')
-                .form-group
-                  label.col-xs-12.col-sm-3.control-label(for='username') 用户名
-                  .col-xs-12.col-sm-9
-                    input#username.form-control(type='text', ng-model='username', name='username', placeholder='FCC的用户名都是小写哦', required='')
-                    span(style='font-size:16px;') 如果你没有FCC用户名，
-                    a(href='/login', style='font-size:16px;') 请先登录FCC
-                .form-group
-                  label.col-xs-12.col-sm-3.control-label(for='telphone') 手机号
-                  .col-xs-12.col-sm-9
-                    input#telphone.form-control(type='tel', ng-model='telphone', name='telphone', placeholder='便于我们通知你领奖品哦', required='')
-                .form-group
-                  label.col-xs-12.col-sm-3.control-label(for='category') 选择组别
-                  .col-xs-12.col-sm-9
-                    select(style='border: 1px solid #ccc;width: 100%;height: 60px;')
-                      option(value='') 选组请谨慎，一旦选定不能修改哦。
-                      option(value='master') 专业组（面向在职程序员和计算机高手）
-                      option(value='newer') 业余组（面向非程序员和计算机小白）
-                      option(value='women') 程序媛新秀组（只面向女性，男性选择该组无法获奖）
-                .form-group(style='margin-top:30px;')
-                  label.col-xs-3.col-sm-3.control-label(for='ensure')
-                  .col-xs-9.col-sm-9
-                    button#commit.btn.btn-default(ng-click='commit();') 确定无误，提交
-                    // <input type="submit" id="submit" class="btn btn-default" value="提交">
-      .chapter1
-        h4 人人皆可编程
-        p(style='padding-top:20px;') 本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。
-        p 全民编程时代已经来临，编程技能将会成为一项基本素质。
-        p 本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。
-      hr
-      .chapter2
-        h4 比赛平台：FreeCodeCamp中文社区
-        .row
-          .col-xs-12.col-sm-12.col-md-3
-            img(src='/images/landingIcons_connect.svg', width='150px;')
-            .button-spacer
-            span 全球30W+用户
-            br
-            span GitHub上排名第一
-            .spacer
-          .col-xs-12.col-sm-12.col-md-3
-            img(src='/images/landingIcons_learn.svg', width='150px;')
-            .button-spacer
-            span 游戏化编程
-            br
-            span 无尽的挑战任务
-            .spacer
-          .col-xs-12.col-sm-12.col-md-3
-            img(src='/images/landingIcons_nonprofits.svg', width='150px;')
-            .button-spacer
-            span 8万+人在线交流
-            br
-            span 有问必答
-            .spacer
-          .col-xs-12.col-sm-12.col-md-3
-            img(src='/images/landingIcons_portfolio.svg', width='150px;')
-            .button-spacer
-            span 帮助非盈利组织
-            br
-            span 开发公益项目
-            .spacer
-      hr
-      .chapter2
-        h4 赛程
-        embed(src='images/timeline.svg', type='image/svg+xml')
-      hr
-      .chapter2
-        h4 分组
-        embed(src='images/groups.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='margin-left:20px;')
-      hr
-      .chapter2
-        h4 评分（标星的必做）
-        embed(src='images/challenges.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='width:80%;')
-      hr
-      .chapter1(style='width:100%;')
-        h4 奖品
-        #carousel-example-generic.carousel.slide(data-ride='carousel')
-          // Indicators
-          ol.carousel-indicators
-            li.active(data-target='#carousel-example-generic', data-slide-to='0')
-            li(data-target='#carousel-example-generic', data-slide-to='1')
-            li(data-target='#carousel-example-generic', data-slide-to='2')
-          // Wrapper for slides
-          .carousel-inner(role='listbox')
-            .item.active
-              img(src='/images/1.png', alt='...')
-            .item
-              img(src='/images/2.png', alt='...')
-            .item
-              img(src='/images/3.png', alt='...')
-      hr
-      div
-        img.img(src='images/startup.png')
-        a(href='https://wilddog.com')
-          img.img.whitespace(src='images/zuanshi.png')
-        img.img-responsive(src='images/media.png')
-      script.
-        $('#iwantjoin').click(function(){
-        $(".btn-lg").click();
-        })
-        $('.carousel').carousel({
-        interval: 5000
-        });
-        var username = document.getElementById("username");
-        var telphoneRegex = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
-        var emailRegex = /^(\\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
-        var telphone = document.getElementById("telphone");
-        var email = document.getElementById("email");
-        var commit= document.getElementById("commit");
-        var app = angular.module('app',[]);
-        app.controller('form',['$scope','$http', function($scope,$http){
-        $scope.commit=function(){
-        if(validator()){
-        $http.post('/has-username',{username:$scope.username}).then(function(res){
-        var out = res.data;
-        if(out.status == 404){
-        alert("用户名不存在，请先注册FCC！")
-        }else{
-        $http.post('/has-join',{username:$scope.username,telphone:$scope.telphone}).then(function(res){
-        var out = res.data;
-        if(out.status == 200){
-        alert("你已报名成功，请勿重复报名！");
-        $(".close").click();
-        $('.btn-lg').text('报名成功').attr('disabled',true);
-        window.open("https://freecodecamp.cn");
-        }else{
-        $http.post('/add-telphone',{username:$scope.username,telphone:$scope.telphone,category:$("select").val()}).then(function(res){
-        var out = res.data;
-        if(out.status == 200){
-        alert("恭喜你，报名成功！");
-        $(".close").click();
-        $('.btn-lg').text('报名成功').attr('disabled',true);
-        window.open("https://freecodecamp.cn");
-        }else{
-        alert("提交数据有误，请重新输入！")
-        }
-        },function(err){
-        console.log(err);
-        })
-        }
-        },function(err){
-        console.log(err);
-        })
-        }
-        },function(err){
-        console.log(err);
-        })
-        }
-        }
-        }])
-        function validator(){
-        if(!$("#username").val().replace(/(^s*)|(s*$)/g,'')){
-        alert("用户名为空，请重新输入！")
-        return false;
-        }else if(!$("#telphone").val().replace(/(^s*)|(s*$)/g,'')){
-        alert("手机号为空，请重新输入！")
-        return false;
-        }else if(!telphoneRegex.test($("#telphone").val())){
-        alert("手机号错误，请重新输入！")
-        return false;
-        }else if(!$("select").val()){
-        alert("请先选组，再提交！");
-        return false;
-        }else{
-        return true;
-        }
-        }
+    div(style='display: none;')
+      img(src='/images/camper-image-placeholder.png')
+    dl.qrcode_panel
+      dt
+        img(src='images/qrcode_for_nearest.jpg', width='150px')
+      dd 搜索freecodecamp
+      span 回复“比赛”二字
+      br
+      span 加入学习群
+    .qrcode_panel2
+      img#iwantjoin(src='http://dev.juhe.cn/Public/front/images/enroll.png', width='150px')
+    header
+      img#logo(src='images/wilddog.png')
+      h1 野狗杯
+      h1 苏州全民在线编程挑战赛
+      h2 06.05 -- 07.02
+      // Button trigger modal
+      button.btn.btn-orange.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+        | 立即报名
+    // Modal
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+            h4#myModalLabel.modal-title(style='text-align:center;') FreeCodeCamp 比赛报名入口
+          .modal-body
+            form.form-horizontal(ng-controller='form')
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='username') 用户名
+                .col-xs-12.col-sm-9
+                  input#username.form-control(type='text', ng-model='username', name='username', placeholder='FCC的用户名都是小写哦', required='')
+                  span(style='font-size:16px;') 如果你没有FCC用户名，
+                  a(href='/login', style='font-size:16px;') 请先登录FCC
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='telphone') 手机号
+                .col-xs-12.col-sm-9
+                  input#telphone.form-control(type='tel', ng-model='telphone', name='telphone', placeholder='便于我们通知你领奖品哦', required='')
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='category') 选择组别
+                .col-xs-12.col-sm-9
+                  select(style='border: 1px solid #ccc;width: 100%;height: 60px;')
+                    option(value='') 选组请谨慎，一旦选定不能修改哦。
+                    option(value='master') 专业组（面向在职程序员和计算机高手）
+                    option(value='newer') 业余组（面向非程序员和计算机小白）
+                    option(value='women') 程序媛新秀组（只面向女性，男性选择该组无法获奖）
+              .form-group(style='margin-top:30px;')
+                label.col-xs-3.col-sm-3.control-label(for='ensure')
+                .col-xs-9.col-sm-9
+                  button#commit.btn.btn-default(ng-click='commit();') 确定无误，提交
+                  // <input type="submit" id="submit" class="btn btn-default" value="提交">
+    .chapter1
+      h4 人人皆可编程
+      p(style='padding-top:20px;') 本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。
+      p 全民编程时代已经来临，编程技能将会成为一项基本素质。
+      p 本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。
+    hr
+    .chapter2
+      h4 比赛平台：FreeCodeCamp中文社区
+      .row
+        .col-xs-12.col-sm-12.col-md-3
+          img(src='/images/landingIcons_connect.svg', width='150px;')
+          .button-spacer
+          span 全球30W+用户
+          br
+          span GitHub上排名第一
+          .spacer
+        .col-xs-12.col-sm-12.col-md-3
+          img(src='/images/landingIcons_learn.svg', width='150px;')
+          .button-spacer
+          span 游戏化编程
+          br
+          span 无尽的挑战任务
+          .spacer
+        .col-xs-12.col-sm-12.col-md-3
+          img(src='/images/landingIcons_nonprofits.svg', width='150px;')
+          .button-spacer
+          span 8万+人在线交流
+          br
+          span 有问必答
+          .spacer
+        .col-xs-12.col-sm-12.col-md-3
+          img(src='/images/landingIcons_portfolio.svg', width='150px;')
+          .button-spacer
+          span 帮助非盈利组织
+          br
+          span 开发公益项目
+          .spacer
+    hr
+    .chapter2
+      h4 赛程
+      embed(src='images/timeline.svg', type='image/svg+xml')
+    hr
+    .chapter2
+      h4 分组
+      embed(src='images/groups.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='margin-left:20px;')
+    hr
+    .chapter2
+      h4 评分（标星的必做）
+      embed(src='images/challenges.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='width:80%;')
+    hr
+    .chapter1(style='width:100%;')
+      h4 奖品
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+          li(data-target='#carousel-example-generic', data-slide-to='2')
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            img(src='/images/1.png', alt='...')
+          .item
+            img(src='/images/2.png', alt='...')
+          .item
+            img(src='/images/3.png', alt='...')
+    hr
+    div
+      img.img(src='images/startup.png')
+      a(href='https://wilddog.com')
+        img.img.whitespace(src='images/zuanshi.png')
+      img.img-responsive(src='images/media.png')
