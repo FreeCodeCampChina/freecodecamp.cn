@@ -577,7 +577,7 @@
       "title": "Add Rounded Corners with a Border Radius",
       "description": [
         "你的猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。",
-        "你可以用像素来指定border-raidus的属性值，现在让你的猫咪图片的边框半径为10px吧。",
+        "你可以用像素来指定border-radius的属性值，现在让你的猫咪图片的边框半径为10px吧。",
         "注意：这个小节允许多种解决方案。你可以添加border-radius到<code>.thick-green-border</code> class 也可以添加到<code>.smaller-image</code> class."
       ],
       "challengeSeed": [
