@@ -1,15 +1,35 @@
 extends ../layout
 block content
+    style.
+      body{margin:0;font-size:16px;}
+      h1,h2,h3,h4,p{text-align:center;}
+      header{background-image: url("images/background.png");height:450px;color:white;}
+      #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
+      .qrcode{position: fixed;top: 450px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;
+        text-align: center;color: #717375;font-size: 12px;}
+      .right{right: 0px;}
+      .left{left: 0px;}
+      dd{margin: 0 auto;margin-top: 5px;}
+      .btn-orange{background:orange;display:block;margin:0 auto;border:none;margin-top: 20px;font-size:30px;}
+      .carousel-indicators {bottom: -30px;}
+      .carousel-indicators li {border: 1px solid #8BC34A;border-radius: 50%;}
+      .carousel-indicators .active {background:#8BC34A;}
+      .button-spacer{height:10px;}
+      .spacer{height:10px;}
+      .row{margin-top:40px;text-align:center;}
+      .modal{font-size:24px;}
+      #commit{color: #fff;background: orange;border: none;}
+      .modal-footer{text-align:center;}
     div.hidden
       img(src='/images/camper-image-placeholder.png')
-    dl.qrcode_panel.hidden-xs
+    dl.qrcode.right.hidden-xs
       dt
         img(src='images/qrcode_for_nearest.jpg', width='120px')
         dd 搜索freecodecamp
         span 回复“比赛”二字
         br
         span 加入学习群
-    .qrcode_panel2.hidden-xs
+    .qrcode.left.hidden-xs
       img#iwantjoin(src='http://dev.juhe.cn/Public/front/images/enroll.png', width='150px')
     header
       img#logo(src='images/wilddog.png')
@@ -17,8 +37,7 @@ block content
       h1 苏州全民在线编程挑战赛
       h2 06.05 -- 07.02
       // Button trigger modal
-      button.btn.btn-orange.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
-        立即报名
+      button.btn.btn-orange.btn-lg(type='button', data-toggle='modal', data-target='#myModal') 立即报名      
     #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
       .modal-dialog(role='document')
         .modal-content(ng-controller='modal')
@@ -57,28 +76,28 @@ block content
     h4 比赛平台：FreeCodeCamp中文社区
     .row
       .col-xs-12.col-sm-12.col-md-3
-        img.img-responsive(src='/images/landingIcons_connect.svg', style='width:150px;')
+        img.img-responsive.center-block(src='/images/landingIcons_connect.svg', style='width:150px;')
         .button-spacer
         span 全球30W+用户
         br
         span GitHub上排名第一
         .spacer
       .col-xs-12.col-sm-12.col-md-3
-        img.img-responsive(src='/images/landingIcons_learn.svg', style='width:150px;')
+        img.img-responsive.center-block(src='/images/landingIcons_learn.svg', style='width:150px;')
         .button-spacer
         span 游戏化编程
         br
         span 无尽的挑战任务
         .spacer
       .col-xs-12.col-sm-12.col-md-3
-        img.img-responsive(src='/images/landingIcons_nonprofits.svg', style='width:150px;')
+        img.img-responsive.center-block(src='/images/landingIcons_nonprofits.svg', style='width:150px;')
         .button-spacer
         span 8万+人在线交流
         br
         span 有问必答
         .spacer
       .col-xs-12.col-sm-12.col-md-3
-        img.img-responsive(src='/images/landingIcons_portfolio.svg', style='width:150px;')
+        img.img-responsive.center-block(src='/images/landingIcons_portfolio.svg', style='width:150px;')
         .button-spacer
         span 帮助非盈利组织
         br
@@ -115,7 +134,7 @@ block content
         img(src='/images/3.png', alt='...')
     hr
     div
-    img.img-responsive(src='images/startup.png')
+    img.img-responsive.center-block(src='images/startup.png')
     a(href='https://wilddog.com')
-    img.img-responsive(src='images/zuanshi.png')
-    img.img-responsive(src='images/media.png')
+    img.img-responsive.center-block(src='images/zuanshi.png')
+    img.img-responsive.center-block(src='images/media.png')
