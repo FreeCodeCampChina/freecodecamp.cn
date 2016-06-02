@@ -20,6 +20,7 @@ module.exports = function(app) {
   router.get('/api/trello', trelloCalls);
   router.get('/sitemap.xml', sitemap);
   router.get('/chat', chat);
+  router.get('/home', home);
   router.get('/coding-bootcamp-cost-calculator', bootcampCalculator);
   router.get('/twitch', twitch);
   router.get('/pmi-acp-agile-project-managers', agileProjectManagers);
@@ -178,6 +179,9 @@ module.exports = function(app) {
 
   function chat(req, res) {
     res.redirect('https://gitter.im/FreeCodeCamp/chinese');
+  }
+  function home(req,res){
+    res.render('home')
   }
 
   function showLabs(req, res) {
