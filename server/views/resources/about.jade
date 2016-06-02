@@ -1,5 +1,9 @@
 extends ../layout
 block content
+    style.
+      .qrcode{position: fixed;top: 450px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;
+        text-align: center;color: #717375;font-size: 12px;}
+      .right{right: 0px;}
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
             h2.text-center 数据统计
@@ -24,12 +28,11 @@ block content
                     | 个挑战
     .spacer
     .row
-      .qr_code_pc
-        img.img-responsive(src='https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzAxMjkxNTY2OQ==')
-        p.text-center
-          | 微信扫一扫
-          br
-          | 关注该公众号
+      dl.qrcode.right.hidden-xs
+        dt
+          img(src='images/qrcode_for_nearest.jpg', width='120px')
+        dd 微信搜索freecodecamp
+        span 更多好东西等你来发现
     .spacer
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
