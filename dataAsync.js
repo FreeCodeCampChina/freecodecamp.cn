@@ -1968,6 +1968,11 @@ var matchArray = [
           "id" : "56b15f15632298c12f315185",
           "name" : "JavaScript Lingo Regular Expressions",
           "challengeType" : "6"
+      },
+      {
+          "id" : "bd7158d8c242eddfaeb5be13",
+          "name": "Design a danmu app",
+          "challengeType" : "3"
       }
   ];
 var challengeMap = {};

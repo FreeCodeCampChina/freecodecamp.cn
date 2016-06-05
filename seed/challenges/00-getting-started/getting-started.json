@@ -9,73 +9,73 @@
       "title": "Learn how Free Code Camp Works",
       "description": [
         [
-          "//i.imgur.com/6ibIavQ.jpg",
+          "/images/fourcircle.png",
           "A picture of Free Code Camp's 4 benefits: Get connected, Learn JavaScript, Build your Portfolio, Help nonprofits",
           "欢迎来到FreeCodeCamp，我们是帮助你自学编程的开源社区。",
           ""
         ],
         [
-          "//i.imgur.com/Elb3dfj.jpg",
+          "/images/Elb3dfj.jpg",
           "A screenshot of some of our campers coding together in Toronto.",
           "自学编程不是一件容易的事情。要想取得成功，需要大量的学习和实践，所以我们的课程非常强调实战。",
           ""
         ],
         [
-          "//i.imgur.com/D7Y5luw.jpg",
+          "/images/D7Y5luw.jpg",
           "A graph of the rate of job growth against growth in computer science degree graduates. There are 1.4 million jobs and only 400 thousand people to fill them.",
           "互联网已经深入到各行各业，每年对程序猿的需求与日俱增。",
           ""
         ],
         [
-          "//i.imgur.com/WD3STY6.jpg",
+          "/images/threepeople.png",
           "Photos of three campers who've gotten jobs after learning to code at Free Code Camp.",
           "FreeCodeCamp是成为程序猿的最有效路径。事实上，没有人完成了所有课程，因为他们在毕业前都找到了工作。",
           ""
         ],
         [
-          "//i.imgur.com/vLNso6h.jpg",
+          "/images/eightskills.png",
           "An illustration showing that you will learn HTML5, CSS3, JavaScript, Databases, Git, Node.js, React and D3.",
           "我们会通过几百个编程挑战来让你逐渐掌握这些Web开发技术。",
           ""
         ],
         [
-          "//i.imgur.com/UVB9hxp.jpg",
+          "/images/UVB9hxp.jpg",
           "An image of a camper at a cafe building projects on Free Code Camp.",
           "我们相信人类学习的最好方式就是实践，你会花费大量的时间来做项目。",
           ""
         ],
         [
-          "//i.imgur.com/pbW7K5S.jpg",
+          "/images/pbW7K5S.jpg",
           "An image of showing our front end, back end, and data visualization certifications (400 hours each), our nonprofit projects (800 hours), and interview prep (80 hours) for a total of 2,080 hours of coding experience.",
           "全部通过我们的课程挑战可以获得四个证书，这些证书非常受到企业的认可。前三个证书每个大约花费400个小时，最后一个证书将花费800个小时，我们推荐你按照顺序完成他们，当然你也可以自由跳跃。",
           ""
         ],
         [
-          "//i.imgur.com/k8btNUB.jpg",
+          "/images/k8btNUB.jpg",
           "A screenshot of our Front End Development Certificate",
           "如果你用HTML+CSS+jQuery+JavaScript完成了10个项目，你就可以获得我们的前端开发证书。",
           ""
         ],
         [
-          "//i.imgur.com/Et3iD74.jpg",
+          "/images/Et3iD74.jpg",
           "A screenshot of our Data Visualization Certificate",
           "如果你用React+Sass+D3.js完成了10个项目，你就可以获得我们的数据可视化证书。",
           ""
         ],
         [
-          "//i.imgur.com/8v3t84p.jpg",
+          "/images/8v3t84p.jpg",
           "A screenshot of our Back End Development Certificate",
           "如果你用Node.js,+Express+MongoDB完成了10个项目，你就可以获得我们的后端开发证书，你还可以通过Git和Heroku把项目部署到云上，让所有人都可以访问。",
           ""
         ],
         [
-          "//i.imgur.com/yXyxbDd.jpg",
+          "/images/yXyxbDd.jpg",
           "A screen shot of our nonprofit project directory.",
           "当你完成了获得了前面三个证书后，你就可以和你的营员一起组队运用敏捷软件开发技术完成两个真实项目，同时你被要求给两个陈旧的项目添加功能。当你完成这些后，你就拥有了一个作品集，里面包含人们每天都在使用的作品。",
           ""
         ],
         [
-          "//i.imgur.com/PDGQ9ZM.jpg",
+          "/images/PDGQ9ZM.jpg",
           "An image of campers building projects together in a cafe in Seoul.",
           "如果你完成了2080个小时的挑战和项目，你会获得我们的全栈开发证书。我们还给你提供了免费的代码面试练习和工作机会信息，满足你面试和找工作的需求。",
           ""

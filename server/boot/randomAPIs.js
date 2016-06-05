@@ -54,7 +54,14 @@ module.exports = function(app) {
   router.route('/has-join').post(hasJoin);
   router.route('/add-telphone').post(addTelphone);
   router.get('/code',function(req,res){
-    res.render('resources/code',{})
+    res.render('resources/code',{
+      title: "苏州全民在线编程挑战赛"
+    });
+  })
+  router.get('/progress',function(req,res){
+    res.render('resources/progress',{
+      title: "学习进度排行榜"
+    });
   })
 
 
