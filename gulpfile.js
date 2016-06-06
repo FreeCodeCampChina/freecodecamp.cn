@@ -97,7 +97,6 @@ var paths = {
 
   vendorMain: [
     'public/bower_components/jquery/dist/jquery.min.js',
-    'public/bower_components/bootstrap/dist/js/bootstrap.min.js',
     'public/bower_components/angular/angular.min.js',
     'public/bower_components/d3/d3.min.js',
     'public/bower_components/moment/min/moment.min.js',
