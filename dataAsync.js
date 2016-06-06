@@ -2026,12 +2026,12 @@ for(var k =0;k<tbody.length;k++){
   }
 }
 console.log(Object.keys(challengeMap).length);
-var progressTimestamps = [];
-for(var l in challengeMap){
-  var emptyObject = {};
-  emptyObject.timestamp = challengeMap[l].completedDate;
-  emptyObject.completedChallenge = challengeMap[l].id;
-  progressTimestamps.push(emptyObject);
-}
-console.log(JSON.stringify(progressTimestamps));
-console.log(JSON.stringify(challengeMap));
+// var progressTimestamps = [];
+// for(var l in challengeMap){
+//   var emptyObject = {};
+//   emptyObject.timestamp = challengeMap[l].completedDate;
+//   emptyObject.completedChallenge = challengeMap[l].id;
+//   progressTimestamps.push(emptyObject);
+// }
+// console.log(JSON.stringify(progressTimestamps));
+console.log(JSON.stringify(challengeMap,null,2));

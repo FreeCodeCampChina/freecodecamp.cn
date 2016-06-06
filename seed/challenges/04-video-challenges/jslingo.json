@@ -21,7 +21,7 @@
         [
           "文档不是一个学习一门编程语言的好方法。",
           false,
-          "Documentation can be your best friend once you learn how to get the most from it."
+          "Documentation can be your best friend once you learn how to get the most from it.",
           "当你学会充分利用文档的时候，你会发现它真的很有用。"
         ],
         [
@@ -67,7 +67,7 @@
         "You can use Google Dev Tools to inspect the Free Code Camp home page and look for some variables.",
         "You 'declare' variables the first time with 'var' in front of it, but those can be referenced later in your script.",
         "camelCase is the way that JavaScript pushes words together and still keeps them legible. The first letter of the first word is lowercase, along with the remainder of the word, but the first letter of every consecutive word is capitalized. There are no spaces. Examples: brianaLovesHerPets, bestFoodIsCheese, and codeIsWorthLearning.",
-        "When you name variables, utilize camelCase. Also try to keep the names descriptive and short so that others (and yourself!) can tell what that variable is referring to just by the name."
+        "When you name variables, utilize camelCase. Also try to keep the names descriptive and short so that others (and yourself!) can tell what that variable is referring to just by the name.",
         "接下来我们会讲到 变量 和 骆驼拼写法 ",
         "一个变量(variables)，简写为'var',是布尔值、字符串、或其他静态信息的名字或者占位符。",
         "你可以用谷歌开发工具来检查FCC主页并且寻找变量",
@@ -157,7 +157,7 @@
         "Examples include '.split(' ')', which will turn a string into an array and can do so in many different ways. Methods are powerful - many times when you want your script to do something, there's a method for that.",
         "Functions, like variables, are something you define and create.",
         "During your algorithm practice at Free Code Camp, you will create functions that take a certain piece of information and manipulate it in whatever way you choose.",
-        "You'll become more familiar with syntax there, but for now, just remember that with methods and functions you can do almost anything with your code."
+        "You'll become more familiar with syntax there, but for now, just remember that with methods and functions you can do almost anything with your code.",
         "方法和函数可以帮助你处理变量和其他数据。",
         "方法是JavaScript中内置的, 当你在做 bonfires 的时候，会对这些更加熟悉。",
         "我建议你通过 MDN (Mozilla Developer Network that we discussed in the first video) 来熟悉这些方法和其他一些功能。 <a href='http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index' target='_blank'>developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index</a>",
@@ -218,7 +218,7 @@
       "description": [
         "If there's a set of data, (we'll use an array for this example, but it doesn't have to be,) and you want to perform the same manipulation to every piece in that set of data, you can use something called a loop.",
         "Loops have some complex syntax to get used to at first, but once you have it, they're extremely useful. I used loops in many of my algorithm solutions.",
-        "You don't need to understand everything here - just know that loops exist when you need to traverse a set of data and they can cut down on the amount of code you need to write."
+        "You don't need to understand everything here - just know that loops exist when you need to traverse a set of data and they can cut down on the amount of code you need to write.",
         "如果有一组数据, (我们将会以数组为例，但这并不是必须的,) 并且你想对数组中的每个元素应用相同的操作, 你可以使用循环",
         "循环的语法对新手来说可能很复杂, 但是一旦你掌握它，它们会特别有用. 我在许多算法解决中应用了循环。",
         "你不必理解这里的所有一切 - 只需要知道当你想要处理一组数据时，循环可以大幅度减少你的工作量就好。"
@@ -251,7 +251,7 @@
         "Like with all of the other videos, we won't get into the nitty gritty, but I want to show you a few examples of where RegExp is useful.",
         "If you wanted to create a registration page that verified passwords contained at least a number and a capital letter, you could use RegExp.",
         "If you wanted to ensure that dates entered in a page were all valid dates in the future, you could use RegExp.",
-        "While there are limitless ways to use RegExp, many of them include validating or automatically editing information."
+        "While there are limitless ways to use RegExp, many of them include validating or automatically editing information.",
         "使用正则，你可以匹配、替换、搜索和分离复杂字符串",
         "如其他的视频一样, 我们不会注重细节, 但是我会介绍一些正则表达式来证明它们的价值。",
         "当你想要创建一个注册页， 验证密码需要包含至少一个数字和大写字母, 你可以使用正则",
