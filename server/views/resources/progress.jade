@@ -1,23 +1,20 @@
 extends ../layout
 block content
   style.
-    h2,table,th,td{text-align:center;border-spacing: 0px;font-size:15px;}
     tr:nth-child(even){background-color: #FAEBD7;}
     tr:nth-child(odd){background-color: white;}
-    th, tr{padding:5px;}
-    #left{float:left;margin-right:20px;}
-    #center{float:left;margin-right:20px;}
-    #right{float:left;}
-    p{text-align:center;}
-  p.text-center
-    | 排行榜改版了，快去
-    a(href='/code.html') 报名参加比赛
-    | ，这样就能实时看到其他同学的学习进度哦。
-  p 各组排行靠前的同学请注意，针对项目部分全部copy的同学，项目分全部取消，后期会一一审核。
-  p 希望大家自觉遵守项目文档的规则。
-  div(ng-app='app')
+    th, td{padding:5px;text-align:center;}
+  .row(ng-app='app')
+    p.text-center
+      | “独学而无友，则孤陋而寡闻”--出自《礼记》，意思是：如果学习中缺乏学友之间的交流切磋，就必然会导致知识狭隘，见识短浅。
+    p.text-center
+      所以我们开辟琅琊榜，各位可以清楚看到自己的实力在江湖中的排行，并知道可以找谁交流切磋。
+    p.text-center
+      如果你就是万中无一的高手，却悲哀地发现自己不在此琅琊榜中，别灰心，
+      a(href='/code.html') 赶紧报名
+      ，报名一旦通过，你会自动进入琅琊榜中。
     #left.col-md-4.col-sm-12.col-xs-12
-      h2 专业组排行榜
+      h4.text-center 专业组排行榜
       table(ng-controller='left')
         tr
           th 排名
@@ -35,7 +32,7 @@ block content
           td(ng-bind='item.projectScore')
           td(ng-bind='item.totalScore = item.score + item.projectScore')
     #center.col-md-4.col-sm-12.col-xs-12
-      h2 业余组排行榜
+      h4.text-center 业余组排行榜
       table(ng-controller='center')
         tr
           th 排名
@@ -53,7 +50,7 @@ block content
           td(ng-bind='item.projectScore')
           td(ng-bind='item.totalScore = item.score + item.projectScore')
     #right.col-md-4.col-sm-12.col-xs-12
-      h2 程序媛新秀组排行榜
+      h4.text-center 程序媛新秀组排行榜
       table(ng-controller='right')
         tr
           th 排名
