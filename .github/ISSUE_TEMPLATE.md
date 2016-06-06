@@ -3,7 +3,7 @@ To Use this Template:
 * Fill out what you can
 * Delete what you do not fill out
 
-NOTE: ISSUES ARE NOT FOR CODE HELP - Ask for Help at https://gitter.im/FreeCodeCamp/Help
+NOTE: ISSUES ARE NOT FOR CODE HELP - Ask for Help at https://gitter.im/FreeCodeCamp/chinese
 
 #### Issue Description
 * When Issue Happens
