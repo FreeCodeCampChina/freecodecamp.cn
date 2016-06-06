@@ -2,18 +2,18 @@ extends ../layout-wide
 block content
       .mapWrapper
         .text-center.map-fixed-header
-            p Challenges required for certifications are marked with a *
+            p 强烈推荐按照顺序来学习，不要到处跳跃。
             .row.map-buttons
-                button.center-block.btn.btn-block.btn-primary.active#showAll Collapse all challenges
+                button.center-block.btn.btn-block.btn-primary.active#showAll 折叠所有课程内容
             .row.map-buttons
                 .input-group
-                    input#map-filter.form-control(type="text" placeholder="Type a challenge name" autocomplete="off" value="")
+                    input#map-filter.form-control(type="text" placeholder="输入课程标题来快速检索" autocomplete="off" value="")
                     span.input-group-addon
                        i.fa.fa-search
             hr
             include ../partials/flash
         #accordion.map-accordion
-          #noneFound No results found. Happy Coding!
+          #noneFound 什么也没找到，祝你好运！
           for superBlock, index in superBlocks
               h2
                 a(data-toggle='collapse', data-parent='#accordion', href='#collapse'+superBlock.name.split(' ').join('-'))

@@ -418,13 +418,13 @@ $(document).ready(function() {
   $('#accordion').on('show.bs.collapse', function(e) {
     expandCaret(e.target);
     if ($('a[data-toggle=collapse]').length === $('.fa-caret-down').length) {
-      mapShowAll.text('Collapse all challenges');
+      mapShowAll.text('折叠所有课程内容');
       mapShowAll.addClass('active');
     }
   }).on('hide.bs.collapse', function(e) {
     collapseCaret(e.target);
     if ($('a[data-toggle=collapse]').length === $('.fa-caret-right').length) {
-      mapShowAll.text('Expand all challenges');
+      mapShowAll.text('展开所有课程内容');
       mapShowAll.removeClass('active');
     }
   });
@@ -436,13 +436,13 @@ $(document).ready(function() {
       function(i, div) {
         expandBlock(div);
       });
-      mapShowAll.text('Collapse all challenges');
+      mapShowAll.text('折叠所有课程内容');
       return mapShowAll.addClass('active');
     } else {
       $.each($('.map-collapse.in'), function(i, div) {
         collapseBlock(div);
       });
-      mapShowAll.text('Expand all challenges');
+      mapShowAll.text('展开所有课程内容');
       return mapShowAll.removeClass('active');
     }
   });

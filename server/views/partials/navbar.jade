@@ -7,22 +7,20 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
             img.img-responsive.nav-logo(src='/images/freecodecamp_logo.svg', alt='learn to code javascript at FreeCodeCamp logo')
     .collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right.hamburger-dropdown
+            li
+                a(href='/home') 首页
             li.hidden-xs
                 a#nav-map-btn(href='#' onclick='return false') 学习路径
             li.visible-xs
                 a(href='/map') 学习路径
             li
-                a(href="https://github.com/huluoyang/freecodecamp.cn/wiki" target="_blank") 参与翻译
+                a(href='/code.html') 编程比赛
             li
-                a(href='/leader-board.html') 排行榜
+                a(href='/progress.html') 排行榜
             li.hidden-xs
                 a#nav-chat-btn(href='#' onclick="return false") 聊天室
             li.visible-xs
                 a(href="//gitter.im/freecodecamp/chinese" target="_blank") 聊天室
-            li.hidden-xs
-                a#nav-wiki-btn(href='#' onclick='return false') 资料库
-            li.visible-xs
-                a(href='/wiki', target='_blank') 资料库
             li
                 a(href='/about') 关于我们
             if !user

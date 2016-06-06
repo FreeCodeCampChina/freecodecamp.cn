@@ -18,7 +18,7 @@
       "title": "Declare JavaScript Objects as Variables",
       "description": [
         "在我们深入 <strong>面向对象编程之前</strong> ，让我们先回顾一下Javascript的 <strong>对象（Object）</strong> ",
-        "给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性，并且设置他们的数量。"
+        "任务：给你的 <code>motorBike</code> 对象添加 <code>wheels</code>, <code>engines</code> 和 <code>seats</code> 属性，并且设置他们的数量。"
       ],
       "challengeSeed": [
         "var car = {",
@@ -174,11 +174,10 @@
       "id": "cf1111c1c15feddfaeb3bdef",
       "title": "Make Object Properties Private",
       "description": [
-        "对象拥有自己的特征，称为 <code>属性</code> （就像我们之前一直称呼的那样），对象还有自己的函数，称为 <code>方法</code> 。",
-        "在前面的改动中，（构造函数中）我们使用了 <code>this</code> 指向当前（将要被创建的）对象中的 <code>公有属性</code> 。",
+        "对象拥有自己的特征，称为 <code>属性</code>，对象还有自己的函数，称为 <code>方法</code> 。",
+        "在前面的课程（构造函数）中，我们使用了 <code>this</code> 指向当前（将要被创建的）对象中的 <code>公有属性</code> 。",
         "我们也可以创建 <code>私有属性</code> 和 <code>私有方法</code> ，它们两个在对象外部是不可访问的。",
-        "为了完成这个，我们在 <code>构造函数</code> 中，使用我们熟悉的 <code>var</code> 关键字去创建变量，来替代我们使用 <code>this</code> 创建 <code>属性</code> 。",
-        "当我们想保存对象的某些信息，但又想这个信息在被外界使用时，是受控制的。这个方法很有用。",
+        "为了完成这个任务，我们在 <code>构造函数</code> 中，使用我们熟悉的 <code>var</code> 关键字去创建变量，来替代我们使用 <code>this</code> 创建 <code>属性</code> 。",
         "比如，我们想记录我们的car行驶的 <code>speed</code> ，但是我们希望外面的代码对 <code>speed</code> 的修改只能是加速或减速（而不是变成字符串、直接赋值成某个速度等其他操作），那么如何达到这类操作的目的呢？",
         "编辑器中的 <code>构造函数</code> 展示了如何实现这种控制模式。",
         "该你自己试试了！修改 <code>Bike</code> 的 <code>构造函数</code> ，使它有一个名为 <code>gear</code> 的 <code>私有属性</code> ，还有两个公有方法，叫做 <code>getGear</code> 和 <code>setGear</code> ，这两个方法用来获得和设置 <code>gear</code> 的值。"
@@ -233,12 +232,12 @@
       "id": "cf1111c1c15feddfaeb7bdef",
       "title": "Iterate over Arrays with .map",
       "description": [
-        " <code>map</code> 方法可以方便的迭代数组。下面是使用的例子：",
+        " <code>map</code> 方法可以方便的迭代数组，例子：",
         "<blockquote>var timesFour = oldArray.map(function(val){<br>&nbsp;&nbsp;return val * 4;<br>});</blockquote>",
         "",
-        " <code>map</code> 方法会迭代数组中的每一个元素，并在创建一个新数组用来接收被回调函数处理过的每一个元素，最后返回这个新数组。注意，这个方法不会改变原始数组。",
-        "在我们的例子中，回调函数只会使用数组中的元素的值 (<code>val</code> 参数) ，但其实，你的回调函数也可以为 <code>元素的索引</code> 和 <code>原始数组</code>，在回调函数中增加他们的参数，这样你也可以在回调函数中使用它们了。",
-        "使用 <code>map</code> 函数来为 <code>oldArray</code> 中的每一项增加3，并且在 <code>newArray</code> 中保存它们。 <code>oldArray</code> 不应该被改变。"
+        " <code>map</code> 方法会迭代数组中的每一个元素，并根据回调函数来处理每一个元素，最后返回一个新数组。注意，这个方法不会改变原始数组。",
+        "在我们的例子中，回调函数只有一个参数，即数组中元素的值 (<code>val</code> 参数) ，但其实，你的回调函数也可以支持多个参数，譬如：元素的索引<code>index</code>、原始数组<code>arr</code>。",
+        "使用 <code>map</code> 方法来为 <code>oldArray</code> 中的每一项增加3，并且在 <code>newArray</code> 中保存它们。 <code>oldArray</code> 不应该被改变。"
       ],
       "challengeSeed": [
         "var oldArray = [1,2,3,4,5];",
@@ -324,10 +323,10 @@
       "title": "Sort Arrays with .sort",
       "description": [
         "使用 <code>sort</code> 方法，你可以很容易的按字母顺序或数字顺序对数组中的元素进行排序。",
-        "与我们之前看到的数组方法不同， <code>sort</code> 方法将对原数组进行改变，并且返回被排序的数组。",
-        "<code>sort</code> 可以把对比用的函数作为参数传入。对比用的函数应该有返回值，当 <code>a</code> 应该在 <code>b</code> 之前，应该返回一个负数；当 <code>a</code> 应该在 <code>b</code> 之后，应该返回一个正数；相等时返回0。",
-        "如果没有传入对比函数，它将把值全部转成字符串，并按照字母顺序进行排序。",
-        "下面的例子将展示 <code>sort</code> 的使用，传入的对比函数把元素按照从小到大的顺序进行排列：",
+        "与我们之前用的数组方法仅仅返回一个新数组不同， <code>sort</code> 方法将改变原数组，返回被排序后的数组。",
+        "<code>sort</code> 可以把比较函数作为参数传入。比较函数有返回值，当 <code>a</code> 小于 <code>b</code>，返回一个负数；当 <code>a</code> 大于 <code>b</code> ，返回一个正数；相等时返回0。",
+        "如果没有传入比较函数，它将把值全部转成字符串，并按照字母顺序进行排序。",
+        "下面的例子将展示 <code>sort</code> 的使用，传入的比较函数把元素按照从小到大的顺序进行排列：",
         "<blockquote>var array = [1, 12, 21, 2];<br>array.sort(function(a, b) {<br>&nbsp;&nbsp;return a - b;<br>});</blockquote>",
         "使用 <code>sort</code> 按照从大到小的顺序排序 <code>array</code> 。"
       ],
@@ -353,11 +352,10 @@
       "id": "cf1111c1c16feddfaeb2bdef",
       "title": "Reverse Arrays with .reverse",
       "description": [
-        "你可以使用 <code>reverse</code> 方法来使数组中的元素反序排列。",
-        "<code>reverse</code> 是另外一个会改变原始数组的方法（变成反序），但它也返回反序后的数组。",
+        "你可以使用 <code>reverse</code> 方法来翻转数组。",
         "<blockquote>var myArray = [1, 2, 3];<br>myArray.reverse();</blockquote>",
-        "<em>returns [3, 2, 1]</em>",
-        "使用 <code>reverse</code> 来反序 <code>array</code> 数组。并赋值给 <code>newArray</code>."
+        "<em>结果myArray 变成了 [3, 2, 1]</em>",
+        "使用 <code>reverse</code> 来翻转 <code>array</code> 数组。并赋值给 <code>newArray</code>."
       ],
       "challengeSeed": [
         "var array = [1,2,3,4,5,6,7];",
@@ -383,7 +381,7 @@
       "title": "Concatenate Arrays with .concat",
       "description": [
         "<code>concat</code> 方法可以用来把两个数组的内容合并到一个数组中。",
-        "<code>concat</code> 应该有一个数组作为参数。参数中的数组会拼接在原数组的后面，并作为一个新数组返回。",
+        "<code>concat</code> 方法的参数应该是一个数组。参数中的数组会拼接在原数组的后面，并作为一个新数组返回。",
         "下面是一个拼接数组的例子，用<code>concat</code> 把 <code>otherArray</code> 拼接在 <code>oldArray</code> 的后面：",
         "<code>newArray = oldArray.concat(otherArray);</code>",
         "使用 <code>.concat()</code> 将 <code>concatMe</code> 拼接到 <code>oldArray</code> 后面，并且赋值给 <code>newArray</code>。"
@@ -414,10 +412,10 @@
       "title": "Split Strings with .split",
       "description": [
         "你可以使用 <code>split</code> 方法按指定分隔符将字符串分割为数组。",
-        "你要给方法传递一个参数 <code>split</code> ，这个参数将会作为一个分隔符，在字符串中它出现的地方进行分割。",
+        "你要给 <code>split</code> 方法传递一个参数，这个参数将会作为一个分隔符。",
         "下面的例子展示了 <code>split</code> 方法的使用，按照 <code>s</code> 字母进行分割：",
         "<code>var array = string.split('s');</code>",
-        "使用 <code>split</code> 来建立一个 <code>string</code> 中单词的数组（即 <code>[单词1, 单词2 ...]</code> ），并且赋值给 <code>array</code>。"
+        "使用 <code>split</code> 方法来把字符串 <code>string</code> 分割为数组 <code>array</code>。"
       ],
       "challengeSeed": [
         "var string = \"Split me into an array\";",
@@ -441,10 +439,10 @@
       "id": "cf1111c1c16feddfaeb5bdef",
       "title": "Join Strings with .join",
       "description": [
-        "我们可以使用 <code>join</code> 方法来把数组转换成字符串，里面的每一个元素可以用你指定的分隔符来隔开，这个分隔符是你要传入的参数。",
-        "下面展示了使用 <code>join</code> 来将数组中的每一项放入字符串，并用 <code> and </code> 进行分隔：",
+        "我们还可以使用 <code>join</code> 方法来把数组转换成字符串，里面的每一个元素可以用你指定的连接符来连接起来，这个连接符就是你要传入的参数。",
+        "下面展示了使用 <code>join</code> 来将数组中的每一项放入字符串，并用 <code> and </code> 进行连接：",
         "<blockquote>var veggies = [\"Celery\", \"Radish\", \"Carrot\", \"Potato\"];<br>var salad = veggies.join(\" and \");<br>console.log(salad); // \"Celery and Radish and Carrot and Potato\" </blockquote>",
-        "使用 <code>join</code> 方法创建一个字符串，字符串来自 <code>jionMe</code> 数组，各元素之间使用空格来分隔，最后把它赋值给 <code>joinedString</code>."
+        "使用 <code>join</code> 方法，连接符为<code>' '</code>把数组 <code>jionMe</code> 转化成字符串 <code>joinedString</code>."
       ],
       "challengeSeed": [
         "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];",

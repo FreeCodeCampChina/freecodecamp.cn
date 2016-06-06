@@ -24,10 +24,10 @@
       ],
       "tests": [
         "assert(typeof sumAll([1, 4]) === 'number', 'message: <code>sumAll([1, 4])</code> 应该返回一个数字。');",
-        "assert.deepEqual(sumAll([1, 4]), 10, 'message: <code>sumAll([1, 4])</code> 应该返回 10.');",
-        "assert.deepEqual(sumAll([4, 1]), 10, 'message: <code>sumAll([4, 1])</code> 应该返回 10.');",
-        "assert.deepEqual(sumAll([5, 10]), 45, 'message: <code>sumAll([5, 10])</code> 应该返回 45.');",
-        "assert.deepEqual(sumAll([10, 5]), 45, 'message: <code>sumAll([10, 5])</code> 应该返回 45.');"
+        "assert.deepEqual(sumAll([1, 4]), 10, 'message: <code>sumAll([1, 4])</code> 应该返回 10。');",
+        "assert.deepEqual(sumAll([4, 1]), 10, 'message: <code>sumAll([4, 1])</code> 应该返回 10。');",
+        "assert.deepEqual(sumAll([5, 10]), 45, 'message: <code>sumAll([5, 10])</code> 应该返回 45。');",
+        "assert.deepEqual(sumAll([10, 5]), 45, 'message: <code>sumAll([10, 5])</code> 应该返回 45。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -59,13 +59,13 @@
       ],
       "tests": [
         "assert(typeof diff([1, 2, 3, 5], [1, 2, 3, 4, 5]) === \"object\", 'message: <code>diff([1, 2, 3, 5], [1, 2, 3, 4, 5])</code> 应该返回一个数组。');",
-        "assert.sameMembers(diff([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"pink wool\"], 'message: <code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"pink wool\"]</code>.');",
-        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"diorite\", \"pink wool\"], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"diorite\", \"pink wool\"]</code>.');",
-        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[]</code>.');",
-        "assert.sameMembers(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4], 'message: <code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> 应该返回 <code>[4]</code>.');",
-        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]), [\"piglet\", 4], 'message: <code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> 应该返回 <code>[\"piglet\", 4]</code>.');",
-        "assert.sameMembers(diff([], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]), [\"snuffleupagus\", \"cookie monster\", \"elmo\"], 'message: <code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> 应该返回 <code>[\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code>.');",
-        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [7, \"filly\"]), [1, \"calf\", 3, \"piglet\", 7, \"filly\"], 'message: <code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> 应该返回 <code>[1, \"calf\", 3, \"piglet\", 7, \"filly\"]</code>.');"
+        "assert.sameMembers(diff([\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"pink wool\"], 'message: <code>[\"diorite\", \"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"pink wool\"]</code>。');",
+        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [\"diorite\", \"pink wool\"], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"pink wool\", \"dead shrub\"], [\"diorite\", \"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[\"diorite\", \"pink wool\"]</code>。');",
+        "assert.sameMembers(diff([\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]), [], 'message: <code>[\"andesite\", \"grass\", \"dirt\", \"dead shrub\"], [\"andesite\", \"grass\", \"dirt\", \"dead shrub\"]</code> 应该返回 <code>[]</code>。');",
+        "assert.sameMembers(diff([1, 2, 3, 5], [1, 2, 3, 4, 5]), [4], 'message: <code>[1, 2, 3, 5], [1, 2, 3, 4, 5]</code> 应该返回 <code>[4]</code>。');",
+        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]), [\"piglet\", 4], 'message: <code>[1, \"calf\", 3, \"piglet\"], [1, \"calf\", 3, 4]</code> 应该返回 <code>[\"piglet\", 4]</code>。');",
+        "assert.sameMembers(diff([], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]), [\"snuffleupagus\", \"cookie monster\", \"elmo\"], 'message: <code>[], [\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code> 应该返回 <code>[\"snuffleupagus\", \"cookie monster\", \"elmo\"]</code>。');",
+        "assert.sameMembers(diff([1, \"calf\", 3, \"piglet\"], [7, \"filly\"]), [1, \"calf\", 3, \"piglet\", 7, \"filly\"], 'message: <code>[1, \"calf\", 3, \"piglet\"], [7, \"filly\"]</code> 应该返回 <code>[1, \"calf\", 3, \"piglet\", 7, \"filly\"]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -97,31 +97,31 @@
         "function convert(num) {\n  var ref = [['M', 1000], ['CM', 900], ['D', 500], ['CD', 400], ['C', 100], ['XC', 90], ['L', 50], ['XL', 40], ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]];\n  var res = [];\n  ref.forEach(function(p) {\n    while (num >= p[1]) {\n      res.push(p[0]);\n      num -= p[1];\n    }\n  });\n  return res.join('');\n}"
       ],
       "tests": [
-        "assert.deepEqual(convert(2), \"II\", 'message: <code>convert(2)</code> 应该返回 \"II\".');",
-        "assert.deepEqual(convert(3), \"III\", 'message: <code>convert(3)</code> 应该返回 \"III\".');",
-        "assert.deepEqual(convert(4), \"IV\", 'message: <code>convert(4)</code> 应该返回 \"IV\".');",
-        "assert.deepEqual(convert(5), \"V\", 'message: <code>convert(5)</code> 应该返回 \"V\".');",
-        "assert.deepEqual(convert(9), \"IX\", 'message: <code>convert(9)</code> 应该返回 \"IX\".');",
-        "assert.deepEqual(convert(12), \"XII\", 'message: <code>convert(12)</code> 应该返回 \"XII\".');",
-        "assert.deepEqual(convert(16), \"XVI\", 'message: <code>convert(16)</code> 应该返回 \"XVI\".');",
-        "assert.deepEqual(convert(29), \"XXIX\", 'message: <code>convert(29)</code> 应该返回 \"XXIX\".');",
-        "assert.deepEqual(convert(44), \"XLIV\", 'message: <code>convert(44)</code> 应该返回 \"XLIV\".');",
-        "assert.deepEqual(convert(45), \"XLV\", 'message: <code>convert(45)</code> 应该返回 \"XLV\"');",
-        "assert.deepEqual(convert(68), \"LXVIII\", 'message: <code>convert(68)</code> 应该返回 \"LXVIII\"');",
-        "assert.deepEqual(convert(83), \"LXXXIII\", 'message: <code>convert(83)</code> 应该返回 \"LXXXIII\"');",
-        "assert.deepEqual(convert(97), \"XCVII\", 'message: <code>convert(97)</code> 应该返回 \"XCVII\"');",
-        "assert.deepEqual(convert(99), \"XCIX\", 'message: <code>convert(99)</code> 应该返回 \"XCIX\"');",
-        "assert.deepEqual(convert(500), \"D\", 'message: <code>convert(500)</code> 应该返回 \"D\"');",
-        "assert.deepEqual(convert(501), \"DI\", 'message: <code>convert(501)</code> 应该返回 \"DI\"');",
-        "assert.deepEqual(convert(649), \"DCXLIX\", 'message: <code>convert(649)</code> 应该返回 \"DCXLIX\"');",
-        "assert.deepEqual(convert(798), \"DCCXCVIII\", 'message: <code>convert(798)</code> 应该返回 \"DCCXCVIII\"');",
-        "assert.deepEqual(convert(891), \"DCCCXCI\", 'message: <code>convert(891)</code> 应该返回 \"DCCCXCI\"');",
-        "assert.deepEqual(convert(1000), \"M\", 'message: <code>convert(1000)</code> 应该返回 \"M\"');",
-        "assert.deepEqual(convert(1004), \"MIV\", 'message: <code>convert(1004)</code> 应该返回 \"MIV\"');",
-        "assert.deepEqual(convert(1006), \"MVI\", 'message: <code>convert(1006)</code> 应该返回 \"MVI\"');",
-        "assert.deepEqual(convert(1023), \"MXXIII\", 'message: <code>convert(1023)</code> 应该返回 \"MXXIII\"');",
-        "assert.deepEqual(convert(2014), \"MMXIV\", 'message: <code>convert(2014)</code> 应该返回 \"MMXIV\"');",
-        "assert.deepEqual(convert(3999), \"MMMCMXCIX\", 'message: <code>convert(3999)</code> 应该返回 \"MMMCMXCIX\"');"
+        "assert.deepEqual(convert(2), \"II\", 'message: <code>convert(2)</code> 应该返回 \"II\"。');",
+        "assert.deepEqual(convert(3), \"III\", 'message: <code>convert(3)</code> 应该返回 \"III\"。');",
+        "assert.deepEqual(convert(4), \"IV\", 'message: <code>convert(4)</code> 应该返回 \"IV\"。');",
+        "assert.deepEqual(convert(5), \"V\", 'message: <code>convert(5)</code> 应该返回 \"V\"。');",
+        "assert.deepEqual(convert(9), \"IX\", 'message: <code>convert(9)</code> 应该返回 \"IX\"。');",
+        "assert.deepEqual(convert(12), \"XII\", 'message: <code>convert(12)</code> 应该返回 \"XII\"。');",
+        "assert.deepEqual(convert(16), \"XVI\", 'message: <code>convert(16)</code> 应该返回 \"XVI\"。');",
+        "assert.deepEqual(convert(29), \"XXIX\", 'message: <code>convert(29)</code> 应该返回 \"XXIX\"。');",
+        "assert.deepEqual(convert(44), \"XLIV\", 'message: <code>convert(44)</code> 应该返回 \"XLIV\"。');",
+        "assert.deepEqual(convert(45), \"XLV\", 'message: <code>convert(45)</code> 应该返回 \"XLV\"。');",
+        "assert.deepEqual(convert(68), \"LXVIII\", 'message: <code>convert(68)</code> 应该返回 \"LXVIII\"。');",
+        "assert.deepEqual(convert(83), \"LXXXIII\", 'message: <code>convert(83)</code> 应该返回 \"LXXXIII\"。');",
+        "assert.deepEqual(convert(97), \"XCVII\", 'message: <code>convert(97)</code> 应该返回 \"XCVII\"。');",
+        "assert.deepEqual(convert(99), \"XCIX\", 'message: <code>convert(99)</code> 应该返回 \"XCIX\"。');",
+        "assert.deepEqual(convert(500), \"D\", 'message: <code>convert(500)</code> 应该返回 \"D\"。');",
+        "assert.deepEqual(convert(501), \"DI\", 'message: <code>convert(501)</code> 应该返回 \"DI\"。');",
+        "assert.deepEqual(convert(649), \"DCXLIX\", 'message: <code>convert(649)</code> 应该返回 \"DCXLIX\"。');",
+        "assert.deepEqual(convert(798), \"DCCXCVIII\", 'message: <code>convert(798)</code> 应该返回 \"DCCXCVIII\"。');",
+        "assert.deepEqual(convert(891), \"DCCCXCI\", 'message: <code>convert(891)</code> 应该返回 \"DCCCXCI\"。');",
+        "assert.deepEqual(convert(1000), \"M\", 'message: <code>convert(1000)</code> 应该返回 \"M\"。');",
+        "assert.deepEqual(convert(1004), \"MIV\", 'message: <code>convert(1004)</code> 应该返回 \"MIV\"。');",
+        "assert.deepEqual(convert(1006), \"MVI\", 'message: <code>convert(1006)</code> 应该返回 \"MVI\"。');",
+        "assert.deepEqual(convert(1023), \"MXXIII\", 'message: <code>convert(1023)</code> 应该返回 \"MXXIII\"。');",
+        "assert.deepEqual(convert(2014), \"MMXIV\", 'message: <code>convert(2014)</code> 应该返回 \"MMXIV\"。');",
+        "assert.deepEqual(convert(3999), \"MMMCMXCIX\", 'message: <code>convert(3999)</code> 应该返回 \"MMMCMXCIX\"。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -154,10 +154,10 @@
         "function where(collection, source) {\n  var arr = [];\n  var keys = Object.keys(source);\n  collection.forEach(function(e) {\n    if(keys.every(function(key) {return e[key] === source[key];})) {\n      arr.push(e);  \n    }\n  });\n  return arr;\n}"
       ],
       "tests": [
-        "assert.deepEqual(where([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" }), [{ first: \"Tybalt\", last: \"Capulet\" }], 'message: <code>where([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" })</code> 应该返回 <code>[{ first: \"Tybalt\", last: \"Capulet\" }]</code>.');",
-        "assert.deepEqual(where([{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], { \"a\": 1 }), [{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], 'message: <code>where([{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], { \"a\": 1 })</code> 应该返回 <code>[{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }]</code>.');",
-        "assert.deepEqual(where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"b\": 2 }), [{ \"a\": 1, \"b\": 2 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], 'message: <code>where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"b\": 2 })</code> 应该返回 <code>[{ \"a\": 1, \"b\": 2 }, { \"a\": 1, \"b\": 2, \"c\": 2 }]</code>.');",
-        "assert.deepEqual(where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"c\": 2 }), [{ \"a\": 1, \"b\": 2, \"c\": 2 }], 'message: <code>where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"c\": 2 })</code> 应该返回 <code>[{ \"a\": 1, \"b\": 2, \"c\": 2 }]</code>.');"
+        "assert.deepEqual(where([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" }), [{ first: \"Tybalt\", last: \"Capulet\" }], 'message: <code>where([{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }], { last: \"Capulet\" })</code> 应该返回 <code>[{ first: \"Tybalt\", last: \"Capulet\" }]</code>。');",
+        "assert.deepEqual(where([{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], { \"a\": 1 }), [{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], 'message: <code>where([{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }], { \"a\": 1 })</code> 应该返回 <code>[{ \"a\": 1 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2 }]</code>。');",
+        "assert.deepEqual(where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"b\": 2 }), [{ \"a\": 1, \"b\": 2 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], 'message: <code>where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"b\": 2 })</code> 应该返回 <code>[{ \"a\": 1, \"b\": 2 }, { \"a\": 1, \"b\": 2, \"c\": 2 }]</code>。');",
+        "assert.deepEqual(where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"c\": 2 }), [{ \"a\": 1, \"b\": 2, \"c\": 2 }], 'message: <code>where([{ \"a\": 1, \"b\": 2 }, { \"a\": 1 }, { \"a\": 1, \"b\": 2, \"c\": 2 }], { \"a\": 1, \"c\": 2 })</code> 应该返回 <code>[{ \"a\": 1, \"b\": 2, \"c\": 2 }]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -190,11 +190,11 @@
         "function myReplace(str, before, after) {\n  if (before.charAt(0) === before.charAt(0).toUpperCase()) {\n    after = after.charAt(0).toUpperCase() + after.substring(1);\n  } else {\n    after = after.charAt(0).toLowerCase() + after.substring(1);\n  }\n  return str.replace(before, after);\n}"
       ],
       "tests": [
-        "assert.deepEqual(myReplace(\"Let us go to the store\", \"store\", \"mall\"), \"Let us go to the mall\", 'message: <code>myReplace(\"Let us go to the store\", \"store\", \"mall\")</code> 应该返回 \"Let us go to the mall\".');",
-        "assert.deepEqual(myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\"), \"He is Sitting on the couch\", 'message: <code>myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")</code> 应该返回 \"He is Sitting on the couch\".');",
-        "assert.deepEqual(myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\"), \"This has a spelling error\", 'message: <code>myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\")</code> 应该返回 \"This has a spelling error\".');",
-        "assert.deepEqual(myReplace(\"His name is Tom\", \"Tom\", \"john\"), \"His name is John\", 'message: <code>myReplace(\"His name is Tom\", \"Tom\", \"john\")</code> 应该返回 \"His name is John\".');",
-        "assert.deepEqual(myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\"), \"Let us get back to more Algorithms\", 'message: <code>myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\")</code> 应该返回 \"Let us get back to more Algorithms\".');"
+        "assert.deepEqual(myReplace(\"Let us go to the store\", \"store\", \"mall\"), \"Let us go to the mall\", 'message: <code>myReplace(\"Let us go to the store\", \"store\", \"mall\")</code> 应该返回 \"Let us go to the mall\"。');",
+        "assert.deepEqual(myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\"), \"He is Sitting on the couch\", 'message: <code>myReplace(\"He is Sleeping on the couch\", \"Sleeping\", \"sitting\")</code> 应该返回 \"He is Sitting on the couch\"。');",
+        "assert.deepEqual(myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\"), \"This has a spelling error\", 'message: <code>myReplace(\"This has a spellngi error\", \"spellngi\", \"spelling\")</code> 应该返回 \"This has a spelling error\"。');",
+        "assert.deepEqual(myReplace(\"His name is Tom\", \"Tom\", \"john\"), \"His name is John\", 'message: <code>myReplace(\"His name is Tom\", \"Tom\", \"john\")</code> 应该返回 \"His name is John\"。');",
+        "assert.deepEqual(myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\"), \"Let us get back to more Algorithms\", 'message: <code>myReplace(\"Let us get back to more Coding\", \"Coding\", \"algorithms\")</code> 应该返回 \"Let us get back to more Algorithms\"。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -225,11 +225,11 @@
         "function translate(str) {\n  if (isVowel(str.charAt(0))) return str + \"way\";\n  var front = [];\n  str = str.split('');\n  while (str.length && !isVowel(str[0])) {\n    front.push(str.shift());\n  }\n  return [].concat(str, front).join('') + 'ay';\n}\n\nfunction isVowel(c) {\n  return ['a', 'e', 'i', 'o', 'u'].indexOf(c.toLowerCase()) !== -1;\n}"
       ],
       "tests": [
-        "assert.deepEqual(translate(\"california\"), \"aliforniacay\", 'message: <code>translate(\"california\")</code> 应该返回 \"aliforniacay\".');",
-        "assert.deepEqual(translate(\"paragraphs\"), \"aragraphspay\", 'message: <code>translate(\"paragraphs\")</code> 应该返回 \"aragraphspay\".');",
-        "assert.deepEqual(translate(\"glove\"), \"oveglay\", 'message: <code>translate(\"glove\")</code> 应该返回 \"oveglay\".');",
-        "assert.deepEqual(translate(\"algorithm\"), \"algorithmway\", 'message: <code>translate(\"algorithm\")</code> 应该返回 \"algorithmway\".');",
-        "assert.deepEqual(translate(\"eight\"), \"eightway\", 'message: <code>translate(\"eight\")</code> 应该返回 \"eightway\".');"
+        "assert.deepEqual(translate(\"california\"), \"aliforniacay\", 'message: <code>translate(\"california\")</code> 应该返回 \"aliforniacay\"。');",
+        "assert.deepEqual(translate(\"paragraphs\"), \"aragraphspay\", 'message: <code>translate(\"paragraphs\")</code> 应该返回 \"aragraphspay\"。');",
+        "assert.deepEqual(translate(\"glove\"), \"oveglay\", 'message: <code>translate(\"glove\")</code> 应该返回 \"oveglay\"。');",
+        "assert.deepEqual(translate(\"algorithm\"), \"algorithmway\", 'message: <code>translate(\"algorithm\")</code> 应该返回 \"algorithmway\"。');",
+        "assert.deepEqual(translate(\"eight\"), \"eightway\", 'message: <code>translate(\"eight\")</code> 应该返回 \"eightway\"。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -246,12 +246,12 @@
       "id": "afd15382cdfb22c9efe8b7de",
       "title": "DNA Pairing",
       "description": [
-        "The DNA strand is missing the pairing element. Take each character, get its pair, and return the results as a 2d array.",
-        "<a href=\"http://en.wikipedia.org/wiki/Base_pair\" target=\"_blank\">Base pairs</a> are a pair of AT and CG. Match the missing element to the provided character.",
-        "Return the provided character as the first element in each array.",
-        "For example, for the input GCG, return [[\"G\", \"C\"], [\"C\",\"G\"],[\"G\", \"C\"]]",
-        "The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "DNA 链缺少配对的碱基。依据每一个碱基，为其找到配对的碱基，然后将结果作为第二个数组返回。",
+        "<a href=\"http://en.wikipedia.org/wiki/Base_pair\" target=\"_blank\">Base pairs（碱基对）</a> 是一对 AT 和 CG，为给定的字母匹配缺失的碱基。",
+        "在每一个数组中将给定的字母作为第一个碱基返回。",
+        "例如，对于输入的 GCG，相应地返回 [[\"G\", \"C\"], [\"C\",\"G\"],[\"G\", \"C\"]]",
+        "字母和与之配对的字母在一个数组内，然后所有数组再被组织起来封装进一个数组。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function pair(str) {",
@@ -264,9 +264,9 @@
         "var lookup = Object.create(null);\nlookup.A = 'T';\nlookup.T = 'A';\nlookup.C = 'G';\nlookup.G = 'C';\n\nfunction pair(str) {\n return str.split('').map(function(p) {return [p, lookup[p]];});\n}"
       ],
       "tests": [
-        "assert.deepEqual(pair(\"ATCGA\"),[[\"A\",\"T\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"G\",\"C\"],[\"A\",\"T\"]], 'message: <code>pair(\"ATCGA\")</code> should return <code>[[\"A\",\"T\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"G\",\"C\"],[\"A\",\"T\"]]</code>.');",
-        "assert.deepEqual(pair(\"TTGAG\"),[[\"T\",\"A\"],[\"T\",\"A\"],[\"G\",\"C\"],[\"A\",\"T\"],[\"G\",\"C\"]], 'message: <code>pair(\"TTGAG\")</code> should return <code>[[\"T\",\"A\"],[\"T\",\"A\"],[\"G\",\"C\"],[\"A\",\"T\"],[\"G\",\"C\"]]</code>.');",
-        "assert.deepEqual(pair(\"CTCTA\"),[[\"C\",\"G\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"T\",\"A\"],[\"A\",\"T\"]], 'message: <code>pair(\"CTCTA\")</code> should return <code>[[\"C\",\"G\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"T\",\"A\"],[\"A\",\"T\"]]</code>.');"
+        "assert.deepEqual(pair(\"ATCGA\"),[[\"A\",\"T\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"G\",\"C\"],[\"A\",\"T\"]], 'message: <code>pair(\"ATCGA\")</code> 应该返回 <code>[[\"A\",\"T\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"G\",\"C\"],[\"A\",\"T\"]]</code>。');",
+        "assert.deepEqual(pair(\"TTGAG\"),[[\"T\",\"A\"],[\"T\",\"A\"],[\"G\",\"C\"],[\"A\",\"T\"],[\"G\",\"C\"]], 'message: <code>pair(\"TTGAG\")</code> 应该返回 <code>[[\"T\",\"A\"],[\"T\",\"A\"],[\"G\",\"C\"],[\"A\",\"T\"],[\"G\",\"C\"]]</code>。');",
+        "assert.deepEqual(pair(\"CTCTA\"),[[\"C\",\"G\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"T\",\"A\"],[\"A\",\"T\"]], 'message: <code>pair(\"CTCTA\")</code> 应该返回 <code>[[\"C\",\"G\"],[\"T\",\"A\"],[\"C\",\"G\"],[\"T\",\"A\"],[\"A\",\"T\"]]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -280,9 +280,9 @@
       "id": "af7588ade1100bde429baf20",
       "title": "Missing letters",
       "description": [
-        "Find the missing letter in the passed letter range and return it.",
-        "If all letters are present in the range, return undefined.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "从传递进来的字母序列中找到缺失的字母并返回它。",
+        "如果所有字母都在序列中，返回 undefined。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function fearNotLetter(str) {",
@@ -295,10 +295,10 @@
         "function fearNotLetter(str) {\n  var s = str.split('').map(function(c) {return c.charCodeAt(0);});\n  for (var i = 1; i < s.length; i++) {\n    if (s[i]-1 != s[i-1]) {\n      return String.fromCharCode(s[i]-1);\n    }\n  }\n}"
       ],
       "tests": [
-        "assert.deepEqual(fearNotLetter(\"abce\"), \"d\", 'message: <code>fearNotLetter(\"abce\")</code> should return \"d\".');",
-        "assert.deepEqual(fearNotLetter(\"abcdefghjklmno\"), \"i\", 'message: <code>fearNotLetter(\"abcdefghjklmno\")</code> should return \"i\".');",
-        "assert.isUndefined(fearNotLetter(\"bcd\"), 'message: <code>fearNotLetter(\"bcd\")</code> should return undefined.');",
-        "assert.isUndefined(fearNotLetter(\"yz\"), 'message: <code>fearNotLetter(\"yz\")</code> should return undefined.');"
+        "assert.deepEqual(fearNotLetter(\"abce\"), \"d\", 'message: <code>fearNotLetter(\"abce\")</code> 应该返回 \"d\"。');",
+        "assert.deepEqual(fearNotLetter(\"abcdefghjklmno\"), \"i\", 'message: <code>fearNotLetter(\"abcdefghjklmno\")</code> 应该返回 \"i\"。');",
+        "assert.isUndefined(fearNotLetter(\"bcd\"), 'message: <code>fearNotLetter(\"bcd\")</code> 应该返回 undefined。');",
+        "assert.isUndefined(fearNotLetter(\"yz\"), 'message: <code>fearNotLetter(\"yz\")</code> 应该返回 undefined。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -312,9 +312,9 @@
       "id": "a77dbc43c33f39daa4429b4f",
       "title": "Boo who",
       "description": [
-        "Check if a value is classified as a boolean primitive. Return true or false.",
-        "Boolean primitives are true and false.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "查检一个值是否是基本布尔类型，并返回 true 或 false。",
+        "基本布尔类型即 true 和 false。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function boo(bool) {",
@@ -328,16 +328,16 @@
         "function boo(bool) {\n  // What is the new fad diet for ghost developers? The Boolean.\n  return typeof bool === \"boolean\";\n}\n\nboo(null);"
       ],
       "tests": [
-        "assert.strictEqual(boo(true), true, 'message: <code>boo(true)</code> should return true.');",
-        "assert.strictEqual(boo(false), true, 'message: <code>boo(false)</code> should return true.');",
-        "assert.strictEqual(boo([1, 2, 3]), false, 'message: <code>boo([1, 2, 3])</code> should return false.');",
-        "assert.strictEqual(boo([].slice), false, 'message: <code>boo([].slice)</code> should return false.');",
-        "assert.strictEqual(boo({ \"a\": 1 }), false, 'message: <code>boo({ \"a\": 1 })</code> should return false.');",
-        "assert.strictEqual(boo(1), false, 'message: <code>boo(1)</code> should return false.');",
-        "assert.strictEqual(boo(NaN), false, 'message: <code>boo(NaN)</code> should return false.');",
-        "assert.strictEqual(boo(\"a\"), false, 'message: <code>boo(\"a\")</code> should return false.');",
-        "assert.strictEqual(boo(\"true\"), false, 'message: <code>boo(\"true\")</code> should return false.');",
-        "assert.strictEqual(boo(\"false\"), false, 'message: <code>boo(\"false\")</code> should return false.');"
+        "assert.strictEqual(boo(true), true, 'message: <code>boo(true)</code> 应该返回 true。');",
+        "assert.strictEqual(boo(false), true, 'message: <code>boo(false)</code> 应该返回 true。');",
+        "assert.strictEqual(boo([1, 2, 3]), false, 'message: <code>boo([1, 2, 3])</code> 应该返回 false。');",
+        "assert.strictEqual(boo([].slice), false, 'message: <code>boo([].slice)</code> 应该返回 false。');",
+        "assert.strictEqual(boo({ \"a\": 1 }), false, 'message: <code>boo({ \"a\": 1 })</code> 应该返回 false。');",
+        "assert.strictEqual(boo(1), false, 'message: <code>boo(1)</code> 应该返回 false。');",
+        "assert.strictEqual(boo(NaN), false, 'message: <code>boo(NaN)</code> 应该返回 false。');",
+        "assert.strictEqual(boo(\"a\"), false, 'message: <code>boo(\"a\")</code> 应该返回 false。');",
+        "assert.strictEqual(boo(\"true\"), false, 'message: <code>boo(\"true\")</code> 应该返回 false。');",
+        "assert.strictEqual(boo(\"false\"), false, 'message: <code>boo(\"false\")</code> 应该返回 false。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -350,11 +350,11 @@
       "id": "a105e963526e7de52b219be9",
       "title": "Sorted Union",
       "description": [
-        "Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.",
-        "In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.",
-        "The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.",
-        "Check the assertion tests for examples.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "写一个 function，传入两个或两个以上的数组，返回一个以给定的原始数组排序的不包含重复值的新数组。",
+        "换句话说，所有数组中的所有值都应该以原始顺序被包含在内，但是在最终的数组中不包含重复值。",
+        "非重复的数字应该以它们原始的顺序排序，但最终的数组不应该以数字顺序排序。",
+        "请参照下面验证判断中的例子。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function unite(arr1, arr2, arr3) {",
@@ -367,10 +367,10 @@
         "function unite(arr1, arr2, arr3) {\n  return [].slice.call(arguments).reduce(function(a, b) {\n    return [].concat(a, b.filter(function(e) {return a.indexOf(e) === -1;}));\n  }, []);\n}"
       ],
       "tests": [
-        "assert.deepEqual(unite([1, 3, 2], [5, 2, 1, 4], [2, 1]), [1, 3, 2, 5, 4], 'message: <code>unite([1, 3, 2], [5, 2, 1, 4], [2, 1])</code> should return <code>[1, 3, 2, 5, 4]</code>.');",
-        "assert.deepEqual(unite([1, 3, 2], [1, [5]], [2, [4]]), [1, 3, 2, [5], [4]], 'message: <code>unite([1, 3, 2], [1, [5]], [2, [4]])</code> should return <code>[1, 3, 2, [5], [4]]</code>.');",
-        "assert.deepEqual(unite([1, 2, 3], [5, 2, 1]), [1, 2, 3, 5], 'message: <code>unite([1, 2, 3], [5, 2, 1])</code> should return <code>[1, 2, 3, 5]</code>.');",
-        "assert.deepEqual(unite([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]), [1, 2, 3, 5, 4, 6, 7, 8], 'message: <code>unite([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])</code> should return <code>[1, 2, 3, 5, 4, 6, 7, 8]</code>.');"
+        "assert.deepEqual(unite([1, 3, 2], [5, 2, 1, 4], [2, 1]), [1, 3, 2, 5, 4], 'message: <code>unite([1, 3, 2], [5, 2, 1, 4], [2, 1])</code> 应该返回 <code>[1, 3, 2, 5, 4]</code>。');",
+        "assert.deepEqual(unite([1, 3, 2], [1, [5]], [2, [4]]), [1, 3, 2, [5], [4]], 'message: <code>unite([1, 3, 2], [1, [5]], [2, [4]])</code> 应该返回 <code>[1, 3, 2, [5], [4]]</code>。');",
+        "assert.deepEqual(unite([1, 2, 3], [5, 2, 1]), [1, 2, 3, 5], 'message: <code>unite([1, 2, 3], [5, 2, 1])</code> 应该返回 <code>[1, 2, 3, 5]</code>。');",
+        "assert.deepEqual(unite([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]), [1, 2, 3, 5, 4, 6, 7, 8], 'message: <code>unite([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8])</code> 应该返回 <code>[1, 2, 3, 5, 4, 6, 7, 8]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -384,8 +384,8 @@
       "id": "a6b0bb188d873cb2c8729495",
       "title": "Convert HTML Entities",
       "description": [
-        "Convert the characters <code>&</code>, <code><</code>, <code>></code>, <code>\"</code> (double quote), and <code>'</code> (apostrophe), in a string to their corresponding HTML entities.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "将字符串中的字符 <code>&</code>、<code><</code>、<code>></code>、<code>\"</code> （双引号）, 以及 <code>'</code> （单引号）转换为它们对应的 HTML 实体。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function convert(str) {",
@@ -399,13 +399,13 @@
         "var MAP = { '&': '&amp;',\n            '<': '&lt;',\n            '>': '&gt;',\n            '\"': '&quot;',\n            \"'\": '&apos;'};\n\nfunction convert(str) {\n  return str.replace(/[&<>\"']/g, function(c) {\n    return MAP[c];\n  });\n}"
       ],
       "tests": [
-        "assert.match(convert(\"Dolce & Gabbana\"), /Dolce &amp; Gabbana/, 'message: <code>convert(\"Dolce & Gabbana\")</code> should return <code>Dolce &&#8203;amp; Gabbana</code>.');",
-        "assert.match(convert(\"Hamburgers < Pizza < Tacos\"), /Hamburgers &lt; Pizza &lt; Tacos/, 'message: <code>convert(\"Hamburgers < Pizza < Tacos\")</code> should return <code>Hamburgers &&#8203;lt; Pizza &&#8203;lt; Tacos</code>.');",
-        "assert.match(convert(\"Sixty > twelve\"), /Sixty &gt; twelve/, 'message: <code>convert(\"Sixty > twelve\")</code> should return <code>Sixty &&#8203;gt; twelve</code>.');",
-        "assert.match(convert('Stuff in \"quotation marks\"'), /Stuff in &quot;quotation marks&quot;/, 'message: <code>convert(&apos;Stuff in \"quotation marks\"&apos;)</code> should return <code>Stuff in &&#8203;quot;quotation marks&&#8203;quot;</code>.');",
-        "assert.match(convert(\"Shindler's List\"), /Shindler&apos;s List/, 'message: <code>convert(\"Shindler&apos;s List\")</code> should return <code>Shindler&&#8203;apos;s List</code>.');",
-        "assert.match(convert('<>'), /&lt;&gt;/, 'message: <code>convert(\"<>\")</code> should return <code>&&#8203;lt;&&#8203;gt;</code>.');",
-        "assert.strictEqual(convert('abc'), 'abc', 'message: <code>convert(\"abc\")</code> should return <code>abc</code>.');"
+        "assert.match(convert(\"Dolce & Gabbana\"), /Dolce &amp; Gabbana/, 'message: <code>convert(\"Dolce & Gabbana\")</code> 应该返回 <code>Dolce &&#8203;amp; Gabbana</code>。');",
+        "assert.match(convert(\"Hamburgers < Pizza < Tacos\"), /Hamburgers &lt; Pizza &lt; Tacos/, 'message: <code>convert(\"Hamburgers < Pizza < Tacos\")</code> 应该返回 <code>Hamburgers &&#8203;lt; Pizza &&#8203;lt; Tacos</code>。');",
+        "assert.match(convert(\"Sixty > twelve\"), /Sixty &gt; twelve/, 'message: <code>convert(\"Sixty > twelve\")</code> 应该返回 <code>Sixty &&#8203;gt; twelve</code>。');",
+        "assert.match(convert('Stuff in \"quotation marks\"'), /Stuff in &quot;quotation marks&quot;/, 'message: <code>convert(&apos;Stuff in \"quotation marks\"&apos;)</code> 应该返回 <code>Stuff in &&#8203;quot;quotation marks&&#8203;quot;</code>。');",
+        "assert.match(convert(\"Shindler's List\"), /Shindler&apos;s List/, 'message: <code>convert(\"Shindler&apos;s List\")</code> 应该返回 <code>Shindler&&#8203;apos;s List</code>。');",
+        "assert.match(convert('<>'), /&lt;&gt;/, 'message: <code>convert(\"<>\")</code> 应该返回 <code>&&#8203;lt;&&#8203;gt;</code>。');",
+        "assert.strictEqual(convert('abc'), 'abc', 'message: <code>convert(\"abc\")</code> 应该返回 <code>abc</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -419,8 +419,8 @@
       "id": "a103376db3ba46b2d50db289",
       "title": "Spinal Tap Case",
       "description": [
-        "Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "将字符串转换为 spinal case。Spinal case 是 all-lowercase-words-joined-by-dashes 这种形式的，也就是以连字符连接所有小写单词。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function spinalCase(str) {",
@@ -435,10 +435,10 @@
         "function spinalCase(str) {\n  // \"It's such a fine line between stupid, and clever.\"\n  // --David St. Hubbins\n  str = str.replace(/([a-z](?=[A-Z]))/g, '$1 ');\n  return str.toLowerCase().replace(/\\ |\\_/g, '-');\n}"
       ],
       "tests": [
-        "assert.deepEqual(spinalCase(\"This Is Spinal Tap\"), \"this-is-spinal-tap\", 'message: <code>spinalCase(\"This Is Spinal Tap\")</code> should return <code>\"this-is-spinal-tap\"</code>.');",
-        "assert.strictEqual(spinalCase('thisIsSpinalTap'), \"this-is-spinal-tap\", 'message: <code>spinalCase(\"thisIsSpinalTap\")</code> should return <code>\"this-is-spinal-tap\"</code>.');",
-        "assert.strictEqual(spinalCase(\"The_Andy_Griffith_Show\"), \"the-andy-griffith-show\", 'message: <code>spinalCase(\"The_Andy_Griffith_Show\")</code> should return <code>\"the-andy-griffith-show\"</code>.');",
-        "assert.strictEqual(spinalCase(\"Teletubbies say Eh-oh\"), \"teletubbies-say-eh-oh\", 'message: <code>spinalCase(\"Teletubbies say Eh-oh\")</code> should return <code>\"teletubbies-say-eh-oh\"</code>.');"
+        "assert.deepEqual(spinalCase(\"This Is Spinal Tap\"), \"this-is-spinal-tap\", 'message: <code>spinalCase(\"This Is Spinal Tap\")</code> 应该返回 <code>\"this-is-spinal-tap\"</code>。');",
+        "assert.strictEqual(spinalCase('thisIsSpinalTap'), \"this-is-spinal-tap\", 'message: <code>spinalCase(\"thisIsSpinalTap\")</code> 应该返回 <code>\"this-is-spinal-tap\"</code>。');",
+        "assert.strictEqual(spinalCase(\"The_Andy_Griffith_Show\"), \"the-andy-griffith-show\", 'message: <code>spinalCase(\"The_Andy_Griffith_Show\")</code> 应该返回 <code>\"the-andy-griffith-show\"</code>。');",
+        "assert.strictEqual(spinalCase(\"Teletubbies say Eh-oh\"), \"teletubbies-say-eh-oh\", 'message: <code>spinalCase(\"Teletubbies say Eh-oh\")</code> 应该返回 <code>\"teletubbies-say-eh-oh\"</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -452,10 +452,10 @@
       "id": "a5229172f011153519423690",
       "title": "Sum All Odd Fibonacci Numbers",
       "description": [
-        "Return the sum of all odd Fibonacci numbers up to and including the passed number if it is a Fibonacci number.",
-        "The first few numbers of the Fibonacci sequence are 1, 1, 2, 3, 5 and 8, and each subsequent number is the sum of the previous two numbers.",
-        "As an example, passing 4 to the function should return 5 because all the odd Fibonacci numbers under 4 are 1, 1, and 3.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "返回所有小于传入数值的斐波那契数列中的奇数之和，如果传入的数值是斐波那契数，那么它也应该参与求和。",
+        "斐波那契数列中的前几个数字是 1、1、2、3、5 和 8，随后的每一个数字都是前两个数字之和。",
+        "例如，向 function 传入 4 应该返回 5，因为斐波那契数列中所有小于 4 的奇数是 1、1、3。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumFibs(num) {",
@@ -468,12 +468,12 @@
         "function sumFibs(num) {\n  var a = 1; \n  var b = 1;\n  var s = 0;\n  while (a <= num) {\n    if (a % 2 !== 0) {   \n      s += a; \n    }\n    a = [b, b=b+a][0];\n  }\n  return s;\n}"
       ],
       "tests": [
-        "assert(typeof sumFibs(1) === \"number\", 'message: <code>sumFibs(1)</code> should return a number.');",
-        "assert.deepEqual(sumFibs(1000), 1785, 'message: <code>sumFibs(1000)</code> should return 1785.');",
-        "assert.deepEqual(sumFibs(4000000), 4613732, 'message: <code>sumFibs(4000000)</code> should return 4613732.');",
-        "assert.deepEqual(sumFibs(4), 5, 'message: <code>sumFibs(4)</code> should return 5.');",
-        "assert.deepEqual(sumFibs(75024), 60696, 'message: <code>sumFibs(75024)</code> should return 60696.');",
-        "assert.deepEqual(sumFibs(75025), 135721, 'message: <code>sumFibs(75025)</code> should return 135721.');"
+        "assert(typeof sumFibs(1) === \"number\", 'message: <code>sumFibs(1)</code> 应该返回一个数字。');",
+        "assert.deepEqual(sumFibs(1000), 1785, 'message: <code>sumFibs(1000)</code> 应该返回 1785。');",
+        "assert.deepEqual(sumFibs(4000000), 4613732, 'message: <code>sumFibs(4000000)</code> 应该返回 4613732。');",
+        "assert.deepEqual(sumFibs(4), 5, 'message: <code>sumFibs(4)</code> 应该返回 5。');",
+        "assert.deepEqual(sumFibs(75024), 60696, 'message: <code>sumFibs(75024)</code> 应该返回 60696。');",
+        "assert.deepEqual(sumFibs(75025), 135721, 'message: <code>sumFibs(75025)</code> 应该返回 135721。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -486,10 +486,10 @@
       "id": "a3bfc1673c0526e06d3ac698",
       "title": "Sum All Primes",
       "description": [
-        "Sum all the prime numbers up to and including the provided number.",
-        "A prime number is defined as having only two divisors, 1 and itself. For example, 2 is a prime number because it's only divisible by 1 and 2. 1 isn't a prime number, because it's only divisible by itself.",
-        "The provided number may not be a prime.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "求小于等于给定数值的质数之和。",
+        "只有 1 和它本身两个约数的数叫质数。例如，2 是质数，因为它只能被 1 和 2 整除。1 不是质数，因为它只能被自身整除。",
+        "给定的数不一定是质数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumPrimes(num) {",
@@ -502,9 +502,9 @@
         "function eratosthenesArray(n) {\n    var primes = [];\n    if (n > 2) {\n        var half = n>>1;\n        var sieve = Array(half);\n        for (var i = 1, limit = Math.sqrt(n)>>1; i <= limit; i++) {\n            if (!sieve[i]) {\n                for (var step = 2*i+1, j = (step*step)>>1; j < half; j+=step) {\n                    sieve[j] = true;\n                }\n            }\n        }\n        primes.push(2);\n        for (var p = 1; p < half; p++) {\n            if (!sieve[p]) primes.push(2*p+1);\n        }\n    }\n    return primes;\n}\n\nfunction sumPrimes(num) {\n  return eratosthenesArray(num+1).reduce(function(a,b) {return a+b;}, 0);\n}\n\nsumPrimes(10);"
       ],
       "tests": [
-        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> should return a number.');",
-        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> should return 17.');",
-        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> should return 73156.');"
+        "assert.deepEqual(typeof sumPrimes(10), 'number', 'message: <code>sumPrimes(10)</code> 应该返回一个数字。');",
+        "assert.deepEqual(sumPrimes(10), 17, 'message: <code>sumPrimes(10)</code> 应该返回 17。');",
+        "assert.deepEqual(sumPrimes(977), 73156, 'message: <code>sumPrimes(977)</code> 应该返回 73156。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -518,10 +518,10 @@
       "id": "ae9defd7acaf69703ab432ea",
       "title": "Smallest Common Multiple",
       "description": [
-        "Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.",
-        "The range will be an array of two numbers that will not necessarily be in numerical order.",
-        "e.g. for 1 and 3 - find the smallest common multiple of both 1 and 3 that is evenly divisible by all numbers <em>between</em> 1 and 3.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "找出能被两个给定参数和它们之间的连续数字整除的最小公倍数。",
+        "范围是两个数字构成的数组，两个数字不一样按数字顺序排序。",
+        "例如对 1 和 3 —— 找出能被 1 和 3 和它们<em>之间</em>所有数字整除的最小公倍数。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function smallestCommons(arr) {",
@@ -535,10 +535,10 @@
         "function gcd(a, b) {\n    while (b !== 0) {\n        a = [b, b = a % b][0];\n    }\n    return a;\n}\n\nfunction lcm(a, b) {\n    return (a * b) / gcd(a, b);\n}\n\nfunction smallestCommons(arr) {\n  arr.sort(function(a,b) {return a-b;});\n  var rng = [];\n  for (var i = arr[0]; i <= arr[1]; i++) {\n    rng.push(i);\n  }\n  return rng.reduce(lcm);\n}"
       ],
       "tests": [
-        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> should return a number.');",
-        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> should return 60.');",
-        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> should return 360360.');"
+        "assert.deepEqual(typeof smallestCommons([1, 5]), 'number', 'message: <code>smallestCommons([1, 5])</code> 应该返回一个数字。');",
+        "assert.deepEqual(smallestCommons([1, 5]), 60, 'message: <code>smallestCommons([1, 5])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([5, 1]), 60, 'message: <code>smallestCommons([5, 1])</code> 应该返回 60。');",
+        "assert.deepEqual(smallestCommons([1, 13]), 360360, 'message: <code>smallestCommons([1, 13])</code> 应该返回 360360。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -551,8 +551,8 @@
       "id": "a6e40f1041b06c996f7b2406",
       "title": "Finders Keepers",
       "description": [
-        "Create a function that looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument).",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "写一个 function，它浏览数组（第一个参数）并返回数组中第一个通过某种方法（第二个参数）验证的元素。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function find(arr, func) {",
@@ -566,8 +566,8 @@
         "function find(arr, func) {\n  var num;\n  arr.some(function(e) {\n    if (func(e)) {\n      num = e;\n      return true;\n    }\n  });\n  return num;\n}"
       ],
       "tests": [
-        "assert.strictEqual(find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }), 8, 'message: <code>find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; })</code> should return 8.');",
-        "assert.strictEqual(find([1, 3, 5, 9], function(num) { return num % 2 === 0; }), undefined, 'message: <code>find([1, 3, 5, 9], function(num) { return num % 2 === 0; })</code> should return undefined.');"
+        "assert.strictEqual(find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }), 8, 'message: <code>find([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; })</code> 应该返回 8。');",
+        "assert.strictEqual(find([1, 3, 5, 9], function(num) { return num % 2 === 0; }), undefined, 'message: <code>find([1, 3, 5, 9], function(num) { return num % 2 === 0; })</code> 应该返回 undefined。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -580,9 +580,9 @@
       "id": "a5deed1811a43193f9f1c841",
       "title": "Drop it",
       "description": [
-        "Drop the elements of an array (first argument), starting from the front, until the predicate (second argument) returns true.",
-        "Return the rest of the array, otherwise return an empty array.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "从数组（第一个参数）的最前面开始丢弃其中的元素，直到谓词（第二个参数）返回 true。",
+        "返回数组剩余的部分，如果没有剩余元素则返回一个空数组。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function drop(arr, func) {",
@@ -596,12 +596,12 @@
         "function drop(arr, func) {\n  // Drop them elements.\n  while (arr.length && !func(arr[0])) {\n    arr.shift();\n  }\n  return arr;\n}"
       ],
       "tests": [
-        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n >= 3;}), [3, 4], 'message: <code>drop([1, 2, 3, 4], function(n) {return n >= 3;})</code> should return <code>[3, 4]</code>.');",
-        "assert.deepEqual(drop([0, 1, 0, 1], function(n) {return n === 1;}), [1, 0, 1], 'message: <code>drop([0, 1, 0, 1], function(n) {return n === 1;})</code> should return <code>[1, 0, 1]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3], function(n) {return n > 0;}), [1, 2, 3], 'message: <code>drop([1, 2, 3], function(n) {return n > 0;})</code> should return <code>[1, 2, 3]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n > 5;}), [], 'message: <code>drop([1, 2, 3, 4], function(n) {return n > 5;})</code> should return <code>[]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 7, 4], function(n) {return n > 3;}), [7, 4], 'message: <code>drop([1, 2, 3, 7, 4], function(n) {return n > 3;})</code> should return <code>[7, 4]</code>.');",
-        "assert.deepEqual(drop([1, 2, 3, 9, 2], function(n) {return n > 2;}), [3, 9, 2], 'message: <code>drop([1, 2, 3, 9, 2], function(n) {return n > 2;})</code> should return <code>[3, 9, 2]</code>.');"
+        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n >= 3;}), [3, 4], 'message: <code>drop([1, 2, 3, 4], function(n) {return n >= 3;})</code> 应该返回 <code>[3, 4]</code>。');",
+        "assert.deepEqual(drop([0, 1, 0, 1], function(n) {return n === 1;}), [1, 0, 1], 'message: <code>drop([0, 1, 0, 1], function(n) {return n === 1;})</code> 应该返回 <code>[1, 0, 1]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3], function(n) {return n > 0;}), [1, 2, 3], 'message: <code>drop([1, 2, 3], function(n) {return n > 0;})</code> 应该返回 <code>[1, 2, 3]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 4], function(n) {return n > 5;}), [], 'message: <code>drop([1, 2, 3, 4], function(n) {return n > 5;})</code> 应该返回 <code>[]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 7, 4], function(n) {return n > 3;}), [7, 4], 'message: <code>drop([1, 2, 3, 7, 4], function(n) {return n > 3;})</code> 应该返回 <code>[7, 4]</code>。');",
+        "assert.deepEqual(drop([1, 2, 3, 9, 2], function(n) {return n > 2;}), [3, 9, 2], 'message: <code>drop([1, 2, 3, 9, 2], function(n) {return n > 2;})</code> 应该返回 <code>[3, 9, 2]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -616,8 +616,8 @@
       "id": "ab306dbdcc907c7ddfc30830",
       "title": "Steamroller",
       "description": [
-        "Flatten a nested array. You must account for varying levels of nesting.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "对嵌套的数组进行扁平化处理。你必须考虑到不同层级的嵌套。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function steamroller(arr) {",
@@ -631,10 +631,10 @@
         "function steamroller(arr) {\n  if (!Array.isArray(arr)) {\n    return [arr];\n  }\n  var out = [];\n  arr.forEach(function(e) {\n    steamroller(e).forEach(function(v) {\n      out.push(v);\n    });\n  });\n  return out;\n}"
       ],
       "tests": [
-        "assert.deepEqual(steamroller([[[\"a\"]], [[\"b\"]]]), [\"a\", \"b\"], 'message: <code>steamroller([[[\"a\"]], [[\"b\"]]])</code> should return <code>[\"a\", \"b\"]</code>.');",
-        "assert.deepEqual(steamroller([1, [2], [3, [[4]]]]), [1, 2, 3, 4], 'message: <code>steamroller([1, [2], [3, [[4]]]])</code> should return <code>[1, 2, 3, 4]</code>.');",
-        "assert.deepEqual(steamroller([1, [], [3, [[4]]]]), [1, 3, 4], 'message: <code>steamroller([1, [], [3, [[4]]]])</code> should return <code>[1, 3, 4]</code>.');",
-        "assert.deepEqual(steamroller([1, {}, [3, [[4]]]]), [1, {}, 3, 4], 'message: <code>steamroller([1, {}, [3, [[4]]]])</code> should return <code>[1, {}, 3, 4]</code>.');"
+        "assert.deepEqual(steamroller([[[\"a\"]], [[\"b\"]]]), [\"a\", \"b\"], 'message: <code>steamroller([[[\"a\"]], [[\"b\"]]])</code> 应该返回 <code>[\"a\", \"b\"]</code>。');",
+        "assert.deepEqual(steamroller([1, [2], [3, [[4]]]]), [1, 2, 3, 4], 'message: <code>steamroller([1, [2], [3, [[4]]]])</code> 应该返回 <code>[1, 2, 3, 4]</code>。');",
+        "assert.deepEqual(steamroller([1, [], [3, [[4]]]]), [1, 3, 4], 'message: <code>steamroller([1, [], [3, [[4]]]])</code> 应该返回 <code>[1, 3, 4]</code>。');",
+        "assert.deepEqual(steamroller([1, {}, [3, [[4]]]]), [1, {}, 3, 4], 'message: <code>steamroller([1, {}, [3, [[4]]]])</code> 应该返回 <code>[1, {}, 3, 4]</code>。');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -647,9 +647,9 @@
       "id": "a8d97bd4c764e91f9d2bda01",
       "title": "Binary Agents",
       "description": [
-        "Return an English translated sentence of the passed binary string.",
-        "The binary string will be space separated.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "传入二进制字符串，翻译成英语句子并返回。",
+        "二进制字符串是以空格分隔的。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function binaryAgent(str) {",
@@ -662,8 +662,8 @@
         "function binaryAgent(str) {\n  return str.split(' ').map(function(s) { return parseInt(s, 2); }).map(function(b) { return String.fromCharCode(b);}).join('');\n}"
       ],
       "tests": [
-        "assert.deepEqual(binaryAgent('01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111'), \"Aren't bonfires fun!?\", 'message: <code>binaryAgent(\"01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111\")</code> should return \"Aren&#39;t bonfires fun!?\"');",
-        "assert.deepEqual(binaryAgent('01001001 00100000 01101100 01101111 01110110 01100101 00100000 01000110 01110010 01100101 01100101 01000011 01101111 01100100 01100101 01000011 01100001 01101101 01110000 00100001'), \"I love FreeCodeCamp!\", 'message: <code>binaryAgent(\"01001001 00100000 01101100 01101111 01110110 01100101 00100000 01000110 01110010 01100101 01100101 01000011 01101111 01100100 01100101 01000011 01100001 01101101 01110000 00100001\")</code> should return \"I love FreeCodeCamp!\"');"
+        "assert.deepEqual(binaryAgent('01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111'), \"Aren't bonfires fun!?\", 'message: <code>binaryAgent(\"01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111\")</code> 应该返回 \"Aren&#39;t bonfires fun!?\"');",
+        "assert.deepEqual(binaryAgent('01001001 00100000 01101100 01101111 01110110 01100101 00100000 01000110 01110010 01100101 01100101 01000011 01101111 01100100 01100101 01000011 01100001 01101101 01110000 00100001'), \"I love FreeCodeCamp!\", 'message: <code>binaryAgent(\"01001001 00100000 01101100 01101111 01110110 01100101 00100000 01000110 01110010 01100101 01100101 01000011 01101111 01100100 01100101 01000011 01100001 01101101 01110000 00100001\")</code> 应该返回 \"I love FreeCodeCamp!\"');"
       ],
       "type": "bonfire",
       "MDNlinks": [
@@ -677,9 +677,9 @@
       "id": "a10d2431ad0c6a099a4b8b52",
       "title": "Everything Be True",
       "description": [
-        "Check if the predicate (second argument) is truthy on all elements of a collection (first argument).",
-        "Remember, you can access object properties through either dot notation or [] notation.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "判断谓词（第二个参数）是否对一个集合（第一个参数）的所有元素都成立。",
+        "记住，你可以通过点号或方括号来访问对象的属性。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function every(collection, pre) {",
@@ -693,15 +693,15 @@
         "function every(collection, pre) {\n  // Does everyone have one of these?\n  return collection.every(function(e) { return e[pre]; });\n}"
       ],
       "tests": [
-        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\", \"sex\": \"male\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\"), true, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\", \"sex\": \"male\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\")</code> should return true.');",
-        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\"), false, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\")</code> should return false.');",
-        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\", \"age\": 2}, {\"user\": \"Dipsy\", \"sex\": \"male\", \"age\": 0}, {\"user\": \"Laa-Laa\", \"sex\": \"female\", \"age\": 5}, {\"user\": \"Po\", \"sex\": \"female\", \"age\": 4}], \"age\"), false, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\", \"age\": 0}, {\"user\": \"Dipsy\", \"sex\": \"male\", \"age\": 3}, {\"user\": \"Laa-Laa\", \"sex\": \"female\", \"age\": 5}, {\"user\": \"Po\", \"sex\": \"female\", \"age\": 4}], \"age\")</code> should return false.');",
-        "assert.strictEqual(every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true}, {\"name\": \"FastFoward\", \"onBoat\": null}], \"onBoat\"), false, 'message: <code>every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true}, {\"name\": \"FastFoward\", \"onBoat\": null}], \"onBoat\")</code> should return false');",
-        "assert.strictEqual(every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true, \"alias\": \"Repete\"}, {\"name\": \"FastFoward\", \"onBoat\": true}], \"onBoat\"), true, 'message: <code>every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true, \"alias\": \"Repete\"}, {\"name\": \"FastFoward\", \"onBoat\": true}], \"onBoat\")</code> should return true');",
-        "assert.strictEqual(every([{\"single\": \"yes\"}], \"single\"), true, 'message: <code>every([{\"single\": \"yes\"}], \"single\")</code> should return true');",
-        "assert.strictEqual(every([{\"single\": \"\"}, {\"single\": \"double\"}], \"single\"), false, 'message: <code>every([{\"single\": \"\"}, {\"single\": \"double\"}], \"single\")</code> should return false');",
-        "assert.strictEqual(every([{\"single\": \"double\"}, {\"single\": undefined}], \"single\"), false, 'message: <code>every([{\"single\": \"double\"}, {\"single\": undefined}], \"single\")</code> should return false');",
-        "assert.strictEqual(every([{\"single\": \"double\"}, {\"single\": NaN}], \"single\"), false, 'message: <code>every([{\"single\": \"double\"}, {\"single\": NaN}], \"single\")</code> should return false');"
+        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\", \"sex\": \"male\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\"), true, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\", \"sex\": \"male\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\")</code> 应该返回 true。');",
+        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\"), false, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\"}, {\"user\": \"Dipsy\"}, {\"user\": \"Laa-Laa\", \"sex\": \"female\"}, {\"user\": \"Po\", \"sex\": \"female\"}], \"sex\")</code> 应该返回 false。');",
+        "assert.strictEqual(every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\", \"age\": 2}, {\"user\": \"Dipsy\", \"sex\": \"male\", \"age\": 0}, {\"user\": \"Laa-Laa\", \"sex\": \"female\", \"age\": 5}, {\"user\": \"Po\", \"sex\": \"female\", \"age\": 4}], \"age\"), false, 'message: <code>every([{\"user\": \"Tinky-Winky\", \"sex\": \"male\", \"age\": 0}, {\"user\": \"Dipsy\", \"sex\": \"male\", \"age\": 3}, {\"user\": \"Laa-Laa\", \"sex\": \"female\", \"age\": 5}, {\"user\": \"Po\", \"sex\": \"female\", \"age\": 4}], \"age\")</code> 应该返回 false。');",
+        "assert.strictEqual(every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true}, {\"name\": \"FastFoward\", \"onBoat\": null}], \"onBoat\"), false, 'message: <code>every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true}, {\"name\": \"FastFoward\", \"onBoat\": null}], \"onBoat\")</code> 应该返回 false');",
+        "assert.strictEqual(every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true, \"alias\": \"Repete\"}, {\"name\": \"FastFoward\", \"onBoat\": true}], \"onBoat\"), true, 'message: <code>every([{\"name\": \"Pete\", \"onBoat\": true}, {\"name\": \"Repeat\", \"onBoat\": true, \"alias\": \"Repete\"}, {\"name\": \"FastFoward\", \"onBoat\": true}], \"onBoat\")</code> 应该返回 true');",
+        "assert.strictEqual(every([{\"single\": \"yes\"}], \"single\"), true, 'message: <code>every([{\"single\": \"yes\"}], \"single\")</code> 应该返回 true');",
+        "assert.strictEqual(every([{\"single\": \"\"}, {\"single\": \"double\"}], \"single\"), false, 'message: <code>every([{\"single\": \"\"}, {\"single\": \"double\"}], \"single\")</code> 应该返回 false');",
+        "assert.strictEqual(every([{\"single\": \"double\"}, {\"single\": undefined}], \"single\"), false, 'message: <code>every([{\"single\": \"double\"}, {\"single\": undefined}], \"single\")</code> 应该返回 false');",
+        "assert.strictEqual(every([{\"single\": \"double\"}, {\"single\": NaN}], \"single\"), false, 'message: <code>every([{\"single\": \"double\"}, {\"single\": NaN}], \"single\")</code> 应该返回 false');"
       ],
       "isRequired": true,
       "type": "bonfire",
@@ -711,13 +711,13 @@
       "id": "a97fd23d9b809dac9921074f",
       "title": "Arguments Optional",
       "description": [
-        "Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.",
-        "For example, <code>add(2, 3)</code> should return <code>5</code>, and <code>add(2)</code> should return a function.",
-        "Calling this returned function with a single argument will then return the sum:",
+        "创建一个计算两个参数之和的 function。如果只有一个参数，则返回一个 function，该 function 请求一个参数然后返回求和的结果。",
+        "例如，<code>add(2, 3)</code> 应该返回 <code>5</code>，而 <code>add(2)</code> 应该返回一个 function。",
+        "调用这个有一个参数的返回的 function，返回求和的结果：",
         "<code>var sumTwoAnd = add(2);</code>",
-        "<code>sumTwoAnd(3)</code> returns <code>5</code>.",
-        "If either argument isn't a valid number, return undefined.",
-        "Remember to use <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> if you get stuck. Try to pair program. Write your own code."
+        "<code>sumTwoAnd(3)</code> 返回 <code>5</code>。",
+        "如果两个参数都不是有效的数字，则返回 undefined。",
+        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function add() {",
@@ -730,11 +730,11 @@
         "function add() {\n  var a = arguments[0];\n  if (toString.call(a) !== '[object Number]') return;  \n  if (arguments.length === 1) {\n    return function(b) {\n      if (toString.call(b) !== '[object Number]') return;\n      return a + b;\n    };\n  }\n  var b = arguments[1];\n  if (toString.call(b) !== '[object Number]') return;  \n  return a + arguments[1];\n}"
       ],
       "tests": [
-        "assert.deepEqual(add(2, 3), 5, 'message: <code>add(2, 3)</code> should return 5.');",
-        "assert.deepEqual(add(2)(3), 5, 'message: <code>add(2)(3)</code> should return 5.');",
-        "assert.isUndefined(add(\"http://bit.ly/IqT6zt\"), 'message: <code>add(\"http://bit.ly/IqT6zt\")</code> should return undefined.');",
-        "assert.isUndefined(add(2, \"3\"), 'message: <code>add(2, \"3\")</code> should return undefined.');",
-        "assert.isUndefined(add(2)([3]), 'message: <code>add(2)([3])</code> should return undefined.');"
+        "assert.deepEqual(add(2, 3), 5, 'message: <code>add(2, 3)</code> 应该返回 5。');",
+        "assert.deepEqual(add(2)(3), 5, 'message: <code>add(2)(3)</code> 应该返回 5。');",
+        "assert.isUndefined(add(\"http://bit.ly/IqT6zt\"), 'message: <code>add(\"http://bit.ly/IqT6zt\")</code> 应该返回 undefined。');",
+        "assert.isUndefined(add(2, \"3\"), 'message: <code>add(2, \"3\")</code> 应该返回 undefined。');",
+        "assert.isUndefined(add(2)([3]), 'message: <code>add(2)([3])</code> 应该返回 undefined。');"
       ],
       "type": "bonfire",
       "MDNlinks": [

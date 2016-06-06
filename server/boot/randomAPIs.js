@@ -20,6 +20,7 @@ module.exports = function(app) {
   router.get('/api/trello', trelloCalls);
   router.get('/sitemap.xml', sitemap);
   router.get('/chat', chat);
+  router.get('/home', home);
   router.get('/coding-bootcamp-cost-calculator', bootcampCalculator);
   router.get('/twitch', twitch);
   router.get('/pmi-acp-agile-project-managers', agileProjectManagers);
@@ -44,6 +45,25 @@ module.exports = function(app) {
   router.get('/code-of-conduct', codeOfConduct);
   router.get('/academic-honesty', academicHonesty);
   router.route('/leader-board').get(leaderBoard);
+  router.route('/master').get(master);
+  router.route('/newer').get(newer);
+  router.route('/women').get(women);
+  // router.route('/newer').get(newer);
+  // router.route('/women').get(women);
+  router.route('/has-username').post(hasUsername);
+  router.route('/has-join').post(hasJoin);
+  router.route('/add-telphone').post(addTelphone);
+  router.get('/code',function(req,res){
+    res.render('resources/code',{
+      title: "苏州全民在线编程挑战赛"
+    });
+  })
+  router.get('/progress',function(req,res){
+    res.render('resources/progress',{
+      title: "学习进度排行榜"
+    });
+  })
+
 
   router.get(
     '/the-fastest-web-page-on-the-internet',
@@ -166,6 +186,9 @@ module.exports = function(app) {
 
   function chat(req, res) {
     res.redirect('https://gitter.im/FreeCodeCamp/chinese');
+  }
+  function home(req,res){
+    res.render('home')
   }
 
   function showLabs(req, res) {
@@ -300,10 +323,77 @@ module.exports = function(app) {
       var data = user.slice();
       for(var i=0;i<data.length;i++){
           data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
           delete data[i].progressTimestamps;
       };
       res.send(data);
     });
+  }
+  function master(req,res,next){
+    User.find({ where: { "category" : "master"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for(var i=0;i<data.length;i++){
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
+      };
+      res.send(data);
+    });
+  }
+  function newer(req,res,next){
+    User.find({ where: { "category" : "newer"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for(var i=0;i<data.length;i++){
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
+      };
+      res.send(data);
+    });
+  }
+  function women(req,res,next){
+    User.find({ where: { "category" : "women"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for(var i=0;i<data.length;i++){
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
+      };
+      res.send(data);
+    });
+  }
+  function hasUsername(req,res,next){
+    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
+      if(err) { return next(err); }
+      //res.send(user);
+      if(user){
+        res.send({"status":200});
+      }else{
+        res.send({"status":404});
+      }
+    })
+  }
+  function hasJoin(req,res,next){
+    User.findOne({where:{"username": req.body.username,'telphone':req.body.telphone}},(err,user) => {
+      if(err) { return next(err); }
+      if(user){
+        res.send({"status":200});
+      }else{
+        res.send({"status":404});
+      }
+    })
+  }
+  function addTelphone(req,res,next){
+    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
+      if(err) { return next(err); }
+      user.updateAttributes({'telphone':req.body.telphone,'category':req.body.category}, (err,user) =>{
+        if (err) { return next(err); }
+        res.send({"status":200});
+      })
+    })
   }
 
   function unsubscribeMonthly(req, res, next) {
