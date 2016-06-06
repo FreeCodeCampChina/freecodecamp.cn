@@ -69,13 +69,13 @@ block content
           .modal-footer
             button.btn.btn-primary(type='button', data-dismiss='modal') 关闭此窗口
             button#commit.btn.btn-default(ng-click='commit();') 确定无误，提交
-    .container
-    h4.text-center 人人皆可编程
-    p.text-center(style='padding-top:20px;') 本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。
-    p.text-center 全民编程时代已经来临，编程技能将会成为一项基本素质。
-    p.text-center 本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。
+    .container-fluid
+      h4.text-center 人人皆可编程
+      p.text-center(style='padding-top:20px;') 本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。
+      p.text-center 全民编程时代已经来临，编程技能将会成为一项基本素质。
+      p.text-center 本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。
     hr
-    .container
+    .container-fluid
     h4.text-center 比赛平台：FreeCodeCamp中文社区
     .row
       .col-xs-12.col-sm-12.col-md-3
@@ -107,19 +107,19 @@ block content
         span 开发公益项目
         .spacer
     hr
-    .container
+    .container-fluid
     h4.text-center 赛程
     embed(src='images/timeline.svg', type='image/svg+xml')
     hr
-    .container
+    .container-fluid
     h4.text-center 分组
     embed(src='images/groups.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='margin-left:20px;')
     hr
-    .container
+    .container-fluid
     h4.text-center 评分（标星的必做）
     embed(src='images/challenges.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/')
     hr
-    .container(style='width:100%;')
+    .container-fluid(style='width:100%;')
     h4.text-center 奖品
     #carousel-example-generic.carousel.slide(data-ride='carousel')
       // Wrapper for slides
