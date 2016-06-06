@@ -25,9 +25,9 @@
         "// Fake Comment\n/* Another Comment */"
       ],
       "tests": [
-        "assert(code.match(/(\\/\\/)...../g), 'message: Create a <code>//</code> style comment that contains at least five letters.');",
-        "assert(code.match(/(\\/\\*)[\\w\\W]{5,}(?=\\*\\/)/gm), 'message: Create a <code>/* */</code> style comment that contains at least five letters.');",
-        "assert(code.match(/(\\*\\/)/g), 'message: Make sure that you close the comment with a <code>*/</code>.');"
+        "assert(code.match(/(\\/\\/)...../g), 'message: 创建一个 <code>//</code> 样式的注释, 被注释的文本至少要包含5个字符.');",
+        "assert(code.match(/(\\/\\*)[\\w\\W]{5,}(?=\\*\\/)/gm), 'message: 创建一个 <code>/* */</code> 样式的注释, 被注释的文本至少要包含5个字符.');",
+        "assert(code.match(/(\\*\\/)/g), 'message: 确保你有使用<code>*/</code>关闭注释.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -62,7 +62,7 @@
         "var myName;"
       ],
       "tests": [
-        "assert(/var\\s+myName\\s*;/.test(code), 'message: You should declare <code>myName</code> with the <code>var</code> keyword, ending with a semicolon');"
+        "assert(/var\\s+myName\\s*;/.test(code), 'message: 你需要使用<code>var</code>关键字定义一个变量<code>myName</code>, 并使用分号结尾。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -97,10 +97,10 @@
         "var a;\nvar b = 2;\na = 7;\nb = a;"
       ],
       "tests": [
-        "assert(/var a;/.test(code) && /var b = 2;/.test(code), 'message: Do not change code above the line');",
-        "assert(typeof a === 'number' && a === 7, 'message: <code>a</code> should have a value of 7');",
-        "assert(typeof b === 'number' && b === 7, 'message: <code>b</code> should have a value of 7');",
-        "assert(/b\\s*=\\s*a\\s*;/g.test(code), 'message: <code>a</code> should be assigned to <code>b</code> with <code>=</code>');"
+        "assert(/var a;/.test(code) && /var b = 2;/.test(code), 'message: 不要修改<code>// Only change code below this line</code>上面的代码');",
+        "assert(typeof a === 'number' && a === 7, 'message: <code>a</code> 的值应该是 7');",
+        "assert(typeof b === 'number' && b === 7, 'message: <code>b</code> 的值应该是 7');",
+        "assert(/b\\s*=\\s*a\\s*;/g.test(code), 'message: 你需要用<code>=</code>把<code>a</code>的值赋给<code>b</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -130,7 +130,7 @@
         "var a = 9;"
       ],
       "tests": [
-        "assert(/var\\s+a\\s*=\\s*9\\s*/.test(code), 'message: Initialize <code>a</code> to a value of <code>9</code>');"
+        "assert(/var\\s+a\\s*=\\s*9\\s*/.test(code), 'message: 你需要初始化 <code>a</code> 的值为 <code>9</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -164,10 +164,10 @@
         "var a = 5;\nvar b = 10;\nvar c = \"I am a\";\na = a + 1;\nb = b + 5;\nc = c + \" String!\";"
       ],
       "tests": [
-        "assert(typeof a === 'number' && a === 6, 'message: <code>a</code> should be defined and have a value of <code>6</code>');",
-        "assert(typeof b === 'number' && b === 15, 'message: <code>b</code> should be defined and have a value of <code>15</code>');",
-        "assert(!/undefined/.test(c) && c === \"I am a String!\", 'message: <code>c</code> should not contain <code>undefined</code> and should have a value of \"I am a String!\"');",
-        "assert(/a = a \\+ 1;/.test(code) && /b = b \\+ 5;/.test(code) && /c = c \\+ \" String!\";/.test(code), 'message: Do not change code below the line');"
+        "assert(typeof a === 'number' && a === 6, 'message: <code>a</code> 应该是已经定义的, 并且值为 <code>6</code>');",
+        "assert(typeof b === 'number' && b === 15, 'message: <code>b</code> 应该是已经定义的, 并且值为 <code>15</code>');",
+        "assert(!/undefined/.test(c) && c === \"I am a String!\", 'message: <code>c</code> 不能包含 <code>undefined</code>, 并且值应该为 \"I am a String!\"');",
+        "assert(/a = a \\+ 1;/.test(code) && /b = b \\+ 5;/.test(code) && /c = c \\+ \" String!\";/.test(code), 'message: 不要修改<code>// Do not change code below this line</code>下面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -201,12 +201,12 @@
         "var studlyCapVar;\nvar properCamelCase;\nvar titleCaseOver;\n\nstudlyCapVar = 10;\nproperCamelCase = \"A String\";\ntitleCaseOver = 9000;"
       ],
       "tests": [
-        "assert(typeof studlyCapVar !== 'undefined' && studlyCapVar === 10, 'message: <code>studlyCapVar</code> is defined and has a value of <code>10</code>');",
-        "assert(typeof properCamelCase !== 'undefined' && properCamelCase === \"A String\", 'message: <code>properCamelCase</code> is defined and has a value of <code>\"A String\"</code>');",
-        "assert(typeof titleCaseOver !== 'undefined' && titleCaseOver === 9000, 'message: <code>titleCaseOver</code> is defined and has a value of <code>9000</code>');",
-        "assert(code.match(/studlyCapVar/g).length === 2, 'message: <code>studlyCapVar</code> should use camelCase in both declaration and assignment sections.');",
-        "assert(code.match(/properCamelCase/g).length === 2, 'message: <code>properCamelCase</code> should use camelCase in both declaration and assignment sections.');",
-        "assert(code.match(/titleCaseOver/g).length === 2, 'message: <code>titleCaseOver</code> should use camelCase in both declaration and assignment sections.');"
+        "assert(typeof studlyCapVar !== 'undefined' && studlyCapVar === 10, 'message: <code>studlyCapVar</code> 应该被定义并且值为 <code>10</code>');",
+        "assert(typeof properCamelCase !== 'undefined' && properCamelCase === \"A String\", 'message: <code>properCamelCase</code> 应该被定义并且值为 <code>\"A String\"</code>');",
+        "assert(typeof titleCaseOver !== 'undefined' && titleCaseOver === 9000, 'message: <code>titleCaseOver</code> 应该被定义并且值为 <code>9000</code>');",
+        "assert(code.match(/studlyCapVar/g).length === 2, 'message: <code>studlyCapVar</code> 应该同时在声明和赋值时使用驼峰命名法');",
+        "assert(code.match(/properCamelCase/g).length === 2, 'message: <code>properCamelCase</code> 应该同时在声明和赋值时使用驼峰命名法');",
+        "assert(code.match(/titleCaseOver/g).length === 2, 'message: <code>titleCaseOver</code> 应该同时在声明和赋值时使用驼峰命名法');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -235,8 +235,8 @@
         "var sum = 10 + 10;"
       ],
       "tests": [
-        "assert(sum === 20, 'message: <code>sum</code> should equal <code>20</code>');",
-        "assert(/\\+/.test(code), 'message: Use the <code>+</code> operator');"
+        "assert(sum === 20, 'message: <code>sum</code> 应该等于 <code>20</code>');",
+        "assert(/\\+/.test(code), 'message: 要使用 <code>+</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -266,9 +266,9 @@
         "var difference = 45 - 33;"
       ],
       "tests": [
-        "assert(difference === 12, 'message: Make the variable <code>difference</code> equal 12.');",
-        "assert((code).match(/difference/g).length === 1,'message: Only change the first line');",
-        "assert(/\\d+\\s*-\\s*\\d+/.test(code),'message: Use the <code>-</code> operator');"
+        "assert(difference === 12, 'message: 需要使 <code>difference</code> 的值等于 12.');",
+        "assert((code).match(/difference/g).length === 1,'message: 只能修改第一行代码');",
+        "assert(/\\d+\\s*-\\s*\\d+/.test(code),'message: 使用 <code>-</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -298,8 +298,8 @@
         "var product = 8 * 10;"
       ],
       "tests": [
-        "assert(product === 80,'message: Make the variable <code>product</code> equal 80');",
-        "assert(/\\*/.test(code), 'message: Use the <code>*</code> operator');"
+        "assert(product === 80,'message: 需要使 <code>product</code> 的值等于 80');",
+        "assert(/\\*/.test(code), 'message: 使用 <code>*</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -329,8 +329,8 @@
         "var quotient = 66 / 33;"
       ],
       "tests": [
-        "assert(quotient === 2, 'message: Make the variable <code>quotient</code> equal to 2.');",
-        "assert(/\\d+\\s*\\/\\s*\\d+/.test(code), 'message: Use the <code>/</code> operator');"
+        "assert(quotient === 2, 'message: 需要使 <code>quotient</code> 的值等于 2.');",
+        "assert(/\\d+\\s*\\/\\s*\\d+/.test(code), 'message: 使用 <code>/</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -362,9 +362,9 @@
         "var myVar = 87;\nmyVar++;"
       ],
       "tests": [
-        "assert(myVar === 88, 'message: <code>myVar</code> should equal <code>88</code>');",
-        "assert(/myVar\\s*[+]{2}/.test(code), 'message: Use the <code>++</code> operator');",
-        "assert(/var myVar = 87;/.test(code), 'message: Do not change code above the line');"
+        "assert(myVar === 88, 'message: <code>myVar</code> 应该等于 <code>88</code>');",
+        "assert(/myVar\\s*[+]{2}/.test(code), 'message: 使用 <code>++</code> 运算符');",
+        "assert(/var myVar = 87;/.test(code), 'message: 不要修改<code>// Only change code below this line</code>上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -396,9 +396,9 @@
         "var myVar = 11;\nmyVar--;"
       ],
       "tests": [
-        "assert(myVar === 10, 'message: <code>myVar</code> should equal <code>10</code>');",
-        "assert(/myVar\\s*[-]{2}/.test(code), 'message: Use the <code>--</code> operator on <code>myVar</code>');",
-        "assert(/var myVar = 11;/.test(code), 'message: Do not change code above the line');"
+        "assert(myVar === 10, 'message: <code>myVar</code> 应该等于 <code>10</code>');",
+        "assert(/myVar\\s*[-]{2}/.test(code), 'message: 对<code>myVar</code>使用 <code>--</code> 运算符 ');",
+        "assert(/var myVar = 11;/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -426,8 +426,8 @@
         "var myDecimal = 9.9;"
       ],
       "tests": [
-        "assert(typeof myDecimal === \"number\", 'message: <code>myDecimal</code> should be a number.');",
-        "assert(myDecimal % 1 != 0, 'message: <code>myDecimal</code> should have a decimal point'); "
+        "assert(typeof myDecimal === \"number\", 'message: <code>myDecimal</code> 应该是一个数字.');",
+        "assert(myDecimal % 1 != 0, 'message: <code>myDecimal</code> 应该包含小数点'); "
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -453,8 +453,8 @@
         "var product = 2.0 * 2.5;"
       ],
       "tests": [
-        "assert(product === 5.0, 'message: The variable <code>product</code> should equal <code>5.0</code>.');",
-        "assert(/\\*/.test(code), 'message: You should use the <code>*</code> operator');"
+        "assert(product === 5.0, 'message: <code>product</code> 的值应该等于 <code>5.0</code>.');",
+        "assert(/\\*/.test(code), 'message: 需要使用 <code>*</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -479,8 +479,8 @@
         "var quotient = 4.4 / 2.0;"
       ],
       "tests": [
-        "assert(quotient === 2.2, 'message: The variable <code>quotient</code> should equal <code>2.2</code>.');",
-        "assert(/\\//.test(code), 'message: You should use the <code>/</code> operator');"
+        "assert(quotient === 2.2, 'message: <code>quotient</code> 的值应该等于 <code>2.2</code>.');",
+        "assert(/\\//.test(code), 'message: 需要使用 <code>/</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -511,8 +511,8 @@
         "var remainder =  11 % 3;"
       ],
       "tests": [
-        "assert(remainder === 2, 'message: The value of <code>remainder</code> should be <code>2</code>');",
-        "assert(/\\d+\\s*%\\s*\\d+/.test(code), 'message: You should use the <code>%</code> operator');"
+        "assert(remainder === 2, 'message: <code>remainder</code> 的值应该等于2 <code>2</code>');",
+        "assert(/\\d+\\s*%\\s*\\d+/.test(code), 'message: 需要使用 <code>%</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -550,11 +550,11 @@
         "var a = 3;\nvar b = 17;\nvar c = 12;\n\na += 12;\nb += 9;\nc += 7;"
       ],
       "tests": [
-        "assert(a === 15, 'message: <code>a</code> should equal <code>15</code>');",
-        "assert(b === 26, 'message: <code>b</code> should equal <code>26</code>');",
-        "assert(c === 19, 'message: <code>c</code> should equal <code>19</code>');",
-        "assert(code.match(/\\+=/g).length === 3, 'message: You should use the <code>+=</code> operator for each variable');",
-        "assert(/var a = 3;/.test(code) && /var b = 17;/.test(code) && /var c = 12;/.test(code), 'message: Do not modify the code above the line');"
+        "assert(a === 15, 'message: <code>a</code> 应该等于 <code>15</code>');",
+        "assert(b === 26, 'message: <code>b</code> 应该等于 <code>26</code>');",
+        "assert(c === 19, 'message: <code>c</code> 应该等于 <code>19</code>');",
+        "assert(code.match(/\\+=/g).length === 3, 'message: 你应该对每个变量使用 <code>+=</code> 操作符');",
+        "assert(/var a = 3;/.test(code) && /var b = 17;/.test(code) && /var c = 12;/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -591,11 +591,11 @@
         "var a = 11;\nvar b = 9;\nvar c = 3;\n\na -= 6;\nb -= 15;\nc -= 1;\n\n"
       ],
       "tests": [
-        "assert(a === 5, 'message: <code>a</code> should equal <code>5</code>');",
-        "assert(b === -6, 'message: <code>b</code> should equal <code>-6</code>');",
-        "assert(c === 2, 'message: <code>c</code> should equal <code>2</code>');",
-        "assert(code.match(/-=/g).length === 3, 'message: You should use the <code>-=</code> operator for each variable');",
-        "assert(/var a = 11;/.test(code) && /var b = 9;/.test(code) && /var c = 3;/.test(code), 'message: Do not modify the code above the line');"
+        "assert(a === 5, 'message: <code>a</code> 应该等于 <code>5</code>');",
+        "assert(b === -6, 'message: <code>b</code> 应该等于 <code>-6</code>');",
+        "assert(c === 2, 'message: <code>c</code> 应该等于 <code>2</code>');",
+        "assert(code.match(/-=/g).length === 3, 'message: 应该对每个变量使用 <code>-=</code> 操作符');",
+        "assert(/var a = 11;/.test(code) && /var b = 9;/.test(code) && /var c = 3;/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -632,11 +632,11 @@
         "var a = 5;\nvar b = 12;\nvar c = 4.6;\n\na *= 5;\nb *= 3;\nc *= 10;"
       ],
       "tests": [
-        "assert(a === 25, 'message: <code>a</code> should equal <code>25</code>');",
-        "assert(b === 36, 'message: <code>b</code> should equal <code>36</code>');",
-        "assert(c === 46, 'message: <code>c</code> should equal <code>46</code>');",
-        "assert(code.match(/\\*=/g).length === 3, 'message: You should use the <code>*=</code> operator for each variable');",
-        "assert(/var a = 5;/.test(code) && /var b = 12;/.test(code) && /var c = 4\\.6;/.test(code), 'message: Do not modify the code above the line');"
+        "assert(a === 25, 'message: <code>a</code> 应该等于 <code>25</code>');",
+        "assert(b === 36, 'message: <code>b</code> 应该等于 <code>36</code>');",
+        "assert(c === 46, 'message: <code>c</code> 应该等于 <code>46</code>');",
+        "assert(code.match(/\\*=/g).length === 3, 'message: 应该对每个变量使用 <code>*=</code> 操作符');",
+        "assert(/var a = 5;/.test(code) && /var b = 12;/.test(code) && /var c = 4\\.6;/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -672,11 +672,11 @@
         "var a = 48;\nvar b = 108;\nvar c = 33;\n\na /= 12;\nb /= 4;\nc /= 11;"
       ],
       "tests": [
-        "assert(a === 4, 'message: <code>a</code> should equal <code>4</code>');",
-        "assert(b === 27, 'message: <code>b</code> should equal <code>27</code>');",
-        "assert(c === 3, 'message: <code>c</code> should equal <code>3</code>');",
-        "assert(code.match(/\\/=/g).length === 3, 'message: You should use the <code>/=</code> operator for each variable');",
-        "assert(/var a = 48;/.test(code) && /var b = 108;/.test(code) && /var c = 33;/.test(code), 'message: Do not modify the code above the line');"
+        "assert(a === 4, 'message: <code>a</code> 应该等于 <code>4</code>');",
+        "assert(b === 27, 'message: <code>b</code> 应该等于 <code>27</code>');",
+        "assert(c === 3, 'message: <code>c</code> 应该等于 <code>3</code>');",
+        "assert(code.match(/\\/=/g).length === 3, 'message: 应该对每个变量使用 <code>/=</code> 操作符');",
+        "assert(/var a = 48;/.test(code) && /var b = 108;/.test(code) && /var c = 33;/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -706,12 +706,12 @@
         "function convert(celsius) {\n  var fahrenheit = celsius * 9/5 + 32;\n  if ( typeof fahrenheit !== 'undefined' ) {\n  return fahrenheit;\n  } else {\n    return 'fahrenheit not defined';\n  }\n}"
       ],
       "tests": [
-        "assert(typeof convert(0) === 'number', 'message: <code>convert(0)</code> should return a number');",
-        "assert(convert(-30) === -22, 'message: <code>convert(-30)</code> should return a value of <code>-22</code>');",
-        "assert(convert(-10) === 14, 'message: <code>convert(-10)</code> should return a value of <code>14</code>');",
-        "assert(convert(0) === 32, 'message: <code>convert(0)</code> should return a value of <code>32</code>');",
-        "assert(convert(20) === 68, 'message: <code>convert(20)</code> should return a value of <code>68</code>');",
-        "assert(convert(30) === 86, 'message: <code>convert(30)</code> should return a value of <code>86</code>');"
+        "assert(typeof convert(0) === 'number', 'message: <code>convert(0)</code> 应该返回一个数字');",
+        "assert(convert(-30) === -22, 'message: <code>convert(-30)</code> 应该返回 <code>-22</code>');",
+        "assert(convert(-10) === 14, 'message: <code>convert(-10)</code> 应该返回 <code>14</code>');",
+        "assert(convert(0) === 32, 'message: <code>convert(0)</code> 应该返回 <code>32</code>');",
+        "assert(convert(20) === 68, 'message: <code>convert(20)</code> 应该返回 <code>68</code>');",
+        "assert(convert(30) === 86, 'message: <code>convert(30)</code> 应该返回 <code>86</code>');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -743,8 +743,8 @@
         "var myFirstName = \"Alan\";\nvar myLastName = \"Turing\";"
       ],
       "tests": [
-        "assert((function(){if(typeof myFirstName !== \"undefined\" && typeof myFirstName === \"string\" && myFirstName.length > 0){return true;}else{return false;}})(), 'message: <code>myFirstName</code> should be a string with at least one character in it.');",
-        "assert((function(){if(typeof myLastName !== \"undefined\" && typeof myLastName === \"string\" && myLastName.length > 0){return true;}else{return false;}})(), 'message: <code>myLastName</code> should be a string with at least one character in it.');"
+        "assert((function(){if(typeof myFirstName !== \"undefined\" && typeof myFirstName === \"string\" && myFirstName.length > 0){return true;}else{return false;}})(), 'message: <code>myFirstName</code> 应该是一个字符串,并且至少包含一个字符.');",
+        "assert((function(){if(typeof myLastName !== \"undefined\" && typeof myLastName === \"string\" && myLastName.length > 0){return true;}else{return false;}})(), 'message: <code>myLastName</code> 应该是一个字符串,并且至少包含一个字符.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -781,8 +781,8 @@
         "var myStr = \"I am a \\\"double quoted\\\" string inside \\\"double quotes\\\"\";"
       ],
       "tests": [
-        "assert(code.match(/\\\\\"/g).length === 4 && code.match(/[^\\\\]\"/g).length === 2, 'message: You should use two double quotes (<code>&quot;</code>) and four escaped double quotes (<code>&#92;&quot;</code>) ');",
-        "assert(myStr === \"I am a \\\"double quoted\\\" string inside \\\"double quotes\\\"\", 'message: Variable myStr should equal to (<code>\"I am a \"double quoted\" string inside \"double quotes\"\"</code>).');"
+        "assert(code.match(/\\\\\"/g).length === 4 && code.match(/[^\\\\]\"/g).length === 2, 'message: 你的代码中应该包含两个双引号 (<code>&quot;</code>) 以及四个转义的双引号 (<code>&#92;&quot;</code>) ');",
+        "assert(myStr === \"I am a \\\"double quoted\\\" string inside \\\"double quotes\\\"\", 'message: <code>myStr</code> 应该的值应该为 (<code>\"I am a \"double quoted\" string inside \"double quotes\"\"</code>).');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -811,9 +811,9 @@
         "var myStr = '<a href=\"http://www.example.com\" target=\"_blank\">Link</a>';"
       ],
       "tests": [
-        "assert(!/\\\\/g.test(code), 'message: Remove all the <code>backslashes</code> (<code>\\</code>)');",
-        "assert(code.match(/\"/g).length === 4 && code.match(/'/g).length === 2, 'message: You should have two single quotes <code>&#39;</code> and four double quotes <code>&quot;</code>');",
-        "assert(myStr === '<a href=\"http://www.example.com\" target=\"_blank\">Link</a>', 'message: Only remove the backslashes <code>\\</code> used to escape quotes.');"
+        "assert(!/\\\\/g.test(code), 'message: 移除所有的 <code>反斜线</code> (<code>\\</code>)');",
+        "assert(code.match(/\"/g).length === 4 && code.match(/'/g).length === 2, 'message: 你的代码中应该包含两个单引号 <code>&#39;</code> 以及四个双引号 <code>&quot;</code>');",
+        "assert(myStr === '<a href=\"http://www.example.com\" target=\"_blank\">Link</a>', 'message: 仅仅移除反斜线 <code>\\</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
