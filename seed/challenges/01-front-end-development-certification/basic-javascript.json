@@ -844,7 +844,7 @@
         "var myStr = \"\\\\ \\t \\t \\r \\n\";"
       ],
       "tests": [
-        "assert(myStr === \"\\\\ \\t \\t \\r \\n\", 'message: <code>myStr</code> should have the escape sequences for <code>backslash tab tab carriage-return new-line</code> separated by spaces');"
+        "assert(myStr === \"\\\\ \\t \\t \\r \\n\", 'message: <code>myStr</code> 应该包含被转义的字符, 并且按照 <code>反斜杠 制表符 制表符 回车符 换行符</code> 的顺序用空格分开');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -884,10 +884,10 @@
         "var ourStr = \"I come first. \" + \"I come second.\";\nvar myStr = \"This is the start. \" + \"This is the end.\";"
       ],
       "tests": [
-        "assert(myStr === \"This is the start. This is the end.\", 'message: <code>myStr</code> should have a value of <code>This is the start. This is the end.</code>');",
-        "assert(code.match(/([\"']).*([\"'])\\s*\\+\\s*([\"']).*([\"'])/g).length > 1, 'message: Use the <code>+</code> operator to build <code>myStr</code>');",
-        "assert(/var\\s+myStr/.test(code), 'message: <code>myStr</code> should be created using the <code>var</code> keyword.');",
-        "assert(/myStr\\s*=/.test(code), 'message: Make sure to assign the result to the <code>myStr</code> variable.');"
+        "assert(myStr === \"This is the start. This is the end.\", 'message: <code>myStr</code> 的值应该是 <code>This is the start. This is the end.</code>');",
+        "assert(code.match(/([\"']).*([\"'])\\s*\\+\\s*([\"']).*([\"'])/g).length > 1, 'message: 使用 <code>+</code> 操作符构建 <code>myStr</code>');",
+        "assert(/var\\s+myStr/.test(code), 'message: <code>myStr</code> 应该使用 <code>var</code> 关键字来声明.');",
+        "assert(/myStr\\s*=/.test(code), 'message: 确保有给 <code>myStr</code> 赋值.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -926,8 +926,8 @@
         "var ourStr = \"I come first. \";\nourStr += \"I come second.\";\n\nvar myStr = \"This is the first sentence. \";\nmyStr += \"This is the second sentence.\";"
       ],
       "tests": [
-        "assert(myStr === \"This is the first sentence. This is the second sentence.\", 'message: <code>myStr</code> should have a value of <code>This is the first sentence. This is the second sentence.</code>');",
-        "assert(code.match(/\\w\\s*\\+=\\s*[\"']/g).length > 1 && code.match(/\\w\\s*\\=\\s*[\"']/g).length > 1, 'message: Use the <code>+=</code> operator to build <code>myStr</code>');"
+        "assert(myStr === \"This is the first sentence. This is the second sentence.\", 'message: <code>myStr</code> 的值应该是 <code>This is the first sentence. This is the second sentence.</code>');",
+        "assert(code.match(/\\w\\s*\\+=\\s*[\"']/g).length > 1 && code.match(/\\w\\s*\\=\\s*[\"']/g).length > 1, 'message: 使用 <code>+=</code> 操作符创建 <code>myStr</code> 变量');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -973,8 +973,8 @@
         "var myName = \"Bob\";\nvar myStr = \"My name is \" + myName + \" and I am swell!\";"
       ],
       "tests": [
-        "assert(typeof myName !== 'undefined' && myName.length > 2, 'message: <code>myName</code> should be set to a string at least 3 characters long');",
-        "assert(code.match(/[\"']\\s*\\+\\s*myName\\s*\\+\\s*[\"']/g).length > 0, 'message: Use two <code>+</code> operators to build <code>myStr</code> with <code>myName</code> inside it');"
+        "assert(typeof myName !== 'undefined' && myName.length > 2, 'message: <code>myName</code> 至少要包含三个字符');",
+        "assert(code.match(/[\"']\\s*\\+\\s*myName\\s*\\+\\s*[\"']/g).length > 0, 'message: 使用两个 <code>+</code> 操作符创建 <code>myStr</code> 变量');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1020,8 +1020,8 @@
         "var anAdjective = \"awesome!\";\nvar ourStr = \"Free Code Camp is \";\nourStr += anAdjective;\n\nvar someAdjective = \"neat\";\nvar myStr = \"Learning to code is \";\nmyStr += someAdjective;"
       ],
       "tests": [
-        "assert(typeof someAdjective !== 'undefined' && someAdjective.length > 2, 'message: <code>someAdjective</code> should be set to a string at least 3 characters long');",
-        "assert(code.match(/\\w\\s*\\+=\\s*someAdjective\\s*;/).length > 0, 'message: Append <code>someAdjective</code> to <code>myStr</code> using the <code>+=</code> operator');"
+        "assert(typeof someAdjective !== 'undefined' && someAdjective.length > 2, 'message: <code>someAdjective</code> 应该是一个至少包含三个字符的字符串');",
+        "assert(code.match(/\\w\\s*\\+=\\s*someAdjective\\s*;/).length > 0, 'message: 使用 <code>+=</code> 操作符把 <code>someAdjective</code> 追加到 <code>myStr</code> 的后面');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1060,8 +1060,8 @@
         "var firstNameLength = 0;\nvar firstName = \"Ada\";\nfirstNameLength = firstName.length;\n\nvar lastNameLength = 0;\nvar lastName = \"Lovelace\";\nlastNameLength = lastName.length;"
       ],
       "tests": [
-        "assert((function(){if(typeof lastNameLength !== \"undefined\" && typeof lastNameLength === \"number\" && lastNameLength === 8){return true;}else{return false;}})(), 'message: <code>lastNameLength</code> should be equal to eight.');",
-        "assert((function(){if(code.match(/\\.length/gi) && code.match(/\\.length/gi).length >= 2 && code.match(/var lastNameLength \\= 0;/gi) && code.match(/var lastNameLength \\= 0;/gi).length >= 1){return true;}else{return false;}})(), 'message: You should be getting the length of <code>lastName</code> by using <code>.length</code> like this: <code>lastName.length</code>.');"
+        "assert((function(){if(typeof lastNameLength !== \"undefined\" && typeof lastNameLength === \"number\" && lastNameLength === 8){return true;}else{return false;}})(), 'message: <code>lastNameLength</code> 应该等于 8.');",
+        "assert((function(){if(code.match(/\\.length/gi) && code.match(/\\.length/gi).length >= 2 && code.match(/var lastNameLength \\= 0;/gi) && code.match(/var lastNameLength \\= 0;/gi).length >= 1){return true;}else{return false;}})(), 'message: 你应该使用 <code>.length</code> 获取 <code>lastName</code> 的长度, 像这样: <code>lastName.length</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1101,8 +1101,8 @@
         "var firstLetterOfLastName = \"\";\nvar lastName = \"Lovelace\";\n\n// Only change code below this line\nfirstLetterOfLastName = lastName[0];"
       ],
       "tests": [
-        "assert(firstLetterOfLastName === 'L', 'message: The <code>firstLetterOfLastName</code> variable should have the value of <code>L</code>.');",
-        "assert(code.match(/firstLetterOfLastName\\s*=\\s*lastName\\s*\\[\\s*\\d+\\s*\\]/), 'message: You should use bracket notation.');"
+        "assert(firstLetterOfLastName === 'L', 'message: <code>firstLetterOfLastName</code> 的值应该是 <code>L</code>.');",
+        "assert(code.match(/firstLetterOfLastName\\s*=\\s*lastName\\s*\\[\\s*\\d+\\s*\\]/), 'message: 你应该使用括号');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1138,8 +1138,8 @@
         "var myStr = \"Jello World\";\nmyStr = \"Hello World\";"
       ],
       "tests": [
-        "assert(myStr === \"Hello World\", 'message: <code>myStr</code> should have a value of <code>Hello World</code>');",
-        "assert(/myStr = \"Jello World\"/.test(code), 'message: Do not change the code above the line');"
+        "assert(myStr === \"Hello World\", 'message: <code>myStr</code> 的值应该是 <code>Hello World</code>');",
+        "assert(/myStr = \"Jello World\"/.test(code), 'message: 不要修改上面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1174,8 +1174,8 @@
         "var lastName = \"Lovelace\";\nvar thirdLetterOfLastName = lastName[2];"
       ],
       "tests": [
-        "assert(thirdLetterOfLastName === 'v', 'message: The <code>thirdLetterOfLastName</code> variable should have the value of <code>v</code>.');",
-        "assert(code.match(/thirdLetterOfLastName\\s*=\\s*lastName\\s*\\[\\s*\\d+\\s*\\]/), 'message: You should use bracket notation.');"
+        "assert(thirdLetterOfLastName === 'v', 'message: <code>thirdLetterOfLastName</code> 的值应该是 <code>v</code>.');",
+        "assert(code.match(/thirdLetterOfLastName\\s*=\\s*lastName\\s*\\[\\s*\\d+\\s*\\]/), 'message: 你应该使用括号');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1210,8 +1210,8 @@
         "var firstName = \"Ada\";\nvar lastLetterOfFirstName = firstName[firstName.length - 1];\n\nvar lastName = \"Lovelace\";\nvar lastLetterOfLastName = lastName[lastName.length - 1];"
       ],
       "tests": [
-        "assert(lastLetterOfLastName === \"e\", 'message: <code>lastLetterOfLastName</code> should be \"e\".');",
-        "assert(code.match(/\\.length/g).length === 2, 'message: You have to use <code>.length</code> to get the last letter.');"
+        "assert(lastLetterOfLastName === \"e\", 'message: <code>lastLetterOfLastName</code> 应该是 \"e\".');",
+        "assert(code.match(/\\.length/g).length === 2, 'message: 你需要使用 <code>.length</code> 获取最后一个字符.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1246,8 +1246,8 @@
         "var firstName = \"Ada\";\nvar thirdToLastLetterOfFirstName = firstName[firstName.length - 3];\n\nvar lastName = \"Lovelace\";\nvar secondToLastLetterOfLastName = lastName[lastName.length - 2];"
       ],
       "tests": [
-        "assert(secondToLastLetterOfLastName === 'c', 'message: <code>secondToLastLetterOfLastName</code> should be \"c\".');",
-        "assert(code.match(/\\.length/g).length === 2, 'message: You have to use <code>.length</code> to get the second last letter.');"
+        "assert(secondToLastLetterOfLastName === 'c', 'message: <code>secondToLastLetterOfLastName</code> 应该是 \"c\".');",
+        "assert(code.match(/\\.length/g).length === 2, 'message: 你需要使用 <code>.length</code> 获取倒数第二个字符.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -1283,9 +1283,9 @@
         "function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {\n  var result = \"\";\n\n  result = \"Once there was a \" + myNoun + \" which was very \" + myAdjective + \". \";\n  result += \"It \" + myVerb + \" \" + myAdverb + \" around the yard.\";\n\n  return result;\n}"
       ],
       "tests": [
-        "assert(typeof wordBlanks(\"\",\"\",\"\",\"\") === 'string', 'message: <code>wordBlanks(\"\",\"\",\"\",\"\")</code> should return a string.');",
-        "assert(/\\bdog\\b/.test(test1) && /\\bbig\\b/.test(test1) && /\\bran\\b/.test(test1) && /\\bquickly\\b/.test(test1),'message: <code>wordBlanks(\"dog\", \"big\", \"ran\", \"quickly\")</code> should contain all of the passed words separated by non-word characters (and any additional words in your madlib).');",
-        "assert(/\\bcat\\b/.test(test2) && /\\blittle\\b/.test(test2) && /\\bhit\\b/.test(test2) && /\\bslowly\\b/.test(test2),'message: <code>wordBlanks(\"cat\", \"little\", \"hit\", \"slowly\")</code> should contain all of the passed words separated by non-word characters (and any additional words in your madlib).');"
+        "assert(typeof wordBlanks(\"\",\"\",\"\",\"\") === 'string', 'message: <code>wordBlanks(\"\",\"\",\"\",\"\")</code> 应该返回一个字符串.');",
+        "assert(/\\bdog\\b/.test(test1) && /\\bbig\\b/.test(test1) && /\\bran\\b/.test(test1) && /\\bquickly\\b/.test(test1),'message: <code>wordBlanks(\"dog\", \"big\", \"ran\", \"quickly\")</code> 应该包含所有传入的单词并且单词之间要有间隔(可以添加任意修饰的单词).');",
+        "assert(/\\bcat\\b/.test(test2) && /\\blittle\\b/.test(test2) && /\\bhit\\b/.test(test2) && /\\bslowly\\b/.test(test2),'message: <code>wordBlanks(\"cat\", \"little\", \"hit\", \"slowly\")</code> 应该包含所有传入的单词并且单词之间要有间隔(可以添加任意修饰的单词).');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -1315,9 +1315,9 @@
         "var myArray = [\"The Answer\", 42];"
       ],
       "tests": [
-        "assert(typeof myArray == 'object', 'message: <code>myArray</code> should be an <code>array</code>.');",
-        "assert(typeof myArray[0] !== 'undefined' && typeof myArray[0] == 'string', 'message: The first item in <code>myArray</code> should be a <code>string</code>.');",
-        "assert(typeof myArray[1] !== 'undefined' && typeof myArray[1] == 'number', 'message: The second item in <code>myArray</code> should be a <code>number</code>.');"
+        "assert(typeof myArray == 'object', 'message: <code>myArray</code> 应该是一个 <code>数组</code>.');",
+        "assert(typeof myArray[0] !== 'undefined' && typeof myArray[0] == 'string', 'message: <code>myArray</code> 数组的第一个元素应该是一个 <code>字符串</code>.');",
+        "assert(typeof myArray[1] !== 'undefined' && typeof myArray[1] == 'number', 'message: <code>myArray</code> 数组的第二个元素应该是一个 <code>数字</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
