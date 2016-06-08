@@ -36,7 +36,7 @@ block content
                         var userLoggedIn = true;
                     if (!user)
                         .button-spacer
-                        a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度
+                        a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度哦
                             script.
                                 var userLoggedIn = false;
                     .button-spacer
@@ -66,7 +66,7 @@ block content
                                     span.completion-icon.ion-checkmark-circled.text-primary
                             .spacer
                             if(user)
-                                #submit-challenge.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 提交代码完成挑战 (ctrl + enter)
+                                #submit-challenge.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 进入下一个挑战 (ctrl + enter)
                             else
                                 a#next-challenge.btn.btn-lg.btn-primary.btn-block(href="/challenges/next-challenge?id="+id) 前进 (ctrl + enter)
     include ../partials/challenge-modals

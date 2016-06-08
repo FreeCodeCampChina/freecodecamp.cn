@@ -360,10 +360,10 @@
       "id": "bad87fee1348bd9aedf08807",
       "title": "Import a Google Font",
       "description": [
-        "现在，让我们来导入谷歌字体（注意，因为谷歌在中国被屏蔽，所以你需要跳过本轮挑战；如果你已翻墙或肉身已在墙外，那么请继续。",
+        "现在，让我们来导入谷歌字体。",
         "首先，你需要用<code>link</code>标签来引入谷歌<code>Lobster</code>字体。",
         "复制下面的代码片断并将其粘贴到你的代码编辑器的顶部：",
-        "<code>&#60;link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
+        "<code>&#60;link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
         "现在你可以将<code>Lobster</code>作为 font-family 的值应用到你的<code>h2</code>元素上了。",
         "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。",
         "当你遇到困难时可以参考<code><a href='https://github.com/huluoyang/freecodecamp.cn/wiki/common-question'>wiki</a></code>"
