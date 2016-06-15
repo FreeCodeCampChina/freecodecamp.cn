@@ -2596,16 +2596,16 @@
         "function myTest(val) {\n  if (val < 10 || val > 20) {\n    return \"Outside\";\n  }\n  return \"Inside\";\n}"
       ],
       "tests": [
-        "assert(code.match(/\\|\\|/g).length === 1, 'message: You should use the <code>||</code> operator once');",
-        "assert(code.match(/if/g).length === 1, 'message: You should only have one <code>if</code> statement');",
-        "assert(myTest(0) === \"Outside\", 'message: <code>myTest(0)</code> should return \"Outside\"');",
-        "assert(myTest(9) === \"Outside\", 'message: <code>myTest(9)</code> should return \"Outside\"');",
-        "assert(myTest(10) === \"Inside\", 'message: <code>myTest(10)</code> should return \"Inside\"');",
-        "assert(myTest(15) === \"Inside\", 'message: <code>myTest(15)</code> should return \"Inside\"');",
-        "assert(myTest(19) === \"Inside\", 'message: <code>myTest(19)</code> should return \"Inside\"');",
-        "assert(myTest(20) === \"Inside\", 'message: <code>myTest(20)</code> should return \"Inside\"');",
-        "assert(myTest(21) === \"Outside\", 'message: <code>myTest(21)</code> should return \"Outside\"');",
-        "assert(myTest(25) === \"Outside\", 'message: <code>myTest(25)</code> should return \"Outside\"');"
+        "assert(code.match(/\\|\\|/g).length === 1, 'message: 你应该使用一次 <code>||</code> 操作符');",
+        "assert(code.match(/if/g).length === 1, 'message: 你应该只有一个 <code>if</code> 表达式');",
+        "assert(myTest(0) === \"Outside\", 'message: <code>myTest(0)</code> 应该返回 \"Outside\"');",
+        "assert(myTest(9) === \"Outside\", 'message: <code>myTest(9)</code> 应该返回 \"Outside\"');",
+        "assert(myTest(10) === \"Inside\", 'message: <code>myTest(10)</code> 应该返回 \"Inside\"');",
+        "assert(myTest(15) === \"Inside\", 'message: <code>myTest(15)</code> 应该返回 \"Inside\"');",
+        "assert(myTest(19) === \"Inside\", 'message: <code>myTest(19)</code> 应该返回 \"Inside\"');",
+        "assert(myTest(20) === \"Inside\", 'message: <code>myTest(20)</code> 应该返回 \"Inside\"');",
+        "assert(myTest(21) === \"Outside\", 'message: <code>myTest(21)</code> 应该返回 \"Outside\"');",
+        "assert(myTest(25) === \"Outside\", 'message: <code>myTest(25)</code> 应该返回 \"Outside\"');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2647,13 +2647,13 @@
         "function myTest(val) {\n  var result = \"\";\n  if(val > 5) {\n    result = \"Bigger than 5\";\n  } else {\n    result = \"5 or Smaller\";\n  }\n  return result;\n}"
       ],
       "tests": [
-        "assert(code.match(/if/g).length === 1, 'message: You should only have one <code>if</code> statement');",
-        "assert(/else/g.test(code), 'message: You should use an <code>else</code> statement');",
-        "assert(myTest(4) === \"5 or Smaller\", 'message: <code>myTest(4)</code> should return \"5 or Smaller\"');",
-        "assert(myTest(5) === \"5 or Smaller\", 'message: <code>myTest(5)</code> should return \"5 or Smaller\"');",
-        "assert(myTest(6) === \"Bigger than 5\", 'message: <code>myTest(6)</code> should return \"Bigger than 5\"');",
-        "assert(myTest(10) === \"Bigger than 5\", 'message: <code>myTest(10)</code> should return \"Bigger than 5\"');",
-        "assert(/var result = \"\";/.test(code) && /return result;/.test(code), 'message: Do not change the code above or below the lines.');"
+        "assert(code.match(/if/g).length === 1, 'message: 你应该只有一个 <code>if</code> 表达式');",
+        "assert(/else/g.test(code), 'message: 你应该使用一个 <code>else</code> 表达式');",
+        "assert(myTest(4) === \"5 or Smaller\", 'message: <code>myTest(4)</code> 应该返回 \"5 or Smaller\"');",
+        "assert(myTest(5) === \"5 or Smaller\", 'message: <code>myTest(5)</code> 应该返回 \"5 or Smaller\"');",
+        "assert(myTest(6) === \"Bigger than 5\", 'message: <code>myTest(6)</code> 应该返回 \"Bigger than 5\"');",
+        "assert(myTest(10) === \"Bigger than 5\", 'message: <code>myTest(10)</code> 应该返回 \"Bigger than 5\"');",
+        "assert(/var result = \"\";/.test(code) && /return result;/.test(code), 'message: 不要修改上面和下面的代码');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2689,13 +2689,13 @@
         "function myTest(val) {\n  if(val > 10) {\n    return \"Greater than 10\";\n  } else if(val < 5) {\n    return \"Smaller than 5\";\n  } else {\n    return \"Between 5 and 10\";\n  }\n}"
       ],
       "tests": [
-        "assert(code.match(/else/g).length > 1, 'message: You should have at least two <code>else</code> statements');",
-        "assert(code.match(/if/g).length > 1, 'message: You should have at least two <code>if</code> statements');",
-        "assert(myTest(0) === \"Smaller than 5\", 'message: <code>myTest(0)</code> should return \"Smaller than 5\"');",
-        "assert(myTest(5) === \"Between 5 and 10\", 'message: <code>myTest(5)</code> should return \"Between 5 and 10\"');",
-        "assert(myTest(7) === \"Between 5 and 10\", 'message: <code>myTest(7)</code> should return \"Between 5 and 10\"');",
-        "assert(myTest(10) === \"Between 5 and 10\", 'message: <code>myTest(10)</code> should return \"Between 5 and 10\"');",
-        "assert(myTest(12) === \"Greater than 10\", 'message: <code>myTest(12)</code> should return \"Greater than 10\"');"
+        "assert(code.match(/else/g).length > 1, 'message: 你应该至少有两个 <code>else</code> 表达式');",
+        "assert(code.match(/if/g).length > 1, 'message: 你应该至少有两个 <code>if</code> 表达式');",
+        "assert(myTest(0) === \"Smaller than 5\", 'message: <code>myTest(0)</code> 应该返回 \"Smaller than 5\"');",
+        "assert(myTest(5) === \"Between 5 and 10\", 'message: <code>myTest(5)</code> 应该返回 \"Between 5 and 10\"');",
+        "assert(myTest(7) === \"Between 5 and 10\", 'message: <code>myTest(7)</code> 应该返回 \"Between 5 and 10\"');",
+        "assert(myTest(10) === \"Between 5 and 10\", 'message: <code>myTest(10)</code> 应该返回 \"Between 5 and 10\"');",
+        "assert(myTest(12) === \"Greater than 10\", 'message: <code>myTest(12)</code> 应该返回 \"Greater than 10\"');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2734,9 +2734,9 @@
         "function myTest(val) {\n  if(val < 5) {\n    return \"Less than 5\";            \n  } else if (val < 10) {\n    return \"Less than 10\";\n  } else {\n    return \"Greater than or equal to 10\";\n  }\n}"
       ],
       "tests": [
-        "assert(myTest(4) === \"Less than 5\", 'message: <code>myTest(4)</code> should return \"Less than 5\"');",
-        "assert(myTest(6) === \"Less than 10\", 'message: <code>myTest(6)</code> should return \"Less than 10\"');",
-        "assert(myTest(11) === \"Greater than or equal to 10\", 'message: <code>myTest(11)</code> should return \"Greater than or equal to 10\"');"
+        "assert(myTest(4) === \"Less than 5\", 'message: <code>myTest(4)</code> 应该返回 \"Less than 5\"');",
+        "assert(myTest(6) === \"Less than 10\", 'message: <code>myTest(6)</code> 应该返回 \"Less than 10\"');",
+        "assert(myTest(11) === \"Greater than or equal to 10\", 'message: <code>myTest(11)</code> 应该返回 \"Greater than or equal to 10\"');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2768,19 +2768,19 @@
         "function myTest(num) {\n  if (num < 5) {\n    return \"Tiny\";\n  } else if (num < 10) {\n    return \"Small\";\n  } else if (num < 15) {\n    return \"Medium\";\n  } else if (num < 20) {\n    return \"Large\";\n  } else {\n    return \"Huge\";\n  }\n}"
       ],
       "tests": [
-        "assert(code.match(/else/g).length > 3, 'message: You should have at least four <code>else</code> statements');",
-        "assert(code.match(/if/g).length > 3, 'message: You should have at least four <code>if</code> statements');",
-        "assert(code.match(/return/g).length >= 5, 'message: You should have at least five <code>return</code> statements');",
-        "assert(myTest(0) === \"Tiny\", 'message: <code>myTest(0)</code> should return \"Tiny\"');",
-        "assert(myTest(4) === \"Tiny\", 'message: <code>myTest(4)</code> should return \"Tiny\"');",
-        "assert(myTest(5) === \"Small\", 'message: <code>myTest(5)</code> should return \"Small\"');",
-        "assert(myTest(8) === \"Small\", 'message: <code>myTest(8)</code> should return \"Small\"');",
-        "assert(myTest(10) === \"Medium\", 'message: <code>myTest(10)</code> should return \"Medium\"');",
-        "assert(myTest(14) === \"Medium\", 'message: <code>myTest(14)</code> should return \"Medium\"');",
-        "assert(myTest(15) === \"Large\", 'message: <code>myTest(15)</code> should return \"Large\"');",
-        "assert(myTest(17) === \"Large\", 'message: <code>myTest(17)</code> should return \"Large\"');",
-        "assert(myTest(20) === \"Huge\", 'message: <code>myTest(20)</code> should return \"Huge\"');",
-        "assert(myTest(25) === \"Huge\", 'message: <code>myTest(25)</code> should return \"Huge\"');"
+        "assert(code.match(/else/g).length > 3, 'message: 你应该有至少4个 <code>else</code> 表达式');",
+        "assert(code.match(/if/g).length > 3, 'message: 你应该有至少4个 <code>if</code> 表达式');",
+        "assert(code.match(/return/g).length >= 5, 'message: 你应该有至少5个 <code>return</code> 表达式');",
+        "assert(myTest(0) === \"Tiny\", 'message: <code>myTest(0)</code> 应该返回 \"Tiny\"');",
+        "assert(myTest(4) === \"Tiny\", 'message: <code>myTest(4)</code> 应该返回 \"Tiny\"');",
+        "assert(myTest(5) === \"Small\", 'message: <code>myTest(5)</code> 应该返回 \"Small\"');",
+        "assert(myTest(8) === \"Small\", 'message: <code>myTest(8)</code> 应该返回 \"Small\"');",
+        "assert(myTest(10) === \"Medium\", 'message: <code>myTest(10)</code> 应该返回 \"Medium\"');",
+        "assert(myTest(14) === \"Medium\", 'message: <code>myTest(14)</code> 应该返回 \"Medium\"');",
+        "assert(myTest(15) === \"Large\", 'message: <code>myTest(15)</code> 应该返回 \"Large\"');",
+        "assert(myTest(17) === \"Large\", 'message: <code>myTest(17)</code> 应该返回 \"Large\"');",
+        "assert(myTest(20) === \"Huge\", 'message: <code>myTest(20)</code> 应该返回 \"Huge\"');",
+        "assert(myTest(25) === \"Huge\", 'message: <code>myTest(25)</code> 应该返回 \"Huge\"');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2811,17 +2811,17 @@
         "function golfScore(par, strokes) {\n  if (strokes === 1) {\n    return \"Hole-in-one!\";\n  }\n  \n  if (strokes <= par - 2) {\n    return \"Eagle\";\n  }\n  \n  if (strokes === par - 1) {\n    return \"Birdie\";\n  }\n  \n  if (strokes === par) {\n    return \"Par\";\n  }\n  \n  if (strokes === par + 1) {\n    return \"Bogey\";\n  }\n  \n  if(strokes === par + 2) {\n    return \"Double Bogey\";\n  }\n  \n  return \"Go Home!\";\n}"
       ],
       "tests": [
-        "assert(golfScore(4, 1) === \"Hole-in-one!\", 'message: <code>golfScore(4, 1)</code> should return \"Hole-in-one!\"');",
-        "assert(golfScore(4, 2) === \"Eagle\", 'message: <code>golfScore(4, 2)</code> should return \"Eagle\"');",
-        "assert(golfScore(5, 2) === \"Eagle\", 'message: <code>golfScore(5, 2)</code> should return \"Eagle\"');",
-        "assert(golfScore(4, 3) === \"Birdie\", 'message: <code>golfScore(4, 3)</code> should return \"Birdie\"');",
-        "assert(golfScore(4, 4) === \"Par\", 'message: <code>golfScore(4, 4)</code> should return \"Par\"');",
-        "assert(golfScore(1, 1) === \"Hole-in-one!\", 'message: <code>golfScore(1, 1)</code> should return \"Hole-in-one!\"');",
-        "assert(golfScore(5, 5) === \"Par\", 'message: <code>golfScore(5, 5)</code> should return \"Par\"');",
-        "assert(golfScore(4, 5) === \"Bogey\", 'message: <code>golfScore(4, 5)</code> should return \"Bogey\"');",
-        "assert(golfScore(4, 6) === \"Double Bogey\", 'message: <code>golfScore(4, 6)</code> should return \"Double Bogey\"');",
-        "assert(golfScore(4, 7) === \"Go Home!\", 'message: <code>golfScore(4, 7)</code> should return \"Go Home!\"');",
-        "assert(golfScore(5, 9) === \"Go Home!\", 'message: <code>golfScore(5, 9)</code> should return \"Go Home!\"');"
+        "assert(golfScore(4, 1) === \"Hole-in-one!\", 'message: <code>golfScore(4, 1)</code> 应该返回 \"Hole-in-one!\"');",
+        "assert(golfScore(4, 2) === \"Eagle\", 'message: <code>golfScore(4, 2)</code> 应该返回 \"Eagle\"');",
+        "assert(golfScore(5, 2) === \"Eagle\", 'message: <code>golfScore(5, 2)</code> 应该返回 \"Eagle\"');",
+        "assert(golfScore(4, 3) === \"Birdie\", 'message: <code>golfScore(4, 3)</code> 应该返回 \"Birdie\"');",
+        "assert(golfScore(4, 4) === \"Par\", 'message: <code>golfScore(4, 4)</code> 应该返回 \"Par\"');",
+        "assert(golfScore(1, 1) === \"Hole-in-one!\", 'message: <code>golfScore(1, 1)</code> 应该返回 \"Hole-in-one!\"');",
+        "assert(golfScore(5, 5) === \"Par\", 'message: <code>golfScore(5, 5)</code> 应该返回 \"Par\"');",
+        "assert(golfScore(4, 5) === \"Bogey\", 'message: <code>golfScore(4, 5)</code> 应该返回 \"Bogey\"');",
+        "assert(golfScore(4, 6) === \"Double Bogey\", 'message: <code>golfScore(4, 6)</code> 应该返回 \"Double Bogey\"');",
+        "assert(golfScore(4, 7) === \"Go Home!\", 'message: <code>golfScore(4, 7)</code> 应该返回 \"Go Home!\"');",
+        "assert(golfScore(5, 9) === \"Go Home!\", 'message: <code>golfScore(5, 9)</code> 应该返回 \"Go Home!\"');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -2857,12 +2857,12 @@
         "function myTest(val) {\n  var answer = \"\";\n\n  switch (val) {\n    case 1:\n      answer = \"alpha\";\n      break;\n    case 2:\n      answer = \"beta\";\n      break;\n    case 3:\n      answer = \"gamma\";\n      break;\n    case 4:\n      answer = \"delta\";\n  }\n  return answer;  \n}"
       ],
       "tests": [
-        "assert(myTest(1) === \"alpha\", 'message: <code>myTest(1) should have a value of \"alpha\"');",
-        "assert(myTest(2) === \"beta\", 'message: <code>myTest(2) should have a value of \"beta\"');",
-        "assert(myTest(3) === \"gamma\", 'message: <code>myTest(3) should have a value of \"gamma\"');",
-        "assert(myTest(4) === \"delta\", 'message: <code>myTest(4) should have a value of \"delta\"');",
-        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: You should not use any <code>if</code> or <code>else</code> statements');",
-        "assert(code.match(/break/g).length > 2, 'message: You should have at least 3 <code>break</code> statements');"
+        "assert(myTest(1) === \"alpha\", 'message: <code>myTest(1) 应该有一个值为 \"alpha\"');",
+        "assert(myTest(2) === \"beta\", 'message: <code>myTest(2) 应该有一个值为 \"beta\"');",
+        "assert(myTest(3) === \"gamma\", 'message: <code>myTest(3) 应该有一个值为 \"gamma\"');",
+        "assert(myTest(4) === \"delta\", 'message: <code>myTest(4) 应该有一个值为 \"delta\"');",
+        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: 不能使用任何 <code>if</code> 或 <code>else</code> 表达式');",
+        "assert(code.match(/break/g).length > 2, 'message: 你应该有至少 3 个 <code>break</code> 表达式');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2897,13 +2897,13 @@
         "function myTest(val) {\n  var answer = \"\";\n\n  switch(val) {\n    case \"a\":\n      answer = \"apple\";\n      break;\n    case \"b\":\n      answer = \"bird\";\n      break;\n    case \"c\":\n      answer = \"cat\";\n      break;\n    default:\n      answer = \"stuff\";\n  }\n  return answer;  \n}"
       ],
       "tests": [
-        "assert(myTest(\"a\") === \"apple\", 'message: <code>myTest(\"a\") should have a value of \"apple\"');",
-        "assert(myTest(\"b\") === \"bird\", 'message: <code>myTest(\"b\") should have a value of \"bird\"');",
-        "assert(myTest(\"c\") === \"cat\", 'message: <code>myTest(\"c\") should have a value of \"cat\"');",
-        "assert(myTest(\"d\") === \"stuff\", 'message: <code>myTest(\"d\") should have a value of \"stuff\"');",
-        "assert(myTest(4) === \"stuff\", 'message: <code>myTest(4) should have a value of \"stuff\"');",
-        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: You should not use any <code>if</code> or <code>else</code> statements');",
-        "assert(code.match(/break/g).length > 2, 'message: You should have at least 3 <code>break</code> statements');"
+        "assert(myTest(\"a\") === \"apple\", 'message: <code>myTest(\"a\") 应该有一个值为 \"apple\"');",
+        "assert(myTest(\"b\") === \"bird\", 'message: <code>myTest(\"b\") 应该有一个值为 \"bird\"');",
+        "assert(myTest(\"c\") === \"cat\", 'message: <code>myTest(\"c\") 应该有一个值为 \"cat\"');",
+        "assert(myTest(\"d\") === \"stuff\", 'message: <code>myTest(\"d\") 应该有一个值为 \"stuff\"');",
+        "assert(myTest(4) === \"stuff\", 'message: <code>myTest(4) 应该有一个值为 \"stuff\"');",
+        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: 不能使用任何 <code>if</code> 或 <code>else</code> 表达式');",
+        "assert(code.match(/break/g).length > 2, 'message: 你应该有至少 3 个 <code>break</code> 表达式');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2939,17 +2939,17 @@
         "function myTest(val) {\n  var answer = \"\";\n  \n  switch (val) {\n    case 1:\n    case 2:\n    case 3:\n      answer = \"Low\";\n      break;\n    case 4:\n    case 5:\n    case 6:\n      answer = \"Mid\";\n      break;\n    case 7:\n    case 8:\n    case 9:\n      answer = \"High\";\n  }\n  \n  return answer;  \n}"
       ],
       "tests": [
-        "assert(myTest(1) === \"Low\", 'message: <code>myTest(1)</code> should return \"Low\"');",
-        "assert(myTest(2) === \"Low\", 'message: <code>myTest(2)</code> should return \"Low\"');",
-        "assert(myTest(3) === \"Low\", 'message: <code>myTest(3)</code> should return \"Low\"');",
-        "assert(myTest(4) === \"Mid\", 'message: <code>myTest(4)</code> should return \"Mid\"');",
-        "assert(myTest(5) === \"Mid\", 'message: <code>myTest(5)</code> should return \"Mid\"');",
-        "assert(myTest(6) === \"Mid\", 'message: <code>myTest(6)</code> should return \"Mid\"');",
-        "assert(myTest(7) === \"High\", 'message: <code>myTest(7)</code> should return \"High\"');",
-        "assert(myTest(8) === \"High\", 'message: <code>myTest(8)</code> should return \"High\"');",
-        "assert(myTest(9) === \"High\", 'message: <code>myTest(9)</code> should return \"High\"');",
-        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: You should not use any <code>if</code> or <code>else</code> statements');",
-        "assert(code.match(/case/g).length === 9, 'message: You should have nine <code>case</code> statements');"
+        "assert(myTest(1) === \"Low\", 'message: <code>myTest(1)</code> 应该返回 \"Low\"');",
+        "assert(myTest(2) === \"Low\", 'message: <code>myTest(2)</code> 应该返回 \"Low\"');",
+        "assert(myTest(3) === \"Low\", 'message: <code>myTest(3)</code> 应该返回 \"Low\"');",
+        "assert(myTest(4) === \"Mid\", 'message: <code>myTest(4)</code> 应该返回 \"Mid\"');",
+        "assert(myTest(5) === \"Mid\", 'message: <code>myTest(5)</code> 应该返回 \"Mid\"');",
+        "assert(myTest(6) === \"Mid\", 'message: <code>myTest(6)</code> 应该返回 \"Mid\"');",
+        "assert(myTest(7) === \"High\", 'message: <code>myTest(7)</code> 应该返回 \"High\"');",
+        "assert(myTest(8) === \"High\", 'message: <code>myTest(8)</code> 应该返回 \"High\"');",
+        "assert(myTest(9) === \"High\", 'message: <code>myTest(9)</code> 应该返回 \"High\"');",
+        "assert(!/else/g.test(code) || !/if/g.test(code), 'message: 不要使用 <code>if</code> 或 <code>else</code> 表达式');",
+        "assert(code.match(/case/g).length === 9, 'message: 你应该有 9 个 <code>case</code> 表达式');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -2995,16 +2995,16 @@
         "function myTest(val) {\n  var answer = \"\";\n\n  switch (val) {\n    case \"bob\":\n      answer = \"Marley\";\n      break;\n    case 42:\n      answer = \"The Answer\";\n      break;\n    case 1:\n      answer = \"There is no #1\";\n      break;\n    case 99:\n      answer = \"Missed me by this much!\";\n      break;\n    case 7:\n      answer = \"Ate Nine\";\n  }\n  return answer;  \n}"
       ],
       "tests": [
-        "assert(!/else/g.test(code), 'message: You should not use any <code>else</code> statements');",
-        "assert(!/if/g.test(code), 'message: You should not use any <code>if</code> statements');",
-        "assert(code.match(/break/g).length >= 4, 'message: You should have at least four <code>break</code> statements');",
-        "assert(myTest(\"bob\") === \"Marley\", 'message: <code>myTest(\"bob\")</code> should be \"Marley\"');",
-        "assert(myTest(42) === \"The Answer\", 'message: <code>myTest(42)</code> should be \"The Answer\"');",
-        "assert(myTest(1) === \"There is no #1\", 'message: <code>myTest(1)</code> should be \"There is no #1\"');",
-        "assert(myTest(99) === \"Missed me by this much!\", 'message: <code>myTest(99)</code> should be \"Missed me by this much!\"');",
-        "assert(myTest(7) === \"Ate Nine\", 'message: <code>myTest(7)</code> should be \"Ate Nine\"');",
-        "assert(myTest(\"John\") === \"\", 'message: <code>myTest(\"John\")</code> should be \"\" (empty string)');",
-        "assert(myTest(156) === \"\", 'message: <code>myTest(156)</code> should be \"\" (empty string)');"
+        "assert(!/else/g.test(code), 'message: 不要使用 <code>else</code> 表达式');",
+        "assert(!/if/g.test(code), 'message: 不要使用 <code>if</code> 表达式');",
+        "assert(code.match(/break/g).length >= 4, 'message: 你应该有至少 4 个 <code>break</code> 表达式');",
+        "assert(myTest(\"bob\") === \"Marley\", 'message: <code>myTest(\"bob\")</code> 应该为 \"Marley\"');",
+        "assert(myTest(42) === \"The Answer\", 'message: <code>myTest(42)</code> 应该为 \"The Answer\"');",
+        "assert(myTest(1) === \"There is no #1\", 'message: <code>myTest(1)</code> 应该为 \"There is no #1\"');",
+        "assert(myTest(99) === \"Missed me by this much!\", 'message: <code>myTest(99)</code> 应该为 \"Missed me by this much!\"');",
+        "assert(myTest(7) === \"Ate Nine\", 'message: <code>myTest(7)</code> 应该为 \"Ate Nine\"');",
+        "assert(myTest(\"John\") === \"\", 'message: <code>myTest(\"John\")</code> 应该为 \"\" (empty string)');",
+        "assert(myTest(156) === \"\", 'message: <code>myTest(156)</code> 应该为 \"\" (empty string)');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3042,9 +3042,9 @@
         "function isLess(a, b) {\n  return a < b;\n}"
       ],
       "tests": [
-        "assert(isLess(10,15) === true, 'message: <code>isLess(10,15)</code> should return <code>true</code>');",
-        "assert(isLess(15, 10) === false, 'message: <code>isLess(15,10)</code> should return <code>false</code>');",
-        "assert(!/if|else/g.test(code), 'message: You should not use any <code>if</code> or <code>else</code> statements');"
+        "assert(isLess(10,15) === true, 'message: <code>isLess(10,15)</code> 应该返回 <code>true</code>');",
+        "assert(isLess(15, 10) === false, 'message: <code>isLess(15,10)</code> 应该返回 <code>false</code>');",
+        "assert(!/if|else/g.test(code), 'message: 不要使用 <code>if</code> 或 <code>else</code> 表达式');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3084,12 +3084,12 @@
         "function abTest(a, b) {\n  if(a < 0 || b < 0) {\n    return undefined;\n  } \n  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));\n}"
       ],
       "tests": [
-        "assert(typeof abTest(2,2) === 'number' , 'message: <code>abTest(2,2)</code> should return a number');",
-        "assert(abTest(2,2) === 8 , 'message: <code>abTest(2,2)</code> should return <code>8</code>');",
-        "assert(abTest(-2,2) === undefined , 'message: <code>abTest(-2,2)</code> should return <code>undefined</code>');",
-        "assert(abTest(2,-2) === undefined , 'message: <code>abTest(2,-2)</code> should return <code>undefined</code>');",
-        "assert(abTest(2,8) === 18 , 'message: <code>abTest(2,8)</code> should return <code>18</code>');",
-        "assert(abTest(3,3) === 12 , 'message: <code>abTest(3,3)</code> should return <code>12</code>');"
+        "assert(typeof abTest(2,2) === 'number' , 'message: <code>abTest(2,2)</code> 应该返回数字');",
+        "assert(abTest(2,2) === 8 , 'message: <code>abTest(2,2)</code> 应该返回 <code>8</code>');",
+        "assert(abTest(-2,2) === undefined , 'message: <code>abTest(-2,2)</code> 应该返回 <code>undefined</code>');",
+        "assert(abTest(2,-2) === undefined , 'message: <code>abTest(2,-2)</code> 应该返回 <code>undefined</code>');",
+        "assert(abTest(2,8) === 18 , 'message: <code>abTest(2,8)</code> 应该返回 <code>18</code>');",
+        "assert(abTest(3,3) === 12 , 'message: <code>abTest(3,3)</code> 应该返回 <code>12</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
