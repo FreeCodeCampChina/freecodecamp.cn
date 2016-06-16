@@ -1,21 +1,22 @@
 #issue-modal.modal(tabindex='-1')
     .modal-dialog.animated.fadeIn.fast-animation
         .modal-content
-            .modal-header.challenge-list-header Did you find a bug?
+            .modal-header.challenge-list-header 你发现了一个bug吗？
                 a.close.closing-x(href='#', data-dismiss='modal', aria-hidden='true') ×
             .modal-body.text-center
-                h3 Before you submit a new issue, read "Help I've Found a Bug" and browse other issues with this challenge.
-                a.btn.btn-lg.btn-primary.btn-block#help-ive-found-a-bug-wiki-article(name='_csrf', value=_csrf) Read "Help I've Found a Bug"
-                a.btn.btn-lg.btn-primary.btn-block#search-issue(name='_csrf', value=_csrf) Browse other issues with this challenge
-                a.btn.btn-lg.btn-primary.btn-block#report-issue(name='_csrf', value=_csrf) Create my GitHub issue
-                a.btn.btn-lg.btn-primary.btn-block(href='#', data-dismiss='modal', aria-hidden='true') Cancel
+                h3 在你提交一个新的问题之前，请先阅读“求助，我发现了一个bug”，然后浏览这个挑战的其他问题。
+                a.btn.btn-lg.btn-primary.btn-block#help-ive-found-a-bug-wiki-article(name='_csrf', value=_csrf) 求助，我发现了一个bug
+                a.btn.btn-lg.btn-primary.btn-block#search-issue(name='_csrf', value=_csrf) 浏览这个挑战的其他问题
+                a.btn.btn-lg.btn-primary.btn-block#report-issue(name='_csrf', value=_csrf) 创建一个新问题
+                a.btn.btn-lg.btn-primary.btn-block(href='#', data-dismiss='modal', aria-hidden='true') 取消
 
 #reset-modal.modal(tabindex='-1')
     .modal-dialog.animated.fadeInUp.fast-animation
         .modal-content
-            .modal-header.challenge-list-header Clear your code?
+            .modal-header.challenge-list-header 重置你的代码吗？
                 a.close.closing-x(href='#', data-dismiss='modal', aria-hidden='true') ×
             .modal-body
-                h3 This will restore your code editor to its original state.
-                a.btn.btn-lg.btn-warning.btn-block#reset-button(href='#', data-dismiss='modal', aria-hidden='true') Clear my code
-                a.btn.btn-lg.btn-primary.btn-block(href='#', data-dismiss='modal', aria-hidden='true') Cancel
+                h4.text-center 重置将会让你的代码编辑器回到初始状态
+                h4.text-center 当代码一直无法通过测试时，可以尝试重置，然后重写一遍，这招非常有效。
+                a.btn.btn-lg.btn-warning.btn-block#reset-button(href='#', data-dismiss='modal', aria-hidden='true') 重置
+                a.btn.btn-lg.btn-primary.btn-block(href='#', data-dismiss='modal', aria-hidden='true') 取消
