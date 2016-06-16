@@ -3125,12 +3125,12 @@
         "var count = 0;\nfunction cc(card) {\n  switch(card) {\n    case 2:\n    case 3:\n    case 4:\n    case 5:\n    case 6:\n      count++;\n      break;\n    case 10:\n    case 'J':\n    case 'Q':\n    case 'K':\n    case 'A':\n      count--;\n  }\n  if(count > 0) {\n    return count + \" Bet\";\n  } else {\n    return count + \" Hold\";\n  }\n}"
       ],
       "tests": [
-        "assert((function(){ count = 0; cc(2);cc(3);cc(4);cc(5);var out = cc(6); if(out === \"5 Bet\") {return true;} return false; })(), 'message: Cards Sequence 2, 3, 4, 5, 6 should return <code>\"5 Bet\"</code>');",
-        "assert((function(){ count = 0; cc(7);cc(8);var out = cc(9); if(out === \"0 Hold\") {return true;} return false; })(), 'message: Cards Sequence 7, 8, 9 should return <code>\"0 Hold\"</code>');",
-        "assert((function(){ count = 0; cc(10);cc('J');cc('Q');cc('K');var out = cc('A'); if(out === \"-5 Hold\") {return true;} return false; })(), 'message: Cards Sequence 10, J, Q, K, A should return <code>\"-5 Hold\"</code>');",
-        "assert((function(){ count = 0; cc(3);cc(7);cc('Q');cc(8);var out = cc('A'); if(out === \"-1 Hold\") {return true;} return false; })(), 'message: Cards Sequence 3, 7, Q, 8, A should return <code>\"-1 Hold\"</code>');",
-        "assert((function(){ count = 0; cc(2);cc('J');cc(9);cc(2);var out = cc(7); if(out === \"1 Bet\") {return true;} return false; })(), 'message: Cards Sequence 2, J, 9, 2, 7 should return <code>\"1 Bet\"</code>');",
-        "assert((function(){ count = 0; cc(3);cc(2);cc('A');cc(10);var out = cc('K'); if(out === \"-1 Hold\") {return true;} return false; })(), 'message: Cards Sequence 3, 2, A, 10, K should return <code>\"-1 Hold\"</code>');"
+        "assert((function(){ count = 0; cc(2);cc(3);cc(4);cc(5);var out = cc(6); if(out === \"5 Bet\") {return true;} return false; })(), 'message: 卡牌序列 2, 3, 4, 5, 6 应该返回 <code>\"5 Bet\"</code>');",
+        "assert((function(){ count = 0; cc(7);cc(8);var out = cc(9); if(out === \"0 Hold\") {return true;} return false; })(), 'message: 卡牌序列 7, 8, 9 应该返回 <code>\"0 Hold\"</code>');",
+        "assert((function(){ count = 0; cc(10);cc('J');cc('Q');cc('K');var out = cc('A'); if(out === \"-5 Hold\") {return true;} return false; })(), 'message: 卡牌序列 10, J, Q, K, A 应该返回 <code>\"-5 Hold\"</code>');",
+        "assert((function(){ count = 0; cc(3);cc(7);cc('Q');cc(8);var out = cc('A'); if(out === \"-1 Hold\") {return true;} return false; })(), 'message: 卡牌序列 3, 7, Q, 8, A 应该返回 <code>\"-1 Hold\"</code>');",
+        "assert((function(){ count = 0; cc(2);cc('J');cc(9);cc(2);var out = cc(7); if(out === \"1 Bet\") {return true;} return false; })(), 'message: 卡牌序列 2, J, 9, 2, 7 应该返回 <code>\"1 Bet\"</code>');",
+        "assert((function(){ count = 0; cc(3);cc(2);cc('A');cc(10);var out = cc('K'); if(out === \"-1 Hold\") {return true;} return false; })(), 'message: 卡牌序列 3, 2, A, 10, K 应该返回 <code>\"-1 Hold\"</code>');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -3173,11 +3173,11 @@
         "var myDog = {\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"]  \n};"
       ],
       "tests": [
-        "assert((function(z){if(z.hasOwnProperty(\"name\") && z.name !== undefined && typeof z.name === \"string\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> should contain the property <code>name</code> and it should be a <code>string</code>.');",
-        "assert((function(z){if(z.hasOwnProperty(\"legs\") && z.legs !== undefined && typeof z.legs === \"number\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> should contain the property <code>legs</code> and it should be a <code>number</code>.');",
-        "assert((function(z){if(z.hasOwnProperty(\"tails\") && z.tails !== undefined && typeof z.tails === \"number\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> should contain the property <code>tails</code> and it should be a <code>number</code>.');",
-        "assert((function(z){if(z.hasOwnProperty(\"friends\") && z.friends !== undefined && Array.isArray(z.friends)){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> should contain the property <code>friends</code> and it should be an <code>array</code>.');",
-        "assert((function(z){return Object.keys(z).length === 4;})(myDog), 'message: <code>myDog</code> should only contain all the given properties.');"
+        "assert((function(z){if(z.hasOwnProperty(\"name\") && z.name !== undefined && typeof z.name === \"string\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> 应该包含 <code>name</code> 属性, 并且是一个字符串');",
+        "assert((function(z){if(z.hasOwnProperty(\"legs\") && z.legs !== undefined && typeof z.legs === \"number\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> 应该包含 <code>legs</code> 属性, 并且是一个数字');",
+        "assert((function(z){if(z.hasOwnProperty(\"tails\") && z.tails !== undefined && typeof z.tails === \"number\"){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> 应该包含 <code>tails</code> 属性, 并且是一个数字');",
+        "assert((function(z){if(z.hasOwnProperty(\"friends\") && z.friends !== undefined && Array.isArray(z.friends)){return true;}else{return false;}})(myDog), 'message: <code>myDog</code> 应该包含 <code>friends</code> 属性, 并且是一个数组');",
+        "assert((function(z){return Object.keys(z).length === 4;})(myDog), 'message: <code>myDog</code> 应该只包含给出的属性');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3214,11 +3214,11 @@
         "var testObj = {\n  \"hat\": \"ballcap\",\n  \"shirt\": \"jersey\",\n  \"shoes\": \"cleats\"\n};\n\nvar hatValue = testObj.hat;  \nvar shirtValue = testObj.shirt;"
       ],
       "tests": [
-        "assert(typeof hatValue === 'string' , 'message: <code>hatValue</code> should be a string');",
-        "assert(hatValue === 'ballcap' , 'message: The value of <code>hatValue</code> should be <code>\"ballcap\"</code>');",
-        "assert(typeof shirtValue === 'string' , 'message: <code>shirtValue</code> should be a string');",
-        "assert(shirtValue === 'jersey' , 'message: The value of <code>shirtValue</code> should be <code>\"jersey\"</code>');",
-        "assert(code.match(/testObj\\.\\w+/g).length > 1, 'message: You should use dot notation twice');"
+        "assert(typeof hatValue === 'string' , 'message: <code>hatValue</code> 应该是一个字符串');",
+        "assert(hatValue === 'ballcap' , 'message: <code>hatValue</code> 的值应该是 <code>\"ballcap\"</code>');",
+        "assert(typeof shirtValue === 'string' , 'message: <code>shirtValue</code> 应该是一个字符串');",
+        "assert(shirtValue === 'jersey' , 'message: <code>shirtValue</code> 的值应该是 <code>\"jersey\"</code>');",
+        "assert(code.match(/testObj\\.\\w+/g).length > 1, 'message: 你应该使用点操作符两次');"
       ],
       "type": "waypoint",
       "challengeType": 1
