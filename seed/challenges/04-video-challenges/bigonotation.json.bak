@@ -70,7 +70,7 @@
         [
           "如果你的做法是有效的所有的算法都可以分解完成在一个静态的时间。",
           错误,
-          "在某些程度上并不是所有的算法都可以简化,但你应该总是试图找到最简单的方法来解决你的问题。"
+          "Not all algorithms can be simplified to that extent, but you should always try to find the simplest way to solve your problem."
         ]
       ],
       "type": "hike",
