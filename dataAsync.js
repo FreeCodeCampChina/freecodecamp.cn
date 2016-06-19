@@ -2015,7 +2015,8 @@ for(var k =0;k<tbody.length;k++){
         var existed = solution.indexOf("solution");
         if(existed != -1){
           solution = solution.slice(existed + 9);
-          challengeMap[id].solution = solution;
+          var decodeString  = decodeURIComponent(solution.replace(/fccss/,'<script>').replace(/fcces/,'</script>'))
+          challengeMap[id].solution = decodeString;
         }else if(solution.indexOf("challenges") != -1){
 
         }else{
@@ -2026,6 +2027,7 @@ for(var k =0;k<tbody.length;k++){
   }
 }
 console.log(Object.keys(challengeMap).length);
+console.log(JSON.stringify(challengeMap,null,2));
 // var progressTimestamps = [];
 // for(var l in challengeMap){
 //   var emptyObject = {};
@@ -2033,5 +2035,6 @@ console.log(Object.keys(challengeMap).length);
 //   emptyObject.completedChallenge = challengeMap[l].id;
 //   progressTimestamps.push(emptyObject);
 // }
+// progressTimestamps = JSON.stringify(progressTimestamps,null,2);
 // console.log(JSON.stringify(progressTimestamps));
-console.log(JSON.stringify(challengeMap,null,2));
+// db.getCollection('user').update({username:"iugo"},{$set:{"progressTimestamps":progressTimestamps,"challengeMap":challengeMap}},false,true)
