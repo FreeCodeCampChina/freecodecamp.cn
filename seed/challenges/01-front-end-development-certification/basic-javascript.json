@@ -3255,11 +3255,11 @@
         "var testObj = {\n  \"an entree\": \"hamburger\",\n  \"my side\": \"veggies\",\n  \"the drink\": \"water\"\n};\nvar entreeValue = testObj[\"an entree\"];\nvar drinkValue = testObj['the drink'];"
       ],
       "tests": [
-        "assert(typeof entreeValue === 'string' , 'message: <code>entreeValue</code> should be a string');",
-        "assert(entreeValue === 'hamburger' , 'message: The value of <code>entreeValue</code> should be <code>\"hamburger\"</code>');",
-        "assert(typeof drinkValue === 'string' , 'message: <code>drinkValue</code> should be a string');",
-        "assert(drinkValue === 'water' , 'message: The value of <code>drinkValue</code> should be <code>\"water\"</code>');",
-        "assert(code.match(/testObj\\s*?\\[('|\")[^'\"]+\\1\\]/g).length > 1, 'message: You should use bracket notation twice');"
+        "assert(typeof entreeValue === 'string' , 'message: <code>entreeValue</code> 应该是一个字符串');",
+        "assert(entreeValue === 'hamburger' , 'message: <code>entreeValue</code> 的值应该是 <code>\"hamburger\"</code>');",
+        "assert(typeof drinkValue === 'string' , 'message: <code>drinkValue</code> 应该是一个字符串');",
+        "assert(drinkValue === 'water' , 'message: <code>drinkValue</code> 的值应该是 <code>\"water\"</code>');",
+        "assert(code.match(/testObj\\s*?\\[('|\")[^'\"]+\\1\\]/g).length > 1, 'message: 你应该使用括号两次');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3298,10 +3298,10 @@
         "var testObj = {\n  12: \"Namath\",\n  16: \"Montana\",\n  19: \"Unitas\"\n};\nvar playerNumber = 16;\nvar player = testObj[playerNumber];"
       ],
       "tests": [
-        "assert(typeof playerNumber === 'number', 'message: <code>playerNumber</code> should be a number');",
-        "assert(typeof player === 'string', 'message: The variable <code>player</code> should be a string');",
-        "assert(player === 'Montana', 'message: The value of <code>player</code> should be \"Montana\"');",
-        "assert(/testObj\\s*?\\[\\s*playerNumber\\s*\\]/.test(code),'message: You should use bracket notation to access <code>testObj</code>');"
+        "assert(typeof playerNumber === 'number', 'message: <code>playerNumber</code> 应该是一个数字');",
+        "assert(typeof player === 'string', 'message: <code>player</code> 变量应该是字符串');",
+        "assert(player === 'Montana', 'message: <code>player</code> 的值应该是 \"Montana\"');",
+        "assert(/testObj\\s*?\\[\\s*playerNumber\\s*\\]/.test(code),'message: 你应该使用括号访问 <code>testObj</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3349,8 +3349,8 @@
         "var myDog = {\n  \"name\": \"Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"Free Code Camp Campers\"]\n};\nmyDog.name = \"Happy Coder\";"
       ],
       "tests": [
-        "assert(/happy coder/gi.test(myDog.name), 'message: Update <code>myDog</code>&apos;s <code>\"name\"</code> property to equal \"Happy Coder\".');",
-        "assert(/\"name\": \"Coder\"/.test(code), 'message: Do not edit the <code>myDog</code> definition');"
+        "assert(/happy coder/gi.test(myDog.name), 'message: 更新 <code>myDog</code> 的 <code>\"name\"</code> 属性, 使其等于 \"Happy Coder\".');",
+        "assert(/\"name\": \"Coder\"/.test(code), 'message: 不要修改 <code>myDog</code> 的定义');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3396,8 +3396,8 @@
         "var myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"Free Code Camp Campers\"]\n};\nmyDog.bark = \"Woof Woof\";"
       ],
       "tests": [
-        "assert(myDog.bark !== undefined, 'message: Add the property <code>\"bark\"</code> to <code>myDog</code>.');",
-        "assert(!/bark[^\\n]:/.test(code), 'message: Do not add <code>\"bark\"</code> to the setup section');"
+        "assert(myDog.bark !== undefined, 'message: 给 <code>myDog</code> 添加 <code>\"bark\"</code> 属性');",
+        "assert(!/bark[^\\n]:/.test(code), 'message: 不能在 setup 的地方添加 <code>\"bark\"</code> 属性');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3443,8 +3443,8 @@
         "var ourDog = {\n  \"name\": \"Camper\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"everything!\"],\n  \"bark\": \"bow-wow\"\n};\n\nvar myDog = {\n  \"name\": \"Happy Coder\",\n  \"legs\": 4,\n  \"tails\": 1,\n  \"friends\": [\"Free Code Camp Campers\"],\n  \"bark\": \"woof\"\n};\n\ndelete myDog.tails;"
       ],
       "tests": [
-        "assert(myDog.tails === undefined, 'message: Delete the property <code>\"tails\"</code> from <code>myDog</code>.');",
-        "assert(code.match(/\"tails\": 1/g).length > 1, 'message: Do not modify the <code>myDog</code> setup');"
+        "assert(myDog.tails === undefined, 'message: 从 <code>myDog</code> 中删除 <code>\"tails\"</code> 属性');",
+        "assert(code.match(/\"tails\": 1/g).length > 1, 'message: 不能修改 <code>myDog</code> 的 setup 部分');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3497,14 +3497,14 @@
         "function phoneticLookup(val) {\n  var result = \"\";\n\n  var lookup = {\n    alpha: \"Adams\",\n    bravo: \"Boston\",\n    charlie: \"Chicago\",\n    delta: \"Denver\",\n    echo: \"Easy\",\n    foxtrot: \"Frank\"\n  };\n\n  result = lookup[val];\n\n  return result;\n}"
       ],
       "tests": [
-        "assert(phoneticLookup(\"alpha\") === 'Adams', 'message: <code>phoneticLookup(\"alpha\")</code> should equal <code>\"Adams\"</code>');",
-        "assert(phoneticLookup(\"bravo\") === 'Boston', 'message: <code>phoneticLookup(\"bravo\")</code> should equal <code>\"Boston\"</code>');",
-        "assert(phoneticLookup(\"charlie\") === 'Chicago', 'message: <code>phoneticLookup(\"charlie\")</code> should equal <code>\"Chicago\"</code>');",
-        "assert(phoneticLookup(\"delta\") === 'Denver', 'message: <code>phoneticLookup(\"delta\")</code> should equal <code>\"Denver\"</code>');",
-        "assert(phoneticLookup(\"echo\") === 'Easy', 'message: <code>phoneticLookup(\"echo\")</code> should equal <code>\"Easy\"</code>');",
-        "assert(phoneticLookup(\"foxtrot\") === 'Frank', 'message: <code>phoneticLookup(\"foxtrot\")</code> should equal <code>\"Frank\"</code>');",
-        "assert(typeof phoneticLookup(\"\") === 'undefined', 'message: <code>phoneticLookup(\"\")</code> should equal <code>undefined</code>');",
-        "assert(!/case|switch|if/g.test(code), 'message: You should not use <code>case</code>, <code>switch</code>, or <code>if</code> statements'); "
+        "assert(phoneticLookup(\"alpha\") === 'Adams', 'message: <code>phoneticLookup(\"alpha\")</code> 应该等于 <code>\"Adams\"</code>');",
+        "assert(phoneticLookup(\"bravo\") === 'Boston', 'message: <code>phoneticLookup(\"bravo\")</code> 应该等于 <code>\"Boston\"</code>');",
+        "assert(phoneticLookup(\"charlie\") === 'Chicago', 'message: <code>phoneticLookup(\"charlie\")</code> 应该等于 <code>\"Chicago\"</code>');",
+        "assert(phoneticLookup(\"delta\") === 'Denver', 'message: <code>phoneticLookup(\"delta\")</code> 应该等于 <code>\"Denver\"</code>');",
+        "assert(phoneticLookup(\"echo\") === 'Easy', 'message: <code>phoneticLookup(\"echo\")</code> 应该等于 <code>\"Easy\"</code>');",
+        "assert(phoneticLookup(\"foxtrot\") === 'Frank', 'message: <code>phoneticLookup(\"foxtrot\")</code> 应该等于 <code>\"Frank\"</code>');",
+        "assert(typeof phoneticLookup(\"\") === 'undefined', 'message: <code>phoneticLookup(\"\")</code> 应该等于 <code>undefined</code>');",
+        "assert(!/case|switch|if/g.test(code), 'message: 不能使用 <code>case</code>, <code>switch</code>, 或 <code>if</code> 语句'); "
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3545,9 +3545,9 @@
         "var myObj = {\n  gift: \"pony\",\n  pet: \"kitten\",\n  bed: \"sleigh\"\n};\nfunction checkObj(checkProp) {\n  if(myObj.hasOwnProperty(checkProp)) {\n    return myObj[checkProp];\n  } else {\n    return \"Not Found\";\n  }\n}"
       ],
       "tests": [
-        "assert(checkObj(\"gift\") === \"pony\", 'message: <code>checkObj(\"gift\")</code> should return  <code>\"pony\"</code>.');",
-        "assert(checkObj(\"pet\") === \"kitten\", 'message: <code>checkObj(\"pet\")</code> should return  <code>\"kitten\"</code>.');",
-        "assert(checkObj(\"house\") === \"Not Found\", 'message: <code>checkObj(\"house\")</code> should return  <code>\"Not Found\"</code>.');"
+        "assert(checkObj(\"gift\") === \"pony\", 'message: <code>checkObj(\"gift\")</code> 应该返回 <code>\"pony\"</code>.');",
+        "assert(checkObj(\"pet\") === \"kitten\", 'message: <code>checkObj(\"pet\")</code> 应该返回  <code>\"kitten\"</code>.');",
+        "assert(checkObj(\"house\") === \"Not Found\", 'message: <code>checkObj(\"house\")</code> 应该返回 <code>\"Not Found\"</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3588,15 +3588,15 @@
         "var myMusic = [\n  {\n    \"artist\": \"Billy Joel\",\n    \"title\": \"Piano Man\",\n    \"release_year\": 1973,\n    \"formats\": [ \n      \"CS\", \n      \"8T\", \n      \"LP\" ],\n    \"gold\": true\n  }, \n  {\n    \"artist\": \"ABBA\",\n    \"title\": \"Ring Ring\",\n    \"release_year\": 1973,\n    \"formats\": [ \n      \"CS\", \n      \"8T\", \n      \"LP\",\n    \"CD\",\n  ]\n  }\n];"
       ],
       "tests": [
-        "assert(Array.isArray(myMusic), 'message: <code>myMusic</code> should be an array');",
-        "assert(myMusic.length > 1, 'message: <code>myMusic</code> should have at least two elements');",
-        "assert(typeof myMusic[1] === 'object', 'message: <code>myMusic[1]</code> should be an object');",
-        "assert(Object.keys(myMusic[1]).length > 3, 'message: <code>myMusic[1]</code> should have at least 4 properties');",
-        "assert(myMusic[1].hasOwnProperty('artist') && typeof myMusic[1].artist === 'string', 'message: <code>myMusic[1]</code> should contain an <code>artist</code> property which is a string');",
-        "assert(myMusic[1].hasOwnProperty('title') && typeof myMusic[1].title === 'string', 'message: <code>myMusic[1]</code> should  contain a <code>title</code> property which is a string');",
-        "assert(myMusic[1].hasOwnProperty('release_year') && typeof myMusic[1].release_year === 'number', 'message: <code>myMusic[1]</code> should contain a <code>release_year</code> property which is a number');",
-        "assert(myMusic[1].hasOwnProperty('formats') && Array.isArray(myMusic[1].formats), 'message: <code>myMusic[1]</code> should contain a <code>formats</code> property which is an array');",
-        "assert(myMusic[1].formats.every(function(item) { return (typeof item === \"string\")}) && myMusic[1].formats.length > 1, 'message: <code>formats</code> should be an array of strings with at least two elements');"
+        "assert(Array.isArray(myMusic), 'message: <code>myMusic</code> 应该是一个数组');",
+        "assert(myMusic.length > 1, 'message: <code>myMusic</code> 应该至少包含两个元素');",
+        "assert(typeof myMusic[1] === 'object', 'message: <code>myMusic[1]</code> 应该是一个对象');",
+        "assert(Object.keys(myMusic[1]).length > 3, 'message: <code>myMusic[1]</code> 至少要包含四个属性');",
+        "assert(myMusic[1].hasOwnProperty('artist') && typeof myMusic[1].artist === 'string', 'message: <code>myMusic[1]</code> 应该包含一个类型为字符串的 <code>artist</code> 属性');",
+        "assert(myMusic[1].hasOwnProperty('title') && typeof myMusic[1].title === 'string', 'message: <code>myMusic[1]</code> 应该包含一个类型为字符串的 <code>title</code> 属性');",
+        "assert(myMusic[1].hasOwnProperty('release_year') && typeof myMusic[1].release_year === 'number', 'message: <code>myMusic[1]</code> 应该包含一个类型为数字的 <code>release_year</code> 属性');",
+        "assert(myMusic[1].hasOwnProperty('formats') && Array.isArray(myMusic[1].formats), 'message: <code>myMusic[1]</code> 应该包含一个类型为数组的 <code>formats</code> 属性');",
+        "assert(myMusic[1].formats.every(function(item) { return (typeof item === \"string\")}) && myMusic[1].formats.length > 1, 'message: <code>formats</code> 应该是一个至少包含两个字符串元素的数组');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3643,8 +3643,8 @@
         "var myStorage = {  \n  \"car\":{  \n    \"inside\":{  \n      \"glove box\":\"maps\",\n      \"passenger seat\":\"crumbs\"\n    },\n    \"outside\":{  \n      \"trunk\":\"jack\"\n    }\n  }\n};\nvar gloveBoxContents = myStorage.car.inside[\"glove box\"];"
       ],
       "tests": [
-        "assert(gloveBoxContents === \"maps\", 'message: <code>gloveBoxContents</code> should equal \"maps\"');",
-        "assert(/=\\s*myStorage\\.car\\.inside\\[(\"|')glove box\\1\\]/g.test(code), 'message: Use dot and bracket notation to access <code>myStorage</code>');"
+        "assert(gloveBoxContents === \"maps\", 'message: <code>gloveBoxContents</code> 应该等于 \"maps\"');",
+        "assert(/=\\s*myStorage\\.car\\.inside\\[(\"|')glove box\\1\\]/g.test(code), 'message: 使用点和方括号访问 <code>myStorage</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3698,8 +3698,8 @@
         "var myPlants = [\n  { \n    type: \"flowers\",\n    list: [\n      \"rose\",\n      \"tulip\",\n      \"dandelion\"\n    ]\n  },\n  {\n    type: \"trees\",\n    list: [\n      \"fir\",\n      \"pine\",\n      \"birch\"\n    ]\n  }  \n];\n\n// Only change code below this line\n\nvar secondTree = myPlants[1].list[1];"
       ],
       "tests": [
-        "assert(secondTree === \"pine\", 'message: <code>secondTree</code> should equal \"pine\"');",
-        "assert(/=\\s*myPlants\\[1\\].list\\[1\\]/.test(code), 'message: Use dot and bracket notation to access <code>myPlants</code>');"
+        "assert(secondTree === \"pine\", 'message: <code>secondTree</code> 应该等于 \"pine\"');",
+        "assert(/=\\s*myPlants\\[1\\].list\\[1\\]/.test(code), 'message: 使用点和方括号访问 <code>myPlants</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3765,10 +3765,10 @@
         "var collection = {\n    2548: {\n      album: \"Slippery When Wet\",\n      artist: \"Bon Jovi\",\n      tracks: [ \n        \"Let It Rock\", \n        \"You Give Love a Bad Name\" \n      ]\n    },\n    2468: {\n      album: \"1999\",\n      artist: \"Prince\",\n      tracks: [ \n        \"1999\", \n        \"Little Red Corvette\" \n      ]\n    },\n    1245: {\n      artist: \"Robert Palmer\",\n      tracks: [ ]\n    },\n    5439: {\n      album: \"ABBA Gold\"\n    }\n};\n// Keep a copy of the collection for tests\nvar collectionCopy = JSON.parse(JSON.stringify(collection));\n\n// Only change code below this line\nfunction update(id, prop, value) {\n  if(value !== \"\") {\n    if(prop === \"tracks\") {\n      collection[id][prop].push(value);\n    } else {\n      collection[id][prop] = value;\n    }\n  } else {\n    delete collection[id][prop];\n  }\n\n  return collection;\n}"
       ],
       "tests": [
-        "collection = collectionCopy; assert(update(5439, \"artist\", \"ABBA\")[5439][\"artist\"] === \"ABBA\", 'message: After <code>update(5439, \"artist\", \"ABBA\")</code>, <code>artist</code> should be <code>\"ABBA\"</code>');",
-        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: After <code>update(2548, \"artist\", \"\")</code>, <code>artist</code> should not be set');",
-        "assert(update(1245, \"tracks\", \"Addicted to Love\")[1245][\"tracks\"].pop() === \"Addicted to Love\", 'message: After <code>update(1245, \"tracks\", \"Addicted to Love\")</code>, <code>tracks</code> should have <code>\"Addicted to Love\"</code> as the last element.');",
-        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: After <code>update(2548, \"tracks\", \"\")</code>, <code>tracks</code> should not be set');"
+        "collection = collectionCopy; assert(update(5439, \"artist\", \"ABBA\")[5439][\"artist\"] === \"ABBA\", 'message: <code>update(5439, \"artist\", \"ABBA\")</code> 之后, <code>artist</code> 应该为 <code>\"ABBA\"</code>');",
+        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该是未设置的');",
+        "assert(update(1245, \"tracks\", \"Addicted to Love\")[1245][\"tracks\"].pop() === \"Addicted to Love\", 'message: <code>update(1245, \"tracks\", \"Addicted to Love\")</code> 之后, <code>tracks</code> 的最后一个元素应该是 <code>\"Addicted to Love\"</code>');",
+        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该是未设置的');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -3813,8 +3813,8 @@
         "var ourArray = [];\nfor (var i = 0; i < 5; i++) {\n  ourArray.push(i);\n}\nvar myArray = [];\nfor (var i = 1; i < 6; i++) {\n  myArray.push(i);\n}"
       ],
       "tests": [
-        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: You should be using a <code>for</code> loop for this.');",
-        "assert.deepEqual(myArray, [1,2,3,4,5], 'message: <code>myArray</code> should equal <code>[1,2,3,4,5]</code>.');"
+        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: 你应该使用 <code>for</code> 循环');",
+        "assert.deepEqual(myArray, [1,2,3,4,5], 'message: <code>myArray</code> 应该等于 <code>[1,2,3,4,5]</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3854,8 +3854,8 @@
         "var ourArray = [];\nfor (var i = 0; i < 10; i += 2) {\n  ourArray.push(i);\n}\nvar myArray = [];\nfor (var i = 1; i < 10; i += 2) {\n  myArray.push(i);\n}"
       ],
       "tests": [
-        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: You should be using a <code>for</code> loop for this.');",
-        "assert.deepEqual(myArray, [1,3,5,7,9], 'message: <code>myArray</code> should equal <code>[1,3,5,7,9]</code>.');"
+        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: 你应该使用 <code>for</code> 循环');",
+        "assert.deepEqual(myArray, [1,3,5,7,9], 'message: <code>myArray</code> 应该等于 <code>[1,3,5,7,9]</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3894,8 +3894,8 @@
         "var ourArray = [];\nfor (var i = 10; i > 0; i -= 2) {\n  ourArray.push(i);\n}\nvar myArray = [];\nfor (var i = 9; i > 0; i -= 2) {\n  myArray.push(i);\n}"
       ],
       "tests": [
-        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: You should be using a <code>for</code> loop for this.');",
-        "assert.deepEqual(myArray, [9,7,5,3,1], 'message: <code>myArray</code> should equal <code>[9,7,5,3,1]</code>.');"
+        "assert(code.match(/for\\s*\\(/g).length > 1, 'message: 你应该使用 <code>for</code> 循环');",
+        "assert.deepEqual(myArray, [9,7,5,3,1], 'message: <code>myArray</code> 应该等于 <code>[9,7,5,3,1]</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3935,10 +3935,10 @@
         "var ourArr = [ 9, 10, 11, 12];\nvar ourTotal = 0;\n\nfor (var i = 0; i < ourArr.length; i++) {\n  ourTotal += ourArr[i];\n}\n\nvar myArr = [ 2, 3, 4, 5, 6];\nvar total = 0;\n\nfor (var i = 0; i < myArr.length; i++) {\n  total += myArr[i];\n}"
       ],
       "tests": [
-        "assert(code.match(/var\\s*total\\s*=\\s*0\\s*;/), 'message: <code>total</code> should be declared and initialized to 0');",
-        "assert(total === 20, 'message: <code>total</code> should equal 20');",
-        "assert(code.match(/for\\s*\\(/g).length > 1 && code.match(/myArr\\s*\\[/), 'message: You should use a <code>for</code> loop to iterate through <code>myArr</code>');",
-        "assert(!code.match(/total[\\s\\+\\-]*=\\s*(\\d(?!\\s*;)|[1-9])/g), 'message: Do not set <code>total</code> to 20 directly');"
+        "assert(code.match(/var\\s*total\\s*=\\s*0\\s*;/), 'message: <code>total</code> 应该被声明, 并且初始化值为 0');",
+        "assert(total === 20, 'message: <code>total</code> 应该等于 20');",
+        "assert(code.match(/for\\s*\\(/g).length > 1 && code.match(/myArr\\s*\\[/), 'message: 你应该使用 <code>for</code> 循环在 <code>myArr</code> 中遍历');",
+        "assert(!code.match(/total[\\s\\+\\-]*=\\s*(\\d(?!\\s*;)|[1-9])/g), 'message: 不能直接把 <code>total</code> 设置成 20');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -3974,9 +3974,9 @@
         "function multiplyAll(arr) {\n  var product = 1;\n  for (var i = 0; i < arr.length; i++) {\n    for (var j = 0; j < arr[i].length; j++) {\n      product *= arr[i][j];\n    }\n  }\n  return product;\n}\n\nmultiplyAll([[1,2],[3,4],[5,6,7]]);"
       ],
       "tests": [
-        "assert(multiplyAll([[1],[2],[3]]) === 6, 'message: <code>multiplyAll([[1],[2],[3]]);</code> should return <code>6</code>');",
-        "assert(multiplyAll([[1,2],[3,4],[5,6,7]]) === 5040, 'message: <code>multiplyAll([[1,2],[3,4],[5,6,7]])</code> should return <code>5040</code>');",
-        "assert(multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]) === 54, 'message: <code>multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]);)</code> should return <code>54</code>');"
+        "assert(multiplyAll([[1],[2],[3]]) === 6, 'message: <code>multiplyAll([[1],[2],[3]]);</code> 应该返回 <code>6</code>');",
+        "assert(multiplyAll([[1,2],[3,4],[5,6,7]]) === 5040, 'message: <code>multiplyAll([[1,2],[3,4],[5,6,7]])</code> 应该返回 <code>5040</code>');",
+        "assert(multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]) === 54, 'message: <code>multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]);)</code> 应该返回 <code>54</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4005,8 +4005,8 @@
         "var myArray = [];\nvar i = 0;\nwhile(i < 5) {\n  myArray.push(i);\n  i++;\n}"
       ],
       "tests": [
-        "assert(code.match(/while/g), 'message: You should be using a <code>while</code> loop for this.');",
-        "assert.deepEqual(myArray, [0,1,2,3,4], 'message: <code>myArray</code> should equal <code>[0,1,2,3,4]</code>.');"
+        "assert(code.match(/while/g), 'message: 你应该使用 <code>while</code> 循环');",
+        "assert.deepEqual(myArray, [0,1,2,3,4], 'message: <code>myArray</code> 应该等于 <code>[0,1,2,3,4]</code>.');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4067,11 +4067,11 @@
         "var contacts = [\n    {\n        \"firstName\": \"Akira\",\n        \"lastName\": \"Laine\",\n        \"number\": \"0543236543\",\n        \"likes\": [\"Pizza\", \"Coding\", \"Brownie Points\"]\n    },\n    {\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Potter\",\n        \"number\": \"0994372684\",\n        \"likes\": [\"Hogwarts\", \"Magic\", \"Hagrid\"]\n    },\n    {\n        \"firstName\": \"Sherlock\",\n        \"lastName\": \"Holmes\",\n        \"number\": \"0487345643\",\n        \"likes\": [\"Intriguing Cases\", \"Violin\"]\n    },\n    {\n        \"firstName\": \"Kristian\",\n        \"lastName\": \"Vos\",\n        \"number\": \"unknown\",\n        \"likes\": [\"Javascript\", \"Gaming\", \"Foxes\"]\n    },\n];\n\n\n//Write your function in between these comments\nfunction lookUp(name, prop){\n    for(var i in contacts){\n      if(contacts[i].firstName === name) {\n        return contacts[i][prop] || \"No such property\";\n      }\n    }\n   return \"No such contact\";\n}\n//Write your function in between these comments\n\nlookUp(\"Akira\", \"likes\");"
       ],
       "tests": [
-        "assert(lookUp('Kristian','lastName') === \"Vos\", 'message: <code>\"Kristian\", \"lastName\"</code> should return <code>\"Vos\"</code>');",
-        "assert.deepEqual(lookUp(\"Sherlock\", \"likes\"), [\"Intriguing Cases\", \"Violin\"], 'message: <code>\"Sherlock\", \"likes\"</code> should return <code>[\"Intriguing Cases\", \"Violin\"]</code>');",
-        "assert(typeof lookUp(\"Harry\", \"likes\") === \"object\", 'message: <code>\"Harry\",\"likes\"</code> should return an array');",
-        "assert(lookUp(\"Bob\", \"number\") === \"No such contact\", 'message: <code>\"Bob\", \"number\"</code> should return \"No such contact\"');",
-        "assert(lookUp(\"Akira\", \"address\") === \"No such property\", 'message: <code>\"Akira\", \"address\"</code> should return \"No such property\"');"
+        "assert(lookUp('Kristian','lastName') === \"Vos\", 'message: <code>\"Kristian\", \"lastName\"</code> 应该返回 <code>\"Vos\"</code>');",
+        "assert.deepEqual(lookUp(\"Sherlock\", \"likes\"), [\"Intriguing Cases\", \"Violin\"], 'message: <code>\"Sherlock\", \"likes\"</code> 应该返回 <code>[\"Intriguing Cases\", \"Violin\"]</code>');",
+        "assert(typeof lookUp(\"Harry\", \"likes\") === \"object\", 'message: <code>\"Harry\",\"likes\"</code> 应该返回一个数组');",
+        "assert(lookUp(\"Bob\", \"number\") === \"No such contact\", 'message: <code>\"Bob\", \"number\"</code> 应该返回 \"No such contact\"');",
+        "assert(lookUp(\"Akira\", \"address\") === \"No such property\", 'message: <code>\"Akira\", \"address\"</code> 应该返回 \"No such property\"');"
       ],
       "type": "checkpoint",
       "challengeType": 1
@@ -4104,9 +4104,9 @@
         "function myFunction() {\n  return Math.random();\n}"
       ],
       "tests": [
-        "assert(typeof myFunction() === \"number\", 'message: <code>myFunction</code> should return a random number.');",
-        "assert((myFunction()+''). match(/\\./g), 'message: The number returned by <code>myFunction</code> should be a decimal.');",
-        "assert(code.match(/Math\\.random/g).length >= 0, 'message: You should be using <code>Math.random</code> to generate the random decimal number.');"
+        "assert(typeof myFunction() === \"number\", 'message: <code>myFunction</code> 应该返回一个随机数');",
+        "assert((myFunction()+''). match(/\\./g), 'message: <code>myFunction</code> 应该返回一个小数');",
+        "assert(code.match(/Math\\.random/g).length >= 0, 'message: 需要使用 <code>Math.random</code> 生成随机的小数');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4141,10 +4141,10 @@
         "var randomNumberBetween0and19 = Math.floor(Math.random() * 20);\n\nfunction myFunction() {\n  return Math.floor(Math.random() * 10);\n}"
       ],
       "tests": [
-        "assert(typeof myFunction() === \"number\" && (function(){var r = myFunction();return Math.floor(r) === r;})(), 'message: The result of <code>myFunction</code> should be a whole number.');",
-        "assert(code.match(/Math.random/g).length > 1, 'message: You should be using <code>Math.random</code> to generate a random number.');",
-        "assert(code.match(/\\(\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?\\*\\s*?10\\s*?\\)/g) || code.match(/\\(\\s*?10\\s*?\\*\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?\\)/g), 'message: You should have multiplied the result of <code>Math.random</code> by 10 to make it a number that is between zero and nine.');",
-        "assert(code.match(/Math.floor/g).length > 1, 'message: You should use <code>Math.floor</code> to remove the decimal part of the number.');"
+        "assert(typeof myFunction() === \"number\" && (function(){var r = myFunction();return Math.floor(r) === r;})(), 'message: <code>myFunction</code> 的结果应该是一个整数');",
+        "assert(code.match(/Math.random/g).length > 1, 'message: 需要使用 <code>Math.random</code> 生成随机数字');",
+        "assert(code.match(/\\(\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?\\*\\s*?10\\s*?\\)/g) || code.match(/\\(\\s*?10\\s*?\\*\\s*?Math.random\\s*?\\(\\s*?\\)\\s*?\\)/g), 'message: 你应该将 <code>Math.random</code> 的结果乘以 10 来生成 0 到 9 之间的随机数');",
+        "assert(code.match(/Math.floor/g).length > 1, 'message: 你需要使用 <code>Math.floor</code> 移除数字中的小数部分');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4200,10 +4200,10 @@
         "function randomRange(myMin, myMax) {\n  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;\n}"
       ],
       "tests": [
-        "assert(calcMin === 5, 'message: The random number generated by <code>randomRange</code> should be greater than or equal to your minimum number, <code>myMin</code>.');",
-        "assert(calcMax === 15, 'message: The random number generated by <code>randomRange</code> should be less than or equal to your maximum number, <code>myMax</code>.');",
-        "assert(randomRange(0,1) % 1 === 0 , 'message: The random number generated by <code>randomRange</code> should be an integer, not a decimal.');",
-        "assert((function(){if(code.match(/myMax/g).length > 1 && code.match(/myMin/g).length > 2 && code.match(/Math.floor/g) && code.match(/Math.random/g)){return true;}else{return false;}})(), 'message: <code>randomRange</code> should use both <code>myMax</code> and <code>myMin</code>, and return a random number in your range.');"
+        "assert(calcMin === 5, 'message: <code>randomRange</code> 返回的随机数应该大于或等于 <code>myMin</code>.');",
+        "assert(calcMax === 15, 'message: <code>randomRange</code> 返回的随机数应该小于或等于 <code>myMax</code>.');",
+        "assert(randomRange(0,1) % 1 === 0 , 'message: <code>randomRange</code> 应该返回一个随机整数, 而不是小数');",
+        "assert((function(){if(code.match(/myMax/g).length > 1 && code.match(/myMin/g).length > 2 && code.match(/Math.floor/g) && code.match(/Math.random/g)){return true;}else{return false;}})(), 'message: <code>randomRange</code> 应该使用 <code>myMax</code> 和 <code>myMin</code>, 并且返回两者之间的随机数');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4253,8 +4253,8 @@
         "var testString = \"Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.\";\nvar expression = /and/gi;  // Change this Line\nvar andCount = testString.match(expression).length;"
       ],
       "tests": [
-        "assert(andCount==2, 'message: Your <code>regular expression</code> should find two occurrences of the word <code>and</code>.');",
-        "assert(code.match(/\\/and\\/gi/), 'message: Use <code>regular expressions</code> to find the word <code>and</code> in <code>testString</code>.');"
+        "assert(andCount==2, 'message: 你的正则表达式应该找到两个 <code>and</code>');",
+        "assert(code.match(/\\/and\\/gi/), 'message: 使用正则表达式在 <code>testString</code> 中找到单词 <code>and</code>');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4294,8 +4294,8 @@
         "var testString = \"There are 3 cats but 4 dogs.\";\nvar expression = /\\d+/g;  // Change this line\nvar digitCount = testString.match(expression).length;"
       ],
       "tests": [
-        "assert(digitCount === 2, 'message: Your regular expression should find two numbers in <code>testString</code>.');",
-        "assert(code.match(/\\/\\\\d\\+\\//g), 'message: Use the <code>/\\d+/g</code> regular expression to find the numbers in <code>testString</code>.');"
+        "assert(digitCount === 2, 'message: 你的正则表达式应该在 <code>testString</code> 中找到两个数字');",
+        "assert(code.match(/\\/\\\\d\\+\\//g), 'message: 使用 <code>/\\d+/g</code> 正则表达式在 <code>testString</code> 中查找数字');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4334,8 +4334,8 @@
         "var testString = \"How many spaces are there in this sentence?\";\nvar expression = /\\s+/g;  // Change this line\nvar spaceCount = testString.match(expression).length;"
       ],
       "tests": [
-        "assert(spaceCount === 7, 'message: Your regular expression should find seven spaces in <code>testString</code>.');",
-        "assert(code.match(/\\/\\\\s\\+\\//g), 'message: Use the <code>/\\s+/g</code> regular expression to find the spaces in <code>testString</code>.');"
+        "assert(spaceCount === 7, 'message: 你的正则表达式应该在 <code>testString</code> 中找到七个空白');",
+        "assert(code.match(/\\/\\\\s\\+\\//g), 'message: 使用 <code>/\\s+/g</code> 正则表达式在 <code>testString</code> 查找空白字符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4372,8 +4372,8 @@
         "var testString = \"How many non-space characters are there in this sentence?\";\nvar expression = /\\S/g;  \nvar nonSpaceCount = testString.match(expression).length;"
       ],
       "tests": [
-        "assert(nonSpaceCount === 49, 'message: Your regular expression should find forty nine non-space characters in the <code>testString</code>.');",
-        "assert(code.match(/\\/\\\\S\\/g/g), 'message: Use the <code>/\\S/g</code> regular expression to find non-space characters in <code>testString</code>.');"
+        "assert(nonSpaceCount === 49, 'message: 你的正则表达式应该在 <code>testString</code> 中找到 49 个非空白的字符');",
+        "assert(code.match(/\\/\\\\S\\/g/g), 'message: 使用 <code>/\\S/g</code> 正则表达式在 <code>testString</code> 中查找非空白字符');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -4527,9 +4527,9 @@
         ""
       ],
       "tests": [
-        "assert(typeof(runSlots($(\".slot\"))[0]) === \"number\" && runSlots($(\".slot\"))[0] > 0 && runSlots($(\".slot\"))[0] < 4, '<code>slotOne</code> should be a random number.')",
-        "assert(typeof(runSlots($(\".slot\"))[1]) === \"number\" && runSlots($(\".slot\"))[1] > 0 && runSlots($(\".slot\"))[1] < 4, '<code>slotTwo</code> should be a random number.')",
-        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> should be a random number.')"
+        "assert(typeof(runSlots($(\".slot\"))[0]) === \"number\" && runSlots($(\".slot\"))[0] > 0 && runSlots($(\".slot\"))[0] < 4, '<code>slotOne</code> 应该是一个随机数')",
+        "assert(typeof(runSlots($(\".slot\"))[1]) === \"number\" && runSlots($(\".slot\"))[1] > 0 && runSlots($(\".slot\"))[1] < 4, '<code>slotTwo</code> 应该是一个随机数')",
+        "assert(typeof(runSlots($(\".slot\"))[2]) === \"number\" && runSlots($(\".slot\"))[2] > 0 && runSlots($(\".slot\"))[2] < 4, '<code>slotThree</code> 应该是一个随机数')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4692,7 +4692,7 @@
         ""
       ],
       "tests": [
-        "assert((function(){var data = runSlots();return data === null || data.toString().length === 1;})(), 'If all three of our random numbers are the same we should return that number. Otherwise we should return <code>null</code>.')"
+        "assert((function(){var data = runSlots();return data === null || data.toString().length === 1;})(), '如果三个随机数都相等, 我们应该返回这个数字, 否则应该返回 <code>null</code>.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -4859,7 +4859,7 @@
         ""
       ],
       "tests": [
-        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), 'You should be displaying the result of the slot numbers in the corresponding slots.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[1]).html().replace(/\\s/gi, \"\") !== \"\" && $($(\".slot\")[2]).html().replace(/\\s/gi, \"\") !== \"\"){return true;}else{return false;}})(), '你应该在老虎机对应的插槽中显示相应的摇奖结果')"
       ],
       "type": "waypoint",
       "challengeType": 0,
@@ -5030,9 +5030,9 @@
         ""
       ],
       "tests": [
-        "assert((function(){runSlots();if($($(\".slot\")[0]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneOne.')",
-        "assert((function(){runSlots();if($($(\".slot\")[1]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneTwo.')",
-        "assert((function(){runSlots();if($($(\".slot\")[2]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), 'you should add img to sloneThree.')"
+        "assert((function(){runSlots();if($($(\".slot\")[0]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), '你应该为 sloneOne 添加图片.')",
+        "assert((function(){runSlots();if($($(\".slot\")[1]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), '你应该为 sloneTwo 添加图片')",
+        "assert((function(){runSlots();if($($(\".slot\")[2]).html().match(\/img\/).length == 1){return true;}else{return false;}})(), '你应该为 sloneThree 添加图片')"
       ],
       "type": "waypoint",
       "challengeType": 0,
