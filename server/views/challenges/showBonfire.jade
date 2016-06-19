@@ -41,7 +41,7 @@ block content
                             | &nbsp; Bug
                 if (!user)
                     .button-spacer
-                    a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度
+                    a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度哦
                         script.
                             var userLoggedIn = false;
                 .button-spacer
@@ -73,8 +73,8 @@ block content
                       .spacer
                       .row
                       if (user)
-                          #submit-challenge.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 提交代码完成挑战 (ctrl + enter)
-                          a.btn.btn-lg.btn-block.btn-twitter(target="_blank", href="https://twitter.com/intent/tweet?text=I%20just%20#{verb}%20%40FreeCodeCamp%20#{name}&url=http%3A%2F%2Ffreecodecamp.com/challenges/#{dashedName}&hashtags=LearnToCode, JavaScript", onclick="ga('send', 'event', 'twitter', 'share', 'challenge completion share');")
+                          #submit-challenge.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 进入下一个挑战 (ctrl + enter)
+                          a.btn.btn-lg.btn-block.btn-twitter(target="_blank", href="https://twitter.com/intent/tweet?text=I%20just%20#{verb}%20%40FreeCodeCamp%20#{name}&url=http%3A%2F%2Ffreecodecamp.cn/challenges/#{dashedName}&hashtags=LearnToCode, JavaScript", onclick="ga('send', 'event', 'twitter', 'share', 'challenge completion share');")
                               i.fa.fa-twitter &thinsp;
                                   = phrase
                       else

@@ -857,10 +857,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"p span\") && $(\"p span\").length > 0, 'message: Your <code>span</code> element should be inside your <code>p</code> element.');",
-        "assert($(\"p span\") && $(\"p span\").text().match(/love/i), 'message: Your <code>span</code> element should have the text <code>love</code>.');",
-        "assert($(\"span\").hasClass(\"text-danger\"), 'message: Your <code>span</code> element should have class <code>text-danger</code>.');",
-        "assert(code.match(/<\\/span>/g) && code.match(/<span/g) && code.match(/<\\/span>/g).length === code.match(/<span/g).length, 'message: Make sure your <code>span</code> element has a closing tag.');"
+        "assert($(\"p span\") && $(\"p span\").length > 0, 'message: 你的 <code>span</code> 元素应该在 <code>p</code> 内。');",
+        "assert($(\"p span\") && $(\"p span\").text().match(/love/i), 'message: 你的 <code>span</code> 元素应该含有文本 <code>love</code>。');",
+        "assert($(\"span\").hasClass(\"text-danger\"), 'message: 你的 <code>span</code> 元素应该含有 class <code>text-danger</code>。');",
+        "assert(code.match(/<\\/span>/g) && code.match(/<span/g) && code.match(/<\\/span>/g).length === code.match(/<span/g).length, 'message: 确保你的 <code>span</code> 元素有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -935,10 +935,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(h2)\").length > 0 && $(\"div.row:has(img)\").length > 0, 'message: Your <code>h2</code> element and topmost <code>img</code> element should both be nested together within a <code>div</code> element with the class <code>row</code>.');",
-        "assert($(\"div.col-xs-4:has(img)\").length > 0, 'message: Nest your topmost <code>img</code> element within a <code>div</code> with the class <code>col-xs-4</code>.');",
-        "assert($(\"div.col-xs-8:has(h2)\").length > 0, 'message: Nest your <code>h2</code> element within a <code>div</code> with the class <code>col-xs-8</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');"
+        "assert($(\"div.row:has(h2)\").length > 0 && $(\"div.row:has(img)\").length > 0, 'message: 你的 <code>h2</code> 和最上方的 <code>img</code> 元素都应在内嵌在一个含有 class <code>row</code> 的 <code>div</code> 元素中。');",
+        "assert($(\"div.col-xs-4:has(img)\").length > 0, 'message: 将你最上方的 <code>img</code> 元素内嵌入含有 class <code>col-xs-4</code> 的一个元素 <code>div</code> 中。');",
+        "assert($(\"div.col-xs-8:has(h2)\").length > 0, 'message: 将你的 <code>h2</code> 元素内嵌入含有 class <code>col-xs-8</code> 的一个元素 <code>div</code> 中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1090,9 +1090,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn-danger > i\").is(\".fa.fa-trash\"), 'message: You should add a <code>&#60;i class=\"fa fa-trash\"&#62;&#60;/i&#62;</code> within your delete button element.');",
-        "assert($(\".btn-info > i\").is(\".fa.fa-info-circle\"), 'message: You should add a <code>&#60;i class=\"fa fa-info-circle\"&#62;&#60;/i&#62;</code> within your info button element.');",
-        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i>/g).length > 2 && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: Make sure each of your <code>i</code> elements has a closing tag and <code>&#60;i class=\"fa fa-thumbs-up\"&#62;&#60;/i&#62;</code> is in your like button element.');"
+        "assert($(\".btn-danger > i\").is(\".fa.fa-trash\"), 'message: 你应该添加一个 <code>&#60;i class=\"fa fa-trash\"&#62;&#60;/i&#62;</code> 到你的删除按钮元素中。');",
+        "assert($(\".btn-info > i\").is(\".fa.fa-info-circle\"), 'message: 你应该添加一个 <code>&#60;i class=\"fa fa-info-circle\"&#62;&#60;/i&#62;</code> 到你的 info 按钮元素中。');",
+        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i>/g).length > 2 && $(\".btn-primary > i\").is(\".fa.fa-thumbs-up\"), 'message: 确保你的每一个 <code>i</code> 元素都有一个闭合标签，并且 <code>&#60;i class=\"fa fa-thumbs-up\"&#62;&#60;/i&#62;</code> 在你的 like 按钮元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1245,9 +1245,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(input[type=\\\"checkbox\\\"])\").length > 0, 'message: Nest all of your checkboxes inside one <code>div</code> with the class <code>row</code>.');",
-        "assert($(\"div.col-xs-4:has(input[type=\\\"checkbox\\\"])\").length > 2, 'message: Nest each of your checkboxes inside its own <code>div</code> with the class <code>col-xs-4</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');"
+        "assert($(\"div.row:has(input[type=\\\"checkbox\\\"])\").length > 0, 'message: 将你所有的复选框嵌入一个 <code>div</code> 含有 class <code>row</code> 的元素中。');",
+        "assert($(\"div.col-xs-4:has(input[type=\\\"checkbox\\\"])\").length > 2, 'message: 将你的每一个复选框都分别用含有 class <code>col-xs-4</code> 的 <code>div</code> 元素包裹。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1337,7 +1337,7 @@
         "assert($(\"button[type=\\\"submit\\\"]\").hasClass(\"btn btn-primary\"), 'message: 给你表单中的提交按钮增加 class 属性 <code>btn btn-primary</code>。');",
         "assert($(\"button[type=\\\"submit\\\"]:has(i.fa.fa-paper-plane)\").length > 0, 'message: 添加 <code>&#60;i class=\"fa fa-paper-plane\"&#62;&#60;/i&#62;</code> 到你的 <code>button</code> 提交元素之中。');",
         "assert($(\"input[type=\\\"text\\\"]\").hasClass(\"form-control\"), 'message: 给你表单中的文本元素 <code>input</code> 添加 class 属性 <code>form-control</code>。');",
-        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i/g).length > 3, 'message: 明确你的每一个 <code>i</code> 元素都有一个闭合标签。');"
+        "assert(code.match(/<\\/i>/g) && code.match(/<\\/i/g).length > 3, 'message: 确保你的每一个 <code>i</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1425,10 +1425,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row:has(input[type=\\\"text\\\"])\").length > 0 &&  $(\"div.row:has(button[type=\\\"submit\\\"])\").length > 0, 'message: Nest your form submission button and text input in a div with class <code>row</code>.');",
-        "assert($(\"div.col-xs-7:has(input[type=\\\"text\\\"])\").length > 0, 'message: Nest your form text input in a div with the class <code>col-xs-7</code>.');",
-        "assert($(\"div.col-xs-5:has(button[type=\\\"submit\\\"])\").length > 0, 'message: Nest your form submission button in a div with the class <code>col-xs-5</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');"
+        "assert($(\"div.row:has(input[type=\\\"text\\\"])\").length > 0 &&  $(\"div.row:has(button[type=\\\"submit\\\"])\").length > 0, 'message: 将你的表单提交按钮和文本输入栏嵌入到含有 class <code>row</code> 的 div 元素中。');",
+        "assert($(\"div.col-xs-7:has(input[type=\\\"text\\\"])\").length > 0, 'message: 将你的文本输入栏嵌入到一个含有 class <code>col-xs-7</code> 的 div 元素中。');",
+        "assert($(\"div.col-xs-5:has(button[type=\\\"submit\\\"])\").length > 0, 'message: 将你的表单提交按钮嵌入到一个含有 class <code>col-xs-5</code> 的 div 元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1470,9 +1470,9 @@
         ""
       ],
       "tests": [
-        "assert($(\"div\").hasClass(\"container-fluid\"), 'message: Your <code>div</code> element should have the class <code>container-fluid</code>.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure each of your <code>div</code> elements has a closing tag.');",
-        "assert($(\"div\").children(\"h3\").length >0, 'message: Nest your <code>h3</code> element inside a <code>div</code> element.');"
+        "assert($(\"div\").hasClass(\"container-fluid\"), 'message: 你的 <code>div</code> 元素应该有 class <code>container-fluid</code>。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的每一个 <code>div</code> 元素都有一个闭合标签。');",
+        "assert($(\"div\").children(\"h3\").length >0, 'message: 将你的 <code>h3</code> 元素嵌入到一个 <code>div</code> 元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1494,7 +1494,7 @@
       "tests": [
         "assert(($(\"div\").length > 1) && ($(\"div.row h3.text-primary\").length == 0) && ($(\"div.row + h3.text-primary\").length == 0) && ($(\"h3.text-primary + div.row\").length > 0), 'message: 在你的 <code>h3</code> 之下增加一个 <code>div</code> 元素。');",
         "assert($(\"div\").hasClass(\"row\"), 'message: 你的 <code>div</code> 元素应该有 class <code>row</code>');",
-        "assert($(\"div.container-fluid div.row\").length > 0, 'message: 你的 <code>row div</code> 应该内嵌于 <code>container-fluid div</code> 之中');",
+        "assert($(\"div.container-fluid div.row\").length > 0, 'message: 你的 <code>row div</code> 应该内嵌于 <code>container-fluid div</code> 之中。');",
         "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你的 <code>div</code> 元素有一个闭合标签。');"
       ],
       "type": "waypoint",
@@ -1517,8 +1517,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: Nest two <code>div class=\"col-xs-6\"</code> elements within your <code>div class=\"row\"</code> element.');",
-        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: Make sure all your <code>div</code> elements have closing tags.');"
+        "assert($(\"div.row > div.col-xs-6\").length > 1, 'message: 将两个 <code>div class=\"col-xs-6\"</code> 元素内嵌入你的 <code>div class=\"row\"</code> 元素中。');",
+        "assert(code.match(/<\\/div>/g) && code.match(/<div/g) && code.match(/<\\/div>/g).length === code.match(/<div/g).length, 'message: 确保你所有的 <code>div</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1580,9 +1580,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"div.well\").children(\"button\").length > 5, 'message: Nest three <code>button</code> elements within each of your <code>div</code> elements with class <code>well</code>.');",
-        "assert($(\"button\") && $(\"button\").length > 5, 'message: You should have a total of 6 <code>button</code> elements.');",
-        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: Make sure all your <code>button</code> elements have closing tags.');"
+        "assert($(\"div.well\").children(\"button\").length > 5, 'message: 将三个 <code>button</code> 元素分别内嵌于含有 class <code>well</code> 的 <code>div</code> 元素中。');",
+        "assert($(\"button\") && $(\"button\").length > 5, 'message: 你应该总共有 6 个 <code>button</code> 元素。');",
+        "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1651,7 +1651,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".target\").length > 5, 'message: Apply the <code>target</code> class to each of your <code>button</code> elements.');"
+        "assert($(\".target\").length > 5, 'message: 设置 <code>target</code> class 属性到你的每一个 <code>button</code> 元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1727,10 +1727,10 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".col-xs-6\").children(\"h4\") && $(\".col-xs-6\").children(\"h4\").length > 1, 'message: Add an <code>h4</code> element to each of your <code>&#60;div class=\"col-xs-6\"&#62;</code> elements.');",
-        "assert(new RegExp(\"#left-well\",\"gi\").test($(\"h4\").text()), 'message: One <code>h4</code> element should have the text <code>#left-well</code>.');",
-        "assert(new RegExp(\"#right-well\",\"gi\").test($(\"h4\").text()), 'message: One <code>h4</code> element should have the text <code>#right-well</code>.');",
-        "assert(code.match(/<\\/h4>/g) && code.match(/<h4/g) && code.match(/<\\/h4>/g).length === code.match(/<h4/g).length, 'message: Make sure all your <code>h4</code> elements have closing tags.');"
+        "assert($(\".col-xs-6\").children(\"h4\") && $(\".col-xs-6\").children(\"h4\").length > 1, 'message: 添加 <code>h4</code> 元素到你的每一个 <code>&#60;div class=\"col-xs-6\"&#62;</code> 元素之中。');",
+        "assert(new RegExp(\"#left-well\",\"gi\").test($(\"h4\").text()), 'message: 第一个 <code>h4</code> 元素含有文本内容 <code>#left-well</code> 。');",
+        "assert(new RegExp(\"#right-well\",\"gi\").test($(\"h4\").text()), 'message: 另一个 <code>h4</code> 元素含有文本内容 <code>#right-well</code> 。');",
+        "assert(code.match(/<\\/h4>/g) && code.match(/<h4/g) && code.match(/<\\/h4>/g).length === code.match(/<h4/g).length, 'message: 确保你所有的 <code>h4</code> 元素都有闭合标签。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1808,12 +1808,12 @@
         "</div>"
       ],
       "tests": [
-        "assert(new RegExp(\"#target1\",\"gi\").test($(\"#target1\").text()), 'message: Give your <code>button</code> element with the id <code>target1</code> the text <code>#target1</code>.');",
-        "assert(new RegExp(\"#target2\",\"gi\").test($(\"#target2\").text()), 'message: Give your <code>button</code> element with the id <code>target2</code> the text <code>#target2</code>.');",
-        "assert(new RegExp(\"#target3\",\"gi\").test($(\"#target3\").text()), 'message: Give your <code>button</code> element with the id <code>target3</code> the text <code>#target3</code>.');",
-        "assert(new RegExp(\"#target4\",\"gi\").test($(\"#target4\").text()), 'message: Give your <code>button</code> element with the id <code>target4</code> the text <code>#target4</code>.');",
-        "assert(new RegExp(\"#target5\",\"gi\").test($(\"#target5\").text()), 'message: Give your <code>button</code> element with the id <code>target5</code> the text <code>#target5</code>.');",
-        "assert(new RegExp(\"#target6\",\"gi\").test($(\"#target6\").text()), 'message: Give your <code>button</code> element with the id <code>target6</code> the text <code>#target6</code>.');"
+        "assert(new RegExp(\"#target1\",\"gi\").test($(\"#target1\").text()), 'message: 在 id 为 <code>target1</code> 的 <code>button</code> 元素中输入文本 <code>#target1</code>。');",
+        "assert(new RegExp(\"#target2\",\"gi\").test($(\"#target2\").text()), 'message: 在 id 为 <code>target2</code> 的 <code>button</code> 元素中输入文本 <code>#target2</code>。');",
+        "assert(new RegExp(\"#target3\",\"gi\").test($(\"#target3\").text()), 'message: 在 id 为 <code>target3</code> 的 <code>button</code> 元素中输入文本 <code>#target3</code>。');",
+        "assert(new RegExp(\"#target4\",\"gi\").test($(\"#target4\").text()), 'message: 在 id 为 <code>target4</code> 的 <code>button</code> 元素中输入文本 <code>#target4</code>。');",
+        "assert(new RegExp(\"#target5\",\"gi\").test($(\"#target5\").text()), 'message: 在 id 为 <code>target5</code> 的 <code>button</code> 元素中输入文本 <code>#target5</code>。');",
+        "assert(new RegExp(\"#target6\",\"gi\").test($(\"#target6\").text()), 'message: 在 id 为 <code>target6</code> 的 <code>button</code> 元素中输入文本 <code>#target6</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0

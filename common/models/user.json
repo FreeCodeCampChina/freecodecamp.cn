@@ -106,6 +106,12 @@
       "type": "number",
       "default": 0
     },
+    "telphone": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string"
+    },
     "sendMonthlyEmail": {
       "type": "boolean",
       "default": true

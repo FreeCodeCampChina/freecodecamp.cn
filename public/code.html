@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>苏州全民编程挑战赛</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+    body{margin:0;font-size:16px;}
+    header{background: #4CAF50;height:450px;color:white;position:relative;}
+    .canvas-text{position:absolute;top:0;left:0;width:100%;}
+    #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
+    .qrcode{position: fixed;top: 450px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;
+      text-align: center;color: #717375;font-size: 12px;}
+    .right{right: 0px;}
+    .left{left: 0px;}
+    dd{margin: 0 auto;margin-top: 5px;}
+    .btn-orange{background:orange;display:block;margin:0 auto;border:none;margin-top: 20px;font-size:30px;}
+    .carousel-indicators {bottom: -30px;}
+    .carousel-indicators li {border: 1px solid #8BC34A;border-radius: 50%;margin:0;}
+    .carousel-indicators .active {background:#8BC34A;width:10px;height:10px;}
+    .button-spacer{height:10px;}
+    .spacer{height:10px;}
+    .row{margin-top:40px;}
+    .modal{font-size:24px;}
+    .modal-footer{text-align:center;}
+    #commit{color: #fff;background: orange;border: none;}
+    .pt20{padding-top: 20px;}
+  </style>
+</head>
+<body>
+  <div style="display: none;">
+    <img src="/images/camper-image-placeholder.png" >
+  </div>
+  <dl class="qrcode right hidden-xs">
+      <dt><img src="images/qrcode_for_nearest.jpg" width="120px"></dt>
+      <dd>搜索freecodecamp</dd>
+      <span>回复“比赛”二字</span><br>
+      <span>加入学习群</span>
+  </dl>
+  <div class="qrcode left hidden-xs">
+      <img src="http://dev.juhe.cn/Public/front/images/enroll.png" width="150px" id="iwantjoin">
+  </div>
+  <header id="banner">
+    <canvas id="animate-net" class="banner-back"></canvas>
+    <div class="canvas-text">
+      <img src="images/wilddog.png" id="logo">
+      <h1 class="text-center">野狗杯</h1>
+      <h1 class="text-center">苏州全民在线编程挑战赛</h1>
+      <h2 class="text-center">06.05 -- 07.02</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#myModal">
+        立即报名
+      </button>
+    </div>
+
+  </header>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" ng-controller="modal">
+        <div class="modal-header">
+          <h4 class="modal-title" class="text-center" id="myModalLabel">FreeCodeCamp 比赛报名入口</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="username" class="col-xs-12 col-sm-3 control-label">用户名</label>
+              <div class="col-xs-12 col-sm-9" style="margin-top: 10px;">
+                <input type="text" class="form-control" id="username" ng-model="username" name="username"  placeholder="FCC的用户名都是小写哦" required>
+                <span style="font-size:12px;">如果你没有FCC用户名，</span><a href="/login" style="font-size:12px;">请先注册FCC</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telphone" class="col-xs-12 col-sm-3 control-label">手机号</label>
+              <div class="col-xs-12 col-sm-9" style="margin-top: 10px;">
+                <input type="tel" class="form-control" id="telphone" ng-model="telphone" name="telphone"  placeholder="便于我们通知你领奖品哦" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="category" class="col-xs-12 col-sm-3 control-label">选择组别</label>
+              <div class="col-xs-12 col-sm-9" style="margin-top: 10px;">
+                <select style="border: 1px solid #ccc;width:100%;">
+                   <option value="" >一旦选定不能修改哦 ^_^</option>
+                   <option value="master">专业组(面向计算机高手)</option>
+                   <option value="newer" >业余组(面向计算机小白)</option>
+                   <option value="women" >新秀组(只面向女性，男性选择改组无法获奖）</option>
+                 </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭此窗口</button>
+            <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="text-center">人人皆可编程</h3>
+    <p class="text-center pt20">本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。</p>
+    <p class="text-center">全民编程时代已经来临，编程将会成为互联网时代的通用技能。</p>
+    <p class="text-center">本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。</p>
+  </div>
+
+  <hr>
+  <div class="container">
+    <h3 class="text-center">比赛平台：FreeCodeCamp中文社区</h3>
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <img src="/images/landingIcons_connect.svg" class="img-responsive center-block" style="width:150px;">
+        <div class="button-spacer"></div>
+        <span>全球30W+用户</span>
+        <br><span>GitHub上排名第一</span>
+        <div class="spacer"></div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <img src="/images/landingIcons_learn.svg" class="img-responsive center-block"  style="width:150px;">
+        <div class="button-spacer"></div>
+        <span>游戏化编程</span><br>
+        <span>无尽的挑战任务</span>
+        <div class="spacer"></div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <img src="/images/landingIcons_nonprofits.svg" class="img-responsive center-block"  style="width:150px;">
+        <div class="button-spacer"></div>
+        <span>8万+人在线交流</span><br>
+        <span>有问必答</span>
+        <div class="spacer"></div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3">
+        <img src="/images/landingIcons_portfolio.svg" class="img-responsive center-block"  style="width:150px;">
+        <div class="button-spacer"></div>
+        <span>帮助非盈利组织</span><br>
+        <span>开发公益项目</span>
+        <div class="spacer"></div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h3 class="text-center">赛程</h3>
+    <embed src="images/timeline.svg" type="image/svg+xml" />
+  </div>
+  <hr>
+  <div class="container">
+    <h3 class="text-center">分组</h3>
+    <embed src="images/groups.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" style="margin-left:20px;"/>
+  </div>
+  <hr>
+  <div class="container">
+    <h3 class="text-center">评分（标星的必做）</h3>
+    <embed src="images/challenges.svg" type="image/svg+xml" codebase="http://www.adobe.com/svg/viewer/install/" />
+  </div>
+  <hr>
+  <div class="container" style="width:100%;">
+    <h3 class="text-center">奖品</h3>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="/images/1.png" alt="...">
+        </div>
+        <div class="item">
+          <img src="/images/2.png" alt="...">
+        </div>
+        <div class="item">
+          <img src="/images/3.png" alt="...">
+        </div>
+      </div>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <img src="images/startup.png" class="img-responsive center-block">
+    <a href="https://wilddog.com"><img src="images/zuanshi.png" class="img-responsive center-block"></a>
+    <img src="images/media.png" class="img-responsive center-block">
+  </div>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/js/angular.min.js"></script>
+<script src="/js/greensock.js"></script>
+<script>
+  $('#iwantjoin').click(function(){
+    $(".btn-lg").click();
+  })
+  $('.carousel').carousel({
+    interval: 5000
+  });
+  var username = document.getElementById("username");
+  var telphoneRegex = /^0?(13[0-9]|15[0-9]|17[0-9]|18[0-9]|14[0-9])[0-9]{8}$/;
+  var emailRegex = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+  var telphone = document.getElementById("telphone");
+  var email = document.getElementById("email");
+  var commit= document.getElementById("commit");
+  var app = angular.module('app',[]);
+  app.controller('modal',['$scope','$http', function($scope,$http){
+    $scope.commit=function(){
+      if(validator()){
+        $http.post('/has-username',{username:$scope.username}).then(function(res){
+          var out = res.data;
+          if(out.status == 404){
+            alert("用户名不存在，请先注册FCC！")
+          }else{
+            $http.post('/has-join',{username:$scope.username,telphone:$scope.telphone}).then(function(res){
+              var out = res.data;
+              if(out.status == 200){
+                alert("你已报名成功，请勿重复报名！");
+                $(".close").click();
+                $('.btn-lg').text('报名成功').attr('disabled',true);
+                window.open("https://freecodecamp.cn");
+              }else{
+                $http.post('/add-telphone',{username:$scope.username,telphone:$scope.telphone,category:$("select").val()}).then(function(res){
+                  var out = res.data;
+                  if(out.status == 200){
+                    alert("恭喜你，报名成功！");
+                    $(".close").click();
+                    $('.btn-lg').text('报名成功').attr('disabled',true);
+                    window.open("https://freecodecamp.cn");
+                  }else{
+                    alert("提交数据有误，请重新输入！")
+                  }
+                },function(err){
+                  console.log(err);
+                })
+              }
+            },function(err){
+              console.log(err);
+            })
+          }
+        },function(err){
+          console.log(err);
+        })
+      }
+    }
+  }])
+  function validator(){
+    if(!$("#username").val().replace(/(^s*)|(s*$)/g,'')){
+      alert("用户名为空，请重新输入！")
+      return false;
+    }else if(!$("#telphone").val().replace(/(^s*)|(s*$)/g,'')){
+      alert("手机号为空，请重新输入！")
+      return false;
+    }else if(!telphoneRegex.test($("#telphone").val())){
+      alert("手机号错误，请重新输入！")
+      return false;
+    }else if(!$("select").val()){
+      alert("请先选组，再提交！");
+      return false;
+    }else{
+      return true;
+    }
+  }
+</script>
+<script>
+(function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-76000773-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

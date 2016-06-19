@@ -149,6 +149,7 @@ function getRenderData$(user, challenge$, origChallengeName, solution) {
     })
     .last({ defaultValue: null })
     .flatMap(challenge => {
+      log('enviroment ' + isDev);
       if (challenge && isDev) {
         return getFromDisk$(challenge);
       }
