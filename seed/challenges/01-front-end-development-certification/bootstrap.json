@@ -85,8 +85,8 @@
       "title": "Make Images Mobile Responsive",
       "description": [
         "首先，在已有的图片下方添加一张新的图片。将它的 <code>src</code> 属性设置为 <code>/images/running-cat.jpg</code>。",
-        "如果图片的尺寸能够刚好等于我们手机的尺寸，那想必是极好的。",
-        "谢天谢地，通过Bootstrap，我们所要做的只是为图片添加 <code>img-responsive</code>class属性。这样图片的宽度应该就能完美地适配你的页面的宽度了。"
+        "如果图片的尺寸刚好等于我们手机的尺寸，那想必是极好的。",
+        "谢天谢地，通过Bootstrap，我们要做的只是给图片添加 <code>img-responsive</code> class属性。这样图片的宽度就能完美地适配你的页面的宽度了。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -148,9 +148,9 @@
       ],
       "tests": [
         "assert($(\"img\").length === 2, 'message: 此时，你应该共有两张图片。');",
-        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 <code>img-responsive</code> 类属性。');",
-        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 <code>smaller-image</code> 类属性。');",
-        "assert($(\"img:eq(1)\").attr(\"src\") === \"/images/running-cat.jpg\", 'message: 你的新图片需要有属性 <code>src</code> ，值为 <code>/images/running-cat.jpg</code>。');",
+        "assert($(\"img:eq(1)\").hasClass(\"img-responsive\"), 'message: 你的新图片应摆放在旧图片之下，并且含有 <code>img-responsive</code> class属性。');",
+        "assert(!$(\"img:eq(1)\").hasClass(\"smaller-image\"), 'message: 你的新图片不应该含有 <code>smaller-image</code> class属性。');",
+        "assert($(\"img:eq(1)\").attr(\"src\") === \"/images/running-cat.jpg\", 'message: 你的新图片需要有属性 <code>src</code> ，属性值为 <code>/images/running-cat.jpg</code>。');",
         "assert(code.match(/<img/g) && code.match(/<img[^<]*>/g).length === 2 && code.match(/<img/g).length === 2, 'message: 确保你的新元素 <code>img</code> 有一个起闭合作用的右尖括号。');"
       ],
       "type": "waypoint",
@@ -160,8 +160,8 @@
       "id": "bad87fee1348bd8acde08812",
       "title": "Center Text with Bootstrap",
       "description": [
-        "既然我们在使用Bootstrap，我们可以通过居中头部元素来使它看起来更棒。 我们所要做的只是把 class <code>text-center</code> 属性添加给 <code>h2</code> 元素。",
-        "记住，你可以通过用空格分开不同的 class 名来为同一个元素添加多个 class 属性， 就像这样：",
+        "既然我们在使用Bootstrap，我们可以通过居中头部元素来使它看起来更棒。 我们所要做的只是把<code>text-center</code>  class属性添加给 <code>h2</code> 元素。",
+        "记住：你可以用空格分开多个class来为同一个元素添加多个 class 属性， 就像这样：",
         "<code>&#60h2 class=\"red-text text-center\"&#62your text&#60/h2&#62</code>"
       ],
       "challengeSeed": [
@@ -234,8 +234,8 @@
       "id": "bad87fee1348cd8acdf08812",
       "title": "Create a Bootstrap Button",
       "description": [
-        "Bootstrap有它自己的 <code>button</code> 元素的风格， 看起来要比普通的HTML好看得多。",
-        "在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及\"Like\"文本"
+        "Bootstrap有它自己的 <code>button</code> 按钮风格， 看起来要比默认的按钮好看得多。",
+        "在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及\"Like\"文本。"
       ],
       "challengeSeed": [
         "<link href=\"http://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -298,8 +298,8 @@
         "</div>"
       ],
       "tests": [
-        "assert(new RegExp(\"like\",\"gi\").test($(\"button\").text()), 'message: 创建一个新的元素 <code>button</code> ，包含文本 \"Like\".');",
-        "assert($(\"button\").hasClass(\"btn\"), 'message: 你新创建的按钮需要有 class <code>btn</code> 属性。');",
+        "assert(new RegExp(\"like\",\"gi\").test($(\"button\").text()), 'message: 创建一个新的元素 <code>button</code> ，包含文本 \"Like\"。');",
+        "assert($(\"button\").hasClass(\"btn\"), 'message: 你新创建的按钮需要有 <code>btn</code>  class 属性。');",
         "assert(code.match(/<\\/button>/g) && code.match(/<button/g) && code.match(/<\\/button>/g).length === code.match(/<button/g).length, 'message: 确保你所有的 <code>button</code> 元素都有一个闭合标签。');"
       ],
       "type": "waypoint",

@@ -2505,13 +2505,13 @@
       "id": "bad87fee1348bd9aedf07756",
       "title": "Override All Other Styles by using Important",
       "description": [
-        "耶！我们刚刚证明了行内样式将覆盖你的 <code>style</code> 元素中的所有 CSS 声明。",
+        "耶！我们刚刚证明了行内样式将覆盖<code>style</code> 中定义的所有 CSS。",
         "但是等一下，还有最后一种覆盖 CSS 的方法，这是所有方法中最强大的，但是在讲它之前，我们先讲讲为什么你要覆盖 CSS。",
         "很多情况下，你会使用 CSS 库，这些库可能会意外覆盖掉你自己的 CSS。所以当你需要确保某元素具有指定的 CSS 时，你可以使用 <code>!important</code>。",
         "让我们再回到我们的 <code>pink-text</code> class 声明。还记得不？我们的 <code>pink-text</code> class 被随后的 class 声明、id 声明和行内样式所覆盖了。",
         "让我们来给 pink-text 元素的 color 声明加上关键字 <code>!important</code>，以便 100% 确保你的 <code>h1</code> 元素是粉色的。",
         "举例如下：",
-        "<code>color: red !important;</code>"
+        "<code>color: pink !important;</code>"
       ],
       "challengeSeed": [
         "<style>",
