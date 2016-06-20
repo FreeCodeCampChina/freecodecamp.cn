@@ -5,7 +5,7 @@ block content
             h4.text-center.challenge-instructions-title= name
                  if (isCompleted)
                     | &nbsp;
-                    i.ion-checkmark-circled.text-primary(title="Completed")           
+                    i.ion-checkmark-circled.text-primary(title="Completed")
             hr
             ol
                 for step, index in description
@@ -19,18 +19,18 @@ block content
                 iframe.embed-responsive-item(src='//player.vimeo.com/video/#{video}')
             br
             if (user)
-                a.btn.btn-primary.btn-big.btn-block#completed-zipline-or-basejump I've completed this challenge (ctrl + enter)
+                a.btn.btn-primary.btn-big.btn-block#completed-zipline-or-basejump 我已经完成了这个挑战 (ctrl + enter)
                 script.
                     var userLoggedIn = true;
             else
-                a.btn.btn-big.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) Go to my next challenge (ctrl + enter)
+                a.btn.btn-big.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) 进入下一个挑战 (ctrl + enter)
             .button-spacer
             .btn-group.input-group.btn-group-justified
                 .btn.btn-primary.btn-primary-ghost.btn-big#challenge-help-btn Help
                 .btn.btn-primary.btn-primary-ghost.btn-big#trigger-issue-modal Bug
             if (!user)
                 .button-spacer
-                a.btn.btn-big.signup-btn.btn-block(href='/login') Sign in so you can save your progress
+                a.btn.btn-big.signup-btn.btn-block(href='/login') 登录可以保存进度哦
                     script.
                         var userLoggedIn = false;
                 br
@@ -58,12 +58,12 @@ block content
                                         input.form-control#github-url(name="githubUrl", placeholder="http://github.com/camper/project")
 
                     if (user)
-                        a.btn.btn-lg.btn-primary.btn-block#next-courseware-button(name='_csrf', value=_csrf) Submit and go to my next challenge
+                        a.btn.btn-lg.btn-primary.btn-block#next-courseware-button(name='_csrf', value=_csrf) 进入下一个挑战
                         .button-spacer
                         a.btn.btn-lg.btn-block.btn-twitter(target="_blank", href="https://twitter.com/intent/tweet?text=Check%20out%20the%20project%20I%20just%20built%20with%20%40FreeCodeCamp:%20PASTE_YOUR_CODEPEN_URL_HERE_USING_FULL_INSTEAD_OF_PEN%20%0A%20%23LearnToCode%20%23JavaScript", onclick="ga('send', 'event', 'twitter', 'share', 'challenge completion share');")
                           i.fa.fa-twitter &thinsp;Tweet this project
                     else
-                        a.btn.btn-lg.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) Go to my next challenge
+                        a.btn.btn-lg.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) 进入下一个挑战
 
     include ../partials/challenge-modals
     script.

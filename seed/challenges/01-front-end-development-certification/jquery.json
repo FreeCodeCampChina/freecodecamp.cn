@@ -733,12 +733,13 @@
       "id": "bad87fee1348bd9aed208826",
       "title": "Target the Children of an Element Using jQuery",
       "description": [
-        "每个HTML元素根据继承属性都有子<code>child</code>元素。",
-        "举个例子，每个HTML元素都是 <code>body</code> 元素的子元素， 你的 \"jQuery Playground\" <code>h3</code> 元素是 <code>&#60;div class=\"container-fluid\"&#62</code> 的子元素。",
-        "jQuery有一个方法叫<code>child()</code>，它允许你访问指定元素的子元素。",
-        "举个例子：让<code>left-well</code> 元素的子元素<code>child()</code>的背景色变成蓝色。",
+        "每个人都继承了自己的父母的一些属性，譬如：DNA、相貌、血型、体型等等，HTML也不例外。",
+        "许多HTML元素都有<code>children</code>(子元素)，每个子元素都从父元素那里继承了一些属性。",
+        "举个例子，每个HTML元素都是 <code>body</code> 的子元素， 你的 \"jQuery Playground\" <code>h3</code> 元素是 <code>&#60;div class=\"container-fluid\"&#62</code> 的子元素。",
+        "jQuery有一个方法叫<code>children()</code>，它允许你访问指定元素的子元素。",
+        "举个例子：让<code>left-well</code> 元素的子元素<code>children()</code>的文本颜色变成蓝色。",
         "<code>$(\"#left-well\").children().css(\"color\", \"blue\")</code>",
-        "试试让<code>#right-well</code>元素的所有子元素的文本颜色都变成橙色。"
+        "任务：让<code>#right-well</code>元素的所有子元素的文本颜色都变成橙色。"
       ],
       "challengeSeed": [
         "fccss",

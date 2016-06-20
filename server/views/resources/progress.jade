@@ -1,23 +1,26 @@
 extends ../layout
 block content
   style.
-    h2,table,th,td{text-align:center;border-spacing: 0px;font-size:15px;}
     tr:nth-child(even){background-color: #FAEBD7;}
     tr:nth-child(odd){background-color: white;}
-    th, tr{padding:5px;}
-    #left{float:left;margin-right:20px;}
-    #center{float:left;margin-right:20px;}
-    #right{float:left;}
-    p{text-align:center;}
-  p.text-center
-    | 排行榜改版了，快去
-    a(href='/code.html') 报名参加比赛
-    | ，这样就能实时看到其他同学的学习进度哦。
-  p 各组排行靠前的同学请注意，针对项目部分全部copy的同学，项目分全部取消，后期会一一审核。
-  p 希望大家自觉遵守项目文档的规则。
-  div(ng-app='app')
+    th,td{padding:5px;text-align:center;}
+  .row(ng-app='app')
+    p.text-center
+      |  江湖传言：“江左梅郎，麒麟之才，得之可得天下。”
+    p.text-center
+      |  如今，优秀的js工程师就是江左梅郎，就是企业梦寐以求的麒麟之才。
+    p.text-center
+      |  琅琊榜的门槛：
+      a(href='/code') 报名
+      |  审核通过后才能进入琅琊榜中。
+    p.text-center
+      |  琅琊榜的规则：绝不允许抄袭，一旦发现，立即取消比赛资格。
+    p.text-center
+      |  迄今已经取消3人比赛资格，请各位做项目过程中独立思考，不要copy示例代码。
+    p.text-center
+      |  如果遇到困难无法解决，可先行跳过。不知道如何跳过的，请仔细复习之前的课程。
     #left.col-md-4.col-sm-12.col-xs-12
-      h2 专业组排行榜
+      h4.text-center 专业组排行榜
       table(ng-controller='left')
         tr
           th 排名
@@ -35,7 +38,7 @@ block content
           td(ng-bind='item.projectScore')
           td(ng-bind='item.totalScore = item.score + item.projectScore')
     #center.col-md-4.col-sm-12.col-xs-12
-      h2 业余组排行榜
+      h4.text-center 业余组排行榜
       table(ng-controller='center')
         tr
           th 排名
@@ -53,7 +56,7 @@ block content
           td(ng-bind='item.projectScore')
           td(ng-bind='item.totalScore = item.score + item.projectScore')
     #right.col-md-4.col-sm-12.col-xs-12
-      h2 程序媛新秀组排行榜
+      h4.text-center 程序媛新秀组排行榜
       table(ng-controller='right')
         tr
           th 排名
@@ -70,6 +73,7 @@ block content
           td(ng-bind='item.score')
           td(ng-bind='item.projectScore')
           td(ng-bind='item.totalScore = item.score + item.projectScore')
+  script(src='/js/angular.min.js')
   script.
     var project1 = ['bd7158d8c442eddfbeb5bd1f','bd7158d8c442eddfaeb5bd18','bd7158d8c242eddfaeb5bd13','bd7158d8c242eddfaeb5be13'];
     var project2 = ['bd7158d8c442eddfaeb5bd13','bd7158d8c442eddfaeb5bd10','bd7158d8c442eddfaeb5bd19','bd7158d8c442eddfaeb5bd1f'];

@@ -24,7 +24,7 @@ import certTypes from '../utils/certTypes.json';
 
 const log = debug('fcc:certification');
 const sendMessageToNonUser = ifNoUserSend(
-  'must be logged in to complete.'
+  '你必须先登录'
 );
 
 function isCertified(ids, challengeMap = {}) {
@@ -131,8 +131,7 @@ export default function certificate(app) {
           }
           return res.status(200).send(
             dedent`
-              Looks like you have not completed the neccessary steps.
-              Please return to the challenge map.
+              你没有完成必要步骤，请返回学习路径完成对应课程。
             `
           );
         },

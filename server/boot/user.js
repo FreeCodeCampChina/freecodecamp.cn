@@ -369,9 +369,7 @@ module.exports = function(app) {
           if (user.isCheater) {
             req.flash('errors', {
               msg: dedent`
-                Upon review, this account has been flagged for academic
-                dishonesty. If you’re the owner of this account contact
-                team@freecodecamp.com for details.
+                很抱歉，该账户违反了学术诚实守则。如果你是该账户的主人，请联系huluoyang@freecodecamp.cn获知缘由。
               `
             });
             return res.redirect(`/${user.username}`);

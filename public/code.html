@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <style>
     body{margin:0;font-size:16px;}
-    header{background-image: url("images/background.png");height:450px;color:white;}
+    header{background: #4CAF50;height:450px;color:white;position:relative;}
+    .canvas-text{position:absolute;top:0;left:0;width:100%;}
     #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
     .qrcode{position: fixed;top: 450px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;
       text-align: center;color: #717375;font-size: 12px;}
@@ -24,6 +25,7 @@
     .spacer{height:10px;}
     .row{margin-top:40px;}
     .modal{font-size:24px;}
+    .modal-footer{text-align:center;}
     #commit{color: #fff;background: orange;border: none;}
     .pt20{padding-top: 20px;}
   </style>
@@ -41,15 +43,19 @@
   <div class="qrcode left hidden-xs">
       <img src="http://dev.juhe.cn/Public/front/images/enroll.png" width="150px" id="iwantjoin">
   </div>
-  <header>
-    <img src="images/wilddog.png" id="logo">
-    <h1 class="text-center">野狗杯</h1>
-    <h1 class="text-center">苏州全民在线编程挑战赛</h1>
-    <h2 class="text-center">06.05 -- 07.02</h2>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#myModal">
-      立即报名
-    </button>
+  <header id="banner">
+    <canvas id="animate-net" class="banner-back"></canvas>
+    <div class="canvas-text">
+      <img src="images/wilddog.png" id="logo">
+      <h1 class="text-center">野狗杯</h1>
+      <h1 class="text-center">苏州全民在线编程挑战赛</h1>
+      <h2 class="text-center">06.05 -- 07.02</h2>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-orange btn-lg" data-toggle="modal" data-target="#myModal">
+        立即报名
+      </button>
+    </div>
+
   </header>
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -87,7 +93,7 @@
           </form>
         </div>
         <div class="modal-footer text-center">
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭此窗口</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭此窗口</button>
             <button id="commit" class="btn btn-default" ng-click="commit();">确定无误，提交</button>
         </div>
       </div>
@@ -186,6 +192,7 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/js/angular.min.js"></script>
+<script src="/js/greensock.js"></script>
 <script>
   $('#iwantjoin').click(function(){
     $(".btn-lg").click();

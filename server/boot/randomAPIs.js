@@ -330,7 +330,7 @@ module.exports = function(app) {
     });
   }
   function master(req,res,next){
-    User.find({ where: { "category" : "master"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+    User.find({ where: { "category" : "master","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
       if (err) { return next(err); }
       var data = user.slice();
       for(var i=0;i<data.length;i++){
@@ -342,7 +342,7 @@ module.exports = function(app) {
     });
   }
   function newer(req,res,next){
-    User.find({ where: { "category" : "newer"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+    User.find({ where: { "category" : "newer","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
       if (err) { return next(err); }
       var data = user.slice();
       for(var i=0;i<data.length;i++){
@@ -354,7 +354,7 @@ module.exports = function(app) {
     });
   }
   function women(req,res,next){
-    User.find({ where: { "category" : "women"}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+    User.find({ where: { "category" : "women","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
       if (err) { return next(err); }
       var data = user.slice();
       for(var i=0;i<data.length;i++){

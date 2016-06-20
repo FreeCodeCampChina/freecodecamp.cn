@@ -129,12 +129,12 @@ block content
                                   td.col-xs-2.hidden-xs= challenge.lastUpdated ? challenge.lastUpdated : ''
                                   td.col-xs-2.hidden-xs
                                     if (challenge.solution)
-                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank') View solution
+                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '#?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank') View solution
                                     else
                                         a(href='/challenges/' + removeOldTerms(challenge.name)) View this challenge
                                   td.col-xs-12.visible-xs
                                     if (challenge.solution)
-                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank')= removeOldTerms(challenge.name)
+                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '#?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank')= removeOldTerms(challenge.name)
                                     else
                                         a(href='/challenges/' + removeOldTerms(challenge.name))= removeOldTerms(challenge.name)
               if (challenges.length > 0)
@@ -153,11 +153,11 @@ block content
                                   td.col-xs-2.hidden-xs= challenge.lastUpdated ? challenge.lastUpdated : ''
                                   td.col-xs-2.hidden-xs
                                     if (challenge.solution)
-                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank') View solution
+                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '#?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank') View solution
                                     else
                                         a(href='/challenges/' + removeOldTerms(challenge.name)) View this challenge
                                   td.col-xs-12.visible-xs
                                     if (challenge.solution)
-                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank')= removeOldTerms(challenge.name)
+                                        a(href='/challenges/' + removeOldTerms(challenge.name) + '#?solution=' + encodeURIComponent(encodeFcc(challenge.solution)), target='_blank')= removeOldTerms(challenge.name)
                                     else
                                         a(href='/challenges/' + removeOldTerms(challenge.name))= removeOldTerms(challenge.name)
