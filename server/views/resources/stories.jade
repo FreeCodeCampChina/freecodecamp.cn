@@ -1,6 +1,6 @@
 extends ../layout
 block content
-    h1.text-center Stories from happy campers
+    h1.text-center 学员感受
     hr
     .row
         .col-xs-12.col-sm-10.col-sm-offset-1
@@ -12,14 +12,17 @@ block content
                                 img.testimonial-image.img-responsive.img-center(src=story.image)
                             h3.text-center= story.camper
                                 | &nbsp;
-                                a.fa.fa-linkedin-square.text-primary(alt="#{story.camper}'s LinkedIn Profile", href=story.linkedin, target='_blank')
+                                if story.linkedin
+                                  a.fa.fa-linkedin-square.text-primary(alt="#{story.camper}'s LinkedIn Profile", href=story.linkedin, target='_blank')
+                                else
+                                  a.fa.fa-github-square.text-primary(alt="#{story.camper}'s GitHub Profile", href=story.github, target='_blank')
                             p.small-p.text-justify= story.quote
             .col-xs-12.col-sm-10.col-sm-offset-1
                     if moreStories
                         .text-center
-                            a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/all-stories") Show more stories
+                            a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/all-stories") 查看更多
                     .spacer
 
                     if !user
                         .text-center
-                            a.btn.btn-cta.signup-btn.btn-block(href="/login") Start learning to code (it's free)
+                            a.btn.btn-cta.signup-btn.btn-block(href="/login") 准备好了，Go!

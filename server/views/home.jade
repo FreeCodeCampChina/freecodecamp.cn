@@ -43,7 +43,7 @@ block content
         .big-break
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") 准备好了，GO!
+                a.btn.btn-cta.signup-btn.btn-block(href="#guide") 编程学习指南
                 .button-spacer
                 <!-- a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") 需要编码帮助的非盈利组织 -->
         hr
@@ -123,20 +123,27 @@ block content
                         img(src='/images/d3-logo.svg')
                     h2.black-text D3.js
         .spacer
-        hr
+        hr#guide
         .spacer
         .col-sm-offset-1.text-left
             h2 编程学习指南
             .spacer
             ol.large-li
-                li 计算机博大精深，初学者很容易迷失其中。选定一个方向并坚持下去很重要，Web开发毋庸置疑是首选。
+                li 计算机博大精深，初学者很容易迷失其中。选定一个方向并坚持下去很重要，Web开发是初学者的最佳选择。
                 li 编程语言众多，选择一门最容易入门的语言即可，JavaScript就很适合。
                 li 学编程有三点非常重要：英语、逻辑、细心：
                 li 英语好的同学看英文书籍、文档，写代码非常流畅，所以印度人比中国人在这块更有优势；
                 li 编程最重要的就是培养你的逻辑思维，永远记住：思维是人脑最核心的东西；
-                li 在编程中经常被一个符号、一个字母的拼写失误而卡住半天，所以优秀的程序员永远都是粗中带细。
-                li 编程是互联网时代的通行技能，它既没有那么高深莫测、也没有那么简简单单。
-                li 看书学编程、犹如在岸学游泳；
+                li 在编程中经常被一个符号、一个字母的拼写错误而卡住半天，所以优秀的程序员永远都是粗中带细。
+                li 关于编程的三个认识误区：枯燥无味、烧脑、青春饭。
+                li 会编程的人都是奇葩，这种整天和英文字母、数字待在一起的工作枯燥无味。
+                li 编程太烧脑，里面各种算法、数据结构要让人疯掉，编程纯粹就是个烧脑的工作。
+                li 搞编程的经常加班，这个行业就是个吃青春饭的行业，30岁必须得转行。
+                li 关于编程的三个正确认识：有趣、不烧脑、铁饭碗。
+                li 字母和数字的无限组合就能创造出那么多有趣的网站、游戏、软件，这是非常让人着迷的，也非常培养一个人的专注力。
+                li 学编程不是搞计算机科学，你不需要接触那么高深的算法、数据结构、高等数学，它并不烧脑，但却烧手(需要每个人手动敲大量代码)。
+                li 只要你会编程，能解决问题，没有人在乎你今年是81岁、还是18岁，编程这门技能会成为你一辈子的铁饭碗，
+                li 看书学编程、犹如在岸学游泳--北京理工大学计算机专业金旭亮老师
                 li 很多人都有这种错觉：看书、看视频、听老师讲课发现看懂了、听懂了就以为学会编程了，一到实际操作发现问题重重。
                 li 任何你能看到、听到的东西都是他人总结的知识点，如果你不实践、不消化、不转化成自己的东西，那这些知识永远是他人的，不是你自己的。
                 li learning by doing 实践是学习编程的重中之重；
@@ -150,7 +157,5 @@ block content
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
                 a.btn.btn-cta.signup-btn.btn-block(href="/signin") 准备好了，GO!
-        hr
-        p @版权所有 苏州猿生态信息科技有限公司
         script.
             challengeName = 'Home'

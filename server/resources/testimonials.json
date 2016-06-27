@@ -1,5 +1,53 @@
 [
   {
+    "camper": "Shirly",
+    "quote": "我目前在一家互联网公司从事编辑工作,通过接触FreeCodeCamp 我发现了自己的兴趣所在。我会坚持努力学习下去,希望早日在IT领域做出一些成绩。",
+    "github": "//github.com/sl123456",
+    "image": "/images/Shirly.jpg"
+  },
+  {
+    "camper": "Wendy",
+    "quote": "Freecodecamp给了我一个平台学习前端。从不断获取知识的过程中,我既得到快乐又认识了很多新朋友。",
+    "github": "//github.com/tinybird18",
+    "image": "/images/Wendy.jpg"
+  },
+  {
+    "camper": "吴京",
+    "quote": "我是汽车零部件行业的一名机电工程师,之前学习编程,总觉得自己像汪洋大海里的一片孤舟,学习的过程中没有目的和方向。FCC给了我明确的目标,每做一题都离终点更近,学习的过程快乐而有趣,祝自己早日完成学习。",
+    "github": "//github.com/wilsonwj",
+    "image": "/images/wujing.jpg"
+  },
+  {
+    "camper": "Taylor",
+    "quote": "我从事工业房地产开发,编程这个爱好从大学开始已伴随我20多年。我觉得只有编程才是这样一个过程:做对了就有对的结果。",
+    "github": "//github.com/taylorren",
+    "image": "/images/Taylor.jpg"
+  },
+  {
+    "camper": "程辉",
+    "quote": "我是一个编程学习爱好者,从2015年5月开始接触FCC立马就喜欢上了它。它让我学会思考如何用程序去解决问题。尤其是在绞尽脑汁做出一道算法题的时候,那种喜悦感会让你越来越喜欢这种学习方式。使用FCC解题就像是在打怪升级,最终你会打倒Boss 战胜自己,赢得这场胜利。",
+    "github": "//github.com/workcheng",
+    "image": "/images/chenghui.jpg"
+  },
+  {
+    "camper": "张建强",
+    "quote": "在FCC学习了一段时间,我重燃了年轻时的那颗心。那种打游戏冲关的感觉,碰上了,就停不下来。在这里,我们一起打“副本”,一起打boss 不同领域的码农都能发挥出自己最擅长的一面。我爱FCC",
+    "github": "//github.com/amd‐roy",
+    "image": "/images/zhangjianqiang.jpg"
+  },
+  {
+    "camper": "钱杰",
+    "quote": "我做Web前端开发,热爱编程,FCC让我更好地巩固基础,并带领我走入后端的世界。",
+    "github": "//github.com/bastarder",
+    "image": "/images/qianjie.jpg"
+  },
+  {
+    "camper": "曹娜娜",
+    "quote": "我在一家眼镜公司从事设计工作,是从零基础开始学习编程。FCC给了我超棒的学习体验,让我喜欢上编程,我会一直坚持学习。",
+    "github": "//github.com/nana1303",
+    "image": "/images/caonana.jpg"
+  },
+  {
     "camper": "Meta Hirschl",
     "quote": "通过构建健壮的、实用性强的 web app，不仅增强了我的信心，还向潜在的雇主显示了我的能力。每一项对我来说都是成功，可以让我找到满意的工作。",
     "github": "MetaCoderHirschl",
