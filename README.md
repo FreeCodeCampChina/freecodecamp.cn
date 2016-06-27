@@ -1,3 +1,7 @@
+![](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)
+
+[![Throughput Graph](https://graphs.waffle.io/huluoyang/freecodecamp.cn/throughput.svg)](https://waffle.io/huluoyang/freecodecamp.cn/metrics/throughput)
+
 [![Join the chat at https://gitter.im/freecodecamp/freecodecamp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FreeCodeCamp/chinese?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ## freecodecamp.cn
 欢迎来到freecodecamp中文社区(http://freecodecamp.cn)
@@ -14,7 +18,7 @@ freecodecamp最大的特点是它本身就是个开源项目。
 
 正是基于freecodecamp本身开源，我和几位志愿者一起建立了freecodecamp中文社区。
 
-它能够显著降低普通学习编程遇到的英文门槛，让普通人享受到优质教育成为可能。
+它能够显著降低普通人学习编程遇到的英文门槛，让普通人享受到优质教育成为可能。
 
 ## 为什么要创建freecodecamp中文社区？
 freecodecamp发展速度太快了，从1月五万star到3月排第二，现在已经超越bootstrap成为github上star最多的项目了。
