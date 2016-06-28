@@ -442,7 +442,7 @@
         "我们还可以使用 <code>join</code> 方法来把数组转换成字符串，里面的每一个元素可以用你指定的连接符来连接起来，这个连接符就是你要传入的参数。",
         "下面展示了使用 <code>join</code> 来将数组中的每一项放入字符串，并用 <code> and </code> 进行连接：",
         "<blockquote>var veggies = [\"Celery\", \"Radish\", \"Carrot\", \"Potato\"];<br>var salad = veggies.join(\" and \");<br>console.log(salad); // \"Celery and Radish and Carrot and Potato\" </blockquote>",
-        "使用 <code>join</code> 方法，连接符为<code>' '</code>把数组 <code>jionMe</code> 转化成字符串 <code>joinedString</code>."
+        "使用 <code>join</code> 方法，连接符为<code>' '</code>把数组 <code>joinMe</code> 转化成字符串 <code>joinedString</code>."
       ],
       "challengeSeed": [
         "var joinMe = [\"Split\",\"me\",\"into\",\"an\",\"array\"];",
