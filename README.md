@@ -55,13 +55,17 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 ## 华丽丽的分割线
  能坚持看到这里的都是非常有耐心的人，你应该给自己的努力点个赞！
 
- 我们正在招募翻译志愿者，如果你想验证下自己的翻译水平，可以尝试下。
+ 我们正在招募翻译志愿者，如果你想考察下自己的英文水平，可以尝试利用github来参与协作翻译。
+ 
+  传送门：https://github.com/huluoyang/freecodecamp.cn/wiki
+ 
+ 我们也在招募代码贡献者，如果你想考察下自己的技术水平，可以尝试clone代码到本机跑个站点看看。
 
- 传送门：https://github.com/huluoyang/freecodecamp.cn/wiki
+ 传送门：https://github.com/huluoyang/freecodecamp.cn/blob/dev/CONTRIBUTING.md
 
  感谢优才网CEO伍星，是他在2016年1月录制的公开课视频才让我接触到freecodecamp。
 
- 感谢走之网的邹治，是他无偿提供了freecodecamp.cn的域名。
+ 感谢走之网的邹治，是他无偿提供了freecodecamp.cn域名。
 
  感谢freecodecamp开源项目的创始人QuincyLarson，是他以一己之力开创了这个开源项目。
 
