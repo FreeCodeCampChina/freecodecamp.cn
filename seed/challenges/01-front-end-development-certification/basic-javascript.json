@@ -3708,10 +3708,10 @@
       "id": "56533eb9ac21ba0edf2244cf",
       "title": "Record Collection",
       "description": [
-        "右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id数字标识，并具有多种属性。并非所有的专辑都有完整的信息。",
-        "写一个函数，它接受一个 <code>id</code>，一个属性（<code>prop</code>）和一个 <code>value</code>。",
+        "右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id标识，并具有多种属性。但并非所有的专辑都有完整的信息。",
+        "写一个函数，它有个三个参数，<code>id</code>、<code>prop</code>、 <code>value</code>。",
         "如果 <code>prop</code> 不等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>prop</code> 的值更新为 <code>value</code> 。",
-        "如果 <code>prop</code> 等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，把 <code>value</code>追加到<code>tracks</code>数组。",
+        "如果 <code>prop</code> 等于 <code>\"tracks\"</code> 而且 <code>value</code> 不为空，追加 <code>value</code>到<code>tracks</code>数组。",
         "如果 <code>value</code> 为空，删除 <code>prop</code>。",
         "记住：函数返回的永远是整个对象。",
         "<strong>提示</strong><br>使用中括号操作符来 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的变量属性</a>。"
@@ -3766,9 +3766,9 @@
       ],
       "tests": [
         "collection = collectionCopy; assert(update(5439, \"artist\", \"ABBA\")[5439][\"artist\"] === \"ABBA\", 'message: <code>update(5439, \"artist\", \"ABBA\")</code> 之后, <code>artist</code> 应该为 <code>\"ABBA\"</code>');",
-        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该是未设置的');",
+        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该是<code>\"\"</code>');",
         "assert(update(1245, \"tracks\", \"Addicted to Love\")[1245][\"tracks\"].pop() === \"Addicted to Love\", 'message: <code>update(1245, \"tracks\", \"Addicted to Love\")</code> 之后, <code>tracks</code> 的最后一个元素应该是 <code>\"Addicted to Love\"</code>');",
-        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该是未设置的');"
+        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该是<code>\"\"</code>');"
       ],
       "type": "checkpoint",
       "challengeType": 1
