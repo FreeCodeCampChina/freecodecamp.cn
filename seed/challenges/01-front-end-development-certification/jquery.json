@@ -847,12 +847,10 @@
       "id": "bad87fee1348bd9aed008826",
       "title": "Target Even Numbered Elements Using jQuery",
       "description": [
-        "你还可以获取所有索引为偶数的元素。",
-        "示例：获取<code>target</code>class 元素的所有奇数元素，并给他们添加class。",
+        "示例：获取class为<code>target</code>且索引为奇数的所有元素，并给他们添加class。",
         "<code>$(\".target:odd\").addClass(\"animated shake\");</code>",
-        "记住，jQuery里的索引是从0开始的，也就是说：<code>:odd</code> 选择第二个元素，第四个元素，以此类推。",
-        "CSS中索引是从1开始的，但JS中索引是从0开始的，所以odd(奇数)代表2、4、6···，even(偶数)代表1、3、5···",
-        "任务：获取所有索引为偶数的元素，并给它们添加class <code>animated</code> 和 <code>shake</code>。"
+        "记住，jQuery里的索引是从0开始的，也就是说：<code>:odd</code> 选择第2、4、6个元素，因为target#2(索引为1)，target#4(索引为3)，target6(索引为5。",
+        "任务：获取class为<code>target</code>且索引为偶数的所有元素，也就是target#1(索引为0)，target#3(索引为2)，target5(索引为4)，并给它们添加class <code>animated</code> 和 <code>shake</code>。"
       ],
       "challengeSeed": [
         "fccss",
