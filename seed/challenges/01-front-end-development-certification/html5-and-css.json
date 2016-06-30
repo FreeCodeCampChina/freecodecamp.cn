@@ -320,7 +320,7 @@
         "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都包含结束标记。');",
         "assert.isTrue((/养动物/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含文本<code>养动物</code>。');",
         "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加 class 属性，也不要将其从第一个中删除。');",
-        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。浏览器和文本缩放应该设置为100%。');"
+        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
