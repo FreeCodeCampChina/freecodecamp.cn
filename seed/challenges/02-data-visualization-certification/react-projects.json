@@ -9,7 +9,7 @@
       "title": "Build a Markdown Previewer",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个这样的应用，它的功能类似于这个 <a href='http://codepen.io/FreeCodeCamp/full/obYYqW' target='_blank'>http://codepen.io/FreeCodeCamp/full/obYYqW</a>。",
-        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
         " <strong>用户需求：</strong> 我可以在文本域内写“Github风格”的Markdown文档。",
@@ -34,7 +34,7 @@
       "title": "Build a Camper Leaderboard",
       "description": [
         " <strong>目标：</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/qbqqJm/' target='_blank'>http://codepen.io/FreeCodeCamp/full/qbqqJm/</a>.",
-        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
         " <strong>用户需求：</strong> 我能在表格中看到在过去30天内，Free Code Camp 中谁完成的任务最多。",
@@ -60,7 +60,7 @@
       "title": "Build a Recipe Box",
       "description": [
         " <strong>目标：</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/LGbbqj' target='_blank'>http://codepen.io/FreeCodeCamp/full/LGbbqj</a>.",
-        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
         " <strong>用户需求：</strong> 当我填入名字和食材，我就能够创建一个食谱。",
@@ -88,7 +88,7 @@
       "title": "Build the Game of Life",
       "description": [
         " <strong>目标：</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/dGOOrZ' target='_blank'>http://codepen.io/FreeCodeCamp/full/dGOOrZ</a>.",
-        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
         " <strong>用户需求：</strong> 当我第一次进入游戏时，它能随机生成一个棋盘，然后我能开始游戏。",
@@ -117,7 +117,7 @@
       "title": "Build a Roguelike Dungeon Crawler Game",
       "description": [
         " <strong>目标：</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/dGOOEJ/' target='_blank'>http://codepen.io/FreeCodeCamp/full/dGOOEJ/</a>.",
-        " <strong>规则 #1：</strong> 不要去看例子的源代码，自己动手把它搞出来。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
         " <strong>用户需求：</strong> 我有生命值、等级、一个武器。我能捡到其他更好的武器。我能捡到补血药。",

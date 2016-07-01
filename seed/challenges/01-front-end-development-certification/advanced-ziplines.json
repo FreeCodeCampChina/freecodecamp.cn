@@ -9,7 +9,7 @@
       "title": "Build a JavaScript Calculator",
       "description": [
         "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上做一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/zrRzMR' target='_blank'>http://codepen.io/FreeCodeCamp/full/zrRzMR</a> 的 APP.",
-        "<strong>规则 #1:</strong> 不要查看示例项目的源码, 自己动手去做.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
         "<strong>功能:</strong> 可以对两个数字进行加、减、乘、除的运算.",
         "<strong>功能:</strong> 可以使用清除按钮清空当前的所有输入内容.",
@@ -31,7 +31,7 @@
       "title": "Build a Pomodoro Clock",
       "description": [
         "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上做一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/VemPZX' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemPZX</a> 的 APP.",
-        "<strong>规则 #1:</strong> 不要查看示例项目的源代码, 自己动手去做.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
         "<strong>功能:</strong> 可以启动一个 25 分钟的番茄钟, 计时器将在 25 分钟后停止.",
         "<strong>功能:</strong> 可以重置番茄钟的状态以便启动下一次计时.",
@@ -53,7 +53,7 @@
       "title": "Build a Tic Tac Toe Game",
       "description": [
         "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/adBpvw' target='_blank'>http://codepen.io/FreeCodeCamp/full/adBpvw</a> 的 APP.",
-        "<strong>规则 #1:</strong> 不要查看示例项目的源代码, 自己动手去做.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
         "<strong>功能:</strong> 可以和计算机对手进行 井字游戏.",
         "<strong>功能:</strong> 游戏会在结束时重置并立即开始新的一局.",
@@ -75,7 +75,7 @@
       "title": "Build a Simon Game",
       "description": [
         "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个类似于 <a href='http://codepen.io/Em-Ant/full/QbRyqq/' target='_blank'>http://codepen.io/FreeCodeCamp/full/obYBjE</a> 的小游戏.",
-        "<strong>规则 #1:</strong> 不要查看示例项目的源代码, 自己动手去做.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
         "<strong>功能:</strong> 色块亮起的顺序是随机的.",
         "<strong>功能:</strong> 每次以正确的顺序点击色块后, 色块需要以原来的顺序依次亮起, 并增加一个新的序列.",

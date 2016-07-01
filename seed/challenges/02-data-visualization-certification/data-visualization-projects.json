@@ -9,7 +9,7 @@
       "title": "Visualize Data with a Bar Chart",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/adBBWd' target='_blank'>http://codepen.io/FreeCodeCamp/full/adBBWd</a> 类似的应用。",
-        " <strong>规则 #1：</strong> 不要参考示例的源代码，请独立完成。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
         " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
         " <strong>用户需求：</strong> 显示美国国内生产总值（GDP）季度统计图。",
@@ -33,7 +33,7 @@
       "title": "Visualize Data with a Scatterplot Graph",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/GoNNEy' target='_blank'>http://codepen.io/FreeCodeCamp/full/GoNNEy</a> 类似的应用。",
-        " <strong>规则 #1：</strong> 不要参考示例的源代码，请独立完成。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
         " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
         " <strong>用户需求：</strong> 用散点图显示 FreeCodeCamp 骑行记录。",
@@ -57,7 +57,7 @@
       "title": "Visualize Data with a Heat Map",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： </a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/rxWWGa' target='_blank'>http://codepen.io/FreeCodeCamp/full/rxWWGa</a> 类似的应用。",
-        " <strong>规则 #1：</strong> 不要参考示例的源代码，请独立完成。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
         " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
         " <strong>用户需求：</strong> 用笛卡儿坐标系（X轴表示年份，Y轴表示月份）显示温度图。",
@@ -82,7 +82,7 @@
       "title": "Show Relationships with a Force Directed Graph",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/KVNNXY' target='_blank'>http://codepen.io/FreeCodeCamp/full/KVNNXY</a> 类似的应用（这个旧链接好像坏掉了，在 Github 的 issue 中提到这个链接可以参考 http://codepen.io/KMT/pen/dMqgrO ）。",
-        " <strong>规则 #1：</strong> 不要参考示例的源代码，请独立完成。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
         " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
         " <strong>用户需求：</strong> 用力导向图（ Force-directed Graph）显示每个 camper 在 Camper News 上所发表链接的域名。",
@@ -109,7 +109,7 @@
       "title": "Map Data Across the Globe",
       "description": [
         " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/mVEJag' target='_blank'>http://codepen.io/FreeCodeCamp/full/mVEJag</a> 类似的应用。",
-        " <strong>规则 #1：</strong> 不要参考示例的源代码，请独立完成。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
         " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
         " <strong>用户需求：</strong> 在一个世界地图上显示陨石坠落地。",
