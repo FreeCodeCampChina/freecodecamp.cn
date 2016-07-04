@@ -63,7 +63,7 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 | 2016.4.16    | 写了第一版翻译规范和参与流程。 |
 | 2016.4.17    | 开始翻译课程第二部分：html5 + css3。 |
 | 2016.4.24    | 参加猿生态在北京车库咖啡举办的第一次freecodecamp线下活动，结识了晋剑、jason、海良等小伙伴。 |
-| 2016.4.25    | 通过gitter.com/freecodecamp/chinese招募到第一位参与翻译的小伙伴[tegrat](https://github.com/tegrat)。 |
+| 2016.4.25    | 通过[freecodecamp中文聊天室](gitter.com/freecodecamp/chinese)招募到第一位参与翻译的小伙伴[tegrat](https://github.com/tegrat)。 |
 | 2016.4.28    | 胡可同学加入翻译志愿组，贡献翻译工具。 |
 | 2016.4.29    | 受胡可同学的感染，我写了simleJson.js来轻松干掉json文件的冗余部分。 |
 | 2016.5.8     | 受晋剑同学的邀请，我来到苏州，加入猿生态，负责freecodecamp中文社区的翻译和开发。 |
