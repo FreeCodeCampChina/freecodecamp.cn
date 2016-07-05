@@ -1699,7 +1699,7 @@
         "你可以用 <code>background-color</code> 属性来设置一个元素的背景颜色。",
         "例如，如果你想把一个元素的背景颜色设置为<code>green</code>，你应该把这些加到你的 <code>style</code> 元素中：",
         "<blockquote>.green-background {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "创建一个叫做 <code>gray-background</code> 的 class，设置其 <code>background-color</code> 为 gray，把这个 class 指定给你的 <code>div</code> 元素。"
+        "创建一个叫做 <code>gray-background</code> 的类选择器，设置其 <code>background-color</code> 为 gray，最后应用到 <code>div</code> 元素。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1771,12 +1771,12 @@
       "id": "bad87eee1348bd9aede07836",
       "title": "Set the ID of an Element",
       "description": [
-        "除了 class 之外，每一个 HTML 元素还可以拥有 <code>id</code> 属性。",
+        "除了 <code>class</code>属性之外，每一个 HTML 元素还可以使用 <code>id</code> 属性。",
         "使用 <code>id</code> 属性有若干好处，一旦当你开始使用 jQuery 的时候你会有更深的体会。",
         "<code>id</code> 属性应该是唯一的，虽然浏览器并不强制唯一，但基于最佳实践，这一点是被广泛认可的，所以请不要给一个以上的元素设置相同的 <code>id</code> 属性。",
-        "下面举例说明了如何为你的 <code>h2</code> 元素添加值为 <code>cat-photo-app</code> 的 id。",
+        "下面举例说明了如何设置<code>h2</code> 元素的<code>id</code>属性为<code>cat-photo-app</code>。",
         "<code>&#60;h2 id=\"cat-photo-app\"></code>",
-        "任务：为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code>的 id。"
+        "任务：设置 <code>form</code> 元素的<code>id</code>属性为 <code>cat-photo-form</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1841,7 +1841,7 @@
         "</form>"
       ],
       "tests": [
-        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 为你的 <code>form</code> 元素添加值为 <code>cat-photo-form</code> 的 id。');"
+        "assert($(\"form\").attr(\"id\") === \"cat-photo-form\", 'message: 设置 <code>form</code> 元素的<code>id</code>属性为 <code>cat-photo-form</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1850,11 +1850,11 @@
       "id": "bad87dee1348bd9aede07836",
       "title": "Use an ID Attribute to Style an Element",
       "description": [
-        "关于 <code>id</code> 属性的一件非常酷的事情是，像 class 一样，你可以使用 CSS 来为其应用样式。",
-        "下面是如何引用你的 <code>id</code> 属性为 <code>cat-photo-element</code> 的元素，并将它的背景色设置为绿色的例子。在你的 <code>style</code> 元素内部：",
+        "和类选择器一样，你也可以使用ID选择器来声明样式。",
+        "声明一个叫<code>cat-photo-element</code>的ID选择器 ，并设置背景色为绿色。：",
         "<blockquote>#cat-photo-element {<br>&nbsp;&nbsp;background-color: green;<br>}</blockquote>",
-        "注意，在你的 <code>style</code> 元素内部，总是需要通过在名字前加一个 <code>.</code> 来引用 class，加一个 <code>#</code> 来引用 id。",
-        "试着给你的表单，它现在有一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
+        "注意：在你的 <code>style</code> 元素内部，定义类选择器必须添加 <code>.</code> 为前缀，定义ID选择器必须添加 <code>#</code> 为前缀。",
+        "任务：试着给你的表单，添加一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1932,13 +1932,13 @@
       "id": "bad88fee1348bd9aedf08825",
       "title": "Adjusting the Padding of an Element",
       "description": [
-        "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式设置。",
-        "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块。",
-        "有三个影响HTML元素布局的重要属性：<code>padding（内边距）</code>, <code>margin（外边距）</code>, and <code>border（边框）</code>.",
-        "元素的 <code>padding</code> 控制元素内容和元素边框 <code>border</code> 之间的距离。",
-        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的 <code>padding</code>。",
+        "现在让我们把 Cat Photo App 暂时搁置，以学习更多的 HTML 样式。",
+        "你可能早已经注意到了这点，所有的 HTML 元素本质上是小的矩形块，代表着某一小块区域。",
+        "有三个影响HTML元素布局的重要属性：<code>padding(内边距)</code>、<code>margin(外边距)</code>、<code>border(边框)</code>。",
+        "元素的 <code>padding</code> 控制元素内容 <code>content</code>和元素边框 <code>border</code> 之间的距离。",
+        "在这儿，我们可以看到绿方块和红方块都位于黄方块之中，但是红方块比绿方块具有更大的 <code>padding</code>。",
         "当你加大绿方块的 <code>padding</code>, 它将扩大元素内容和元素边框的距离。",
-        "修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
+        "任务：修改绿方块的 <code>padding</code> 以使它与红方块相匹配。"
       ],
       "challengeSeed": [
         "<style>",
@@ -1987,7 +1987,7 @@
       "title": "Adjust the Margin of an Element",
       "description": [
         "元素的外边距 <code>margin</code> 控制元素边框 <code>border</code> 和元素实际所占空间的距离。",
-        "在这儿，我们可以看到绿方块和红方块被嵌套在黄方块之中，注意红方块比绿方块具有更大的外边距 <code>margin</code>，使得它看起来更小。",
+        "在这儿，我们可以看到绿方块和红方块都位于黄方块之中，注意红方块比绿方块具有更大的外边距 <code>margin</code>，使得它看起来更小。",
         "当你增大绿方块的 <code>margin</code> 时，将会增加元素边框和元素实际所占空间之间的距离。",
         "修改绿方块的 <code>margin</code> 以使它与红方块匹配。"
       ],
@@ -2041,8 +2041,8 @@
       "description": [
         "元素的 <code>margin</code> 控制元素的 <code>border</code> 和元素实际所占空间的距离。",
         "如果你将一个元素的 <code>margin</code> 设置为负值，元素将会变大。",
-        "试着像红方块那样把 <code>margin</code> 设置为负值。",
-        "把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将父容器(黄方块)的横向宽度填满。"
+        "具体可以看看红方块的 <code>margin</code> 值。",
+        "任务：把绿方块的 <code>margin</code> 设置为 <code>-15px</code>，以使它将父容器(黄方块)的横向宽度填满。"
       ],
       "challengeSeed": [
         "<style>",
@@ -2082,7 +2082,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: 你的 <code>green-box</code> class 应该使元素具有 <code>-15px</code> 的 <code>margin</code>。');"
+        "assert($(\".green-box\").css(\"margin-top\") === \"-15px\", 'message: 你的 <code>green-box</code> 类选择器的 <code>margin</code>应该为 <code>-15px</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -2431,7 +2431,7 @@
         "在你的 <code>h1</code> 元素中保留 <code>blue-text</code> 和 <code>pink-text</code> 两个 class。",
         "在你的 <code>style</code> 元素中为你的 <code>orange-text</code> id 创建一个 CSS 声明，就像下面例子中的样子：",
         "<blockquote>#brown-text {<br>&nbsp;&nbsp;color: brown;<br>}</blockquote>",
-        "注意：你声明的这个 CSS 在 pink-text class 的上面还是下面是无所谓的，因为 id 属性总是具有更高的优先级。"
+        "注意：你声明的这个 CSS 在 <code>pink-text</code>类选择器的上面还是下面是无所谓的，因为 id 属性总是具有更高的优先级。"
       ],
       "challengeSeed": [
         "<style>",
