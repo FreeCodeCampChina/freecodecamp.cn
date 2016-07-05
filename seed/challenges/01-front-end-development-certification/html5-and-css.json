@@ -10,7 +10,7 @@
       "description": [
         "欢迎来到FreeCodeCamp的第一个编码挑战！",
         "整个课程的设计围绕两个原则：所见即所得、循序渐进。",
-        "界面简洁直观，左边是课程区、中间是编辑区、右边是结果区。",
+        "界面简洁直观，左边是课程区、中间是编辑区、右边是显示区。",
         "HTML是英文Hper Text Markup Language(超文本标记语言)的缩写。",
         "你看到<code>&#60;h1&#62;Hello&#60;/h1&#62;</code>了吗? ",
         "<code>h1</code>就是一个HTML<code>元素</code>，<code>h1</code>是<code>header1</code>的简写，意思是一级标题。",
@@ -37,17 +37,17 @@
       "description": [
         "接下来我们会设计一个类似于下图的页面：",
         "<a href=\"/images/myCatPhoto.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/jOc1JF1.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Cat Photo App\"></a>",
-        "标题通常是网站结构的头部分，h1是主标题(一级标题)，h2是副标题，h3、h4、h5、h6依次递减字体的大小。",
-        "在h1主标题下面创建一个h2副标题，标题内容是：CatPhotoApp。"
+        "h是英文<code>header</code>标题的缩写，标题无处不在，它的应用范围十分广泛：网站结构、写作文、PPT等。h1是主标题，h2是副标题，h3、h4、h5、h6依次递减字体的大小。",
+        "在主标题下面创建一个副标题，标题内容是：CatPhotoApp。"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>"
       ],
       "tests": [
-        "assert(($(\"h2\").length > 0), 'message: 创建一个 <code>h2</code> 元素');",
-        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: 确保你的 <code>h2</code> 元素有一个结束标记');",
-        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: 你的 <code>h2</code> 元素应该包含文本 \"CatPhotoApp\"');",
-        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: 你的 <code>h1</code> 元素应该包含文本 \"Hello World\"');"
+        "assert(($(\"h2\").length > 0), 'message: 创建一个主标题');",
+        "assert(code.match(/<\\/h2>/g) && code.match(/<\\/h2>/g).length === code.match(/<h2>/g).length, 'message: 确保副标题有一个结束标记');",
+        "assert.isTrue((/cat(\\s)?photo(\\s)?app/gi).test($(\"h2\").text()), 'message: 副标题应该包含文本 \"CatPhotoApp\"');",
+        "assert.isTrue((/hello(\\s)+world/gi).test($(\"h1\").text()), 'message: 主标题应该包含文本 \"Hello World\"');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -57,16 +57,16 @@
       "title": "Inform with the Paragraph Element",
       "description": [
         "P是英文<code>paragraph</code>段落的缩写，经常被用来创建一个段落，就和你写作文一样。",
-        "任务：在二级标题下面新增一个段落，段落内容是：<code>Hello Paragraph</code>。"
+        "任务：在副标题下面新增一个段落，段落内容是：<code>Hello Paragraph</code>。"
       ],
       "challengeSeed": [
         "<h1>Hello World</h1>",
         "<h2>我家的猫咪</h2>"
       ],
       "tests": [
-        "assert(($(\"p\").length > 0), 'message: 创建一个 <code>p</code> 元素.');",
-        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: 你的 <code>p</code> 元素应该包含文本 \"Hello Paragraph\"');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的 <code>p</code> element 有结束标记');"
+        "assert(($(\"p\").length > 0), 'message: 创建一个段落');",
+        "assert.isTrue((/hello(\\s)+paragraph/gi).test($(\"p\").text()), 'message: 段落的文本为 \"Hello Paragraph\"');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保段落有结束标记');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -79,8 +79,8 @@
         "1、想让某一段代码不起作用，但你又不想删除这一段代码。",
         "2、就是给代码添加一些说明，方便团队合作或日后自己查看，但又不想影响代码本身。",
         "我们先学习如何删除注释，再学习如何添加注释。",
-        "提示：可以通过删除<code>&#60;!--</code>和<code>--&#62;</code>来取消注释。",
-        "任务：试着先把一级标题、二级标题、段落的注释都取消掉。"
+        "提示：可以通过删除<code>&#60;!--</code>和<code>--&#62;</code>来删除注释。",
+        "任务：试着先把一级标题、二级标题、段落的注释都删除掉。"
       ],
       "challengeSeed": [
         "<!--",
@@ -92,9 +92,9 @@
         "-->"
       ],
       "tests": [
-        "assert($(\"h1\").length > 0, 'message: 通过取消注释来让页面上的 <code>h1</code> 元素是可见的.');",
-        "assert($(\"h2\").length > 0, 'message: 通过取消注释来让页面上的 <code>h2</code> 元素是可见的.');",
-        "assert($(\"p\").length > 0, 'message: 通过取消注释来让页面上的 <code>p</code> 元素是可见的.');",
+        "assert($(\"h1\").length > 0, 'message: 通过删除注释来让页面上的主标题是可见的.');",
+        "assert($(\"h2\").length > 0, 'message: 通过删除注释来让页面上的副标题是可见的.');",
+        "assert($(\"p\").length > 0, 'message: 通过删除注释来让页面上的段落是可见的.');",
         "assert(!/-->/gi.test(code), 'message: 确定你删除了所有的注释标记; i.e. <code>--&#62;</code>.');"
       ],
       "type": "waypoint",
@@ -106,7 +106,7 @@
       "description": [
         "注释的开始标记是<code>&#60;!--</code>",
         "结束标记是<code>--></code>",
-        "任务：把一级标题和段落都注释掉，但把二级标题留着。"
+        "任务：把主标题和段落都注释掉，但把副标题留着。"
       ],
       "challengeSeed": [
         "<!--",
@@ -118,9 +118,9 @@
         "-->"
       ],
       "tests": [
-        "assert(($(\"h1\").length === 0), 'message: 给你的<code>h1</code> 元素添加注释会导致你在网页行看不到这个元素.');",
-        "assert(($(\"h2\").length > 0), 'message: 给你的 <code>h2</code> 元素删除注释可以让你在网页上看到这个元素.');",
-        "assert(($(\"p\").length === 0), 'message: 注释掉你的 <code>p</code> 元素这样你在网页上就看不到这个元素.');",
+        "assert(($(\"h1\").length === 0), 'message: 给主标题添加注释这样你在网页行看不到这个元素.');",
+        "assert(($(\"h2\").length > 0), 'message: 删除副标题的注释可以让你在网页上看到这个元素.');",
+        "assert(($(\"p\").length === 0), 'message: 给段落添加注释这样你在网页上就看不到这个元素.');",
         "assert(code.match(/-->/g).length > 1, 'message: 确保每一个注释都以<code>--&#62;</code>结尾.');"
       ],
       "type": "waypoint",
@@ -135,8 +135,7 @@
         "是因为<code>lorem ipsum</code>是古罗马西塞罗谚语的前两个单词。",
         "从公元16世纪开始<code>lorem ipsum text</code>就被当做占位符了，这种传统延续到了互联网时代。",
         "于此同时，孙悟空也在五指山下压了500年，然后就进化成程序猿了，是不是很巧合，哈哈。",
-        "让我们使用被称作<code>lorem ipsum</code>的占位符来填充页面内容。",
-        "任务：把<code>p</code>元素中的文本替换为这段占位符：<code>Monkey code 猴哥猴哥，你真了不得，金箍棒在手，问世间谁是英雄。</code>"
+        "任务：把段落中的文本替换为：<code>Monkey code 猴哥猴哥，你真了不得，金箍棒在手，问世间谁是英雄。</code>"
       ],
       "challengeSeed": [
         "<h1>西游记</h1>",
@@ -202,9 +201,9 @@
       "id": "bad87fee1348bd9aedf08805",
       "title": "Use CSS Selectors to Style Elements",
       "description": [
-        "样式的属性多达几千个，但别担心，常用的也就几十个，你完全可以掌握它。",
+        "样式的属性多达几千个，但别担心，按照80-20原则，常用的也就几十个，你完全可以掌握它。",
         "当你键入<code>&#60;h2 style=\"color: red\"&#62;CatPhotoApp&#60;/h2&#62;</code>，你就给<code>h2</code>元素<code>添加了inline style(内联样式)</code>。",
-        "内联样式是为元素添加样式的一种途径，但是更好的途径是使用层叠样式表<code>CSS</code>（Cascading Style Sheets）。",
+        "内联样式是为元素添加样式的最简单有效的方式，但是更易于维护的方式是使用层叠样式表<code>CSS</code>（Cascading Style Sheets）。",
         "在代码的最顶端，创建一个如下的<code>style</code>元素：",
         "<blockquote>&#60;style&#62;<br>&#60;/style&#62;</blockquote>",
         "在这个<code>style</code>元素内, 你可以为所有的<code>h2</code>元素创建一个<code>元素选择器</code>。比如，如果你想要将所有的<code>h2</code>元素设置为红色, 你的代码应该看起来像这样：",
@@ -231,17 +230,17 @@
       "id": "bad87fee1348bd9aecf08806",
       "title": "Use a CSS Class to Style an Element",
       "description": [
-        "上节课我们学习了元素选择器，这节课我们学习class选择器。",
-        "<strong>我们先声明一个class选择器：</strong>",
+        "上节课我们学习了元素选择器，这节课我们学习类选择器。",
+        "<strong>我们先声明一个类选择器：</strong>",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.blue-text {<br>&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "上面的代码在 <code>&#60;style&#62;</code> 标记中创建了一个叫做 <code>blue-text</code> 的 CSS class。",
-        "<strong>然后在h2元素上应用我们声明的class选择器：</strong>",
+        "上面的代码在 <code>&#60;style&#62;</code> 标记中声明了一个叫做 <code>blue-text</code> 的类样式。",
+        "<strong>然后在h2元素上应用我们声明的类选择器：</strong>",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "注意：在CSS中，class前应该添加<code>.</code>为前缀。",
-        "而在HTML中，class前不能以<code>.</code>为前缀。",
-        "这是因为在CSS中如果class前不添加<code>.</code> 浏览器就会误认为class是一个HTML元素。",
+        "注意：在CSS中，类选择器应该添加<code>.</code>为前缀。",
+        "而在HTML中，class属性不能添加<code>.</code>为前缀。",
+        "这是因为在CSS中如果类选择器前不添加<code>.</code> 浏览器就会误认为类选择器是一个元素选择器。",
         "任务：在你的<code>style</code>元素中，修改<code>h2</code>选择器为<code>.red-text</code>选择器，并把颜色值从<code>blue</code>修改为<code>red</code>。",
-        "最后为你的<code>h2</code>元素设置一个值为<code>'red-text'</code>的<code>class</code>属性。"
+        "最后在<code>h2</code>元素上应用我们声明的<code>.red-text</code>选择器。"
       ],
       "challengeSeed": [
         "<style>",
@@ -256,8 +255,8 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
-        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code> class，并设置其color为red。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素的class属性必须为<code>red-text</code>。');",
+        "assert(code.match(/\\.red-text\\s*\\{\\s*color\\s*:\\s*red;\\s*\\}/g), 'message: 你的样式表应该声明一个<code>red-text</code> 类，并设置其color为red。');",
         "assert($(\"h2\").attr(\"style\") === undefined, 'message: 不要在你的<code>h2</code>元素中使用形如<code>style=\"color&#58; red\"</code>的内联（inline）样式声明。');"
       ],
       "type": "waypoint",
@@ -267,12 +266,12 @@
       "id": "bad87fee1348bd9aefe08806",
       "title": "Style Multiple Elements with a CSS Class",
       "description": [
-        "你可以在 HTML 元素的开始标记中通过使用<code>class=\"your-class-here\"</code>将 class 附加到相关元素中。",
-        "CSS class 选择器必须添加<code>.</code>为前缀，如下：",
+        "你可以在 HTML 元素的开始标记中通过使用<code>class=\"your-class-here\"</code>来将 class 附加到相关元素中。",
+        "CSS 类选择器必须添加<code>.</code>为前缀，如下：",
         "<blockquote>.blue-text {<br>&nbsp;&nbsp;color: blue;<br>}</blockquote>",
         "但在HTML中class属性的值不需要添加<code>.</code>为前缀，如下：",
         "<code>&#60;h2 class=\"blue-text\"&#62;CatPhotoApp&#60;/h2&#62;</code>",
-        "将<code>red-text</code> class 应用到<code>h2</code>和<code>p</code>元素中。"
+        "将<code>red-text</code>类应用到<code>h2</code>和<code>p</code>元素中。"
       ],
       "challengeSeed": [
         "<style>",
@@ -287,9 +286,9 @@
       ],
       "tests": [
         "assert($(\"h2\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>h2</code>元素应该为红色。');",
-        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> class。');",
+        "assert($(\"h2\").hasClass(\"red-text\"), 'message: 你的<code>h2</code>元素应该包含<code>red-text</code> 类。');",
         "assert($(\"p\").css(\"color\") === \"rgb(255, 0, 0)\", 'message: 你的<code>p</code>元素应该为红色。');",
-        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code> class。');"
+        "assert($(\"p\").hasClass(\"red-text\"), 'message: 你的<code>p</code>元素应该包含<code>red-text</code> 类。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -317,10 +316,10 @@
       ],
       "tests": [
         "assert($(\"p\").length > 1, 'message: 你需要有2个<code>p</code>元素。');",
-        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保你的每一个<code>p</code>元素都包含结束标记。');",
+        "assert(code.match(/<\\/p>/g) && code.match(/<\\/p>/g).length === code.match(/<p/g).length, 'message: 确保所有段落都包含结束标记。');",
         "assert.isTrue((/养动物/gi).test($(\"p\").text()), 'message: 你的<code>p</code>元素应该包含文本<code>养动物</code>。');",
-        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个<code>p</code>元素添加 class 属性，也不要将其从第一个中删除。');",
-        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将包含<code>p</code>标记的元素的<code>font-size</code>设置为<code>16px</code>。');"
+        "assert($(\"p:not([class])\").length === 1, 'message: 不要为第二个段落添加 class 属性，也不要删除第一个段落的 class 属性。');",
+        "assert(parseInt($(\"p:not([class])\").css(\"font-size\"), 10) > 15, 'message: 将段落的<code>font-size</code>设置为<code>16px</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -330,7 +329,7 @@
       "title": "Set the Font Family of an Element",
       "description": [
         "用<code>font-family</code>属性来设置元素的字体。",
-        "如果你想把你的<code>h2</code>元素的字体设置为<code>Sans-serif</code>，你可以使用下面的CSS：",
+        "如果你想把副标题的字体设置为<code>Sans-serif</code>，你可以使用下面的CSS：",
         "<blockquote>h2 {<br>&nbsp;&nbsp;font-family: Sans-serif;<br>}</blockquote>",
         "任务：让所有的<code>p</code>元素都使用<code>Monospace</code>字体。"
       ],
@@ -351,7 +350,7 @@
         "<p>养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>"
       ],
       "tests": [
-        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: 你的<code>p</code>元素应该使用字体<code>Monospace</code>。');"
+        "assert($(\"p\").not(\".red-text\").css(\"font-family\").match(/monospace/i), 'message: 你的段落应该使用字体<code>Monospace</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -364,8 +363,8 @@
         "首先，你需要用<code>link</code>标签来引入谷歌<code>Lobster</code>字体。",
         "复制下面的代码片断并将其粘贴到你的代码编辑器的顶部：",
         "<code>&#60;link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
-        "现在你可以将<code>Lobster</code>作为 font-family 的值应用到你的<code>h2</code>元素上了。",
-        "为你的<code>h2</code>元素应用<code>font-family</code>，值为<code>Lobster</code>。",
+        "现在你可以将<code>Lobster</code>作为 font-family属性 的值应用到你的<code>h2</code>元素上了。",
+        "为你的<code>h2</code>元素应用<code>font-family</code>属性，值为<code>Lobster</code>。",
         "当你遇到困难时可以参考<code><a href='https://github.com/huluoyang/freecodecamp.cn/wiki/common-question' target='_blank'>wiki</a></code>"
       ],
       "challengeSeed": [
@@ -387,8 +386,8 @@
       ],
       "tests": [
         "assert(new RegExp(\"gdgdocs\", \"gi\").test(code), 'message: 导入<code>Lobster</code>字体。');",
-        "assert($(\"h2\").css(\"font-family\").match(/lobster/i), 'message: 你的<code>h2</code>元素应该使用字体<code>Lobster</code>。');",
-        "assert($(\"p\").css(\"font-family\").match(/monospace/i), 'message: 你的<code>p</code>元素应该继续使用字体<code>Monospace</code>。');"
+        "assert($(\"h2\").css(\"font-family\").match(/lobster/i), 'message: 你的副标题应该使用字体<code>Lobster</code>。');",
+        "assert($(\"p\").css(\"font-family\").match(/monospace/i), 'message: 你的段落仍旧使用字体<code>Monospace</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -398,10 +397,10 @@
       "title": "Specify How Fonts Should Degrade",
       "description": [
         "有几种默认的字体是所有浏览器都可用的，包括<code>Monospace</code>、<code>Serif</code>和<code>Sans-Serif</code>。",
-        "当某种字体不可用时，你可以告诉浏览器“降级”到另一种字体。",
-        "例如，如果你想对某元素应用<code>Helvetica</code>字体，但你同时想在<code>Helvetica</code>不可用时降级使用<code>Sans-Serif</code>字体，你可以使用如下CSS样式：",
+        "当某种字体不可用时，你可以让浏览器<code>自动降级</code>到另一种字体。",
+        "例如，如果你想让段落的字体为<code>Helvetica</code>，但你同时想在<code>Helvetica</code>字体不可用时自动降级使用<code>Sans-Serif</code>字体，你可以使用如下CSS样式：",
         "<blockquote>p {<br>&nbsp;&nbsp;font-family: Helvetica, Sans-Serif;<br>}</blockquote>",
-        "现在注释掉你对谷歌字体的引用，以使<code>Lobster</code>字体不可用。注意它是如何降级到<code>Monospace</code>字体的。"
+        "现在注释掉link标签，以使<code>Lobster</code>字体不可用。请仔细观察浏览器是如何降级到<code>Monospace</code>字体的。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -426,9 +425,9 @@
         "<p class=\"red-text\">养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>"
       ],
       "tests": [
-        "assert($(\"h2\").css(\"font-family\").match(/^\"?lobster/i), 'message: 你的h2元素应该使用<code>Lobster</code>字体。');",
-        "assert($(\"h2\").css(\"font-family\").match(/lobster.*,.*monospace/i), 'message: 当<code>Lobster</code>字体不可用时你的h2元素应该降级到<code>Monospace</code>字体。');",
-        "assert(new RegExp(\"<!--\", \"gi\").test(code), 'message: 通过把<code>&#60!--</code>放在前面以把对谷歌<code>Lobster</code>字体的引用注释掉。');",
+        "assert($(\"h2\").css(\"font-family\").match(/^\"?lobster/i), 'message: 你的副标题应该使用<code>Lobster</code>字体。');",
+        "assert($(\"h2\").css(\"font-family\").match(/lobster.*,.*monospace/i), 'message: 当<code>Lobster</code>字体不可用时副标题应该降级到<code>Monospace</code>字体。');",
+        "assert(new RegExp(\"<!--\", \"gi\").test(code), 'message: 通过把<code>&#60!--</code>放在开头可以把<code>link</code>标签注释掉。');",
         "assert(new RegExp(\"-->\", \"gi\").test(code), 'message: 别忘了通过添加<code>--&#62;</code>来结束你的注释。');"
       ],
       "type": "waypoint",
@@ -487,10 +486,9 @@
       "title": "Size your Images",
       "description": [
         "CSS包含一个控制元素宽度的<code>width</code>属性。像控制字体一样，我们使用<code>px</code>（像素）来指定图片的宽度。",
-        "例如，如果我们想要创建一个名为<code>larger-image</code>的CSS class，把HTML元素的宽度设定为500像素，我们使用：",
+        "例如，如果我们想要创建一个名为<code>larger-image</code>的类选择器，把HTML元素的宽度设定为500像素，我们使用：",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.larger-image {<br>&nbsp;&nbsp;&nbsp;&nbsp;width: 500px;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
-        "任务：创建一个名为<code>smaller-image</code>的 class，然后用它来改变图片尺寸，使图片仅有100像素宽。",
-        "<strong>注意：</strong>由于浏览器实现上的差异，要通过本轮挑战的测验，你可能需要将浏览器的缩放比例设置为100%。"
+        "任务：创建一个名为<code>smaller-image</code>的类选择器，然后用它来改变图片尺寸，使图片仅有100像素宽。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -518,7 +516,7 @@
       ],
       "tests": [
         "assert($(\"img\").hasClass(\"smaller-image\"), 'message: 你的<code>img</code>元素应该包含<code>smaller-image</code> class。');",
-        "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽，浏览器缩放比例应该为100%。');"
+        "assert($(\"img\").width() === 100, 'message: 你的图片应该为100像素宽。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -528,7 +526,7 @@
       "title": "Add Borders Around your Elements",
       "description": [
         "CSS 边框的属性有style(样式)、color(颜色)、width(宽度)、height(高度)等。",
-        "举个例子，如果我们想要让一个HTML元素的边框颜色为红色、边框宽度为5像素(pixel)、边框样式为固体(solid)，代码如下:",
+        "举个例子，如果我们想要让一个HTML元素的边框颜色为红色、边框宽度为5像素(px)、边框样式为固体(solid)，代码如下:",
         "<blockquote>&#60;style&#62;<br>&nbsp;&nbsp;.thin-red-border {<br>&nbsp;&nbsp;&nbsp;&nbsp;border-color: red;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-width: 5px;<br>&nbsp;&nbsp;&nbsp;&nbsp;border-style: solid;<br>&nbsp;&nbsp;}<br>&#60;/style&#62;</blockquote>",
         "任务：创建一个叫thick-green-border的class，让它的边框宽度为10像素、边框样式为solid(固体)、边框颜色为绿色(green)，然后把这个class应用到你的猫咪照片上。",
         "提示：你可以应用多个class到一个元素，只需要在多个class之间用空格分开即可。例如：",
@@ -576,9 +574,9 @@
       "id": "bad87fee1348bd9aedf08814",
       "title": "Add Rounded Corners with a Border Radius",
       "description": [
-        "你的猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。",
-        "你可以用像素来指定border-radius的属性值，现在让你的猫咪图片的边框半径为10px吧。",
-        "注意：这个任务有多种解决方案。你可以添加border-radius到<code>.thick-green-border</code> class 也可以添加到<code>.smaller-image</code> class."
+        "猫咪图片的边框现在是尖尖的，不够可爱，我们可以通过CSS的一个叫border-radius(边框半径)的属性来让它的边框变成圆的。",
+        "你同样可以使用像素来指定border-radius的属性值，现在让你的猫咪图片的边框半径为10px吧。",
+        "注意：这个任务有多种解决方案。你可以添加border-radius到<code>.thick-green-border</code>类选择器，也可以添加到<code>.smaller-image</code>类选择器."
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -674,12 +672,12 @@
       "id": "bad87fee1348bd9aedf08816",
       "title": "Link to External Pages with Anchor Elements",
       "description": [
-        "<code>a</code>元素, 也叫<code>anchor（锚点）</code>元素，既可以用来链接到外部页面实现超链接功能，也可以链接到当前页面的某部分实现导航功能。",
-        "下面是一张<code>a</code>元素的图示。在此，<code>a</code>元素被用在了一个段落元素的中间，这意味着链接会出现在段落的中间。",
+        "<code>a</code>元素，也叫<code>anchor（锚点）</code>元素，既可以用来链接到外部地址实现页面跳转功能，也可以链接到当前页面的某部分实现内部导航功能。",
+        "下面是一张<code>a</code>元素的图示。<code>a</code>元素位于段落元素的中间，这意味着链接会出现在段落的中间。",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
-        "Here's an example:",
-        "<code>&#60;p&#62;Here's a &#60;a href=\"http://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
-        "任务：创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并且用<code>cat photos</code>作为其<code>anchor text（锚点文本）</code>。"
+        "这有一个例子：",
+        "<code>&#60;p&#62;Here's a &#60;a href=\"http://freecodecamp.cn\"&#62; link to FreeCodeCamp中文社区 &#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
+        "任务：创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并用<code>cat photos</code>作为其<code>anchor text（锚点文本）</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -717,7 +715,7 @@
         "<p class=\"red-text\">养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>"
       ],
       "tests": [
-        "assert((/cat photos/gi).test($(\"a\").text()), 'message: 你的<code>a</code>元素应该使用\"cat photos\"作为其<code>anchor text（锚文本）</code>。');",
+        "assert((/cat photos/gi).test($(\"a\").text()), 'message: 你的<code>a</code>元素应该使用\"cat photos\"作为其<code>anchor text（锚点文本）</code>。');",
         "assert(/http:\\/\\/freecatphotoapp\\.com/gi.test($(\"a\").attr(\"href\")), 'message: 你需要有一个链接到<code>http&#58;//freecatphotoapp.com</code>的<code>a</code>元素。');",
         "assert(code.match(/<\\/a>/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'message: 确保你的<code>a</code>元素有一个结束标记。');"
       ],
@@ -731,9 +729,9 @@
         "作为参考，再次看一看<code>a</code>元素的图示：",
         "<a href=\"//i.imgur.com/hviuZwe.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" title=\"Click to enlarge\" alt=\"a diagram of how anchor tags are composed with the same text as on the following line\" src=\"//i.imgur.com/hviuZwe.png\"></a>",
         "例如：",
-        "<code>&#60;p&#62;Here's a &#60;a href=\"https://freecodecamp.com\"&#62; link to Free Code Camp&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
+        "<code>&#60;p&#62;Here's a &#60;a href=\"https://freecodecamp.cn\"&#62; link to FreeCodeCamp中文社区&#60;/a&#62; for you to follow.&#60;/p&#62;</code>",
         "<code>Nesting（嵌套）</code>就是把一个元素放在另一个元素里面。",
-        "现在，把你已有的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），使包围的段落为<code>View more cat photos</code>，但是其中仅<code>cat photos</code>是一个链接，其余的文本是普通文本。"
+        "任务：把你的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），让段落的文本为<code>View more cat photos</code>，但是其中仅<code>cat photos</code>是一个链接，其余的是普通文本。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -789,9 +787,8 @@
       "id": "bad87fee1348bd9aedf08817",
       "title": "Make Dead Links using the Hash Symbol",
       "description": [
-        "有时你想为你的网站添加一个<code>a</code>元素，但此时你还不知道要将它们链接到哪儿，此时可以使用死链接。",
-        "当使用我们后面学到的<code>jQuery</code>改变一个链接的行为时，使用死链接也是非常方便的。",
-        "把你的<code>a</code>元素的<code>href</code>属性的值替换为一个<code>#</code>，别名hash（哈希）符号，将其变为一个死链接。"
+        "有时你想为你的网站添加一个<code>a</code>元素，但此时你还不知道要将它们链接到哪儿，此时可以使用固定链接。",
+        "把你的<code>a</code>元素的<code>href</code>属性的值替换为一个<code>#</code>，别名hash(哈希)符号，将其变为一个固定链接。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -831,7 +828,7 @@
         "<p class=\"red-text\">养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>"
       ],
       "tests": [
-        "assert($(\"a\").attr(\"href\") === \"#\", 'message: 通过把<code>href</code>属性设置为\"#\"，你的<code>a</code>元素应该是一个死链接。 ');"
+        "assert($(\"a\").attr(\"href\") === \"#\", 'message: 通过把<code>href</code>属性设置为\"#\"，你的<code>a</code>元素应该是一个固定链接。 ');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -842,8 +839,8 @@
       "description": [
         "你可以通过把某元素嵌套进<code>a</code>元素使其变成一个链接。",
         "把你的图片嵌套进<code>a</code>元素。举例如下：",
-        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"https://bit.ly/fcc-running-cats\"&#62;&#60;/a&#62;</code>",
-        "记得将<code>#</code>作为<code>a</code>元素的<code>href</code>属性，使其变为一个死链接。",
+        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"/images/relaxing-cat.jpg\"&#62;&#60;/a&#62;</code>",
+        "任务：把你的小猫图片插入到一个新的锚点元素中，并把锚点元素的<code>href</code>属性设置为<code>#</code>。",
         "一旦完成，把你的光标悬停在你的图片上。你的光标此时应该由光标指针变成手形指针。图片现在是一个链接了。"
       ],
       "challengeSeed": [
@@ -994,7 +991,7 @@
       ],
       "tests": [
         "assert($(\"ul\").length > 0, 'message: 创建一个<code>ul</code>元素。');",
-        "assert($(\"ul li\").length > 2, 'message: 你应该在你的<code>ul</code>元素中添加三条<code>li</code>元素。');",
+        "assert($(\"ul li\").length > 2, 'message: 你应该在你的<code>ul</code>元素中添加三个<code>li</code>元素。');",
         "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, 'message: 确保你的<code>ul</code>元素有结束标记。');",
         "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, 'message: 确保你的<code>li</code>元素有结束标记。');"
       ],
@@ -1071,7 +1068,7 @@
       "title": "Create a Text Field",
       "description": [
         "现在让我们来创建一个form(表单)。",
-        "Text input(文本输入框)是获得用户输入的一条方便途径。",
+        "Text input(文本输入框)是用来获得用户输入的绝佳方式。",
         "你可以用如下方法创建：",
         "<code>&#60;input type=\"text\"&#62;</code>",
         "注意，<code>input</code>元素是自关闭的。",
@@ -1199,10 +1196,11 @@
       "id": "bad87fee1348bd9aede08830",
       "title": "Create a Form Element",
       "description": [
-        "使用HTML来构建可以跟服务器交互的Web表单(form)，通过给你的<code>form</code>元素添加一个动作<code>action</code>来达到此目的。",
+        "使用HTML来构建可以跟服务器交互的Web表单(form)，通过给你的<code>form</code>元素添加一个<code>action</code>属性来达到此目的。",
+        "<code>action</code>属性的值指定了表单提交到服务器的地址。",
         "例如：",
         "<code>&#60;form action=\"/url-where-you-want-to-submit-form-data\"&#62;&#60;/form&#62;</code>",
-        "把你的文本框嵌套进<code>form</code>元素，并为此<code>form</code>元素添加<code>action=\"/submit-cat-photo\"</code>属性。"
+        "把你的文本框嵌套进<code>form</code>元素，并为此<code>form</code>元素添加<code>action=\"/submit-cat-photo\"</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1264,7 +1262,7 @@
       "id": "bad87fee1348bd9aedd08830",
       "title": "Add a Submit Button to a Form",
       "description": [
-        "让我们来为你的form添加一个<code>submit</code>(提交)按钮，点击这个按钮，数据将会从你的form发送到你通过<code>action</code>属性指定的URL上。",
+        "让我们来为你的form添加一个<code>submit</code>(提交)按钮，点击这个按钮，表单中的数据将会被发送到你通过<code>action</code>属性指定的地址上。",
         "下面是submit按钮的例子：",
         "<code>&#60;button type=\"submit\"&#62;this button submits the form&#60;/button&#62;</code>",
         "为你的<code>form</code>元素添加一个type为<code>submit</code>的提交按钮，用\"Submit\"作按钮文本。"
@@ -1332,11 +1330,11 @@
       "id": "bad87fee1348bd9aedc08830",
       "title": "Use HTML5 to Require a Field",
       "description": [
-        "当你设计表单时，你可以使指定某些选项为必填项(required)，只有当用户填写了该选项后，用户才能够提交表单。",
-        "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>这个单词就可以了，你可以使用：<br><code>&#60;input type=\"text\" required&#62;</code>",
-        "任务：给你的输入框添加<code>required</code>字段，这样你的用户不填写输入框就无法提交表单。",
-        "然后，试试不填写任何文本提交表单，看看你的HTML5表单如何提示你该字段为必填项。",
-        "注意：该字段在Safari浏览器中不起作用。"
+        "当你设计表单时，你可以指定某些选项为必填项(required)，只有当用户填写了该选项后，用户才能够提交表单。",
+        "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>属性就可以了，你可以使用：<br><code>&#60;input type=\"text\" required&#62;</code>",
+        "任务：给你的输入框添加<code>required</code>属性，这样用户不填写输入框就无法提交表单。",
+        "试试输入框不填写任何文本，然后点击Submit提交表单，看看浏览器如何提示你该字段为必填项。",
+        "注意：<code>required</code>属性在Safari浏览器中不起作用，请用其他浏览器来学习，推荐使用Chrome。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1402,9 +1400,9 @@
         "类比是最好的学习方式，当你搞不清一个概念时，最好在生活中找到对应的案例。",
         "单选就是你只能在多个选项中选择一个，就好比你有很多追求者，但却只能选择一个结婚。",
         "多选一的场景就用<code>radio button(单选按钮)</code>",
-        "单选按钮是<code>input</code>输入框的一种类型。",
+        "单选按钮只是<code>input</code>输入框的一种类型。",
         "每一个单选按钮都应该嵌套在它自己的<code>label(标签)</code>元素中。",
-        "重点：所有关联的单选按钮应该使用相同的<code>name</code>属性。",
+        "注意：所有关联的单选按钮应该使用相同的<code>name</code>属性。",
         "下面是一个单选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62; Indoor&#60;/label&#62;</code>",
         "给你的表单添加两个单选按钮，一个叫<code>indoor</code>，另一个叫<code>outdoor</code>。"
@@ -1478,11 +1476,11 @@
         "当你在大学选课时，面对几百门课程，而因为时间和精力，你只能从中选择十几门。",
         "这样的场景就用<code>checkboxes（复选按钮）</code>。",
         "复选按钮是<code>input</code>的输入框的另一种类型。",
-        "每一个复选按钮应该嵌套进它自己的<code>label</code>元素。",
+        "每一个复选按钮都应该嵌套进<code>label</code>元素中。",
         "所有关联的复选按钮应该具有相同的<code>name</code>属性。",
         "下面是复选按钮的例子：",
         "<code>&#60;label&#62;&#60;input type=\"checkbox\" name=\"personality\"&#62; Loving&#60;/label&#62;</code>",
-        "任务：为你的表单添加三个复选按钮，每个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有复选按钮共享值为<code>personality</code>的<code>name</code>属性。"
+        "任务：为你的表单添加三个复选按钮，每个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有复选按钮的<code>name</code>属性必须为<code>personality</code>。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
@@ -1539,9 +1537,9 @@
       ],
       "tests": [
         "assert($('input[type=\"checkbox\"]').length > 2, 'message: 你的页面上应该有三个复选按钮元素。');",
-        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: 三个复选按钮中的每一个都应该嵌套进它自己的<code>label</code>元素。');",
+        "assert($('label > input[type=\"checkbox\"]:only-child').length > 2, 'message: 每一个复选按钮都应该嵌套进它自己的<code>label</code>元素。');",
         "assert(code.match(/<\\/label>/g) && code.match(/<label/g) && code.match(/<\\/label>/g).length === code.match(/<label/g).length, 'message: 确保每一个<code>label</code>元素都有一个结束标记。');",
-        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: 为你的复选按钮的<code>name</code>属性设置值<code>personality</code>。');"
+        "assert($('label > input[type=\"checkbox\"]').filter(\"[name='personality']\").length > 2, 'message: 复选按钮的<code>name</code>属性必须为<code>personality</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -1551,7 +1549,7 @@
       "title": "Check Radio Buttons and Checkboxes by Default",
       "description": [
         "使用<code>checked</code>属性，你可以设置复选按钮和单选按钮默认被选中。",
-        "为此，只需在输入元素中添加单词\"checked\"。例如：",
+        "为此，只需在<code>input</code>元素中添加属性<code>checked</code>",
         "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
         "把你的第一个<code>radio button</code>和第一个<code>checkbox</code>都设置为默认选中。"
       ],
@@ -1613,7 +1611,7 @@
       ],
       "tests": [
         "assert($('input[type=\"radio\"]').prop(\"checked\"), 'message: 你表单中的第一个单选按钮应该默认被选中。');",
-        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表彰中的第一个复选按钮应该默认被选中。');"
+        "assert($('input[type=\"checkbox\"]').prop(\"checked\"), 'message: 你表单中的第一个复选按钮应该默认被选中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
