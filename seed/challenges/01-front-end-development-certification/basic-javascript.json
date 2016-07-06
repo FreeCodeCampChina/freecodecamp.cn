@@ -3766,9 +3766,9 @@
       ],
       "tests": [
         "collection = collectionCopy; assert(update(5439, \"artist\", \"ABBA\")[5439][\"artist\"] === \"ABBA\", 'message: <code>update(5439, \"artist\", \"ABBA\")</code> 之后, <code>artist</code> 应该为 <code>\"ABBA\"</code>');",
-        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该是<code>\"\"</code>');",
+        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该不存在');",
         "assert(update(1245, \"tracks\", \"Addicted to Love\")[1245][\"tracks\"].pop() === \"Addicted to Love\", 'message: <code>update(1245, \"tracks\", \"Addicted to Love\")</code> 之后, <code>tracks</code> 的最后一个元素应该是 <code>\"Addicted to Love\"</code>');",
-        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该是<code>\"\"</code>');"
+        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该不存在');"
       ],
       "type": "checkpoint",
       "challengeType": 1
