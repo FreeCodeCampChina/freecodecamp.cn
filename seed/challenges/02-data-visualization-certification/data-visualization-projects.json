@@ -16,7 +16,7 @@
         " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置代表年份、季度和 GDP 值。",
         " <strong>提示：</strong> 美国 GDP 统计数据可以引用这里的公布数据：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json</a>",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
-        "项目完成后，点击 \"I've completed this challenge\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
         "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
@@ -40,7 +40,7 @@
         " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
         " <strong>提示： </strong> 骑行比赛数据参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json</a> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
-        "项目完成后，点击 \"I've completed this challenge\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
         "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
@@ -65,7 +65,7 @@
         " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
         " <strong>提示：</strong> 本项目数据可以参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json</a> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
-        "项目完成后，点击 \"I've completed this challenge\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
         "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
@@ -92,7 +92,7 @@
         " <strong>用户需求：</strong> 每个域名的节点大小表示该域名下链接被引用的次数。",
         " <strong>提示：</strong> <code>http://www.freecodecamp.com/news/hot</code> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
-        "项目完成后，点击 \"I've completed this challenge\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
         "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
@@ -117,7 +117,7 @@
         " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
         " <strong>提示：</strong> 本项目数据可以参考这里：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json</a>",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
-        "项目完成后，点击 \"I've completed this challenge\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
         "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
