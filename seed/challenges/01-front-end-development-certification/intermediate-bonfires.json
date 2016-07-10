@@ -312,7 +312,7 @@
       "id": "a77dbc43c33f39daa4429b4f",
       "title": "Boo who",
       "description": [
-        "查检一个值是否是基本布尔类型，并返回 true 或 false。",
+        "检查一个值是否是基本布尔类型，并返回 true 或 false。",
         "基本布尔类型即 true 和 false。",
         "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
@@ -519,7 +519,7 @@
       "title": "Smallest Common Multiple",
       "description": [
         "找出能被两个给定参数和它们之间的连续数字整除的最小公倍数。",
-        "范围是两个数字构成的数组，两个数字不一样按数字顺序排序。",
+        "范围是两个数字构成的数组，两个数字不一定按数字顺序排序。",
         "例如对 1 和 3 —— 找出能被 1 和 3 和它们<em>之间</em>所有数字整除的最小公倍数。",
         "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
       ],
