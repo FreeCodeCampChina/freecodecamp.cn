@@ -318,7 +318,7 @@ module.exports = function(app) {
     //     delete  data[i].progressTimestamps;
     // };
     // console.log(data);
-    User.find( { fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+    User.find( { where: {"isCheater":false},fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
       if (err) { return next(err); }
       var data = user.slice();
       for(var i=0;i<data.length;i++){

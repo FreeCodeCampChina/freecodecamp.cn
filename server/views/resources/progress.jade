@@ -10,21 +10,18 @@ block content
     p.text-center
       |  如今，优秀的js工程师就是江左梅郎，就是企业梦寐以求的麒麟之才。
     p.text-center
-      |  琅琊榜的门槛：
-      a(href='/code') 报名
-      |  审核通过后才能进入琅琊榜中。
+      |  琅琊榜的规则：绝不允许抄袭，一旦发现，立即取消获得的证书。
     p.text-center
-      |  琅琊榜的规则：绝不允许抄袭，一旦发现，立即取消比赛资格。
+      |  迄今已经取消3人证书，请各位做项目过程中独立思考，不要copy示例代码或他人代码。
     p.text-center
-      |  迄今已经取消3人比赛资格，请各位做项目过程中独立思考，不要copy示例代码。
+      |  如果遇到困难无法解决，可先行从学习路径跳过。
     p.text-center
-      |  如果遇到困难无法解决，可先行跳过。不知道如何跳过的，请仔细复习之前的课程。
+      |  证书是对学习成绩优秀的同学的奖励，而不是成为某些人的目的。
     p.text-center
-      |  奖品是对学习成绩优秀的同学的奖励，而不是成为某些人的目的。
+      |  再次提醒：一旦涉及抄袭，立即取消证书，永不恢复，拒绝协商。
     p.text-center
-      |  再次提醒：一旦涉及抄袭，立即取消资格，永不恢复，拒绝协商。
-    p.text-center
-      |  比赛已经于2016年7月2日21：00结束，近期会公布获奖名单和通知获奖选手，请保持手机畅通。
+      比赛已经于2016年7月2日21:00结束，获奖名单请移步：
+      a(href='https://github.com/huluoyang/freecodecamp.cn/wiki/bingo' target='_blank')  wiki
     #left.col-md-4.col-sm-12.col-xs-12
       h4.text-center 专业组排行榜
       table(ng-controller='left')
@@ -82,8 +79,8 @@ block content
   script(src='/js/angular.min.js')
   script.
     var project1 = ['bd7158d8c442eddfbeb5bd1f','bd7158d8c442eddfaeb5bd18','bd7158d8c242eddfaeb5bd13','bd7158d8c242eddfaeb5be13'];
-    var project2 = ['bd7158d8c442eddfaeb5bd13','bd7158d8c442eddfaeb5bd10','bd7158d8c442eddfaeb5bd19','bd7158d8c442eddfaeb5bd1f'];
-    var project3 = ['bd7158d8c442eddfaeb5bd17','bd7158d8c442eddfaeb5bd0f','bd7158d8c442eedfaeb5bd1c','bd7158d8c442eddfaeb5bd1c'];
+    var project2 = ['bd7158d8c442eddfaeb5bd13','bd7158d8c442eddfaeb5bd10','bd7158d8c442eddfaeb5bd19','bd7158d8c442eddfaeb5bd1f','bd7168d8c242eddfaeb5bd13','bd7178d8c242eddfaeb5bd13','bd7188d8c242eddfaeb5bd13','bd7198d8c242eddfaeb5bd13','bd7108d8c242eddfaeb5bd13'];
+    var project3 = ['bd7158d8c442eddfaeb5bd17','bd7158d8c442eddfaeb5bd0f','bd7158d8c442eedfaeb5bd1c','bd7158d8c442eddfaeb5bd1c','bd7157d8c242eddfaeb5bd13','bd7156d8c242eddfaeb5bd13','bd7155d8c242eddfaeb5bd13','bd7154d8c242eddfaeb5bd13','bd7153d8c242eddfaeb5bd13'];
     var app = angular.module('app',[]);
     app.controller('left',['$scope','$http', function($scope,$http){
       $http.get('/master').then(function(res){
