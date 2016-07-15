@@ -822,11 +822,12 @@
       "id": "56533eb9ac21ba0edf2244b6",
       "title": "Escape Sequences in Strings",
       "description": [
-        "引号不是可以在字符串中唯一一个被转义的字符。下面是常见的转义符号的列表:",
+        "字符串中的转义序列",
+        "引号不是字符串中唯一的可以被转义字符。下面是常见的转义序列列表:",
         "<table class=\"table table-striped\"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td>\\'</td><td>单引号</td></tr><tr><td>\\\"</td><td>双引号</td></tr><tr><td>\\\\</td><td>反斜杠符</td></tr><tr><td>\\n</td><td>换行符</td></tr><tr><td>\\r</td><td>回车符</td></tr><tr><td>\\t</td><td>制表符</td></tr><tr><td>\\b</td><td>退格符</td></tr><tr><td>\\f</td><td>换页符</td></tr></tbody></table>",
         "<em>注意，如果你想要显示一个反斜杠就必须要转义它。</em>",
         "<h4>任务</h4>",
-        "按照下面的顺序，并且用空格来分割：<br><code>反斜杠 制表符 制表符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
+        "按照下面的顺序，并且用空格来分割：<br><code>反斜杠 制表符 退格符 回车符 换行符</code> 并把它赋值给变量 <code>myStr</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -841,10 +842,10 @@
         "else{return null;}})();"
       ],
       "solutions": [
-        "var myStr = \"\\\\ \\t \\t \\r \\n\";"
+        "var myStr = \"\\\\ \\t \\b \\r \\n\";"
       ],
       "tests": [
-        "assert(myStr === \"\\\\ \\t \\t \\r \\n\", 'message: <code>myStr</code> 应该包含被转义的字符, 并且按照 <code>反斜杠 制表符 制表符 回车符 换行符</code> 的顺序用空格分开');"
+        "assert(myStr === \"\\\\ \\t \\b \\r \\n\", 'message: <code>myStr</code> 应该包含被转义的字符, 并且按照 <code>反斜杠 制表符 退格符 回车符 换行符</code> 的顺序用空格分开');"
       ],
       "type": "waypoint",
       "challengeType": 1
