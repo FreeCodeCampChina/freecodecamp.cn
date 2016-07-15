@@ -20,7 +20,7 @@
         "现在在命令窗口中输入<code>how-to-npm</code>开始我们的教程。",
         "你可以通过拖动命令窗口的边框来调整窗口的大小。",
         "确认你现在的工作目录是在“workspace”下面，你可以通过使用命令<code>cd ~/workspace</code>回到工作目录中。",
-        "Note that you can only add dist tags to the specific version numbers published in steps 8 and 10. If you receive a 403 or 404 error, run <code>how-to-npm</code> and try again.",
+        "需要注意的是你只能添加dist标签在第8步到第10步中发布的具体版本号。如果你收到了403或404错误，运行 <code>how-to-npm</code> 然后再试一次。",
         "另外，如果你遇到一个错误，而且你认为你理解这个错误，你可以通过在命令窗口中输入<code>how-to-npm verify skip</code>跳过这一步。",
         "你可以在 GitHub 上查看本节的源码 <a href='https://github.com/npm/how-to-npm'>https://github.com/npm/how-to-npm</a>。",
         "完成 \"Install NPM\"",
