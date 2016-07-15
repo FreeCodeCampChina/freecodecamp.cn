@@ -10,25 +10,27 @@
         [
           "//i.imgur.com/Et3iD74.jpg",
           "An image of our Data Visualization Certificate",
-          "This challenge will give you your verified Data Visualization Certificate. Before we issue your certificate, we must verify that you have completed all of our React and D3.js projects. You must also accept our Academic Honesty Pledge. Click the button below to start this process.",
+          "这个挑战将授予你数据可视化认证证书。在我们授予你证书前，我们必须验证你是否已全部完成我们的React和D3.js项目。你同意必须接受我们的学术诚信承诺。点击下面的按钮我们就开始这一过程。",          
           ""
         ],
         [
           "//i.imgur.com/HArFfMN.jpg",
           "The definition of plagiarism: Plagiarism (noun) - copying someone else’s work and presenting it as your own without crediting them",
-          "By clicking below, you pledge that all of your submitted code A) is code you or your pair personally wrote, or B) comes from open source libraries like jQuery, or C) has been clearly attributed to its original authors. You also give us permission to audit your challenge solutions and revoke your certificate if we discover evidence of plagiarism.",
+          "点击下面的按钮，你便默认承诺全部你提交的代码满足下列条件 A) 代码是你或你搭档独立完成的，或者 B) 代码来自如jQuery这样的
+           开源库，亦或者，C) 已经清楚的注明了代码的原作者。你同样也授予我们修改你编码挑战的解决方案，同时，如果我们发现你的代码有任何抄袭的证据，
+          我们也会撤销你的证书。",
           "#"
         ],
         [
           "//i.imgur.com/14F2Van.jpg",
           "An image of the text \"Data Visualization Certificate requirements\"",
-          "Let's confirm that you have completed our React and D3.js projects. Click the button below to verify this.",
+          "让我们确认你已经完成了我们的React和D3.js项目。请点击下面的按钮来验证。",
           "#"
         ],
         [
           "//i.imgur.com/16SIhHO.jpg",
           "An image of the word \"Congratulations\"",
-          "Congratulations! We've added your Data Visualization Certificate to your portfolio page. Unless you choose to hide your solutions, this certificate will remain publicly visible and verifiable.",
+          "恭喜你！我们已经将数据可视化证书添加到你个人的档案页面。除非你选择隐藏你的解决方案，你获得的证书会一直公开有效。",
           ""
         ]
       ],
