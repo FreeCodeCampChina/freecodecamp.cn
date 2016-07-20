@@ -172,7 +172,7 @@ window.common = (function(global) {
 
     $('#help-ive-found-a-bug-wiki-article').on('click', function() {
       window.open(
-        'https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/' +
+        'https://github.com/huluoyang/freecodecamp.cn/wiki/' +
           "Help-I've-Found-a-Bug",
         '_blank'
       );
@@ -184,7 +184,7 @@ window.common = (function(global) {
         .split('?')[0]
         .replace(/(#*)$/, '');
       window.open(
-        'https://github.com/FreeCodeCamp/FreeCodeCamp/issues?q=' +
+        'https://github.com/huluoyang/freecodecamp.cn/issues?q=' +
         'is:issue is:all ' +
         (common.challengeName) +
         ' OR ' +
