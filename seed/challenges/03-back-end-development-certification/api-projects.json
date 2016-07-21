@@ -104,7 +104,7 @@
       "title": "Timestamp Microservice",
       "description": [
         "<strong>目标：</strong> 参考这个例子： <a href='https://timestamp-ms.herokuapp.com/' target='_blank'>https://timestamp-ms.herokuapp.com/</a> ，完成一个全栈式 JavaScript 应用，并把它部署在 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 把一个字符串作为参数，判断该字符串是不是一个 Unix 时间，或者一个公历日期（例如：January 1, 2016）。",
         "<strong>用户故事：</strong> 如果是，那么它同时返回 Unix 时间戳和公历日期。",
@@ -126,7 +126,7 @@
       "title": "Request Header Parser Microservice",
       "description": [
         "<strong>目标：</strong> 参考这个例子：<a href='https://cryptic-ridge-9197.herokuapp.com/api/whoami/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/whoami/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 用户在浏览器输入该地址后，返回用户的 IP 地址，语言，操作系统等信息。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
@@ -146,7 +146,7 @@
       "title": "URL Shortener Microservice",
       "description": [
         "<strong>目标：</strong> 参考这个例子：<a href='https://shurli.herokuapp.com/' target='_blank'>https://shurli.herokuapp.com/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 用户在浏览器输入该地址时，把一个合法的 URL 作为参数，返回一个 JSON 格式的段地址。",
         "<strong>用户故事：</strong> 如果用户输入的是一个无效的 URL 地址（不符合 http://www.example.com 格式）作为参数，则返回错误。",
@@ -168,7 +168,7 @@
       "title": "Image Search Abstraction Layer",
       "description": [
         "<strong>目标：</strong> 参考这个图片查询的例子： <a href='https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10</a>， 以及这个显示最近几次查询情况的例子：<a href='https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 根据指定的字符串描述，获取一组符合描述的图片地址和文字描述以及页面地址。",
         "<strong>用户故事：</strong> 可以在地址中增加一个参数 ?offset=2 来对返回结果进行分页。",
@@ -190,7 +190,7 @@
       "title": "File Metadata Microservice",
       "description": [
         "<strong>目标：</strong> 参考这个例子：<a href='https://cryptic-ridge-9197.herokuapp.com/' target='_blank'>https://cryptic-ridge-9197.herokuapp.com/</a>，完成一个全栈式 JavaScript 应用，并把它部署到 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.com/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 我可以通过提交一个 FormData 对象来上传文件。",
         "<strong>用户故事：</strong> 当我上传一个文件后，会收到一个 JSON 格式的响应，显示文件的大小。",
