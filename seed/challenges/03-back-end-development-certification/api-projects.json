@@ -104,7 +104,7 @@
       "title": "Timestamp Microservice",
       "description": [
         "<strong>目标：</strong> 参考这个例子： <a href='https://timestamp-ms.herokuapp.com/' target='_blank'>https://timestamp-ms.herokuapp.com/</a> ，完成一个全栈式 JavaScript 应用，并把它部署在 Heroku 上。",
-        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "对于每个项目，你都需要建立一个独立的 Github 仓库，和一个 Heroku 项目。如果你不记得如何做，请回头参考这个说明： <a href='/challenges/get-set-for-our-back-end-development-projects'>https://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 把一个字符串作为参数，判断该字符串是不是一个 Unix 时间，或者一个公历日期（例如：January 1, 2016）。",
         "<strong>用户故事：</strong> 如果是，那么它同时返回 Unix 时间戳和公历日期。",
