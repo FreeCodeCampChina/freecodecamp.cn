@@ -1,0 +1,76 @@
+extends ../layout
+block content
+  style.
+    .mt10{margin-top:10px;}
+    .mt20{margin-top:20px;}
+    select{border: 1px solid #ccc;width:100%;height:34px;}
+  .row
+    .col-md-12
+      img.img-responsive(src="/images/freecodecamp.png")
+  h1.text-center 欢迎加入FreeCodeCamp线下同城学习小组
+  if user
+
+    .row(ng-app="app")
+      .col-md-12
+        form.form-horizontal(ng-controller="group")
+          .form-group
+              input#username.form-control(type='hidden', name='username', value=user.username, required)
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='fullname') 姓名
+            .col-xs-12.col-sm-9.col-md-6
+              input#fullname.form-control(type='text', ng-model='fullname', name='fullname', placeholder='我们需要您的真实姓名', required)
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='email') 邮箱
+            .col-xs-12.col-sm-9.col-md-6
+              input#email.form-control(type='text', ng-model='email', name='email', placeholder='便于我们提前给您发送活动通知', required)
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='telphone') 手机号
+            .col-xs-12.col-sm-9.col-md-6
+              input#telphone.form-control(type='tel', ng-model='telphone', name='telphone', placeholder='便于我们关键时刻能联系上您', required)
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='wechat') 微信号
+            .col-xs-12.col-sm-9.col-md-6
+              input#wechat.form-control(type='text', ng-model='wechat', name='wechat', placeholder='便于我们把你加入对面的学习群', required)
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='location') 城市
+            .col-xs-12.col-sm-9.col-md-6
+              select#location
+                option(value='') 可以就近参加您所在城市的线下活动哦 ^_^
+                option(value='北京') 北京
+                option(value='上海') 上海
+                option(value='广州') 广州
+                option(value='深圳') 深圳
+                option(value='成都') 成都
+                option(value='重庆') 重庆
+                option(value='西安') 西安
+                option(value='天津') 天津
+                option(value='大连') 大连
+                option(value='青岛') 青岛
+                option(value='厦门') 厦门
+                option(value='苏州') 苏州
+                option(value='南京') 南京
+                option(value='杭州') 杭州
+                option(value='武汉') 武汉
+                option(value='长沙') 长沙
+                option(value='合肥') 合肥
+                option(value='南昌') 南昌
+                option(value='其他城市') 其他城市
+          .form-group
+            label.col-xs-12.col-sm-3.col-md-3.control-label(for='category') 背景
+            .col-xs-12.col-sm-9.col-md-6
+              select#background
+                option(value='') 填写您的相关背景便于我们为您提供个性化的服务哦 ^_^
+                option(value='政府') 政府
+                option(value='媒体') 媒体
+                option(value='学校') 学校
+                option(value='学生') 学生
+                option(value='程序猿') 程序猿
+                option(value='程序媛') 程序媛
+                option(value='企业') 企业
+                option(value='公益机构') 公益机构
+                option(value='其他') 其他
+              button#commit.btn.btn-primary.btn-lg.mt20(ng-click='commit();') 提交
+        script(src="/js/angular.min.js")
+        script(src="/js/join-group.js")
+  else
+    a.text-center.center-block(href="/login") 请先登录
