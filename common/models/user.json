@@ -109,6 +109,18 @@
     "telphone": {
       "type": "number"
     },
+    "wechat": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "group": {
+      "type": "boolean"
+    },
     "category": {
       "type": "string"
     },

@@ -53,6 +53,8 @@ module.exports = function(app) {
   router.route('/has-username').post(hasUsername);
   router.route('/has-join').post(hasJoin);
   router.route('/add-telphone').post(addTelphone);
+  router.route('/update-profile').post(updateProfile);
+  router.route('/dashboard').post(dashboard);
   router.get('/code',function(req,res){
     res.render('resources/code',{
       title: "苏州全民在线编程挑战赛"
@@ -63,7 +65,16 @@ module.exports = function(app) {
       title: "学习进度排行榜"
     });
   })
-
+  router.get('/group',function(req,res){
+    res.render("resources/group",{
+      title: "线下同城学习小组"
+    })
+  })
+  router.get('/dashboard',function(req,res){
+    res.render("resources/dashboard",{
+      title: "fcc后台统计系统"
+    })
+  })
 
   router.get(
     '/the-fastest-web-page-on-the-internet',
@@ -328,6 +339,22 @@ module.exports = function(app) {
       };
       res.send(data);
     });
+  }
+  function dashboard(req,res,next){
+    User.find( { where: {"group":true}, fields: {"_id":0, "username":1, "fullname":1, "email":1, "telphone":1, "wechat":1, "location":1, "background":1} },(err, user) =>{
+      if (err) { return next(err); }
+      var data = user.slice();
+      res.send(data);
+    })
+  }
+  function updateProfile(req,res,next){
+    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
+      if(err) { return next(err); }
+      user.updateAttributes({'fullname':req.body.fullname,'email':req.body.email,'telphone':req.body.telphone,'location':req.body.location,'background':req.body.background,'wechat':req.body.wechat,'group':req.body.group}, (err,user) =>{
+        if (err) { return next(err); }
+        res.send(user);
+      })
+    })
   }
   function master(req,res,next){
     User.find({ where: { "category" : "master","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
