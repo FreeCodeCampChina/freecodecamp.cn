@@ -1,12 +1,17 @@
-# Contributor's Guide
+# 贡献者指南
 
-## I want to help!
+## 我想成为代码贡献者！
 We welcome pull requests from Free Code Camp campers (our students) and seasoned JavaScript developers alike! Follow these steps to contribute:
+
+我们欢迎每一位 FreeCodeCamp学员 和 有经验的JavaScript开发人员 给我们发送 pull requests！请参照下面这些步骤参与进来：
 
 
 1.  Find an issue that needs assistance by searching for the [Help Wanted](https://github.com/FreeCodeCamp/FreeCodeCamp/labels/help%20wanted) tag.
+1、通过搜索标记[Help Wanted](https://github.com/FreeCodeCamp/FreeCodeCamp/labels/help%20wanted) 来找到需要帮助的问题。
 2.  Let us know you are working on it, by posting a comment on the issue.
+2、在问题下面发送一个评论，便于让我们知道你正在着手解决这个问题。
 3.  Feel free to ask for help in our [Help Contributors](https://gitter.im/FreeCodeCamp/HelpContributors) Gitter room.
+3、你可以在我们的[Help Contributors](https://gitter.im/FreeCodeCamp/HelpContributors) Gitter room 自由地提问来获得帮助。
 
 If you've found a bug that is not on the board, [follow these steps](#found-a-bug).
 
