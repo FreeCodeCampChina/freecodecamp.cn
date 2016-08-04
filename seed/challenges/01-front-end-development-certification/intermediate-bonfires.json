@@ -10,7 +10,7 @@
       "description": [
         "我们会传递给你一个包含两个数字的数组。返回这两个数字和它们之间所有数字的合。",
         "最小的数字并非总在最前面。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumAll(arr) {",
@@ -43,7 +43,7 @@
       "title": "Diff Two Arrays",
       "description": [
         "比较两个数组，然后返回一个新数组，该数组的元素为两个给定数组中所有独有的数组元素。换言之，返回两个数组的差异。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function diff(arr1, arr2) {",
@@ -84,7 +84,7 @@
       "description": [
         "将给定的数字转换成罗马数字。",
         "所有返回的 <a href=\"http://www.mathsisfun.com/roman-numerals.html\" target=\"_blank\">罗马数字</a> 都应该是大写形式。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function convert(num) {",
@@ -139,7 +139,7 @@
       "description": [
         "写一个 function，它遍历一个对象数组（第一个参数）并返回一个包含相匹配的属性-值对（第二个参数）的所有对象的数组。如果返回的数组中包含 source 对象的属性-值对，那么此对象的每一个属性-值对都必须存在于 collection 的对象中。",
         "例如，如果第一个参数是 <code>[{ first: \"Romeo\", last: \"Montague\" }, { first: \"Mercutio\", last: null }, { first: \"Tybalt\", last: \"Capulet\" }]</code>，第二个参数是 <code>{ last: \"Capulet\" }</code>，那么你必须从数组（第一个参数）返回其中的第三个对象，因为它包含了作为第二个参数传递的属性-值对。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask编写你自己的代码。"
       ],
       "challengeSeed": [
         "function where(collection, source) {",
@@ -177,7 +177,7 @@
         "第二个参数是将被替换掉的单词（替换前的单词）。",
         "第三个参数用于替换第二个参数（替换后的单词）。",
         "注意：替换时保持原单词的大小写。例如，如果你想用单词 \"dog\" 替换单词 \"Book\" ，你应该替换成 \"Dog\"。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function myReplace(str, before, after) {",
@@ -212,7 +212,7 @@
         "把指定的字符串翻译成 pig latin。",
         "<a href=\"http://en.wikipedia.org/wiki/Pig_Latin\" target=\"_blank\">Pig Latin</a> 把一个英文单词的第一个辅音或辅音丛（consonant cluster）移到词尾，然后加上后缀 \"ay\"。",
         "如果单词以元音开始，你只需要在词尾添加 \"way\" 就可以了。",
-        "如果你被难住了，记得使用 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>。试着与他人配对编程。编写你自己的代码。"
+        "如果你被难住了，记得使用 Read-Search-Ask尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function translate(str) {",
@@ -251,7 +251,7 @@
         "在每一个数组中将给定的字母作为第一个碱基返回。",
         "例如，对于输入的 GCG，相应地返回 [[\"G\", \"C\"], [\"C\",\"G\"],[\"G\", \"C\"]]",
         "字母和与之配对的字母在一个数组内，然后所有数组再被组织起来封装进一个数组。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function pair(str) {",
@@ -282,7 +282,7 @@
       "description": [
         "从传递进来的字母序列中找到缺失的字母并返回它。",
         "如果所有字母都在序列中，返回 undefined。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function fearNotLetter(str) {",
@@ -314,7 +314,7 @@
       "description": [
         "检查一个值是否是基本布尔类型，并返回 true 或 false。",
         "基本布尔类型即 true 和 false。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function boo(bool) {",
@@ -354,7 +354,7 @@
         "换句话说，所有数组中的所有值都应该以原始顺序被包含在内，但是在最终的数组中不包含重复值。",
         "非重复的数字应该以它们原始的顺序排序，但最终的数组不应该以数字顺序排序。",
         "请参照下面验证判断中的例子。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function unite(arr1, arr2, arr3) {",
@@ -385,7 +385,7 @@
       "title": "Convert HTML Entities",
       "description": [
         "将字符串中的字符 <code>&</code>、<code><</code>、<code>></code>、<code>\"</code> （双引号）, 以及 <code>'</code> （单引号）转换为它们对应的 HTML 实体。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function convert(str) {",
@@ -420,7 +420,7 @@
       "title": "Spinal Tap Case",
       "description": [
         "将字符串转换为 spinal case。Spinal case 是 all-lowercase-words-joined-by-dashes 这种形式的，也就是以连字符连接所有小写单词。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function spinalCase(str) {",
@@ -455,7 +455,7 @@
         "返回所有小于传入数值的斐波那契数列中的奇数之和，如果传入的数值是斐波那契数，那么它也应该参与求和。",
         "斐波那契数列中的前几个数字是 1、1、2、3、5 和 8，随后的每一个数字都是前两个数字之和。",
         "例如，向 function 传入 4 应该返回 5，因为斐波那契数列中所有小于 4 的奇数是 1、1、3。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumFibs(num) {",
@@ -489,7 +489,7 @@
         "求小于等于给定数值的质数之和。",
         "只有 1 和它本身两个约数的数叫质数。例如，2 是质数，因为它只能被 1 和 2 整除。1 不是质数，因为它只能被自身整除。",
         "给定的数不一定是质数。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function sumPrimes(num) {",
@@ -521,7 +521,7 @@
         "找出能被两个给定参数和它们之间的连续数字整除的最小公倍数。",
         "范围是两个数字构成的数组，两个数字不一定按数字顺序排序。",
         "例如对 1 和 3 —— 找出能被 1 和 3 和它们<em>之间</em>所有数字整除的最小公倍数。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask 。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function smallestCommons(arr) {",
@@ -552,7 +552,7 @@
       "title": "Finders Keepers",
       "description": [
         "写一个 function，它浏览数组（第一个参数）并返回数组中第一个通过某种方法（第二个参数）验证的元素。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function find(arr, func) {",
@@ -580,9 +580,23 @@
       "id": "a5deed1811a43193f9f1c841",
       "title": "Drop it",
       "description": [
-        "从数组（第一个参数）的最前面开始丢弃其中的元素，直到谓词（第二个参数）返回 true。",
-        "返回数组剩余的部分，如果没有剩余元素则返回一个空数组。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "<strong>队友该卖就卖，千万别舍不得。</strong>",
+        "当你的队伍被敌人包围时，你选择拯救谁、抛弃谁非常重要，如果选择错误就会造成团灭。",
+        "如果是AD或AP，优先拯救。",
+        "因为AD和AP是队伍输出的核心。",
+        "其次应该拯救打野。",
+        "因为打野死了对面就可以无所顾虑地打龙。",
+        "最后才是辅助或上单。",
+        "因为辅助和上单都是肉，死了也不会对团队造成毁灭性影响，该卖就卖。",
+        "但真实中的团战远比这要复杂，你的队伍很可能会被敌人分割成2个或3个部分。",
+        "当你救了一个重要的人时，很可能其他队友也会因此获救。",
+        "举个例子：",
+        "辅助和AD经常是在一起的，打野和中单在一起，上单经常一个人。",
+        "你救了AD，辅助也经常因此获救。",
+        "让我们来丢弃数组(arr)的元素，从左边开始，直到回调函数return true就停止。",
+        "第二个参数，<code>func</code>，是一个函数。用来测试数组的第一个元素，如果返回fasle，就从数组中抛出该元素(注意：此时数组已被改变)，继续测试数组的第一个元素，如果返回fasle，继续抛出，直到返回true。",
+        "最后返回数组的剩余部分，如果没有剩余，就返回一个空数组。",
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程。编写你自己的代码。"
       ],
       "challengeSeed": [
         "function drop(arr, func) {",
@@ -617,7 +631,7 @@
       "title": "Steamroller",
       "description": [
         "对嵌套的数组进行扁平化处理。你必须考虑到不同层级的嵌套。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function steamroller(arr) {",
@@ -649,7 +663,7 @@
       "description": [
         "传入二进制字符串，翻译成英语句子并返回。",
         "二进制字符串是以空格分隔的。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function binaryAgent(str) {",
@@ -679,7 +693,7 @@
       "description": [
         "判断谓词（第二个参数）是否对一个集合（第一个参数）的所有元素都成立。",
         "记住，你可以通过点号或方括号来访问对象的属性。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function every(collection, pre) {",
@@ -717,7 +731,7 @@
         "<code>var sumTwoAnd = add(2);</code>",
         "<code>sumTwoAnd(3)</code> 返回 <code>5</code>。",
         "如果两个参数都不是有效的数字，则返回 undefined。",
-        "如果你被卡住了，记得开大招 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。试着与他人配对编程。编写你自己的代码。"
+        "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
         "function add() {",
