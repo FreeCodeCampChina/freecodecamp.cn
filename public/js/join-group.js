@@ -10,7 +10,7 @@ app.controller('group',['$scope','$http', function($scope,$http){
     if(validator()){
       $http.post('/update-profile',{email:$scope.email,username:$('#username').val(),fullname:$scope.fullname,telphone:$scope.telphone,wechat:$scope.wechat,location:$("#location").val(),background:$('#background').val(),group:true}).then(function(res){
         if(res.status == 200){
-          $("form").html("<h3 class='text-center'>恭喜你，报名成功！我们稍后会把你拉到对应城市的学习群，也会在你的城市举办线下活动，敬请期待！</h3><h3 class='text-center'>你也可以直接添加微信号:<span style='color:#4CAF50;'>fcczhongguo</span> 来申请入群。</h3><img class='text-center center-block img-responsive' src='/images/fcczhongguo.jpg'>")
+          $("form").html("<h3 class='text-center'>恭喜你，报名成功！我们稍后会把你拉到对应城市的学习群，也会在你的城市举办线下活动，敬请期待！</h3><h3 class='text-center'>你也可以直接添加微信号:<span style='color:#4CAF50;'>fcczhongguo</span> 来申请入群（记得备注姓名和所在城市哦 ^_^）。</h3><img class='text-center center-block img-responsive' src='/images/fcczhongguo.jpg'>")
           //alert("恭喜你，报名成功！我们后续会把你拉到对应的学习群，也会在你的城市举办线下活动，敬请期待！")
         }
       },function(err){
