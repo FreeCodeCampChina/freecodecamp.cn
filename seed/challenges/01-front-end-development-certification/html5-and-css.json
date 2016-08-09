@@ -11,7 +11,7 @@
         "欢迎来到FreeCodeCamp的第一个编码挑战！",
         "整个课程的设计围绕两个原则：所见即所得、循序渐进。",
         "界面简洁直观，左边是课程区、中间是编辑区、右边是显示区。",
-        "HTML是英文Hper Text Markup Language(超文本标记语言)的缩写。",
+        "HTML是英文Hyper Text Markup Language(超文本标记语言)的缩写。",
         "你看到<code>&#60;h1&#62;Hello&#60;/h1&#62;</code>了吗? ",
         "<code>h1</code>就是一个HTML<code>元素</code>，<code>h1</code>是<code>header1</code>的简写，意思是一级标题。",
         "大部分元素都有一个<code>开始标记</code>和一个<code>结束标记</code>。",
