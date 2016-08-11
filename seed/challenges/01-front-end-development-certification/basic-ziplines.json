@@ -29,7 +29,7 @@
         [
           "//i.imgur.com/G1saeDt.gif",
           "A gif showing how to create a Codepen account.",
-          "为了完成我们的前端项目挑战，我们会使用一个叫CodePen的在线编辑器，点击下面的链接可以注册一个CodePen账户，此步骤需要翻墙你才能获取验证码。你也可以通过github账户直接登录。",
+          "为了完成我们的前端项目挑战，我们会使用一个叫CodePen的在线编辑器，点击下面的链接可以注册一个CodePen账户，此步骤需要翻墙你才能获取验证码。提示：codepen不支持github账户直接登录，只支持注册账户后通过github关联登录。",
           "http://codepen.io/signup/free"
         ],
         [
@@ -80,6 +80,7 @@
       "id": "bd7158d8c242eddfaeb5bd13",
       "title": "Build a Personal Portfolio Webpage",
       "description": [
+        "此项目有难度，实在不会可以先跳过，学完后面再回来。",
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
         "<strong>目标:</strong> 设计一个类似于: <a href='http://codepen.io/FreeCodeCamp/full/VemmoX/' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemmoX/</a>的个人作品集。",
@@ -109,6 +110,7 @@
       "id": "bd7158d8c242eddfaeb5be13",
       "title": "Design a danmu app",
       "description": [
+        "此项目有难度，实在不会可以先跳过，学完后面再回来。",
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
         "<strong>目标:</strong> 设计一个类似于右边的：<a href='http://codepen.io/huluoyang/full/GZbBwL//' target='_blank'>弹幕墙</a>。",
