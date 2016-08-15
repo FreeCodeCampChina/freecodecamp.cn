@@ -43,9 +43,11 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 
 我用谷歌翻译和有道词典来解决英文问题，看得非常吃力、理解得也有些生硬，学习效率较低。
 
-当我拿到144学分后，我瞬间产生了建立freecodecamp中文社区的念头，
+当我学到Counting Cards（21点算法）时，发现英文的讲解怎么也看不懂，在网上查找大量资料后，我才搞明白。
 
-这样许多像我一样英语不好的同学就可以直接在freecodecamp中文社区上学习了。
+我瞬间产生了建立freecodecamp中文社区的念头，
+
+这样许多同学就可以少走很多弯路，直接获取最有效的学习路径。
 
 ## freecodecamp中文社区发展历程
 | 时间            | done          | 
@@ -69,7 +71,7 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 | 2016.5.8     | 受晋剑同学的邀请，我来到苏州，加入猿生态，负责freecodecamp中文社区的翻译和开发。 |
 | 2016.6.5     | 启动了苏州首届全民编程挑战赛 |
 
-## 华丽丽的分割线
+## 志愿者招募
 
  能坚持看到这里的都是非常有耐心的人，你应该给自己的努力点个赞！
 
@@ -80,13 +82,17 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
  我们也在招募代码贡献者，如果你想考察下自己的技术水平，可以尝试clone代码到本机跑个站点看看。
 
  传送门：https://github.com/huluoyang/freecodecamp.cn/blob/dev/CONTRIBUTING.md
+ 
+## 那些值得尊敬的人
 
  感谢优才网CEO伍星，是他在2016年1月录制的公开课视频才让我接触到freecodecamp。
 
  感谢走之网的邹治，是他无偿提供了freecodecamp.cn域名。
 
- 感谢freecodecamp开源项目的创始人QuincyLarson，是他以一己之力开创了这个开源项目。
+ 感谢freecodecamp开源项目的创始人[QuincyLarson](https://github.com/QuincyLarson)，是他以一己之力开创了这个开源项目。
 
- 感谢freecodecamp开源项目的贡献者，是他们的参与让这个项目得以完善、发展。
+ 感谢[freecodecamp开源项目](https://github.com/freecodecamp/freecodecamp)的贡献者，是他们的参与让这个项目得以完善、发展。
 
- 感谢freecodecamp中文社区的翻译者，是他们的参与让这个项目得以在中国生根、发芽。
+ 感谢freecodecamp中文社区的[翻译者](https://github.com/huluoyang/freecodecamp.cn/wiki#%E7%BF%BB%E8%AF%91%E5%BF%85%E8%AF%BB)，是他们的参与让这个项目得以在中国生根、发芽。
+ 
+ 
