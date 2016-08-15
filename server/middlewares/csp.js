@@ -17,6 +17,7 @@ export default function csp() {
         "'unsafe-inline'",
         '*.google-analytics.com',
         '*.gstatic.com',
+        'https://*.gdgdocs.com',
         'https://*.cloudflare.com',
         '*.cloudflare.com',
         'https://*.gitter.im',
@@ -27,7 +28,8 @@ export default function csp() {
         '*.twimg.com',
         'https://*.twimg.com',
         'vimeo.com',
-        '*.clouddn.com'
+        '*.clouddn.com',
+        'https://*.clouddn.com'
       ].concat(trusted),
       connectSrc: [
         'vimeo.com'
@@ -35,6 +37,7 @@ export default function csp() {
       styleSrc: [
         "'unsafe-inline'",
         '*.gstatic.com',
+        'https://*.gdgdocs.com',
         '*.googleapis.com',
         '*.bootstrapcdn.com',
         'https://*.bootstrapcdn.com',
