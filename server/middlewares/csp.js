@@ -28,7 +28,7 @@ export default function csp() {
         '*.twimg.com',
         'https://*.twimg.com',
         'vimeo.com',
-        '*.clouddn.com',
+        'http://*.clouddn.com',
         'https://*.clouddn.com'
       ].concat(trusted),
       connectSrc: [
@@ -45,7 +45,7 @@ export default function csp() {
         'https://*.bootstrapcdn.com',
         '*.cloudflare.com',
         'https://*.cloudflare.com',
-        '*.clouddn.com',
+        'http://*.clouddn.com',
         'https://*.clouddn.com'
       ].concat(trusted),
       fontSrc: [
