@@ -37,19 +37,23 @@ export default function csp() {
       styleSrc: [
         "'unsafe-inline'",
         '*.gstatic.com',
+        '*.gdgdocs.com',
         'https://*.gdgdocs.com',
         '*.googleapis.com',
+        'https://*.googleapis.com',
         '*.bootstrapcdn.com',
         'https://*.bootstrapcdn.com',
         '*.cloudflare.com',
         'https://*.cloudflare.com',
-        '*.clouddn.com'
+        '*.clouddn.com',
+        'https://*.clouddn.com'
       ].concat(trusted),
       fontSrc: [
         '*.cloudflare.com',
         'https://*.cloudflare.com',
         '*.bootstrapcdn.com',
         '*.googleapis.com',
+        'https://*.googleapis.com',
         '*.gstatic.com',
         'https://*.bootstrapcdn.com'
       ].concat(trusted),
