@@ -8,5 +8,11 @@ script.
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
 // Leave the below lines alone!
-script(type='text/javascript', src='http://7xo9le.com1.z0.glb.clouddn.com/vendor-main.js')
+script.
+  (function(global) {
+    global.main = global.main || {};
+    global.main.isLoggedIn = !{JSON.stringify(!!user)};
+    global.main.userId = !{JSON.stringify(user && user.id || false)};
+  }(window))
+script(src=rev('/js', 'vendor-main.js'))
 script(src=rev('/js', 'main.js'))
