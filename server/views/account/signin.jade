@@ -1,24 +1,24 @@
 extends ../layout
 block content
     .text-center
-        h2 账户登录：
+        h2 我们目前只支持GitHub登录，其他登录方式敬请期待。
         a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/github')
             i.fa.fa-github
             | GitHub一键登录
-        br
-        a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/juhe')
-            img(src="/images/juhe.png")
-            | 聚合登录
-        br
-        a.btn.btn-lg.btn-block.btn-social.btn-github(href='/email-signin')
-            i.fa.fa-envelope-o
-            | 邮箱登录
+        //-hiden juhe and email signin
+          br
+          a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/juhe')
+              img(src="/images/juhe.png")
+              | 聚合登录
+          br
+          a.btn.btn-lg.btn-block.btn-social.btn-github(href='/email-signin')
+              i.fa.fa-envelope-o
+              | 邮箱登录
         br
         a.btn.btn-lg.btn-block.btn-social.btn-github(href='/challenges/learn-how-free-code-camp-works')
             i.fa.fa-map-o
             | 直接开始学习
         br
-
     script.
       $(document).ready(function() {
         var method = localStorage.getItem('lastSigninMethod'),

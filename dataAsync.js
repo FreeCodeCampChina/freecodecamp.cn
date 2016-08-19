@@ -2037,4 +2037,4 @@ console.log(JSON.stringify(challengeMap,null,2));
 // }
 // progressTimestamps = JSON.stringify(progressTimestamps,null,2);
 // console.log(JSON.stringify(progressTimestamps));
-// db.getCollection('user').update({username:"iugo"},{$set:{"progressTimestamps":progressTimestamps,"challengeMap":challengeMap}},false,true)
+// db.getCollection('user').update({username:"somebody"},{$set:{"progressTimestamps":progressTimestamps,"challengeMap":challengeMap}},false,true)
