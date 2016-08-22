@@ -3187,7 +3187,7 @@
       "id": "56533eb9ac21ba0edf2244c7",
       "title": "Accessing Objects Properties with the Dot Operator",
       "description": [
-        "和数组一样，有两种方式访问对象属性，一个是点操作符(<code>.</code>)，一个是中括号操作符(<code>[]</code>)。",
+        "有两种方式访问对象属性，一个是点操作符(<code>.</code>)，一个是中括号操作符(<code>[]</code>)。",
         "当你知道属性的名称的时候，使用点操作符。",
         "这是一个使用点操作符读取对象属性的例子：",
         "<blockquote>var myObj = {<br>  prop1: \"val1\",<br>  prop2: \"val2\"<br>};<br>var prop1val = myObj.prop1; // val1<br>var prop2val = myObj.prop2; // val2</blockquote>",
