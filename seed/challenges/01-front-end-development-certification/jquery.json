@@ -510,7 +510,7 @@
         "</div>"
       ],
       "tests": [
-        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags.');",
+        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags <em>.');",
         "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: Make sure the text is otherwise unchanged.');",
         "assert.isFalse((/<em>/gi).test($(\"h3\").html()), 'message: Do not alter any other text.');"
       ],
@@ -795,7 +795,7 @@
         "jQuery 用CSS选择器来选取元素，<code>target:nth-child(n)</code> CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。",
         "示例：你可以给目标元素的第三个子元素添加bounce class。",
         "<code>$(\".target:nth-child(3)\").addClass(\"animated bounce\");</code>",
-        "任务：确保给目标元素的第二个子元素添加bounce class，你可以通过<code>target</code> class来选获得目标元素。"
+        "任务：确保给目标元素的第二个子元素添加animated和bounce class，你可以通过<code>target</code> class来选获得目标元素。"
       ],
       "challengeSeed": [
         "fccss",
