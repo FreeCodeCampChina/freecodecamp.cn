@@ -2306,7 +2306,7 @@
         "<strong>例如</strong>",
         "<blockquote>3 !== 3   // false<br>3 !== '3' // true<br>4 !== 3   // true</blockquote>",
         "<h4>任务</h4>",
-        "在 <code>if</code> 语句中，添加 <code>全等运算符</code>，这样如果 <code>val</code> 不全等于 <code>17</code> 的时候，函数会返回 \"Not Equal\"。"
+        "在 <code>if</code> 语句中，添加 <code>不全等运算符</code>，这样如果 <code>val</code> 不全等于 <code>17</code> 的时候，函数会返回 \"Not Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2517,7 +2517,7 @@
       "id": "56533eb9ac21ba0edf2244d8",
       "title": "Comparisons with the Logical And Operator",
       "description": [
-        "有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
+        "有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 <code>true</code>，<dfn>逻辑与</dfn> 运算符（<code>&&</code>）才会返回 <code>true</code>。",
         "同样的效果可以通过if语句的嵌套来实现：",
         "<blockquote>if (num > 5) {<br>  if (num < 10) {<br>    return \"Yes\";<br>  }<br>}<br>return \"No\";</blockquote>",
         "只有当 <code>num</code> 的值在6和9之间（包括6和9）才会返回 \"Yes\"。相同的逻辑可被写为：",
@@ -2918,7 +2918,7 @@
         "分支1、2、3将会产生相同的输出结果。",
         "<h4>任务</h4>",
         "写一个根据下面的范围来设置<code>answer</code> 的switch语句：<br><code>1-3</code> - \"Low\"<br><code>4-6</code> - \"Mid\"<br><code>7-9</code> - \"High\"",
-        "<strong>提示</strong><br>你需要为范围中的每个数字准备一个<code>answer</code>语句。"
+        "<strong>提示</strong><br>你需要为每一个包含数字的范围准备一个<code>answer</code>语句。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
