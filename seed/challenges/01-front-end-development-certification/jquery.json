@@ -44,9 +44,9 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/<\\/script\\s*>/g) && code.match(/<script(\\sasync|\\sdefer)*(\\s(charset|src|type)\\s*=\\s*[\"\\']+[^\"\\']*[\"\\']+)*(\\sasync|\\sdefer)*\\s*>/g) && code.match(/<\\/script\\s*>/g).length === code.match(/<script(\\sasync|\\sdefer)*(\\s(charset|src|type)\\s*=\\s*[\"\\']+[^\"\\']*[\"\\']+)*(\\sasync|\\sdefer)*\\s*>/g).length, 'message: Create a <code>script</code> element making sure it is valid and has a closing tag.');",
-        "assert(code.match(/\\$\\s*?\\(\\s*?document\\)\\.ready\\s*?\\(\\s*?function\\s*?\\(\\s*?\\)\\s*?\\{/g), 'message: You should add <code>$&#40;document&#41;.ready&#40;function&#40;&#41; {</code> to the beginning of your <code>script</code> element.');",
-        "assert(code.match(/\\n*?\\s*?\\}\\s*?\\);/g), 'message: Close your <code>$&#40;document&#41;.ready&#40;function&#40;&#41; {</code> function with <code>}&#41;;</code>');"
+        "assert(code.match(/<\\/script\\s*>/g) && code.match(/<script(\\sasync|\\sdefer)*(\\s(charset|src|type)\\s*=\\s*[\"\\']+[^\"\\']*[\"\\']+)*(\\sasync|\\sdefer)*\\s*>/g) && code.match(/<\\/script\\s*>/g).length === code.match(/<script(\\sasync|\\sdefer)*(\\s(charset|src|type)\\s*=\\s*[\"\\']+[^\"\\']*[\"\\']+)*(\\sasync|\\sdefer)*\\s*>/g).length, 'message: 创建一个 <code>script</code> 元素，确保它是有效的，并且有关闭标签。');",
+        "assert(code.match(/\\$\\s*?\\(\\s*?document\\)\\.ready\\s*?\\(\\s*?function\\s*?\\(\\s*?\\)\\s*?\\{/g), 'message: 你应该添加 <code>$&#40;document&#41;.ready&#40;function&#40;&#41; {</code> 到 <code>script</code> 元素的开头部分。');",
+        "assert(code.match(/\\n*?\\s*?\\}\\s*?\\);/g), 'message: 使用 <code>}&#41;;</code> 来关闭 <code>$&#40;document&#41;.ready&#40;function&#40;&#41; {</code> function。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -94,8 +94,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"button\").hasClass(\"animated\") && $(\"button\").hasClass(\"bounce\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the class <code>animated</code> and <code>bounce</code> to your <code>button</code> elements.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"button\").hasClass(\"animated\") && $(\"button\").hasClass(\"bounce\"), 'message: 使用 jQuery 的 <code>addClass&#40&#41</code> function 为你的 <code>button</code> 元素添加 class <code>animated</code> 和 <code>bounce</code>。');",
+        "assert(!code.match(/class.*animated/g), 'message: 只用 jQuery 来为元素添加 class。');"
       ],
       "type": "waypoint",
       "challengeType": 0
