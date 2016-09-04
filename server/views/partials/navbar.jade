@@ -10,21 +10,19 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
             li
                 a(href='/home') 首页
             li.hidden-xs
-                a#nav-map-btn(href='#' onclick='return false') 学习路径
+                a#nav-map-btn(href='#' onclick='return false') 路径
             li.visible-xs
-                a(href='/map') 学习路径
+                a(href='/map') 路径
             li
-                a(href='/group' target='_blank') 同城小组
+                a(href='/group' target='_blank') 同城
             li
                 a(href='//bbs.freecodecamp.cn/' target='_blank') 问答
-            li
-                a(href='/progress') 琅琊榜
             li.hidden-xs
                 a#nav-chat-btn(href='#' onclick="return false") 聊天室
             li.visible-xs
                 a(href="//gitter.im/freecodecamp/chinese" target="_blank") 聊天室
             li
-                a(href='/about') 关于我们
+                a(href='/about') 关于
             if !user
                 li
                     a(href='/login') 登录
