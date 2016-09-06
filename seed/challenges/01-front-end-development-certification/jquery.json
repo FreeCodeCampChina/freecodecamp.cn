@@ -106,9 +106,9 @@
       "description": [
         "你看到我们是怎么给所有的<code>按钮</code>做弹回效果了吗？我们用 <code>$(\"button\")</code>来选中按钮，然后用<code>.addClass(\"animated bounce\")</code>给按钮加CSS class。",
         "你只需要用jQuery的<code>.addClass()</code>方法，就可以给元素加class了。",
-        "首先，我们来使用<code>$(\".well\")</code>来引用所有使用了<code>well</code> class的<code>div</code>元素。",
-        "注意，就像CSS class一样，只需要在class名字前加.就可以引用了。",
-        "然后使用jQuery的<code>.addClass()</code>方法添加<code>animated</code>和<code>shake</code>class。",
+        "首先，我们来使用<code>$(\".well\")</code>来获取所有class为<code>well</code>的<code>div</code>元素。",
+        "仔细想想为什么需要在<code>well</code>前面添加<code>.</code>",
+        "然后使用jQuery的<code>.addClass()</code>方法添加2个class：<code>animated</code>、<code>shake</code>。",
         "例如，你可以将下面的代码写在<code>document ready function</code>里：",
         "<code>$(\".text-primary\").addClass(\"animated shake\");</code>",
         "上面的代码给所有class为<code>text-primary</code> 的元素添加shake class。"
@@ -145,8 +145,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: Use the jQuery <code>addClass&#40&#41</code> function to give the class <code>animated</code> and <code>shake</code> to all your elements with the class <code>well</code>.');",
-        "assert(!code.match(/class\\.\\*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\".well\").hasClass(\"animated\") && $(\".well\").hasClass(\"shake\"), 'message: 使用jQuery的<code>addClass()</code>方法给所有类名中含有<code>well</code>的元素添加 <code>animated shake</code>这两个类.');",
+        "assert(!code.match(/class\\.\\*animated/g), 'message: 只能使用jQuery给元素添加类。');"
       ],
       "type": "waypoint",
       "challengeType": 0
