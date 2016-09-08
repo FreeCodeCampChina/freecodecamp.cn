@@ -1868,7 +1868,7 @@
         "<blockquote>function myTest() {<br>  var loc = \"foo\";<br>  console.log(loc);<br>}<br>myTest(); // \"foo\"<br>console.log(loc); // \"undefined\"</blockquote>",
         "在函数外，<code>loc</code> 是未定义的。",
         "<h4>任务</h4>",
-        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>，并根据右边编辑器的提示来完成任务。"
+        "在函数 <code>myFunction</code> 内部声明一个局部变量 <code>myVar</code>，并删除外部console.log。"
       ],
       "releasedOn": "January 1, 2016",
       "head": [
