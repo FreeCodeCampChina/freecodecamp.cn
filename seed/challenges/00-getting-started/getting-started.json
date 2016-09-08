@@ -9,9 +9,9 @@
       "title": "Learn how Free Code Camp Works",
       "description": [
         [
-          "/images/fourcircle.png",
+          "/images/fcc-code.png",
           "A picture of Free Code Camp's 4 benefits: Get connected, Learn JavaScript, Build your Portfolio, Help nonprofits",
-          "欢迎来到FreeCodeCamp，我们是帮助你自学编程的开源社区。",
+          "欢迎关注微信公众号：FreeCodeCamp，这里不仅有很多高质量的自学编程心得、经验、资料分享，还有备受欢迎的线下活动预告，千万不要错过哦。",
           ""
         ],
         [
@@ -129,7 +129,7 @@
         [
           "//i.imgur.com/T0bGJPe.gif",
           "A gif showing how you can click on a user profile image to initiate a private message with that user.",
-          "请记住所有的聊天室都是公开的，所以请你不要分享一些敏感信息，例如邮箱地址、手机号、QQ号，如果你想分享自己的个人信息给他人，请开小窗。",
+          "请记住所有的聊天室都是公开的，所以请你不要分享一些敏感信息，例如邮箱地址、手机号、QQ号，如果你想分享自己的个人信息给他人，请私聊。",
           ""
         ],
         [
@@ -141,7 +141,7 @@
         [
           "//i.imgur.com/WvQvNGN.gif",
           "A gif showing how you can click the link below to download a native chat room app for your computer.",
-          "gitter是免费、开放的程序员沟通方式，所有的信息都可以免费永久保存，所以我们弃用了微信、qq这种封闭产物。强烈推荐你在电脑或者手机下载这个APP。",
+          "gitter是免费、开放的程序员沟通方式，所有的信息都可以免费永久保存。强烈推荐你在电脑或者手机下载这个APP。",
           "https://gitter.im/apps"
         ]
       ],
@@ -173,7 +173,7 @@
         [
           "//i.imgur.com/XugIMb4.jpg",
           "A picture of some of our campers meeting in a local cafe.",
-          "我们的营地是Facebook群组，它可以帮助你遇到和你同一个城市的同学。你可以用这些群组去策划或者参加“coffee code”活动，在那里你会遇到更多的同学，他们经常一边喝咖啡，一边写代码。",
+          "我们的营地是微信公众号:freecodecamp，它可以帮助你遇到和你同一个城市的小伙伴。你还可以基于微信群去策划或者参加“Coffee and Code”活动，在那里你会遇到更多志同道合的FCC小伙伴，一起交流学习心得，解疑答惑。",
           ""
         ],
         [
@@ -201,13 +201,13 @@
         [
           "//i.imgur.com/sfsidp6.jpg",
           "The text \"It takes time to get good at coding.\"",
-          "要想成为编程高手需要花费大量的时间，你不可能学习象棋三个月就打败象棋大师，更不要期望学习编程三个月就可以构建下一个Facebook。",
+          "要想成为高手需要花费大量的时间，你不可能学习象棋三个月就打败象棋大师，更不要期望学习编程三个月就可以构建下一个Facebook。",
           ""
         ],
         [
           "//i.imgur.com/EoTfOyC.jpg",
           "An image of some of our campers coding together in Montreal.",
-          "每天坚持练习编程，和其他写代码的人一起交流，你将会成为一个准程序猿。",
+          "每天坚持写代码，并和其他小伙伴一起交流，感受程序猿这个宇宙最先进物种的气质。",
           ""
         ],
         [
@@ -219,19 +219,19 @@
         [
           "//i.imgur.com/99BfAcK.jpg",
           "An image showing jQuery documentation",
-          "首先，查阅文档或错误信息，优秀程序猿的一个关键技能就是能够理解并模仿。",
+          "首先，查阅文档或错误信息。这是程序猿三大必备技能之一：Read",
           ""
         ],
         [
           "//i.imgur.com/GxvrsFb.gif",
           "A gif showing you how to do an advanced Google search. First, we enter the query \"jquery doesn't run when my page loads\". Then we click search tools button and change the \"Any time\" select box to \"within the last year\". Then we click on a result and read through the article and find our answer.",
-          "如果那不起作用，试试谷歌搜索。当你用谷歌搜索时，记得输入你正在用的语言或框架，你还可以限制返回结果的日期。",
+          "如果Read解决不了问题，试试谷歌搜索。当你用谷歌搜索时，记得输入你正在用的语言或框架，你还可以限制返回结果的日期。这是程序猿三大必备技能之二：Search",
           ""
         ],
         [
           "//i.imgur.com/LZYU7p2.gif",
           "A gif showing us following the link below to go to the help chat room and ask \"jquery doesn't run when my page loads\".",
-          "如果还不起作用，可以问问你的朋友。如果你身边没有朋友，你可以在我们的聊天室问我们的同学。",
+          "如果Search找不到答案，可以问问你的朋友。如果你身边没有朋友，你可以在聊天室问FCC的小伙伴，他们都是很热心的。这是程序猿三大必备技能之二：Ask",
           "https://gitter.im/FreeCodeCamp/chinese"
         ],
         [
