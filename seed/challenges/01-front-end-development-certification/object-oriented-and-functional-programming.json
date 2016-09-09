@@ -221,9 +221,9 @@
         "assert(typeof myBike.getGear !== 'undefined' && typeof myBike.getGear === 'function', 'message: <code>myBike</code> 的 <code>getGear</code> 方法在对象之外应该可以访问。');",
         "assert(typeof myBike.setGear !== 'undefined' && typeof myBike.setGear === 'function', 'message: <code>myBike</code> 的 <code>setGear</code> 方法在对象之外应该可以访问。 ');",
         "assert(typeof myBike.gear === 'undefined', 'message: <code>myBike.gear</code> 在外部访问时，应该保持  <code>undefined</code> ，即外部访问不到私有属性。');",
-        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message:当调用 <code>myBike.setGear(4)</code>时，<code>myBike.getGear()</code> 应该返回 <code>4</code> 。');",
-        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message:当调用 <code>myBike.setGear(3)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>3</code> 。');",
-        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message:当调用 <code>myBike.setGear(1)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>1</code> 。');"
+        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message: 当调用 <code>myBike.setGear(4)</code>时，<code>myBike.getGear()</code> 应该返回 <code>4</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message: 当调用 <code>myBike.setGear(3)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>3</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message: 当调用 <code>myBike.setGear(1)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>1</code> 。');"
       ],
       "type": "waypoint",
       "challengeType": 1
