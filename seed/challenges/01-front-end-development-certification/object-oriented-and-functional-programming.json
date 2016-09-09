@@ -162,9 +162,9 @@
         "var Car = function(wheels,seats,engines) {\n  this.wheels = wheels;\n  this.seats = seats;\n  this.engines = engines;\n};\n\nvar myCar = new Car(4,1,1);"
       ],
       "tests": [
-        "assert((function(){var testCar = new Car(3,1,2); return testCar.wheels === 3 && testCar.seats === 1 && testCar.engines === 2;})(), 'message:调用 <code>new Car(3,1,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>3</code>，一个 <code>seats</code> 属性，且值为 <code>1</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>。');",
-        "assert((function(){var testCar = new Car(4,4,2); return testCar.wheels === 4 && testCar.seats === 4 && testCar.engines === 2;})(), 'message:调用 <code>new Car(4,4,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>4</code，一个 <code>seats</code> 属性，且值为 <code>4</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>.');",
-        "assert((function(){var testCar = new Car(2,6,3); return testCar.wheels === 2 && testCar.seats === 6 && testCar.engines === 3;})(), 'message:调用 <code>new Car(2,6,3)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>2</code>，一个 <code>seats</code> 属性，且值为<code>6</code>，和一个 <code>engines</code> 属性，且值为 <code>3</code>.');",
+        "assert((function(){var testCar = new Car(3,1,2); return testCar.wheels === 3 && testCar.seats === 1 && testCar.engines === 2;})(), 'message: 调用 <code>new Car(3,1,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>3</code>，一个 <code>seats</code> 属性，且值为 <code>1</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>。');",
+        "assert((function(){var testCar = new Car(4,4,2); return testCar.wheels === 4 && testCar.seats === 4 && testCar.engines === 2;})(), 'message: 调用 <code>new Car(4,4,2)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>4</code，一个 <code>seats</code> 属性，且值为 <code>4</code>，和一个 <code>engines</code> 属性，且值为 <code>2</code>.');",
+        "assert((function(){var testCar = new Car(2,6,3); return testCar.wheels === 2 && testCar.seats === 6 && testCar.engines === 3;})(), 'message: 调用 <code>new Car(2,6,3)</code> 时，应该创建一个对象，这个对象带有一个 <code>wheels</code> 属性，且值为 <code>2</code>，一个 <code>seats</code> 属性，且值为<code>6</code>，和一个 <code>engines</code> 属性，且值为 <code>3</code>.');",
         "assert(typeof myCar.wheels === 'number' && typeof myCar.seats === 'number' && typeof myCar.engines === 'number', 'message: <code>myCar</code> 的 <code>wheels</code>、<code>seats</code>、 <code>engines</code> 属性的值应该是一个数字。');"
       ],
       "type": "waypoint",
@@ -221,9 +221,9 @@
         "assert(typeof myBike.getGear !== 'undefined' && typeof myBike.getGear === 'function', 'message: <code>myBike</code> 的 <code>getGear</code> 方法在对象之外应该可以访问。');",
         "assert(typeof myBike.setGear !== 'undefined' && typeof myBike.setGear === 'function', 'message: <code>myBike</code> 的 <code>setGear</code> 方法在对象之外应该可以访问。 ');",
         "assert(typeof myBike.gear === 'undefined', 'message: <code>myBike.gear</code> 在外部访问时，应该保持  <code>undefined</code> ，即外部访问不到私有属性。');",
-        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message:当调用 <code>myBike.setGear(4)</code>时，<code>myBike.getGear()</code> 应该返回 <code>4</code> 。');",
-        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message:当调用 <code>myBike.setGear(3)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>3</code> 。');",
-        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message:当调用 <code>myBike.setGear(1)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>1</code> 。');"
+        "assert.strictEqual((function () { myBike.setGear(4); return myBike.getGear(); })(), 4, 'message: 当调用 <code>myBike.setGear(4)</code>时，<code>myBike.getGear()</code> 应该返回 <code>4</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(3); return myBike.getGear(); })(), 3, 'message: 当调用 <code>myBike.setGear(3)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>3</code> 。');",
+        "assert.strictEqual((function () { myBike.setGear(1); return myBike.getGear(); })(), 1, 'message: 当调用 <code>myBike.setGear(1)</code> 时，<code>myBike.getGear()</code> 应该返回 <code>1</code> 。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -250,9 +250,9 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(oldArray, [1,2,3,4,5], 'message:你不应该改变原始数组。');",
-        "assert.deepEqual(newArray, [4,5,6,7,8], 'message:你应该为数组中的每一项加3.');",
-        "assert(editor.getValue().match(/\\.map\\s*\\(/gi), 'message:你应该使用 <code>map</code> 方法。');",
+        "assert.deepEqual(oldArray, [1,2,3,4,5], 'message: 你不应该改变原始数组。');",
+        "assert.deepEqual(newArray, [4,5,6,7,8], 'message: 你应该为数组中的每一项加3.');",
+        "assert(editor.getValue().match(/\\.map\\s*\\(/gi), 'message: 你应该使用 <code>map</code> 方法。');",
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\]/gi), 'message: 你只能用 <code>map</code> 来更该数组。');"
       ],
       "type": "waypoint",
@@ -310,10 +310,10 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(oldArray, [1,2,3,4,5,6,7,8,9,10], 'message:你不应该改变原始数组。');",
-        "assert.deepEqual(newArray, [1,2,3,4,5], 'message:你应该过滤出数组中大于5的元素。 ');",
-        "assert(editor.getValue().match(/array\\.filter\\s*\\(/gi), 'message:你应该使用 <code>filter</code> 来创建新的数组。');",
-        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7\\,8\\,9\\,10\\]/gi), 'message:你应该使用 <code>filter</code> 来生成新数组中的值。');"
+        "assert.deepEqual(oldArray, [1,2,3,4,5,6,7,8,9,10], 'message: 你不应该改变原始数组。');",
+        "assert.deepEqual(newArray, [1,2,3,4,5], 'message: 你应该过滤出数组中大于5的元素。 ');",
+        "assert(editor.getValue().match(/array\\.filter\\s*\\(/gi), 'message: 你应该使用 <code>filter</code> 来创建新的数组。');",
+        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7\\,8\\,9\\,10\\]/gi), 'message: 你应该使用 <code>filter</code> 来生成新数组中的值。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -341,9 +341,9 @@
         "(function() {return array;})();"
       ],
       "tests": [
-        "assert.deepEqual(array, [21, 12, 2, 1], 'message:你应该按照从大到小的顺序排序。');",
-        "assert(editor.getValue().match(/\\[1,\\s*12,\\s*21,\\s*2\\];/gi), 'message:你应该使用 <code>sort</code> 来改变数组。');",
-        "assert(editor.getValue().match(/\\.sort\\s*\\(/g), 'message:你应该使用 <code>sort</code> 方法。');"
+        "assert.deepEqual(array, [21, 12, 2, 1], 'message: 你应该按照从大到小的顺序排序。');",
+        "assert(editor.getValue().match(/\\[1,\\s*12,\\s*21,\\s*2\\];/gi), 'message: 你应该使用 <code>sort</code> 来改变数组。');",
+        "assert(editor.getValue().match(/\\.sort\\s*\\(/g), 'message: 你应该使用 <code>sort</code> 方法。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -369,9 +369,9 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(newArray, [7,6,5,4,3,2,1], 'message:你应该反序数组。');",
-        "assert(editor.getValue().match(/\\.reverse\\s*\\(\\)/gi), 'message:你应该使用 <code>reverse</code> 方法。');",
-        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7/gi), 'message:你应该仅用 <code>reverse</code> 去修改 <code>array</code>。');"
+        "assert.deepEqual(newArray, [7,6,5,4,3,2,1], 'message: 你应该反序数组。');",
+        "assert(editor.getValue().match(/\\.reverse\\s*\\(\\)/gi), 'message: 你应该使用 <code>reverse</code> 方法。');",
+        "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7/gi), 'message: 你应该仅用 <code>reverse</code> 去修改 <code>array</code>。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -400,9 +400,9 @@
         "(function() {return newArray;})();"
       ],
       "tests": [
-        "assert.deepEqual(newArray, [1,2,3,4,5,6], 'message:你应该合并两个数组。');",
-        "assert(editor.getValue().match(/\\.concat\\s*\\(/gi), 'message:你应该使用 <code>concat</code> 方法来合并数组。');",
-        "assert(editor.getValue().match(/\\[1\\,2\\,3\\]/gi) && editor.getValue().match(/\\[4\\,5\\,6\\]/gi), 'message:你应该使用 <code>concat</code> 方法去修改数组。');"
+        "assert.deepEqual(newArray, [1,2,3,4,5,6], 'message: 你应该合并两个数组。');",
+        "assert(editor.getValue().match(/\\.concat\\s*\\(/gi), 'message: 你应该使用 <code>concat</code> 方法来合并数组。');",
+        "assert(editor.getValue().match(/\\[1\\,2\\,3\\]/gi) && editor.getValue().match(/\\[4\\,5\\,6\\]/gi), 'message: 你应该使用 <code>concat</code> 方法去修改数组。');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -429,8 +429,8 @@
         "(function() {return array;})();"
       ],
       "tests": [
-        "assert(/\\.split\\(/gi, 'message:你应该在字符串上使用 <code>split</code> 方法。');",
-        "assert(typeof array === 'object' && array.length === 5, 'message:你应该使用空格（ <code>\" \"</code> ）来分割字符串。 ');"
+        "assert(/\\.split\\(/gi, 'message: 你应该在字符串上使用 <code>split</code> 方法。');",
+        "assert(typeof array === 'object' && array.length === 5, 'message: 你应该使用空格（ <code>\" \"</code> ）来分割字符串。 ');"
       ],
       "type": "waypoint",
       "challengeType": 1
@@ -456,8 +456,8 @@
         "(function() {return joinedString;})();"
       ],
       "tests": [
-        "assert(typeof joinedString === 'string' && joinedString === \"Split me into an array\", 'message:你应该使用空格来分隔元素。');",
-        "assert(/\\.join\\(/gi, 'message:你应该在数组上使用 <code>join</code> 方法。');"
+        "assert(typeof joinedString === 'string' && joinedString === \"Split me into an array\", 'message: 你应该使用空格来分隔元素。');",
+        "assert(/\\.join\\(/gi, 'message: 你应该在数组上使用 <code>join</code> 方法。');"
       ],
       "type": "waypoint",
       "challengeType": 1
