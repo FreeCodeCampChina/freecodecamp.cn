@@ -4693,7 +4693,7 @@
         ""
       ],
       "tests": [
-        "assert((function(){var data = runSlots();return data === null || data.toString().length === 1;})(), '如果三个随机数都相等, 我们应该返回这个数字, 否则应该返回 <code>null</code>.')"
+        "assert((function(){var data = runSlots();return data === null || data.toString().length === 1;})(), 'message: 如果三个随机数都相等, 我们应该返回这个数字, 否则应该返回 <code>null</code>.')"
       ],
       "type": "waypoint",
       "challengeType": 0,
