@@ -469,12 +469,12 @@
       "id": "564944c91be2204b269d51e3",
       "title": "Change Text Inside an Element Using jQuery",
       "description": [
-        "jQuery不仅可以改变元素标记里的文本，甚至可以改变HTML标记本身。",
-        "jQuery的<code>.html()</code>方法可以添加HTML标签和文字到元素,而元素之前的内容都会被方法的内容所替换掉。",
-        "我们是这样重写和强调标题文本的：",
+        "jQuery不仅可以改变元素开始标记和结束标记间的文本，甚至可以改变元素标记本身。",
+        "jQuery的<code>.html()</code>方法可以添加HTML标签和文字到元素，而元素之前的内容都会被方法的内容所替换掉。",
+        "我们是通过<code>em</code>[emphasize]标签来重写和强调标题文本的：",
         "<code>$(\"h3\").html(\"&#60;em&#62;jQuery Playground&#60;/em&#62;\");</code>",
         "jQuery 还有一个类似的方法叫<code>.text()</code>，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。",
-        "强调id为<code>target4</code>按钮里的文本。 "
+        "任务：强调id为<code>target4</code>按钮里的文本。 "
       ],
       "releasedOn": "November 18, 2015",
       "challengeSeed": [
@@ -510,9 +510,11 @@
         "</div>"
       ],
       "tests": [
-        "assert.isTrue((/<em>#target4<\\/em>/gi).test($(\"#target4\").html()), 'message: Italicize the text in your <code>target4</code> button by adding HTML tags <em>.');",
-        "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: Make sure the text is otherwise unchanged.');",
-        "assert.isFalse((/<em>/gi).test($(\"h3\").html()), 'message: Do not alter any other text.');"
+        "assert.isTrue((/<em>|<i>#target4<\\/em>|<\\/i>/gi).test($(\"#target4\").html()), 'message: 通过增加HTML标签的方式来强调 <code>target4</code>按钮的文本。');",
+        "assert($(\"#target4\") && $(\"#target4\").text() === '#target4', 'message: 确保你更换的按钮为 <code>target4</code>。');",
+        "assert.isFalse((/<em>|<i>/gi).test($(\"h3\").html()), 'message: 不要更改任何文本。');",
+        "assert(code.match(/\\.html\\(/g), 'message: 确保你使用的方法是 <code>.html()</code>，而不是 <code>.text()</code>。');",
+        "assert(code.match(/\\$\\(\\s*?(\\\"|\\')#target4(\\\"|\\')\\s*?\\)\\.html\\(/), 'message: 确保你使用的是jQuery中的id选择器。');"
       ],
       "type": "waypoint",
       "challengeType": 0
