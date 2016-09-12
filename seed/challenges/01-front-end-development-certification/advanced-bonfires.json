@@ -316,7 +316,7 @@
         "原数组中会包含格式化的对象内容，像这样 <code>{name: 'name', avgAlt: avgAlt}</code>.",
         "至于轨道周期怎么求，戳这里 <a href=\"http://en.wikipedia.org/wiki/Orbital_period\" target='_blank'>on wikipedia</a> (不想看英文的话可以自行搜索以轨道高度计算轨道周期的公式).",
         "求得的值应该是一个与其最接近的整数，轨道是以地球为基准的.",
-        "地球半径是 6367.4447 kilometers, 地球的GM值是 398600.4418",
+        "地球半径是 6367.4447 kilometers, 地球的GM值是 398600.4418, 圆周率为Math.PI",
         "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
       ],
       "challengeSeed": [
