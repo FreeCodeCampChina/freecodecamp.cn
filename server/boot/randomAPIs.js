@@ -71,7 +71,6 @@ module.exports = function(app) {
     })
   })
   router.get('/dashboard',function(req,res){
-        console.log(User);
     res.render("resources/dashboard",{
       title: "fcc后台统计系统"
     })
