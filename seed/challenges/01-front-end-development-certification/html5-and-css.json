@@ -403,7 +403,7 @@
         "现在注释掉link标签，以使<code>Lobster</code>字体不可用。请仔细观察浏览器是如何降级到<code>Monospace</code>字体的。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -445,7 +445,7 @@
         "<code>/images/relaxing-cat.jpg</code>"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -491,7 +491,7 @@
         "任务：创建一个名为<code>smaller-image</code>的类选择器，然后用它来改变图片尺寸，使图片仅有100像素宽。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -533,7 +533,7 @@
         "<code>&lt;img class=\"class1 class2\"&gt;</code>"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -579,7 +579,7 @@
         "注意：这个任务有多种解决方案。你可以添加border-radius到<code>.thick-green-border</code>类选择器，也可以添加到<code>.smaller-image</code>类选择器."
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -627,7 +627,7 @@
         "给你的猫咪图片一个<code>50%</code>的<code>border-radius</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -680,7 +680,7 @@
         "任务：创建一个链接到<code>http://freecatphotoapp.com</code>的<code>a</code>元素，并用<code>cat photos</code>作为其<code>anchor text（锚点文本）</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -734,7 +734,7 @@
         "任务：把你的<code>a</code>元素嵌套进一个新的<code>p</code>元素（紧邻已有的<code>h2</code>元素之后），让段落的文本为<code>View more cat photos</code>，但是其中仅<code>cat photos</code>是一个链接，其余的是普通文本。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -791,7 +791,7 @@
         "把你的<code>a</code>元素的<code>href</code>属性的值替换为一个<code>#</code>，别名hash(哈希)符号，将其变为一个固定链接。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -844,7 +844,7 @@
         "一旦完成，把你的光标悬停在你的图片上。你的光标此时应该由光标指针变成手形指针。图片现在是一个链接了。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -899,7 +899,7 @@
         "为你的猫咪图片添加一个<code>alt</code>属性，内容为<code>A cute orange cat lying on its back</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -953,7 +953,7 @@
         "删除最后两个<code>p</code>元素，然后在页面底部创建一个有关猫咪喜欢的三件事情的无序列表。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1010,7 +1010,7 @@
         "创建一个有关猫咪最痛恨的三件事情<code>Top 3 things cats hate:</code>的有序列表。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1075,7 +1075,7 @@
         "任务：在有序列表下面创建一个type(类型)为<code>text</code>的<code>input</code>元素。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1137,7 +1137,7 @@
         "把你的<code>input(输入)</code>框的<code>placeholder</code>的值设置为\"cat photo URL\"。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1203,7 +1203,7 @@
         "把你的文本框嵌套进<code>form</code>元素，并为此<code>form</code>元素添加<code>action=\"/submit-cat-photo\"</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1268,7 +1268,7 @@
         "为你的<code>form</code>元素添加一个type为<code>submit</code>的提交按钮，用\"Submit\"作按钮文本。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1337,7 +1337,7 @@
         "注意：<code>required</code>属性在Safari浏览器中不起作用，请用其他浏览器来学习，推荐使用Chrome。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1408,7 +1408,7 @@
         "给你的表单添加两个单选按钮，一个叫<code>indoor</code>，另一个叫<code>outdoor</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1483,7 +1483,7 @@
         "任务：为你的表单添加三个复选按钮，每个复选按钮都应该嵌套进它自己的<code>label</code>元素，所有复选按钮的<code>name</code>属性必须为<code>personality</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1554,7 +1554,7 @@
         "把你的第一个<code>radio button</code>和第一个<code>checkbox</code>都设置为默认选中。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1627,7 +1627,7 @@
         "把\"Things cats love\"和\"Things cats hate\"两个列表都嵌套进同一个<code>div</code>元素中。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1702,7 +1702,7 @@
         "创建一个叫做 <code>gray-background</code> 的类选择器，设置其 <code>background-color</code> 为 gray，最后应用到 <code>div</code> 元素。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1779,7 +1779,7 @@
         "任务：设置 <code>form</code> 元素的<code>id</code>属性为 <code>cat-photo-form</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -1857,7 +1857,7 @@
         "任务：试着给你的表单，添加一个值为 <code>cat-photo-form</code> 的 id 属性，一个绿色的背景。"
       ],
       "challengeSeed": [
-        "<link href=\"https://fonts.gdgdocs.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
