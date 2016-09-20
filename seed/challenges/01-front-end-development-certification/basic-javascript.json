@@ -1257,7 +1257,8 @@
       "id": "56533eb9ac21ba0edf2244bb",
       "title": "Word Blanks",
       "description": [
-        "现在我们将使用字符串的相关知识，建立一个填字风格的文字游戏。",
+        "<strong>填词造句</strong>",
+        "现在我们将使用字符串的相关知识，来玩一个填字风格的文字游戏。",
         "通过使用提供的变量：名词<code>myNoun</code>、形容词<code>myAdjective</code>、动词<code>myVerb</code>、副词<code>myAdverb</code>，来创建一个新的字符串 <code>result</code>。",
         "此外，除了所提供的词之外，你还需要添加额外的连接字符串。",
         "我们提供了多种测试，该测试将用多个不同的输入来运行你的函数，以确保所有提供的单词和你额外添加的连接字符串能够准确输出。"

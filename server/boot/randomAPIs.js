@@ -14,6 +14,7 @@ module.exports = function(app) {
   var Challenge = app.models.Challenge;
   var Story = app.models.Story;
   var Nonprofit = app.models.Nonprofit;
+  var UserIdentity = app.models.UserIdentity;
 
   router.get('/api/github', githubCalls);
   router.get('/api/blogger', bloggerCalls);
@@ -44,6 +45,7 @@ module.exports = function(app) {
   router.get('/how-nonprofit-projects-work', howNonprofitProjectsWork);
   router.get('/code-of-conduct', codeOfConduct);
   router.get('/academic-honesty', academicHonesty);
+  router.get('/get-user-identity',getUserIdentity);
   router.route('/leader-board').get(leaderBoard);
   router.route('/master').get(master);
   router.route('/newer').get(newer);
@@ -339,6 +341,13 @@ module.exports = function(app) {
       };
       res.send(data);
     });
+  }
+  function getUserIdentity(req,res,next){
+    UserIdentity.find( { where: {}, fields: {"created":1,"_id":0}},(err,data) =>{
+      if(err){return next(err);}
+      res.send(data);
+      console.log(data);
+    })
   }
   function dashboard(req,res,next){
     User.find( { where: {"group":true}, fields: {"_id":0, "username":1, "fullname":1, "email":1, "telphone":1, "wechat":1, "location":1, "background":1} },(err, user) =>{
