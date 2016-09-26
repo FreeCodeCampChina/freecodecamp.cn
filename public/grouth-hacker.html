@@ -16,17 +16,13 @@ var base = +new Date(2016, 5, 3);
 var timeline  = new Date();
 var milliseconds = (timeline - base);
 var oneDay = 24 * 3600 * 1000;
-console.log(milliseconds);
 var days = Math.floor(milliseconds/oneDay);
-console.log(days);
 var date = [];
 for (var i = 1; i < (days+30); i++) {
     var now = new Date(base += oneDay);
-    console.log(now);
     date.push([now.getFullYear(), now.getMonth(), now.getDate()].join('/'));
 }
 $.getJSON('/get-user-identity/',function(res){
-  console.log(res);
   data = res;
   var arr = data.map(function(item){
       return Number(String(new Date(item.created).getMonth()+1)+new Date(item.created).getDate());
