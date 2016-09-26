@@ -6,6 +6,8 @@
 ## freecodecamp.cn
 欢迎来到freecodecamp中文社区(https://freecodecamp.cn)
 
+![](https://freecodecamp.cn/images/qrcode_for_nearest.jpg)
+
 ## freecodecamp是什么？
 freecodecamp 是一个自由的开源编程社区，它致力于抹平教育差距，
 
