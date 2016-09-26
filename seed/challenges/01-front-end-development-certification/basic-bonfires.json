@@ -503,7 +503,7 @@
       "id": "a39963a4c10bc8b4d4f06d7e",
       "title": "Seek and Destroy",
       "description": [
-        "金克斯的迫击炮！",
+        "<strong>金克斯的迫击炮！</strong>",
         "实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
@@ -537,7 +537,7 @@
       "id": "a24c1a4622e3c05097f71d67",
       "title": "Where do I belong",
       "description": [
-        "我身在何处？",
+        "<strong>我身在何处？</strong>",
         "先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。",
         "举例：<code>where([1,2,3,4], 1.5)</code> 应该返回 <code>1</code>。因为<code>1.5</code>插入到数组<code>[1,2,3,4]</code>后变成<code>[1,1.5,2,3,4]</code>，而<code>1.5</code>对应的索引值就是<code>1</code>。",
         "同理，<code>where([20,3,5], 19)</code> 应该返回 <code>2</code>。因为数组会先排序为 <code>[3,5,20]</code>，<code>19</code>插入到数组<code>[3,5,20]</code>后变成<code>[3,5,19,20]</code>，而<code>19</code>对应的索引值就是<code>2</code>。",

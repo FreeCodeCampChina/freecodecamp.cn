@@ -45,6 +45,7 @@ $.getJSON('/get-user-identity/',function(res){
   for(var i=0,sum=0,summer=[];i<arrResult.length;i++){
     sum+=arrResult[i];
     summer.push(sum);
+    summer[summer.length-1]+=100;
   }
 
   option = {
