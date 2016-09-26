@@ -691,8 +691,10 @@
       "id": "a10d2431ad0c6a099a4b8b52",
       "title": "Everything Be True",
       "description": [
-        "判断谓词（第二个参数）是否对一个集合（第一个参数）的所有元素都成立。",
-        "记住，你可以通过点号或方括号来访问对象的属性。",
+        "<strong>所有的东西都是真的！</strong>",
+        "完成编辑器中的every函数，判断集合(collection)中的所有对象是否都存在对应的属性(pre)。如果都存在，返回ture。反之，返回false。",
+        "记住：你只能通过中括号来访问对象的变量属性(pre)。",
+        "提示：你可以有多种实现方式，最简洁的方式莫过于<a href='https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every'>Array.prototype.every()</a>。",
         "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
