@@ -79,11 +79,11 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 
  我们正在招募翻译志愿者，如果你想考察下自己的英文水平，可以尝试利用github来参与协作翻译。
  
-  传送门：https://github.com/huluoyang/freecodecamp.cn/wiki
+  传送门：https://github.com/freecodecampchina/freecodecamp.cn/wiki
  
  我们也在招募代码贡献者，如果你想考察下自己的技术水平，可以尝试clone代码到本机跑个站点看看。
 
- 传送门：https://github.com/huluoyang/freecodecamp.cn/blob/dev/CONTRIBUTING.md
+ 传送门：https://github.com/freecodecampchina/freecodecamp.cn/blob/dev/CONTRIBUTING.md
  
 ## 那些值得尊敬的人
 
@@ -95,6 +95,6 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
 
  感谢[freecodecamp开源项目](https://github.com/freecodecamp/freecodecamp)的贡献者，是他们的参与让这个项目得以完善、发展。
 
- 感谢freecodecamp中文社区的[翻译者](https://github.com/huluoyang/freecodecamp.cn/wiki#%E7%BF%BB%E8%AF%91%E5%BF%85%E8%AF%BB)，是他们的参与让这个项目得以在中国生根、发芽。
+ 感谢freecodecamp中文社区的[翻译者](https://github.com/freecodecampchina/freecodecamp.cn/wiki#%E7%BF%BB%E8%AF%91%E5%BF%85%E8%AF%BB)，是他们的参与让这个项目得以在中国生根、发芽。
  
  

@@ -45,7 +45,7 @@ window.common = (function({ common = { init: [] } }) {
 
       $('#issue-modal').modal('hide');
       window.open(
-        'https://github.com/huluoyang/freecodecamp.cn/issues/new?&body=' +
+        'https://github.com/freecodecampchina/freecodecamp.cn/issues/new?&body=' +
           textMessage,
         '_blank'
       );

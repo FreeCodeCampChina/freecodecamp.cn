@@ -365,7 +365,7 @@
         "<code>&#60;link href=\"https://fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\"&#62;</code>",
         "现在你可以将<code>Lobster</code>作为 font-family属性 的值应用到你的<code>h2</code>元素上了。",
         "为你的<code>h2</code>元素应用<code>font-family</code>属性，值为<code>Lobster</code>。",
-        "当你遇到困难时可以参考<code><a href='https://github.com/huluoyang/freecodecamp.cn/wiki/common-question' target='_blank'>wiki</a></code>"
+        "当你遇到困难时可以参考<code><a href='https://github.com/freecodecampchina/freecodecamp.cn/wiki/common-question' target='_blank'>wiki</a></code>"
       ],
       "challengeSeed": [
         "<style>",
