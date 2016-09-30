@@ -12,7 +12,7 @@ var dom = document.getElementById("container");
 var myChart = echarts.init(dom);
 var app = {};
 option = null;
-var base = +new Date(2016, 5, 3);
+var base = +new Date(2016, 5, 4);
 var timeline  = new Date();
 var milliseconds = (timeline - base);
 var oneDay = 24 * 3600 * 1000;
@@ -45,7 +45,7 @@ $.getJSON('/get-user-identity/',function(res){
   for(var i=0,sum=0,summer=[];i<arrResult.length;i++){
     sum+=arrResult[i];
     summer.push(sum);
-    summer[summer.length-1]+=100;
+    summer[summer.length-1]+=99;
   }
 
   option = {
