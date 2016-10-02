@@ -12,7 +12,7 @@
         "用户可以在表单中填入一个任意有效美国电话号码. 下面是一些有效号码的例子(还有下面测试时用到的一些变体写法):",
         "<blockquote>555-555-5555\n(555)555-5555\n(555) 555-5555\n555 555 5555\n5555555555\n1 555 555 5555</blockquote>",
         "在本节中你会看见如 <code>800-692-7753</code> or <code>8oo-six427676;laskdjf</code>这样的字符串. 你的任务就是验证前面给出的字符串是否是有效的美国电话号码. 区号是必须有的. 如果字符串中给出了国家代码, 你必须验证其是 <code>1</code>.  如果号码有效就返回 <code>true</code> ; 否则返回 <code>false</code>.",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function telephoneCheck(str) {",
@@ -65,7 +65,7 @@
       "description": [
         "创建一个函数，接受两个或多个数组，返回所给数组的 <dfn>对等差分(symmetric difference)</dfn> (<code>&xutri;</code> or <code>&oplus;</code>)数组.",
         "给出两个集合 (如集合 <code>A = {1, 2, 3}</code> 和集合 <code>B = {2, 3, 4}</code>), 而数学术语 \"对等差分\" 的集合就是指由所有只在两个集合其中之一的元素组成的集合(<code>A &xutri; B = C = {1, 4}</code>). 对于传入的额外集合 (如 <code>D = {2, 3}</code>), 你应该安装前面原则求前两个集合的结果与新集合的对等差分集合 (<code>C &xutri; D = {1, 4} &xutri; {2, 3} = {1, 2, 3, 4}</code>).",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function sym(args) {",
@@ -104,7 +104,7 @@
         "<code>cid</code> 是一个二维数组，存着当前可用的找零.",
         "当收银机中的钱不够找零时返回字符串 <code>\"Insufficient Funds\"</code>. 如果正好则返回字符串 <code>\"Closed\"</code>.",
         "否者, 返回应找回的零钱列表,且由大到小存在二维数组中.",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function checkCashRegister(price, cash, cid) {",
@@ -150,7 +150,7 @@
       "title": "Inventory Update",
       "description": [
         "依照一个存着新进货物的二维数组，更新存着现有库存(在 <code>arr1</code> 中)的二维数组. 如果货物已存在则更新数量 . 如果没有对应货物则把其加入到数组中，更新最新的数量. 返回当前的库存数组，且按货物名称的字母顺序排列.",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function updateInventory(arr1, arr2) {",
@@ -198,7 +198,7 @@
       "description": [
         "把一个字符串中的字符重新排列生成新的字符串，返回新生成的字符串里没有连续重复字符的字符串个数.连续重复只以单个字符为准",
         "例如, <code>aab</code> 应该返回 2 因为它总共有6中排列 (<code>aab</code>, <code>aab</code>, <code>aba</code>, <code>aba</code>, <code>baa</code>, <code>baa</code>), 但是只有两个 (<code>aba</code> and <code>aba</code>)没有连续重复的字符 (在本例中是 <code>a</code>).",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function permAlone(str) {",
@@ -230,14 +230,15 @@
       "id": "a19f0fbe1872186acd434d5a",
       "title": "Friendly Date Ranges",
       "description": [
-        "把个个格式化的日期区间如两个 <code>YYYY-MM-DD</code> 转换成一种更易读的格式.",
+        "<strong>让日期区间更友好！</strong>",
+        "把常见的日期格式如：<code>YYYY-MM-DD</code> 转换成一种更易读的格式。",
         "易读格式应该是用月份名称代替月份数字，用序数词代替数字来表示天 (<code>1st</code> 代替 <code>1</code>).",
-        "不要显示那些可以被推测出来的信息: 如果一个日期区间里结束日期与开始日期相差不超一年，则结束日期就不用写年份了. 月份开始和结束日期如果在同一个月，则结束日期月份就不用写了.",
-        "另外, 如果日期区间内开始日期年份是当前年份，且结束日期与开始不超过一年，则开始日期的年份也不用写.",
+        "记住不要显示那些可以被推测出来的信息: 如果一个日期区间里结束日期与开始日期相差小于一年，则结束日期就不用写年份了。月份开始和结束日期如果在同一个月，则结束日期月份就不用写了。",
+        "另外, 如果开始日期年份是当前年份，且结束日期与开始日期小于一年，则开始日期的年份也不用写。",
         "例如:",
         "<code>makeFriendlyDates([\"2016-07-01\", \"2016-07-04\"])</code> 应该返回 <code>[\"July 1st\",\"4th\"]</code>",
         "<code>makeFriendlyDates([\"2016-07-01\", \"2018-07-04\"])</code> 应该返回 <code>[\"July 1st, 2016\", \"July 4th, 2018\"]</code>.",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function makeFriendlyDates(arr) {",
@@ -274,7 +275,7 @@
         "方法有 getFirstName(), getLastName(), getFullName(), setFirstName(first), setLastName(last), and setFullName(firstAndLast).",
         "所有有参数的方法只接受一个字符串参数.",
         "所有的方法只与实体对象交互.",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "var Person = function(firstAndLast) {",
@@ -317,7 +318,7 @@
         "至于轨道周期怎么求，戳这里 <a href=\"http://en.wikipedia.org/wiki/Orbital_period\" target='_blank'>on wikipedia</a> (不想看英文的话可以自行搜索以轨道高度计算轨道周期的公式).",
         "求得的值应该是一个与其最接近的整数，轨道是以地球为基准的.",
         "地球半径是 6367.4447 kilometers, 地球的GM值是 398600.4418, 圆周率为Math.PI",
-        "如果你遇到了困难，请到<a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 查看帮助. 写下你的代码，完成程序."
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
         "function orbitalPeriod(arr) {",
