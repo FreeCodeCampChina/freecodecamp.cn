@@ -1,54 +1,100 @@
 extends layout
 block content
     style.
-      body.top-and-bottom-margins{margin-bottom:0px;}
+      .skills-youll-learn .fa {font-size: 80px;color: #b6a57d;}
+      h2 {text-align:center;}
+    .row
+      .cover
+        .cover-text
+          h1 开启你的软件工程师生涯
+          p.lead.cover-text-secondary Learn to code and help nonprofits
+          // buttons
+          a.btn.btn-orange.btn-lg.btn-extra-padding.button-landing-page(href='/challenges/learn-how-free-code-camp-works', role='button') 开始闯关
+          a.btn.btn-inverse.btn-lg.button-landing-page(href='/login', role='button') 注册 | 登录
+    section.howitworks
+      .container
+        h2 玩转FreeCodeCamp
+        .row
+          .col-sm-6
+            .col-md-6.col-howitworks
+              img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_connect.svg')
+              h3 加入全球四十万开发者社区
+            .col-md-6.col-howitworks
+              img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_learn.svg')
+              h3 一起编程闯关、完成挑战
+          .col-sm-6
+            .col-md-6.col-howitworks
+              img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_portfolio.svg')
+              h3 构建解决现实问题的作品集
+            .col-md-6.col-howitworks
+              img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_nonprofits.svg')
+              h3 帮助非盈利组织开发项目
+    .row
+     section#curriculum
+      .container
+        h2 课程大纲
+        .row
+          .col-md-6
+            #curriculum-hours
+              p 前端开发(400小时)
+              p 数据可视化(400小时)
+              p 后端开发(400小时)
+              p 非盈利项目(800小时)
+              p 面试攻略(80小时)
+          .col-md-6
+            p#curriculum-explanation
+              | 学完所有的课程可以获得4个证书。
+              | 你的雇主可以随时在FCC上查询到这些证书。
+              strong FCC上所有的东西都是免费的，证书也不例外。
+              | 我们推荐按照顺序来闯关，但是你也可以自由跳跃。
+              | 前面三个证书每个需要400小时，
+              | 最后一个证书需要800小时，来为非盈利组织构建真实的项目。
+    .row
+     section.skills-youll-learn
+      .container
+        h2 技术栈
+        .row
+          .col-xs-6.col-md-3.skills
+            i.fa.ion-social-html5
+            br
+            | HTML5
+          .col-xs-6.col-md-3.skills
+            i.fa.ion-social-css3
+            br
+            | CSS3
+          .col-xs-6.col-md-3.skills
+            i.fa.ion-social-javascript
+            br
+            | Javascript
+          .col-xs-6.col-md-3.skills
+            i.fa.fa-database
+            br
+            | Databases
+        .row
+          .col-xs-6.col-md-3.skills
+            i.fa.ion-social-github
+            br
+            | Git &amp; GitHub
+          .col-xs-6.col-md-3.skills
+            i.fa.ion-social-nodejs
+            br
+            | Node.js
+          .col-xs-6.col-md-3.skills
+            img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/icon-react-js.svg')
+            br
+            | React.js
+          .col-xs-6.col-md-3.skills
+            img(src='http://thomas-ko.github.io/freecodecamp-redesign/assets/img/icon-d3.svg')
+            br
+            | D3.js
+    .row
+     section#infobox
+      .container
+        #infobox-inner
+          | Free Code Camp 已经被证明是获取编程工作的最有效路径，事实上，没人完成了所有课程，因为他们都在完成之前就找到了工作。
+
     .text-center
-        h2 Learning-by-doing
-        .spacer
-        .row
-            .big-break
-            .big-break
-            .big-break
-            .col-xs-12.col-sm-6.col-md-3
-                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_connect.svg', alt='Get great references and connections to start your software engineer career')
-                .button-spacer
-                span 自学编程是一场充满艰难的旅行
-                br
-                span 因此一路上我们会给你加油打气
-                .spacer
-            .col-xs-12.col-sm-6.col-md-3
-                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_learn.svg', alt='Learn to code and learn full stack JavaScript')
-                .button-spacer
-                span 无尽的任务等你来挑战
-                br
-                span 像打LOL一样学习编程
-                .spacer
-            .col-xs-12.col-sm-6.col-md-3
-                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_nonprofits.svg', alt='Empower nonprofits with code')
-                .button-spacer
-                span 遇到问题先搜索再求助
-                br
-                span 社区积极助你度过难关
-                .spacer
-            .col-xs-12.col-sm-6.col-md-3
-                img.img-responsive.landing-icon.img-center(src= '/images/landingIcons_portfolio.svg', alt='Build a portfolio of apps for nonprofits')
-                .button-spacer
-                span 一步步构建自己的作品集
-                br
-                span 让你面试时有充分的信心
-                .spacer
-        .big-break
-        .big-break
-        .big-break
-        .big-break
-        .row
-            .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/challenges/learn-how-free-code-camp-works") 直接开始学习
-                .button-spacer
-                <!-- a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href="/nonprofits") 需要编码帮助的非盈利组织 -->
-        hr
-        .spacer
-        h2 开启新的职业生涯
+        h2 学员案例
         .spacer
         .row
             .col-xs-12.col-sm-12.col-md-4
@@ -87,103 +133,6 @@ block content
         .spacer
         .row
             .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-lg.btn-primary.btn-primary-ghost.btn-block(href='/stories') 听听更多我们学员的心声
-        .spacer
-        .spacer
-        hr
-        .spacer
-        h2 你将会学习的技能:
-        .spacer
-        .row
-            .text-center.negative-35
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.ion-social-html5
-                    h2.black-text HTML5
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.ion-social-css3
-                    h2.black-text CSS3
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.ion-social-javascript
-                    h2.black-text JavaScript
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fa.fa-database.font-awesome-padding
-                    h2.black-text Database
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.ion-social-github
-                    h2.black-text Git & GitHub
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.ion-social-nodejs
-                    h2.black-text Node.js
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.custom-landing-skill-icon
-                        img(src='/images/react.svg')
-                    h2.black-text React.js
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.custom-landing-skill-icon
-                        img(src='/images/d3-logo.svg')
-                    h2.black-text D3.js
-        .spacer
-        hr#guide
-        .spacer
-        .col-sm-offset-1.text-left
-            h2 编程学习指南
-            .spacer
-            ol.large-li
-                strong 学习的三大要素：方向、路径、动手。
-                li 计算机博大精深，初学者很容易迷失其中。选定一个方向并坚持下去很重要，Web开发是初学者的最佳选择。
-                li 计算机语言众多，选择一门最容易入门的语言即可，JavaScript就很适合。
-                li 计算机属于工科，需要的是大量动手实践，而不是死记硬背。
-                strong 学编程的三大要素：英语、逻辑、细心：
-                li 英语好的同学看英文书籍、文档，写代码非常流畅，所以印度人比中国人在这块更有优势；
-                li 编程最重要的就是培养你的逻辑思维，永远记住：思维是人脑最核心的东西；
-                li 在编程中经常被一个符号、一个字母的拼写错误而卡住半天，所以优秀的程序员永远都是粗中带细。
-                strong 关于编程的三个错误认识：枯燥无味、烧脑、青春饭。
-                li 会编程的人都是奇葩，这种整天和英文字母、数字待在一起的工作枯燥无味。
-                li 编程太烧脑，里面各种算法、数据结构要让人疯掉，编程纯粹就是个烧脑的工作。
-                li 搞编程的经常加班，这个行业就是个吃青春饭的行业，30岁必须得转行。
-                strong 关于编程的三个正确认识：有趣、不烧脑、铁饭碗。
-                li 字母和数字的无限组合就能创造出那么多有趣的网站、游戏、软件，这是非常让人着迷的，也非常培养一个人的专注力。
-                li 学编程不是搞计算机科学，你不需要接触那么高深的算法、数据结构、高等数学，它并不烧脑，但却烧手(需要每个人手动敲大量代码)。
-                li 只要你会编程，能解决问题，没有人在乎你今年是81岁、还是18岁，编程这门技能会成为你一辈子的铁饭碗，
-                strong 学习编程的至理名言：Learning by doing 实践是学习编程的重中之重
-                li 任何你能看到、听到的东西都是他人总结的知识点，如果你不实践、不消化、不转化成自己的东西，那这些知识永远是他人的，不是你自己的。
-                li 在掌握最小知识点后，就应该立刻开始实践，在实践中发现更多知识点；
-                li 英文是学习编程的最大障碍，所以一款好用的中英文词典是你的好帮手。
-                   a(href='http://cidian.youdao.com/multi.html') 传送门
-                li 找一个安静的环境，把手机静音，集中注意力开始我们的互动课程吧。
-        .big-break
-        .row
-            .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/challenges/learn-how-free-code-camp-works") 准备好了，GO!
-        hr
-        .row
-          ul.col-md-4.col-xs-12
-            li
-              strong 学习资源
-            li
-              a(href='http://www.runoob.com' target='_blank') 菜鸟教程
-            li
-              a(href='https://developer.mozilla.org/zh-CN/docs/Web' target='_blank') MDN
-            li
-              a(href='https://www.zhihu.com/question/19834302/answer/107753320' target='_blank') 新手如何系统性学习编程
-            li
-              a(href='http://ucai.cn/openclass/show/315' target='_blank') FreeCodeCamp实战剖析（需注册优才账号）
-          ul.col-md-4.col-xs-12
-            li
-              strong 合作伙伴
-            li
-              a(href='https://github.com/freecodecampchina/freecodecamp.cn' target='_blank') GitHub开源
-            li
-              a(href='http://juhe.cn' target='_blank') 聚合数据
-            li
-              a(href='https://sdk.cn' target='_blank') SDK
-            li
-              a(href='http://deveco.io' target='_blank') DevEco
-          ul.col-md-4.col-xs-12
-            li
-              strong 联系我们
-            li 官方QQ群：526289580
-            li 微信公众号：freecodecamp
-            li 苏州猿生态信息科技有限公司
-            li
-               a(href="http://www.miibeian.gov.cn" target='_blank')  苏ICP备16029531号
+                // buttons
+                a.btn.btn-orange.btn-lg.btn-extra-padding.button-landing-page(href='/challenges/learn-how-free-code-camp-works', role='button') 开始闯关
+                a.btn.btn-green-inverse.btn-lg.button-landing-page(href='/stories', role='button') 倾听更多学员的心声
