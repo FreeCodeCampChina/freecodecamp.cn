@@ -5531,6 +5531,7 @@ button.close {
 }
 .modal-body {
   position: relative;
+  background: white;
   padding: 15px;
 }
 .modal-footer {
@@ -13667,7 +13668,6 @@ thead {
   color: #eeeeee;
   font-size: 36px;
   text-align: center;
-  margin-bottom: -30px;
   border-radius: 5px 5px 0px 0px;
   padding-left: 50px;
 }
