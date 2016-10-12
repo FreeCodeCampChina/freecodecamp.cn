@@ -1,7 +1,6 @@
 extends ../layout
 block content
     style.
-      footer {position: fixed;right: 0;left: 0;bottom:0;z-index: 1030;}
     .text-center
         h2 账户登录
         a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/github')
@@ -20,7 +19,14 @@ block content
         a.btn.btn-lg.btn-block.btn-social.btn-github(href='/challenges/learn-how-free-code-camp-works')
             i.fa.fa-map-o
             | 直接开始学习
-
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
     script.
       $(document).ready(function() {
         var method = localStorage.getItem('lastSigninMethod'),
