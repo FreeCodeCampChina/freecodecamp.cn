@@ -561,8 +561,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target4\").length === 0, 'message: Use jQuery to remove your <code>target4</code> element from your page.');",
-        "assert(code.match(/id=\"target4/g), 'message: Only use jQuery to remove this element.');"
+        "assert($(\"#target4\").length === 0, 'message: 使用jQuery来移除页面中的<code>target4</code>元素。');",
+        "assert(code.match(/id=\"target4/g), 'message: 请使用jQuery来实现，而不是原生js。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -612,9 +612,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#left-well\").children(\"#target2\").length === 0, 'message: Your <code>target2</code> element should not be inside your <code>left-well</code>.');",
-        "assert($(\"#right-well\").children(\"#target2\").length > 0, 'message: Your <code>target2</code> element should be inside your <code>right-well</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to move these elements.');"
+        "assert($(\"#left-well\").children(\"#target2\").length === 0, 'message: 你的 <code>target2</code> 元素不应该在 <code>left-well</code>里面。');",
+        "assert($(\"#right-well\").children(\"#target2\").length > 0, 'message: 你的 <code>target2</code> 元素应该在 <code>right-well</code>里面。');",
+        "assert(!code.match(/class.*animated/g), 'message: 请使用jQuery来实现，而不是原生js。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -623,12 +623,13 @@
       "id": "bad87fee1348bd9aed508826",
       "title": "Clone an Element Using jQuery",
       "description": [
-        "除了移动元素，你还可以拷贝元素，简单理解：移动元素就是剪切，拷贝元素就是复制。",
-        "jQuery的<code>clone()</code>方法可以拷贝元素.",
-        "比如,如果我想把<code>target2</code>从<code>left-well</code>拷贝到<code>right-well</code>,我们可以这样写:",
+        "除了移动元素，你还可以拷贝元素。简单理解：移动元素就是剪切，拷贝元素就是复制。",
+        "jQuery的<code>clone()</code>方法可以拷贝元素。",
+        "比如，如果我想把<code>target2</code>从<code>left-well</code>拷贝到<code>right-well</code>，我们可以这样写:",
         "<code>$(\"#target2\").clone().appendTo(\"#right-well\");</code>",
         "你有没有发现两个jQuery方法合在一起使用了？这就叫方法链<code>function chaining</code>，使用起来很方便。",
-        "复制<code>target5</code>元素追加到<code>left-well</code>。"
+        "复制<code>target5</code>元素追加到<code>left-well</code>。",
+        "<strong>提示：</strong>当你点击run tests后left-well会有两个#target5，千万别以为这是bug。实际上是因为编辑器中的代码会自动执行一次，点击run后会再执行一次，所以有两个#target5。"
       ],
       "challengeSeed": [
         "fccss",
@@ -666,9 +667,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#right-well\").children(\"#target5\").length > 0, 'message: Your <code>target5</code> element should be inside your <code>right-well</code>.');",
-        "assert($(\"#left-well\").children(\"#target5\").length > 0, 'message: A copy of your <code>target5</code> element should also be inside your <code>left-well</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to move these elements.');"
+        "assert($(\"#right-well\").children(\"#target5\").length > 0, 'message: 你的<code>target5</code> 元素应该在 <code>right-well</code>里面。');",
+        "assert($(\"#left-well\").children(\"#target5\").length > 0, 'message: 克隆的<code>target5</code> 元素也应该在 <code>left-well</code>里面。');",
+        "assert(!code.match(/class.*animated/g), 'message: 请使用jQuery来实现，而不是原生js。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -723,10 +724,10 @@
         "</body>"
       ],
       "tests": [
-        "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: Your <code>left-well</code> element should have a red background.');",
-        "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: You should use the <code>&#46;parent&#40;&#41;</code> function to modify this element.');",
-        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message: The <code>&#46;parent&#40;&#41;</code> method should be called on the <code>&#35;target1</code> element.');",
-        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: 你的<code>left-well</code> 元素应该有一个红色的背景。');",
+        "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: 你应该使用<code>&#46;parent&#40;&#41;</code> 来修改这个元素。');",
+        "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message: 你应该在 <code>&#35;target1</code> 元素上调用<code>&#46;parent&#40;&#41;</code>方法。');",
+        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: 请使用jQuery来给元素添加class。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -781,9 +782,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#right-well\").children().css(\"color\") === 'rgb(255, 165, 0)', 'message: All children of <code>#right-well</code> should have orange text.');",
-        "assert(code.match(/\\.children\\(\\)\\.css/g), 'message: You should use the <code>children&#40&#41</code> function to modify these elements.');",
-        "assert(code.match(/<div class=\"well\" id=\"right-well\">/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#right-well\").children().css(\"color\") === 'rgb(255, 165, 0)', 'message: <code>#right-well</code> 的所有子元素的文本颜色都为橙色。');",
+        "assert(code.match(/\\.children\\(\\)\\.css/g), 'message: 你应该使用 <code>children&#40&#41</code> 函数来修改这些元素。');",
+        "assert(code.match(/<div class=\"well\" id=\"right-well\">/g), 'message: 请使用jQuery来给这些元素添加class。');"
       ],
       "type": "waypoint",
       "challengeType": 0
