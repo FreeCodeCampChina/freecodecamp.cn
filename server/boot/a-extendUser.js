@@ -69,16 +69,16 @@ module.exports = function(app) {
     var mailOptions = {
       type: 'email',
       to: user.email,
-      from: 'huluoyang@freecodecamp.cn',
+      from: 'team@freecodecamp.cn',
       subject: '欢迎来到FreeCodeCamp!',
       redirect: '/',
       text: [
         '来自加利福利亚州的问候!\n\n',
         '谢谢您加入我们的社区。\n',
         '在你使用FreeCodeCamp的过程中有任何问题，都可以给我们发邮件。\n',
-        '如果你有空，可以看看我们的博客： ',
-        'medium.freecodecamp.com.\n\n',
-        '祝您挑战愉快!\n\n',
+        '如果你有空，可以添加我们的微信公众号： ',
+        'freecodecamp\n\n',
+        '祝您闯关愉快!\n\n',
         '- the Free Code Camp Team'
       ].join('')
     };
