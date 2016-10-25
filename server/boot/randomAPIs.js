@@ -548,7 +548,7 @@ module.exports = function(app) {
 
   function bloggerCalls(req, res, next) {
     request(
-      'https://www.googleapis.com/blogger/v3/blogs/2421288658305323950/' +
+      'https://www.gdgdocs.org/blogger/v3/blogs/2421288658305323950/' +
         'posts?key=' +
       secrets.blogger.key,
       function(err, status, blog) {

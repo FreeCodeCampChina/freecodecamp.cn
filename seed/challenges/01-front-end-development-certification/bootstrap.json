@@ -17,7 +17,7 @@
         "首先，我们需要把所有的HTML内容放在class为<code>container-fluid</code>的<code>div</code>下。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -89,7 +89,7 @@
         "谢天谢地，通过Bootstrap，我们要做的只是给图片添加 <code>img-responsive</code> class属性。这样图片的宽度就能完美地适配你的页面的宽度了。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -165,7 +165,7 @@
         "<code>&#60h2 class=\"red-text text-center\"&#62your text&#60/h2&#62</code>"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -238,7 +238,7 @@
         "在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及\"Like\"文本。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -316,7 +316,7 @@
         "添加Bootstrap的 <code>btn-block</code> class 到你的按钮。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -392,7 +392,7 @@
         "注意：这个按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> 属性！"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -468,7 +468,7 @@
         "注意：这些按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> class属性"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -545,7 +545,7 @@
         "注意：这些标签仍然需要 <code>btn</code> 与 <code>btn-block</code> class。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -627,7 +627,7 @@
         "当<code>div</code> 元素设置了 class 属性 <code>row</code> 之后，那几个按钮便可嵌入其中。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -708,7 +708,7 @@
         "最后，移除第一个 <code>img</code> 元素的 \"smaller  -image\" class ，替换为 Bootstrap的 <code>img-responsive</code> class。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  .red-text {",
         "    color: red;",
@@ -800,7 +800,7 @@
         "<code>&#60;p&#62;Top 3 things cats &#60;span class = \"text-danger\"&#62;hate:&#60;/span&#62;&#60;/p&#62;</code>"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "",
         "  h2 {",
@@ -879,7 +879,7 @@
         "注意现在图片是否与文字大小一致呢？"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "",
         "<style>",
         "  h2 {",
@@ -956,7 +956,7 @@
         "你可以通过 Font Awesome 库增加一个 <code>thumbs-up</code> 图标到你的 like 按钮中，方法是在<code>i</code> 元素中增加 class 属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
@@ -1031,7 +1031,7 @@
         "使用 Font Awesome 分别为你的 info 按钮添加 <code>info-circle</code> 图标，为你的 delete 按钮添加 <code>trash</code> 图标。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
@@ -1105,7 +1105,7 @@
         "将页面中的两个单选按钮放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后，添加 <code>&#60;div class=\"col-xs-6\"&#62;</code> 元素并分别包裹每一个单选按钮。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
@@ -1179,7 +1179,7 @@
         "将你所有的复选框都放置于一个 <code>&#60;div class=\"row\"&#62;</code> 元素中。然后分别把每个按钮都放置于一个 <code>&#60;div class=\"col-xs-4\"&#62;</code> 元素中。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
@@ -1260,7 +1260,7 @@
         "给你表单的文本输入框增加 class<code>form-control</code> 。在你的表单提交按钮中增加 class <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
@@ -1351,7 +1351,7 @@
         "这是目前为止我们的 Cat Photo 应用的最后一个挑战了。希望你能够喜欢学习 Font Awesome，Bootstrap和响应式设计！"
       ],
       "challengeSeed": [
-        "<link href=\"//fonts.googleapis.com/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
+        "<link href=\"//fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
         "<style>",
         "  h2 {",
         "    font-family: Lobster, Monospace;",
