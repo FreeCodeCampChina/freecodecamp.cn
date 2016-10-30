@@ -56,7 +56,7 @@
       "id": "bad87fee1348bd9aedf08801",
       "title": "Inform with the Paragraph Element",
       "description": [
-        "P是英文<code>paragraph</code>段落的缩写，经常被用来创建一个段落，就和你写作文一样。",
+        "p是英文<code>paragraph</code>段落的缩写，经常被用来创建一个段落，就和你写作文一样。",
         "任务：在副标题下面新增一个段落，段落内容是：<code>Hello Paragraph</code>。"
       ],
       "challengeSeed": [
