@@ -12,7 +12,7 @@
         "Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 <code>响应式设计</code>的概念。",
         "通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。 ",
         "你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：",
-        "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\"/&#62;</code>",
+        "<code>&#60;link rel=\"stylesheet\" href=\"//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css\"/&#62;</code>",
         "在此案例中，我们已经帮你把上述代码添加到页面中。",
         "首先，我们需要把所有的HTML内容放在class为<code>container-fluid</code>的<code>div</code>下。"
       ],
@@ -949,7 +949,7 @@
       "description": [
         "Font Awesome 是一个非常方便的图标库。这些图标都是矢量图形，被保存在 <code>.svg</code> 的文件格式中。这些图标就和字体一样，你可以通过像素单位指定它们的大小，它们将会继承其父HTML元素的字体大小。",
         "你可以将 Font Awesome 图标库增添至任何一个应用中，方法很简单，只需要在你的 HTML 头部增加下列代码即可：",
-        "<code>&#60;link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\"/&#62;</code>",
+        "<code>&#60;link rel=\"stylesheet\" href=\"//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css\"/&#62;</code>",
         "不过，我们已经事先在幕后为此页面添加了该功能。（不必重复添加上面这段代码）",
         "<code>i</code> 元素起初一般是让其它元素有斜体(italic)的功能，不过现在一般用来指代图标。你可以将 Font Awesome 中的 class 属性添加到 <code>i</code> 元素中，把它变成一个图标，比如：",
         "<code>&lt;i class=\"fa fa-info-circle\"&gt;&lt;/i&gt;</code>",

@@ -49,6 +49,8 @@ export default function csp() {
         'https://*.gdgdocs.org',
         '*.bootstrapcdn.com',
         'https://*.bootstrapcdn.com',
+        '*.bootcdn.cn',
+        'https://*.bootcdn.cn',
         '*.cloudflare.com',
         'https://*.cloudflare.com',
         '*.clouddn.com',
@@ -65,7 +67,9 @@ export default function csp() {
         '*.gdgdocs.org',
         'https://*.gdgdocs.org',
         '*.gstatic.com',
-        'https://*.bootstrapcdn.com'
+        'https://*.bootstrapcdn.com',
+        '*.qnssl.com',
+        'https://*.qnssl.com'
       ].concat(trusted),
       imgSrc: [
         // allow all input since we have user submitted images for

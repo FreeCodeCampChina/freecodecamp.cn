@@ -2,7 +2,7 @@ var main = window.main || {};
 
 main.mapShareKey = 'map-shares';
 
-main.ga = window.ga || function() {};
+//main.ga = window.ga || function() {};
 
 main = (function(main, global) {
   const { Mousetrap } = global;
@@ -281,7 +281,7 @@ $(document).ready(function() {
       '&redirect_uri=http%3A%2F%2Ffreecodecamp%2Ecom%2Fmap';
 
     main.setMapShare(challengeBlockName);
-    window.ga('send', 'event', 'FB_LINK', 'SHARE', 'Facebook map share');
+    //window.ga('send', 'event', 'FB_LINK', 'SHARE', 'Facebook map share');
     window.location.href = link;
   });
 
