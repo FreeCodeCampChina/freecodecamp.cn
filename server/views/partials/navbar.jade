@@ -26,6 +26,8 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
             if !user
                 li
                     a(href='/login' style="color:#FF9900;") 登录
+                li
+                    a(href='/email-signup' style="color:#00AC72;") 注册
             else
                 li.brownie-points-nav
                   a(href='/' + user.username) [&thinsp;#{user.progressTimestamps.length}&thinsp;]

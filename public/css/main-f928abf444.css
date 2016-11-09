@@ -14765,7 +14765,7 @@ button.toast-close-button {
   right: 10px;
 }
 .mapWrapper {
-  position: absolute;
+  /*position: absolute;*/
   display: block;
   height: 100%;
   width: 100%;
