@@ -205,7 +205,7 @@ window.common = function(e) {
                 }
             }
         }),
-        r.challengeName,
+        r.challengeName && window.ga("send", "event", "Challenge", "load", r.gaName),
         e("#complete-courseware-dialog").on("hidden.bs.modal", function() {
             r.editor.focus && r.editor.focus()
         }),

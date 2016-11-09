@@ -249,7 +249,7 @@ window.common = function (global) {
     });
 
     if (common.challengeName) {
-      //window.ga('send', 'event', 'Challenge', 'load', common.gaName);
+      window.ga('send', 'event', 'Challenge', 'load', common.gaName);
     }
 
     $('#complete-courseware-dialog').on('hidden.bs.modal', function () {
