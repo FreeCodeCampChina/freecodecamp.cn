@@ -1,6 +1,6 @@
 ![](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)
 
-[![Throughput Graph](https://graphs.waffle.io/huluoyang/freecodecamp.cn/throughput.svg)](https://waffle.io/huluoyang/freecodecamp.cn/metrics/throughput)
+[![Throughput Graph](https://graphs.waffle.io/FreeCodeCampChina/freecodecamp.cn/throughput.svg)](https://waffle.io/FreeCodeCampChina/freecodecamp.cn/metrics/throughput)
 
 [![Join the chat at https://gitter.im/freecodecamp/freecodecamp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FreeCodeCamp/chinese?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ## freecodecamp.cn
