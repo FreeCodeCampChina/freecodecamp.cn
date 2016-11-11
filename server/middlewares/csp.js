@@ -62,6 +62,8 @@ export default function csp() {
         '*.cloudflare.com',
         'https://*.cloudflare.com',
         '*.bootstrapcdn.com',
+        '*.bootcss.com',
+        'https://*.bootcss.com',
         '*.googleapis.com',
         'https://*.googleapis.com',
         '*.gdgdocs.org',
