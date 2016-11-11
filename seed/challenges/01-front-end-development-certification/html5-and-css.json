@@ -385,7 +385,7 @@
         "<p class=\"red-text\">养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>"
       ],
       "tests": [
-        "assert(new RegExp(\"googleapis\", \"gi\").test(code), 'message: 导入<code>Lobster</code>字体。');",
+        "assert(new RegExp(\"googleapis|gdgdocs\", \"gi\").test(code), 'message: 导入<code>Lobster</code>字体。');",
         "assert($(\"h2\").css(\"font-family\").match(/lobster/i), 'message: 你的副标题应该使用字体<code>Lobster</code>。');",
         "assert($(\"p\").css(\"font-family\").match(/monospace/i), 'message: 你的段落仍旧使用字体<code>Monospace</code>。');"
       ],
