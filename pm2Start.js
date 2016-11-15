@@ -6,7 +6,7 @@ var _ = require('lodash');
 
 var instances = process.env.INSTANCES || 1;
 var serverName = process.env.SERVER_NAME || 'server';
-var maxMemory = process.env.MAX_MEMORY || '390M';
+var maxMemory = process.env.MAX_MEMORY || '590M';
 
 
 var mailReceiver = process.env.MAIL_RECEIVER || false;

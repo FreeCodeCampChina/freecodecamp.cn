@@ -36,7 +36,7 @@
       "title": "Headline with the h2 Element",
       "description": [
         "接下来我们会设计一个类似于下图的页面：",
-        "<a href=\"/images/myCatPhoto.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/jOc1JF1.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Cat Photo App\"></a>",
+        "<a href=\"/images/myCatPhoto.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"/images/myCatPhoto.png\" title=\"Click to enlarge\" alt=\"A screen shot of our finished Cat Photo App\"></a>",
         "h是英文<code>header</code>标题的缩写，标题无处不在，它的应用范围十分广泛：网站结构、写作文、PPT等。h1是主标题，h2是副标题，h3、h4、h5、h6依次递减字体的大小。",
         "在主标题下面创建一个副标题，标题内容是：CatPhotoApp。"
       ],
