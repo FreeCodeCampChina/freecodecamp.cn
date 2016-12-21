@@ -134,7 +134,7 @@ module.exports = function(User) {
     // requires AccessToken.belongsTo(User)
     var mailOptions = {
       to: info.email,
-      from: 'huluoyang@freecodecamp.cn',
+      from: 'jin@freecodecamp.cn',
       subject: '密码重置请求',
       text: `
         您好,\n\n

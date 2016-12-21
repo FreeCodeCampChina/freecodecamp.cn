@@ -369,7 +369,7 @@ module.exports = function(app) {
           if (user.isCheater) {
             req.flash('errors', {
               msg: dedent`
-                很抱歉，该账户违反了学术诚实守则。如果你是该账户的主人，请联系huluoyang@freecodecamp.cn获知缘由。
+                很抱歉，该账户违反了学术诚实守则。如果你是该账户的主人，请联系jin@freecodecamp.cn获知缘由。
               `
             });
             return res.redirect(`/${user.username}`);
