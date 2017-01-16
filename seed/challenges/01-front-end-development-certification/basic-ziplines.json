@@ -66,7 +66,7 @@
         "<strong>功能2:</strong> 你可以点击链接穿越到另一个网站，获得关于这个主题的更多信息。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -97,7 +97,7 @@
         "因为CodePen重载了Window.open()功能，所以你必须得用jQuery选取锚点元素<code>&lt;a target='_blank'&gt;</a></code>的方式来打开一个窗口。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "133315782"
@@ -118,14 +118,12 @@
         "<strong>规则1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的功能</a>。",
         "<strong>功能:</strong> 实现发射弹幕、清除弹幕、显示弹幕功能。",
-        "<strong>扩展:</strong> 你可以用<a href='https://www.wilddog.com/' target='_blank'>野狗实时后端云</a>来存储弹幕数据。",
-        "<strong>实现路径:</strong> 结构-->样式-->功能-->存储",
+        "<strong>实现路径:</strong> 结构-->样式-->功能",
         "<strong>第一步:</strong> 先设计一个简单的弹幕页面，上面有弹幕墙、输入框、按钮，并添加样式。",
         "<strong>第二步:</strong> 然后给弹幕页面添加功能，能实现发射弹幕、清除弹幕、显示弹幕等功能。",
-        "<strong>第三步:</strong> 最后通过你的github账户登录<a href='https://www.wilddog.com/' target='_blank'>野狗实时后端云</a>，创建一个你自己的应用，就可以把弹幕数据存储到数据库中，进而可以在多个终端进行实时互动。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "167523128"

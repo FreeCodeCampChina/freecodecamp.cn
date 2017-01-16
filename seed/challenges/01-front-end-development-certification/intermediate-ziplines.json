@@ -17,7 +17,7 @@
         "<strong>功能#1:</strong> 点击一个按钮就把这个引用短语发到twitter中。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415122"
@@ -45,7 +45,7 @@
         "API：我们推荐使用<a href='https://www.juhe.cn/docs/api/id/39/aid/132'>聚合数据天气预报接口</a>，它需要你创建一个免费的APPKey，通过Ajax获取天气数据。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415127"
@@ -71,7 +71,7 @@
         "<span class='text-info'>提示 #3:</span> 使用这个 <a href='https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=jsonfm' target='_blank'>传送门</a> 来体验维基百科的API。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415131"
@@ -99,7 +99,7 @@
         "<strong>提示:</strong> 这有一个Twitch.tv 用户名数组，里面包含有通常正在直播写代码的人： <code>[\"freecodecamp\", \"storbeck\", \"terakilobyte\", \"habathcx\",\"RobotCaleb\",\"thomasballinger\",\"noobs2ninjas\",\"beohoff\"]</code>",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126411564"
