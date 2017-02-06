@@ -33,7 +33,7 @@
       "id": "bd7156d8c242eddfaeb5bd13",
       "title": "Build a Camper Leaderboard",
       "description": [
-        " <strong>目标：</strong> Build a <a href='http://codepen.io' target='_blank'>CodePen.io</a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/qbqqJm/' target='_blank'>http://codepen.io/FreeCodeCamp/full/qbqqJm/</a>.",
+        " <strong>目标：</strong> 创建一个功能与此相似的 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 应用：<a href='http://codepen.io/FreeCodeCamp/full/qbqqJm/' target='_blank'>http://codepen.io/FreeCodeCamp/full/qbqqJm/</a>.",
         " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         " <strong>规则 #2：</strong> 按照这个 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>来进行开发。你可以使用任何你需要的库或框架。写出你自己的风格。",
         " <strong>规则 #3：</strong> 你所使用的技术里，必须包含Sass和React。",
