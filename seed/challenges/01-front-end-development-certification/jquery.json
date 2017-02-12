@@ -245,11 +245,11 @@
         "</div>"
       ],
       "tests": [
-        "assert(!code.match(/e\"\\);/g) && !code.match(/t\"\\);/g), 'message: Delete all three of your jQuery functions from your <code>document ready function</code>.');",
-        "assert(code.match(/<script>/g), 'message: Leave your <code>script</code> element intact.');",
-        "assert(code.match(/\\$\\(document\\)\\.ready\\(function\\(\\)\\s?\\{/g), 'message: Leave your <code>$&#40document&#41.ready&#40function&#40&#41 {</code> to the beginning of your <code>script</code> element.');",
-        "assert(code.match(/\\n\\s+?\\}\\);/g), 'message: Leave your \"document ready function\" closing <code>&#125;&#41;</code> intact.');",
-        "assert(code.match(/<\\/script>/g) && code.match(/<script/g) && code.match(/<\\/script>/g).length === code.match(/<script/g).length, 'message: Leave your <code>script</code> element closing tag intact.');"
+        "assert(!code.match(/e\"\\);/g) && !code.match(/t\"\\);/g), 'message: 在你的<code>document ready function</code>里删掉那三条语句，只留<code>document ready function</code>。');",
+        "assert(code.match(/<script>/g), 'message: 保证你的 <code>script</code> 开头完好无缺。');",
+        "assert(code.match(/\\$\\(document\\)\\.ready\\(function\\(\\)\\s?\\{/g), 'message: 保证 <code>$&#40document&#41.ready&#40function&#40&#41 {</code> 的完整性。');",
+        "assert(code.match(/\\n\\s+?\\}\\);/g), 'message: 保证 \"document ready function\" 的结尾 <code>&#125;&#41;</code> 的完整性。');",
+        "assert(code.match(/<\\/script>/g) && code.match(/<script/g) && code.match(/<\\/script>/g).length === code.match(/<script/g).length, 'message: 保证你的 <code>script</code> 结尾完好无缺。');"
       ],
       "type": "waypoint",
       "challengeType": 0
