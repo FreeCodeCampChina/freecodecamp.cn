@@ -352,9 +352,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".btn-default\").length === 0, 'message: Remove the <code>btn-default</code> class from all of your <code>button</code> elements.');",
-        "assert(code.match(/btn btn-default/g), 'message: Only use jQuery to remove this class from the element.');",
-        "assert(code.match(/\\.[\\v\\s]*removeClass[\\s\\v]*\\([\\s\\v]*('|\")\\s*btn-default\\s*('|\")[\\s\\v]*\\)/gm), 'message: Only remove the <code>btn-default</code> class.');"
+        "assert($(\".btn-default\").length === 0, 'message: 在 <code>button</code> 元素上移除 <code>btn-default</code> class。');",
+        "assert(code.match(/btn btn-default/g), 'message: 只使用 jQuery 来移除从这个元素移除 class。');",
+        "assert(code.match(/\\.[\\v\\s]*removeClass[\\s\\v]*\\([\\s\\v]*('|\")\\s*btn-default\\s*('|\")[\\s\\v]*\\)/gm), 'message: 只移除 <code>btn-default</code> class.');"
       ],
       "type": "waypoint",
       "challengeType": 0
