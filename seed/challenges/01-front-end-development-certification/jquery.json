@@ -407,8 +407,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target1\").css(\"color\") === 'rgb(255, 0, 0)', 'message: Your <code>target1</code> element should have red text.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#target1\").css(\"color\") === 'rgb(255, 0, 0)', 'message: 你的 <code>target1</code> 应该是红色。');",
+        "assert(!code.match(/class.*animated/g), 'message: 请使用jQuery来实现，而不是原生js。');"
       ],
       "type": "waypoint",
       "challengeType": 0
