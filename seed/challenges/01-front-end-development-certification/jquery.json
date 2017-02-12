@@ -198,7 +198,7 @@
       "tests": [
         "assert($(\"#target3\").hasClass(\"animated\"), 'message: 选择 <code>button</code> 给它的 <code>id</code> 写成 <code>target3</code>。 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>animated</code> class。');",
         "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: 选中 id <code>target3</code> 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>fadeOut</code> class。');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert(!code.match(/class.*animated/g), 'message: 只使用 jQuery 来添加这些 class 到元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -953,7 +953,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: Add the class <code>animated</code> and <code>hinge</code> to your <code>body</code> element.');"
+        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: 添加 <code>animated</code> 和 <code>hinge</code> 到你的 <code>body</code> 元素内。');"
       ],
       "type": "waypoint",
       "challengeType": 0
