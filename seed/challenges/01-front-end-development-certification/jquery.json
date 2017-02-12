@@ -196,8 +196,8 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target3\").hasClass(\"animated\"), 'message: Select the <code>button</code> element with the <code>id</code> of <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class of <code>animated</code>.');",
-        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: Target the element with the id <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class <code>fadeOut</code>.');",
+        "assert($(\"#target3\").hasClass(\"animated\"), 'message: 选择 <code>button</code> 给它的 <code>id</code> 写成 <code>target3</code>。 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>animated</code> class。');",
+        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: 选中 id <code>target3</code> 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>fadeOut</code> class。');",
         "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
       ],
       "type": "waypoint",
