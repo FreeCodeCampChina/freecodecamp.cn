@@ -839,9 +839,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\".target:nth-child(2)\").hasClass(\"animated\") && $(\".target:nth-child(2)\").hasClass(\"bounce\"), 'message: The second element in your <code>target</code> elements should bounce.');",
-        "assert(code.match(/\\:nth-child\\(/g), 'message: You should use the <code>&#58;nth-child&#40&#41</code> function to modify these elements.');",
-        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target2\">/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\".target:nth-child(2)\").hasClass(\"animated\") && $(\".target:nth-child(2)\").hasClass(\"bounce\"), 'message: 第二个元素在你的 <code>target</code> 在你的目标元素中应该 bounce。');",
+        "assert(code.match(/\\:nth-child\\(/g), 'message: 你应该使用 <code>&#58;nth-child&#40&#41</code> 这些功能来修改这些元素。');",
+        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target2\">/g), 'message: 只使用 jQuery 来添加这些 class 到元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
