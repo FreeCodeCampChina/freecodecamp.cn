@@ -1049,7 +1049,8 @@
         "  <li>laser pointers</li>",
         "  <li>lasagna</li>",
         "</ul>",
-        "<p>Top 3 things cats hate:</p>"
+        "<p>Top 3 things cats hate:</p>",
+        "<!-- 请只更改下方HTML来避免错误 -->"
       ],
       "tests": [
         "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: 你应该有一个关于\"Top 3 things cats hate:\"的有序列表。');",
