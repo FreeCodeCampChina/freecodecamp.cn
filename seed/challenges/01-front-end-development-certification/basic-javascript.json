@@ -2294,7 +2294,7 @@
         "assert(myTest(12) === \"Not Equal\", 'message: <code>myTest(12)</code> 应该返回 \"Not Equal\"');",
         "assert(myTest(\"12\") === \"Not Equal\", 'message: <code>myTest(\"12\")</code> 应该返回 \"Not Equal\"');",
         "assert(myTest(\"bob\") === \"Not Equal\", 'message: <code>myTest(\"bob\")</code> 应该返回 \"Not Equal\"');",
-        "assert(code.match(/val\\s*!=\\s*\\d+/g).length > 0, 'message: 你应该使用 <code>!=</code> 运算符');"
+        "assert(code.match(/(?!!==)!=/), 'message: 你应该使用 <code>!=</code> 运算符');"
       ],
       "type": "waypoint",
       "challengeType": 1
