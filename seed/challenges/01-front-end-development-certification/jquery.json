@@ -19,7 +19,7 @@
       "challengeSeed": [
         "",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -69,7 +69,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -120,7 +120,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -171,7 +171,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -196,9 +196,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($(\"#target3\").hasClass(\"animated\"), 'message: Select the <code>button</code> element with the <code>id</code> of <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class of <code>animated</code>.');",
-        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: Target the element with the id <code>target3</code> and use the jQuery <code>addClass&#40&#41</code> function to give it the class <code>fadeOut</code>.');",
-        "assert(!code.match(/class.*animated/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($(\"#target3\").hasClass(\"animated\"), 'message: 选择 <code>button</code> 给它的 <code>id</code> 写成 <code>target3</code>。 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>animated</code> class。');",
+        "assert(($(\"#target3\").hasClass(\"fadeOut\") || $(\"#target3\").hasClass(\"fadeout\"))  && code.match(/\\$\\(.#target3.\\)/g), 'message: 选中 id <code>target3</code> 然后使用 jQuery <code>addClass&#40&#41</code> 给它添加一个 <code>fadeOut</code> class。');",
+        "assert(!code.match(/class.*animated/g), 'message: 只使用 jQuery 来添加这些 class 到元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -220,7 +220,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -245,11 +245,11 @@
         "</div>"
       ],
       "tests": [
-        "assert(!code.match(/e\"\\);/g) && !code.match(/t\"\\);/g), 'message: Delete all three of your jQuery functions from your <code>document ready function</code>.');",
-        "assert(code.match(/<script>/g), 'message: Leave your <code>script</code> element intact.');",
-        "assert(code.match(/\\$\\(document\\)\\.ready\\(function\\(\\)\\s?\\{/g), 'message: Leave your <code>$&#40document&#41.ready&#40function&#40&#41 {</code> to the beginning of your <code>script</code> element.');",
-        "assert(code.match(/\\n\\s+?\\}\\);/g), 'message: Leave your \"document ready function\" closing <code>&#125;&#41;</code> intact.');",
-        "assert(code.match(/<\\/script>/g) && code.match(/<script/g) && code.match(/<\\/script>/g).length === code.match(/<script/g).length, 'message: Leave your <code>script</code> element closing tag intact.');"
+        "assert(!code.match(/e\"\\);/g) && !code.match(/t\"\\);/g), 'message: 在你的<code>document ready function</code>里删掉那三条语句，只留<code>document ready function</code>。');",
+        "assert(code.match(/<script>/g), 'message: 保证你的 <code>script</code> 开头完好无缺。');",
+        "assert(code.match(/\\$\\(document\\)\\.ready\\(function\\(\\)\\s?\\{/g), 'message: 保证 <code>$&#40document&#41.ready&#40function&#40&#41 {</code> 的完整性。');",
+        "assert(code.match(/\\n\\s+?\\}\\);/g), 'message: 保证 \"document ready function\" 的结尾 <code>&#125;&#41;</code> 的完整性。');",
+        "assert(code.match(/<\\/script>/g) && code.match(/<script/g) && code.match(/<\\/script>/g).length === code.match(/<script/g).length, 'message: 保证你的 <code>script</code> 结尾完好无缺。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -272,7 +272,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -327,7 +327,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -382,7 +382,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -433,7 +433,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -485,7 +485,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -536,7 +536,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -587,7 +587,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -642,7 +642,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -697,7 +697,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<body>",
         "  <div class=\"container-fluid\">",
@@ -757,7 +757,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -814,7 +814,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -871,7 +871,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -896,9 +896,9 @@
         "</div>"
       ],
       "tests": [
-        "assert($('.target:even').hasClass('animated') && $('.target:even').hasClass('shake'), 'message: All the <code>target</code> elements that computer considers even should shake.');",
-        "assert(code.match(/\\:even/g), 'message: You should use the <code>&#58;even</code> function to modify these elements.');",
-        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target3\">/g), 'message: Only use jQuery to add these class to the element.');"
+        "assert($('.target:even').hasClass('animated') && $('.target:even').hasClass('shake'), 'message: 所有 <code>target</code> 元素的偶数都应该 <code>shake</code>);",
+        "assert(code.match(/\\:even/g), 'message: 你应该使用 <code>&#58;even</code> 功能来更改这些元素。');",
+        "assert(code.match(/<button class=\"btn btn-default target\" id=\"target3\">/g), 'message: 只使用 jQuery 来添加这些 class 到元素中。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -928,7 +928,7 @@
         "  });",
         "fcces",
         "",
-        "<!-- Only change code above this line. -->",
+        "<!-- 只更改这条注释以上的代码。 -->",
         "",
         "<div class=\"container-fluid\">",
         "  <h3 class=\"text-primary text-center\">jQuery Playground</h3>",
@@ -953,7 +953,7 @@
         "</div>"
       ],
       "tests": [
-        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: Add the class <code>animated</code> and <code>hinge</code> to your <code>body</code> element.');"
+        "assert($('body').hasClass('animated') && $('body').hasClass('hinge'), 'message: 添加 <code>animated</code> 和 <code>hinge</code> 到你的 <code>body</code> 元素内。');"
       ],
       "type": "waypoint",
       "challengeType": 0
