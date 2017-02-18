@@ -727,7 +727,7 @@
         "assert($(\"#left-well\").css(\"background-color\") === 'red' || $(\"#left-well\").css(\"background-color\") === 'rgb(255, 0, 0)' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#ff0000' || $(\"#left-well\").css(\"background-color\").toLowerCase() === '#f00', 'message: 你的<code>left-well</code> 元素应该有一个红色的背景。');",
         "assert(code.match(/\\.parent\\s*\\(\\)\\s*\\.css/g), 'message: 你应该使用<code>&#46;parent&#40;&#41;</code> 来修改这个元素。');",
         "assert(code.match(/\\$\\s*?\\(\\s*?(?:'|\")\\s*?#target1\\s*?(?:'|\")\\s*?\\)\\s*?\\.parent/gi), 'message: 你应该在 <code>&#35;target1</code> 元素上调用<code>&#46;parent&#40;&#41;</code>方法。');",
-        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: 请使用jQuery来给元素添加class。');"
+        "assert(code.match(/<div class=\"well\" id=\"left-well\">/g), 'message: 请使用jQuery来给元素添加css。');"
       ],
       "type": "waypoint",
       "challengeType": 0
