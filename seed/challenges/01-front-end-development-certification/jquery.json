@@ -742,7 +742,7 @@
         "jQuery有一个方法叫<code>children()</code>，它允许你访问指定元素的子元素。",
         "举个例子：让<code>left-well</code> 元素的子元素<code>children()</code>的文本颜色变成蓝色。",
         "<code>$(\"#left-well\").children().css(\"color\", \"blue\")</code>",
-        "任务：让<code>#right-well</code>元素的所有子元素的文本颜色都变成橙色。"
+        "任务：让<code>#right-well</code>元素的所有子元素的文本颜色都变成橙色（orange）。"
       ],
       "challengeSeed": [
         "fccss",
