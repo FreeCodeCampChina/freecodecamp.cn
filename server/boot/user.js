@@ -146,7 +146,7 @@ module.exports = function(app) {
   router.post('/forgot', postForgot);
   router.get('/reset-password', getReset);
   router.post('/reset-password', postReset);
-  router.get('/email-signup', getEmailSignup);
+  //router.get('/email-signup', getEmailSignup);
   router.get('/email-signin', getEmailSignin);
   router.get(
     '/toggle-lockdown-mode',
