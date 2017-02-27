@@ -49,6 +49,17 @@ block content
               | 我们推荐按照顺序来闯关，但是你也可以自由跳跃。
               | 前面三个证书每个需要400小时，
               | 最后一个证书需要800小时，来为非盈利组织构建真实的项目。
+    .row(style="background-image: linear-gradient(#fff,#F1FEF2);")
+     section
+      .container
+        h2 课外提升
+        .row
+          .col-md-6
+           #sdkcn-1 正在获取文章...
+          .col-md-6
+           #sdkcn-2 正在获取文章...
+        script var article = function(data) { var rows=7; var html = '<ul>';var count=(data.length>rows?rows:data.length); for(var i=0;i<count;i++){ html += '<li style="padding-bottom:10px"><a target="_blank" style="font-size: 19px" href="'+data[i].article_url+'"><span class="ion-ios-circle-outline"></span>&nbsp;&nbsp;'+data[i].title+'</a></li>' }; html += '</ul>'; document.getElementById("sdkcn-1").innerHTML = html;    if(data.length>rows) { html = '<ul>';count = (data.length>2*rows?2*rows:data.length);for(var i=rows;i<count;i++){ html += '<li style="padding-bottom:10px"><a target="_blank" style="font-size: 19px;" href="'+data[i].article_url+'"><span class="ion-ios-circle-outline"></span>&nbsp;&nbsp;'+data[i].title+'</a></li>' }; html += '</ul>'; document.getElementById("sdkcn-2").innerHTML = html; }};
+        script(src='https://www.sdk.cn/api/article/devecho?callback=article')
     .row
      section.skills-youll-learn
       .container
