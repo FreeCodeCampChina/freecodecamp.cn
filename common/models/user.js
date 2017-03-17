@@ -88,6 +88,7 @@ module.exports = function(User) {
   });
 
   User.beforeRemote('create', function({ req, res }, _, next) {
+    return res.redirect('/email-signin');
     req.body.username = 'fcc' + uuid.v4().slice(0, 8);
     if (!req.body.email) {
       return next();
