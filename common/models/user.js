@@ -146,7 +146,7 @@ module.exports = function(User) {
         \n
       `
     };
-    console.log("1" + User.app.models.Email.send);
+    console.log('1' + User.app.models.Email.send);
     User.app.models.Email.send(mailOptions, function(err) {
       if (err) { console.error(err); }
       debug('email reset sent');

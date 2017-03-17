@@ -73,7 +73,7 @@ function buildUserUpdate(
       lastUpdated: completedChallenge.completedDate
     };
   } else {
-    if(challengeId){
+    if (challengeId) {
       updateData.$push = {
         progressTimestamps: {
           timestamp: Date.now(),

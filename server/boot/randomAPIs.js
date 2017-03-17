@@ -1,12 +1,12 @@
-var Rx = require('rx'),
-    async = require('async'),
-    moment = require('moment'),
-    request = require('request'),
-    debug = require('debug')('fcc:cntr:resources'),
-    constantStrings = require('../utils/constantStrings.json'),
-    labs = require('../resources/labs.json'),
-    testimonials = require('../resources/testimonials.json'),
-    secrets = require('../../config/secrets');
+const Rx = require('rx'),
+  async = require('async'),
+  moment = require('moment'),
+  request = require('request'),
+  debug = require('debug')('fcc:cntr:resources'),
+  constantStrings = require('../utils/constantStrings.json'),
+  labs = require('../resources/labs.json'),
+  testimonials = require('../resources/testimonials.json'),
+  secrets = require('../../config/secrets');
 
 module.exports = function(app) {
   var router = app.loopback.Router();
@@ -45,7 +45,7 @@ module.exports = function(app) {
   router.get('/how-nonprofit-projects-work', howNonprofitProjectsWork);
   router.get('/code-of-conduct', codeOfConduct);
   router.get('/academic-honesty', academicHonesty);
-  router.get('/get-user-identity',getUserIdentity);
+  router.get('/get-user-identity', getUserIdentity);
   router.route('/leader-board').get(leaderBoard);
   router.route('/master').get(master);
   router.route('/newer').get(newer);
@@ -57,26 +57,26 @@ module.exports = function(app) {
   router.route('/add-telphone').post(addTelphone);
   router.route('/update-profile').post(updateProfile);
   router.route('/dashboard').post(dashboard);
-  router.get('/code',function(req,res){
-    res.render('resources/code',{
-      title: "苏州全民在线编程挑战赛"
+  router.get('/code', function(req, res) {
+    res.render('resources/code', {
+      title: '苏州全民在线编程挑战赛'
     });
-  })
-  router.get('/progress',function(req,res){
-    res.render('resources/progress',{
-      title: "学习进度排行榜"
+  });
+  router.get('/progress', function(req, res) {
+    res.render('resources/progress', {
+      title: '学习进度排行榜'
     });
-  })
-  router.get('/group',function(req,res){
-    res.render("resources/group",{
-      title: "线下同城学习小组"
-    })
-  })
-  router.get('/dashboard',function(req,res){
-    res.render("resources/dashboard",{
-      title: "fcc后台统计系统"
-    })
-  })
+  });
+  router.get('/group', function(req, res) {
+    res.render('resources/group', {
+      title: '线下同城学习小组'
+    });
+  });
+  router.get('/dashboard', function(req, res) {
+    res.render('resources/dashboard', {
+      title: 'fcc后台统计系统'
+    });
+  });
 
   router.get(
     '/the-fastest-web-page-on-the-internet',
@@ -200,8 +200,8 @@ module.exports = function(app) {
   function chat(req, res) {
     res.redirect('https://gitter.im/FreeCodeCamp/chinese');
   }
-  function home(req,res){
-    res.render('home')
+  function home(req, res) {
+    res.render('home');
   }
 
   function showLabs(req, res) {
@@ -324,112 +324,204 @@ module.exports = function(app) {
   function twitch(req, res) {
     res.redirect('https://twitch.tv/freecodecamp');
   }
-  function leaderBoard(req,res,next){
+  function leaderBoard(req, res, next) {
     // var data = User.find({}, {"_id":0, "username":1, "picture":1, "progressTimestamps":1});
     // for(var i=0;i<data.length;i++){
     //     data[i].score = data[i].progressTimestamps.length;
     //     delete  data[i].progressTimestamps;
     // };
     // console.log(data);
-    User.find( { where: {"isCheater":false},fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
+    User.find({
+      where: {
+        isCheater: false
+      },
+      fields: {
+        _id: 0,
+        username: 1,
+        picture: 1,
+        progressTimestamps: 1
+      }
+    }, (err, user) => {
       if (err) { return next(err); }
       var data = user.slice();
-      for(var i=0;i<data.length;i++){
+      for (var i = 0; i < data.length; i++) {
           data[i].score = data[i].progressTimestamps.length;
           data[i].projectScore = 0;
           delete data[i].progressTimestamps;
-      };
+      }
       res.send(data);
     });
   }
-  function getUserIdentity(req,res,next){
-    UserIdentity.find( { where: {}, fields: {"created":1,"_id":0}},(err,data) =>{
-      if(err){return next(err);}
+  function getUserIdentity(req, res, next) {
+    UserIdentity.find({
+      where: {},
+      fields: {
+        created: 1,
+        _id: 0
+      }
+    }, (err, data) =>{
+      if (err) {
+        return next(err);
+      }
       res.send(data);
       console.log(data);
-    })
+    });
   }
-  function dashboard(req,res,next){
-    User.find( { where: {"group":true}, fields: {"_id":0, "username":1, "fullname":1, "email":1, "telphone":1, "wechat":1, "location":1, "background":1} },(err, user) =>{
+  function dashboard(req, res, next) {
+    User.find({
+      where: {
+        group: true
+      },
+      fields: {
+        _id: 0,
+        username: 1,
+        fullname: 1,
+        email: 1,
+        telphone: 1,
+        wechat: 1,
+        location: 1,
+        background: 1
+      }
+    }, (err, user) =>{
       if (err) { return next(err); }
       var data = user.slice();
       res.send(data);
-    })
+    });
   }
-  function updateProfile(req,res,next){
-    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
-      if(err) { return next(err); }
-      user.updateAttributes({'fullname':req.body.fullname,'email':req.body.email,'telphone':req.body.telphone,'location':req.body.location,'background':req.body.background,'wechat':req.body.wechat,'group':req.body.group}, (err,user) =>{
+  function updateProfile(req, res, next) {
+    User.findOne({
+      where: {
+        username: req.body.username
+      }
+    }, (err, user) => {
+      if (err) { return next(err); }
+      user.updateAttributes({
+        fullname: req.body.fullname,
+        email: req.body.email,
+        telphone: req.body.telphone,
+        location: req.body.location,
+        background: req.body.background,
+        wechat: req.body.wechat,
+        group: req.body.group
+      }, (err, user) =>{
         if (err) { return next(err); }
         res.send(user);
-      })
-    })
-  }
-  function master(req,res,next){
-    User.find({ where: { "category" : "master","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
-      if (err) { return next(err); }
-      var data = user.slice();
-      for(var i=0;i<data.length;i++){
-          data[i].score = data[i].progressTimestamps.length;
-          data[i].projectScore = 0;
-          delete data[i].progressTimestamps;
-      };
-      res.send(data);
+      });
     });
   }
-  function newer(req,res,next){
-    User.find({ where: { "category" : "newer","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
-      if (err) { return next(err); }
-      var data = user.slice();
-      for(var i=0;i<data.length;i++){
-          data[i].score = data[i].progressTimestamps.length;
-          data[i].projectScore = 0;
-          delete data[i].progressTimestamps;
-      };
-      res.send(data);
-    });
-  }
-  function women(req,res,next){
-    User.find({ where: { "category" : "women","isCheater":false}, fields: {"_id":0, "username":1, "picture":1, "progressTimestamps":1} }, (err, user) => {
-      if (err) { return next(err); }
-      var data = user.slice();
-      for(var i=0;i<data.length;i++){
-          data[i].score = data[i].progressTimestamps.length;
-          data[i].projectScore = 0;
-          delete data[i].progressTimestamps;
-      };
-      res.send(data);
-    });
-  }
-  function hasUsername(req,res,next){
-    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
-      if(err) { return next(err); }
-      //res.send(user);
-      if(user){
-        res.send({"status":200});
-      }else{
-        res.send({"status":404});
+  function master(req, res, next) {
+    User.find({
+      where: {
+        category: master,
+        isCheater: false
+      },
+      fields: {
+        _id: 0,
+        username: 1,
+        picture: 1,
+        progressTimestamps: 1
       }
-    })
-  }
-  function hasJoin(req,res,next){
-    User.findOne({where:{"username": req.body.username,'telphone':req.body.telphone}},(err,user) => {
-      if(err) { return next(err); }
-      if(user){
-        res.send({"status":200});
-      }else{
-        res.send({"status":404});
+    }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for (var i = 0; i < data.length; i++) {
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
       }
-    })
+      res.send(data);
+    });
   }
-  function addTelphone(req,res,next){
-    User.findOne({ where: { "username" : req.body.username} },(err,user) => {
-      if(err) { return next(err); }
-      user.updateAttributes({'telphone':req.body.telphone,'category':req.body.category}, (err,user) =>{
+  function newer(req, res, next) {
+    User.find({
+      where: {
+        category: 'newer',
+        isCheater: false
+      },
+      fields: {
+        _id: 0,
+        username: 1,
+        picture: 1,
+        progressTimestamps: 1
+      }
+    }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for (var i = 0; i < data.length; i++) {
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
+      }
+      res.send(data);
+    });
+  }
+  function women(req, res, next) {
+    User.find({
+      where: {
+        category: 'women',
+        isCheater: false
+      },
+      fields: {
+        _id: 0,
+        username: 1,
+        picture: 1,
+        progressTimestamps: 1
+      }
+    }, (err, user) => {
+      if (err) { return next(err); }
+      var data = user.slice();
+      for (var i = 0; i < data.length; i++) {
+          data[i].score = data[i].progressTimestamps.length;
+          data[i].projectScore = 0;
+          delete data[i].progressTimestamps;
+      }
+      res.send(data);
+    });
+  }
+  function hasUsername(req, res, next) {
+    User.findOne({
+      where: {
+        username: req.body.username
+      }
+    }, (err, user) => {
+      if (err) { return next(err); }
+      // res.send(user);
+      if (user) {
+        res.send({ status: 200 });
+      } else {
+        res.send({ status: 404 });
+      }
+    });
+  }
+  function hasJoin(req, res, next) {
+    User.findOne({
+      where: {
+        username: req.body.username,
+        telphone: req.body.telphone}
+    }, (err, user) => {
+      if (err) { return next(err); }
+      if (user) {
+        res.send({ 'status': 200 });
+      } else {
+        res.send({ 'status': 404});
+      }
+    });
+  }
+  function addTelphone(req, res, next) {
+    User.findOne({
+      where: {
+        username: req.body.username
+      }
+    }, (err, user) => {
+      if (err) { return next(err); }
+      user.updateAttributes({
+        telphone: req.body.telphone,
+        category: req.body.category
+      }, (err) =>{
         if (err) { return next(err); }
-        res.send({"status":200});
-      })
-    })
+        res.send({ 'status': 200 });
+      });
+    });
   }
 
   function unsubscribeMonthly(req, res, next) {
