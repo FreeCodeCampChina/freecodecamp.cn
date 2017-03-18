@@ -90,7 +90,7 @@ module.exports = function(app) {
         if (err) { console.log(err); return next(err); }
 
         req.flash('success', {
-          msg: [ "欢迎来到Free Code Camp!我们已经为您创建好了账户。" ]
+          msg: [ '欢迎来到Free Code Camp!我们已经为您创建好了账户。' ]
         });
         return res.redirect(redirect);
       });

@@ -88,6 +88,7 @@ module.exports = function(User) {
   });
 
   User.beforeRemote('create', function({ req, res }, _, next) {
+    return res.redirect('/email-signin');
     req.body.username = 'fcc' + uuid.v4().slice(0, 8);
     if (!req.body.email) {
       return next();
@@ -146,7 +147,7 @@ module.exports = function(User) {
         \n
       `
     };
-    console.log("1" + User.app.models.Email.send);
+    console.log('1' + User.app.models.Email.send);
     User.app.models.Email.send(mailOptions, function(err) {
       if (err) { console.error(err); }
       debug('email reset sent');
