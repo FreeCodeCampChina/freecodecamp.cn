@@ -796,7 +796,7 @@
         "<a href=\"//i.imgur.com/O32cDWE.png\" data-lightbox=\"img-enlarge\"><img class=\"img-responsive\" src=\"//i.imgur.com/O32cDWE.png\" title=\"Click to enlarge\" alt=\"An \"inline\" button is as small as the text it contains. In this image, it's centered. Below it is a \"block-level\" button, which stretches to fill the entire horizontal space.'></a>",
         "通过使用 <code>span</code> 元素，你可以把几个元素放在一起。你甚至可以用此为一个元素的不同部分指定样式。",
         "把 \"Things cats love\" 中的 \"love\" 放到 <code>span</code> 标签下。然后为其添加 <code>text-danger</code> class 来使文字变成红色。",
-        "下面是完成后 \"Top 3 things cats hate\" 元素的显示效果：",
+        "举例，\"Top 3 things cats <code>hate</code>\" 元素的写法如下：",
         "<code>&#60;p&#62;Top 3 things cats &#60;span class = \"text-danger\"&#62;hate:&#60;/span&#62;&#60;/p&#62;</code>"
       ],
       "challengeSeed": [
