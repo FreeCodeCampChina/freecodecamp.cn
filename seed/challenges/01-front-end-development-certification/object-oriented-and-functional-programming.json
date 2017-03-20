@@ -311,7 +311,7 @@
       ],
       "tests": [
         "assert.deepEqual(oldArray, [1,2,3,4,5,6,7,8,9,10], 'message: 你不应该改变原始数组。');",
-        "assert.deepEqual(newArray, [1,2,3,4,5], 'message: 你应该过滤出数组中大于5的元素。 ');",
+        "assert.deepEqual(newArray, [1,2,3,4,5], 'message: 你应该保留数组中小于 6 的元素。 ');",
         "assert(editor.getValue().match(/array\\.filter\\s*\\(/gi), 'message: 你应该使用 <code>filter</code> 来创建新的数组。');",
         "assert(editor.getValue().match(/\\[1\\,2\\,3\\,4\\,5\\,6\\,7\\,8\\,9\\,10\\]/gi), 'message: 你应该使用 <code>filter</code> 来生成新数组中的值。');"
       ],
