@@ -1,13 +1,13 @@
-# 注意：这里只处理 FreeCodeCamp.cn 的相关问题，不处理 w3cschool 的任何问题
-# 注意：请不要乱开无意义的 Issue，违者直接加黑名单
-# 注意：Issue 是用来处理代码库中的 bug，不是用来提问题的。完成挑战过程中遇到的代码问题请在[gitter 讨论组](https://gitter.im/FreeCodeCamp/chinese) 或者 QQ 群 526289580 中讨论
+## 注意：这里只处理 FreeCodeCamp.cn 的相关问题，不处理 w3cschool 的任何问题
+## 注意：请不要乱开无意义的 Issue，违者直接加黑名单
+## 注意：Issue 是用来处理代码库中的 bug，不是用来提问题的。完成挑战过程中遇到的代码问题请在[gitter 讨论组](https://gitter.im/FreeCodeCamp/chinese) 或者 QQ 群 526289580 中讨论
 
 #### FreeCodeCamp.cn Issue 模板
 如何使用本模板:
 * 尽可能多填些相关信息，方便管理员参考
 * 对于无法给出的内容，请删除掉那一行
 
-**以上内容请在提交 Issue 之前删除**
+# 以上内容请在提交 Issue 之前删除
 
 #### 浏览器信息
 * 浏览器名称，版本号
