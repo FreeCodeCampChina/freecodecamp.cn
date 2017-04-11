@@ -30,7 +30,7 @@
           "//i.imgur.com/G1saeDt.gif",
           "A gif showing how to create a Codepen account.",
           "为了完成我们的前端项目挑战，我们会使用一个叫CodePen的在线编辑器，点击下面的链接可以注册一个CodePen账户。提示：codepen不支持github账户直接登录，只支持注册账户后通过github关联登录。",
-          "http://codepen.io/signup/free"
+          "https://codepen.io/accounts/signup/user/free"
         ],
         [
           "//i.imgur.com/U4y9RJ1.gif",
