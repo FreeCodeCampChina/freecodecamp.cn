@@ -34,7 +34,8 @@ export default function csp() {
         'vimeo.com',
         '*.clouddn.com',
         'https://*.clouddn.com',
-        'https://www.sdk.cn'
+        'https://www.sdk.cn',
+        'https://sdk.cn'
       ].concat(trusted),
       connectSrc: [
         'vimeo.com',
