@@ -1429,7 +1429,7 @@
         "<strong>例如</strong>",
         "<blockquote>var arr = [<br>    [1,2,3],<br>    [4,5,6],<br>    [7,8,9],<br>    [[10,11,12], 13, 14]<br>];<br>arr[0]; // 等于 [1,2,3]<br>arr[1][2]; // 等于 6<br>arr[3][0][1]; // 等于 11</blockquote>",
         "<h4>任务</h4>",
-        "对数组 <code>myArray</code> 使用<code>[index]</code>操作使得 myData 的值为 <code>8</code>"
+        "使用恰当的 <code>[index]</code> 访问 <code>myArray</code>，使得 <code>myData</code> 的值为 <code>8</code>"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -3277,7 +3277,7 @@
         "<blockquote>var myDog = \"Hunter\";<br>var dogs = {<br>  Fido: \"Mutt\",\n  Hunter: \"Doberman\",\n  Snoopie: \"Beagle\"<br >}<br>var breed = dogs[myDog]; // \"Hunter\"<br>console.log(breed)// \"Doberman\"</blockquote>",
         "提示：当我们通过变量名访问属性的时候，不需要给变量名包裹引号。因为实际上我们使用的是变量的值，而不是变量的名称。",
         "<h4>任务</h4>",
-        "使用变量<code>playerNumber</code>，通过中括号操作符找到<code>testObj</code>中的16。"
+        "使用变量 <code>playerNumber</code>，通过中括号操作符找到 <code>testObj</code> 中 <code>playerNumber</code> 为 <code>16</code> 的值。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -4019,7 +4019,7 @@
       "description": [
         "我们有一个对象数组，里面存储着通讯录。",
         "函数 <code>lookUp</code> 有两个预定义参数：<code>firstName</code>值和<code>prop</code>属性 。",
-        "函数将会检查通讯录是否存在一个联系人的<code>firstName</code>属性等于<code>firstName</code>值，还会检查对应联系人是否存在 <code>prop</code>属性。",
+        "函数将会检查通讯录中是否存在一个与传入的 <code>firstName</code> 相同的联系人。如果存在，那么还需要检查对应的联系人中是否存在 <code>prop</code>属性。",
         "如果它们都存在，函数返回<code>prop</code>属性对应的值。",
         "如果<code>firstName</code> 值不存在，返回 <code>\"No such contact\"</code>。",
         "如果<code>prop</code> 属性不存在，返回 <code>\"No such property\"</code>。",
