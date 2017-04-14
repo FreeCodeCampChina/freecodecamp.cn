@@ -114,7 +114,7 @@
     "no-undef": 2,
     "no-undef-init": 2,
     "no-undefined": 1,
-    "no-unused-vars": 2,
+    "no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
     "no-use-before-define": 0,
 
     "handle-callback-err": 2,

@@ -146,7 +146,8 @@ module.exports = function(app) {
   router.post('/forgot', postForgot);
   router.get('/reset-password', getReset);
   router.post('/reset-password', postReset);
-  //router.get('/email-signup', getEmailSignup);
+  // Disable email signup
+  // router.get('/email-signup', getEmailSignup);
   router.get('/email-signin', getEmailSignin);
   router.get(
     '/toggle-lockdown-mode',
@@ -231,15 +232,6 @@ module.exports = function(app) {
     }
     return res.render('account/email-signin', {
       title: 'Sign in to Free Code Camp using your Email Address'
-    });
-  }
-
-  function getEmailSignup(req, res) {
-    if (req.user) {
-      return res.redirect('/');
-    }
-    return res.render('account/email-signup', {
-      title: 'Sign up for Free Code Camp using your Email Address'
     });
   }
 
