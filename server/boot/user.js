@@ -235,6 +235,17 @@ module.exports = function(app) {
     });
   }
 
+  /* Comment this out as Email Signup is currently disabled
+  function getEmailSignup(req, res) {
+    if (req.user) {
+      return res.redirect('/');
+    }
+    return res.render('account/email-signup', {
+      title: 'Sign up for Free Code Camp using your Email Address'
+    });
+  }
+  */
+
   function getAccount(req, res) {
     const { username } = req.user;
     return res.redirect('/' + username);
