@@ -762,11 +762,11 @@
         "</style>",
         "",
         "<h2 class=\"red-text\">CatPhotoApp</h2>",
-        "<!-- 只更改这条注释以下的代码。 -->",
+        "<!-- 请只修改这条注释以下的代码 -->",
         "",
         "<a href=\"http://www.freecatphotoapp.com\">cat photos</a>",
         "",
-        "<!-- 只更改这条注释以上的代码。 -->",
+        "<!-- 请只修改这条注释以上的代码 -->",
         "<img class=\"smaller-image thick-green-border\" src=\"/images/relaxing-cat.jpg\">",
         "",
         "<p class=\"red-text\">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
@@ -1052,7 +1052,7 @@
         "  <li>lasagna</li>",
         "</ul>",
         "<p>Top 3 things cats hate:</p>",
-        "<!-- 请只更改下方HTML来避免错误 -->"
+        "<!-- 请把你的代码写在这条注释以下 -->"
       ],
       "tests": [
         "assert.equal($(\"ol\").prev().text(), 'Top 3 things cats hate:', 'message: 你应该有一个关于\"Top 3 things cats hate:\"的有序列表。');",
