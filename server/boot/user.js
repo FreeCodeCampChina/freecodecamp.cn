@@ -146,7 +146,8 @@ module.exports = function(app) {
   router.post('/forgot', postForgot);
   router.get('/reset-password', getReset);
   router.post('/reset-password', postReset);
-  //router.get('/email-signup', getEmailSignup);
+  // Disable email signup
+  // router.get('/email-signup', getEmailSignup);
   router.get('/email-signin', getEmailSignin);
   router.get(
     '/toggle-lockdown-mode',
@@ -234,6 +235,7 @@ module.exports = function(app) {
     });
   }
 
+  /* Comment this out as Email Signup is currently disabled
   function getEmailSignup(req, res) {
     if (req.user) {
       return res.redirect('/');
@@ -242,6 +244,7 @@ module.exports = function(app) {
       title: 'Sign up for Free Code Camp using your Email Address'
     });
   }
+  */
 
   function getAccount(req, res) {
     const { username } = req.user;

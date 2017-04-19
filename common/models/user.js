@@ -1,5 +1,5 @@
 import { Observable } from 'rx';
-import uuid from 'node-uuid';
+// import uuid from 'node-uuid';
 import moment from 'moment';
 import dedent from 'dedent';
 import debugFactory from 'debug';
@@ -87,8 +87,10 @@ module.exports = function(User) {
     ctx.res.redirect('/email-signin');
   });
 
-  User.beforeRemote('create', function({ req, res }, _, next) {
+  User.beforeRemote('create', function({ _, res }) {
+    // Redirect to email-signin
     return res.redirect('/email-signin');
+    /*
     req.body.username = 'fcc' + uuid.v4().slice(0, 8);
     if (!req.body.email) {
       return next();
@@ -114,6 +116,7 @@ module.exports = function(User) {
         });
         return res.redirect('/email-signup');
       });
+    */
   });
 
   User.on('resetPasswordRequest', function(info) {
