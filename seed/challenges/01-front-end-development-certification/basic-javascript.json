@@ -52,7 +52,7 @@
         "// 举例",
         "var ourName;",
         "",
-        "// Define myName below this line",
+        "// 请在这条注释以下定义 myName 变量",
         ""
       ],
       "tail": [
@@ -83,7 +83,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var a;",
         "var b = 2;",
         "",
@@ -145,12 +145,12 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Initialize these three variables",
+        "// 初始化变量",
         "var a;",
         "var b;",
         "var c;",
         "",
-        "// Do not change code below this line",
+        "// 请只修改这条注释以上的代码",
         "",
         "a = a + 1;",
         "b = b + 5;",
@@ -187,12 +187,12 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Declarations",
+        "// 初始化变量",
         "var StUdLyCapVaR;",
         "var properCamelCase;",
         "var TitleCaseOver;",
         "",
-        "// Assignments",
+        "// 给变量赋值",
         "STUDLYCAPVAR = 10;",
         "PRoperCAmelCAse = \"A String\";",
         "tITLEcASEoVER = 9000;"
@@ -764,7 +764,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "var myStr; // Change this line",
+        "var myStr; // 请修改这一行",
         "",
         ""
       ],
@@ -831,7 +831,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "var myStr; // Change this line",
+        "var myStr; // 请修改这一行",
         "",
         ""
       ],
@@ -1044,7 +1044,7 @@
         "",
         "firstNameLength = firstName.length;",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var lastNameLength = 0;",
         "var lastName = \"Lovelace\";",
         "",
@@ -1087,7 +1087,7 @@
         "",
         "firstLetterOfFirstName = firstName[0];",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var firstLetterOfLastName = \"\";",
         "var lastName = \"Lovelace\";",
         "",
@@ -1123,7 +1123,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myStr = \"Jello World\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1160,7 +1160,7 @@
         "var firstName = \"Ada\";",
         "var secondLetterOfFirstName = firstName[1];",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var lastName = \"Lovelace\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1196,7 +1196,7 @@
         "var firstName = \"Ada\";",
         "var lastLetterOfFirstName = firstName[firstName.length - 1];",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var lastName = \"Lovelace\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1232,7 +1232,7 @@
         "var firstName = \"Ada\";",
         "var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var lastName = \"Lovelace\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1267,10 +1267,10 @@
       "challengeSeed": [
         "function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {",
         "  var result = \"\";",
-        "  // Your code below this line",
+        "  // 请把你的代码写在这条注释以下",
         "  ",
         "",
-        "  // Your code above this line",
+        "  // 请把你的代码写在这条注释以上",
         "  return result;",
         "}",
         "",
@@ -1366,9 +1366,9 @@
       "challengeSeed": [
         "// 举例",
         "var ourArray = [1,2,3];",
-        "var ourData = ourArray[0]; // equals 1",
+        "var ourData = ourArray[0]; // ourData 的值为 1",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [1,2,3];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -1399,9 +1399,9 @@
       "challengeSeed": [
         "// 举例",
         "var ourArray = [1,2,3];",
-        "ourArray[1] = 3; // ourArray now equals [1,3,3].",
+        "ourArray[1] = 3; // ourArray 的值为 [1,3,3].",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [1,2,3];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -1433,7 +1433,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1467,9 +1467,9 @@
         "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.push([\"happy\", \"joy\"]); ",
-        "// ourArray now equals [\"Stimpson\", \"J\", \"cat\", [\"happy\", \"joy\"]]",
+        "// 经过 push 操作后，ourArray 的值为 [\"Stimpson\", \"J\", \"cat\", [\"happy\", \"joy\"]]",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [[\"John\", 23], [\"cat\", 2]];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -1503,9 +1503,9 @@
         "// 举例",
         "var ourArray = [1,2,3];",
         "var removedFromOurArray = ourArray.pop(); ",
-        "// removedFromOurArray now equals 3, and ourArray now equals [1,2]",
+        "// 经过 pop 操作之后，removedFromOurArray 的值为 3, ourArray 的值为 [1,2]",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [[\"John\", 23], [\"cat\", 2]];",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1539,9 +1539,9 @@
         "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", [\"cat\"]];",
         "removedFromOurArray = ourArray.shift();",
-        "// removedFromOurArray now equals \"Stimpson\" and ourArray now equals [\"J\", [\"cat\"]].",
+        "// 经过 shift 操作后，removedFromOurArray 的值为 \"Stimpson\"，ourArray 的值为 [\"J\", [\"cat\"]].",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [[\"John\", 23], [\"dog\", 3]];",
         "",
         "// 请只修改这条注释以下的代码",
@@ -1576,9 +1576,9 @@
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
         "ourArray.shift(); // ourArray now equals [\"J\", \"cat\"]",
         "ourArray.unshift(\"Happy\"); ",
-        "// ourArray now equals [\"Happy\", \"J\", \"cat\"]",
+        "// 经过 unshift 操作后，ourArray 的值为 [\"Happy\", \"J\", \"cat\"]",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [[\"John\", 23], [\"dog\", 3]];",
         "myArray.shift();",
         "",
@@ -1760,7 +1760,7 @@
         "function ourFunction(a, b) {",
         "  console.log(a - b);",
         "}",
-        "ourFunction(10, 5); // Outputs 5",
+        "ourFunction(10, 5); // 输出 5",
         "",
         "// 请把你的代码写在这条注释以下",
         "",
@@ -1821,15 +1821,15 @@
         "capture();"
       ],
       "challengeSeed": [
-        "// Declare your variable here",
+        "// 请在这里定义变量",
         "",
         "",
         "function fun1() {",
-        "  // Assign 5 to oopsGlobal Here",
+        "  // 请在这里把 5 赋值给 oopsGlobal",
         "  ",
         "}",
         "",
-        "// 请只修改这条注释以下的代码",
+        "// 请只修改这条注释以上的代码",
         "function fun2() {",
         "  var output = \"\";",
         "  if (typeof myGlobal != \"undefined\") {",
@@ -1902,11 +1902,11 @@
         "}",
         "myFunction();",
         "",
-        "// run and check the console ",
-        "// myVar is not defined outside of myFunction",
+        "// 请先运行这段代码，并在左边的输出区域或浏览器的控制台中查看输出",
+        "// 由于 myVar 在 myFunction 内外均没有定义，因此才会有报错",
         "console.log(myVar);",
         "",
-        "// now remove the console log line to pass the test",
+        "// 现在，在 myFunction 中定义 myVar，并删掉 myFunction 外面的 console.log 那一行",
         ""
       ],
       "tail": [
@@ -1936,7 +1936,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var outerWear = \"T-Shirt\";",
         "",
         "function myFunction() {",
@@ -2020,7 +2020,7 @@
         "",
         "changed = change(10);",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var processed = 0;",
         "",
         "function process(num) {",
@@ -2076,17 +2076,17 @@
       ],
       "challengeSeed": [
         "function queue(arr, item) {",
-        "  // Your code here",
+        "  // 请把你的代码写在这这里",
         "  ",
-        "  return item;  // Change this line",
+        "  return item;  // 请修改这一行",
         "}",
         "",
-        "// Test Setup",
+        "// 初始化测试数据",
         "var testArr = [1,2,3,4,5];",
         "",
-        "// Display Code",
+        "// 控制台输出",
         "console.log(\"Before: \" + JSON.stringify(testArr));",
-        "console.log(queue(testArr, 6)); // Modify this line to test",
+        "console.log(queue(testArr, 6)); // 你可以修改这一行来测试你的代码",
         "console.log(\"After: \" + JSON.stringify(testArr));"
       ],
       "tail": [
@@ -2161,7 +2161,7 @@
         "  return \"No, it's false\";",
         "}",
         "",
-        "// Setup",
+        "// 定义 myFunction",
         "function myFunction(wasThatTrue) {",
         "",
         "  // 请把你的代码写在这条注释以下",
@@ -2172,7 +2172,7 @@
         "",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myFunction(true);"
       ],
       "solutions": [
@@ -2203,15 +2203,15 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 myTest",
         "function myTest(val) {",
-        "  if (val) { // Change this line",
+        "  if (val) { // 请修改这一行",
         "    return \"Equal\";",
         "  }",
         "  return \"Not Equal\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2239,15 +2239,15 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 myTest",
         "function myTest(val) {",
-        "  if (val) { // Change this line",
+        "  if (val) { // 请修改这一行",
         "    return \"Equal\";",
         "  }",
         "  return \"Not Equal\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2274,15 +2274,15 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 myTest",
         "function myTest(val) {",
-        "  if (val) { // Change this line",
+        "  if (val) { // 请修改这一行",
         "    return \"Not Equal\";",
         "  }",
         "  return \"Equal\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2311,7 +2311,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 myTest",
         "function myTest(val) {",
         "  // 请只修改这条注释以下的代码",
         "  ",
@@ -2324,7 +2324,7 @@
         "  return \"Equal\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2354,18 +2354,18 @@
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
         "function myTest(val) {",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Over 100\";",
         "  }",
         "  ",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Over 10\";",
         "  }",
         "",
         "  return \"10 or Under\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2398,18 +2398,18 @@
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
         "function myTest(val) {",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"20 or Over\";",
         "  }",
         "  ",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"10 or Over\";",
         "  }",
         "",
         "  return \"9 or Under\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2441,18 +2441,18 @@
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
         "function myTest(val) {",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Under 25\";",
         "  }",
         "  ",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Under 55\";",
         "  }",
         "",
         "  return \"55 or Over\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2483,18 +2483,18 @@
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
         "function myTest(val) {",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Smaller Than or Equal to 12\";",
         "  }",
         "  ",
-        "  if (val) {  // Change this line",
+        "  if (val) {  // 请修改这一行",
         "    return \"Smaller Than or Equal to 24\";",
         "  }",
         "",
         "  return \"25 or More\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);",
         ""
       ],
@@ -2541,7 +2541,7 @@
         "  return \"No\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(10);"
       ],
       "solutions": [
@@ -2591,7 +2591,7 @@
         "  return \"Inside\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(15);"
       ],
       "solutions": [
@@ -2641,7 +2641,7 @@
         "  return result;",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(4);",
         ""
       ],
@@ -2683,7 +2683,7 @@
         "  return \"Between 5 and 10\";",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(7);",
         ""
       ],
@@ -2729,7 +2729,7 @@
         "  }",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(7);"
       ],
       "solutions": [
@@ -2759,11 +2759,11 @@
         "  // 请只修改这条注释以下的代码",
         "  ",
         "  ",
-        "  return \"Change Me\";",
+        "  return \"修改这里\";",
         "  // 请只修改这条注释以上的代码",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(7);"
       ],
       "solutions": [
@@ -2802,11 +2802,11 @@
         "  // 请只修改这条注释以下的代码",
         "  ",
         "  ",
-        "  return \"Change Me\";",
+        "  return \"修改这里\";",
         "  // 请只修改这条注释以上的代码",
         "}",
         "",
-        "// Change these values to test",
+        "// 你可以修改这一行来测试你的代码",
         "golfScore(5, 4);"
       ],
       "solutions": [
@@ -2851,7 +2851,7 @@
         "  return answer;  ",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(1);",
         ""
       ],
@@ -2891,7 +2891,7 @@
         "  return answer;  ",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(1);",
         ""
       ],
@@ -2933,7 +2933,7 @@
         "  return answer;  ",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(1);",
         ""
       ],
@@ -2989,7 +2989,7 @@
         "  return answer;  ",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "myTest(7);",
         ""
       ],
@@ -3026,7 +3026,7 @@
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
         "function isLess(a, b) {",
-        "  // Fix this code",
+        "  // 请修改这部分代码",
         "  if (a < b) {",
         "    return true;",
         "  } else {",
@@ -3034,7 +3034,7 @@
         "  }",
         "}",
         "",
-        "// Change these values to test",
+        "// 你可以修改这一行来测试你的代码",
         "isLess(10, 15);"
       ],
       "tail": [
@@ -3065,7 +3065,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 abTest",
         "function abTest(a, b) {",
         "  // 请把你的代码写在这条注释以下",
         "  ",
@@ -3076,7 +3076,7 @@
         "  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));",
         "}",
         "",
-        "// Change values below to test your code",
+        "// 你可以修改这一行来测试你的代码",
         "abTest(2,2);"
       ],
       "tail": [
@@ -3115,7 +3115,7 @@
         "  // 请把你的代码写在这条注释以下",
         "  ",
         "  ",
-        "  return \"Change Me\";",
+        "  return \"修改这里\";",
         "  // 请把你的代码写在这条注释以上",
         "}",
         "",
@@ -3197,7 +3197,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testObj = {",
         "  \"hat\": \"ballcap\",",
         "  \"shirt\": \"jersey\",",
@@ -3206,8 +3206,8 @@
         "",
         "// 请只修改这条注释以下的代码",
         "",
-        "var hatValue = testObj;      // 修改这一行",
-        "var shirtValue = testObj;    // 修改这一行"
+        "var hatValue = testObj;      // 请修改这一行",
+        "var shirtValue = testObj;    // 请修改这一行"
       ],
       "tail": [
         "(function(a,b) { return \"hatValue = '\" + a + \"', shirtValue = '\" + b + \"'\"; })(hatValue,shirtValue);"
@@ -3238,7 +3238,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testObj = {",
         "  \"an entree\": \"hamburger\",",
         "  \"my side\": \"veggies\",",
@@ -3247,8 +3247,8 @@
         "",
         "// 请只修改这条注释以下的代码",
         "",
-        "var entreeValue = testObj;   // 修改这一行",
-        "var drinkValue = testObj;    // 修改这一行"
+        "var entreeValue = testObj;   // 请修改这一行",
+        "var drinkValue = testObj;    // 请修改这一行"
       ],
       "tail": [
         "(function(a,b) { return \"entreeValue = '\" + a + \"', drinkValue = '\" + b + \"'\"; })(entreeValue,drinkValue);"
@@ -3281,7 +3281,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testObj = {",
         "  12: \"Namath\",",
         "  16: \"Montana\",",
@@ -3332,7 +3332,7 @@
         "",
         "ourDog.name = \"Happy Camper\";",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myDog = {",
         "  \"name\": \"Coder\",",
         "  \"legs\": 4,",
@@ -3380,7 +3380,7 @@
         "",
         "ourDog.bark = \"bow-wow\";",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myDog = {",
         "  \"name\": \"Happy Coder\",",
         "  \"legs\": 4,",
@@ -3425,7 +3425,7 @@
         "",
         "delete ourDog.bark;",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myDog = {",
         "  \"name\": \"Happy Coder\",",
         "  \"legs\": 4,",
@@ -3463,7 +3463,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 定义 phoneticLookup",
         "function phoneticLookup(val) {",
         "  var result = \"\";",
         "",
@@ -3492,7 +3492,7 @@
         "  return result;",
         "}",
         "",
-        "// Change this value to test",
+        "// 你可以修改这一行来测试你的代码",
         "phoneticLookup(\"charlie\");"
       ],
       "solutions": [
@@ -3524,7 +3524,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myObj = {",
         "  gift: \"pony\",",
         "  pet: \"kitten\",",
@@ -3532,12 +3532,12 @@
         "};",
         "",
         "function checkObj(checkProp) {",
-        "  // Your Code Here",
+        "  // 请把你的代码写在这条注释以下",
         "  ",
-        "  return \"Change Me!\";",
+        "  return \"修改这里\";",
         "}",
         "",
-        "// Test your code by modifying these values",
+        "// 你可以修改这一行来测试你的代码",
         "checkObj(\"gift\");"
       ],
       "tail": [
@@ -3579,7 +3579,7 @@
         "      \"LP\" ],",
         "    \"gold\": true",
         "  }",
-        "  // Add record here",
+        "  // 请在这里添加专辑",
         "];",
         ""
       ],
@@ -3615,7 +3615,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myStorage = {",
         "  \"car\": {",
         "    \"inside\": {",
@@ -3663,7 +3663,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myPlants = [",
         "  { ",
         "    type: \"flowers\",",
@@ -3685,7 +3685,7 @@
         "",
         "// 请只修改这条注释以下的代码",
         "",
-        "var secondTree = \"\"; // Change this line",
+        "var secondTree = \"\"; // 请修改这一行",
         ""
       ],
       "tail": [
@@ -3720,7 +3720,7 @@
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var collection = {",
         "    2548: {",
         "      album: \"Slippery When Wet\",",
@@ -3746,7 +3746,7 @@
         "      album: \"ABBA Gold\"",
         "    }",
         "};",
-        "// Keep a copy of the collection for tests",
+        "// 深拷贝 collection，用于测试",
         "var collectionCopy = JSON.parse(JSON.stringify(collection));",
         "",
         "// 请只修改这条注释以下的代码",
@@ -3756,7 +3756,7 @@
         "  return collection;",
         "}",
         "",
-        "// Alter values below to test your code",
+        "// 你可以修改这一行来测试你的代码",
         "update(5439, \"artist\", \"ABBA\");",
         ""
       ],
@@ -3801,7 +3801,7 @@
         "  ourArray.push(i);",
         "}",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -3842,7 +3842,7 @@
         "  ourArray.push(i);",
         "}",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -3883,7 +3883,7 @@
         "  ourArray.push(i);",
         "}",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -3923,7 +3923,7 @@
         "  ourTotal += ourArr[i];",
         "}",
         "",
-        "// Setup",
+        "// 初始化变量",
         "var myArr = [ 2, 3, 4, 5, 6];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -3965,7 +3965,7 @@
         "  return product;",
         "}",
         "",
-        "// Modify values below to test your code",
+        "// 你可以修改这一行来测试你的代码",
         "multiplyAll([[1,2],[3,4],[5,6,7]]);",
         ""
       ],
@@ -3993,7 +3993,7 @@
         "通过一个 <code>while</code> 循环，把从 0 到 4 的值添加到 <code>myArray</code> 中。"
       ],
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var myArray = [];",
         "",
         "// 请把你的代码写在这条注释以下",
@@ -4027,7 +4027,7 @@
       ],
       "releasedOn": "January 8, 2016",
       "challengeSeed": [
-        "//Setup",
+        "//初始化变量",
         "var contacts = [",
         "    {",
         "        \"firstName\": \"Akira\",",
@@ -4062,7 +4062,7 @@
         "// 请把你的代码写在这条注释以上",
         "}",
         "",
-        "// Change these values to test your function",
+        "// 你可以修改这一行来测试你的代码",
         "lookUp(\"Akira\", \"likes\");"
       ],
       "solutions": [
@@ -4179,7 +4179,7 @@
         "",
         "}",
         "",
-        "// Change these values to test your function",
+        "// 你可以修改这一行来测试你的代码",
         "var myRandom = randomRange(5, 15);"
       ],
       "tail": [
@@ -4230,7 +4230,7 @@
         ""
       ],
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testString = \"Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.\";",
         "",
         "// 举例",
@@ -4244,7 +4244,7 @@
         "",
         "// 请只修改这条注释以上的代码",
         "",
-        "// This code counts the matches of expression in testString",
+        "// 用 andCount 存储 testString 中匹配到 expression 的次数",
         "var andCount = testString.match(expression).length;",
         ""
       ],
@@ -4277,7 +4277,7 @@
         ""
       ],
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testString = \"There are 3 cats but 4 dogs.\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -4286,7 +4286,7 @@
         "",
         "// 请只修改这条注释以上的代码",
         "",
-        "// This code counts the matches of expression in testString",
+        "// 用 digitCount 存储 testString 中匹配到 expression 的次数",
         "var digitCount = testString.match(expression).length;"
       ],
       "tail": [
@@ -4317,7 +4317,7 @@
         ""
       ],
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testString = \"How many spaces are there in this sentence?\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -4326,7 +4326,7 @@
         "",
         "// 请只修改这条注释以上的代码",
         "",
-        "// This code counts the matches of expression in testString",
+        "// 用 spaceCount 存储 testString 中匹配到 expression 的次数",
         "var spaceCount = testString.match(expression).length;"
       ],
       "tail": [
@@ -4355,7 +4355,7 @@
         ""
       ],
       "challengeSeed": [
-        "// Setup",
+        "// 初始化变量",
         "var testString = \"How many non-space characters are there in this sentence?\";",
         "",
         "// 请只修改这条注释以下的代码",
@@ -4364,7 +4364,7 @@
         "",
         "// 请只修改这条注释以上的代码",
         "",
-        "// This code counts the matches of expression in testString",
+        "// 用 nonSpaceCount 存储 testString 中匹配到 expression 的次数",
         "var nonSpaceCount = testString.match(expression).length;"
       ],
       "tail": [
