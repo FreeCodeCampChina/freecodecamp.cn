@@ -16,7 +16,7 @@
       ],
       "challengeSeed": [
         "function telephoneCheck(str) {",
-        "  // Good luck!",
+        "  // 祝你好运",
         "  return true;",
         "}",
         "",
@@ -109,7 +109,6 @@
       "challengeSeed": [
         "function checkCashRegister(price, cash, cid) {",
         "  var change;",
-        "  // Here is your change, ma'am.",
         "  return change;",
         "}",
         "",
@@ -154,11 +153,11 @@
       ],
       "challengeSeed": [
         "function updateInventory(arr1, arr2) {",
-        "    // All inventory must be accounted for or you're fired!",
+        "    // 请保证你的代码考虑到所有情况",
         "    return arr1;",
         "}",
         "",
-        "// Example inventory lists",
+        "// 仓库库存示例",
         "var curInv = [",
         "    [21, \"Bowling Ball\"],",
         "    [2, \"Dirty Sock\"],",
