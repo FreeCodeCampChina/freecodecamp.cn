@@ -2076,7 +2076,7 @@
       ],
       "challengeSeed": [
         "function queue(arr, item) {",
-        "  // 请把你的代码写在这这里",
+        "  // 请把你的代码写在这里",
         "  ",
         "  return item;  // 请修改这一行",
         "}",
