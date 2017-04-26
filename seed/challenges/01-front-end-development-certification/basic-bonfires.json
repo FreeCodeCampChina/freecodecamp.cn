@@ -599,7 +599,7 @@
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
-        "function rot13(str) {",
+        "function rot13(str) { // LBH QVQ VG!",
         "  // 请把你的代码写在这里",
         "  return str;",
         "}",
