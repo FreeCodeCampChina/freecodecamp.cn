@@ -50,6 +50,7 @@
       ],
       "challengeSeed": [
         "function reverseString(str) {",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
@@ -86,6 +87,7 @@
       ],
       "challengeSeed": [
         "function factorialize(num) {",
+        "  // 请把你的代码写在这里",
         "  return num;",
         "}",
         "",
@@ -112,6 +114,7 @@
       "id": "aaa48de84e1ecc7c742e1124",
       "title": "Check for Palindromes",
       "description": [
+        "检查回文字符串",
         "如果给定的字符串是回文，返回<code>true</code>，反之，返回<code>false</code>。",
         "如果一个字符串忽略标点符号、大小写和空格，正着读和反着读一模一样，那么这个字符串就是<dfn>palindrome</dfn>(回文)。",
         "<strong>注意</strong>你需要去掉字符串多余的标点符号和空格，然后把字符串转化成小写来验证此字符串是否为回文。",
@@ -120,7 +123,7 @@
       ],
       "challengeSeed": [
         "function palindrome(str) {",
-        "  // Good luck!",
+        "  // 请把你的代码写在这里",
         "  return true;",
         "}",
         "",
@@ -156,12 +159,14 @@
       "id": "a26cbbe9ad8655a977e1ceb5",
       "title": "Find the Longest Word in a String",
       "description": [
-        "找到提供的句子中最长的单词，并计算它的长度。",
+        "找出最长单词",
+        "在句子中找出最长的单词，并返回它的长度。",
         "函数的返回值应该是一个数字。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function findLongestWord(str) {",
+        "  // 请把你的代码写在这里",
         "  return str.length;",
         "}",
         "",
@@ -190,12 +195,14 @@
       "id": "ab6137d4e35944e21037b769",
       "title": "Title Case a Sentence",
       "description": [
+        "句中单词首字母大写",
         "确保字符串的每个单词首字母都大写，其余部分小写。",
         "像'the'和'of'这样的连接符同理。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function titleCase(str) {",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
@@ -221,13 +228,14 @@
       "id": "a789b3483989747d63b0e427",
       "title": "Return Largest Numbers in Arrays",
       "description": [
+        "找出多个数组中的最大数",
         "右边大数组中包含了4个小数组，分别找到每个小数组中的最大值，然后把它们串联起来，形成一个新数组。",
         "提示：你可以用for循环来迭代数组，并通过<code>arr[i]</code>的方式来访问数组的每个元素。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function largestOfFour(arr) {",
-        "  // You can do this!",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -252,14 +260,14 @@
       "id": "acda2fb1324d9b0fa741e6b5",
       "title": "Confirm the Ending",
       "description": [
-        "检查一个字符串(<code>str</code>)是否以指定的字符串(<code>target</code>)结尾。",
+        "检查字符串结尾",
+        "判断一个字符串(<code>str</code>)是否以指定的字符串(<code>target</code>)结尾。",
         "如果是，返回true;如果不是，返回false。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function confirmEnding(str, target) {",
-        "  // \"Never give up and good luck will find you.\"",
-        "  // -- Falcor",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
@@ -288,13 +296,14 @@
       "id": "afcc8d540bea9ea2669306b6",
       "title": "Repeat a string repeat a string",
       "description": [
-        "重要的事情说3遍！",
+        "重复输出字符串",
+        "（重要的事情说3遍）",
         "重复一个指定的字符串 <code>num</code>次，如果<code>num</code>是一个负数则返回一个空字符串。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function repeat(str, num) {",
-        "  // repeat after me",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
@@ -322,8 +331,8 @@
       "id": "ac6993d51946422351508a41",
       "title": "Truncate a string",
       "description": [
-        "用瑞兹来截断对面的退路!",
-        "截断一个字符串！",
+        "截断字符串",
+        "（用瑞兹来截断对面的退路）",
         "如果字符串的长度比指定的参数<code>num</code>长，则把多余的部分用<code>...</code>来表示。",
         "切记，插入到字符串尾部的三个点号也会计入字符串的长度。",
         "但是，如果指定的参数<code>num</code>小于或等于3，则添加的三个点号不会计入字符串的长度。",
@@ -331,7 +340,7 @@
       ],
       "challengeSeed": [
         "function truncate(str, num) {",
-        "  // Clear out that junk in your trunk",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
@@ -359,7 +368,8 @@
       "id": "a9bd25c716030ec90084d8a1",
       "title": "Chunky Monkey",
       "description": [
-        "猴子吃香蕉可是掰成好几段来吃哦！",
+        "猴子吃香蕉, 分割数组",
+        "（猴子吃香蕉可是掰成好几段来吃哦）",
         "把一个数组<code>arr</code>按照指定的数组大小<code>size</code>分割成若干个数组块。",
         "例如:chunk([1,2,3,4],2)=[[1,2],[3,4]];",
         "chunk([1,2,3,4,5],2)=[[1,2],[3,4],[5]];",
@@ -367,7 +377,7 @@
       ],
       "challengeSeed": [
         "function chunk(arr, size) {",
-        "  // Break it up.",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -396,13 +406,13 @@
       "id": "ab31c21b530c0dafa9e241ee",
       "title": "Slasher Flick",
       "description": [
-        "打不死的小强！",
+        "截断数组",
         "返回一个数组被截断<code>n</code>个元素后还剩余的元素，截断从索引0开始。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function slasher(arr, howMany) {",
-        "  // it doesn't always pay to be first",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -431,7 +441,8 @@
       "id": "af2170cad53daa0770fabdea",
       "title": "Mutations",
       "description": [
-        "蛤蟆可以吃队友，也可以吃对手。",
+        "比较字符串",
+        "（蛤蟆可以吃队友，也可以吃对手）",
         "如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。",
         "举例，<code>[\"hello\", \"Hello\"]</code>应该返回true，因为在忽略大小写的情况下，第二个字符串的所有字符都可以在第一个字符串找到。",
         "<code>[\"hello\", \"hey\"]</code>应该返回false，因为字符串\"hello\"并不包含字符\"y\"。",
@@ -440,6 +451,7 @@
       ],
       "challengeSeed": [
         "function mutation(arr) {",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -469,14 +481,15 @@
       "id": "adf08ec01beb4f99fc7a68f2",
       "title": "Falsy Bouncer",
       "description": [
-        "真假美猴王！",
+        "过滤数组假值",
+        "（真假美猴王）",
         "删除数组中的所有假值。",
         "在JavaScript中，假值有<code>false</code>、<code>null</code>、<code>0</code>、<code>\"\"</code>、<code>undefined</code> 和 <code>NaN</code>。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function bouncer(arr) {",
-        "  // Don't show a false ID to this bouncer.",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -503,13 +516,14 @@
       "id": "a39963a4c10bc8b4d4f06d7e",
       "title": "Seek and Destroy",
       "description": [
+        "摧毁数组",
         "<strong>金克斯的迫击炮！</strong>",
         "实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值。",
         "当你完成不了挑战的时候，记得开大招'Read-Search-Ask'。"
       ],
       "challengeSeed": [
         "function destroyer(arr) {",
-        "  // Remove all the values",
+        "  // 请把你的代码写在这里",
         "  return arr;",
         "}",
         "",
@@ -537,6 +551,7 @@
       "id": "a24c1a4622e3c05097f71d67",
       "title": "Where do I belong",
       "description": [
+        "数组排序并找出元素索引",
         "<strong>我身在何处？</strong>",
         "先给数组排序，然后找到指定的值在数组的位置，最后返回位置对应的索引。",
         "举例：<code>where([1,2,3,4], 1.5)</code> 应该返回 <code>1</code>。因为<code>1.5</code>插入到数组<code>[1,2,3,4]</code>后变成<code>[1,1.5,2,3,4]</code>，而<code>1.5</code>对应的索引值就是<code>1</code>。",
@@ -545,7 +560,7 @@
       ],
       "challengeSeed": [
         "function where(arr, num) {",
-        "  // Find my place in this sorted array.",
+        "  // 请把你的代码写在这里",
         "  return num;",
         "}",
         "",
@@ -574,7 +589,8 @@
       "id": "56533eb9ac21ba0edf2244e2",
       "title": "Caesars Cipher",
       "description": [
-        "让上帝的归上帝，凯撒的归凯撒。",
+        "凯撒密码",
+        "（让上帝的归上帝，凯撒的归凯撒）",
         "下面我们来介绍风靡全球的凯撒密码<code>Caesar cipher</code>，又叫移位密码。",
         "移位密码也就是密码中的字母会按照指定的数量来做移位。",
         "一个常见的案例就是<a href=\"http://www.baike.com/wiki/ROT13&prd=so_1_doc\" target='_blank'>ROT13</a>密码，字母会移位13个位置。由'A' &harr; 'N', 'B' &harr;  'O'，以此类推。",
@@ -584,12 +600,11 @@
       ],
       "challengeSeed": [
         "function rot13(str) { // LBH QVQ VG!",
-        "  ",
+        "  // 请把你的代码写在这里",
         "  return str;",
         "}",
         "",
-        "// Change the inputs below to test",
-        "rot13(\"SERR PBQR PNZC\");"
+        "rot13(\"SERR PBQR PNZC\");  // 你可以修改这一行来测试你的代码"
       ],
       "tail": [
         ""
