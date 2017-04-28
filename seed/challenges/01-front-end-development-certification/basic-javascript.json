@@ -37,7 +37,7 @@
       "title": "Declare JavaScript Variables",
       "description": [
         "在计算机科学中, <code>data</code>(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的<dfn>data types</dfn>(数据类型)，它们是<code>undefined</code>（未定义）, <code>null</code>（空）, <code>boolean</code>（布尔型）, <code>string</code>（字符串）, <code>symbol</code>(符号), <code>number</code>（数字）, and <code>object</code>（对象）。",
-        "举个栗子, 计算机能够分辨不同的数字, 例如数字 <code>12</code>和 <code>strings</code>，<code>\"12\"</code>和<code>\"dog\"</code>, 或<code>\"123 cats\"</code>, 都是字母的集合。 计算机能够精确地操作数字， 但是对于字符串却无能为力。",
+        "举个例子, 计算机能够分辨不同的数字, 例如数字 <code>12</code>和 <code>strings</code>，<code>\"12\"</code>和<code>\"dog\"</code>, 或<code>\"123 cats\"</code>, 都是字母的集合。 计算机能够精确地操作数字， 但是对于字符串却无能为力。",
         "<code>Variables</code>（变量）允许计算机以一种动态的形式来存储和操作数据，通过操作指向数据的指针而不是数据本身来避免了内存泄露，以上的七种数据类型都可以存储到一个变量（variable）中。",
         "<code>Variables</code> 非常类似于你在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）与数学中的变量不同的是，计算机可以在不同的时间存储不同类型的变量。",
         "通过在变量的前面使用关键字<code>var</code>，我们告诉 JavaScript 来创建或者 <dfn>declare</dfn>（声明）一个变量,就像这样：",
