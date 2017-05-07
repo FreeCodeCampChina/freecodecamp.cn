@@ -281,7 +281,7 @@
         "JavaScript 使用这个 <code>*</code> 符号来让两个数字相乘。",
         "",
         "<strong>举例</strong>",
-        "<blockquote>myVar = 13 * 13; // assigned 169</blockquote>",
+        "<blockquote>myVar = 13 * 13; // 把 169 赋值给 myVar</blockquote>",
         "",
         "<h4>任务</h4>",
         "改变数值 <code>0</code> 来让变量 product 的值等于 <code>80</code>。"
@@ -312,7 +312,7 @@
         "JavaScript 中使用 <code>/</code> 符号做除法运算。",
         "",
         "<strong>举例</strong>",
-        "<blockquote>myVar = 16 / 2; // assigned 8</blockquote>",
+        "<blockquote>myVar = 16 / 2; // 把 8 赋值给 myVar</blockquote>",
         "",
         "<h4>任务</h4>",
         "改变数值<code>0</code>来让变量 <code>quotient</code> 的值等于<code>2</code>。"
@@ -699,8 +699,7 @@
         "    return fahrenheit;",
         "}",
         "",
-        "// Change the inputs below to test your code",
-        "convert(30);"
+        "convert(30);  // 你可以修改这一行来测试你的代码"
       ],
       "solutions": [
         "function convert(celsius) {\n  var fahrenheit = celsius * 9/5 + 32;\n  if ( typeof fahrenheit !== 'undefined' ) {\n  return fahrenheit;\n  } else {\n    return 'fahrenheit not defined';\n  }\n}"
@@ -1274,8 +1273,7 @@
         "  return result;",
         "}",
         "",
-        "// Change the words here to test your function",
-        "wordBlanks(\"dog\", \"big\", \"ran\", \"quickly\");"
+        "wordBlanks(\"dog\", \"big\", \"ran\", \"quickly\");  // 你可以修改这一行来测试你的代码"
       ],
       "tail": [
         "var test1 = wordBlanks(\"dog\", \"big\", \"ran\", \"quickly\");",
@@ -1574,7 +1572,7 @@
       "challengeSeed": [
         "// 举例",
         "var ourArray = [\"Stimpson\", \"J\", \"cat\"];",
-        "ourArray.shift(); // ourArray now equals [\"J\", \"cat\"]",
+        "ourArray.shift(); // 经过 shift 操作后，ourArray 的值为 [\"J\", \"cat\"]",
         "ourArray.unshift(\"Happy\"); ",
         "// 经过 unshift 操作后，ourArray 的值为 [\"Happy\", \"J\", \"cat\"]",
         "",
@@ -2147,7 +2145,7 @@
         "<strong>伪代码</strong>",
         "<blockquote>if(<i>条件为真</i>){<br>  <i>语句被执行</i><br>}</blockquote>",
         "<strong>示例</strong>",
-        "<blockquote>function test (myCondition) {<br>  if (myCondition) {<br>     return \"It was true\";<br>  }<br>  return \"It was false\";<br>}<br>test(true);  // returns \"It was true\"<br>test(false); // returns \"It was false\"</blockquote>",
+        "<blockquote>function test (myCondition) {<br>  if (myCondition) {<br>     return \"It was true\";<br>  }<br>  return \"It was false\";<br>}<br>test(true);  // 返回 \"It was true\"<br>test(false); // 返回 \"It was false\"</blockquote>",
         "当 <code>test</code> 被调用，并且传递进来的参数值为 <code>true</code>，<code>if</code> 语句会计算 <code>myCondition</code> 的结果，看它是真还是假。如果条件为 <code>true</code>，函数会返回 <code>\"It was true\"</code>。当 <code>test</code> 被调用，并且传递进来的参数值为 <code>false</code>，<code>myCondition</code> <em>不</em> 为 <code>true</code>，并且不执行大括号后面的语句，函数返回 <code>\"It was false\"</code>。",
         "<h4>任务</h4>",
         "在函数内部创建一个 <code>if</code> 语句，如果该参数 <code>wasThatTrue</code> 值为 <code>true</code>，返回 <code>\"That was true\"</code>，否则，并返回 <code>\"That was false\"</code>。"
@@ -2230,12 +2228,12 @@
       "id": "56533eb9ac21ba0edf2244d1",
       "title": "Comparison with the Strict Equality Operator",
       "description": [
-        "全等（<code>===</code>）是相对于相等操作符（<code>==</code>）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 <code>数据类型</code>。",
+        "严格相等运算符（<code>===</code>）是相对于相等操作符（<code>==</code>）的一种操作符。与相等操作符不同的是，它会同时比较元素的值和 <code>数据类型</code>。",
         "<strong>举个例子</strong>",
         "<blockquote>3 === 3   // true<br>3 === '3' // false</blockquote>",
         "<code>3</code> 是一个 <code>数字</code> 类型的，而<code>'3'</code> 是一个 <code>字符</code> 类型的，所以3不全等于'3'。",
         "<h4>任务</h4>",
-        "在 <code>if</code> 语句值使用全等运算符，这样当 <code>val</code> 严格等于7的时候，函数会返回\"Equal\"。"
+        "在 <code>if</code> 语句值使用严格相等运算符，这样当 <code>val</code> 严格等于7的时候，函数会返回\"Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2303,11 +2301,11 @@
       "id": "56533eb9ac21ba0edf2244d3",
       "title": "Comparison with the Strict Inequality Operator",
       "description": [
-        "不全等运算符（<code>!==</code>）与全等运算符是相反的。这意味着“不全等”并返回 <code>false</code> 的地方，用全等运算会返回 <code>true</code>，<em>反之亦然</em>。全等运算符不会转换值的数据类型。",
+        "严格不相等运算符（<code>!==</code>）与全等运算符是相反的。这意味着严格不相等并返回 <code>false</code> 的地方，用严格相等运算符会返回 <code>true</code>，<em>反之亦然</em>。严格相等运算符不会转换值的数据类型。",
         "<strong>例如</strong>",
         "<blockquote>3 !== 3   // false<br>3 !== '3' // true<br>4 !== 3   // true</blockquote>",
         "<h4>任务</h4>",
-        "在 <code>if</code> 语句中，添加 <code>不全等运算符</code>，这样如果 <code>val</code> 不全等于 <code>17</code> 的时候，函数会返回 \"Not Equal\"。"
+        "在 <code>if</code> 语句中，添加严格不相等运算符 <code>!==</code>，这样如果 <code>val</code> 与 <code>17</code> 严格不相等的时候，函数会返回 \"Not Equal\"。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -2835,7 +2833,7 @@
         "如果你有非常多的选项需要选择，可以使用switch语句。根据不同的参数值会匹配上不同的case分支，语句会从第一个匹配的case分支开始执行，直到碰到break就结束。",
         "这是一个伪代码案例：",
         "<blockquote>switch (num) {<br>  case value1:<br>    statement1;<br>    break;<br>  case value2:<br>    statement2;<br>    break;<br>...<br>  case valueN:<br>    statementN;<br>    break;<br>}</blockquote>",
-        "测试<code>case</code> 值使用严格等于，break关键字告诉javascript停止执行语句。如果没有break关键字，下一个语句会继续执行。",
+        "测试<code>case</code> 值使用严格相等运算符进行比较，break关键字告诉javascript停止执行语句。如果没有break关键字，下一个语句会继续执行。",
         "<h4>任务</h4>",
         "写一个测试 <code>val</code>的switch语句，并且根据下面的条件来设置不同的<code>answer</code>：<br><code>1</code> - \"alpha\"<br><code>2</code> - \"beta\"<br><code>3</code> - \"gamma\"<br><code>4</code> - \"delta\""
       ],
@@ -3119,7 +3117,7 @@
         "  // 请把你的代码写在这条注释以上",
         "}",
         "",
-        "// Add/remove calls to test your function.",
+        "// 你可以在这里添加/删除 cc 方法的调用来测试结果",
         "// 提示: 左边只会显示最后一次执行的返回值",
         "cc(2); cc(3); cc(7); cc('K'); cc('A');"
       ],
