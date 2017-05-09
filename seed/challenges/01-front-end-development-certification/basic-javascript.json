@@ -1262,7 +1262,7 @@
         "通过使用提供的变量参数：名词<code>myNoun</code>、形容词<code>myAdjective</code>、动词<code>myVerb</code>、副词<code>myAdverb</code>，来创建一个新的句子 <code>result</code>。",
         "请注意，在英文中，句中的单词是必须用空格来分隔的",
         "举个例子，如果名词为 <code>\"dog\"</code>，形容词为 <code>\"big\"</code>，动词为 <code>\"run\"</code>，副词为<code>\"quickly\"</code>，那么函数返回值为 <code>\"dog big run quickly\"</code> 就是没问题的",
-        "此外，为了句子通顺，你可以在包含所有传入单词的前提下自己添加一些其他单词。对于上面的例子，函数返回值为 <code>\"That big brown dog surprisingly run just quickly\"</code> 也是没问题的"
+        "此外，为了句子通顺，你可以在包含所有传入单词的前提下自己添加一些其他单词。对于上面的例子，函数返回值为 <code>\"That big brown dog just run quickly\"</code> 也是没问题的"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
