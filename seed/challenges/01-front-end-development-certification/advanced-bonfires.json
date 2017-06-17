@@ -232,11 +232,11 @@
         "<strong>让日期区间更友好！</strong>",
         "把常见的日期格式如：<code>YYYY-MM-DD</code> 转换成一种更易读的格式。",
         "易读格式应该是用月份名称代替月份数字，用序数词代替数字来表示天 (<code>1st</code> 代替 <code>1</code>).",
-        "记住不要显示那些可以被推测出来的信息: 如果一个日期区间里结束日期与开始日期相差小于一年，则结束日期就不用写年份了。月份开始和结束日期如果在同一个月，则结束日期月份就不用写了。",
+        "记住不要显示那些可以被推测出来的信息: 如果一个日期区间里结束日期与开始日期相差小于一年，则结束日期就不用写年份了；在这种情况下，如果月份开始和结束日期如果在同一个月，则结束日期月份也不用写了。",
         "另外, 如果开始日期年份是当前年份，且结束日期与开始日期小于一年，则开始日期的年份也不用写。",
         "例如:",
         "包含当前年份和相同月份的时候，<code>makeFriendlyDates([\"2017-01-02\", \"2017-01-05\"])</code> 应该返回 <code>[\"January 2nd\",\"5th\"]</code>",
-        "不包含当前年份，<code>makeFriendlyDates([\"2003-08-15\", \"2009-09-21\"])</code> 应该返回 <code>[\"August 15th, 2003\", \"September 21st, 2009\"]</code>.",
+        "不包含当前年份，<code>makeFriendlyDates([\"2003-08-15\", \"2009-09-21\"])</code> 应该返回 <code>[\"August 15th, 2003\", \"September 21st, 2009\"]</code>。",
         "请考虑清楚所有可能出现的情况，包括传入的日期区间是否合理。对于不合理的日期区间，直接返回 <code>undefined</code> 即可",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
@@ -260,7 +260,7 @@
         "assert.deepEqual(makeFriendlyDates(['2008-10-31', '2009-10-31']), ['October 31st, 2008', 'October 31st, 2009'], 'message: <code>makeFriendlyDates([\"2008-10-31\", \"2009-10-31\"])</code> 应该返回 <code>[\"October 31st, 2008\",\"October 31st, 2009\"]</code>.');",
         "assert.deepEqual(makeFriendlyDates(['2004-11-17', '2005-12-25']), ['November 17th, 2004', 'December 25th, 2005'], 'message: <code>makeFriendlyDates([\"2004-11-17\", \"2005-12-25\"])</code> 应该返回 <code>[\"November 17th, 2004\",\"December 25th, 2005\"]</code>.');",
         "assert.deepEqual(makeFriendlyDates(['2001-12-20', '2001-12-20']), ['December 20th, 2001'], 'message: <code>makeFriendlyDates([\"2001-12-20\", \"2001-12-20\"])</code> 应该返回 <code>[\"December 20th, 2001\"]</code>.');",
-        "assert.isNotArray(makeFriendlyDates(['2002-12-20', '2001-12-20']), 'message: <code>makeFriendlyDates([\"2001-12-20\", \"2001-12-20\"])</code> 不应该返回数组');"
+        "assert.isNotArray(makeFriendlyDates(['2002-12-20', '2001-12-20']), 'message: <code>makeFriendlyDates([\"2002-12-20\", \"2001-12-20\"])</code> 不应该返回数组');"
       ],
       "type": "bonfire",
       "MDNlinks": [
