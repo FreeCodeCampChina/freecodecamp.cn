@@ -180,7 +180,7 @@
         "为了完成这个任务，我们在 <code>构造函数</code> 中，使用我们熟悉的 <code>var</code> 关键字去创建变量，来替代我们使用 <code>this</code> 创建 <code>属性</code> 。",
         "比如，我们想记录我们的car行驶的 <code>speed</code> ，但是我们希望外面的代码对 <code>speed</code> 的修改只能是加速或减速（而不是变成字符串、直接赋值成某个速度等其他操作），那么如何达到这类操作的目的呢？",
         "编辑器中的 <code>构造函数</code> 展示了如何实现这种控制模式。",
-        "该你自己试试了！修改 <code>Bike</code> 的 <code>构造函数</code> ，使它有一个名为 <code>gear</code> 的 <code>私有属性</code> ，还有两个公有方法，叫做 <code>getGear</code> 和 <code>setGear</code> get是获得，set是设置的意思。这两个方法用来获得和设置 <code>gear</code> 的值。"
+        "该你自己试试了！修改 <code>Bike</code> 的 <code>构造函数</code> ，使它有一个名为 <code>gear</code> 的 <code>私有属性</code> ，还有两个公有方法，叫做 <code>getGear</code> 和 <code>setGear</code>。其中 get 是获得、set 是设置的意思。这两个方法用来获得和设置 <code>gear</code> 的值。"
       ],
       "challengeSeed": [
         "var Car = function() {",
