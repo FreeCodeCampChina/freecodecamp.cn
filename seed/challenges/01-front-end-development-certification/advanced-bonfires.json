@@ -60,6 +60,81 @@
       "challengeType": 5
     },
     {
+      "id": "56533eb9ac21ba0edf2244cf",
+      "title": "Record Collection",
+      "description": [
+        "右边有一个JSON对象，代表多张音乐专辑。每一张专辑都有一个唯一的 <code>id</code> 标识以及其他有多种属性。但有些专辑可能会少一些属性。",
+        "请写一个函数，这个函数接收三个与专辑相关的参数，分别是 <code>id</code>（比如 <code>2548</code>）、<code>prop</code>（比如 <code>\"artist\"</code>）以及 <code>value</code>（比如 <code>\"Addicted to Love\"</code>）。这些参数都是用来修改专辑中数据的。",
+        "如果 <code>prop</code> 不是 <code>\"tracks\"</code> 且 <code>value</code> 不为空字符串 <code>\"\"</code>，则需要将这张专辑的对应属性添加或更新成这个 <code>value</code>。",
+        "注意：<code>update</code> 函数返回的永远是整个 JSON 对象。",
+        "以下为处理缺失信息的方法：",
+        "如果 <code>prop</code> 是 <code>\"tracks\"</code>，但这个专辑中没有 <code>\"tracks\"</code> 属性，则需要先把这个属性的值设置为空数组。",
+        "如果 <code>prop</code> 是 <code>\"tracks\"</code> 且 <code>value</code> 不为空字符串 <code>\"\"</code>，那么就把 <code>value</code> 添加到当前专辑 <code>tracks</code> 数组的末尾。",
+        "如果 <code>value</code> 是空字符串 <code>\"\"</code>，则需要把对应的 <code>prop</code> 属性从专辑中删除。",
+        "<strong>提示</strong>",
+        "使用中括号操作符来 <a href=\"accessing-objects-properties-with-variables\" target=\"_blank\">访问对象的变量属性</a>。",
+        "可以先去 MDN 了解一下数组的 <code>push</code> 方法。"
+      ],
+      "releasedOn": "January 1, 2016",
+      "challengeSeed": [
+        "// 初始化变量",
+        "var collection = {",
+        "    2548: {",
+        "      album: \"Slippery When Wet\",",
+        "      artist: \"Bon Jovi\",",
+        "      tracks: [ ",
+        "        \"Let It Rock\", ",
+        "        \"You Give Love a Bad Name\" ",
+        "      ]",
+        "    },",
+        "    2468: {",
+        "      album: \"1999\",",
+        "      artist: \"Prince\",",
+        "      tracks: [ ",
+        "        \"1999\", ",
+        "        \"Little Red Corvette\" ",
+        "      ]",
+        "    },",
+        "    1245: {",
+        "      artist: \"Robert Palmer\",",
+        "      tracks: [ ]",
+        "    },",
+        "    5439: {",
+        "      album: \"ABBA Gold\"",
+        "    }",
+        "};",
+        "// 深拷贝 collection，用于测试",
+        "var collectionCopy = JSON.parse(JSON.stringify(collection));",
+        "",
+        "// 请只修改这条注释以下的代码",
+        "function update(id, prop, value) {",
+        "",
+        "",
+        "  return collection;",
+        "}",
+        "",
+        "// 你可以修改这一行来测试你的代码",
+        "update(5439, \"artist\", \"ABBA\");",
+        ""
+      ],
+      "tail": [
+        ";(function(x) { return \"collection = \\n\" + JSON.stringify(x, '\\n', 2); })(collection);"
+      ],
+      "solutions": [
+        "var collection = {\n    2548: {\n      album: \"Slippery When Wet\",\n      artist: \"Bon Jovi\",\n      tracks: [ \n        \"Let It Rock\", \n        \"You Give Love a Bad Name\" \n      ]\n    },\n    2468: {\n      album: \"1999\",\n      artist: \"Prince\",\n      tracks: [ \n        \"1999\", \n        \"Little Red Corvette\" \n      ]\n    },\n    1245: {\n      artist: \"Robert Palmer\",\n      tracks: [ ]\n    },\n    5439: {\n      album: \"ABBA Gold\"\n    }\n};\n// Keep a copy of the collection for tests\nvar collectionCopy = JSON.parse(JSON.stringify(collection));\n\n// Only change code below this line\nfunction update(id, prop, value) {\n  if(value !== \"\") {\n    if(prop === \"tracks\") {\n      collection[id][prop].push(value);\n    } else {\n      collection[id][prop] = value;\n    }\n  } else {\n    delete collection[id][prop];\n  }\n\n  return collection;\n}"
+      ],
+      "tests": [
+        "collection = collectionCopy; assert(update(5439, \"artist\", \"ABBA\")[5439][\"artist\"] === \"ABBA\", 'message: <code>update(5439, \"artist\", \"ABBA\")</code> 之后, <code>artist</code> 应该为 <code>\"ABBA\"</code>');",
+        "assert(update(5439, \"tracks\", \"Take a Chance on Me\")[5439][\"tracks\"].pop() === \"Take a Chance on Me\", 'message: <code>update(5439, \"artist\", \"ABBA\")</code> 之后, <code>tracks</code> 的最后的一个元素应该是 <code>\"Take a Chance on Me\"</code>');",
+        "update(2548, \"artist\", \"\"); assert(!collection[2548].hasOwnProperty(\"artist\"), 'message: <code>update(2548, \"artist\", \"\")</code> 之后, <code>artist</code> 应该不存在');",
+        "assert(update(1245, \"tracks\", \"Addicted to Love\")[1245][\"tracks\"].pop() === \"Addicted to Love\", 'message: <code>update(1245, \"tracks\", \"Addicted to Love\")</code> 之后, <code>tracks</code> 的最后一个元素应该是 <code>\"Addicted to Love\"</code>');",
+        "assert(updateRecords(2468, \"tracks\", \"Free\")[2468][\"tracks\"][0] === \"1999\", 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 的第一个元素应为  <code>\"1999\"</code>');",
+        "update(2548, \"tracks\", \"\"); assert(!collection[2548].hasOwnProperty(\"tracks\"), 'message: <code>update(2548, \"tracks\", \"\")</code> 之后, <code>tracks</code> 应该不存在');"
+      ],
+      "type": "bonfire",
+      "challengeType": 5
+    },
+    {
       "id": "a3f503de51cf954ede28891d",
       "title": "Symmetric Difference",
       "description": [
