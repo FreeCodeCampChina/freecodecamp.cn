@@ -734,7 +734,7 @@
         "调用这个有一个参数的返回的 function，返回求和的结果：",
         "<code>var sumTwoAnd = add(2);</code>",
         "<code>sumTwoAnd(3)</code> 返回 <code>5</code>。",
-        "如果两个参数都不是有效的数字，则返回 undefined。",
+        "只要存在非数字参数，就返回 undefined。",
         "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
