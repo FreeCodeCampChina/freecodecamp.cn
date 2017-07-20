@@ -96,5 +96,13 @@ github这个全球最大的编程社交网站上诞生了全球最大的编程�
  感谢[freecodecamp开源项目](https://github.com/freecodecamp/freecodecamp)的贡献者，是他们的参与让这个项目得以完善、发展。
 
  感谢freecodecamp中文社区的[翻译者](https://github.com/freecodecampchina/freecodecamp.cn/wiki#%E7%BF%BB%E8%AF%91%E5%BF%85%E8%AF%BB)，是他们的参与让这个项目得以在中国生根、发芽。
- 
- 
+
+License
+-------
+
+Copyright (c) 2017 freeCodeCamp.
+
+使用本项目需要遵循下列多重许可：
+- freecodecamp网站程序本身许可为 [BSD-3-Clause](./LICENSE.md).
+- 文件夹 `./seed/challenges` 下的题目和 wiki 部分遵循 [CC-BY-SA-4.0](./LICENSE-freeCodeCamp-Curriculum.md).
+- 题目的中文翻译遵从 [CC-NC-4.0](./LICENSE-freeCodeCamp-Translation.md)，翻译著作权归社区协作译者本人享有，禁止商用。
