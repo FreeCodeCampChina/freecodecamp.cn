@@ -105,4 +105,4 @@ Copyright (c) 2017 freeCodeCamp.
 使用本项目需要遵循下列多重许可：
 - freecodecamp 网站程序本身许可为 [BSD-3-Clause](./LICENSE.md).
 - 文件夹 `./seed/challenges` 下的题目和 wiki 部分遵循 [CC-BY-SA-4.0](./LICENSE-freeCodeCamp-Curriculum.md).
-- 题目的中文翻译遵从 [CC-BY-NC-4.0](./LICENSE-freeCodeCamp-Translation.md)，翻译著作权归社区协作译者本人享有，禁止商用。<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
+- 题目的中文翻译遵从 [CC-BY-NC-4.0](./LICENSE-freeCodeCamp-Translation.md)，翻译著作权归社区协作译者本人享有，禁止商用。<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
