@@ -795,10 +795,10 @@
       "description": [
         "你已经看到了当用jQuery选择器通过id属性来选取元素的时候是多么方便，但是你不能总是写这么整齐的id。",
         "幸运的是，jQuery有一些另外的技巧可以达到同样的效果。",
-        "jQuery 用CSS选择器来选取元素，比如，<code>.target:nth-child(n)</code> CSS选择器允许你按照索引顺序 (从1开始) 选择符合 <code>.target</code> 条件的所有元素。",
-        "示例：你可以给通过 <code>.target</code> 筛选出的第三个元素添加bounce class。",
+        "jQuery 用CSS选择器来选取元素，比如，<code>.target:nth-child(n)</code> CSS 选择器允许你按照索引顺序 (从1开始) 进一步过滤符合 <code>.target</code> 条件的元素。",
+        "示例：给符合 <code>.target</code> 的第三个元素添加 animated 和 bounce class。",
         "<code>$(\".target:nth-child(3)\").addClass(\"animated bounce\");</code>",
-        "任务：给 <code>.target</code> 筛选出的第二个元素添加animated和bounce class，你可以通过<code>.target</code> class来选获得目标元素。"
+        "任务：请给每个 class 为 well 中的第二个 class 为 <code>target</code> 子元素添加 <code>animated</code> 和 <code>bounce</code> class。注意，你只需要用 <code>.target</code> 选择器和 <code>:nth-child()</code> 就够了。"
       ],
       "challengeSeed": [
         "fccss",
