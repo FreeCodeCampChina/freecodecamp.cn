@@ -336,7 +336,7 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/filter/gi), 'message: 你应该使用 .filter 这个方法。');"
+        "assert(code.match(/filter/gi), 'message: 你应该使用<code>.filter</code>这个方法。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -345,7 +345,7 @@
       "id": "56bbb991ad1ed5201cd392da",
       "title": "Get Geo-location Data",
       "description": [
-        "在浏览器中还有一个很棒的功能就是我们还可以通过<code>navigator</code>来获得我们当前所在的地理位置<code>geolocation</code>。",
+        "还有一件很棒的事情，我们可以获取用户的当前位置。每个浏览器都有自带的 Navigator 接口供我们调用。",
         "地理位置的信息包括经度<code>longitude</code>和纬度<code>latitude</code>。",
         "你将会看到一个是否允许获取当前位置的提示。不管你选择允许或者禁止，只要代码正确，这关就能过了。",
         "如果你选择允许，你将会看到右侧手机输出的文字为你当前所在位置的经纬度。",
