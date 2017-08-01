@@ -336,7 +336,7 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/filter/gi), 'message: You should be making use of the .filter method.');"
+        "assert(code.match(/filter/gi), 'message: 你应该使用 .filter 这个方法。');"
       ],
       "type": "waypoint",
       "challengeType": 0
@@ -345,16 +345,8 @@
       "id": "56bbb991ad1ed5201cd392da",
       "title": "Get Geo-location Data",
       "description": [
-        "Another cool thing we can do is access our user's current location. Every browser has a built in navigator that can give us this information.",
-        "The navigator will get our user's current longitude and latitude.",
-        "You will see a prompt to allow or block this site from knowing your current location. The challenge can be completed either way, as long as the code is correct.",
-        "By selecting allow you will see the text on the output phone change to your latitude and longitude",
-        "Here's some code that does this:",
-        "<blockquote>if (navigator.geolocation) {</br>  navigator.geolocation.getCurrentPosition(function(position) {</br>    $(\"#data\").html(\"latitude: \" + position.coords.latitude + \"&lt;br&gt;longitude: \" + position.coords.longitude);</br>  });</br>}</blockquote>"
-      ],
-      "description": [
-        "我们还可以通过浏览器<code>navigator</code>获得我们当前所在的位置<code>geolocation</code>。",
-        "位置的信息包括经度<code>longitude</code>和纬度<code>latitude</code>。",
+        "在浏览器中还有一个很棒的功能就是我们还可以通过<code>navigator</code>来获得我们当前所在的地理位置<code>geolocation</code>。",
+        "地理位置的信息包括经度<code>longitude</code>和纬度<code>latitude</code>。",
         "你将会看到一个是否允许获取当前位置的提示。不管你选择允许或者禁止，只要代码正确，这关就能过了。",
         "如果你选择允许，你将会看到右侧手机输出的文字为你当前所在位置的经纬度。",
         "代码如下：",
@@ -374,7 +366,7 @@
         "</div>"
       ],
       "tests": [
-        "assert(code.match(/navigator\\.geolocation\\.getCurrentPosition/gi), 'message: You should make use of the <code>navigator.geolocation</code> to access the users current location.');"
+        "assert(code.match(/navigator\\.geolocation\\.getCurrentPosition/gi), 'message: 你应该使用 <code>navigator.geolocation</code> 来获取用户的当前地理位置。');"
       ],
       "type": "waypoint",
       "challengeType": 0
