@@ -2,7 +2,7 @@
   "name": "React Projects",
   "order": 15,
   "time": "200 hours",
-  "helpRoom": "HelpDataViz",
+  "helpRoom": "chinese",
   "challenges": [
     {
       "id": "bd7157d8c242eddfaeb5bd13",
@@ -18,7 +18,7 @@
         " <strong>注意：</strong> 如果你想使用React的JSX语法，你需要使用 <code>Babel</code> 作为预处理器。",
         "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
         "当你完成后，点击 \"我已经完成了这个挑战\" 并且附加一个你的 CodePen 链接。 ",
-        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
+        "你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -44,7 +44,7 @@
         " <strong>线索：</strong> 从这个API中获取全部时间段的前100名学员： <a href='http://fcctop100.herokuapp.com/api/fccusers/top/alltime' target='_blank'>http://fcctop100.herokuapp.com/api/fccusers/top/alltime</a>.",
         "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
         "当你完成后，点击 \"我已经完成了这个挑战\" 并且附加一个你的 CodePen 链接。 ",
-        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
+        "你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -72,7 +72,7 @@
         " <strong>线索：</strong> 你应该为你CodePe上的本地存储的键加上前缀，如： <code>_username_recipes</code>",
         "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
         "当你完成后，点击 \"我已经完成了这个挑战\" 并且附加一个你的 CodePen 链接。 ",
-        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
+        "你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -101,7 +101,7 @@
         " <strong>线索：</strong> 这是 Conway's Game of Life （这个游戏）的规则，供你参考： <a href='https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life' target='_blank'>https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life</a>",
         "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
         "当你完成后，点击 \"我已经完成了这个挑战\" 并且附加一个你的 CodePen 链接。 ",
-        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
+        "你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [
@@ -131,7 +131,7 @@
         " <strong>用户需求：</strong> 游戏比赛应该是具有挑战性的，但理论上应该是稳赢的。",
         "当你卡住的时候，记得来这里 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 获取可能的帮助。",
         "当你完成后，点击 \"我已经完成了这个挑战\" 并且附加一个你的 CodePen 链接。 ",
-        "你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
+        "你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>代码检查群</a> 中分享你的代码，从而获得反馈。你也可以把它分享在微博或其他社交媒体上。"
       ],
       "releasedOn": "January 1, 2016",
       "challengeSeed": [

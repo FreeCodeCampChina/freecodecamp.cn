@@ -2,7 +2,7 @@
   "name": "Data Visualization Projects",
   "order": 17,
   "time": "200 hours",
-  "helpRoom": "HelpDataViz",
+  "helpRoom": "chinese",
   "challenges": [
     {
       "id": "bd7168d8c242eddfaeb5bd13",
@@ -17,7 +17,7 @@
         " <strong>提示：</strong> 美国 GDP 统计数据可以引用这里的公布数据：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json</a>",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
         "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
-        "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
         "150324699"
@@ -41,7 +41,7 @@
         " <strong>提示： </strong> 骑行比赛数据参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json</a> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
         "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
-        "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
         "150324700"
@@ -66,7 +66,7 @@
         " <strong>提示：</strong> 本项目数据可以参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json</a> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
         "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
-        "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
         "150324701"
@@ -93,7 +93,7 @@
         " <strong>提示：</strong> <code>http://www.freecodecamp.com/news/hot</code> 。",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
         "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
-        "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
         "150324458"
@@ -118,7 +118,7 @@
         " <strong>提示：</strong> 本项目数据可以参考这里：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json</a>",
         "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
         "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
-        "最后，你可以在 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
       ],
       "challengeSeed": [
         "150324698"

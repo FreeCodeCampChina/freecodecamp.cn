@@ -2,7 +2,7 @@
   "name": "Dynamic Web Application Projects",
   "order": 27,
   "time": "250 hours",
-  "helpRoom": "HelpBackEnd",
+  "helpRoom": "chinese",
   "challenges": [
     {
       "id": "bd7158d8c443eddfaeb5bdef",
@@ -20,7 +20,7 @@
         "<strong>Story：</strong> 无论是否授权，我都可以在图表中查看投票结果。（可以通过使用 Chart.js 或 Google Charts 实现）",
         "<strong>Story：</strong> 作为一个已授权的用户，如果我不喜欢投票中的选项，我可以自己创建一个新的选项。",
         "当你完成以上 Story，点击 \"我已完成挑战\" 按钮并输入你的 GitHub 仓库地址和 Heroku 地址。",
-        "你可以通过我们的 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
+        "你可以通过我们的 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
       ],
       "challengeSeed": [
         "133315786"
@@ -43,7 +43,7 @@
         "<strong>Story：</strong> 作为一个未授权用户，在我登录后我不需要重新搜索附近的酒吧。",
         "<strong>提示：</strong> 尝试使用 <a href='https://www.yelp.com/developers/documentation/v2/overview' target='_blank'>Yelp API</a> 查找地点。如果你使用 Yelp API，请在你的应用中声明你的使用。",
         "当你完成以上 Story，点击 \"我已完成挑战\" 按钮并输入你的 GitHub 仓库地址和 Heroku 地址。",
-        "你可以通过我们的 <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
+        "你可以通过我们的 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
       ],
       "challengeSeed": [
         "133315781"
@@ -65,7 +65,7 @@
         "<strong>User Story:</strong> I can remove stocks.",
         "<strong>User Story:</strong> I can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets.",
         "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
       ],
       "challengeSeed": [
         "133315787"
@@ -87,7 +87,7 @@
         "<strong>User Story:</strong> I can update my settings to store my full name, city, and state.",
         "<strong>User Story:</strong> I can propose a trade and wait for the other user to accept the trade.",
         "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
       ],
       "challengeSeed": [
         "133316032"
@@ -112,7 +112,7 @@
         "<strong>User Story:</strong> As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image. (can use jQuery broken image detection)",
         "<strong>Hint:</strong> <a href='http://masonry.desandro.com/' target='_blank'>Masonry.js</a> is a library that allows for Pinterest-style image grids.",
         "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
-        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
       ],
       "challengeSeed": [
         "133315784"
