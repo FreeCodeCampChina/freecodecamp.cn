@@ -2,7 +2,7 @@
   "name": "API Projects",
   "order": 26,
   "time": "150 hours",
-  "helpRoom": "HelpBackEnd",
+  "helpRoom": "chinese",
   "challenges": [
     {
       "id": "bd7158d8c443eddfaeb5bcef",
@@ -110,7 +110,7 @@
         "<strong>用户故事：</strong> 如果是，那么它同时返回 Unix 时间戳和公历日期。",
         "<strong>用户故事：</strong> 如果不是，那么它返回 null 。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
-        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324691"
@@ -130,7 +130,7 @@
         "这个项目中需要完成的需求：",
         "<strong>用户故事：</strong> 用户在浏览器输入该地址后，返回用户的 IP 地址，语言，操作系统等信息。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
-        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324460"
@@ -152,7 +152,7 @@
         "<strong>用户故事：</strong> 如果用户输入的是一个无效的 URL 地址（不符合 http://www.example.com 格式）作为参数，则返回错误。",
         "<strong>用户故事：</strong> 如果用户输入前边生成的短地址，则会重定向到相应的合法地址。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
-        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324692"
@@ -174,7 +174,7 @@
         "<strong>用户故事：</strong> 可以在地址中增加一个参数 ?offset=2 来对返回结果进行分页。",
         "<strong>用户故事：</strong> 可以获取一个列表，显示最近几次搜索的搜索语句和返回页面地址。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
-        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324461"
@@ -196,7 +196,7 @@
         "<strong>用户故事：</strong> 当我上传一个文件后，会收到一个 JSON 格式的响应，显示文件的大小。",
         "<strong>提示：</strong> 你可能会用到这个模块： <a href='https://www.npmjs.com/package/multer' target='_blank'>https://www.npmjs.com/package/multer</a> 。",
         "当你完成所有用户需求后，点击按钮 \"我已经完成了这个挑战\"，在弹出窗口中，填入你的 Github 仓库地址和部署在 Heroku 上的应用的地址。",
-        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/codereview' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
+        "你可以把你的项目共享到我们的代码检视聊天室<a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>以获取别人的意见和反馈，也可以通过微信或其他媒体帐号进行共享。"
       ],
       "challengeSeed": [
         "150324457"
