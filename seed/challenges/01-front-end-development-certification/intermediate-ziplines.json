@@ -108,6 +108,32 @@
       "type": "zipline",
       "challengeType": 3,
       "isRequired": true
+    },
+    {
+      "id": "bd7158d8c242eddfaeb5be13",
+      "title": "Design a danmu app",
+      "description": [
+        "此项目有难度，实在不会可以先跳过，学完后面再来完善。",
+        "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
+        "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
+        "<strong>目标:</strong> 设计一个类似于右边的：<a href='http://codepen.io/huluoyang/full/GZbBwL/' target='_blank'>弹幕墙</a>。",
+        "<strong>规则1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        "<strong>规则2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的功能</a>。",
+        "<strong>功能:</strong> 实现发射弹幕、清除弹幕、显示弹幕功能。",
+        "<strong>实现路径:</strong> 结构-->样式-->功能",
+        "<strong>第一步:</strong> 先设计一个简单的弹幕页面，上面有弹幕墙、输入框、按钮，并添加样式。",
+        "<strong>第二步:</strong> 然后给弹幕页面添加功能，能实现发射弹幕、清除弹幕、显示弹幕等功能。",
+        "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
+        "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+      ],
+      "challengeSeed": [
+        "167523128"
+      ],
+      "tests": [],
+      "type": "zipline",
+      "challengeType": 3,
+      "isRequired": true
     }
   ]
 }
