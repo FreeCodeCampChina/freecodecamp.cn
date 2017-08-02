@@ -146,7 +146,8 @@ module.exports = function(app) {
   router.post('/forgot', postForgot);
   router.get('/reset-password', getReset);
   router.post('/reset-password', postReset);
-  router.get('/email-signup', getEmailSignup);
+  // Disable email signup
+  // router.get('/email-signup', getEmailSignup);
   router.get('/email-signin', getEmailSignin);
   router.get(
     '/toggle-lockdown-mode',
@@ -234,6 +235,7 @@ module.exports = function(app) {
     });
   }
 
+  /* Comment this out as Email Signup is currently disabled
   function getEmailSignup(req, res) {
     if (req.user) {
       return res.redirect('/');
@@ -242,6 +244,7 @@ module.exports = function(app) {
       title: 'Sign up for Free Code Camp using your Email Address'
     });
   }
+  */
 
   function getAccount(req, res) {
     const { username } = req.user;
@@ -369,7 +372,7 @@ module.exports = function(app) {
           if (user.isCheater) {
             req.flash('errors', {
               msg: dedent`
-                很抱歉，该账户违反了学术诚实守则。如果你是该账户的主人，请联系huluoyang@freecodecamp.cn获知缘由。
+                很抱歉，该账户违反了学术诚实守则。如果你是该账户的主人，请联系jin@freecodecamp.cn获知缘由。
               `
             });
             return res.redirect(`/${user.username}`);

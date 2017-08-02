@@ -52,7 +52,6 @@
 
     "block-scoped-var": 0,
     "complexity": 0,
-    "consistent-return": 2,
     "curly": 2,
     "default-case": 1,
     "dot-notation": 0,
@@ -115,7 +114,7 @@
     "no-undef": 2,
     "no-undef-init": 2,
     "no-undefined": 1,
-    "no-unused-vars": 2,
+    "no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
     "no-use-before-define": 0,
 
     "handle-callback-err": 2,
@@ -158,7 +157,6 @@
     "new-parens": 2,
     "no-array-constructor": 2,
     "no-inline-comments": 1,
-    "no-lonely-if": 1,
     "no-mixed-spaces-and-tabs": 2,
     "no-multiple-empty-lines": [
       1,
@@ -214,7 +212,7 @@
     "max-depth": 0,
     "max-len": [
       2,
-      80,
+      120,
       2
     ],
     "max-params": 0,

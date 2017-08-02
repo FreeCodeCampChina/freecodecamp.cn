@@ -13,19 +13,19 @@ module.exports = {
     session: true,
     failureFlash: true
   },
-  // 'juhe-login': {
-  //   provider: 'juhe',
-  //   authScheme: 'oauth2',
-  //   module: 'passport-juhe',
-  //   authPath: '/auth/juhe',
-  //   callbackURL: '/auth/juhe/callback',
-  //   callbackPath: '/auth/juhe/callback',
-  //   successRedirect: successRedirect,
-  //   failureRedirect: failureRedirect,
-  //   clientID: process.env.JUHE_ID,
-  //   clientSecret: process.env.JUHE_SECRET,
-  //   failureFlash: true
-  // },
+  /* 'juhe-login': {
+     provider: 'juhe',
+     authScheme: 'oauth2',
+     module: 'passport-juhe',
+     authPath: '/auth/juhe',
+     callbackURL: '/auth/juhe/callback',
+     callbackPath: '/auth/juhe/callback',
+     successRedirect: successRedirect,
+     failureRedirect: failureRedirect,
+     clientID: process.env.JUHE_ID,
+     clientSecret: process.env.JUHE_SECRET,
+     failureFlash: true
+   },*/
   'github-login': {
     provider: 'github',
     authScheme: 'oauth2',

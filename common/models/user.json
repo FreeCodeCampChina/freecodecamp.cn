@@ -81,7 +81,7 @@
     },
     "picture": {
       "type": "string",
-      "default": ""
+      "default": "/images/camper-image-placeholder.png"
     },
     "linkedin": {
       "type": "string"

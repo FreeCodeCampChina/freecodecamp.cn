@@ -24,16 +24,16 @@ window.common = (function(global) {
 </script>
 <link
   rel='stylesheet'
-  href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css'
+  href='//cdn.bootcss.com/animate.css/3.2.0/animate.min.css'
   />
 <link
   rel='stylesheet'
-  href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'
+  href='//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css'
   />
 
 <link
   rel='stylesheet'
-  href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'
+  href='//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css'
   />
 <style>
   body { padding: 0px 3px 0px 3px; }

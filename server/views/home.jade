@@ -10,24 +10,24 @@ block content
           p.lead.cover-text-secondary Learn to code and help nonprofits
           // buttons
           a.btn.btn-orange.btn-lg.btn-extra-padding.button-landing-page(href='/challenges/learn-how-free-code-camp-works', role='button') 开始闯关
-          a.btn.btn-inverse.btn-lg.button-landing-page(href='/login', role='button') 注册 | 登录
+          a.btn.btn-inverse.btn-lg.button-landing-page(href='/signin', role='button') 免费注册登录
     section.howitworks
       .container
         h2 玩转FreeCodeCamp
         .row
           .col-sm-6
             .col-md-6.col-howitworks
-              img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_connect.svg')
+              img(src='/images/landingIcons_connect.svg')
               h3 加入全球四十万开发者社区
             .col-md-6.col-howitworks
-              img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_learn.svg')
+              img(src='/images/landingIcons_learn.svg')
               h3 一起编程闯关、完成挑战
           .col-sm-6
             .col-md-6.col-howitworks
-              img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_portfolio.svg')
+              img(src='/images/landingIcons_portfolio.svg')
               h3 构建解决现实问题的作品集
             .col-md-6.col-howitworks
-              img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/landingIcons_nonprofits.svg')
+              img(src='/images/landingIcons_nonprofits.svg')
               h3 帮助非盈利组织开发项目
     .row
      section#curriculum
@@ -49,6 +49,17 @@ block content
               | 我们推荐按照顺序来闯关，但是你也可以自由跳跃。
               | 前面三个证书每个需要400小时，
               | 最后一个证书需要800小时，来为非盈利组织构建真实的项目。
+    .row(style="background-image: linear-gradient(#fff,#F1FEF2);")
+     section
+      .container
+        h2 课外提升
+        .row
+          .col-md-6
+           #sdkcn-1 正在获取文章...
+          .col-md-6
+           #sdkcn-2 正在获取文章...
+        script var article = function(data) { var rows=7; var html = '<ul>';var count=(data.length>rows?rows:data.length); for(var i=0;i<count;i++){ html += '<li style="padding-bottom:10px"><a target="_blank" style="font-size: 19px" href="'+data[i].article_url+'"><span class="ion-ios-circle-outline"></span>&nbsp;&nbsp;'+data[i].title+'</a></li>' }; html += '</ul>'; document.getElementById("sdkcn-1").innerHTML = html;    if(data.length>rows) { html = '<ul>';count = (data.length>2*rows?2*rows:data.length);for(var i=rows;i<count;i++){ html += '<li style="padding-bottom:10px"><a target="_blank" style="font-size: 19px;" href="'+data[i].article_url+'"><span class="ion-ios-circle-outline"></span>&nbsp;&nbsp;'+data[i].title+'</a></li>' }; html += '</ul>'; document.getElementById("sdkcn-2").innerHTML = html; }};
+        script(src='https://www.sdk.cn/api/article/devecho?callback=article')
     .row
      section.skills-youll-learn
       .container
@@ -80,11 +91,11 @@ block content
             br
             | Node.js
           .col-xs-6.col-md-3.skills
-            img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/icon-react-js.svg')
+            img(src='/images/react.svg')
             br
             | React.js
           .col-xs-6.col-md-3.skills
-            img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/icon-d3.svg')
+            img(src='/images/d3-logo.svg')
             br
             | D3.js
     .row
@@ -98,7 +109,7 @@ block content
         .spacer
         .row
             .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/nsvNixW.jpg", alt="Meta's testimonial image")
+                img.img-responsive.testimonial-image.img-center(src="/images/nsvNixW.jpg", alt="Meta's testimonial image")
                 .button-spacer
                 span 我是一个家庭妇女
                 br
@@ -109,7 +120,7 @@ block content
                 span 这让我获得了一份网页设计师的工作
                 h4 -- Meta Hirschl
             .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/QPpjPac.jpg", alt="Brian's testimonial image")
+                img.img-responsive.testimonial-image.img-center(src="/images/QPpjPac.jpg", alt="Brian's testimonial image")
                 .button-spacer
                 span 我是一个退伍伤残老兵
                 br
@@ -120,7 +131,7 @@ block content
                 span 这让我获得了一份Web前端工程师的工作
                 h4 --Brian Grant
             .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="//i.imgur.com/wjlDigg.jpg", alt="Maxim Orlov's testimonial image")
+                img.img-responsive.testimonial-image.img-center(src="/images/wjlDigg.jpg", alt="Maxim Orlov's testimonial image")
                 .button-spacer
                 span 我是一个大叔
                 br

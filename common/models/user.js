@@ -1,5 +1,5 @@
 import { Observable } from 'rx';
-import uuid from 'node-uuid';
+// import uuid from 'node-uuid';
 import moment from 'moment';
 import dedent from 'dedent';
 import debugFactory from 'debug';
@@ -87,7 +87,10 @@ module.exports = function(User) {
     ctx.res.redirect('/email-signin');
   });
 
-  User.beforeRemote('create', function({ req, res }, _, next) {
+  User.beforeRemote('create', function({ _, res }) {
+    // Redirect to email-signin
+    return res.redirect('/email-signin');
+    /*
     req.body.username = 'fcc' + uuid.v4().slice(0, 8);
     if (!req.body.email) {
       return next();
@@ -113,6 +116,7 @@ module.exports = function(User) {
         });
         return res.redirect('/email-signup');
       });
+    */
   });
 
   User.on('resetPasswordRequest', function(info) {
@@ -134,7 +138,7 @@ module.exports = function(User) {
     // requires AccessToken.belongsTo(User)
     var mailOptions = {
       to: info.email,
-      from: 'huluoyang@freecodecamp.cn',
+      from: 'jin@freecodecamp.cn',
       subject: '密码重置请求',
       text: `
         您好,\n\n
@@ -146,7 +150,7 @@ module.exports = function(User) {
         \n
       `
     };
-    console.log("1" + User.app.models.Email.send);
+    console.log('1' + User.app.models.Email.send);
     User.app.models.Email.send(mailOptions, function(err) {
       if (err) { console.error(err); }
       debug('email reset sent');

@@ -4,7 +4,7 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
             .col-xs-12
                 span.hamburger-text 菜单
         a.navbar-brand(href='/')
-            img.img-responsive.nav-logo(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-navbar.png', alt='learn to code javascript at FreeCodeCamp logo')
+            img.img-responsive.nav-logo(src='/images/logo-navbar.png', alt='learn to code javascript at FreeCodeCamp logo')
     .collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right.hamburger-dropdown
             li
@@ -16,7 +16,10 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
             li
                 a(href='/group' target='_blank') 同城
             li
-                a(href='//bbs.freecodecamp.cn/' target='_blank') 问答
+                a(href='http://s14012.m.fy.xyunqi.com/preview.html?page_id=13606' target='_blank') 周边
+            //关闭问答BBS
+                li
+                    a(href='//bbs.freecodecamp.cn/' target='_blank') 问答
             li.hidden-xs
                 a#nav-chat-btn(href='#' onclick="return false") 聊天室
             li.visible-xs
@@ -25,7 +28,9 @@ nav.navbar.navbar-default.navbar-fixed-top.nav-height
                 a(href='/about') 关于
             if !user
                 li
-                    a(href='/login' style="color:#FF9900;") 登录
+                    a(href='/login' style="color:#FF9900;") 登录/注册
+                //li
+                    //a(href='/email-signup' style="color:#00AC72;") 注册
             else
                 li.brownie-points-nav
                   a(href='/' + user.username) [&thinsp;#{user.progressTimestamps.length}&thinsp;]

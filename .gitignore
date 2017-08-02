@@ -40,7 +40,7 @@ server/manifests/*
 !server/manifests/README.md
 
 public/js/main*
-public/js/commonFramework*
+// public/js/commonFramework*
 public/js/sandbox*
 public/js/iFrameScripts*
 public/js/plugin*

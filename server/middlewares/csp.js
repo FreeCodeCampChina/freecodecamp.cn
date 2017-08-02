@@ -5,7 +5,7 @@ let trusted = [
 ];
 
 if (process.env.NODE_ENV !== 'production') {
-  trusted.push('ws://localhost:3001');
+  trusted.push('ws://localhost:3000');
 }
 
 export default function csp() {
@@ -17,7 +17,7 @@ export default function csp() {
         "'unsafe-inline'",
         '*.google-analytics.com',
         '*.gstatic.com',
-        'https://*.googleapis.com',
+        'https://*.gdgdocs.org',
         'https://*.cloudflare.com',
         '*.cloudflare.com',
         'https://*.gitter.im',
@@ -27,35 +27,53 @@ export default function csp() {
         '*.jsdelivr.com',
         '*.twimg.com',
         'https://*.twimg.com',
+        '*.qbox.me',
+        'https://*.qbox.me',
+        '*.growingio.com',
+        'https://*.growingio.com',
         'vimeo.com',
-        'http://*.clouddn.com',
-        'https://*.clouddn.com'
+        '*.clouddn.com',
+        'https://*.clouddn.com',
+        'https://www.sdk.cn',
+        'https://sdk.cn'
       ].concat(trusted),
       connectSrc: [
-        'vimeo.com'
+        'vimeo.com',
+        'tags.growingio.com',
+        'api.growingio.com'
       ].concat(trusted),
       styleSrc: [
         "'unsafe-inline'",
         '*.gstatic.com',
         '*.googleapis.com',
         'https://*.googleapis.com',
-        '*.googleapis.com',
-        'https://*.googleapis.com',
+        '*.gdgdocs.org',
+        'https://*.gdgdocs.org',
         '*.bootstrapcdn.com',
         'https://*.bootstrapcdn.com',
+        '*.bootcss.com',
+        'https://*.bootcss.com',
         '*.cloudflare.com',
         'https://*.cloudflare.com',
-        'http://*.clouddn.com',
-        'https://*.clouddn.com'
+        '*.clouddn.com',
+        'https://*.clouddn.com',
+        '*.gdgdocs.org',
+        'https://*.gdgdocs.org'
       ].concat(trusted),
       fontSrc: [
         '*.cloudflare.com',
         'https://*.cloudflare.com',
         '*.bootstrapcdn.com',
+        '*.bootcss.com',
+        'https://*.bootcss.com',
         '*.googleapis.com',
         'https://*.googleapis.com',
+        '*.gdgdocs.org',
+        'https://*.gdgdocs.org',
         '*.gstatic.com',
-        'https://*.bootstrapcdn.com'
+        'https://*.bootstrapcdn.com',
+        '*.qnssl.com',
+        'https://*.qnssl.com'
       ].concat(trusted),
       imgSrc: [
         // allow all input since we have user submitted images for

@@ -33,7 +33,7 @@ main = (function(main, global) {
       );
 
       main.chat.helpChat = new main.chat.GitterChat({
-        room: `freecodecamp/${room}`,
+        room: 'freecodecamp/chinese',
         activationElement: false,
         targetElement: $('#chat-embed-help')
       });

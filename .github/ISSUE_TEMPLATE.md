@@ -1,22 +1,26 @@
-#### FreeCodeCamp Issue template
-To Use this Template:
-* Fill out what you can
-* Delete what you do not fill out
+## 注意：这里只处理 FreeCodeCamp.cn 的相关问题，不处理 w3cschool 的任何问题
+## 注意：请不要乱开无意义的 Issue，违者直接加黑名单
+## 注意：Issue 是用来处理代码库中的 bug，不是用来提问题的。完成挑战过程中遇到的代码问题请在[gitter 讨论组](https://gitter.im/FreeCodeCamp/chinese) 或者 QQ 群 526289580 中讨论 (QQ 群验证答案: ___**freeCodeCamp**___ 注意大小写)
 
-NOTE: ISSUES ARE NOT FOR CODE HELP - Ask for Help at https://gitter.im/FreeCodeCamp/chinese
+#### FreeCodeCamp.cn Issue 模板
+如何使用本模板:
+* 尽可能多填些相关信息，方便管理员参考
+* 对于无法给出的内容，请删除掉那一行
 
-#### Issue Description
-* When Issue Happens
-* Steps To Reproduce
+# 以上内容请在提交 Issue 之前删除
 
-#### Browser Information
-* Browser Name, Version
-* Operating System
+#### 浏览器信息
+* 浏览器名称，版本号
+* 操作系统
 
-#### Your Code
+#### 问题描述
+* 问题是在什么时候，什么情况下遇到的
+* 简要说明如何重现
 
-```js
-If relevant, paste all of your challenge code in here
+#### 你的代码
+
+```
+如果和代码相关，请在这里粘贴你的全部代码
 ```
 
-#### Screenshot
+#### 截图（如果有）

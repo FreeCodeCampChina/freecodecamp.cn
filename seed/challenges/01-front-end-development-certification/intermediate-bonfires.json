@@ -553,7 +553,7 @@
       "id": "a6e40f1041b06c996f7b2406",
       "title": "Finders Keepers",
       "description": [
-        "写一个 function，它浏览数组（第一个参数）并返回数组中第一个通过某种方法（第二个参数）验证的元素。",
+        "写一个 <code>function</code>，它遍历数组 <code>arr</code>，并返回数组中第一个满足 <code>func</code> 返回值的元素。举个例子，如果 <code>arr</code> 为 <code>[1, 2, 3]</code>，<code>func</code> 为 <code>function(num) {return num === 2; }</code>，那么 <code>find</code> 的返回值应为 <code>2</code>。",
         "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [
@@ -734,7 +734,7 @@
         "调用这个有一个参数的返回的 function，返回求和的结果：",
         "<code>var sumTwoAnd = add(2);</code>",
         "<code>sumTwoAnd(3)</code> 返回 <code>5</code>。",
-        "如果两个参数都不是有效的数字，则返回 undefined。",
+        "只要存在非数字参数，就返回 undefined。",
         "如果你被卡住了，记得开大招 Read-Search-Ask。尝试与他人结伴编程、编写你自己的代码。"
       ],
       "challengeSeed": [

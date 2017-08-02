@@ -1,12 +1,12 @@
 // scripts should be moved here
-.row
+.row.stick-bottom
  footer
   .container
     .row
       .col-md-4.footer-about
         h2(style="text-align:left;")
           | freeCodeCamp
-          img(src='https://thomas-ko.github.io/freecodecamp-redesign/assets/img/logo-footer.svg')
+          img(src='/images/logo-footer.svg')
         p
           strong 苏州猿生态信息科技有限公司
         p
@@ -14,8 +14,8 @@
 
       .col-md-3.mt-20
         ul
-          li
-            a(href='/login') 免费注册
+          //li
+            //a(href='/email-signup') 免费注册
           li
             a(href='/about#about-us') 关于我们
           li
@@ -51,7 +51,7 @@
          i.fa.fa-qq.footer-icon
         a(href='tel:0512-62719878')
          i.fa.fa-mobile.footer-icon
-script(src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer)
+script(src="/js/sidecar.v1.js" async defer)
 aside.map-aside.is-collapsed
   .map-aside-action-bar
       a.map-aside-action-item.map-aside-action-pop-out(href='/map' target='_blank' aria-label='open map in new tab')

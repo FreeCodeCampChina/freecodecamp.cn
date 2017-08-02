@@ -10,14 +10,14 @@
       "description": [
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
-        "<strong>目标:</strong> 设计一个功能类似于: <a href='http://codepen.io/FreeCodeCamp/full/bELoPJ' target='_blank'>http://codepen.io/FreeCodeCamp/full/bELoPJ</a>的应用。",
+        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/hezag/full/ZGxOLX/' target='_blank'>https://codepen.io/hezag/full/ZGxOLX/</a>的应用。",
         "<strong>规则#1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的<a href='http://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html'>功能</a>。",
         "<strong>功能#1:</strong> 点击一个按钮就生存一个新的随机引用短语。",
         "<strong>功能#1:</strong> 点击一个按钮就把这个引用短语发到twitter中。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:huluoyang@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415122"
@@ -33,7 +33,7 @@
       "description": [
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
-        "<strong>目标:</strong> 设计一个功能类似于: <a href='http://codepen.io/huluoyang/full/bedeBR/' target='_blank'>http://codepen.io/huluoyang/full/bedeBR/</a>的应用。",
+        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/S1ngS1ng/pen/WORqxP' target='_blank'>https://codepen.io/S1ngS1ng/full/WORqxP</a>的应用。",
         "<strong>规则#1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的<a href='http://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html'>功能</a>。",
         "<strong>实现路径:</strong> 页面结构->样式->功能->接口->展示。",
@@ -45,7 +45,7 @@
         "API：我们推荐使用<a href='https://www.juhe.cn/docs/api/id/39/aid/132'>聚合数据天气预报接口</a>，它需要你创建一个免费的APPKey，通过Ajax获取天气数据。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:huluoyang@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415127"
@@ -61,7 +61,7 @@
       "description": [
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
-        "<strong>目标:</strong> 设计一个功能类似于: <a href='http://codepen.io/FreeCodeCamp/full/pgNRvJ' target='_blank'>http://codepen.io/FreeCodeCamp/full/pgNRvJ</a>的应用。",
+        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/freeCodeCamp/full/wGqEga' target='_blank'>https://codepen.io/freeCodeCamp/full/wGqEga</a>的应用。",
         "<strong>规则#1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的<a href='http://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html'>功能</a>。",
         "<strong>功能:</strong> 我可以在一个搜索框搜索维基百科的条目，并看到输出结果。",
@@ -71,7 +71,7 @@
         "<span class='text-info'>提示 #3:</span> 使用这个 <a href='https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=jsonfm' target='_blank'>传送门</a> 来体验维基百科的API。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:huluoyang@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126415131"
@@ -87,7 +87,7 @@
       "description": [
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
-        "<strong>目标:</strong> 设计一个功能类似于: <a href='http://codepen.io/FreeCodeCamp/full/adBpOw' target='_blank'>http://codepen.io/FreeCodeCamp/full/adBpOw</a>的应用。",
+        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/freeCodeCamp/full/Myvqmo' target='_blank'>https://codepen.io/freeCodeCamp/full/Myvqmo</a>的应用。",
         "<strong>规则#1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的<a href='http://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html'>功能</a>。",
         "<strong>功能:</strong> 我可以看到 FreeCodeCamp 现在是否在Twitch.tv上直播。",
@@ -99,7 +99,7 @@
         "<strong>提示:</strong> 这有一个Twitch.tv 用户名数组，里面包含有通常正在直播写代码的人： <code>[\"freecodecamp\", \"storbeck\", \"terakilobyte\", \"habathcx\",\"RobotCaleb\",\"thomasballinger\",\"noobs2ninjas\",\"beohoff\"]</code>",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
-        "你可以分享这个项目给<a href='mailto:huluoyang@freecodecamp.cn'>huluoyang</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
+        "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"
       ],
       "challengeSeed": [
         "126411564"
