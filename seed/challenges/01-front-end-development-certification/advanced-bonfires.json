@@ -335,7 +335,7 @@
         "assert.deepEqual(makeFriendlyDates(['2008-10-31', '2009-10-31']), ['October 31st, 2008', 'October 31st, 2009'], 'message: <code>makeFriendlyDates([\"2008-10-31\", \"2009-10-31\"])</code> 应该返回 <code>[\"October 31st, 2008\",\"October 31st, 2009\"]</code>.');",
         "assert.deepEqual(makeFriendlyDates(['2004-11-17', '2005-12-25']), ['November 17th, 2004', 'December 25th, 2005'], 'message: <code>makeFriendlyDates([\"2004-11-17\", \"2005-12-25\"])</code> 应该返回 <code>[\"November 17th, 2004\",\"December 25th, 2005\"]</code>.');",
         "assert.deepEqual(makeFriendlyDates(['2001-12-20', '2001-12-20']), ['December 20th, 2001'], 'message: <code>makeFriendlyDates([\"2001-12-20\", \"2001-12-20\"])</code> 应该返回 <code>[\"December 20th, 2001\"]</code>.');",
-        "assert.isNotArray(makeFriendlyDates(['2002-12-20', '2001-12-20']), 'message: <code>makeFriendlyDates([\"2002-12-20\", \"2001-12-20\"])</code> 不应该返回数组');"
+        "assert.isUndefined(makeFriendlyDates(['2002-12-20', '2001-12-20']), 'message: <code>makeFriendlyDates([\"2002-12-20\", \"2001-12-20\"])</code> 应该返回 <code>undefined</code>');"
       ],
       "type": "bonfire",
       "MDNlinks": [
