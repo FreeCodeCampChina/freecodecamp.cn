@@ -175,10 +175,10 @@
       "id": "aa2e6f85cab2ab736c9a9b24",
       "title": "Exact Change",
       "description": [
-        "设计一个收银程序 <code>checkCashRegister()</code> ，其把购买价格(<code>price</code>)作为第一个参数 , 付款金额 (<code>cash</code>)作为第二个参数, 和收银机中零钱 (<code>cid</code>) 作为第三个参数.",
-        "<code>cid</code> 是一个二维数组，存着当前可用的找零.",
-        "当收银机中的钱不够找零时返回字符串 <code>\"Insufficient Funds\"</code>. 如果正好则返回字符串 <code>\"Closed\"</code>.",
-        "否则, 返回应找回的零钱列表,且由大到小存在二维数组中.",
+        "设计一个收银机找零函数 <code>checkCashRegister()</code>，它接收三个参数，分别是购买总价 (<code>price</code>)、付款金额 (<code>cash</code>) 和收银机中可用的零钱 (<code>cid</code>)。",
+        "<code>cid</code> 是一个二维数组，存着当前可用的找零。每个子数组中的第一个元素代表币种，第二个元素代表这个币种的可用总额。比如，<code>[\"FIVE\", 20.00]</code> 表示五元纸币的可用总额是 <code>20</code>，也就是有四张五元纸币。",
+        "当收银机中的钱不够找零时返回字符串 <code>\"Insufficient Funds\"</code>. 如果正好则返回字符串 <code>\"Closed\"</code>。",
+        "否则, 返回应找回的零钱列表,且由大到小存在二维数组中。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
