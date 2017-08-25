@@ -410,7 +410,7 @@
         "我们也可以把小数存储到变量中。小数也被称作 <dfn>浮点数</dfn> 。",
         "<strong>提示</strong><br>不是所有的实数都可以用 <dfn>浮点数</dfn> 来表示。因为可能存在四舍五入的错误，<a href=\"https://en.wikipedia.org/wiki/Floating_point#Accuracy_problems\" target=\"_blank\">详情在这儿</a>。",
         "<h4>任务</h4>",
-        "创建一个变量 <code>myDecimal</code> 并给它复制一个浮点数。 (e.g. <code>5.7</code>)。"
+        "创建一个变量 <code>myDecimal</code> 并给它赋值一个浮点数。 (例如 <code>5.21</code>)。"
       ],
       "challengeSeed": [
         "var ourDecimal = 5.7;",
@@ -426,7 +426,7 @@
         "var myDecimal = 9.9;"
       ],
       "tests": [
-        "assert(typeof myDecimal === \"number\", 'message: <code>myDecimal</code> 应该是一个数字.');",
+        "assert(typeof myDecimal === \"number\", 'message: <code>myDecimal</code> 应该是一个数字');",
         "assert(myDecimal % 1 != 0, 'message: <code>myDecimal</code> 应该包含小数点'); "
       ],
       "type": "waypoint",
