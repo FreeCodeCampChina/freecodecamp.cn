@@ -146,13 +146,13 @@
       ],
       "challengeSeed": [
         "var Car = function() {",
-        "  //Change this constructor",
+        "  // 请修改这个构造器",
         "  this.wheels = 4;",
         "  this.seats = 1;",
         "  this.engines = 1;",
         "};",
         "",
-        "//Try it out here",
+        "// 你可以修改这一行来测试你的代码",
         "var myCar;"
       ],
       "tail": [

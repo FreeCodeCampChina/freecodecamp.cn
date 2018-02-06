@@ -272,7 +272,7 @@
       "title": "No repeats please",
       "description": [
         "把一个字符串中的字符重新排列生成新的字符串，返回新生成的字符串里没有连续重复字符的字符串个数.连续重复只以单个字符为准",
-        "例如, <code>aab</code> 应该返回 2 因为它总共有6中排列 (<code>aab</code>, <code>aab</code>, <code>aba</code>, <code>aba</code>, <code>baa</code>, <code>baa</code>), 但是只有两个 (<code>aba</code> and <code>aba</code>)没有连续重复的字符 (在本例中是 <code>a</code>).",
+        "例如, <code>aab</code> 应该返回 2 因为它总共有 6 种排列 (<code>aab</code>, <code>aab</code>, <code>aba</code>, <code>aba</code>, <code>baa</code>, <code>baa</code>), 但是只有两个 (<code>aba</code> and <code>aba</code>)没有连续重复的字符 (在本例中是 <code>a</code>).",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。"
       ],
       "challengeSeed": [
