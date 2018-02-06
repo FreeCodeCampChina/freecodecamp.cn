@@ -4471,7 +4471,7 @@
       "id": "cf1111c1c13feddfaeb1bdef",
       "title": "Add your JavaScript Slot Machine Slots",
       "description": [
-        "现在我们的老虎机每次生存3个随机数，我们得去检查随机数是否全部相等的情况。",
+        "现在我们的老虎机每次生成3个随机数，我们得去检查随机数是否全部相等的情况。",
         "如果全部相等，我们应该提示用户他们赢了，并返回中奖号码，否则我们应该返回null。",
         "<code>null</code> 是JavaScript中的一种数据类型，意味着空。",
         "当这3个随机数相等的时候，判定用户赢。让我们创建一个<code>if statement</code>，用多个条件按顺序来检查它们是否相等。类似于：",
