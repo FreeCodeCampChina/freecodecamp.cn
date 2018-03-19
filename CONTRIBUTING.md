@@ -6,9 +6,9 @@ We welcome pull requests from Free Code Camp campers (our students) and seasoned
 我们欢迎每一位 FreeCodeCamp学员 和 有经验的JavaScript开发人员向我们提交PR！请参照下面这些步骤参与进来：
 
 
-1.  Find an issue that needs assistance by searching for the [Help Wanted](https://github.com/FreeCodeCamp/FreeCodeCamp/labels/help%20wanted) tag.
+1.  Find an issue that needs assistance by searching for the [Help Wanted](https://github.com/FreeCodeCampChina/freecodecamp.cn/labels/help%20wanted) tag.
 
-   通过搜索标记[Help Wanted](https://github.com/FreeCodeCamp/FreeCodeCamp/labels/help%20wanted) 来找到需要帮助的问题。
+   通过搜索标记[Help Wanted](https://github.com/FreeCodeCampChina/freecodecamp.cn/labels/help%20wanted) 来找到需要帮助的问题。
 
 2.  Let us know you are working on it, by posting a comment on the issue.
 
