@@ -14,9 +14,9 @@ We welcome pull requests from Free Code Camp campers (our students) and seasoned
 
    在问题下面发送一个评论，便于让我们知道你正在着手解决这个问题。
 
-3.  Feel free to ask for help in our [Help Contributors](https://gitter.im/FreeCodeCamp/HelpContributors) Gitter room.
+3.  Feel free to ask for help in our [Help Contributors](https://gitter.im/FreeCodeCamp/chinese) Gitter room.
 
-   你可以自由地在我们的[Help Contributors](https://gitter.im/FreeCodeCamp/HelpContributors)聊天室提问来获得帮助。
+   你可以自由地在我们的[Help Contributors](https://gitter.im/FreeCodeCamp/chinese)聊天室提问来获得帮助。
 
 If you've found a bug that is not on the board, [follow these steps](#found-a-bug).
 
