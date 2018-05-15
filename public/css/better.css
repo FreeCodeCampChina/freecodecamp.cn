@@ -1266,6 +1266,7 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 45px;
     overflow-y: scroll;
     border-radius: calc(var(--times)/100*40px);
   }
@@ -1568,4 +1569,9 @@ footer {
   padding-left: 8px;
   margin-right: 15px;
 
+}
+
+.scroll-locker {
+  width: 100%;
+  max-height: 70vh;
 }
