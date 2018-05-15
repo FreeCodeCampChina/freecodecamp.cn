@@ -6,7 +6,7 @@ block content
     link(rel='stylesheet', href='/css/ubuntu.css')
     link(rel='stylesheet', href=rev('/css', 'better.css'))
     .row
-        .col-md-3.col-lg-3
+        .col-md-3.col-lg-3#document
             div#controls.box.vertical.flex1.visBackgroundColor
               div#commandLineHistory.box.vertical.flex3
                 div.toolbar.box.vertical.center
@@ -52,7 +52,7 @@ block content
                             .button-spacer
                             #testSuite
                             br
-        .col-md-5.col-lg-6
+        .col-md-5.col-lg-6#editor
             div.canvasTerminalHolder.box.flex1
               div.terminal-window-holder.box.flex10.vertical.transitionTransform.slideOut.ui-draggable
                 div.wrapper.box.vertical
@@ -68,12 +68,12 @@ block content
                           i.icon-cog
                           编辑器
                     div.terminal-text
-                        div(style = "overflow-y: auto; overflow-x: hidden;")
+                        div(style = "overflow-y: auto; overflow-x: hidden;height:75vh;")
                                 #mainEditorPanel
                                     form.code
                                         .codeMirrorView
                                             textarea#codeEditor(autofocus=true, style='display: none;')
-        .col-md-4.col-lg-3
+        .col-md-4.col-lg-3#browser
             div.marvel-device.iphone-x
                 div.notch
                     div.camera
@@ -107,6 +107,11 @@ block content
                             else
                                 a#next-challenge.btn.btn-lg.btn-primary.btn-block(href="/challenges/next-challenge?id="+id) 前进 (ctrl + enter)
     include ../partials/challenge-modals
+
+    .btn-group.input-group.btn-group-justified.hide.tabs-mobile(style="position: fixed;bottom: 0;z-index: 9999;background: white;left: 0;border-radius:7px;")
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#document').show();") 文档
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#editor').show();") 编辑器
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#browser').show();") 浏览器
     script(type="text/javascript").
       $('#next-courseware-button').attr('disabled', 'disabled');
       var common = window.common || { init: [] };
