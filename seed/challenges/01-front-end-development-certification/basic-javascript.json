@@ -2913,7 +2913,7 @@
       "id": "56533eb9ac21ba0edf2244df",
       "title": "Multiple Identical Options in Switch Statements",
       "description": [
-        "如果<code>switch</code>语句中的<code>case</code>分支的<code>break</code> 语句漏掉了，后面的 <code>case</code>语句会一直执行直到遇到<code>break</code>。如果你有多个输入值和输出值一样，可以试试下面的<code>switch</code>语句：",
+        "如果<code>switch</code>语句中的<code>case</code>分支的<code>break</code> 语句漏掉了，后面的 <code>case</code>语句会一直执行直到遇到<code>break</code>。如果你有多个输入值的输出值一样，可以试试下面的<code>switch</code>语句：",
         "<blockquote>switch(val) {<br>  case 1:<br>  case 2:<br>  case 3:<br>    result = \"1, 2, or 3\";<br>    break;<br>  case 4:<br>    result = \"4 alone\";<br>}</blockquote>",
         "分支1、2、3将会产生相同的输出结果。",
         "<h4>任务</h4>",
