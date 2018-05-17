@@ -3557,7 +3557,7 @@
       "id": "56533eb9ac21ba0edf2244cb",
       "title": "Introducing JavaScript Object Notation (JSON)",
       "description": [
-        "JavaScript Object Notation 简称 <code>JSON</code>，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>字符串</dfn>，和 <dfn>对象</dfn> 的任意组合。",
+        "JavaScript Object Notation 简称 <code>JSON</code>，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 <dfn>数据结构</dfn> 是 <dfn>字符串</dfn>，<dfn>数字</dfn>，<dfn>布尔值</dfn>，<dfn>函数</dfn>，和 <dfn>对象</dfn> 的任意组合。",
         "这里是一个JSON对象的示例：",
         "<blockquote>var ourMusic = [<br>  {<br>    \"artist\": \"Daft Punk\",<br>    \"title\": \"Homework\",<br>    \"release_year\": 1997,<br>    \"formats\": [ <br>      \"CD\", <br>      \"Cassette\", <br>      \"LP\" ],<br>    \"gold\": true<br>  }<br>];</blockquote>",
         "这是一个对象数组，并且对象有各种关于专辑的 <dfn>详细信息</dfn>。它也有一个嵌套的 <code>formats</code> 的数组。附加专辑记录可以被添加到数组的最上层。",
