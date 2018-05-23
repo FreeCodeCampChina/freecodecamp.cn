@@ -1,0 +1,99 @@
+body {
+  font-size: 14px;
+}
+
+#root .orange { color: #ff9900; }
+#root .gray { color: rgb(128, 127, 128); }
+#root .green { color: rgb(64, 194, 150); }
+#root .green-light { color: rgb(116, 197, 164); }
+
+/* 简介 开始 */
+#root .content .overview ul {
+  text-align: center;
+}
+#root .content .overview ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 1.5rem;
+  font-size: 1rem;
+}
+#root .content .overview ul li span {
+  margin: 0 .5rem;
+}
+/* 简介 结束 */
+
+/* 焦点图 开始 */
+#root .content .carousel {
+  background-color: rgb(245, 248, 251);
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide {
+  display: flex;
+  padding: 2rem 0 1rem;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 31vw;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .left {
+  width: 26vw;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .left .title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .left .description {
+  font-size: 1rem;
+  margin: 2rem 0;
+  line-height: 2rem;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .left .btn {
+  background-color: rgb(64, 194, 150);
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 3rem;
+  height: 3rem;
+  width: 10rem;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .right {
+  width: 40vw;
+  position: relative;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .right p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#root .content .carousel .swiper-wrapper .swiper-slide .right img {
+  width: 100%;
+}
+
+#root .content .carousel .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgb(64, 194, 150);
+  height: 13px;
+  width: 13px;
+}
+/* 焦点图 结束 */
+
+/* 介绍 开始 */
+#root .content .introduction img {
+  width: 100vw;
+}
+/* 介绍 结束 */
