@@ -1,0 +1,24 @@
+link(rel='stylesheet', type='text/css' href='/css/lato.css')
+link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+link(rel='stylesheet', href=rev('/css', 'main.css'))
+link(rel='stylesheet', href='/css/Vimeo.css')
+
+include meta
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='viewport', content='width=device-width, initial-scale=1.0')
+meta(name='csrf-token', content=_csrf)
+script.
+  var _vds = _vds || [];
+  window._vds = _vds;
+  (function(){
+    _vds.push(['setAccountId', 'b350d488f8e3e5f1']);
+    (function() {
+      var vds = document.createElement('script');
+      vds.type='text/javascript';
+      vds.async = true;
+      vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(vds, s);
+    })();
+  })();

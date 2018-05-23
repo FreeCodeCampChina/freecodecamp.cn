@@ -1,0 +1,18 @@
+{
+  "name": "Sass",
+  "order": 13,
+  "isComingSoon": true,
+  "time": "5 hours",
+  "helpRoom": "chinese",
+  "challenges": [
+    {
+      "id": "bd7158d8c423ede2aeb5bdee",
+      "title": "Learn Sass Challenges",
+      "description": [],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "waypoint",
+      "challengeType": 3
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Claim Your Back End Development Certificate",
+  "order": 29,
+  "time": "5 minutes",
+  "challenges": [
+    {
+      "id": "660add10cb82ac38a17513be",
+      "title": "Claim Your Back End Development Certificate",
+      "description": [
+        [
+          "//i.imgur.com/8v3t84p.jpg",
+          "An image of our Back End Development Certificate",
+          "这个挑战将授予你经过认证的后端开发者证书。在此之前，我们必须确认你已经完成了所有的后端开发项目。同时，你也要向我们做出学术诚信的承诺。点击下面的按钮开始。",
+          ""
+        ],
+        [
+          "//i.imgur.com/HArFfMN.jpg",
+          "The definition of plagiarism: Plagiarism (noun) - copying someone else’s work and presenting it as your own without crediting them",
+          "点击下面的按钮，你需要对你提交的所有的代码作出承诺 A) 是你自己亲自写的，或者 B) 来自开源库，比如jQuery，或者 C) 已经明确地申明了原始作者。你也需要允许我们审核你所有挑战的代码。如果发现任何剽窃的证据，我们将撤销你的证书。",
+          "#"
+        ],
+        [
+          "//i.imgur.com/2qn7tHp.jpg",
+          "An image of the text \"Back End Development Certificate requirements\"",
+          "让我们确认你已经完成了所有的后端开发项目。点击下方的按钮来验证。。",
+          "#"
+        ],
+        [
+          "//i.imgur.com/16SIhHO.jpg",
+          "An image of the word \"Congratulations\"",
+          "恭喜！我们已经将后端开发者证书添加到你的作品集。除非你选择隐藏你的答案，证书将保持公开可见并且有效。",
+          ""
+        ]
+      ],
+      "challengeSeed": [
+        {
+          "properties": [
+            "isHonest",
+            "isBackEndCert"
+          ],
+          "apis": [
+            "/certificate/honest",
+            "/certificate/verify/back-end"
+          ],
+          "stepIndex": [
+            1,
+            2
+          ]
+        }
+      ],
+      "tests": [
+        {
+          "id": "bd7158d8c443edefaeb5bdef",
+          "title": "Timestamp Microservice"
+        },
+        {
+          "id": "bd7158d8c443edefaeb5bdff",
+          "title": "Request Header Parser Microservice"
+        },
+        {
+          "id": "bd7158d8c443edefaeb5bd0e",
+          "title": "URL Shortener Microservice"
+        },
+        {
+          "id": "bd7158d8c443edefaeb5bdee",
+          "title": "Image Search Abstraction Layer"
+        },
+        {
+          "id": "bd7158d8c443edefaeb5bd0f",
+          "title": "File Metadata Microservice"
+        },
+        {
+          "id": "bd7158d8c443eddfaeb5bdef",
+          "title": "Build a Voting App"
+        },
+        {
+          "id": "bd7158d8c443eddfaeb5bdff",
+          "title": "Build a Nightlife Coordination App"
+        },
+        {
+          "id": "bd7158d8c443eddfaeb5bd0e",
+          "title": "Chart the Stock Market"
+        },
+        {
+          "id": "bd7158d8c443eddfaeb5bd0f",
+          "title": "Manage a Book Trading Club"
+        },
+        {
+          "id": "bd7158d8c443eddfaeb5bdee",
+          "title": "Build a Pinterest Clone"
+        }
+      ],
+      "type": "Waypoint",
+      "challengeType": 7
+    }
+  ]
+}

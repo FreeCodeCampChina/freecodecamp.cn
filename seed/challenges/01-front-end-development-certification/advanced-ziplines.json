@@ -1,0 +1,102 @@
+{
+  "name": "Advanced Front End Development Projects",
+  "order": 12.5,
+  "time": "150 hours",
+  "helpRoom": "chinese",
+  "challenges": [
+    {
+      "id": "bd7158d8c442eddfaeb5bd17",
+      "title": "Build a JavaScript Calculator",
+      "description": [
+        "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上做一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/zrRzMR' target='_blank'>http://codepen.io/FreeCodeCamp/full/zrRzMR</a> 的 APP.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
+        "<strong>功能:</strong> 可以对两个数字进行加、减、乘、除的运算.",
+        "<strong>功能:</strong> 可以使用清除按钮清空当前的所有输入内容.",
+        "<strong>功能:</strong> 可以把多个运算连接起来操作, 直到按下等号键, 计算器输出正确的运算结果.",
+        "遇到问题记得 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>.",
+        "当你完成这个挑战, 点击 \"我已经完成了这个挑战\" 并提交你的 CodePen 链接. ",
+        "你可以分享这个项目给 <a href='mailto:jin@freecodecamp.cn' target='_blank'>JackJin</a> 或 <a href='https://gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a> 来获得反馈。"
+      ],
+      "challengeSeed": [
+        "126411565"
+      ],
+      "tests": [],
+      "type": "zipline",
+      "challengeType": 3,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c442eddfaeb5bd0f",
+      "title": "Build a Pomodoro Clock",
+      "description": [
+        "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上做一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/VemPZX' target='_blank'>http://codepen.io/FreeCodeCamp/full/VemPZX</a> 的 APP.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
+        "<strong>功能:</strong> 可以启动一个 25 分钟的番茄钟, 计时器将在 25 分钟后停止.",
+        "<strong>功能:</strong> 可以重置番茄钟的状态以便启动下一次计时.",
+        "<strong>功能:</strong> 可以为每个番茄钟自定义时长.",
+        "遇到问题记得 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>.",
+        "当你完成这个挑战, 点击 \"我已经完成了这个挑战\" 并提交你的 CodePen 链接. ",
+        "你可以分享这个项目给 <a href='mailto:jin@freecodecamp.cn' target='_blank'>JackJin</a> 或 <a href='https://gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a> 来获得反馈。"
+      ],
+      "challengeSeed": [
+        "126411567"
+      ],
+      "tests": [],
+      "type": "zipline",
+      "isRequired": true,
+      "challengeType": 3
+    },
+    {
+      "id": "bd7158d8c442eedfaeb5bd1c",
+      "title": "Build a Tic Tac Toe Game",
+      "description": [
+        "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个类似于 <a href='http://codepen.io/FreeCodeCamp/full/adBpvw' target='_blank'>http://codepen.io/FreeCodeCamp/full/adBpvw</a> 的 APP.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
+        "<strong>功能:</strong> 可以和计算机对手进行 井字游戏.",
+        "<strong>功能:</strong> 游戏会在结束时重置并立即开始新的一局.",
+        "<strong>功能:</strong> 可以自己选择自己的角色是 X 还是 O.",
+        "遇到问题记得 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>.",
+        "当你完成这个挑战, 点击 \"我已经完成了这个挑战\" 并提交你的 CodePen 链接. ",
+        "你可以分享这个项目给 <a href='mailto:jin@freecodecamp.cn' target='_blank'>JackJin</a> 或 <a href='https://gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a> 来获得反馈。"
+      ],
+      "challengeSeed": [
+        "126415123"
+      ],
+      "tests": [],
+      "type": "zipline",
+      "challengeType": 3,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c442eddfaeb5bd1c",
+      "title": "Build a Simon Game",
+      "description": [
+        "<strong>目标:</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个类似于 <a href='http://codepen.io/Em-Ant/full/QbRyqq/' target='_blank'>http://codepen.io/FreeCodeCamp/full/obYBjE</a> 的小游戏.",
+        "<strong>规则 #1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        "<strong>规则 #2:</strong> 可以使用你喜爱的任何库来定制属于你自己的风格，实现下面的功能.",
+        "<strong>功能:</strong> 色块亮起的顺序是随机的.",
+        "<strong>功能:</strong> 每次以正确的顺序点击色块后, 色块需要以原来的顺序依次亮起, 并增加一个新的序列.",
+        "<strong>功能:</strong> 当色块自动按顺序亮起时, 以及用户点击色块时, 需要能够发出声音.",
+        "<strong>功能:</strong> 当用户点错时, 要以不同的声音提示用户, 色块需要能以原来的顺序亮起并让用户重试.",
+        "<strong>功能:</strong> 可以看到当前游戏中点对的色块序列的数量.",
+        "<strong>功能:</strong> 可以通过点击一个按钮重新开始游戏, 并且游戏会重新从一个序列开始.",
+        "<strong>功能:</strong> 可以在严格模式下游戏, 即严格模式下一旦输错任意一个序列都必须从头开始",
+        "<strong>功能:</strong> 在输入正确 20 个序列时获胜。将会提示胜利, 并结束游戏",
+        "<strong>提示:</strong> 这里有一些可能会用到的按键音的 mp3 文件地址 <code>/images/simonSound1.mp3</code>, <code>/images/simonSound2.mp3</code>, <code>/images/simonSound3.mp3</code>, <code>/images/simonSound4.mp3</code>.",
+        "遇到问题记得 <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a>.",
+        "当你完成这个挑战, 点击 \"我已经完成了这个挑战\" 并提交你的 CodePen 链接. ",
+        "你可以分享这个项目给 <a href='mailto:jin@freecodecamp.cn' target='_blank'>JackJin</a> 或 <a href='https://gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a> 来获得反馈。"
+      ],
+      "challengeSeed": [
+        "137213633"
+      ],
+      "tests": [],
+      "type": "zipline",
+      "challengeType": 3,
+      "isRequired": true
+    }
+  ]
+}

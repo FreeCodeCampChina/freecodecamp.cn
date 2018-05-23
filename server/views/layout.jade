@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+  head
+    include partials/meta
+    include partials/stylesheets
+  body.top-and-bottom-margins
+    include partials/scripts
+    include partials/navbar
+    .container-fluid
+      include partials/flash
+      block content
+    include partials/footer

@@ -1,0 +1,42 @@
+extends ../layout
+block content
+  style.
+    table,th,td{
+      padding-left: 5px;
+      text-align:center;
+    }
+    tr:nth-child(even){
+      background-color: #FAEBD7;
+    }
+    tr:nth-child(odd){
+      background-color: white;
+    }
+    th, tr{
+      padding:10px;
+    }
+    table{margin: 0 auto;}
+  .row(ng-app="app")
+    .col-md-12
+      h2.text-center FCC同城学习小组
+      if user
+        table(ng-controller="dashboard")
+          thead
+            tr
+              th id
+              th 姓名
+              th 邮箱
+              th 手机号
+              th 微信号
+              th 地点
+              th 背景
+          tbody
+            tr(ng-repeat="item in items")
+              th {{item.username}}
+              th {{item.fullname}}
+              th {{item.email}}
+              th {{item.telphone}}
+              th {{item.wechat}}
+              th {{item.location}}
+              th {{item.background}}
+  script(src="/js/angular.min.js")
+  script(src="/js/dashboard.js")

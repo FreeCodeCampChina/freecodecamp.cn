@@ -1,0 +1,55 @@
+{
+  "name": "Automated Testing and Debugging",
+  "order": 20,
+  "time": "15 minutes",
+  "helpRoom": "chinese",
+  "challenges": [
+    {
+      "id": "cf1111c1c16feddfaeb6bdef",
+      "title": "Use the JavaScript Console",
+      "description": [
+        "Chrome 和 Firefox 都有先进的 Javascript 控制台，像知名的 DevTools，可以方便的用来调试你的 Javascript。",
+        "要打开调试工具，你可以在 Chrome 的菜单中找到<code>开发者工具</code>，或者从 Firefox 的菜单中找到<code>Web控制台</code>。我们不推荐你使用其它浏览器，或者使用手机，而是尽量使用桌面版的 Firefox 或 Chrome。",
+        "接下来我们使用<code>console.log</code>方法在控制台中打印内容。",
+        "<code>console.log('Hello world!')</code>"
+      ],
+      "challengeSeed": [
+        "",
+        "",
+        ""
+      ],
+      "tests": [
+        "assert(editor.getValue().match(/console\\.log\\(/gi), 'message: 你应该使用 console.log 方法输出 \"Hello world!\" 到控制台');"
+      ],
+      "type": "waypoint",
+      "challengeType": 1
+    },
+    {
+      "id": "cf1111c1c16feddfaeb7bdef",
+      "title": "Using typeof",
+      "description": [
+        "你可以使用<code>typeof</code>来检查一个变量的<code>数据结构</code>或类型。",
+        "需要注意的是，在 Javascript 中，数组也是一种特殊的对象。",
+        "Try using <code>typeof</code> on each of the following to see which types they have.",
+        "尝试使用<code>typeof</code>查看以下内容各是什么类型。",
+        "<code>console.log(typeof \"\");</code>",
+        "<code>console.log(typeof 0);</code>",
+        "<code>console.log(typeof []);</code>",
+        "<code>console.log(typeof {});</code>"
+      ],
+      "challengeSeed": [
+        "",
+        "",
+        ""
+      ],
+      "tests": [
+        "assert(code.match(/console\\.log\\(typeof[\\( ][\"'].*[\"']\\)?\\);/), 'message: 你应该使用<code>typeof</code>查看字符串的类型，并用<code>console.log</code>输出。');",
+        "assert(code.match(/console\\.log\\(typeof[\\( ]\\d+\\.?\\d*\\)?\\);/), 'message: 你应该使用<code>typeof</code>查看数字的类型，并用<code>console.log</code>输出。');",
+        "assert(code.match(/console\\.log\\(typeof[\\( ]\\[\\]\\)?\\);/), 'message: 你应该使用<code>typeof</code>查看数组的类型，并用<code>console.log</code>输出。');",
+        "assert(code.match(/console\\.log\\(typeof[\\( ]\\{\\}\\)?\\);/), 'message: 你应该使用<code>typeof</code>查看对象的类型，并用<code>console.log</code>输出。');"
+      ],
+      "type": "waypoint",
+      "challengeType": 1
+    }
+  ]
+}

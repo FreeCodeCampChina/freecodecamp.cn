@@ -1,0 +1,126 @@
+{
+  "name": "Dynamic Web Application Projects",
+  "order": 27,
+  "time": "250 hours",
+  "helpRoom": "chinese",
+  "challenges": [
+    {
+      "id": "bd7158d8c443eddfaeb5bdef",
+      "title": "Build a Voting App",
+      "description": [
+        "<strong>目标：</strong>创建一个完整的 Javascript 应用，功能上类似于 <a href='https://fcc-voting-arthow4n.herokuapp.com/' target='_blank'>https://fcc-voting-arthow4n.herokuapp.com/</a> 并部署到 Heroku。",
+        "你应该为每一个项目创建一个 GitHub 仓库以及 Heroku 项目。如果你不记得该如何操作，可以查看 <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>.",
+        "下面是你应该在这个 Story 中实现的内容：",
+        "<strong>Story：</strong> 作为一个已授权的用户，我可以保持我的投票，并可以在稍后访问它们。",
+        "<strong>Story：</strong> 作为一个已授权的用户，我可以分享我的投票给好友。",
+        "<strong>Story：</strong> 作为一个已授权的用户，我可以看到我投票的汇总结果。",
+        "<strong>Story：</strong> 作为一个已授权的用户，我可以删除决定不想要的投票内容。",
+        "<strong>Story：</strong> 作为一个已授权的用户，我可以创建一个包含任意数量选项的投票。",
+        "<strong>Story：</strong> 无论是否授权，我都可以查看投票并参与任何人的投票。",
+        "<strong>Story：</strong> 无论是否授权，我都可以在图表中查看投票结果。（可以通过使用 Chart.js 或 Google Charts 实现）",
+        "<strong>Story：</strong> 作为一个已授权的用户，如果我不喜欢投票中的选项，我可以自己创建一个新的选项。",
+        "当你完成以上 Story，点击 \"我已完成挑战\" 按钮并输入你的 GitHub 仓库地址和 Heroku 地址。",
+        "你可以通过我们的 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
+      ],
+      "challengeSeed": [
+        "133315786"
+      ],
+      "tests": [],
+      "type": "basejump",
+      "challengeType": 4,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c443eddfaeb5bdff",
+      "title": "Build a Nightlife Coordination App",
+      "description": [
+        "<strong>目标：</strong> 创建一个完整的 JavaScript 应用，功能类似于 <a href='http://whatsgoinontonight.herokuapp.com/' target='_blank'>http://whatsgoinontonight.herokuapp.com/</a> ，并部署到 Heroku。",
+        "你应该为每一个项目创建一个 GitHub 仓库以及 Heroku 项目。如果你不记得该如何操作，可以查看 <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>.",
+        "下面是你应该在这个 Story 中实现的内容：",
+        "<strong>Story：</strong> 作为一个未授权用户，我可以看到我附近的所有酒吧。",
+        "<strong>Story：</strong> 作为一个已授权用户，我可以把我自己添加到一个酒吧，表示我今晚将会去那儿。",
+        "<strong>Story：</strong> 作为一个已授权用户，如果我不再想去某个酒吧，可以把自己从酒吧中移出。",
+        "<strong>Story：</strong> 作为一个未授权用户，在我登录后我不需要重新搜索附近的酒吧。",
+        "<strong>提示：</strong> 尝试使用 <a href='https://www.yelp.com/developers/documentation/v2/overview' target='_blank'>Yelp API</a> 查找地点。如果你使用 Yelp API，请在你的应用中声明你的使用。",
+        "当你完成以上 Story，点击 \"我已完成挑战\" 按钮并输入你的 GitHub 仓库地址和 Heroku 地址。",
+        "你可以通过我们的 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 聊天室获取帮助。"
+      ],
+      "challengeSeed": [
+        "133315781"
+      ],
+      "tests": [],
+      "type": "basejump",
+      "challengeType": 4,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c443eddfaeb5bd0e",
+      "title": "Chart the Stock Market",
+      "description": [
+        "<strong>目标：</strong>建立一个完整的 JavaScript 应用，功能上类似于 <a href='http://watchstocks.herokuapp.com/' target='_blank'>http://watchstocks.herokuapp.com/</a> ，并将其部署到 Heroku。",
+        "你应该为每一个项目创建一个 GitHub 仓库以及 Heroku 项目。如果你不记得该如何操作，可以查看 <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>。",
+        "下面是你应该在这个 Story 中实现的内容：",
+        "<strong>User Story:</strong> I can view a graph displaying the recent trend lines for each added stock.",
+        "<strong>User Story:</strong> I can add new stocks by their symbol name.",
+        "<strong>User Story:</strong> I can remove stocks.",
+        "<strong>User Story:</strong> I can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets.",
+        "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+      ],
+      "challengeSeed": [
+        "133315787"
+      ],
+      "tests": [],
+      "type": "basejump",
+      "challengeType": 4,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c443eddfaeb5bd0f",
+      "title": "Manage a Book Trading Club",
+      "description": [
+        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='http://bookjump.herokuapp.com/' target='_blank'>http://bookjump.herokuapp.com/</a> and deploy it to Heroku.",
+        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>.",
+        "Here are the specific user stories you should implement for this project:",
+        "<strong>User Story:</strong> I can view all books posted by every user.",
+        "<strong>User Story:</strong> I can add a new book.",
+        "<strong>User Story:</strong> I can update my settings to store my full name, city, and state.",
+        "<strong>User Story:</strong> I can propose a trade and wait for the other user to accept the trade.",
+        "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+      ],
+      "challengeSeed": [
+        "133316032"
+      ],
+      "tests": [],
+      "type": "basejump",
+      "challengeType": 4,
+      "isRequired": true
+    },
+    {
+      "id": "bd7158d8c443eddfaeb5bdee",
+      "title": "Build a Pinterest Clone",
+      "description": [
+        "<strong>Objective:</strong> Build a full stack JavaScript app that is functionally similar to this: <a href='http://pintech.herokuapp.com/' target='_blank'>http://pintech.herokuapp.com/</a> and deploy it to Heroku.",
+        "Note that for each project, you should create a new GitHub repository and a new Heroku project. If you can't remember how to do this, revisit <a href='/challenges/get-set-for-our-back-end-development-projects'>http://freecodecamp.cn/challenges/get-set-for-our-back-end-development-projects</a>.",
+        "Here are the specific user stories you should implement for this project:",
+        "<strong>User Story:</strong> As an unauthenticated user, I can login with Twitter.",
+        "<strong>User Story:</strong> As an authenticated user, I can link to images.",
+        "<strong>User Story:</strong> As an authenticated user, I can delete images that I've linked to.",
+        "<strong>User Story:</strong> As an authenticated user, I can see a Pinterest-style wall of all the images I've linked to.",
+        "<strong>User Story:</strong> As an unauthenticated user, I can browse other users' walls of images.",
+        "<strong>User Story:</strong> As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image. (can use jQuery broken image detection)",
+        "<strong>Hint:</strong> <a href='http://masonry.desandro.com/' target='_blank'>Masonry.js</a> is a library that allows for Pinterest-style image grids.",
+        "Once you've finished implementing these user stories, click the \"我已经完成了这个挑战\" button and enter the URLs for both your GitHub repository and your live app running on Heroku.",
+        "You can get feedback on your project from fellow campers by sharing it in our <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a>. You can also share it on Twitter and your city's Campsite (on Facebook)."
+      ],
+      "challengeSeed": [
+        "133315784"
+      ],
+      "tests": [],
+      "type": "basejump",
+      "challengeType": 4,
+      "isRequired": true
+    }
+  ]
+}

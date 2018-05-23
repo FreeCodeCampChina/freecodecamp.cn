@@ -1,0 +1,19 @@
+[{
+  "content": "Map",
+  "link": "/map"
+}, {
+  "content": "Chat",
+  "link": "//gitter.im/FreeCodeCamp/chinese",
+  "target": "_blank"
+},{
+  "content": "Wiki",
+  "link": "/wiki",
+  "target": "_blank"
+},{
+  "content": "About",
+  "link": "/about"
+},{
+  "content": "Shop",
+  "link": "/shop",
+  "target": "_blank"
+}]

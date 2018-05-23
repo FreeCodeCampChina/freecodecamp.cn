@@ -1,0 +1,133 @@
+{
+  "name": "Data Visualization Projects",
+  "order": 17,
+  "time": "200 hours",
+  "helpRoom": "chinese",
+  "challenges": [
+    {
+      "id": "bd7168d8c242eddfaeb5bd13",
+      "title": "Visualize Data with a Bar Chart",
+      "description": [
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/adBBWd' target='_blank'>http://codepen.io/FreeCodeCamp/full/adBBWd</a> 类似的应用。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
+        " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
+        " <strong>用户需求：</strong> 显示美国国内生产总值（GDP）季度统计图。",
+        " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置代表年份、季度和 GDP 值。",
+        " <strong>提示：</strong> 美国 GDP 统计数据可以引用这里的公布数据：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json</a>",
+        "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+      ],
+      "challengeSeed": [
+        "150324699"
+      ],
+      "tests": [],
+      "isRequired": true,
+      "releasedOn": "January 1, 2016",
+      "type": "zipline",
+      "challengeType": 3
+    },
+    {
+      "id": "bd7178d8c242eddfaeb5bd13",
+      "title": "Visualize Data with a Scatterplot Graph",
+      "description": [
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/GoNNEy' target='_blank'>http://codepen.io/FreeCodeCamp/full/GoNNEy</a> 类似的应用。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
+        " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
+        " <strong>用户需求：</strong> 用散点图显示 FreeCodeCamp 骑行记录。",
+        " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
+        " <strong>提示： </strong> 骑行比赛数据参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json</a> 。",
+        "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+      ],
+      "challengeSeed": [
+        "150324700"
+      ],
+      "tests": [],
+      "isRequired": true,
+      "releasedOn": "January 1, 2016",
+      "type": "zipline",
+      "challengeType": 3
+    },
+    {
+      "id": "bd7188d8c242eddfaeb5bd13",
+      "title": "Visualize Data with a Heat Map",
+      "description": [
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： </a> app that is functionally similar to this: <a href='http://codepen.io/FreeCodeCamp/full/rxWWGa' target='_blank'>http://codepen.io/FreeCodeCamp/full/rxWWGa</a> 类似的应用。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
+        " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
+        " <strong>用户需求：</strong> 用笛卡儿坐标系（X轴表示年份，Y轴表示月份）显示温度图。",
+        " <strong>用户需求：</strong> 每个单元格的颜色代表当前单元格与其他单元格平均温度的对比度（例如：越高于平均温度，显示颜色越红，越低于平均温度，显示颜色越蓝）。",
+        " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
+        " <strong>提示：</strong> 本项目数据可以参考这里： <a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json</a> 。",
+        "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+      ],
+      "challengeSeed": [
+        "150324701"
+      ],
+      "tests": [],
+      "isRequired": true,
+      "releasedOn": "January 1, 2016",
+      "type": "zipline",
+      "challengeType": 3
+    },
+    {
+      "id": "bd7198d8c242eddfaeb5bd13",
+      "title": "Show Relationships with a Force Directed Graph",
+      "description": [
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/KVNNXY' target='_blank'>http://codepen.io/FreeCodeCamp/full/KVNNXY</a> 类似的应用（这个旧链接好像坏掉了，在 Github 的 issue 中提到这个链接可以参考 http://codepen.io/KMT/pen/dMqgrO ）。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
+        " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
+        " <strong>用户需求：</strong> 用力导向图（ Force-directed Graph）显示每个 camper 在 Camper News 上所发表链接的域名。",
+        " <strong>用户需求：</strong> 在每个节点上显示 camper 的头像。",
+        " <strong>用户需求：</strong> 显示每个 camper 之间以及他们所发表链接的域名之间的联系。",
+        " <strong>用户需求：</strong> 每个 camper 的头像大小表示他所发表的指定域名下链接的次数。",
+        " <strong>用户需求：</strong> 每个域名的节点大小表示该域名下链接被引用的次数。",
+        " <strong>提示：</strong> <code>http://www.freecodecamp.com/news/hot</code> 。",
+        "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+      ],
+      "challengeSeed": [
+        "150324458"
+      ],
+      "tests": [],
+      "isRequired": true,
+      "releasedOn": "January 1, 2016",
+      "type": "zipline",
+      "challengeType": 3
+    },
+    {
+      "id": "bd7108d8c242eddfaeb5bd13",
+      "title": "Map Data Across the Globe",
+      "description": [
+        " <strong>目标：</strong> 在 <a href='http://codepen.io' target='_blank'>CodePen.io</a> 上创建一个功能与这个示例： <a href='http://codepen.io/FreeCodeCamp/full/mVEJag' target='_blank'>http://codepen.io/FreeCodeCamp/full/mVEJag</a> 类似的应用。",
+        " <strong>规则 #1：</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
+        " <strong>规则 #2：</strong> 完成以下 <a href='http://en.wikipedia.org/wiki/User_story' target='_blank'>用户故事（即用户需求）</a>。可以根据需要引用其它第三方的库或接口。以你自己的风格习惯完成这个项目。",
+        " <strong>规则 #3：</strong> 该项目必须使用 D3.js 库。",
+        " <strong>用户需求：</strong> 在一个世界地图上显示陨石坠落地。",
+        " <strong>用户需求：</strong> 在图中显示陨石的相对大小。",
+        " <strong>用户需求：</strong> 移动鼠标经过图上某点时，提示当前位置的详细信息。",
+        " <strong>提示：</strong> 本项目数据可以参考这里：<a href='https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json' target='_blank'>https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json</a>",
+        "当你遇到问题时，可以到这里求助： <a href='//github.com/FreeCodeCamp/freecodecamp/wiki/How-to-get-help-when-you-get-stuck' target='_blank'>Read-Search-Ask</a> 。",
+        "项目完成后，点击 \"我已经完成了这个挑战\" 并在弹出窗口中填入你在 CodePen 的项目链接。",
+        "最后，你可以在 <a href='//gitter.im/freecodecamp/chinese' target='_blank'>Code Review Chatroom</a> 中分享你的代码，获取反馈。也可以把它分享在微博或其他社交媒体上。"
+      ],
+      "challengeSeed": [
+        "150324698"
+      ],
+      "tests": [],
+      "isRequired": true,
+      "releasedOn": "January 1, 2016",
+      "type": "zipline",
+      "challengeType": 3
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>学习进度排行榜</title>
+  <style>
+  h2{padding-left: 10px;}
+  table,th,td{
+    padding-left: 5px;
+    text-align:center;
+  }
+  tr:nth-child(even){
+    background-color: #FAEBD7;
+  }
+  tr:nth-child(odd){
+    background-color: white;
+  }
+  th, tr{
+    padding:10px;
+  }
+  div{margin:0 auto;}
+  </style>
+  <base target="_blank" />
+  <script src="/js/angular.js"></script>
+</head>
+<body>
+  <div>
+    <h2>学习进度排行榜(最新)</h2>
+    <input type="text" placeholder="用户名" ng-model="items">
+    <table ng-controller="leaderboard" >
+      <tr>
+        <th>排名</th>
+        <th>用户名</th>
+        <th>用户头像</th>
+        <th>总得分</th>
+      </tr>
+      <tr ng-repeat="item in items | orderBy:'-score'  " >
+        <td ng-bind="$index+1"></td>
+        <td ng-bind="item.username"></td>
+        <td><img ng-src="{{item.picture}}" width="64px"></td>
+        <td ng-bind="item.score"></td>
+      </tr>
+    </table>
+  </div>
+<script>
+  var app = angular.module('app',[]);
+  app.controller('leaderboard',['$scope','$http', function($scope,$http){
+    $http.get('/leader-board').then(function(res){
+      var out = res.data;
+      for(var i=0;i<out.length;i++){
+          delete out[i].progressTimestamps;
+      }
+      $scope.items = out;
+    },function(err){
+      console.log(err);
+    })
+  }])
+</script>
+</body>
+</html>

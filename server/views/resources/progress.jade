@@ -1,0 +1,169 @@
+extends ../layout
+block content
+  style.
+    tr:nth-child(even){background-color: #FAEBD7;}
+    tr:nth-child(odd){background-color: white;}
+    th,td{padding:5px;text-align:center;}
+  .row(ng-app='app')
+    p.text-center
+      |  江湖传言：“江左梅郎，麒麟之才，得之可得天下。”
+    p.text-center
+      |  如今，优秀的js工程师就是江左梅郎，就是企业梦寐以求的麒麟之才。
+    p.text-center
+      |  琅琊榜的规则：绝不允许抄袭，一旦发现，立即取消获得的证书。
+    p.text-center
+      |  迄今已经取消3人证书，请各位做项目过程中独立思考，不要copy示例代码或他人代码。
+    p.text-center
+      |  如果遇到困难无法解决，可先行从学习路径跳过。
+    p.text-center
+      |  证书是对学习成绩优秀的同学的奖励，而不是成为某些人的目的。
+    p.text-center
+      |  再次提醒：一旦涉及抄袭，立即取消证书，永不恢复，拒绝协商。
+    p.text-center
+      比赛已经于2016年7月2日21:00结束，获奖名单请移步：
+      a(href='https://github.com/freecodecampchina/freecodecamp.cn/wiki/bingo' target='_blank')  wiki
+    #left.col-md-4.col-sm-12.col-xs-12
+      h4.text-center 专业组排行榜
+      table(ng-controller='left')
+        tr
+          th 排名
+          th 用户名
+          th 头像
+          th 基础分
+          th 项目分
+          th 总分
+        tr(ng-repeat="item in items | orderBy:'-totalScore' ")
+          td(ng-bind='$index+1')
+          td(ng-bind='item.username')
+          td
+            img(ng-src='{{item.picture}}', width='64px')
+          td(ng-bind='item.score')
+          td(ng-bind='item.projectScore')
+          td(ng-bind='item.totalScore = item.score + item.projectScore')
+    #center.col-md-4.col-sm-12.col-xs-12
+      h4.text-center 业余组排行榜
+      table(ng-controller='center')
+        tr
+          th 排名
+          th 用户名
+          th 头像
+          th 基础分
+          th 项目分
+          th 总分
+        tr(ng-repeat="item in items | orderBy:'-totalScore' ")
+          td(ng-bind='$index+1')
+          td(ng-bind='item.username')
+          td
+            img(ng-src='{{item.picture}}', width='64px')
+          td(ng-bind='item.score')
+          td(ng-bind='item.projectScore')
+          td(ng-bind='item.totalScore = item.score + item.projectScore')
+    #right.col-md-4.col-sm-12.col-xs-12
+      h4.text-center 程序媛新秀组排行榜
+      table(ng-controller='right')
+        tr
+          th 排名
+          th 用户名
+          th 头像
+          th 基础分
+          th 项目分
+          th 总分
+        tr(ng-repeat="item in items | orderBy:'-totalScore' ")
+          td(ng-bind='$index+1')
+          td(ng-bind='item.username')
+          td
+            img(ng-src='{{item.picture}}', width='64px')
+          td(ng-bind='item.score')
+          td(ng-bind='item.projectScore')
+          td(ng-bind='item.totalScore = item.score + item.projectScore')
+  script(src='/js/angular.min.js')
+  script.
+    var project1 = ['bd7158d8c442eddfbeb5bd1f','bd7158d8c442eddfaeb5bd18','bd7158d8c242eddfaeb5bd13','bd7158d8c242eddfaeb5be13'];
+    var project2 = ['bd7158d8c442eddfaeb5bd13','bd7158d8c442eddfaeb5bd10','bd7158d8c442eddfaeb5bd19','bd7158d8c442eddfaeb5bd1f','bd7168d8c242eddfaeb5bd13','bd7178d8c242eddfaeb5bd13','bd7188d8c242eddfaeb5bd13','bd7198d8c242eddfaeb5bd13','bd7108d8c242eddfaeb5bd13'];
+    var project3 = ['bd7158d8c442eddfaeb5bd17','bd7158d8c442eddfaeb5bd0f','bd7158d8c442eedfaeb5bd1c','bd7158d8c442eddfaeb5bd1c','bd7157d8c242eddfaeb5bd13','bd7156d8c242eddfaeb5bd13','bd7155d8c242eddfaeb5bd13','bd7154d8c242eddfaeb5bd13','bd7153d8c242eddfaeb5bd13'];
+    var app = angular.module('app',[]);
+    app.controller('left',['$scope','$http', function($scope,$http){
+      $http.get('/master').then(function(res){
+        var out = res.data;
+        for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  console.log(project3[k]);
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+        }
+        $scope.items = out;
+      },function(err){
+        console.log(err);
+      })
+    }]);
+    app.controller('center',['$scope','$http', function($scope,$http){
+      $http.get('/newer').then(function(res){
+        var out = res.data;
+        for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+        }
+        $scope.items = out;
+      },function(err){
+        console.log(err);
+      })
+    }])
+    app.controller('right',['$scope','$http', function($scope,$http){
+      $http.get('/women').then(function(res){
+        var out = res.data;
+        for(var i=0;i<out.length;i++){
+          for(var j=0;j<out[i].progressTimestamps.length;j++){
+            if(out[i].progressTimestamps[j].hasOwnProperty('completedChallenge')){
+              for(var k=0;k<4;k++){
+                if(out[i].progressTimestamps[j].completedChallenge == project1[k]){
+                  out[i].projectScore +=20;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project2[k]){
+                  out[i].projectScore +=30;
+                  out[i].score -=1;
+                }
+                if(out[i].progressTimestamps[j].completedChallenge == project3[k]){
+                  out[i].projectScore +=40;
+                  out[i].score -=1;
+                }
+              }
+            }
+          }
+        }
+        $scope.items = out;
+      },function(err){
+        console.log(err);
+      })
+    }])

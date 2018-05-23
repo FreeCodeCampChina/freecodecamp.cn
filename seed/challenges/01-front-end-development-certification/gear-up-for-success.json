@@ -1,0 +1,96 @@
+{
+  "name": "Gear up for Success",
+  "order": 4,
+  "time": "20 minutes",
+  "challenges": [
+    {
+      "id": "570add8ccb82ac38a17513c3",
+      "title": "Join our LinkedIn Alumni Network",
+      "description": [
+        [
+          "//i.imgur.com/vJyiXzU.gif",
+          "A gif showing how you can click the link below and fill in the necessary fields to add your Free Code Camp studies to your LinkedIn profile.",
+          "在LinkedIn中，FreeCodeCamp是一所被认可的大学。你可以通过在LinkedIn的教育背景一栏中添加FreeCodeCamp来加入我们的庞大的校友网络。详细设置步骤如下：设置你的毕业时间为明年。在\"获颁学位\"一栏填入 \"Full Stack Web Development Certification\"。在\"学习专业\"一栏填入 \"Computer Software Engineering\"。然后点击\"保存\"按钮。",
+          "https://www.linkedin.com/profile/edit-education?school=Free+Code+Camp"
+        ]
+      ],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7
+    },
+    {
+      "id": "560adc65cb82ac38a17513c2",
+      "title": "Join our Subreddit",
+      "description": [
+        [
+          "//i.imgur.com/DYjJuCG.gif",
+          "A gif showing how you can create a Reddit account and join Free Code Camp's subreddit.",
+          "我们在Reddit上有专用子频道。在这里可以很方便地与我们整个社区分享链接和提问。如果你还没有Reddit账户，你可以在几秒内创建一个（邮箱都不需要填）。然后你需要点击\"订阅\"按钮来订阅我们的子频道。你还可以从我们的侧边栏里订阅其他你感兴趣的频道。",
+          "https://reddit.com/r/freecodecamp"
+        ]
+      ],
+      "releasedOn": "February 10, 2016",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7
+    },
+    {
+      "id": "560adf65cb82ac38a17513c2",
+      "title": "Read Coding News on our Medium Publication",
+      "description": [
+        [
+          "//i.imgur.com/FxSOL4a.gif",
+          "A gif showing how you can create a Medium account.",
+          "我们写了很多关于软件开发的文章发布在Medium上。如果你还没有Medium账户，你可以点击下面的链接然后使用第三方登录或者是用邮箱注册一个（你将会收到一封验证邮件，点击其中的链接即可完成创建）。当你选择完感兴趣的话题，你就可以点击下一步了。",
+          "https://www.medium.com"
+        ],
+        [
+          "//i.imgur.com/zhhywSX.gif",
+          "A gif showing how you can click the \"follow\" button to follow Free Code Camp's publication.",
+          "当你登录后，你可以进入Free Code Camp的Medium频道，点击\"关注\"。团员们每周会发布几篇文章。",
+          "https://medium.freecodecamp.com"
+        ]
+      ],
+      "releasedOn": "February 10, 2016",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7
+    },
+    {
+      "id": "560ade65cb82ac38a17513c2",
+      "title": "Watch us Code Live on Twitch.tv",
+      "description": [
+        [
+          "//i.imgur.com/8rtyRY1.gif",
+          "A gif showing how you can sign up for Twitch.tv and follow our channel.",
+          "团员们会经常在Twitch.tv直播写代码. 你可以在一分钟内创建一个Twitch帐户，然后关注Free Code Camp频道。 当你关注后，每次团员进行直播的时候你都会收到一封通知邮件。在与其他团员一起观看代码直播的时候还可以在直播间进行互动。通过观看团员们直播搭建项目来学习编程相当的有趣直观。",
+          "https://twitch.tv/freecodecamp"
+        ]
+      ],
+      "releasedOn": "February 10, 2016",
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7
+    },
+    {
+      "id": "560add8ccb81ac38a17513c4",
+      "title": "Commit to a Goal and a Nonprofit",
+      "description": [
+        [
+          "//i.imgur.com/Og1ifsn.gif",
+          "A gif showing how you can commit to a goal for your Free Code Camp studies and pledge a monthly donation to a nonprofit to give you external motivation to reach that goal.",
+          "你可以为自己设定目标并承诺在完成设定的目标前每个月向非盈利组织捐款来敦促自己学习编程，同时也可以切实的帮助到非盈利组织。设定你的目标，然后选择月度捐献额度。当你点击\"提交\"，向非盈利性组织捐款的页面将会在新标签页打开。需要注意的是，这完全是自愿的，你也可以在任何时刻取消或是停止捐款。",
+          "/commit"
+        ]
+      ],
+      "challengeSeed": [],
+      "tests": [],
+      "type": "Waypoint",
+      "challengeType": 7
+    }
+  ]
+}

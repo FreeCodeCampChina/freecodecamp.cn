@@ -1,0 +1,62 @@
+extends ../layout
+block content
+    style.
+    .text-center
+        h2 账户登录
+        .github-login
+          a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/github')
+              i.fa.fa-github
+              | GitHub一键注册登录
+          .first * 推荐使用
+        //hiden juhe login
+          br
+          a.btn.btn-lg.btn-block.btn-social.btn-github(href='/auth/juhe')
+              img(src="/images/juhe.png")
+              | 聚合登录
+        br
+        a.btn.btn-lg.btn-block.btn-social.btn-github(href='/email-signin')
+            i.fa.fa-envelope-o
+            | 邮箱登录
+        br
+        a.btn.btn-lg.btn-block.btn-social.btn-github(href='/challenges/learn-how-free-code-camp-works')
+            i.fa.fa-map-o
+            | 直接开始学习
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+    script.
+      $(document).ready(function() {
+        var method = localStorage.getItem('lastSigninMethod'),
+          btnSelector = 'a.btn.btn-lg.btn-block.btn-social';
+        if (method) {
+          try {
+            var obj = JSON.parse(method);
+          } catch(e) {
+            console.error('Invalid sign in object stored', method);
+            return;
+          }
+          $.each($(btnSelector), function(i, item) {
+            if (
+              $(item).attr('href') === obj.methodLink &&
+              $(item).hasClass(obj.methodClass)
+            ) {
+              $(item).addClass('active');
+              $(item).attr('title', 'This is your last signin method');
+              return false;
+            }
+          });
+        }
+
+        $(btnSelector).click(function() {
+          var obj = {};
+          $(this).removeClass('active');
+          obj.methodClass = $(this).attr('class').split(' ').pop();
+          obj.methodLink = $(this).attr('href');
+          localStorage.setItem('lastSigninMethod', JSON.stringify(obj));
+        });
+      });

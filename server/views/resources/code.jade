@@ -1,0 +1,144 @@
+extends ../layout
+block content
+    style.
+      #banner{background: #4CAF50;height:450px;color:white;margin-left:-15px;margin-right:-15px;margin-top:-71px;}
+      .canvas-text{position:absolute;top:0;left:0;width:100%;margin-top:60px;text-align:center;}
+      #logo{display:block;margin:0 auto;padding-top:3%;width:100px;}
+      .qrcode{position: fixed;top: 500px;border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;
+        text-align: center;color: #717375;font-size: 12px;}
+      .right{right: 0px;}
+      .left{left: 0px;}
+      h4{font-size:18px;}
+      dd{margin: 0 auto;margin-top: 5px;}
+      .btn-orange{background:orange;display:block;margin:0 auto;border:none;margin-top: 20px;font-size:30px;}
+      .carousel-indicators {bottom: -30px;}
+      .carousel-indicators li {border: 1px solid #8BC34A;border-radius: 50%;margin:0;margin-right:5px;}
+      .carousel-indicators .active {background:#8BC34A; width:10px;height:10px;margin-right:5px;}
+      .button-spacer{height:10px;}
+      .spacer{height:10px;}
+      .row{margin-top:40px;text-align:center;}
+      .modal{font-size:24px;}
+      .mt10{margin-top:10px;}
+      .modal-footer{text-align:center;}
+      #commit{color: #fff;background: orange;border: none;}
+    div.hidden
+      img(src='/images/camper-image-placeholder.png')
+    dl.qrcode.right.hidden-xs
+      dt
+        img(src='images/qrcode_for_nearest.jpg', width='120px')
+        dd 微信搜索freecodecamp
+        span 更多好东西等你来发现
+    .qrcode.left.hidden-xs
+      img#iwantjoin(src='/images/enroll.png', width='150px')
+    .row#banner
+      canvas#animate-net.banner-back
+      .canvas-text
+        img#logo(src='/images/wilddog.png')
+        h1 野狗杯
+        h1 苏州全民在线编程挑战赛
+        h2 06.05 -- 07.02
+        // Button trigger modal
+        button.btn.btn-orange.btn-lg(type='button', data-toggle='modal', data-target='#myModal') 立即报名
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document' ng-app="app")
+        .modal-content(ng-controller='modal')
+          .modal-header
+            h4.text-center#myModalLabel.modal-title(style='text-align:center;') FreeCodeCamp 比赛报名入口
+          .modal-body
+            form.form-horizontal
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='username') 用户名
+                .col-xs-12.col-sm-9.mt10
+                  input#username.form-control(type='text', ng-model='username', name='username', placeholder='FCC的用户名都是小写哦', required='')
+                  span(style='font-size:12px;') 如果你没有FCC用户名，
+                  a(href='/login', style='font-size:12px;') 请先注册FCC
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='telphone') 手机号
+                .col-xs-12.col-sm-9.mt10
+                  input#telphone.form-control(type='tel', ng-model='telphone', name='telphone', placeholder='便于我们通知你领奖品哦', required='')
+              .form-group
+                label.col-xs-12.col-sm-3.control-label(for='category') 选择组别
+                .col-xs-12.col-sm-9.mt10
+                  select(style='border: 1px solid #ccc;width:100%;')
+                    option(value='') 一旦选定不能修改哦 ^_^
+                    option(value='master') 专业组(面向计算机高手)
+                    option(value='newer') 业余组(面向计算机小白)
+                    option(value='women') 新秀组(只面向女性，男性选择改组无法获奖）
+          .modal-footer
+            button.btn.btn-primary(type='button', data-dismiss='modal') 关闭此窗口
+            button#commit.btn.btn-default(ng-click='commit();') 确定无误，提交
+    .container-fluid
+      h4.text-center 人人皆可编程
+      p.text-center(style='padding-top:20px;') 本次挑战赛由苏州工业园区科信局指导、苏州开发者联盟主办、猿生态开发者社区承办。
+      p.text-center 全民编程时代已经来临，编程技能将会成为一项基本素质。
+      p.text-center 本次挑战赛旨在提升苏州开发者技能，营造“人人皆可编程”的氛围。
+    hr
+    .container-fluid
+    h4.text-center 比赛平台：FreeCodeCamp中文社区
+    .row
+      .col-xs-12.col-sm-12.col-md-3
+        img.img-responsive.center-block(src='/images/landingIcons_connect.svg', style='width:150px;')
+        .button-spacer
+        span 全球30W+用户
+        br
+        span GitHub上排名第一
+        .spacer
+      .col-xs-12.col-sm-12.col-md-3
+        img.img-responsive.center-block(src='/images/landingIcons_learn.svg', style='width:150px;')
+        .button-spacer
+        span 游戏化编程
+        br
+        span 无尽的挑战任务
+        .spacer
+      .col-xs-12.col-sm-12.col-md-3
+        img.img-responsive.center-block(src='/images/landingIcons_nonprofits.svg', style='width:150px;')
+        .button-spacer
+        span 8万+人在线交流
+        br
+        span 有问必答
+        .spacer
+      .col-xs-12.col-sm-12.col-md-3
+        img.img-responsive.center-block(src='/images/landingIcons_portfolio.svg', style='width:150px;')
+        .button-spacer
+        span 帮助非盈利组织
+        br
+        span 开发公益项目
+        .spacer
+    hr
+    .container-fluid
+    h4.text-center 赛程
+    embed(src='images/timeline.svg', type='image/svg+xml')
+    hr
+    .container-fluid
+    h4.text-center 分组
+    embed(src='images/groups.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/', style='margin-left:20px;')
+    hr
+    .container-fluid
+    h4.text-center 评分（标星的必做）
+    embed(src='images/challenges.svg', type='image/svg+xml', codebase='http://www.adobe.com/svg/viewer/install/')
+    hr
+    .container-fluid(style='width:100%;')
+    h4.text-center 奖品
+    #carousel-example-generic.carousel.slide(data-ride='carousel')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='/images/1.png', alt='...')
+        .item
+          img(src='/images/2.png', alt='...')
+        .item
+          img(src='/images/3.png', alt='...')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#carousel-example-generic', data-slide-to='0')
+        li(data-target='#carousel-example-generic', data-slide-to='1')
+        li(data-target='#carousel-example-generic', data-slide-to='2')
+    hr
+    div
+    img.img-responsive.center-block(src='images/startup.png')
+    a(href='https://wilddog.com')
+    img.img-responsive.center-block(src='images/zuanshi.png')
+    img.img-responsive.center-block(src='images/media.png')
+    script(src="/js/greensock.js")
+    script(src="/js/angular.min.js")
+    script(src="/js/join-race.js")

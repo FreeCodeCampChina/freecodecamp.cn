@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+     <meta charset="utf-8">
+  </head>
+  <body style="height: 100%; margin: 0">
+     <div id="container" style="height: 100%"></div>
+     <script type="text/javascript" src="/js/echarts-all-3.js"></script>
+     <script src="https://cdn.bootcss.com/jquery/2.1.1-rc2/jquery.min.js"></script>
+     <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+$.getJSON('/get-user-identity/',function(res){
+  data = res;
+  var arr = data.map(function(item){
+      return Number(String(new Date(item.created).getMonth()+1)+new Date(item.created).getDate());
+  })
+  //console.log(arr);
+  var result = data.map(function(item){
+    var temp = new Date(item.created);
+    return [temp.getFullYear(), temp.getMonth()+1, temp.getDate()].join('/')
+  })
+  function distinct(arr) {
+    var ret = [],
+        json = {},
+        length = arr.length;
+
+    for(var i = 0; i < length; i++){
+        var val = arr[i];
+        if(!json[val]){
+            json[val] = 1;
+            ret.push(val);
+        }
+    }
+    return ret;
+  }
+  var date = distinct(result);
+  console.log(date);
+  var arrResult = [];
+  for(var i=0;i<arr.length;i++){
+      if(arr[i]!=-1){
+          var temp = arr[i];
+          var count = 0;
+          for(var j=0;j<arr.length;j++){
+              if(temp == arr[j]){
+                  count++;
+                  arr[j] = -1;
+              }
+          }
+          arrResult.push(count);
+      }
+  }
+  arrResult;
+  for(var i=0,sum=0,summer=[];i<arrResult.length;i++){
+    sum+=arrResult[i];
+    summer.push(sum);
+    summer[summer.length-1]+=98;
+  }
+
+  option = {
+      tooltip: {
+          trigger: 'axis',
+          position: function (pt) {
+              return [pt[0], '10%'];
+          }
+      },
+      title: {
+          left: '20px',
+          top: '10px',
+          text: 'FCC用户增长曲线',
+      },
+      legend: {
+          top: '20px',
+          data:['新增人数','累积人数']
+      },
+      toolbox: {
+          feature: {
+              dataZoom: {
+                  yAxisIndex: 'none'
+              },
+              restore: {},
+              saveAsImage: {}
+          }
+      },
+      xAxis: {
+          type: 'category',
+          boundaryGap: false,
+          data: date
+      },
+      yAxis: {
+          type: 'value',
+          boundaryGap: [0, '100%']
+      },
+      dataZoom: [{
+          type: 'inside',
+          start: 0,
+          end: result.length
+      }, {
+          start: 0,
+          end: 10,
+          handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+          handleSize: '80%',
+          handleStyle: {
+              color: '#fff',
+              shadowBlur: 3,
+              shadowColor: 'rgba(0, 0, 0, 0.6)',
+              shadowOffsetX: 2,
+              shadowOffsetY: 2
+          }
+      }],
+      series: [
+          {
+              name:'新增人数',
+              type:'line',
+              smooth:true,
+              symbol: 'none',
+              sampling: 'average',
+              itemStyle: {
+                  normal: {
+                      color: 'rgb(255, 70, 131)'
+                  }
+              },
+              areaStyle: {
+                  normal: {
+                      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                          offset: 0,
+                          color: 'rgb(255, 158, 68)'
+                      }, {
+                          offset: 1,
+                          color: 'rgb(255, 70, 131)'
+                      }])
+                  }
+              },
+              data: arrResult
+          },
+          {
+              name:'累积人数',
+              type:'line',
+              smooth:true,
+              symbol: 'none',
+              sampling: 'average',
+              itemStyle: {
+                  normal: {
+                      color: 'rgb(255, 131, 131)'
+                  }
+              },
+              areaStyle: {
+                  normal: {
+                      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                          offset: 0,
+                          color: 'rgb(255, 158, 68)'
+                      }, {
+                          offset: 1,
+                          color: 'rgb(255, 70, 131)'
+                      }])
+                  }
+              },
+              data: summer
+          }
+      ]
+  };
+  ;
+  if (option && typeof option === "object") {
+      myChart.setOption(option, true);
+  }
+})
+
+       </script>
+   </body>
+</html>

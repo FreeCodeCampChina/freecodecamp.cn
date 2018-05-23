@@ -1,0 +1,72 @@
+doctype xml
+urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+
+  url
+    loc http://www.freecodecamp.com/
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/nonprofits
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/pmi-acp-agile-project-managers
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/map
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/labs
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/stories
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/jobs
+    changefreq weekly
+    lastmod= now
+    priority= 0.9
+
+  url
+    loc http://www.freecodecamp.com/coding-bootcamp-cost-calculator
+    changefreq monthly
+    lastmod= now
+    priority= 0.9
+
+  //- User
+  each user in users
+    url
+      loc #{appUrl}/#{user}
+      lastmod= now
+      changefreq weekly
+      priority= 0.5
+
+  each challenge in challenges
+    url
+      loc #{appUrl}/challenges/#{challenge.replace(/\s/g, '-')}
+      lastmod= now
+      changefreq weekly
+      priority= 0.9
+
+  each story in stories
+    url
+      loc #{appUrl}/news/#{story.replace(/\s/g, '-')}
+      lastmod= now
+      changefreq weekly
+      priority= 0.5

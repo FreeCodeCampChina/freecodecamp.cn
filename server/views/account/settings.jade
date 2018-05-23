@@ -1,0 +1,106 @@
+extends ../layout
+block content
+        h1.text-center 账户设置
+        hr
+        .row
+          .col-xs-12
+              if (!user.isGithubCool)
+                  a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
+                      i.fa.fa-github
+                      | 链接我的github账户以解锁作品集
+              else
+                  a.btn.btn-lg.btn-block.btn-github.btn-link-social(href='/link/github')
+                      i.fa.fa-github
+                      | 更新GitHub中的作品集
+          .col-xs-12
+              a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='/logout')
+                  | 退出账户
+          .col-xs-12
+              a.btn.btn-lg.btn-block.btn-primary.btn-link-social(href='mailto:jin@freecodecamp.cn')
+                  | 联系我们：jin@freecodecamp.cn
+        .spacer
+        h2.text-center 隐私设置
+        .row
+          .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+            .row
+              .col-xs-9
+                p.large-p 天空不留下鸟的痕迹，但我已飞过。
+                  br
+                  | (开启隐私模式是拿不到证书的哦！)
+              if (user.isLocked)
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-lockdown-mode') On
+              else
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-lockdown-mode') Off
+
+        .spacer
+        h2.text-center 邮箱设置
+        .row
+          .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+            .row
+              .col-xs-9
+                p.large-p 订阅公告
+                  br
+                  | (发布公告)
+              if (user.sendMonthlyEmail)
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-announcement-email-mode') On
+              else
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-announcement-email-mode') Off
+
+            .row
+              .col-xs-9
+                p.large-p 订阅通知
+                  br
+                  | (发布通知)
+              if (user.sendNotificationEmail)
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-notification-email-mode') On
+              else
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-notification-email-mode') Off
+
+            .row
+              .col-xs-9
+                p.large-p 订阅周刊
+                  br
+                  | (发布周刊)
+              if (user.sendQuincyEmail)
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.active.positive-20(href='/toggle-quincy-email-mode') On
+              else
+                .col-xs-3
+                  a.btn.btn-lg.btn-primary.btn-block.positive-20(href='/toggle-quincy-email-mode') Off
+
+        .spacer
+        h2.text-center 危险操作
+        .row
+          .col-xs-12
+              a.btn.btn-lg.btn-block.btn-danger.btn-link-social.confirm-deletion
+                  | 删除我的账户
+              script.
+                  $('.confirm-deletion').on("click", function () {
+                      $('#modal-dialog').modal('show');
+                  });
+          #modal-dialog.modal.animated.wobble
+              .modal-dialog
+                  .modal-content
+                      .modal-header
+                          a.close(href='#', data-dismiss='modal', aria-hidden='true') ×
+                          h3 You don't really want to delete your account, do you?
+                      .modal-body
+                          p This will really delete all your data, including all your progress, news stories and brownie points.
+                          p We won't be able to recover any of it for you later, even if you change your mind.
+                          p If there's something we could do better, send us an email instead and we'll do our best: &thinsp;
+                              a(href="mailto:jin@freecodecamp.cn") huuoyang@freecodecamp.cn
+                              | .
+                      .modal-footer
+                          a.btn.btn-success.btn-block(href='#', data-dismiss='modal', aria-hidden='true')
+                              | Nevermind, I don't want to delete all of my progress
+                          .spacer
+                          form(action='/account/delete', method='POST')
+                              input(type='hidden', name='_csrf', value=_csrf)
+                              button.btn.btn-danger.btn-block(type='submit')
+                                  | I am 100% sure I want to delete my account and all of my progress

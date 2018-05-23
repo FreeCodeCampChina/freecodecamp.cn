@@ -1,0 +1,55 @@
+extends ../layout-wide
+block content
+    .row
+        .col-md-8.col-md-offset-2
+            for step, index in description
+                .challenge-step(class=index !== 0 ? 'hidden': '')
+                    a(href=step[0] data-lightbox='img-enlarge')
+                        img.gif-block.img-center.img-responsive(src='#{step[0]}' alt='#{step[1]}')
+                    .row
+                        .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+                            p!= step[2]
+                    .challenge-button-block
+                        if step[3]
+                            a.btn.btn-block.btn-primary.challenge-step-btn-action.btn-lg(id='#{index}' href='#{step[3]}' target='_blank') 点击这里按图示操作可以解锁下一个挑战
+                            .button-spacer
+                        if index === 0
+                            .col-sm-4.hidden-xs &nbsp;
+                        else
+                            .btn.btn-primary.btn-primary-ghost.col-sm-4.col-xs-12.challenge-step-btn-prev.btn-lg(id='#{index - 1}') 后退
+                        .challenge-step-counter.large-p.col-sm-4.col-xs-12.text-center (#{index + 1} / #{description.length})
+                        if index + 1 === description.length
+                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-finish.btn-lg(id='last' class=step[3] && !isCompleted ? 'disabled' : '') 完成挑战
+                        else
+                            .btn.btn-primary.col-sm-4.col-xs-12.challenge-step-btn-next.btn-lg(id='#{index}' class=step[3] && !isCompleted ? 'disabled' : '') 前进
+                    .clearfix
+    .spacer
+    #challenge-step-modal.modal(tabindex='-1')
+        .modal-dialog.animated.fadeIn.fast-animation
+            .modal-content
+                .modal-header.challenge-list-header= compliment
+                    a.close.closing-x(href='#', data-dismiss='modal', aria-hidden='true') ×
+                .modal-body
+                    .text-center
+                      #checkmark-container.row
+                          #challenge-checkmark.animated.zoomInDown.delay-half
+                              span.completion-icon.ion-checkmark-circled.text-primary
+                      .spacer
+                      .row
+                      if (user)
+                          #challenge-step-btn-submit.animated.fadeIn.btn.btn-lg.btn-primary.btn-block 进入下一个挑战
+                      else
+                          a.btn.btn-lg.btn-primary.btn-block(href='/challenges/next-challenge?id=' + id) 前进
+    script.
+      var common = window.common || { init: [] };
+
+      common.challengeId = !{JSON.stringify(id)};
+      common.challengeName = !{JSON.stringify(name)};
+      common.challengeType = !{JSON.stringify(challengeType)};
+      common.dashedName = !{JSON.stringify(dashedName || '')};
+      common.gaName = !{JSON.stringify(gaName)};
+      common.isHonest = !{JSON.stringify(isHonest || false)};
+      common.isFrontEndCert = !{JSON.stringify(isFrontEndCert || false)};
+      common.isFullStackCert = !{JSON.stringify(isFullStackCert || false)};
+      common.challengeSeed = !{JSON.stringify(challengeSeed || [])};
+    include ../partials/challenge-footer
