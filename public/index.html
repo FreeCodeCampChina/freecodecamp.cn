@@ -9,6 +9,7 @@
   <title>Learn to Code and Help Nonprofits | FreeCodeCamp中文社区</title>
   <link rel="shortcut icon" href="./favicons/green.ico" />
   <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.2.6/css/swiper.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 
@@ -16,9 +17,53 @@
   <div id="root">
     <header>顶部菜单栏</header>
     <div class="content">
-      <div class="overview">点亮xxx城市，建立xxx天，完成xxx个挑战</div>
-      <div class="carousel">轮播图位置</div>
-      <div class="introduction">全球四十万社区、一起编程闯关完成挑战、</div>
+      <div class="overview">
+        <ul>
+          <li class="gray">点亮<span class="orange">99</span>城市</li>
+          <li class="gray">建立<span class="orange">99</span>天</li>
+          <li class="gray">完成<span class="orange">9999</span>个挑战</li>
+          <li class="gray">拥有<span class="orange">9999</span>名会员</li>
+        </ul>
+      </div>
+      <div class="carousel swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="left">
+              <h1 class="title green">Code for City</h1>
+              <p class="description green-light">freeCodeCamp 中文社区启动了 Code for City 这个品牌活动，通过联合企业、高校、技术社区、公益组织等机构，以编程工作坊或黑客松的形式，赋能青年人为社会议题设计解决方案，旨在推动编程的普及，用技术影响世界。</p>
+              <a href="#" class="btn">点击进入&nbsp;>&nbsp;></a>
+            </div>
+            <div class="right">
+              <img src="https://staticfile.shaoyaoju.org/20180523/地图2.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="left">
+              <h1 class="title green">freeCodeCamp</h1>
+              <p class="description green-light">freeCodeCamp（以下简称FCC）是一个免费、碎片化、游戏化、自学前端编程的开源社区编程学习平台，鼓励 Learning by Doing 的学习方式。你可以在这里学习到前端、后端、数据可视化等开发知识。</p>
+              <a href="#" class="btn">开始闯关&nbsp;>&nbsp;></a>
+            </div>
+            <div class="right">
+              <img src="https://staticfile.shaoyaoju.org/20180523/%E7%BC%96%E7%A8%8B%E7%95%8C%E9%9D%A22.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="left">
+              <h1 class="title green">有效的学习方式</h1>
+              <p class="description green-light">Free Code Camp 已经被证明是获取编程工作的最有效路径，事实上，没人完成了所有课程，因为他们都在完成之前就找到了工作。</p>
+              <a href="#" class="btn">开始闯关&nbsp;>&nbsp;></a>
+            </div>
+            <div class="right">
+              <p class="green">你将会学习到的技能</p>
+              <img src="https://staticfile.shaoyaoju.org/20180523/WechatIMG113.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="introduction">
+        <img src="https://staticfile.shaoyaoju.org/20180523/WechatIMG26.jpeg" alt="">
+      </div>
       <div class="courses">课程大纲</div>
       <div class="city-map">Code for City社区地图</div>
       <div class="study-circle">学习方式</div>
@@ -26,7 +71,17 @@
     <footer>底部区域</footer>
   </div>
   <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+      autoplay: true,
+      loop: true,
+      speed: 600,
+      pagination: {
+        el: '.swiper-pagination'
+      }
+    });
+  </script>
 </body>
 
 </html>
-No newline at end of file
