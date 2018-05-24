@@ -2,27 +2,55 @@ body {
   font-size: 14px;
 }
 
-#root .orange { color: #ff9900; }
-#root .gray { color: rgb(128, 127, 128); }
-#root .green { color: rgb(64, 194, 150); }
-#root .green-light { color: rgb(116, 197, 164); }
+#root .orange {
+  color: #ff9900;
+}
+
+#root .gray {
+  color: rgb(128, 127, 128);
+}
+
+#root .green {
+  color: rgb(64, 194, 150);
+}
+
+#root .green-light {
+  color: rgb(116, 197, 164);
+}
+
+#root .content .btn {
+  background-color: rgb(64, 194, 150);
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 3rem;
+  height: 3rem;
+  width: 10rem;
+  text-align: center;
+}
 
 /* 简介 开始 */
+
 #root .content .overview ul {
   text-align: center;
 }
+
 #root .content .overview ul li {
   list-style: none;
   display: inline;
   margin: 0 1.5rem;
   font-size: 1rem;
 }
+
 #root .content .overview ul li span {
   margin: 0 .5rem;
 }
+
 /* 简介 结束 */
 
 /* 焦点图 开始 */
+
 #root .content .carousel {
   background-color: rgb(245, 248, 251);
 }
@@ -55,17 +83,6 @@ body {
   line-height: 2rem;
 }
 
-#root .content .carousel .swiper-wrapper .swiper-slide .left .btn {
-  background-color: rgb(64, 194, 150);
-  color: #fff;
-  display: block;
-  font-size: 1.2rem;
-  text-decoration: none;
-  line-height: 3rem;
-  height: 3rem;
-  width: 10rem;
-}
-
 #root .content .carousel .swiper-wrapper .swiper-slide .right {
   width: 40vw;
   position: relative;
@@ -90,10 +107,213 @@ body {
   height: 13px;
   width: 13px;
 }
+
 /* 焦点图 结束 */
 
 /* 介绍 开始 */
+
 #root .content .introduction img {
   width: 100vw;
 }
+
 /* 介绍 结束 */
+
+/**有效的学习方式 开始 */
+
+#root .study-circle .container .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  overflow: hidden;
+  position: absolute;
+  left: 75px;
+  top: -5px;
+  fill: #ffdf7f;
+}
+
+#root .study-circle {
+  display: flex;
+}
+
+#root .study-circle .description {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .study-circle .description .text {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  font-size: 1.2em;
+  color: rgb(64, 194, 150);
+}
+
+#root .study-circle .description .text .title {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+#root .study-circle .description .text .content {
+  margin-bottom: 2rem;
+}
+
+#root .study-circle .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#root .study-circle .container .circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  margin: 90px auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: rgb(64, 194, 150);
+}
+
+#root .study-circle .container .circle .centralText {
+  line-height: 40px;
+  font-size: 1.2em;
+}
+
+#root .study-circle .container .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  border: 200px solid transparent;
+  cursor: default;
+  border-radius: 50%;
+}
+
+#root .study-circle .container .menu li {
+  position: absolute;
+  top: -140px;
+  left: -140px;
+  transform-origin: 140px 140px;
+}
+
+#root .study-circle .container .menu li a {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  border-radius: 50%;
+  background: rgb(64, 194, 150);
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+}
+
+#root .study-circle .container .menu li:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+#root .study-circle .container .menu li:nth-child(1) a {
+  transform: rotate(315deg);
+}
+
+#root .study-circle .container .menu li:nth-child(1) svg {
+  transform: rotate(-15deg);
+}
+
+#root .study-circle .container .menu li:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+#root .study-circle .container .menu li:nth-child(2) a {
+  transform: rotate(270deg);
+}
+
+#root .study-circle .container .menu li:nth-child(2) svg {
+  transform: rotate(-30deg);
+}
+
+#root .study-circle .container .menu li:nth-child(3) {
+  transform: rotate(135deg);
+}
+
+#root .study-circle .container .menu li:nth-child(3) a {
+  transform: rotate(225deg);
+}
+
+#root .study-circle .container .menu li:nth-child(3) svg {
+  transform: rotate(-15deg);
+}
+
+#root .study-circle .container .menu li:nth-child(4) {
+  transform: rotate(180deg);
+}
+
+#root .study-circle .container .menu li:nth-child(4) a {
+  transform: rotate(180deg);
+}
+
+#root .study-circle .container .menu li:nth-child(4) svg {
+  transform: rotate(-30deg);
+}
+
+#root .study-circle .container .menu li:nth-child(5) {
+  transform: rotate(225deg);
+}
+
+#root .study-circle .container .menu li:nth-child(5) a {
+  transform: rotate(135deg);
+}
+
+#root .study-circle .container .menu li:nth-child(5) svg {
+  transform: rotate(-15deg);
+}
+
+#root .study-circle .container .menu li:nth-child(6) {
+  transform: rotate(270deg);
+}
+
+#root .study-circle .container .menu li:nth-child(6) a {
+  transform: rotate(90deg);
+}
+
+#root .study-circle .container .menu li:nth-child(6) svg {
+  transform: rotate(-30deg);
+}
+
+#root .study-circle .container .menu li:nth-child(7) {
+  transform: rotate(315deg);
+}
+
+#root .study-circle .container .menu li:nth-child(7) a {
+  transform: rotate(45deg);
+}
+
+#root .study-circle .container .menu li:nth-child(7) svg {
+  transform: rotate(-15deg);
+}
+
+#root .study-circle .container .menu li:nth-child(8) {
+  transform: rotate(360deg);
+}
+
+#root .study-circle .container .menu li:nth-child(8) a {
+  transform: rotate(360deg);
+}
+
+#root .study-circle .container .menu li:nth-child(8) svg {
+  transform: rotate(-30deg);
+}
+
+/**有效的学习方式 开始 */
