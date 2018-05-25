@@ -1,18 +1,3 @@
-# Fork 说明
-
-Better freecodecamp 打造更好的FCC
-
-- ~~样式优化~~
-- 解决有些demo 不可用的问题
-- 解决有些题目失效无法解答的问题
-- 解决有些工具无法使用的问题
-- 增加学做教功能，项目必须由已经完成项目的学员审批后方可算完成
-- 增加完善项目功能，学员可自行修复bug，并提交总库
-- 增加排名功能
-- 增加组队功能
-
-
-
 ![](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)
 
 
@@ -81,4 +66,3 @@ The content of this repository bound by the following LICENSE(S)
 - The computer software is licensed under the [BSD-3-Clause](./LICENSE.md).
 - The curricular content as in the `./seed/challenges` or subdirectories and our wiki are licensed under the [CC-BY-SA-4.0](./LICENSE-freeCodeCamp-Curriculum.md)
 - The translation of this website follows the license of [CC-BY-NC-4.0](./LICENSE-freeCodeCamp-Translation.md)，Do not use (it) for commercial/business purpose. <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a>
-
