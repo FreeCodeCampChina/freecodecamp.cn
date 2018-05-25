@@ -9,87 +9,81 @@
       "title": "Get Set for our Back End Development Projects",
       "description": [
         [
-          "//i.imgur.com/4IZjWZ3.gif",
-          "A gif showing how to create a c9.io account.",
-          "为了方便你完成接下来的挑战项目，这里推荐一个基于浏览器的在线开发环境 c9.io 。使用在线开发环境，你就不必在自己电脑上安装 Node.js 和 MongoDB 了，这样可以为你节省大把的时间来做练习。<br>打开 c9.io 主页后，点击右上角的 Github 图标，通过关联你的 Github 帐号来创建一个 c9.io 帐号。注意，最后一步需要填写你的邮箱地址。（整个过程可以参考上边的演示录像）。",
-          "http://c9.io"
+          "//i.imgur.com/YGWavs1.gif",
+          "A gif showing how to create a Codeanywhere account.",
+          "为了方便你完成接下来的挑战项目，这里推荐一个基于浏览器的在线开发环境 Codeanywhere 。使用在线开发环境，你就不必在自己电脑上安装 Node.js 和 MongoDB 了，这样可以为你节省大把的时间来做练习。<br>打开 Codeanywhere 主页后，点击右上角的 Sign up , 在打开的页面中点击GitHub 图标，通过关联你的 Github 帐号来创建一个 Codeanywhere 帐号。注意，你需要登录你的邮箱激活账号。",
+          "https://codeanywhere.com"
         ],
         [
-          "//i.imgur.com/F7i5Hhi.gif",
+          "//i.imgur.com/xkKcCZe.gif",
           "A gif showing how to fill out the new workspace form",
-          "你没有必要自己造轮子去完成接下来的挑战，这里推荐使用集成了 MongoDB，Express 和 Node.js 的轻量级 JavaScript 全栈框架 Clementine.js 。如果有兴趣，请参考 Clementine.js 的完整教程一步一步构建自己的应用开发环境，这里我们只需要克隆它的源码到 c9.io 的开发环境就好了。<br>登录 c9.io 后，你需要创建一个新的 Workspace，模板选择 blank 即可，克隆地址填： <code>https://github.com/johnstonbl01/clementinejs-fcc.git</code> ， 最后点击屏幕下方的 \"Create workspace\" 按钮，完成创建开发环境。（整个过程可以参考上边的演示录像）。",
+          "你没有必要自己造轮子去完成接下来的挑战，这里推荐使用集成了 MongoDB，Express 和 Node.js 的轻量级 JavaScript 全栈框架 Clementine.js 。如果有兴趣，请参考 Clementine.js 的完整教程一步一步构建自己的应用开发环境，这里我们只需要克隆它的源码到 Codeanywhere 的开发环境就好了。<br>登录 Codeanywhere 后，你需要创建一个新的Connection，点击File，选择New Connection，Name 里输入项目名称，如fcc，在下面的选项里滚动找到MEAN(选中最后面为Ubuntu 14.04 的那个)，点击CREATE，稍等系统初始化, 完成创建开发环境。",
           ""
         ],
         [
-          "//i.imgur.com/42m1vyr.gif",
-          "A gif showing you how to show hidden files.",
-          "创建完毕后自动进入新建的 Workspace ，点击左侧导航栏右上角的齿轮图标，选择显示隐藏文件（\"show hidden files\"）。（整个过程可以参考上边的演示录像）。",
+          "//i.imgur.com/GRIXwQY.gif",
+          "A gif showing how to clone git repository",
+          "在 SSH Terminal 标签里输入 <code>git clone https://github.com/johnstonbl01/clementinejs-fcc.git</code>。（整个过程可以参考上边的演示录像）",
           ""
         ],
         [
-          "//i.imgur.com/qrE8xaK.gif",
-          "A gif showing you how to create a new file.",
-          "然后，在左侧导航栏的空白处点击鼠标右键，新建一个文件 <code>.env</code>。（整个过程可以参考上边的演示录像）。",
+          "//i.imgur.com/sBmkmlP.gif",
+          "A gif showing you how to refresh and create a new file.",
+          "在左侧导航栏的空白处点击鼠标右键，选择刷新（\"Refresh\"）。然后，在左侧导航栏 clementinejs-fcc 文件夹处点击鼠标右键，选择创建文件（\"Create File\"），弹出的对话框中输入<code>.env</code>, 新建一个文件 <code>.env</code>。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
-          "//i.imgur.com/jkQX9SQ.gif",
+          "//i.imgur.com/iZv1NDu.gif",
           "A gif showing you how to prep your environmental variables in your .env file.",
           "打开刚刚新建的 .env 文件，把下边的代码粘帖进去，并保存：<br><code>GITHUB_KEY=<br>GITHUB_SECRET=<br>MONGO_URI=mongodb://localhost:27017/clementinejs<br>PORT=8080<br>APP_URL=http://localhost:8080/</code> 。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
-          "//i.imgur.com/f3DE7zB.gif",
-          "A gif showing you how to open c9.io's preview window.",
-          "点击标题栏上菜单 windows ， 在下拉菜单中选择 share， 之后在弹出的窗口中点击 Application 右边的链接， 在弹出选项中选择 open 。此时会打开一个新的页面，注意这个页面就是你在 c9.io 中新建的 App 的主页，复制这个 App 的主页地址，下一步骤会用到。（整个过程可以参考上边的演示录像）。",
+          "//i.imgur.com/tOA7cUP.gif",
+          "A gif showing you how to open Codeanywhere preview window.",
+          "右击你的项目， 在下拉菜单中选择 info，之后在打开的标签中，点击最后一行的链接。此时会打开一个新的页面，将地址中的 port-xx 改为 port-8080，注意这个页面就是你在 Codeanywhere 中新建的 App 的主页，复制这个 App 的主页地址，下一步骤会用到。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
-          "//i.imgur.com/Ip0qUdQ.gif",
-          "A gif showing you how to create a GitHub app using c9.io's preview URL.",
-          "登录 Github ，进入你的 Profile 页面，在左侧列表中选择 OAuth applications ，之后在右边选择 Developer application 来创建一个鉴权 App 。 Application name 可以自己取， Homepage URL 填入上一步创建的 App 的主页地址。 Authorization callback URL 也填入相同的地址，并在后边加上相对路径：<code>auth/github/callback</code>。最后点击最下边的注册应用（Register Application）。（整个过程可以参考上边的演示录像）。",
+          "//i.imgur.com/F03QUPZ.gif",
+          "A gif showing you how to create a GitHub app using Codeanywhere's preview URL.",
+          "登录 Github ，进入你的 Settings 页面，在左侧列表中选择 Developer settings ，之后在右边选择 Register a new application 来创建一个鉴权 App 。 Application name 可以自己取， Homepage URL 填入上一步创建的 App 的主页地址。 Authorization callback URL 也填入相同的地址，并在后边加上相对路径：<code>auth/github/callback</code>。最后点击最下边的注册应用（Register Application）。（整个过程可以参考上边的演示录像）。",
           "https://github.com/settings/applications/new"
         ],
         [
-          "//i.imgur.com/qCUVRFb.gif",
-          "A gif showing you how to transfer GitHub's key and secret over to your .env file, as well as your c9.io URL.",
-          "在 Github 上的鉴权 App 已经创建完成，此时会显示 Client ID 和 Client Secret 。把 Client ID 和 Client Secret 分别赋给 .env 文件中的 GITHUB_KEY 和 GITHUB_SECRET。并把上文提到的 APP 地址赋给 APP_URL 。（整个过程可以参考上边的演示录像）。",
+          "//i.imgur.com/M3WyryU.gif",
+          "A gif showing you how to transfer GitHub's key and secret over to your .env file, as well as your Codeanywhere URL.",
+          "在 Github 上的鉴权 App 已经创建完成，此时会显示 Client ID 和 Client Secret 。把 Client ID 和 Client Secret 分别赋给 .env 文件中的 GITHUB_KEY 和 GITHUB_SECRET。并把上文提到的 APP 地址赋给 APP_URL，保存。（整个过程可以参考上边的演示录像）。",
           ""
         ],
         [
-          "//i.imgur.com/2a20Vah.gif",
-          "A gif showing you how to start mongoDB in c9.io's terminal.",
-          "在 c9.io 的命令行终端中输入以下命令以启动 mongoDB：<code>mongod --smallfiles</code>。",
+          "//i.imgur.com/nJyuz70.gif",
+          "A gif showing you how to go to a directory in Codeanywhere's terminal.",
+          "右击你的项目， 在下拉菜单中选择 SSH Terminal，在 SSH Terminal 标签里输入 <code>cd clementinejs-fcc</code> 进入项目目录，输入以下命令安装依赖包： <code>npm install</code> 。（整个过程可以参考上边的演示录像）",
           ""
         ],
         [
-          "//i.imgur.com/dC55pWk.gif",
-          "A gif showing you how to open a new tab in c9.io's terminal.",
-          "新建一个命令行窗口，输入以下命令安装依赖包： <code>npm install</code> 。",
-          ""
-        ],
-        [
-          "//i.imgur.com/54OC2Ro.gif",
+          "//i.imgur.com/8RtA0T2.gif",
           "A gif showing you how to navigate to your preview tab and sign in to your new Clementine.js app.",
           "依赖包安装完毕，在命令行窗口中启动应用：<code>node server.js</code>　。回到前面打开的 App 主页并刷新，你应该可以看到　Clementine.js 的 logo，点击 \"sign in\" 并确认 Github 的鉴权请求。",
           ""
         ],
         [
-          "//i.imgur.com/2IJfyvN.gif",
+          "//i.imgur.com/vTCInyu.gif",
           "A gif showing you how to click the button to trigger an AJAX action with Clementine.js and how to look at your user profile from the GitHub authentication data.",
           "点击按钮 \"click me\" ，你应该可以看到点击数在增加。点击上边的 Profile 链接，可以看到从 Github 同步过来的个人信息。",
           ""
         ],
         [
-          "//i.imgur.com/bjO5pnq.gif",
+          "//i.imgur.com/laIiJWA.gif",
           "A gif showing you how to create a new GitHub repository and push your code up to it.",
-          "在 Github 上创建一个新的仓库，然后拷贝仓库的 .git 地址。 <br>在 c9.io 的命令行窗口中，用刚刚新建的 Github 仓库地址设置 Remote URL : <code>git remote set-url origin</code> 。<br>然后，就可以把代码推到 Github 上去了： <code>git push origin master</code>。<br>完成后，在 Github 上就可以看到刚才推上去的代码了。（整个过程可以参考上边的演示录像）。",
+          "在 Github 上创建一个新的仓库，然后拷贝仓库的 .git 地址。 <br>在 Codeanywhere 的命令行窗口中，用刚刚新建的 Github 仓库地址设置 Remote URL : <code>git remote set-url origin</code> 。<br>然后，就可以把代码推到 Github 上去了： <code>git push origin master</code>。<br>完成后，在 Github 上就可以看到刚才推上去的代码了。（整个过程可以参考上边的演示录像）。",
           "https://github.com/new"
         ],
         [
           "//i.imgur.com/Qn0K65B.gif",
           "A gif showing you how to add add-ons to Heroku.",
-          "现在，你已经掌握如何在 c9.io 上开发部署 App 。后续我们将会进一步介绍在 Heroku 上部署 Clementine 的步骤（后续几个挑战都需要把完成的 App 部署到 Heroku 上，所以，请根据 Heroku 的文档自己练习一下如何部署 App 到 Heroku ）。",
+          "现在，你已经掌握如何在 Codeanywhere 上开发部署 App 。后续我们将会进一步介绍在 Heroku 上部署 Clementine 的步骤（后续几个挑战都需要把完成的 App 部署到 Heroku 上，所以，请根据 Heroku 的文档自己练习一下如何部署 App 到 Heroku ）。",
           ""
         ]
       ],
