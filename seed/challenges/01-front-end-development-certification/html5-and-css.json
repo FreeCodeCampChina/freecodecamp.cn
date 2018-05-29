@@ -1337,7 +1337,7 @@
         "例如，如果你想把一个文本输入字段设置为必填项，在你的<code>input</code>元素中加上<code>required</code>属性就可以了，你可以使用：<br><code>&#60;input type=\"text\" required&#62;</code>",
         "任务：给你的输入框添加<code>required</code>属性，这样用户不填写输入框就无法提交表单。",
         "试试输入框不填写任何文本，然后点击Submit提交表单，看看浏览器如何提示你该字段为必填项。",
-        "注意：<code>required</code>属性在Safari浏览器中不起作用，请用其他浏览器来学习，推荐使用Chrome。"
+        "注意：<code>required</code>属性在Safari浏览器10.1以下不起作用(2017年3月27以前)，请更新Safari或者使用其他浏览器来学习，推荐使用Chrome。"
       ],
       "challengeSeed": [
         "<link href=\"https://fonts.gdgdocs.org/css?family=Lobster\" rel=\"stylesheet\" type=\"text/css\">",
