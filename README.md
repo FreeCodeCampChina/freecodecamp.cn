@@ -1,5 +1,5 @@
-![](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)
-
+![](https://freecodecamp.cn/images/fcc-code.png)
+扫码加入 FCC-China 社群
 
 
 ### FreeCodeCampChina's open source codebase and curriculum
