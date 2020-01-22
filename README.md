@@ -1,4 +1,4 @@
-![](https://freecodecamp.cn/images/fcc-code.png)
+![](https://fcc.asia/images/fcc-code.png)
 扫码加入 FCC-China 社群
 
 
