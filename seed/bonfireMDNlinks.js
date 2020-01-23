@@ -24,7 +24,7 @@ var links = {
   "RegExp": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
   "Global Function Object": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function",
   "Arguments object": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments",
-  "Closures": "https://developer.mozilla.org/zh-CN/docs/" +
+  "Closures": "https://developer.mozilla.org/zh-CN/docs/" 
   "Web/JavaScript/Closures",
 
   // ========= GLOBAL OBJECT METHODS
