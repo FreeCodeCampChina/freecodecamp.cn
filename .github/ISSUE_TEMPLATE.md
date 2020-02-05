@@ -2,7 +2,7 @@
 ## 注意：请不要乱开无意义的 Issue，违者直接加黑名单
 ## 注意：Issue 是用来处理代码库中的 bug，不是用来提问题的。完成挑战过程中遇到的代码问题请在[gitter 讨论组](https://gitter.im/FreeCodeCamp/chinese) 或者 QQ 群 526289580 中讨论 (QQ 群验证答案: ___**freeCodeCamp**___ 注意大小写)
 
-#### FreeCodeCamp.cn Issue 模板
+#### FreeCodeCamp.cn Issues 模板
 如何使用本模板:
 * 尽可能多填些相关信息，方便管理员参考
 * 对于无法给出的内容，请删除掉那一行
