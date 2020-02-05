@@ -33,7 +33,7 @@
       "description": [
         "当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href='https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD' target='_blank'>自由无阻碍的互联网</a>。",
         "如果你还不明白翻墙对个人成长的重要性，请去看电影<a href='http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/'>《肖申克的救赎》</a>。",
-        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/S1ngS1ng/pen/WORqxP' target='_blank'>https://codepen.io/S1ngS1ng/full/WORqxP</a>的应用。",
+        "<strong>目标:</strong> 设计一个功能类似于: <a href='https://codepen.io/chenzc/full/YYyRya' target='_blank'>https://codepen.io/chenzc/full/YYyRya</a>的应用。",
         "<strong>规则#1:</strong> 代码是开源的，你可以借鉴，但请不要抄袭。",
         "<strong>规则#2:</strong> 用你喜爱的任何库来定制属于你自己的风格，实现下面的<a href='http://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html'>功能</a>。",
         "<strong>实现路径:</strong> 页面结构->样式->功能->接口->展示。",
@@ -94,9 +94,10 @@
         "<strong>功能:</strong> 我可以点击链接跳到 FreeCodeCamp 在Twitch.tv上的频道。",
         "<strong>功能:</strong> 如果有人在直播，我可以看到他正在直播什么。",
         "<strong>功能:</strong> 如果直播者关闭了他的账户，我会看到一个404提示页面。",
-        "<strong>提示:</strong> 这有一个如何调用 Twitch.tv的JSONP API的示例：<a href='https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-Twitchtv-JSON-API' target='_blank'>https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Front-End-Project-Use-the-Twitchtv-JSON-API</a>.",
-        "<strong>提示:</strong> 这个文档有更多关于如何调用这个API的细节：<a href='https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md#get-streamschannel' target='_blank'>https://github.com/justintv/Twitch-API/blob/master/v3_resources/streams.md#get-streamschannel</a>.",
+        "<strong>提示:</strong> 这有一个如何调用 Twitch.tv的JSONP API的示例：<a href='http://forum.freecodecamp.org/t/use-the-twitchtv-json-api/19541' target='_blank'>http://forum.freecodecamp.org/t/use-the-twitchtv-json-api/19541</a>.",
+        "<strong>提示:</strong> 这个文档有更多关于如何调用这个API的细节：<a href='https://dev.twitch.tv/docs/v5/reference/streams/#get-stream-by-user' target='_blank'>https://dev.twitch.tv/docs/v5/reference/streams/#get-stream-by-user</a>.",
         "<strong>提示:</strong> 这有一个Twitch.tv 用户名数组，里面包含有通常正在直播写代码的人： <code>[\"freecodecamp\", \"storbeck\", \"terakilobyte\", \"habathcx\",\"RobotCaleb\",\"thomasballinger\",\"noobs2ninjas\",\"beohoff\"]</code>",
+        "<strong>更新:</strong> 由于Twitch API <a href='https://blog.twitch.tv/client-id-required-for-kraken-api-calls-afbb8e95f843#.f8hipkht1' target='_blank'>变更</a>,Twitch.tv 现在需要API key才能调用，不过别担心，这里有一个解决方案，使用<a href='https://wind-bow.glitch.me/twitch-api' target='_blank'>https://wind-bow.glitch.me/twitch-api</a>来代替twitch 的官方API（https://api.twitch.tv/kraken），这样的话你就不需要为了key 而注册账号了。",
         "当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。",
         "当你完成了这个项目，请点击 \"我已经完成了这个挑战\" 按钮，输入你的项目在CodePen上的链接。",
         "你可以分享这个项目给<a href='mailto:jin@freecodecamp.cn'>JackJin</a>或<a href='//gitter.im/freecodecamp/chinese' target='_blank'>聊天室</a>来获得反馈。"

@@ -1,0 +1,1577 @@
+body.full-screen-body-background {
+  background: #5cbcfc;
+}
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.fwber {
+  font-weight: bolder;
+  font-size: 1.125em;
+}
+
+.githubLink {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 700px) {
+  .githubLink {
+    display: none !important;
+  }
+}
+
+div.modalTerminal a {
+  color: rgb(253, 152, 209);
+  font-weight: bold;
+}
+
+
+div.modalTerminal li,
+div.modalTerminal p {
+  line-height: 24px;
+  margin: 1.5em 0;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+/* Box Model */
+html,
+body,
+.box {
+  display: flex;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+body,
+.flex1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1.0 1.0 auto;
+  flex: 1 1 auto;
+}
+
+.flex2 {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-flex: 2.0 2.0 auto;
+  flex: 2 2 auto;
+}
+
+.flex3 {
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -ms-flex: 3.0 3.0 auto;
+  flex: 3 3 auto;
+}
+
+.flex10 {
+  -webkit-box-flex: 10;
+  -moz-box-flex: 10;
+  -ms-flex: 10.0 10.0 auto;
+  flex: 10 10 auto;
+}
+
+html,
+body,
+.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.horizontal {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.centerAlign {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  justify-content	: center;
+}
+
+.startAlign {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  justify-content: flex-start;
+}
+
+.center {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  align-content: center;
+}
+
+.justify {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-content: stretch;
+}
+
+/* Transition */
+.transitionBackground {
+  -webkit-transition: background 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: background 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: background 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: background 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: background 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.transitionTransform {
+  -webkit-transition: -webkit-transform 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: -moz-transform 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: -ms-transform 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: -o-transform 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: transform 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.transitionOpacity {
+  -webkit-transition: opacity 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: opacity 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: opacity 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: opacity 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: opacity 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.transitionOpacityLinear {
+  -webkit-transition: opacity 700ms linear;
+  -moz-transition: opacity 700ms linear;
+  -ms-transition: opacity 700ms linear;
+  -o-transition: opacity 700ms linear;
+  transition: opacity 700ms linear;
+}
+
+
+.transitionOpacitySlow {
+  -webkit-transition: opacity 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: opacity 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: opacity 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: opacity 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: opacity 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.visBackgroundColor,
+.transitionAll {
+  -webkit-transition: all 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: all 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: all 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: all 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: all 700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.transitionAllSlow {
+  -webkit-transition: all 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: all 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -ms-transition: all 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -o-transition: all 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: all 1700ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+/* mode stuff */
+#mainVisSpace {
+  position: relative;
+}
+
+#mainVisSpace .modeText {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.0;
+  font-size: 60pt;
+  color: black;
+}
+
+body.gitMode #mainVisSpace .modeText.gitMode,
+body.hgMode #mainVisSpace .modeText.hgMode {
+  opacity: 0.5;
+}
+
+/* Some interface things */
+
+div.canvasTerminalHolder {
+ /* height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;*/
+  z-index: 3;
+  margin-top:10px;
+}
+
+#canvasHolder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+div.gitDemonstrationView > div.visHolder,
+.visBackgroundColor {
+  background: #5cbcfc;
+  background-color: #5cbcfc;
+}
+
+body.hgMode div.gitDemonstrationView > div.visHolder,
+body.hgMode .visBackgroundColor {
+  background: #5CFCD6;
+  background-color: #5CFCD6;
+}
+
+#interfaceWrapper {
+  min-width: 600px;
+  min-height: 600px;
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder > div.wrapper {
+  height: 100%;
+  box-shadow: 0 0 12px rgb(0,0,0);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder div.terminal-text {
+  padding: 5px 10px;
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder div.toolbar,
+div.canvasTerminalHolder > div.terminal-window-holder div.terminal-text,
+div.canvasTerminalHolder > div.terminal-window-holder div.inside {
+  border: 0px;
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder div.terminal-text,
+div.canvasTerminalHolder > div.terminal-window-holder div.inside {
+  background: #272822;
+  border-radius: 0 0 5px 5px;
+}
+
+div.canvasTerminalHolder.startTree > div.terminal-window-holder div.terminal-text,
+div.canvasTerminalHolder.startTree > div.terminal-window-holder div.inside {
+  background: #4CA2FF;
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder div.inside {
+  min-height: 200px;
+  border-radius: 0 0 5px 5px;
+}
+
+#controls {
+}
+
+div.canvasTerminalHolder > div.terminal-window-holder {
+  overflow: visible !important;
+}
+
+/* Toolbar */
+div.toolbar {
+  /* borrowed from try.github.com along with a bunch of other things */
+  background-image: -webkit-linear-gradient(top, #EFEDEE, #C1C1C1);
+  background-image: -moz-linear-gradient(top, #EFEDEE, #C1C1C1);
+  background-image: -o-linear-gradient(top, #EFEDEE, #C1C1C1);
+  background-image: -ms-linear-gradient(top, #EFEDEE, #C1C1C1);
+  background-image: linear-gradient(top, #EFEDEE, #C1C1C1);
+
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #6287A4;
+  border-bottom: 0;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+  color: #333;
+}
+
+div.toolbar.level-toolbar {
+  background-image: -webkit-linear-gradient(top, #B2FF2E, #8AD247);
+  background-image: -moz-linear-gradient(top, #B2FF2E, #8AD247);
+  background-image: -o-linear-gradient(top, #B2FF2E, #8AD247);
+  background-image: -ms-linear-gradient(top, #B2FF2E, #8AD247);
+  background-image: linear-gradient(top, #B2FF2E, #8AD247);
+  border-radius: 0;
+  height: inherit;
+  font-size: 0.75em;
+  position: relative;
+}
+
+div.toolbar.level-toolbar button {
+  font-size: 0.75em;
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-image: -webkit-linear-gradient(top, #EFEDEE, #C1C1C1);
+}
+
+div.toolbar div.clearfix {
+  zoom: 1;
+  margin: 10px 0;
+}
+
+div.toolbar div.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+div.toolbar div.showGoalWrapper {
+  float: left;
+  margin-left: 6px;
+}
+
+div.toolbar div.showObjectiveWrapper {
+  float: right;
+  margin-right: 6px;
+}
+
+div.toolbar div.buttonsWrapper {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+}
+
+div.toolbar div.levelNameWrapper {
+  text-align: center;
+  position: relative;
+  top: 5px;
+  margin: 0 100px;
+  padding-bottom: 10px;
+}
+
+span.levelToolbarSpan {
+  font-weight: 800;
+  font-style: italic;
+}
+
+div.toolbar.level-toolbar.hidden {
+  opacity: 0;
+  height: 0px;
+}
+
+div.toolbar > div.controls {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 57px;
+  height: 13px;
+}
+
+div.toolbar > div.controls div i {
+  text-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.5);
+}
+
+div.toolbar > div.controls div.box.flex1 {
+  text-align: center;
+}
+
+div.toolbar > div.controls div.box.flex1 div {
+  border-radius: 100%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 1px 0 0 1px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: default;
+
+  -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, .8), inset 0 0 3px 1px rgba(0, 0, 0, .6), 0 -1px 1px 1px rgba(0, 0, 0, .4);
+  box-shadow: 0 2px 0 rgba(255, 255, 255, .8), inset 0 0 3px 1px rgba(0, 0, 0, .6), 0 -1px 1px 1px rgba(0, 0, 0, .4);
+
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #fff 95%, #fff 100%);
+}
+
+div.toolbar > div.controls div.box.flex1 div:hover {
+
+}
+
+div.controls div.box.flex1 div.close {
+  background-color: #fb625f;
+}
+
+div.controls div.box.flex1 div.minimize {
+  background-color: #f9c57a;
+}
+
+div.controls div.box.flex1 div.plus {
+  background-color: #8ac872;
+}
+
+/* Command Line */
+div.reactCommandView p.commandLine i {
+  margin: 0 5px;
+}
+
+p.commandLine,
+div.commandLineResult {
+  opacity: 1;
+  font-size: 1em;
+  margin: 0px;
+}
+
+div.commandLineWarnings p,
+div.commandLineResult p {
+  margin: 0px;
+}
+
+div.commandLineResult p:first-child,
+div.commandLineWarnings p:first-child {
+  padding-top: 8px;
+}
+
+div.commandLineResult p:last-child,
+div.commandLineWarnings p:last-child {
+  padding-bottom: 8px;
+}
+
+div.commandLineWarnings p i.icon-exclamation-sign {
+  color: yellow;
+  margin-right: 5px;
+}
+
+p.commandLine span.icons {
+  float: right;
+}
+
+p.commandLine span.icons i:last-child {
+  margin-right: 5px;
+}
+
+p.commandLine span.icons i:first-child {
+  margin-left: 5px;
+}
+
+div.reactCommandView p.commandLine span.icons i:first-child {
+  margin-left: 4px;
+  position: relative;
+  left: 1px;
+}
+
+p.commandLine span.icons i {
+  opacity: 0;
+}
+
+p.commandLine.inqueue span.icons i.icon-check-empty,
+p.commandLine.error span.icons i.icon-exclamation-sign,
+p.commandLine.warning span.icons i.icon-exclamation-sign,
+p.commandLine.processing span.icons i.icon-retweet,
+p.commandLine.finished span.icons i.icon-check {
+  opacity: 1;
+}
+
+p.commandLine.warning span.icons {
+  background: #E0FF00;
+  background-color: #E0FF00;
+  color: #333;
+}
+
+p.commandLine.inqueue span.icons {
+  background: #EBEB24;
+  background-color: #EBEB24;
+  color: #333;
+}
+
+p.commandLine.processing span.icons {
+  background: #88E748;
+  background-color: #88E748;
+  color: #333;
+}
+
+p.commandLine.finished span.icons {
+  background: #0066cc;
+  background-color: #0066cc;
+  color: white;
+}
+
+p.commandLine.error span.icons {
+  background: red;
+  background-color: red;
+}
+
+p.commandResult {
+  color: blue;
+}
+
+p.commandError, p.errorResult {
+  color: red;
+}
+
+#commandLineBar #prompt span.promptSign,
+p.commandLine span.prompt {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+#commandLineBar p.command {
+  margin: 0;
+  margin-left: 12px;
+}
+
+#commandLineBar #commandTextField {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+}
+
+#commandLineHistory {
+  height: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 15px rgba(100, 100, 100, 1);
+}
+
+#commandLineHistory #terminal.scrolling {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#prompt {
+  text-align: left;
+  position: relative;
+  min-height: 22px;
+}
+
+#prompt span {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#prompt span.promptSign {
+  position: absolute;
+  bottom: 0px;
+}
+
+#prompt span.commandCursor {
+  background: #424242;
+}
+
+#prompt p.command.showCursor span.commandCursor {
+  background: #AEAEAE;
+}
+
+#prompt span.cursor.shown {
+  opacity: 0.7;
+}
+
+#commandLineBar,
+.terminal-window .inside,
+li.rebaseEntry,
+#terminal {
+  background: white;
+}
+
+#terminal,
+.terminal-window .inside,
+#commandLineBar {
+  border: 1px solid #303030;
+}
+
+#terminal {
+  border-bottom: 0;
+  padding: 0 5px;
+  height: 75vh;
+}
+
+.helperBar {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #424242;
+  padding: 4px 10px;
+  border-radius: 5px 0 0 0;
+  border: 2px solid #EFEDEE;
+  border-bottom: 0;
+  border-right: 0;
+  box-shadow: -1px -1px 5px rgba(0,0,0,0.3);
+  font-weight: bold;
+  max-width: 500px;
+  clear: both;
+}
+
+.helperBar i {
+  cursor: pointer;
+}
+
+.helperBar a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.helperBar a.exit {
+  float: right
+}
+
+.helperBar a:after {
+  content: ' \b7';
+  font-style: normal;
+}
+
+.helperBar a:last-child {
+  padding-right: 10px;
+}
+
+.helperBar a:nth-last-child(2):after,
+.helperBar a:last-child:after {
+  content: '';
+}
+
+.helperBar.BaseHelperBar a:nth-last-child(2):after {
+  content: ' \b7';
+}
+
+div.helperBar {
+  -webkit-transform: translate3d(150%,0,0);
+  -moz-transform: translate3d(150%,0,0);
+  -o-transform: translate3d(150%,0,0);
+  -ms-transform: translate3d(150%,0,0);
+  transform: translate3d(150%,0,0);
+}
+
+div.helperBar.show {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  height: 85px;
+}
+
+div.helperBar.show.BaseHelperBar {
+  height: auto;
+}
+
+#commandLineBar,
+.terminal-window .inside {
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 3px;
+}
+
+/* interactive rebase CSS */
+.iRebaseDialog.wrapper {
+  padding: 20px;
+}
+
+#dialogHolder.shown .iRebaseDialog.wrapper {
+  margin-top: 30%;
+}
+
+p.helperText,
+div.terminal-text p.helperText,
+.iRebaseDialog p.helperText {
+  font-size: 0.625em;
+}
+
+.iRebaseDialog p.solutionText {
+  color: lime;
+  font-weight: bold;
+  margin: 0;
+}
+
+.iRebaseDialog p.helperText {
+  color: #999;
+  margin: 0;
+  padding: 0;
+}
+
+.iRebaseDialog div.entryHolders {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iRebaseDialog div.entryHolders ul.rebaseEntries {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  /* optimism, lol */
+  -o-padding-start: 0;
+  -ms-padding-start: 0;
+}
+
+li.rebaseEntry {
+  margin: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  cursor: move;
+  padding: 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+li.rebaseEntry.ui-state-highlight {
+  padding: 21px;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+/* wtf jquery UI sortable is barfing here on calculating the position... */
+li.rebaseEntry.ui-sortable-helper {
+  height: auto !important;
+  width: auto !important;
+  position: relative !important;
+  top: 0px !important;
+  left: -20px;
+  display: none;
+}
+
+li.rebaseEntry a#toggleButton {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  font-size: 0.875em;
+  top: -5px;
+  right: -5px;
+}
+
+li.rebaseEntry.notPicked {
+  opacity: 0.2;
+}
+/* Modal Views */
+
+div.modalView.box.inFront.show {
+  overflow-y: auto;
+}
+
+.modalView {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  opacity: 0;
+}
+
+.modalView.inFront {
+  z-index: 100;
+}
+
+.terminal-window-holder {
+  z-index: 3;
+}
+
+.terminal-window .inside {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.terminal-window .inside h2 {
+  text-align: center;
+}
+
+.modalView.show {
+  opacity: 1;
+}
+
+.modalView .terminal-window-holder {
+  border-radius: 5px;
+  max-width: 900px;
+}
+
+.modalView .terminal-window {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.modalView.show .terminal-window {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Level dropdown view */
+.levelDropdownView {
+}
+
+div.levelDropdownTabWrapper {
+  margin-left: -10px;
+  margin-right: -10px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+div.levelDropdownTab {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  cursor: pointer;
+  box-shadow: 0px -4px 12px rgba(0,0,0,0.7);
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  padding: 4px 10px;
+  color: black;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+div.levelDropdownTab.deselected {
+  opacity: 0.3;
+}
+
+div.displayName {
+  border-bottom: 1px dashed grey;
+  text-align: center;
+}
+
+div.displayName h3 {
+  margin: 4px;
+}
+
+div.iconHolder {
+}
+
+div.seriesView p.levelInfo,
+div.seriesView p.about {
+  margin: 0px;
+  padding: 4px;
+  font-size: 0.75em;
+  color: #CCC;
+}
+
+div.seriesView p.levelInfo {
+  font-style: italic;
+}
+
+div.levelIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  background-image: -webkit-linear-gradient(top, white, #AAB1AA);
+  background-image: -moz-linear-gradient(top, white, #AAB1AA);
+  background-image: -o-linear-gradient(top, white, #AAB1AA);
+  background-image: -ms-linear-gradient(top, white, #AAB1AA);
+  background-image: linear-gradient(top, white, #AAB1AA);
+  cursor: pointer;
+}
+
+div.levelIcon:hover {
+  background-image: -webkit-linear-gradient(top, #DADADA, #888686);
+  background-image: -moz-linear-gradient(top, #DADADA, #888686);
+  background-image: -o-linear-gradient(top, #DADADA, #888686);
+  background-image: -ms-linear-gradient(top, #DADADA, #888686);
+  background-image: linear-gradient(top, #DADADA, #888686);
+}
+
+div.levelIcon:active {
+  background-image: -webkit-linear-gradient(top, #888686, #7A7A7A);
+  background-image: -moz-linear-gradient(top, #888686, #7A7A7A);
+  background-image: -o-linear-gradient(top, #888686, #7A7A7A);
+  background-image: -ms-linear-gradient(top, #888686, #7A7A7A);
+  background-image: linear-gradient(top, #888686, #7A7A7A);
+}
+
+div.levelIcon.selected {
+  box-shadow: 0 0 15px #25F6FF;
+}
+
+div.levelIcon.solved {
+  background: -webkit-linear-gradient(top, #F3F86B, #35A30F);
+  background: -moz-linear-gradient(top, #F3F86B, #35A30F);
+  background: -o-linear-gradient(top, #F3F86B, #35A30F);
+  background: -ms-linear-gradient(top, #F3F86B, #35A30F);
+  background: linear-gradient(top, #F3F86B, #35A30F);
+  border-top: 1px solid #f4ffa1;
+}
+
+div.levelIcon.solved:hover {
+  border-top-color: #30f03d;
+  background: #30f03d;
+}
+
+div.levelIcon.solved:active {
+  border-top-color: #5edb15;
+  background: #5edb15;
+}
+
+div.levelIcon div.index {
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #CCC, 0 2px 0 #C9C9C9;
+  font-size: 1.125em;
+  color: #333;
+  -webkit-text-stroke: 1px #111;
+}
+
+div.levelIcon div.index i {
+  display: none;
+}
+
+div.levelIcon.solved div.index i {
+  display: block;
+  color: white;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  font-size: 2em;
+}
+
+div.levelIcon.solved div.index div.indexNum {
+  display: none;
+}
+
+/* MultiView Builder */
+.multiViewBuilder div.view {
+  margin: 10px 0;
+}
+
+.multiViewBuilder .uiButton {
+  margin: 0 10px;
+}
+
+.multiViewBuilder .buttons {
+  margin: 20px 0;
+}
+
+.multiViewBuilder div.controlsForView {
+  margin: 10px 0;
+  border-top: 1px dashed grey;
+  padding-top: 10px;
+}
+
+/* DemonstrationBuilder */
+
+.demonstrationBuilder {
+  max-height: 600px;
+  overflow-y: scroll;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.demonstrationBuilder div.buttons {
+  margin: 8px 0;
+}
+
+.demonstrationBuilder .markdownGrabber{
+  min-height: 100px;
+}
+
+.markdownGrabberInput {
+  margin-top: 32px;
+}
+
+.demonstrationBuilder .markdownGrabber textarea {
+  height: auto;
+}
+
+.textGrabber textarea {
+  width: 70%;
+}
+
+/* Git demonstration view, and markdownGrabber */
+
+.markdownPresenter textarea {
+  min-height: 400px;
+  width: 90%;
+  margin: 10px;
+}
+
+.markdownGrabber {
+  padding: 10px;
+}
+
+.markdownGrabber textarea {
+  width: 90%;
+  height: 400px;
+}
+
+.demonstrationBuilder .markdownGrabber textarea {
+  height: 100px;
+}
+
+.markdownGrabberPreview div.insidePreview {
+  padding: 8px;
+}
+
+.markdownGrabber > div.inputSide,
+.gitDemonstrationView > div.demonstrationText {
+  width: 50%;
+}
+
+div.gitDemonstrationView {
+  width:100%;
+}
+
+.gitDemonstrationView > div.demonstrationText {
+  margin-right: 10px;
+  max-height: 400px;
+  max-width: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.gitDemonstrationView > div.demonstrationText.noLongText {
+  overflow-y: hidden;
+}
+
+.markdownGrabber div.markdownGrabberPreview,
+.gitDemonstrationView > div.visHolder {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  border: 1px solid #333;
+}
+
+.gitDemonstrationView > div.demonstrationText div.command {
+  text-align: center;
+  padding: 10px;
+}
+
+.markdownGrabber,
+.gitDemonstrationView {
+  min-height: 400px;
+}
+
+.gitDemonstrationView  div.afterText {
+  opacity: 0;
+}
+
+.gitDemonstrationView.demonstrated div.afterText {
+  opacity: 1;
+}
+
+.gitDemonstrationView.demonstrating p.uiButton {
+  opacity: 0.7;
+}
+
+.gitDemonstrationView.demonstrated p.uiButton {
+  opacity: 0.4;
+}
+
+/* LeftRightView */
+
+.leftRightView div i {
+  font-size: 2.75em;
+  cursor: pointer;
+}
+
+.leftRightView div {
+  margin: 0 60px;
+}
+
+.leftRightView div.exit {
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.leftRightView div.exit,
+.leftRightView div.left {
+  color: rgb(253, 50, 50);
+  text-shadow: -1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.leftRightView div.right {
+  color: rgb(82, 255, 82);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.leftRightView div.right:hover {
+  color: #74FC74;
+}
+
+.leftRightView div.exit:hover,
+.leftRightView div.left:hover {
+  color: #FF6969;
+}
+
+/* button stuff from liquidGraph */
+.uiButton {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 5px 10px;
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -ms-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.uiButton:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+.uiButton:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+}
+
+.uiButtonYellow {
+  border-top: 1px solid #f4ffa1;
+  background: #288708;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e0e63c), to(#288708));
+  background: -webkit-linear-gradient(top, #e0e63c, #288708);
+  background: -moz-linear-gradient(top, #e0e63c, #288708);
+  background: -ms-linear-gradient(top, #e0e63c, #288708);
+  background: -o-linear-gradient(top, #e0e63c, #288708);
+}
+
+.uiButtonYellow:hover {
+  border-top-color: #30f03d;
+  background: #30f03d;
+  color: #333;
+}
+.uiButtonYellow:active {
+  border-top-color: #5edb15;
+  background: #5edb15;
+}
+
+.uiButtonPink {
+  border-top: 1px solid #96d1f8;
+  background: #80007c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa1ee0), to(#80007c));
+  background: -webkit-linear-gradient(top, #fa1ee0, #80007c);
+  background: -moz-linear-gradient(top, #fa1ee0, #80007c);
+  background: -ms-linear-gradient(top, #fa1ee0, #80007c);
+  background: -o-linear-gradient(top, #fa1ee0, #80007c);
+}
+.uiButtonPink:hover {
+  border-top-color: #fa1ee0;
+  background: #fa1ee0;
+  color: #ccc;
+}
+.uiButtonPink:active {
+  border-top-color: #80007c;
+  background: #80007c;
+}
+
+.uiButtonRed {
+  border-top: 1px solid #ffebee;
+  background: #cc1212;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e08992), to(#cc1212));
+  background: -webkit-linear-gradient(top, #e08992, #cc1212);
+  background: -moz-linear-gradient(top, #e08992, #cc1212);
+  background: -ms-linear-gradient(top, #e08992, #cc1212);
+  background: -o-linear-gradient(top, #e08992, #cc1212);
+}
+
+.uiButtonRed:hover {
+  border-top-color: #cc102f;
+  background: #cc102f;
+  color: #ccc;
+}
+
+.uiButtonRed:active {
+  border-top-color: #ff0000;
+  background: #ff0000;
+}
+
+.uiButtonWhite {
+  border-top: 1px solid #96d1f8;
+  background: #449ad4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d1edff), to(#449ad4));
+  background: -webkit-linear-gradient(top, #d1edff, #449ad4);
+  background: -moz-linear-gradient(top, #d1edff, #449ad4);
+  background: -ms-linear-gradient(top, #d1edff, #449ad4);
+  background: -o-linear-gradient(top, #d1edff, #449ad4);
+}
+
+.uiButtonWhite:hover {
+  border-top-color: #bae3ff;
+  background: #bae3ff;
+  color: #5c5c5c;
+}
+
+.uiButtonWhite:active {
+  border-top-color: #9bcbeb;
+  background: #9bcbeb;
+}
+
+footer {
+	margin-top: 0;
+}
+:root {
+  --times: 100;  
+}
+@media (max-width: 1200px) {
+  :root {
+    --times: 50;  
+  }
+}
+@media (max-width: 1024px) {
+  :root {
+    --times: 100;  
+  }
+  .tabs-mobile {
+    display: block !important;
+  }
+}
+@media (max-width: 411px) {
+  :root {
+    --times: 80;  
+  }
+  footer {
+    display: none;
+  }
+}
+@media (min-width: 992px){
+  iframe.iphone {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 45px;
+    overflow-y: scroll;
+    border-radius: calc(var(--times)/100*40px);
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1200px) {
+  iframe.iphone {
+    right: 0;
+  }
+}
+
+.marvel-device {
+  display:inline-block;
+  position:relative;
+  -webkit-box-sizing:content-box !important;
+  box-sizing:content-box !important
+}
+.marvel-device .screen {
+  width:100%;
+  position:relative;
+  height:100%;
+  z-index:3;
+  background:white;
+  overflow:hidden;
+  display:block;
+  border-radius:1px;
+  -webkit-box-shadow:0 0 0 3px #111;
+  box-shadow:0 0 0 3px #111
+}
+.marvel-device .top-bar,.marvel-device .bottom-bar {
+  height:3px;
+  background:black;
+  width:100%;
+  display:block
+}
+.marvel-device .middle-bar {
+  width:3px;
+  height:4px;
+  top:0px;
+  left:90px;
+  background:black;
+  position:absolute
+}
+.marvel-device.iphone-x {
+  width:calc(var(--times)/100*375px);
+  height:calc(var(--times)/100*812px);
+  padding:calc(var(--times)/100*26px);
+  background:#fdfdfd;
+  -webkit-box-shadow:inset 0 0 11px 0 black;
+  box-shadow:inset 0 0 11px 0 black;
+  border-radius:calc(var(--times)/100*66px)
+}
+.marvel-device.iphone-x .overflow {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:calc(var(--times)/100*66px);
+  overflow:hidden
+}
+.marvel-device.iphone-x .shadow {
+  border-radius:100%;
+  width:calc(var(--times)/100*90px);
+  height:calc(var(--times)/100*90px);
+  position:absolute;
+  background:radial-gradient(ellipse at center,rgba(0,0,0,0.6) 0%,rgba(255,255,255,0) 60%)
+}
+.marvel-device.iphone-x .shadow--tl {
+  top:calc(var(--times)/100*-20px)
+  left:calc(var(--times)/100*-20px)
+}
+.marvel-device.iphone-x .shadow--tr {
+  top:calc(var(--times)/100*-20px);
+  right:calc(var(--times)/100*-20px)
+}
+.marvel-device.iphone-x .shadow--bl {
+  bottom:calc(var(--times)/100*-20px);
+  left:calc(var(--times)/100*-20px)
+}
+.marvel-device.iphone-x .shadow--br {
+  bottom:calc(var(--times)/100*-20px);
+  right:calc(var(--times)/100*-20px)
+}
+.marvel-device.iphone-x:before {
+  width:calc(100% - 10px);
+  height:calc(100% - 10px);
+  position:absolute;
+  top:calc(var(--times)/100*5px);
+  content:'';
+  left:calc(var(--times)/100*5px);
+  border-radius:calc(var(--times)/100*61px);
+  background:black;
+  z-index:1
+}
+.marvel-device.iphone-x .inner-shadow {
+  width:calc(100% - 20px);
+  height:calc(100% - 20px);
+  position:absolute;
+  top:calc(var(--times)/100*10px);
+  overflow:hidden;
+  left:calc(var(--times)/100*10px);
+  border-radius:calc(var(--times)/100*56px);
+  -webkit-box-shadow:inset 0 0 15px 0 rgba(255,255,255,0.66);
+  box-shadow:inset 0 0 15px 0 rgba(255,255,255,0.66);
+  z-index:1
+}
+.marvel-device.iphone-x .inner-shadow:before {
+  -webkit-box-shadow:inset 0 0 20px 0 #FFFFFF;
+  box-shadow:inset 0 0 20px 0 #FFFFFF;
+  width:100%;
+  height:116%;
+  position:absolute;
+  top:-8%;
+  content:'';
+  left:0;
+  border-radius:200px / 112px;
+  z-index:2
+}
+.marvel-device.iphone-x .screen {
+  border-radius:calc(var(--times)/100*40px);
+  -webkit-box-shadow:none;
+  box-shadow:none
+}
+.marvel-device.iphone-x .top-bar,.marvel-device.iphone-x .bottom-bar {
+  width:100%;
+  position:absolute;
+  height:calc(var(--times)/100*8px);
+  background:rgba(0,0,0,0.1);
+  left:0
+}
+.marvel-device.iphone-x .top-bar {
+  top:calc(var(--times)/100*80px)
+}
+.marvel-device.iphone-x .bottom-bar {
+  bottom:calc(var(--times)/100*80px)
+}
+.marvel-device.iphone-x .volume,.marvel-device.iphone-x .volume:before,.marvel-device.iphone-x .volume:after,.marvel-device.iphone-x .sleep {
+  width:calc(var(--times)/100*3px);
+  background:#b5b5b5;
+  position:absolute
+}
+.marvel-device.iphone-x .volume {
+  left:calc(var(--times)/100*-3px);
+  top:calc(var(--times)/100*116px);
+  height:calc(var(--times)/100*32px)
+}
+.marvel-device.iphone-x .volume:before {
+  height:calc(var(--times)/100*62px);
+  top:calc(var(--times)/100*62px);
+  content:'';
+  left:0
+}
+.marvel-device.iphone-x .volume:after {
+  height:calc(var(--times)/100*62px);
+  top:calc(var(--times)/100*140px);
+  content:'';
+  left:0
+}
+.marvel-device.iphone-x .sleep {
+  height:calc(var(--times)/100*96px);
+  top:calc(var(--times)/100*200px);
+  right:calc(var(--times)/100*-3px)
+}
+.marvel-device.iphone-x .camera {
+  width:calc(var(--times)/100*6px);
+  height:calc(var(--times)/100*6px);
+  top:calc(var(--times)/100*9px);
+  border-radius:100%;
+  position:absolute;
+  left:calc(var(--times)/100*154px);
+  background:#0d4d71
+}
+.marvel-device.iphone-x .speaker {
+  height:calc(var(--times)/100*6px);
+  width:calc(var(--times)/100*60px);
+  left:50%;
+  position:absolute;
+  top:calc(var(--times)/100*9px);
+  margin-left:calc(var(--times)/100*-30px);
+  background:#171818;
+  border-radius:calc(var(--times)/100*6px)
+}
+.marvel-device.iphone-x .notch {
+  position:absolute;
+  width:calc(var(--times)/100*210px);
+  height:calc(var(--times)/100*30px);
+  top:calc(var(--times)/100*26px);
+  left:calc(var(--times)/100*108px);
+  z-index:4;
+  background:black;
+  border-bottom-left-radius:calc(var(--times)/100*24px);
+  border-bottom-right-radius:calc(var(--times)/100*24px)
+}
+.marvel-device.iphone-x .notch:before,.marvel-device.iphone-x .notch:after {
+  content:'';
+  height:calc(var(--times)/100*8px);
+  position:absolute;
+  top:0;
+  width:calc(var(--times)/100*8px)
+}
+.marvel-device.iphone-x .notch:after {
+  background:radial-gradient(circle at bottom left,transparent 0,transparent 70%,black 70%,black 100%);
+  left:calc(var(--times)/100*-8px)
+}
+.marvel-device.iphone-x .notch:before {
+  background:radial-gradient(circle at bottom right,transparent 0,transparent 70%,black 70%,black 100%);
+  right:calc(var(--times)/100*-8px)
+}
+.marvel-device.iphone-x.landscape {
+  height:calc(var(--times)/100*375px);
+  width:calc(var(--times)/100*812px)
+}
+.marvel-device.iphone-x.landscape .top-bar,.marvel-device.iphone-x.landscape .bottom-bar {
+  width:calc(var(--times)/100*8px);
+  height:100%;
+  top:0
+}
+.marvel-device.iphone-x.landscape .top-bar {
+  left:calc(var(--times)/100*80px)
+}
+.marvel-device.iphone-x.landscape .bottom-bar {
+  right:calc(var(--times)/100*80px);
+  bottom:auto;
+  left:auto
+}
+.marvel-device.iphone-x.landscape .volume,.marvel-device.iphone-x.landscape .volume:before,.marvel-device.iphone-x.landscape .volume:after,.marvel-device.iphone-x.landscape .sleep {
+  height:calc(var(--times)/100*3px)
+}
+.marvel-device.iphone-x.landscape .inner-shadow:before {
+  height:100%;
+  width:116%;
+  left:-8%;
+  top:0;
+  border-radius:calc(var(--times)/100*112px / 200px)
+}
+.marvel-device.iphone-x.landscape .volume {
+  bottom:calc(var(--times)/100*-3px);
+  top:auto;
+  left:calc(var(--times)/100*116px);
+  width:calc(var(--times)/100*32px)
+}
+.marvel-device.iphone-x.landscape .volume:before {
+  width:calc(var(--times)/100*62px);
+  left:calc(var(--times)/100*62px);
+  top:0
+}
+.marvel-device.iphone-x.landscape .volume:after {
+  width:calc(var(--times)/100*62px);
+  left:calc(var(--times)/100*140px);
+  top:0
+}
+.marvel-device.iphone-x.landscape .sleep {
+  width:calc(var(--times)/100*96px);
+  left:calc(var(--times)/100*200px);
+  top:calc(var(--times)/100*-3px);
+  right:auto
+}
+.marvel-device.iphone-x.landscape .camera {
+  left:calc(var(--times)/100*9px);
+  bottom:calc(var(--times)/100*154px);
+  top:auto
+}
+.marvel-device.iphone-x.landscape .speaker {
+  width:calc(var(--times)/100*6px);
+  height:calc(var(--times)/100*60px);
+  left:calc(var(--times)/100*9px);
+  top:50%;
+  margin-top:calc(var(--times)/100*-30px);
+  margin-left:0
+}
+.marvel-device.iphone-x.landscape .notch {
+  height:calc(var(--times)/100*210px);
+  width:calc(var(--times)/100*30px);
+  left:calc(var(--times)/100*26px);
+  bottom:calc(var(--times)/100*108px);
+  top:auto;
+  border-top-right-radius:calc(var(--times)/100*24px);
+  border-bottom-right-radius:calc(var(--times)/100*24px);
+  border-bottom-left-radius:0
+}
+.marvel-device.iphone-x.landscape .notch:before,.marvel-device.iphone-x.landscape .notch:after {
+  left:0
+}
+.marvel-device.iphone-x.landscape .notch:after {
+  background:radial-gradient(circle at bottom right,transparent 0,transparent 70%,black 70%,black 100%);
+  bottom:calc(var(--times)/100*-8px);
+  top:auto
+}
+.marvel-device.iphone-x.landscape .notch:before {
+  background:radial-gradient(circle at top right,transparent 0,transparent 70%,black 70%,black 100%);
+  top:calc(var(--times)/100*-8px)
+}
+
+#browser {
+  text-align: center;
+}
+
+.navbar-toggle {
+  padding-left: 8px;
+  margin-right: 15px;
+
+}
+
+.scroll-locker {
+  width: 100%;
+  max-height: 75vh;
+}

@@ -4,55 +4,92 @@ block content
     link(rel='stylesheet', href='/bower_components/CodeMirror/addon/lint/lint.css')
     link(rel='stylesheet', href='/bower_components/CodeMirror/theme/monokai.css')
     link(rel='stylesheet', href='/css/ubuntu.css')
+    link(rel='stylesheet', href=rev('/css', 'better.css'))
     .row
-        .col-md-3.col-lg-3
-            .scroll-locker(id = "scroll-locker")
-                .innerMarginFix(style = "width: 99%;")
-                    .row
-                        .col-xs-12
-                            h4.text-center.challenge-instructions-title= name
-                                if (isCompleted)
-                                    | &nbsp;
-                                    i.ion-checkmark-circled.text-primary(title="Completed")
-                            hr
-                            .challenge-instructions
-                                for sentence in description
-                                    if (/\<blockquote|\<h4|\<table/.test(sentence))
-                                        !=sentence
-                                    else
-                                        p.wrappable!= sentence
-                                .negative-bottom-margin-30
-                    .button-spacer
-                    .btn-big.btn.btn-primary.btn-block#submitButton
-                        | Run tests (ctrl + enter)
-                    .button-spacer
-                    .btn-group.input-group.btn-group-justified
-                        label.btn.btn-primary.btn-primary-ghost.btn-lg#trigger-reset-modal Reset
-                        label.btn.btn-primary.btn-primary-ghost.hidden-sm.hidden-md.hidden-lg
-                            a(href='//gitter.im/freecodecamp/chinese') Help
-                        label.btn.btn-primary.btn-primary-ghost.hidden-xs.btn-lg#challenge-help-btn Help
-                        label.btn.btn-primary.btn-primary-ghost.btn-lg#trigger-issue-modal Bug
-                    script.
-                        var userLoggedIn = true;
-                    if (!user)
-                        .button-spacer
-                        a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度哦
+        .col-md-3.col-lg-3#document
+            div#controls.box.vertical.flex1.visBackgroundColor
+              div#commandLineHistory.box.vertical.flex3
+                div.toolbar.box.vertical.center
+                  div.controls.box.horizontal.justify
+                    div.box.flex1
+                      div.close
+                    div.box.flex1
+                      div.minimize
+                    div.box.flex1
+                      div.plus
+                  div
+                    i.icon-home
+                    span.vcs-mode-aware.intl-aware= name
+                div#terminal.box.flex1.horizontal.startAlign
+                    div.scroll-locker(id = "scroll-locker")
+                        div.innerMarginFix
+                            .row
+                                .col-xs-12
+                                    .challenge-instructions
+                                        for sentence in description
+                                            if (/\<blockquote|\<h4|\<table/.test(sentence))
+                                                !=sentence
+                                            else
+                                                p.wrappable!= sentence
+                                        .negative-bottom-margin-30
+                            .button-spacer
+                            .btn-big.btn.btn-primary.btn-block#submitButton
+                                | Run tests (ctrl + enter)
+                            .button-spacer
+                            .btn-group.input-group.btn-group-justified
+                                label.btn.btn-primary.btn-primary-ghost.btn-lg#trigger-reset-modal Reset
+                                label.btn.btn-primary.btn-primary-ghost.hidden-sm.hidden-md.hidden-lg
+                                    a(href='//gitter.im/freecodecamp/chinese') Help
+                                label.btn.btn-primary.btn-primary-ghost.hidden-xs.btn-lg#challenge-help-btn Help
+                                label.btn.btn-primary.btn-primary-ghost.btn-lg#trigger-issue-modal Bug
                             script.
-                                var userLoggedIn = false;
-                    .button-spacer
-                    #testSuite
-                    br
-        .col-md-5.col-lg-6
-            .editorScrollDiv(style = "overflow-y: auto; overflow-x: hidden;")
-                    #mainEditorPanel
-                        form.code
-                            .codeMirrorView
-                                textarea#codeEditor(autofocus=true, style='display: none;')
-        .col-md-4.col-lg-3
-            .hidden-xs.hidden-sm
-                img.iphone-position.iframe-scroll(src="/images/iphone6-frame.png", style = "z-index: -2;")
-            iframe.iphone.iframe-scroll#preview
-            .spacer
+                                var userLoggedIn = true;
+                            if (!user)
+                                .button-spacer
+                                a.btn.signup-btn.btn-block.btn-block(href='/login') 登录可以保存进度哦
+                                    script.
+                                        var userLoggedIn = false;
+                            .button-spacer
+                            #testSuite
+                            br
+        .col-md-5.col-lg-6#editor
+            div.canvasTerminalHolder.box.flex1
+              div.terminal-window-holder.box.flex10.vertical.transitionTransform.slideOut.ui-draggable
+                div.wrapper.box.vertical
+                    div.toolbar.box.vertical.center
+                        div.controls.box.horizontal.justify
+                          div.box.flex1
+                            div.close
+                          div.box.flex1
+                            div.minimize
+                          div.box.flex1
+                            div.plus
+                        div
+                          i.icon-cog
+                          编辑器
+                    div.terminal-text
+                        div(style = "overflow-y: auto; overflow-x: hidden;height:75vh;")
+                                #mainEditorPanel
+                                    form.code
+                                        .codeMirrorView
+                                            textarea#codeEditor(autofocus=true, style='display: none;')
+        .col-md-4.col-lg-3#browser
+            div.marvel-device.iphone-x
+                div.notch
+                    div.camera
+                    div.speaker
+                div.top-bar
+                div.sleep
+                div.bottom-bar
+                div.volume
+                div.overflow
+                    div.shadow.shadow--tr
+                    div.shadow.shadow--tl
+                    div.shadow.shadow--br
+                    div.shadow.shadow--bl
+                div.inner-shadow
+                div.screen
+                    iframe.iphone.iframe-scroll#preview
         #complete-courseware-dialog.modal(tabindex='-1')
             .modal-dialog.animated.fadeIn.fast-animation
                 .modal-content
@@ -70,6 +107,11 @@ block content
                             else
                                 a#next-challenge.btn.btn-lg.btn-primary.btn-block(href="/challenges/next-challenge?id="+id) 前进 (ctrl + enter)
     include ../partials/challenge-modals
+
+    .btn-group.input-group.btn-group-justified.hide.tabs-mobile(style="position: fixed;bottom: 0;z-index: 9999;background: white;left: 0;border-radius:7px;")
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#document').show();") 文档
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#editor').show();") 编辑器
+      label.btn.btn-primary.btn-primary-ghost.btn-lg(onclick="$('#document').hide();$('#browser').hide();$('#editor').hide();$('#browser').show();") 浏览器
     script(type="text/javascript").
       $('#next-courseware-button').attr('disabled', 'disabled');
       var common = window.common || { init: [] };
